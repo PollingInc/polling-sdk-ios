@@ -20,9 +20,7 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	//_polling = [[POLPolling alloc] initWithCustomerID:@"ios-sdk-test-customer_00000"
-	_polling = [[POLPolling alloc]
-				initWithCustomerID:@"test-customer_00000"
+	_polling = [[POLPolling alloc] initWithCustomerID:@"ios-sdk-test-customer_00000"
 				APIKey:@"H3uZsrv6B2qyRXGePLxQ9U8g7vilWFTjIhZO"];
 	_polling.delegate = self;
 }

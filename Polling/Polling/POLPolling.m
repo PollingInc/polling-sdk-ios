@@ -42,7 +42,7 @@ static const NSTimeInterval POLPollingPostponeInterval = 60 * 30; // 30 minutes
 	_apiKey = apiKey;
 	_networkSession = POLNetworkSession.new;
 	_networkSession.delegate = self;
-	//[self beginCheckingForSurveys];
+	[self beginCheckingForSurveys];
 
 	return self;
 }
@@ -83,6 +83,9 @@ static const NSTimeInterval POLPollingPostponeInterval = 60 * 30; // 30 minutes
 {
 	NSLog(@"%s %@", __func__, surveys);
 	[self stopCheckingForSurveys];
+
+	if ([self.delegate respondsToSelector:@selector(pollingSurveyDidBecomeAvailable)])
+		[(id<POLPollingDelegate>)self.delegate pollingSurveyDidBecomeAvailable];
 }
 
 #pragma mark - Showing Surveys
