@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) POLSurvey *survey;
 @property (nonatomic, weak, nullable) id<POLSurveyViewControllerDelegate> delegate;
 
+- init NS_UNAVAILABLE;
+
 - initWithSurvey:(POLSurvey *)survey;
 
 @end

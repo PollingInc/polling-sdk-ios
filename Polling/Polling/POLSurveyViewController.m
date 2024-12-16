@@ -40,8 +40,11 @@
     [super viewDidLoad];
 
 	//NSURL *url = [NSURL URLWithString:_survey.URL];
-	NSURL *url = [NSURL URLWithString:@"https://polling.com"];
-	NSURLRequest *req = [NSURLRequest requestWithURL:url];
+	//NSURL *url = [NSURL URLWithString:@"https://polling.com"];
+	//NSURLRequest *req = [NSURLRequest requestWithURL:url];
+
+	NSLog(@"request survery %@", _survey.URL);
+	NSURLRequest *req = [NSURLRequest requestWithURL:_survey.URL];
 	[_webView loadRequest:req];
 }
 

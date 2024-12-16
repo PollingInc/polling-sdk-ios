@@ -7,6 +7,9 @@
 
 #import "POLSurvey.h"
 #import "POLSurvey+Private.h"
+#import "../POLNetworkSession.h"
+
+NSString * const POLSurveyViewEndpoint = @"https://app.polling.com/sdk/survey";
 
 @implementation POLSurvey
 
@@ -24,8 +27,6 @@
 	if (!(self = super.init))
 		return nil;
 
-	_URL = @"";
-	_completionURL = @"";
 	_surveyUUID = @"survey-uuid";
 
 	_name = dict[@"name"];
@@ -39,6 +40,15 @@
 + (instancetype)surveyFromDictionary:(NSDictionary *)dict
 {
 	return [[self alloc] initWithDictionary:dict];
+}
+
+- (NSURL *)URL
+{
+	NSURL *url = [NSURL URLWithString:POLSurveyViewEndpoint];
+	url = [url URLByAppendingPathComponent:_UUID];
+	url = [POLNetworkSession URLForEndpoint:url.absoluteString
+							 withCustomerID:self.customerID APIKey:self.apiKey];
+	return url;
 }
 
 - (NSString *)description

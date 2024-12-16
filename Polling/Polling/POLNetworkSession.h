@@ -16,6 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak, nullable) id <POLNetworkSessionDelegate> delegate;
 
+#pragma mark - Networking
+
++ (NSURL *)URLForEndpoint:(NSString *)endpoint
+		   withCustomerID:(NSString *)customerID APIKey:(NSString *)apiKey;
+
 #pragma mark - Surveys
 
 - (void)fetchSurveysWithOptions:(NSDictionary *)options;

@@ -13,8 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface POLSurvey : NSObject
 
-@property (readonly) NSString *URL;
-@property (readonly) NSString *completionURL;
+@property (readonly) NSURL *URL;
+@property (readonly) NSURL *completionURL;
 @property (readonly) NSString *surveyUUID;
 
 @property (readonly) NSString *UUID;

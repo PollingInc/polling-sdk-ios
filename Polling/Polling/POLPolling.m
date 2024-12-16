@@ -10,6 +10,7 @@
 #import "POLSurveyViewController.h"
 
 #import "Models/POLSurvey.h"
+#import "Models/POLSurvey+Private.h"
 #import "Models/POLReward.h"
 
 #if DEBUG
@@ -35,6 +36,7 @@ static const NSTimeInterval POLPollingPostponeInterval = 60 * 30; // 30 minutes
 	NSTimer *_postponeTimer;
 	POLNetworkSession *_networkSession;
 	POLSurveyViewController *_surveyViewController;
+	NSArray<POLSurvey *> *_cachedSurveys;
 }
 
 - initWithCustomerID:(NSString *)customerID APIKey:(NSString *)apiKey
@@ -88,6 +90,10 @@ static const NSTimeInterval POLPollingPostponeInterval = 60 * 30; // 30 minutes
 	NSLog(@"%s %@", __func__, surveys);
 	[self stopCheckingForSurveys];
 
+	_cachedSurveys = surveys;
+	if (_cachedSurveys.count == 0)
+		return;
+
 	if ([self.delegate respondsToSelector:@selector(pollingSurveyDidBecomeAvailable)])
 		[(id<POLPollingDelegate>)self.delegate pollingSurveyDidBecomeAvailable];
 }
@@ -134,7 +140,12 @@ static const NSTimeInterval POLPollingPostponeInterval = 60 * 30; // 30 minutes
 	if (_surveyViewController)
 		return;
 
+	// fake the survey since we haven't exposed a way to get the list of available surveys to the host app
+	survey = _cachedSurveys.firstObject;
+
 	UIViewController *visVC = self.visibleViewController;
+	survey.customerID = _customerID;
+	survey.apiKey = _apiKey;
 	_surveyViewController = [[POLSurveyViewController alloc] initWithSurvey:survey];
 	_surveyViewController.delegate = self;
 	[visVC presentViewController:_surveyViewController animated:YES completion:nil];

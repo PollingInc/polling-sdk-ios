@@ -59,8 +59,8 @@ NSString * const POLNetworkSessionAPIKeyQueryName = @"api_key";
 	return _URLSession;
 }
 
-- (NSURL *)URLForEndpoint:(NSString *)endpoint
-		   WithCustomerID:(NSString *)customerID APIKey:(NSString *)apiKey
++ (NSURL *)URLForEndpoint:(NSString *)endpoint
+		   withCustomerID:(NSString *)customerID APIKey:(NSString *)apiKey
 {
 	NSURLComponents *urlComponents = [NSURLComponents componentsWithString:endpoint];
 	urlComponents.queryItems = @[
@@ -154,7 +154,8 @@ NSString * const POLNetworkSessionAPIKeyQueryName = @"api_key";
 
 	NSMutableArray<POLSurvey *> *surveys = [NSMutableArray<POLSurvey *> new];
 	for (NSDictionary *surveyDict in payloadData) {
-		[surveys addObject:[POLSurvey surveyFromDictionary:surveyDict]];
+		POLSurvey *survey = [POLSurvey surveyFromDictionary:surveyDict];
+		[surveys addObject:survey];
 	}
 
 	return surveys;
@@ -169,8 +170,8 @@ NSString * const POLNetworkSessionAPIKeyQueryName = @"api_key";
 
 - (void)fetchSurveysWithCustomerID:(NSString *)customerID APIKey:(NSString *)apiKey
 {
-	NSURL *url = [self URLForEndpoint:POLNetworkSessionSurveyAPIEndpoint
-					   WithCustomerID:customerID APIKey:apiKey];
+	NSURL *url = [self.class URLForEndpoint:POLNetworkSessionSurveyAPIEndpoint
+					   withCustomerID:customerID APIKey:apiKey];
 
 	NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
 	req.HTTPMethod = @"GET";
