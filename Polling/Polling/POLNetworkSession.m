@@ -89,13 +89,37 @@ NSString * const POLNetworkSessionAPIKeyQueryName = @"api_key";
 	_dataTasks[dataTask] = nil;
 }
 
+/**
+ * Parse available surveys payload
+ *
+ * Payload is a JSON object with the structure
+ *
+ * ```json
+ * {
+ *     "data": [{
+ *         "name": "survey name",
+ *         "question_count": 1,
+ *         "reward": {
+ *             "reward_amount": null,
+ *             "reward_name": null,
+ *         }
+ *     }],
+ *     "plan": "",
+ *     "theme": null
+ * }
+ * ```
+ *
+ * @param dataTask the NSURLSessionDataTask associated with the endpoint request
+ * @return array of abailable surveys
+ */
 - (NSArray<POLSurvey *> *)surveysForDataTask:(NSURLSessionDataTask *)dataTask
 {
 	NSData *data = [self dataForDataTask:dataTask];
-	NSArray *responseArray;
+	NSDictionary *payload;
+	NSArray *payloadData;
 	NSError *error = nil;
 
-	responseArray = [NSJSONSerialization
+	payload = [NSJSONSerialization
 		JSONObjectWithData:data
 		options:0
 		error:&error
@@ -106,16 +130,30 @@ NSString * const POLNetworkSessionAPIKeyQueryName = @"api_key";
 		return @[];
 	}
 
-	if (!responseArray) {
+	if (!payload) {
 		error = [NSError errorWithDomain:@"Networking" code:0 userInfo:nil];
 		NSLog(@"Error: %s - %@", __func__, error);
 		return @[];
 	}
 
-	NSLog(@"JSON surveys %@", responseArray);
+	NSLog(@"available surveys %@", payload);
+
+	// payload expect NSDictionary
+	if (![payload isKindOfClass:NSDictionary.class]) {
+		error = [NSError errorWithDomain:@"Data" code:0 userInfo:nil];
+		NSLog(@"Unexpected JSON payload: %s - %@", __func__, error);
+		return @[];
+	}
+
+	// payload.data expect NSArray
+	if (!(payloadData = payload[@"data"])) {
+		error = [NSError errorWithDomain:@"Data" code:0 userInfo:nil];
+		NSLog(@"Unexpected JSON payload: %s - %@", __func__, error);
+		return @[];
+	}
 
 	NSMutableArray<POLSurvey *> *surveys = [NSMutableArray<POLSurvey *> new];
-	for (NSDictionary *surveyDict in responseArray) {
+	for (NSDictionary *surveyDict in payloadData) {
 		[surveys addObject:[POLSurvey surveyFromDictionary:surveyDict]];
 	}
 

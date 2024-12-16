@@ -15,6 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readwrite) NSString *completionURL;
 @property (readwrite) NSString *surveyUUID;
 
+@property (readwrite) NSString *UUID;
+@property (readwrite) NSString *name;
+@property (nullable, readwrite) POLReward *reward;
+@property (readwrite) NSUInteger questionCount;
+
 + (instancetype)surveyFromDictionary:(NSDictionary *)dict;
 
 @end

@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (readonly) NSString *UUID;
 @property (readonly) NSString *name;
-@property (readonly) POLReward *reward;
+@property (nullable, readonly) POLReward *reward;
 @property (readonly) NSUInteger questionCount;
 @property (readonly) NSString *userSurveyStatus;
 @property (readonly) NSDate *completedAt;

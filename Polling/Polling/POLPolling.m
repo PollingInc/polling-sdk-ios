@@ -12,7 +12,11 @@
 #import "Models/POLSurvey.h"
 #import "Models/POLReward.h"
 
+#if DEBUG
+static const NSTimeInterval POLPollingPollRateInterval = 5;      // 1 seconds
+#else
 static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
+#endif
 static const NSTimeInterval POLPollingPostponeInterval = 60 * 30; // 30 minutes
 
 @interface POLPolling () <POLNetworkSessionDelegate, POLSurveyViewControllerDelegate>
