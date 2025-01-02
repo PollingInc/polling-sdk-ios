@@ -1,2 +1,7 @@
 SUPPORTED_PLATFORMS = iphoneos iphonesimulator
 IPHONEOS_DEPLOYMENT_TARGET = 12.0
+
+PRODUCT_BUNDLE_IDENTIFIER = com.polling.UIKitApp${UNIQUE_BUNDLE_DISAMBIGUATOR}
+
+// Conditional include for local overrides
+#include? "Local.xcconfig"

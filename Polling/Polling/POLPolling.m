@@ -6,26 +6,33 @@
  */
 
 #import "POLPolling.h"
+#import "POLPolling+Private.h"
 #import "POLNetworkSession.h"
 #import "POLSurveyViewController.h"
+#import "POLCompatibleSurveyViewController.h"
+#import "POLPresentationController.h"
+#import "POLTriggeredSurveyController.h"
 
-#import "Models/POLSurvey.h"
-#import "Models/POLSurvey+Private.h"
-#import "Models/POLReward.h"
+
+#import "POLSurvey.h"
+#import "POLSurvey+Private.h"
+#import "POLReward.h"
+#import "POLTriggeredSurvey.h"
 
 #if DEBUG
-static const NSTimeInterval POLPollingPollRateInterval = 5;      // 1 seconds
+static const NSTimeInterval POLPollingPollRateInterval = 5;       // 1 seconds
 #else
 static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 #endif
-static const NSTimeInterval POLPollingPostponeInterval = 60 * 30; // 30 minutes
 
-@interface POLPolling () <POLNetworkSessionDelegate, POLSurveyViewControllerDelegate>
+@interface POLPolling () <POLNetworkSessionDelegate, POLSurveyViewControllerDelegate, UIViewControllerTransitioningDelegate>
 
-- (void)beginCheckingForSurveys;
-- (void)stopCheckingForSurveys;
+- (void)beginSurveyChecks;
+- (void)stopSurveyChecks;
 
-- (void)loadAvailableSurveys;
+- (void)performRemoteSurveyChecks;
+
+- (UIViewController *)visibleViewController;
 
 @end
 
@@ -35,67 +42,183 @@ static const NSTimeInterval POLPollingPostponeInterval = 60 * 30; // 30 minutes
 	NSTimer *_pollTimer;
 	NSTimer *_postponeTimer;
 	POLNetworkSession *_networkSession;
-	POLSurveyViewController *_surveyViewController;
+	UIViewController *_surveyViewController;
 	NSArray<POLSurvey *> *_cachedSurveys;
+	POLViewType _viewType;
+	POLTriggeredSurveyController *_triggeredSurveyController;
+	POLTriggeredSurvey *_inboundTriggeredSurvey;
+	POLSurvey *_currentSurvey;
 }
 
-- initWithCustomerID:(NSString *)customerID APIKey:(NSString *)apiKey
+- init
 {
 	if (!(self = [super init]))
 		return nil;
 
-	_customerID = customerID;
-	_apiKey = apiKey;
 	_networkSession = POLNetworkSession.new;
 	_networkSession.delegate = self;
-	[self beginCheckingForSurveys];
+	_viewType = POLViewTypeDialog;
+	_triggeredSurveyController = POLTriggeredSurveyController.new;
+	_surveyVisible = NO;
+	_inboundTriggeredSurvey = nil;
 
 	return self;
 }
 
-- (void)dealloc
+- initWithCustomerID:(NSString *)customerID APIKey:(NSString *)apiKey
 {
-	[self stopCheckingForSurveys];
+	if (!(self = [self init]))
+		return nil;
+
+	_customerID = customerID;
+	_apiKey = apiKey;
+
+	return self;
 }
 
-- (void)beginCheckingForSurveys
++ (instancetype)polling
+{
+	static POLPolling *pol;
+	static dispatch_once_t onceToken;
+	dispatch_once(&onceToken, ^{
+		pol = POLPolling.new;
+	});
+	return pol;
+}
+
+- (void)initializeWithCustomerID:(NSString *)customerID APIKey:(NSString *)apiKey
+{
+	_customerID = customerID;
+	_apiKey = apiKey;
+
+	[self beginSurveyChecks];
+}
+
+- (void)logEvent:(NSString *)eventName value:(NSString *)eventValue
+{
+	NSLog(@"%s %@:%@", __func__, eventName, eventValue);
+	[_networkSession postEvent:eventName withValue:eventValue];
+}
+
+- (void)logPurchase:(int)integerCents
+{
+	[self logEvent:@"Purchase" value:[NSString stringWithFormat:@"%@", @(integerCents)]];
+}
+
+- (void)logSession
+{
+	[self logEvent:@"Session" value:@""];
+}
+
+- (void)setViewType:(POLViewType)viewType
+{
+	_viewType = viewType;
+}
+
+- (void)showEmbedView
+{
+
+}
+
+- (void)showSurvey:(NSString *)surveyUuid
+{
+	[self presentSurveyInternal:[POLSurvey surveyWithUUID:surveyUuid]];
+}
+
+- (void)dealloc
+{
+	[self stopSurveyChecks];
+}
+
+- (void)beginSurveyChecks
 {
 	if (_pollTimer && _pollTimer.isValid)
 		return;
 
 	_pollTimer = [NSTimer scheduledTimerWithTimeInterval:POLPollingPollRateInterval
 												  target:self
-												selector:@selector(loadAvailableSurveys)
+												selector:@selector(performRemoteSurveyChecks)
 												userInfo:nil
 												 repeats:YES];
 }
 
-- (void)stopCheckingForSurveys
+- (void)stopSurveyChecks
 {
 	[_pollTimer invalidate];
 	_pollTimer = nil;
 }
 
-- (void)loadAvailableSurveys
+- (void)performRemoteSurveyChecks
+{
+	//NSLog(@"%s", __func__);
+
+	if (!_disableCheckingForAvailableSurveys)
+		[_networkSession fetchAvailableSurveys];
+
+	[_triggeredSurveyController checkForAvailableTriggeredSurveys];
+}
+
+- (void)getSurveyDetailsForTriggeredSurvey:(POLTriggeredSurvey *)triggeredSurvey
 {
 	NSLog(@"%s", __func__);
-	[_networkSession fetchSurveysWithCustomerID:_customerID APIKey:_apiKey];
-	(void)POLPollingPostponeInterval;
+	_inboundTriggeredSurvey = triggeredSurvey;
+	[_networkSession fetchSurveyWithUUID:triggeredSurvey.survey.UUID];
+}
+
+- (void)postponeSurvey:(POLSurvey *)survey
+{
+	[_triggeredSurveyController postponeSurvey:survey];
 }
 
 #pragma mark - Network Session Delegate
 
-- (void)networkSessionDidFetchSurveys:(NSArray<POLSurvey *> *)surveys
+- (void)networkSessionDidFetchAvailableSurveys:(NSArray<POLSurvey *> *)surveys
 {
 	NSLog(@"%s %@", __func__, surveys);
-	[self stopCheckingForSurveys];
+	//[self stopCheckingForSurveys];
 
 	_cachedSurveys = surveys;
 	if (_cachedSurveys.count == 0)
 		return;
 
-	if ([self.delegate respondsToSelector:@selector(pollingSurveyDidBecomeAvailable)])
-		[(id<POLPollingDelegate>)self.delegate pollingSurveyDidBecomeAvailable];
+	if ([self.delegate respondsToSelector:@selector(pollingOnSurveyAvailable)])
+		[(id<POLPollingDelegate>)self.delegate pollingOnSurveyAvailable];
+}
+
+- (void)networkSessionDidUpdateTriggeredSurveys:(NSArray<POLTriggeredSurvey *> *)triggeredSurvey
+{
+	NSLog(@"%s %@", __func__, triggeredSurvey);
+	if (triggeredSurvey.count > 0)
+		[_triggeredSurveyController triggeredSurveysDidUpdate:triggeredSurvey];
+}
+
+- (void)networkSessionDidFetchSurvey:(POLSurvey *)survey
+{
+	NSLog(@"%s %@", __func__, survey);
+	if (_inboundTriggeredSurvey) {
+		[_triggeredSurveyController triggeredSurvey:_inboundTriggeredSurvey didLoadSurvey:survey];
+		_inboundTriggeredSurvey = nil;
+	}
+}
+
+- (void)networkSessionDidCompleteSurvey:(POLSurvey *)survey
+{
+	if (!survey.isCompleted) {
+		[_triggeredSurveyController postponeSurvey:survey];
+		return;
+	}
+
+	// success
+	if ([self.delegate respondsToSelector:@selector(pollingOnSuccess:)])
+		[(id<POLPollingDelegate>)self.delegate pollingOnSuccess:survey.JSONRepresentation];
+
+	// reward
+	if ([self.delegate respondsToSelector:@selector(pollingOnReward:)])
+		[(id<POLPollingDelegate>)self.delegate pollingOnReward:survey.reward];
+
+	// completion
+	if (!survey.isAvailable)
+		[_triggeredSurveyController removeSurvey:survey];
 }
 
 #pragma mark - Showing Surveys
@@ -115,7 +238,10 @@ static const NSTimeInterval POLPollingPostponeInterval = 60 * 30; // 30 minutes
 					rootVC = window.rootViewController;
 		}
 	} else {
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 		rootVC = UIApplication.sharedApplication.keyWindow.rootViewController;
+#pragma GCC diagnostic pop
 	}
 
 	visVC = rootVC;
@@ -135,36 +261,100 @@ static const NSTimeInterval POLPollingPostponeInterval = 60 * 30; // 30 minutes
 	return visVC;
 }
 
+- (void)presentSurveyInternal:(POLSurvey *)survey
+{
+	_currentSurvey = survey;
+	
+	/*
+	 * NOTE:
+	 * iPhone does not have a "dialog" like view controller
+	 * presentation. Additionally iPadOS does have a "dialog' like
+	 * view controller presentation style, but its behavior is
+	 * inconsistent in a Mac Catalyst app. We use a custom view
+	 * controller for consistency across all target platforms.
+	 *
+	 * iOS 15+ can use the UISheetPresentationController and detents
+	 * to display a half-sheet, but anything below requires trickery
+	 * to and so we use a custom view controller too.
+	 */
+
+	/* TODO: logic for picking the best view controller and
+	 * presentation style */
+
+	[self presentCompatibleSurvey:survey];
+}
+
+- (void)presentEmbed
+{
+	/* TODO: use the embed URL, but the completion URL should be okay */
+	[self presentSurveyInternal:_currentSurvey];
+}
+
 - (void)presentSurvey:(POLSurvey *)survey
 {
 	if (_surveyViewController)
 		return;
 
-	// fake the survey since we haven't exposed a way to get the list of available surveys to the host app
-	survey = _cachedSurveys.firstObject;
+	UIViewController *visVC = self.visibleViewController;
+
+	_surveyViewController = [[POLSurveyViewController alloc] initWithSurvey:survey];
+	((POLSurveyViewController *)_surveyViewController).delegate = self;
+
+	if (_viewType == POLViewTypeDialog) {
+		_surveyViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+		if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone) {
+			_surveyViewController.modalPresentationStyle = UIModalPresentationCustom;
+			_surveyViewController.transitioningDelegate = self;
+		} else {
+			_surveyViewController.modalPresentationStyle = UIModalPresentationFormSheet;
+
+		}
+	} else if (_viewType == POLViewTypeBottom) {
+		_surveyViewController.modalPresentationStyle = UIModalPresentationPageSheet;
+		_surveyViewController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+	}
+
+	_surveyVisible = YES;
+	[visVC presentViewController:_surveyViewController animated:YES completion:nil];
+}
+
+- (void)presentCompatibleSurvey:(POLSurvey *)survey
+{
+	if (_surveyViewController)
+		return;
 
 	UIViewController *visVC = self.visibleViewController;
-	survey.customerID = _customerID;
-	survey.apiKey = _apiKey;
-	_surveyViewController = [[POLSurveyViewController alloc] initWithSurvey:survey];
-	_surveyViewController.delegate = self;
+
+	_surveyViewController = [[POLCompatibleSurveyViewController alloc] initWithSurvey:survey viewType:_viewType];
+	((POLCompatibleSurveyViewController *)_surveyViewController).delegate = self;
+	_surveyViewController.modalPresentationStyle = UIModalPresentationOverFullScreen;
+	_surveyViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+
+	_surveyVisible = YES;
 	[visVC presentViewController:_surveyViewController animated:YES completion:nil];
+}
+
+#pragma mark - View Controller Trasitioning Delegate
+
+- (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented
+	presentingViewController:(UIViewController *)presenting
+	sourceViewController:(UIViewController *)source
+{
+	return [[POLPresentationController alloc] initWithPresentedViewController:presented
+													 presentingViewController:presenting];
 }
 
 #pragma mark - Survey View Controller Delegate
 
-- (void)surveyViewControllerDidDismiss
+- (void)surveyViewControllerDidOpen:(POLSurveyViewController *)surveyViewController
 {
-	//SEL dismissSel = @selector(surveyDidDismiss:);
-	//SEL completeSel = @selector(surveyDidComplete:);
-	//SEL succeedSel = @selector(surveyDidSucceed:);
-	//SEL failSel = @selector(surveyDidFail:);
+	[_networkSession preCompleteSurvey:surveyViewController.survey];
+}
 
-	POLSurvey *survey = _surveyViewController.survey;
-
-	if ([self.delegate respondsToSelector:@selector(surveyDidSucceed:)])
-		[(id<POLPollingDelegate>)self.delegate surveyDidSucceed:survey];
-
+- (void)surveyViewControllerDidDismiss:(POLSurveyViewController *)surveyViewController
+{
+	_surveyVisible = NO;
+	[_networkSession completeSurvey:surveyViewController.survey];
 	_surveyViewController = nil;
 }
 

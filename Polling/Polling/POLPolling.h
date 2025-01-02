@@ -12,15 +12,48 @@ NS_ASSUME_NONNULL_BEGIN
 @class POLSurvey, POLReward;
 @protocol POLPollingDelegate;
 
+typedef NS_ENUM(NSInteger, POLViewType) {
+	POLViewTypeNone,
+	POLViewTypeDialog,
+	POLViewTypeBottom,
+};
+
 @interface POLPolling : NSObject
 
-- init NS_UNAVAILABLE;
+/* ========================================================================= */
 
+/* NOTE: the SDK initialization is a mess, I have not settled on how I
+ * want this to work. The Objective-C way for typical SDK
+ * initialization differs a great deal from the other Polling
+ * SDKs. */
+- init NS_UNAVAILABLE;
 - initWithCustomerID:(NSString *)customerID APIKey:(NSString *)apiKey;
+
++ (instancetype)polling;
+
+- (void)initializeWithCustomerID:(NSString *)customerID APIKey:(NSString *)apiKey;
+//- (void)initializeWithPayload:(id)POLSDKPayload;
 
 @property (nonatomic, weak, nullable) id <POLPollingDelegate> delegate;
 
-- (void)presentSurvey:(POLSurvey *)survey;
+@property NSString *customerID;
+@property NSString *apiKey;
+
+@property BOOL disableCheckingForAvailableSurveys;
+
+/* ========================================================================= */
+
+
+/* public API methods */
+- (void)logEvent:(NSString *)eventName value:(NSString *)eventValue;
+- (void)logPurchase:(int)integerCents;
+- (void)logSession;
+- (void)setViewType:(POLViewType)viewType;
+- (void)showEmbedView;
+- (void)showSurvey:(NSString *)surveyUuid;
+/* - (void)setApiKey(string apiKey) */
+/* - (void)setCustomerId(string customerId) */
+
 
 @end
 
@@ -29,16 +62,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 
-- (void)surveyDidOpen:(POLSurvey *)survey;
-- (void)surveyDidDismiss:(POLSurvey *)survey;
-- (void)surveyDidPostpone:(POLSurvey *)survey;
-- (void)surveyDidComplete:(POLSurvey *)survey;
-- (void)surveyDidSucceed:(POLSurvey *)survey;
-- (void)surveyDidFail:(POLSurvey *)survey;
-
-- (void)survey:(POLSurvey *)survey didReward:(POLReward *)reward;
-
-- (void)pollingSurveyDidBecomeAvailable;
+/* public callbacks */
+- (void)pollingOnSuccess:(NSString *)response;
+- (void)pollingOnFailure:(NSString *)error;
+- (void)pollingOnReward:(POLReward *)reward;
+- (void)pollingOnSurveyAvailable;
 
 @end
 

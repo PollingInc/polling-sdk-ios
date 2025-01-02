@@ -62,4 +62,4 @@ DerivedData/
 *.dSYM.zip
 *.dSYM
 
-Config/Local.xcconfig
+Configs/Local.xcconfig

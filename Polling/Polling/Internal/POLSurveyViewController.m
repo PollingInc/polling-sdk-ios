@@ -6,7 +6,7 @@
  */
 
 #import "POLSurveyViewController.h"
-#import "Models/POLSurvey.h"
+#import "POLSurvey.h"
 
 #import <WebKit/WebKit.h>
 
@@ -39,12 +39,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-	//NSURL *url = [NSURL URLWithString:_survey.URL];
+	NSURL *url = _survey.URL;
 	//NSURL *url = [NSURL URLWithString:@"https://polling.com"];
-	//NSURLRequest *req = [NSURLRequest requestWithURL:url];
+	//NSURL *url = [NSURL URLWithString:@"https://apple.com"]
 
-	NSLog(@"request survery %@", _survey.URL);
-	NSURLRequest *req = [NSURLRequest requestWithURL:_survey.URL];
+	NSLog(@"loading survey in webview %@", url);
+	NSURLRequest *req = [NSURLRequest requestWithURL:url];
 	[_webView loadRequest:req];
 }
 

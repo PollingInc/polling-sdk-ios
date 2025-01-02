@@ -7,6 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C3ACAED2D24806E00DBFCEB /* POLSurveyDialogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3ACAEC2D24806E00DBFCEB /* POLSurveyDialogViewController.xib */; };
+		2C6CF6422D24BC140074CC94 /* POLSurveyBottomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6CF6402D24BC140074CC94 /* POLSurveyBottomViewController.xib */; };
+		2C6CF68B2D2695830074CC94 /* POLSurveyCompletionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C6CF6892D2695830074CC94 /* POLSurveyCompletionController.h */; };
+		2C6CF68C2D2695830074CC94 /* POLSurveyCompletionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6CF68A2D2695830074CC94 /* POLSurveyCompletionController.m */; };
+		2C8AEA922D21BD3000294B6C /* POLReward.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AEA7E2D21BD3000294B6C /* POLReward.m */; };
+		2C8AEA932D21BD3000294B6C /* POLSurvey.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AEA802D21BD3000294B6C /* POLSurvey.m */; };
+		2C8AEA942D21BD3000294B6C /* POLSurveyResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AEA832D21BD3000294B6C /* POLSurveyResponse.m */; };
+		2C8AEA952D21BD3000294B6C /* POLTriggeredSurvey.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AEA852D21BD3000294B6C /* POLTriggeredSurvey.m */; };
+		2C8AEA962D21BD3000294B6C /* Polling.docc in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AEA882D21BD3000294B6C /* Polling.docc */; };
+		2C8AEA972D21BD3000294B6C /* POLNetworkSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AEA8A2D21BD3000294B6C /* POLNetworkSession.m */; };
+		2C8AEA982D21BD3000294B6C /* POLPolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AEA8C2D21BD3000294B6C /* POLPolling.m */; };
+		2C8AEA992D21BD3000294B6C /* POLPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AEA8E2D21BD3000294B6C /* POLPresentationController.m */; };
+		2C8AEA9A2D21BD3000294B6C /* POLSurveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AEA902D21BD3000294B6C /* POLSurveyViewController.m */; };
+		2C8AEA9B2D21BD3000294B6C /* POLReward.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8AEA7D2D21BD3000294B6C /* POLReward.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C8AEA9C2D21BD3000294B6C /* POLSurvey.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8AEA7F2D21BD3000294B6C /* POLSurvey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C8AEA9D2D21BD3000294B6C /* POLSurvey+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8AEA812D21BD3000294B6C /* POLSurvey+Private.h */; };
+		2C8AEA9E2D21BD3000294B6C /* POLSurveyResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8AEA822D21BD3000294B6C /* POLSurveyResponse.h */; };
+		2C8AEA9F2D21BD3000294B6C /* POLTriggeredSurvey.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8AEA842D21BD3000294B6C /* POLTriggeredSurvey.h */; };
+		2C8AEAA02D21BD3000294B6C /* Polling.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8AEA872D21BD3000294B6C /* Polling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C8AEAA12D21BD3000294B6C /* POLNetworkSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8AEA892D21BD3000294B6C /* POLNetworkSession.h */; };
+		2C8AEAA22D21BD3000294B6C /* POLPolling.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8AEA8B2D21BD3000294B6C /* POLPolling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C8AEAA32D21BD3000294B6C /* POLPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8AEA8D2D21BD3000294B6C /* POLPresentationController.h */; };
+		2C8AEAA42D21BD3000294B6C /* POLSurveyViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8AEA8F2D21BD3000294B6C /* POLSurveyViewController.h */; };
+		2C8AEAF92D21CDBF00294B6C /* POLTriggeredSurveyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AEAF82D21CDBF00294B6C /* POLTriggeredSurveyController.m */; };
+		2C8AEAFA2D21CDBF00294B6C /* POLTriggeredSurveyController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8AEAF72D21CDBF00294B6C /* POLTriggeredSurveyController.h */; };
+		2C8AEAFD2D21CFA400294B6C /* POLStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AEAFC2D21CFA400294B6C /* POLStorage.m */; };
+		2C8AEAFE2D21CFA400294B6C /* POLStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8AEAFB2D21CFA400294B6C /* POLStorage.h */; };
+		2C8AEB322D21F20200294B6C /* POLPolling+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8AEB312D21F20200294B6C /* POLPolling+Private.h */; };
+		2C8AEB352D229B1B00294B6C /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AEB342D229B1B00294B6C /* NSDictionary+Additions.m */; };
+		2C8AEB362D229B1B00294B6C /* NSDictionary+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8AEB332D229B1B00294B6C /* NSDictionary+Additions.h */; };
+		2C8AEB392D2366DC00294B6C /* POLCompatibleSurveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AEB382D2366DC00294B6C /* POLCompatibleSurveyViewController.m */; };
+		2C8AEB3A2D2366DC00294B6C /* POLCompatibleSurveyViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8AEB372D2366DC00294B6C /* POLCompatibleSurveyViewController.h */; };
+		2C8AEB3E2D23698F00294B6C /* POLSurveyViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8AEB3B2D23698F00294B6C /* POLSurveyViewControllerDelegate.h */; };
 		2C9B66102D0B2B090060AF12 /* Polling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9B66052D0B2B090060AF12 /* Polling.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,31 +54,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C3ACAEC2D24806E00DBFCEB /* POLSurveyDialogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = POLSurveyDialogViewController.xib; sourceTree = "<group>"; };
+		2C6CF6402D24BC140074CC94 /* POLSurveyBottomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = POLSurveyBottomViewController.xib; sourceTree = "<group>"; };
+		2C6CF6892D2695830074CC94 /* POLSurveyCompletionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLSurveyCompletionController.h; sourceTree = "<group>"; };
+		2C6CF68A2D2695830074CC94 /* POLSurveyCompletionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLSurveyCompletionController.m; sourceTree = "<group>"; };
+		2C8AEA7D2D21BD3000294B6C /* POLReward.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLReward.h; sourceTree = "<group>"; };
+		2C8AEA7E2D21BD3000294B6C /* POLReward.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLReward.m; sourceTree = "<group>"; };
+		2C8AEA7F2D21BD3000294B6C /* POLSurvey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLSurvey.h; sourceTree = "<group>"; };
+		2C8AEA802D21BD3000294B6C /* POLSurvey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLSurvey.m; sourceTree = "<group>"; };
+		2C8AEA812D21BD3000294B6C /* POLSurvey+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "POLSurvey+Private.h"; sourceTree = "<group>"; };
+		2C8AEA822D21BD3000294B6C /* POLSurveyResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLSurveyResponse.h; sourceTree = "<group>"; };
+		2C8AEA832D21BD3000294B6C /* POLSurveyResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLSurveyResponse.m; sourceTree = "<group>"; };
+		2C8AEA842D21BD3000294B6C /* POLTriggeredSurvey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLTriggeredSurvey.h; sourceTree = "<group>"; };
+		2C8AEA852D21BD3000294B6C /* POLTriggeredSurvey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLTriggeredSurvey.m; sourceTree = "<group>"; };
+		2C8AEA872D21BD3000294B6C /* Polling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Polling.h; sourceTree = "<group>"; };
+		2C8AEA882D21BD3000294B6C /* Polling.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Polling.docc; sourceTree = "<group>"; };
+		2C8AEA892D21BD3000294B6C /* POLNetworkSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLNetworkSession.h; sourceTree = "<group>"; };
+		2C8AEA8A2D21BD3000294B6C /* POLNetworkSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLNetworkSession.m; sourceTree = "<group>"; };
+		2C8AEA8B2D21BD3000294B6C /* POLPolling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLPolling.h; sourceTree = "<group>"; };
+		2C8AEA8C2D21BD3000294B6C /* POLPolling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLPolling.m; sourceTree = "<group>"; };
+		2C8AEA8D2D21BD3000294B6C /* POLPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLPresentationController.h; sourceTree = "<group>"; };
+		2C8AEA8E2D21BD3000294B6C /* POLPresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLPresentationController.m; sourceTree = "<group>"; };
+		2C8AEA8F2D21BD3000294B6C /* POLSurveyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLSurveyViewController.h; sourceTree = "<group>"; };
+		2C8AEA902D21BD3000294B6C /* POLSurveyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLSurveyViewController.m; sourceTree = "<group>"; };
+		2C8AEAF72D21CDBF00294B6C /* POLTriggeredSurveyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLTriggeredSurveyController.h; sourceTree = "<group>"; };
+		2C8AEAF82D21CDBF00294B6C /* POLTriggeredSurveyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLTriggeredSurveyController.m; sourceTree = "<group>"; };
+		2C8AEAFB2D21CFA400294B6C /* POLStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLStorage.h; sourceTree = "<group>"; };
+		2C8AEAFC2D21CFA400294B6C /* POLStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLStorage.m; sourceTree = "<group>"; };
+		2C8AEB312D21F20200294B6C /* POLPolling+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "POLPolling+Private.h"; sourceTree = "<group>"; };
+		2C8AEB332D229B1B00294B6C /* NSDictionary+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Additions.h"; sourceTree = "<group>"; };
+		2C8AEB342D229B1B00294B6C /* NSDictionary+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Additions.m"; sourceTree = "<group>"; };
+		2C8AEB372D2366DC00294B6C /* POLCompatibleSurveyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLCompatibleSurveyViewController.h; sourceTree = "<group>"; };
+		2C8AEB382D2366DC00294B6C /* POLCompatibleSurveyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLCompatibleSurveyViewController.m; sourceTree = "<group>"; };
+		2C8AEB3B2D23698F00294B6C /* POLSurveyViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLSurveyViewControllerDelegate.h; sourceTree = "<group>"; };
 		2C9B66052D0B2B090060AF12 /* Polling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9B660F2D0B2B090060AF12 /* PollingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PollingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		2C9B66172D0B2B090060AF12 /* Exceptions for "Polling" folder in "Polling" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			privateHeaders = (
-				"Models/POLSurvey+Private.h",
-				POLNetworkSession.h,
-			);
-			publicHeaders = (
-				Models/POLReward.h,
-				Models/POLSurvey.h,
-				Polling.h,
-				POLPolling.h,
-			);
-			target = 2C9B66042D0B2B090060AF12 /* Polling */;
-		};
 		2C9B67942D0CCC310060AF12 /* Exceptions for "Configs" folder in "Polling" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				"Framework-Debug.xcconfig",
 				"Framework-Release.xcconfig",
 				Framework.xcconfig,
+				Local.xcconfig,
 				"UIKitApp-Debug.xcconfig",
 				"UIKitApp-Release.xcconfig",
 				UIKitApp.xcconfig,
@@ -55,14 +108,6 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		2C9B66072D0B2B090060AF12 /* Polling */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				2C9B66172D0B2B090060AF12 /* Exceptions for "Polling" folder in "Polling" target */,
-			);
-			path = Polling;
-			sourceTree = "<group>";
-		};
 		2C9B66132D0B2B090060AF12 /* PollingTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = PollingTests;
@@ -98,10 +143,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C8AEA862D21BD3000294B6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C8AEA7D2D21BD3000294B6C /* POLReward.h */,
+				2C8AEA7E2D21BD3000294B6C /* POLReward.m */,
+				2C8AEA7F2D21BD3000294B6C /* POLSurvey.h */,
+				2C8AEA802D21BD3000294B6C /* POLSurvey.m */,
+				2C8AEA812D21BD3000294B6C /* POLSurvey+Private.h */,
+				2C8AEA822D21BD3000294B6C /* POLSurveyResponse.h */,
+				2C8AEA832D21BD3000294B6C /* POLSurveyResponse.m */,
+				2C8AEA842D21BD3000294B6C /* POLTriggeredSurvey.h */,
+				2C8AEA852D21BD3000294B6C /* POLTriggeredSurvey.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C8AEA912D21BD3000294B6C /* Polling */ = {
+			isa = PBXGroup;
+			children = (
+				2C8AEA862D21BD3000294B6C /* Models */,
+				2C8AEA872D21BD3000294B6C /* Polling.h */,
+				2C8AEA882D21BD3000294B6C /* Polling.docc */,
+				2C8AEAA52D21BD3F00294B6C /* Internal */,
+				2C8AEA8B2D21BD3000294B6C /* POLPolling.h */,
+				2C8AEB312D21F20200294B6C /* POLPolling+Private.h */,
+				2C8AEA8C2D21BD3000294B6C /* POLPolling.m */,
+			);
+			path = Polling;
+			sourceTree = "<group>";
+		};
+		2C8AEAA52D21BD3F00294B6C /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				2C8AEA892D21BD3000294B6C /* POLNetworkSession.h */,
+				2C8AEA8A2D21BD3000294B6C /* POLNetworkSession.m */,
+				2C6CF6892D2695830074CC94 /* POLSurveyCompletionController.h */,
+				2C6CF68A2D2695830074CC94 /* POLSurveyCompletionController.m */,
+				2C8AEA8D2D21BD3000294B6C /* POLPresentationController.h */,
+				2C8AEA8E2D21BD3000294B6C /* POLPresentationController.m */,
+				2C8AEA8F2D21BD3000294B6C /* POLSurveyViewController.h */,
+				2C8AEA902D21BD3000294B6C /* POLSurveyViewController.m */,
+				2C8AEB372D2366DC00294B6C /* POLCompatibleSurveyViewController.h */,
+				2C8AEB382D2366DC00294B6C /* POLCompatibleSurveyViewController.m */,
+				2C3ACAEC2D24806E00DBFCEB /* POLSurveyDialogViewController.xib */,
+				2C6CF6402D24BC140074CC94 /* POLSurveyBottomViewController.xib */,
+				2C8AEB3B2D23698F00294B6C /* POLSurveyViewControllerDelegate.h */,
+				2C8AEAF72D21CDBF00294B6C /* POLTriggeredSurveyController.h */,
+				2C8AEAF82D21CDBF00294B6C /* POLTriggeredSurveyController.m */,
+				2C8AEAFB2D21CFA400294B6C /* POLStorage.h */,
+				2C8AEAFC2D21CFA400294B6C /* POLStorage.m */,
+				2C8AEB332D229B1B00294B6C /* NSDictionary+Additions.h */,
+				2C8AEB342D229B1B00294B6C /* NSDictionary+Additions.m */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
 		2C9B65FB2D0B2B090060AF12 = {
 			isa = PBXGroup;
 			children = (
-				2C9B66072D0B2B090060AF12 /* Polling */,
+				2C8AEA912D21BD3000294B6C /* Polling */,
 				2C9B66132D0B2B090060AF12 /* PollingTests */,
 				2C9B66BE2D0C71730060AF12 /* Configs */,
 				2C9B66062D0B2B090060AF12 /* Products */,
@@ -124,6 +225,23 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8AEB322D21F20200294B6C /* POLPolling+Private.h in Headers */,
+				2C8AEA9B2D21BD3000294B6C /* POLReward.h in Headers */,
+				2C8AEA9C2D21BD3000294B6C /* POLSurvey.h in Headers */,
+				2C8AEAFE2D21CFA400294B6C /* POLStorage.h in Headers */,
+				2C8AEB3A2D2366DC00294B6C /* POLCompatibleSurveyViewController.h in Headers */,
+				2C6CF68B2D2695830074CC94 /* POLSurveyCompletionController.h in Headers */,
+				2C8AEA9D2D21BD3000294B6C /* POLSurvey+Private.h in Headers */,
+				2C8AEB362D229B1B00294B6C /* NSDictionary+Additions.h in Headers */,
+				2C8AEA9E2D21BD3000294B6C /* POLSurveyResponse.h in Headers */,
+				2C8AEAFA2D21CDBF00294B6C /* POLTriggeredSurveyController.h in Headers */,
+				2C8AEA9F2D21BD3000294B6C /* POLTriggeredSurvey.h in Headers */,
+				2C8AEAA02D21BD3000294B6C /* Polling.h in Headers */,
+				2C8AEAA12D21BD3000294B6C /* POLNetworkSession.h in Headers */,
+				2C8AEAA22D21BD3000294B6C /* POLPolling.h in Headers */,
+				2C8AEAA32D21BD3000294B6C /* POLPresentationController.h in Headers */,
+				2C8AEB3E2D23698F00294B6C /* POLSurveyViewControllerDelegate.h in Headers */,
+				2C8AEAA42D21BD3000294B6C /* POLSurveyViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +262,6 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				2C9B66072D0B2B090060AF12 /* Polling */,
 				2C9B66BE2D0C71730060AF12 /* Configs */,
 			);
 			name = Polling;
@@ -186,7 +303,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				CLASSPREFIX = POL;
 				LastUpgradeCheck = 1610;
-				ORGANIZATIONNAME = "";
+				ORGANIZATIONNAME = Polling.com;
 				TargetAttributes = {
 					2C9B66042D0B2B090060AF12 = {
 						CreatedOnToolsVersion = 16.1;
@@ -221,6 +338,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3ACAED2D24806E00DBFCEB /* POLSurveyDialogViewController.xib in Resources */,
+				2C6CF6422D24BC140074CC94 /* POLSurveyBottomViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +357,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8AEA922D21BD3000294B6C /* POLReward.m in Sources */,
+				2C8AEA932D21BD3000294B6C /* POLSurvey.m in Sources */,
+				2C8AEA942D21BD3000294B6C /* POLSurveyResponse.m in Sources */,
+				2C8AEAF92D21CDBF00294B6C /* POLTriggeredSurveyController.m in Sources */,
+				2C8AEB392D2366DC00294B6C /* POLCompatibleSurveyViewController.m in Sources */,
+				2C8AEB352D229B1B00294B6C /* NSDictionary+Additions.m in Sources */,
+				2C8AEA952D21BD3000294B6C /* POLTriggeredSurvey.m in Sources */,
+				2C8AEA962D21BD3000294B6C /* Polling.docc in Sources */,
+				2C8AEA972D21BD3000294B6C /* POLNetworkSession.m in Sources */,
+				2C8AEA982D21BD3000294B6C /* POLPolling.m in Sources */,
+				2C8AEAFD2D21CFA400294B6C /* POLStorage.m in Sources */,
+				2C6CF68C2D2695830074CC94 /* POLSurveyCompletionController.m in Sources */,
+				2C8AEA992D21BD3000294B6C /* POLPresentationController.m in Sources */,
+				2C8AEA9A2D21BD3000294B6C /* POLSurveyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,9 +397,7 @@
 			baseConfigurationReferenceAnchor = 2C9B66BE2D0C71730060AF12 /* Configs */;
 			baseConfigurationReferenceRelativePath = "Framework-Debug.xcconfig";
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A7JNPZ3RZ7;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -298,9 +429,7 @@
 			baseConfigurationReferenceAnchor = 2C9B66BE2D0C71730060AF12 /* Configs */;
 			baseConfigurationReferenceRelativePath = "Framework-Release.xcconfig";
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A7JNPZ3RZ7;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

@@ -12,6 +12,14 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *showSurveyButton;
 
+@property (weak, nonatomic) IBOutlet UITextField *surveyUUID;
+@property (weak, nonatomic) IBOutlet UIButton *showDialogButton;
+@property (weak, nonatomic) IBOutlet UIButton *showBottomButton;
+
+@property (weak, nonatomic) IBOutlet UITextField *eventName;
+@property (weak, nonatomic) IBOutlet UITextField *eventValue;
+@property (weak, nonatomic) IBOutlet UIButton *logEventButton;
+
 @end
 
 @implementation ViewController {
@@ -20,60 +28,67 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	_polling = [[POLPolling alloc] initWithCustomerID:@"ios-sdk-test-customer_00000"
-				APIKey:@"H3uZsrv6B2qyRXGePLxQ9U8g7vilWFTjIhZO"];
+
+	//_polling = [[POLPolling alloc] initWithCustomerID:@"ios-sdk-test-customer_00000"
+	//			APIKey:@"H3uZsrv6B2qyRXGePLxQ9U8g7vilWFTjIhZO"];
+
+	//_polling = POLPolling.polling;
+	//_polling.customerID = @"ios-sdk-test-customer_00000";
+	//_polling.apiKey = @"H3uZsrv6B2qyRXGePLxQ9U8g7vilWFTjIhZO";
+
+	_polling = POLPolling.polling;
+	[_polling initializeWithCustomerID:@"ios-sdk-test-customer_00000" APIKey:@"H3uZsrv6B2qyRXGePLxQ9U8g7vilWFTjIhZO"];
 	_polling.delegate = self;
+	_polling.disableCheckingForAvailableSurveys = YES;
+}
+
+- (IBAction)showDialog:(id)sender
+{
+	NSLog(@"%s", __func__);
+	[_polling setViewType:POLViewTypeDialog];
+	[_polling showSurvey:self.surveyUUID.text];
+}
+
+- (IBAction)showBottom:(id)sender
+{
+	NSLog(@"%s", __func__);
+	[_polling setViewType:POLViewTypeBottom];
+	[_polling showSurvey:self.surveyUUID.text];
+}
+
+- (IBAction)logEvent:(id)sender
+{
+	NSLog(@"%s", __func__);
+
+	NSString *event = self.eventName.text;
+	NSString *value = self.eventValue.text;
+
+	[_polling logEvent:event value:value];
 }
 
 #pragma mark - Polling Delegate Methods
 
-- (void)surveyDidOpen:(POLSurvey *)survey
+- (void)pollingOnSuccess:(NSString *)response
 {
-	NSLog(@"%s", __func__);
+	NSLog(@"%s response=%@", __func__, response);
 }
 
-- (void)surveyDidDismiss:(POLSurvey *)survey
+- (void)pollingOnFailure:(NSString *)error
 {
-	NSLog(@"%s", __func__);
+	NSLog(@"%s error=%@", __func__, error);
 }
 
-- (void)surveyDidPostpone:(POLSurvey *)survey
+- (void)pollingOnReward:(POLReward *)reward
 {
-	NSLog(@"%s", __func__);
+	NSLog(@"%s reward=%@", __func__, reward);
 }
 
-- (void)surveyDidComplete:(POLSurvey *)survey
-{
-	NSLog(@"%s", __func__);
-}
-
-- (void)surveyDidSucceed:(POLSurvey *)survey
-{
-	NSLog(@"%s", __func__);
-}
-
-- (void)surveyDidFail:(POLSurvey *)survey
+- (void)pollingOnSurveyAvailable
 {
 	NSLog(@"%s", __func__);
 }
 
 
-- (void)survey:(POLSurvey *)survey didReward:(POLReward *)reward
-{
-	NSLog(@"%s", __func__);
-}
 
-
-- (void)pollingSurveyDidBecomeAvailable
-{
-	NSLog(@"%s", __func__);
-}
-
-- (IBAction)showSurvey:(id)sender
-{
-	NSLog(@"%s", __func__);
-
-	[_polling presentSurvey:POLSurvey.new];
-}
 
 @end
