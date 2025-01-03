@@ -86,9 +86,10 @@ static const NSTimeInterval POLTriggeredSurveyPostponeInterval = 60 * 30; // 30 
 - (void)postpone
 {
 	NSTimeInterval delay = (NSTimeInterval)_delaySeconds + POLTriggeredSurveyPostponeInterval;
-	NSLog(@"previous delay date=%@", _delayedDate);
+	NSLog(@"previous delay seconds=%@, date=%@", @(_delaySeconds), _delayedDate);
+	_delaySeconds = delay;
 	_delayedDate = [_delayedDate dateByAddingTimeInterval:delay];
-	NSLog(@"new delay date=%@", _delayedDate);
+	NSLog(@"new delay seconds=%@, date=%@", @(_delaySeconds), _delayedDate);
 }
 
 - (BOOL)isEqual:(id)object

@@ -19,11 +19,11 @@
 #import "POLReward.h"
 #import "POLTriggeredSurvey.h"
 
-#if DEBUG
-static const NSTimeInterval POLPollingPollRateInterval = 5;       // 1 seconds
-#else
+//#if DEBUG
+//static const NSTimeInterval POLPollingPollRateInterval = 5;       // 5 seconds
+//#else
 static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
-#endif
+//#endif
 
 @interface POLPolling () <POLNetworkSessionDelegate, POLSurveyViewControllerDelegate, UIViewControllerTransitioningDelegate>
 
@@ -188,8 +188,8 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 - (void)networkSessionDidUpdateTriggeredSurveys:(NSArray<POLTriggeredSurvey *> *)triggeredSurvey
 {
 	NSLog(@"%s %@", __func__, triggeredSurvey);
-	if (triggeredSurvey.count > 0)
-		[_triggeredSurveyController triggeredSurveysDidUpdate:triggeredSurvey];
+	//if (triggeredSurvey.count > 0)
+	[_triggeredSurveyController triggeredSurveysDidUpdate:triggeredSurvey];
 }
 
 - (void)networkSessionDidFetchSurvey:(POLSurvey *)survey

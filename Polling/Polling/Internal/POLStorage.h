@@ -18,7 +18,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (id)objectForKeyedSubscript:(NSString *)key;
 - (void)setObject:(id)obj forKeyedSubscript:(id<NSCopying>)key;
 
+- (void)read;
+- (void)write;
+
 @property NSArray<POLTriggeredSurvey *> *triggeredSurveys;
+- (void)removeTriggeredSurvey:(POLTriggeredSurvey *)triggeredSurvey;
+- (void)modifiedTriggeredSurvey:(POLTriggeredSurvey *)triggeredSurvey;
 
 @end
 

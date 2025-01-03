@@ -6,6 +6,8 @@
  */
 
 #import "POLStorage.h"
+#import "POLSurvey.h"
+#import "POLSurvey+Private.h"
 #import "POLTriggeredSurvey.h"
 
 NSString * const POLStorageFilename = @"com.polling.PollingUserData.plist";
@@ -24,6 +26,7 @@ NSString * const POLStorageTriggeredSurveysKey = @"polling:triggered_surveys";
 	if (!(self = [super init]))
 		return nil;
 	_storageDict = NSMutableDictionary.new;
+	NSLog(@"POLStorage location: %@", self.storageURL);
 	return self;
 }
 
@@ -52,7 +55,6 @@ NSString * const POLStorageTriggeredSurveysKey = @"polling:triggered_surveys";
 			// TODO: handle error
 		}
 		storageURL = [url URLByAppendingPathComponent:POLStorageFilename];
-		NSLog(@"polling storage: %@", storageURL);
 	});
 	return storageURL;
 }
@@ -67,18 +69,32 @@ NSString * const POLStorageTriggeredSurveysKey = @"polling:triggered_surveys";
 
 }
 
-- (NSArray<POLTriggeredSurvey *> *)triggeredSurveys
+- (void)read
 {
+	NSLog(@"POLStorage reading: %@", POLStorageFilename);
 	NSMutableDictionary *savedSorageDict = [NSMutableDictionary dictionaryWithContentsOfURL:self.storageURL];
 	if (savedSorageDict)
 		_storageDict = savedSorageDict;
+}
 
-	//NSLog(@"read %@ => %@", self.storageURL, _storageDict);
+- (void)write
+{
+	NSError *err = nil;
+
+	NSLog(@"POLStorage writing: %@", POLStorageFilename);
+	[_storageDict writeToURL:self.storageURL error:&err];
+	if (err) {
+		NSLog(@"Error: %s - %@", __func__, err);
+	}
+}
+
+- (NSArray<POLTriggeredSurvey *> *)triggeredSurveys
+{
 	NSArray *storedTriggeredSurveys = _storageDict[POLStorageTriggeredSurveysKey];
 	if (!storedTriggeredSurveys)
 		return @[];
 
-	NSMutableArray<POLTriggeredSurvey *> *triggeredSurveys = [NSMutableArray<POLTriggeredSurvey *> new];
+	NSMutableArray<POLTriggeredSurvey *> *triggeredSurveys = NSMutableArray.new;
 	for (NSDictionary *dict in storedTriggeredSurveys) {
 		[triggeredSurveys addObject:[POLTriggeredSurvey triggeredSurveyFromDictionary:dict]];
 	}
@@ -88,21 +104,29 @@ NSString * const POLStorageTriggeredSurveysKey = @"polling:triggered_surveys";
 
 - (void)setTriggeredSurveys:(NSArray<POLTriggeredSurvey *> *)triggeredSurveys
 {
-	NSError *err = nil;
-
 	NSMutableArray<NSDictionary<NSString *, id> *> *newTriggeredSurveys = NSMutableArray.new;
 	for (POLTriggeredSurvey *triggeredSurvey in triggeredSurveys) {
 		NSDictionary *dict = triggeredSurvey.dictionaryRepresentation;
 		[newTriggeredSurveys addObject:dict];
 	}
-
 	_storageDict[POLStorageTriggeredSurveysKey] = newTriggeredSurveys;
-	//NSLog(@"write %@ => %@", self.storageURL, _storageDict);
+}
 
-	[_storageDict writeToURL:self.storageURL error:&err];
-	if (err) {
-		NSLog(@"Error: %s - %@", __func__, err);
-	}
+- (void)removeTriggeredSurvey:(POLTriggeredSurvey *)triggeredSurvey
+{
+	/* this conveniently removes duplicates */
+	NSArray<POLTriggeredSurvey *> *triggeredSurveys = self.triggeredSurveys;
+	NSString *uuid = triggeredSurvey.survey.UUID;
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"survey.UUID != %@", uuid];
+	triggeredSurveys = [triggeredSurveys filteredArrayUsingPredicate:predicate];
+	self.triggeredSurveys = triggeredSurveys;
+}
+
+- (void)modifiedTriggeredSurvey:(POLTriggeredSurvey *)triggeredSurvey
+{
+	/* since equality is defined as t1.survey.UUID == t2.survey.UUID */
+	[self removeTriggeredSurvey:triggeredSurvey];
+	self.triggeredSurveys = [self.triggeredSurveys arrayByAddingObject:triggeredSurvey];
 }
 
 @end
