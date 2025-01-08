@@ -7,6 +7,8 @@
 
 #import "POLSurvey.h"
 #import "POLSurvey+Private.h"
+#import "POLReward.h"
+#import "POLReward+Private.h"
 #import "POLNetworkSession.h"
 #import "POLPolling.h"
 #import "NSDictionary+Additions.h"
@@ -19,7 +21,8 @@ NSString * const POLSurveyViewEndpoint = @"https://app.polling.com/sdk/survey";
 NSString * const POLSurveyDefaultEmbedViewEndpoint = @"https://app.polling.com/embed/";
 #endif
 
-NSString * const POLSurveyStatusActive = @"active";
+NSString * const POLSurveyStatusAvailable = @"available";
+NSString * const POLSurveyStatusStarted = @"started";
 NSString * const POLSurveyStatusCompleted = @"completed";
 
 @implementation POLSurvey
@@ -31,8 +34,13 @@ NSString * const POLSurveyStatusCompleted = @"completed";
 
 	_name = dict[@"name"];
 	_questionCount = [dict[@"questionCount"] unsignedIntegerValue];
-	_reward = nil;
 	_UUID = dict[@"UUID"];
+	_userSurveyStatus = dict[@"userSurveyStatus"];
+	_completedAt = dict[@"completedAt"];
+
+	NSDictionary *rewardDict = dict[@"reward"];
+	if (rewardDict)
+		_reward = [POLReward rewardFromDictionary:rewardDict];
 
 	return self;
 }
@@ -55,9 +63,13 @@ NSString * const POLSurveyStatusCompleted = @"completed";
 
 	_name = dict[@"name"];
 	_questionCount = [dict[@"question_count"] unsignedIntegerValue];
-	_reward = nil;
 	_UUID = dict[@"uuid"];
 	_userSurveyStatus = dict[@"user_survey_status"];
+	_completedAt = dict[@"completed_at"];
+
+	NSDictionary *rewardDict = dict[@"reward"];
+	if (rewardDict)
+		_reward = [POLReward rewardFromJSONDictionary:rewardDict];
 
 	return self;
 }
@@ -111,16 +123,17 @@ NSString * const POLSurveyStatusCompleted = @"completed";
 
 - (BOOL)isAvailable
 {
-	if (!_userSurveyStatus)
-		return NO;
-	return [_userSurveyStatus isEqual:POLSurveyStatusActive];
+	return [_userSurveyStatus isEqualToString:POLSurveyStatusAvailable];
+}
+
+- (BOOL)isStarted
+{
+	return [_userSurveyStatus isEqualToString:POLSurveyStatusStarted];
 }
 
 - (BOOL)isCompleted
 {
-	if (!_userSurveyStatus)
-		return NO;
-	return [_userSurveyStatus isEqual:POLSurveyStatusCompleted];
+	return [_userSurveyStatus isEqualToString:POLSurveyStatusCompleted];
 }
 
 - (BOOL)isEqual:(id)object
@@ -142,24 +155,36 @@ NSString * const POLSurveyStatusCompleted = @"completed";
 	return @{
 		@"UUID": self.UUID,
 		@"name": self.name,
-		/*@"userSurveyStatus": self.userSurveyStatus ? self.userSurveyStatus : @"",*/
+		@"userSurveyStatus": self.userSurveyStatus ? self.userSurveyStatus : @"",
 	};
 }
 
 - (NSString *)JSONRepresentation
 {
-	/* TODO: save the remote response and return it here or serialize
-	 * the current state and return */
-	return @"{}";
+	NSDictionary *dict = @{
+		@"uuid": self.UUID,
+		@"name": self.name,
+		@"reward": @{
+			@"reward_name": self.reward.name,
+			@"reward_amount": self.reward.amount,
+		},
+		@"question_count": @(self.questionCount),
+		@"user_survey_status": self.userSurveyStatus,
+		@"completed_at": self.completedAt,
+
+	};
+	NSData *data = [NSJSONSerialization dataWithJSONObject:dict options:0 error:nil];
+	return [NSString.alloc initWithData:data encoding:NSUTF8StringEncoding];
 }
 
 - (NSString *)description
 {
-	return [NSString stringWithFormat:@"<%@:%p name='%@', questions=%@>",
+	return [NSString stringWithFormat:@"<%@:%p name='%@', UUID=%@ status=%@>",
 			NSStringFromClass(self.class),
 			self,
 			self.name,
-			@(self.questionCount)
+			self.UUID,
+			self.userSurveyStatus
 	];
 }
 

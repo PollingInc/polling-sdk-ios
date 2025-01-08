@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, readwrite) POLReward *reward;
 @property (readwrite) NSUInteger questionCount;
 
+@property (readwrite) BOOL embedViewRequested;
+
 + (instancetype)surveyFromDictionary:(NSDictionary *)dict;
 + (instancetype)surveyFromJSONDictionary:(NSDictionary *)dict;
 

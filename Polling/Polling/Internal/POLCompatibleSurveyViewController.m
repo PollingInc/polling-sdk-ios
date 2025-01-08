@@ -8,6 +8,7 @@
 #import "POLCompatibleSurveyViewController.h"
 #import "POLSurveyViewController.h"
 #import "POLSurvey.h"
+#import "POLSurvey+Private.h"
 
 #import <WebKit/WebKit.h>
 
@@ -104,11 +105,9 @@
 		constant:0
 	].active = YES;
 
-	NSURL *url = _survey.URL;
-	//NSURL *url = [NSURL URLWithString:@"https://polling.com"];
-	//NSURL *url = [NSURL URLWithString:@"https://apple.com"];
-
+	NSURL *url = _survey.embedViewRequested ? _survey.embedViewURL : _survey.URL;
 	NSLog(@"loading survey in webview %@", url);
+
 	NSURLRequest *req = [NSURLRequest requestWithURL:url];
 	[_webView loadRequest:req];
 

@@ -13,9 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol POLPollingDelegate;
 
 typedef NS_ENUM(NSInteger, POLViewType) {
-	POLViewTypeNone,
-	POLViewTypeDialog,
-	POLViewTypeBottom,
+	POLViewTypeNone = 0,
+	POLViewTypeDialog = 1,
+	POLViewTypeBottom = 2,
 };
 
 @interface POLPolling : NSObject

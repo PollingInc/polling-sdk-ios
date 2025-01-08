@@ -10,7 +10,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface POLReward : NSObject
-
+@property (readonly) NSString *name;
+@property (readonly) NSString *amount;
+@property (readonly) NSString *completeExtraJSON;
 @end
 
 NS_ASSUME_NONNULL_END

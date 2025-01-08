@@ -116,6 +116,10 @@ typedef NS_ENUM(NSInteger, POLSurveyDataTaskType) {
 	NSDictionary *payload = nil;
 	NSError *error = nil;
 
+#if DEBUG_RAW_JSON
+	NSLog(@"Raw JSON: %@", [NSString.alloc initWithData:data encoding:NSUTF8StringEncoding]);
+#endif
+
 	payload = [NSJSONSerialization
 		JSONObjectWithData:data
 		options:0
@@ -171,7 +175,9 @@ typedef NS_ENUM(NSInteger, POLSurveyDataTaskType) {
 	NSArray *payloadData = nil;
 	NSError *error = nil;
 
-	//NSLog(@"available surveys %@", payload);
+#if DEBUG_JSON_PAYLOADS
+	NSLog(@"Available surveys: %@", payload);
+#endif
 
 	// payload expect NSDictionary
 	if (![payload isKindOfClass:NSDictionary.class]) {
@@ -211,7 +217,9 @@ typedef NS_ENUM(NSInteger, POLSurveyDataTaskType) {
 	NSArray *payloadData = nil;
 	NSError *error = nil;
 
-	//NSLog(@"triggered surveys %@", payload);
+#if DEBUG_JSON_PAYLOADS
+	NSLog(@"Triggered surveys: %@", payload);
+#endif
 
 	// payload expect NSDictionary
 	if (![payload isKindOfClass:NSDictionary.class]) {
@@ -242,10 +250,12 @@ typedef NS_ENUM(NSInteger, POLSurveyDataTaskType) {
 - (POLSurvey *)surveyForDataTask:(NSURLSessionDataTask *)dataTask
 {
 	NSDictionary *payload = [self topLevelDictionaryForDataTask:dataTask];
-	NSArray *payloadData = nil;
+	NSDictionary *payloadData = nil;
 	NSError *error = nil;
 
-	//NSLog(@"survey %@", payload);
+#if DEBUG_JSON_PAYLOADS
+	NSLog(@"Survey: %@", payload);
+#endif
 
 	// payload expect NSDictionary
 	if (![payload isKindOfClass:NSDictionary.class]) {
@@ -257,28 +267,45 @@ typedef NS_ENUM(NSInteger, POLSurveyDataTaskType) {
 	if (payload.count == 0)
 		return nil;
 
-	// payload.data expect NSArray
+	// payload.data expect NSDictionary
 	if (!(payloadData = payload[@"data"])) {
 		error = [NSError errorWithDomain:@"Data" code:1 userInfo:nil];
 		NSLog(@"Unexpected JSON payload: %s - %@", __func__, error);
 		return nil;
 	}
 
-	if (payloadData.count == 0)
-		return nil;
-
-	NSDictionary *surveyDict = payloadData[0];
-	POLSurvey *survey = [POLSurvey surveyFromJSONDictionary:surveyDict];
-
-	return survey;
+	return [POLSurvey surveyFromJSONDictionary:payloadData];
 }
 
-#if 0
 - (POLSurvey *)surveyForData:(NSData *)data
 {
+	NSDictionary *payload = [self topLevelDictionaryForData:data];
+	NSDictionary *payloadData = nil;
+	NSError *error = nil;
 
-}
+#if DEBUG_JSON_PAYLOADS
+	NSLog(@"Survey: %@", payload);
 #endif
+
+	// payload expect NSDictionary
+	if (![payload isKindOfClass:NSDictionary.class]) {
+		error = [NSError errorWithDomain:@"Data" code:0 userInfo:nil];
+		NSLog(@"Unexpected JSON payload: %s - %@", __func__, error);
+		return nil;
+	}
+
+	if (payload.count == 0)
+		return nil;
+
+	// payload.data expect NSDictionary
+	if (!(payloadData = payload[@"data"])) {
+		error = [NSError errorWithDomain:@"Data" code:1 userInfo:nil];
+		NSLog(@"Unexpected JSON payload: %s - %@", __func__, error);
+		return nil;
+	}
+
+	return [POLSurvey surveyFromJSONDictionary:payloadData];
+}
 
 #pragma mark - Surveys
 
@@ -330,7 +357,7 @@ typedef NS_ENUM(NSInteger, POLSurveyDataTaskType) {
 				NSLog(@"Error: %s - %@", __func__, @"failed to begin survey");
 				return;
 			}
-			NSArray<POLSurvey *> * surveys = [self surveysForData:data];
+			NSArray<POLSurvey *> * surveys = @[[self surveyForData:data]];
 			[POLPolling.polling.openedSurveys addObjectsFromArray:surveys];
 		}];
 		break;
@@ -347,7 +374,7 @@ typedef NS_ENUM(NSInteger, POLSurveyDataTaskType) {
 				NSLog(@"Error: %s - %@", __func__, @"failed to complete survey");
 				return;
 			}
-			NSArray<POLSurvey *> * surveys = [self surveysForData:data];
+			NSArray<POLSurvey *> * surveys = @[[self surveyForData:data]];
 			for (POLSurvey *s in surveys)
 				if ([s isEqual:survey])
 					[self.delegate networkSessionDidCompleteSurvey:survey];

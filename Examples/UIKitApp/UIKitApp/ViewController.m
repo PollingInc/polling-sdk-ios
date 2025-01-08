@@ -36,8 +36,10 @@
 	//_polling.customerID = @"ios-sdk-test-customer_00000";
 	//_polling.apiKey = @"H3uZsrv6B2qyRXGePLxQ9U8g7vilWFTjIhZO";
 
+	NSString *customerID = [NSString stringWithFormat:@"ios-customer_%@", @(NSDate.date.timeIntervalSinceReferenceDate)];
+
 	_polling = POLPolling.polling;
-	[_polling initializeWithCustomerID:@"ios-sdk-test-customer_00000" APIKey:@"H3uZsrv6B2qyRXGePLxQ9U8g7vilWFTjIhZO"];
+	[_polling initializeWithCustomerID:customerID APIKey:@"H3uZsrv6B2qyRXGePLxQ9U8g7vilWFTjIhZO"];
 	_polling.delegate = self;
 	_polling.disableCheckingForAvailableSurveys = YES;
 }

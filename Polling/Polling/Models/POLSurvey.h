@@ -25,9 +25,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) NSString *userSurveyStatus;
 
 @property (readonly,getter=isAvailable) BOOL available;
+@property (readonly,getter=isStarted) BOOL started;
 @property (readonly,getter=isCompleted) BOOL completed;
 
-@property (readonly) NSDate *completedAt;
+@property (readonly) NSString *completedAt;
+@property (readonly) NSDate *completedDate;
 
 - (BOOL)isEqualToSurvey:(POLSurvey *)otherSurvey;
 

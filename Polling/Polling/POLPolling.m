@@ -203,6 +203,8 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 
 - (void)networkSessionDidCompleteSurvey:(POLSurvey *)survey
 {
+	NSLog(@"%s %@", __func__, survey);
+
 	if (!survey.isCompleted) {
 		[_triggeredSurveyController postponeSurvey:survey];
 		return;
@@ -286,7 +288,10 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 
 - (void)presentEmbed
 {
-	/* TODO: use the embed URL, but the completion URL should be okay */
+	if (!_currentSurvey)
+		return;
+	
+	_currentSurvey.embedViewRequested = YES;
 	[self presentSurveyInternal:_currentSurvey];
 }
 

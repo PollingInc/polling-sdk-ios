@@ -5,5 +5,8 @@ DEFINES_MODULE = NO
 //MODULEMAP_FILE = $(SRCROOT)/$(PRODUCT_MODULE_NAME)/module.modulemap
 //MODULEMAP_PRIVATE_FILE = $(SRCROOT)/$(PRODUCT_MODULE_NAME)/module.private.modulemap
 
+CODE_SIGN_IDENTITY =
+
+
 // Conditional include for local overrides
 #include? "Local.xcconfig"
