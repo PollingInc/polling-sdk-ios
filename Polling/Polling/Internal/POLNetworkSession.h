@@ -32,7 +32,7 @@ FOUNDATION_EXTERN NSString * const POLNetworkSessionEventAPIEndpoint;
 - (void)fetchSurvey:(POLSurvey *)survey;
 - (void)fetchSurveyWithUUID:(NSString *)uuid;
 
-- (void)preCompleteSurvey:(POLSurvey *)survey;
+- (void)startSurvey:(POLSurvey *)survey;
 - (void)completeSurvey:(POLSurvey *)survey;
 
 - (void)postEvent:(NSString *)eventName withValue:(NSString *)eventValue;

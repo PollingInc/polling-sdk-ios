@@ -6,6 +6,7 @@
  */
 
 #import "POLStorage.h"
+#import "POLPolling+Private.h"
 #import "POLSurvey.h"
 #import "POLSurvey+Private.h"
 #import "POLTriggeredSurvey.h"
@@ -26,7 +27,7 @@ NSString * const POLStorageTriggeredSurveysKey = @"polling:triggered_surveys";
 	if (!(self = [super init]))
 		return nil;
 	_storageDict = NSMutableDictionary.new;
-	NSLog(@"POLStorage location: %@", self.storageURL);
+	POLLogInfo("POLStorage location: %@", self.storageURL);
 	return self;
 }
 
@@ -51,8 +52,9 @@ NSString * const POLStorageTriggeredSurveysKey = @"polling:triggered_surveys";
 			inDomain:NSUserDomainMask appropriateForURL:nil
 			create:YES error:&err];
 		if (err) {
-			NSLog(@"Error: %@", err);
-			// TODO: handle error
+			POLError *pErr = POLErrorWithCodeUnderlyingError(
+				POLStorageApplicationSupportDirectoryUnavailableError, err);
+			POLLogError("Application Support directory unavailable: %@", pErr);
 		}
 		storageURL = [url URLByAppendingPathComponent:POLStorageFilename];
 	});
@@ -71,7 +73,7 @@ NSString * const POLStorageTriggeredSurveysKey = @"polling:triggered_surveys";
 
 - (void)read
 {
-	NSLog(@"POLStorage reading: %@", POLStorageFilename);
+	POLLogTrace("POLStorage reading: %@", POLStorageFilename);
 	NSMutableDictionary *savedSorageDict = [NSMutableDictionary dictionaryWithContentsOfURL:self.storageURL];
 	if (savedSorageDict)
 		_storageDict = savedSorageDict;
@@ -79,12 +81,15 @@ NSString * const POLStorageTriggeredSurveysKey = @"polling:triggered_surveys";
 
 - (void)write
 {
+	POLLogTrace("POLStorage writing: %@", POLStorageFilename);
 	NSError *err = nil;
+	POLError *pErr = nil;
 
-	NSLog(@"POLStorage writing: %@", POLStorageFilename);
 	[_storageDict writeToURL:self.storageURL error:&err];
 	if (err) {
-		NSLog(@"Error: %s - %@", __func__, err);
+		pErr = POLErrorWithCodeUnderlyingError(POLStorageWriteFailedError, err);
+		POLLogError("Writing %@ failed with error=%@", POLStorageFilename, pErr);
+		return;
 	}
 }
 

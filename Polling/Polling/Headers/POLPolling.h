@@ -16,8 +16,9 @@ typedef NS_ENUM(NSInteger, POLViewType) {
 	POLViewTypeNone = 0,
 	POLViewTypeDialog = 1,
 	POLViewTypeBottom = 2,
-};
+} NS_SWIFT_NAME(Polling.ViewType);
 
+NS_SWIFT_NAME(Polling)
 @interface POLPolling : NSObject
 
 /* ========================================================================= */
@@ -57,7 +58,7 @@ typedef NS_ENUM(NSInteger, POLViewType) {
 
 @end
 
-
+NS_SWIFT_NAME(PollingDelegate)
 @protocol POLPollingDelegate <NSObject>
 
 @optional

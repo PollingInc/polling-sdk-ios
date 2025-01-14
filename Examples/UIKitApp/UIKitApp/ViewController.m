@@ -10,11 +10,11 @@
 
 @interface ViewController () <POLPollingDelegate>
 
-@property (weak, nonatomic) IBOutlet UIButton *showSurveyButton;
-
 @property (weak, nonatomic) IBOutlet UITextField *surveyUUID;
 @property (weak, nonatomic) IBOutlet UIButton *showDialogButton;
 @property (weak, nonatomic) IBOutlet UIButton *showBottomButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *showEmbedButton;
 
 @property (weak, nonatomic) IBOutlet UITextField *eventName;
 @property (weak, nonatomic) IBOutlet UITextField *eventValue;
@@ -56,6 +56,12 @@
 	NSLog(@"%s", __func__);
 	[_polling setViewType:POLViewTypeBottom];
 	[_polling showSurvey:self.surveyUUID.text];
+}
+
+- (IBAction)showEmbed:(id)sender {
+
+	NSLog(@"%s", __func__);
+	[_polling showEmbedView];
 }
 
 - (IBAction)logEvent:(id)sender

@@ -9,6 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(Polling.Reward)
 @interface POLReward : NSObject
 @property (readonly) NSString *name;
 @property (readonly) NSString *amount;

@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class POLReward;
 
+NS_SWIFT_NAME(Polling.Survey)
 @interface POLSurvey : NSObject
 
 @property (readonly) NSString *UUID;

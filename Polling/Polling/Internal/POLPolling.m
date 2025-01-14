@@ -96,7 +96,7 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 
 - (void)logEvent:(NSString *)eventName value:(NSString *)eventValue
 {
-	NSLog(@"%s %@:%@", __func__, eventName, eventValue);
+	POLLogTrace("%s %@:%@", __func__, eventName, eventValue);
 	[_networkSession postEvent:eventName withValue:eventValue];
 }
 
@@ -117,7 +117,7 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 
 - (void)showEmbedView
 {
-
+	[self presentEmbed];
 }
 
 - (void)showSurvey:(NSString *)surveyUuid
@@ -150,7 +150,7 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 
 - (void)performRemoteSurveyChecks
 {
-	//NSLog(@"%s", __func__);
+	//POLLogTrace("%s", __func__);
 
 	if (!_disableCheckingForAvailableSurveys)
 		[_networkSession fetchAvailableSurveys];
@@ -160,7 +160,7 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 
 - (void)getSurveyDetailsForTriggeredSurvey:(POLTriggeredSurvey *)triggeredSurvey
 {
-	NSLog(@"%s", __func__);
+	POLLogTrace("%s", __func__);
 	_inboundTriggeredSurvey = triggeredSurvey;
 	[_networkSession fetchSurveyWithUUID:triggeredSurvey.survey.UUID];
 }
@@ -174,7 +174,7 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 
 - (void)networkSessionDidFetchAvailableSurveys:(NSArray<POLSurvey *> *)surveys
 {
-	NSLog(@"%s %@", __func__, surveys);
+	POLLogTrace("%s %@", __func__, surveys);
 	//[self stopCheckingForSurveys];
 
 	_cachedSurveys = surveys;
@@ -187,14 +187,14 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 
 - (void)networkSessionDidUpdateTriggeredSurveys:(NSArray<POLTriggeredSurvey *> *)triggeredSurvey
 {
-	NSLog(@"%s %@", __func__, triggeredSurvey);
+	POLLogTrace("%s %@", __func__, triggeredSurvey);
 	//if (triggeredSurvey.count > 0)
 	[_triggeredSurveyController triggeredSurveysDidUpdate:triggeredSurvey];
 }
 
 - (void)networkSessionDidFetchSurvey:(POLSurvey *)survey
 {
-	NSLog(@"%s %@", __func__, survey);
+	POLLogTrace("%s %@", __func__, survey);
 	if (_inboundTriggeredSurvey) {
 		[_triggeredSurveyController triggeredSurvey:_inboundTriggeredSurvey didLoadSurvey:survey];
 		_inboundTriggeredSurvey = nil;
@@ -203,7 +203,7 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 
 - (void)networkSessionDidCompleteSurvey:(POLSurvey *)survey
 {
-	NSLog(@"%s %@", __func__, survey);
+	POLLogTrace("%s %@", __func__, survey);
 
 	if (!survey.isCompleted) {
 		[_triggeredSurveyController postponeSurvey:survey];
@@ -266,7 +266,7 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 - (void)presentSurveyInternal:(POLSurvey *)survey
 {
 	_currentSurvey = survey;
-	
+
 	/*
 	 * NOTE:
 	 * iPhone does not have a "dialog" like view controller
@@ -288,10 +288,14 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 
 - (void)presentEmbed
 {
-	if (!_currentSurvey)
-		return;
-	
-	_currentSurvey.embedViewRequested = YES;
+	if (_currentSurvey)
+		_currentSurvey.embedViewRequested = YES;
+	else {
+		_currentSurvey = POLSurvey.new;
+		_currentSurvey.embedViewRequested = YES;
+	}
+
+
 	[self presentSurveyInternal:_currentSurvey];
 }
 
@@ -353,11 +357,13 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 
 - (void)surveyViewControllerDidOpen:(POLSurveyViewController *)surveyViewController
 {
-	[_networkSession preCompleteSurvey:surveyViewController.survey];
+	[_networkSession startSurvey:surveyViewController.survey];
 }
 
 - (void)surveyViewControllerDidDismiss:(POLSurveyViewController *)surveyViewController
 {
+	if (_currentSurvey)
+		_currentSurvey.embedViewRequested = NO;
 	_surveyVisible = NO;
 	[_networkSession completeSurvey:surveyViewController.survey];
 	_surveyViewController = nil;

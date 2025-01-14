@@ -1,7 +1,9 @@
+// Framework.xcconfig
+
 SUPPORTED_PLATFORMS = iphoneos iphonesimulator
 IPHONEOS_DEPLOYMENT_TARGET = 12.0
 
-DEFINES_MODULE = NO
+DEFINES_MODULE = YES
 //MODULEMAP_FILE = $(SRCROOT)/$(PRODUCT_MODULE_NAME)/module.modulemap
 //MODULEMAP_PRIVATE_FILE = $(SRCROOT)/$(PRODUCT_MODULE_NAME)/module.private.modulemap
 

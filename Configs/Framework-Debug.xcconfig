@@ -1,1 +1,6 @@
+// Framework-Debug.xcconfig
+
 #include? "Framework.xcconfig"
+
+// Module verifier is too slow for debug builds
+ENABLE_MODULE_VERIFIER[config=Debug] = NO

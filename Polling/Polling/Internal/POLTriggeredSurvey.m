@@ -55,9 +55,9 @@ static const NSTimeInterval POLTriggeredSurveyPostponeInterval = 60 * 30; // 30 
 		@"name": @"Invalid triggered survey"
 	}];
 	_survey = [POLSurvey surveyFromJSONDictionary:@{
-		@"uuid": [surveyDict pol_stringValueForKey:@"survey_uuid" undefinedValue:@"J0000000-0000-0000-0000-000000000000"],
+		@"survey_uuid": [surveyDict pol_stringValueForKey:@"survey_uuid" undefinedValue:@"J0000000-0000-0000-0000-000000000000"],
 		@"name": [surveyDict pol_stringValueForKey:@"name" undefinedValue:@"J Invalid triggered survey"],
-		@"userSurveyStatus": [surveyDict pol_stringValueForKey:@"user_survey_status" undefinedValue:@""],
+		@"user_survey_status": [surveyDict pol_stringValueForKey:@"user_survey_status" undefinedValue:@""],
 	}];
 	_delaySeconds = [dict[@"delay_seconds"] unsignedIntegerValue];
 	_delayedDate = [NSDate.date dateByAddingTimeInterval:(NSTimeInterval)_delaySeconds];

@@ -6,6 +6,7 @@
  */
 
 #import "NSDictionary+Additions.h"
+#import "NSMutableDictionary+Additions.h"
 
 @implementation NSDictionary (POLDictionaryAdditions)
 
@@ -34,6 +35,13 @@
 	if (!ret)
 		return undefinedValue;
 	return ret;
+}
+
+- (NSDictionary *)copyAddingEntriesFromDictionary:(NSDictionary *)other
+{
+	NSMutableDictionary *mutDict = self.mutableCopy;
+	[mutDict addEntriesFromDictionary:other];
+	return mutDict;
 }
 
 @end

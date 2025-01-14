@@ -43,26 +43,27 @@
 	[POLStorage.storage read];
 	NSArray<POLTriggeredSurvey *> *triggeredSurveys = POLStorage.storage.triggeredSurveys;
 	if (triggeredSurveys.count == 0) {
-		NSLog(@"No triggered surveys available.");
+		POLLogInfo("No triggered surveys available");
 		return;
 	}
 
-	NSLog(@"Triggered surveys available.");
+	POLLogInfo("Triggered survey(s) available count=%@", @(triggeredSurveys.count));
 	NSDate *now = NSDate.date;
 
 	for (POLTriggeredSurvey *triggeredSurvey in triggeredSurveys) {
+		POLLogInfo("Triggered survey: %@", triggeredSurvey);
 
-		NSLog(@"API delay in seconds: %@", @(triggeredSurvey.delaySeconds));
-		NSLog(@"API delayed timestamp: %@", triggeredSurvey.delayedTimestamp);
-		NSLog(@"Delayed timestamp (UTC): %@", triggeredSurvey.delayedDate);
-		NSLog(@"Current time (UTC): %@", now);
+		POLLogInfo("API delay in seconds: %@", @(triggeredSurvey.delaySeconds));
+		POLLogInfo("API delayed timestamp: %@", triggeredSurvey.delayedTimestamp);
+		POLLogInfo("Delayed timestamp (UTC): %@", triggeredSurvey.delayedDate);
+		POLLogInfo("Current time (UTC): %@", now);
 
 		NSUInteger delayInSeconds = 0;
 		if ([triggeredSurvey.delayedDate compare:now] == NSOrderedAscending)
 			delayInSeconds = 0;
 		else
 			delayInSeconds = triggeredSurvey.delaySeconds;
-		NSLog(@"Final delay is %@", @(triggeredSurvey.delaySeconds));
+		POLLogInfo("Final delay is %@", @(triggeredSurvey.delaySeconds));
 
 		if (triggeredSurvey.isInUse)
 			continue;
@@ -73,22 +74,26 @@
 
 - (void)scheduleTriggerSurvey:(POLTriggeredSurvey *)triggeredSurvey withDelay:(NSUInteger)delay
 {
+	POLLogTrace("%s triggeredSurvey=%@, delay=%@", __func__, triggeredSurvey, @(delay));
 	NSString *uuid = triggeredSurvey.survey.UUID;
 	NSTimer *timer = _timers[uuid];
-	if (timer && timer.isValid)
+	if (timer && timer.isValid) {
+		POLLogWarn("Survey already scheduled: %@", triggeredSurvey);
 		return;
+	}
 
 	NSTimeInterval timeInterval = delay;
-	NSLog(@"scheduled %@ to show in %@ seconds", triggeredSurvey, @(timeInterval));
 	_timers[uuid] = [NSTimer scheduledTimerWithTimeInterval:timeInterval
 													   target:self
 													 selector:@selector(triggerSurvey:)
 													 userInfo:triggeredSurvey
 													  repeats:NO];
+	POLLogInfo("Scheduled %@ to show in %@ seconds", triggeredSurvey, @(timeInterval));
 }
 
 - (void)triggerSurvey:(NSTimer *)timer
 {
+	POLLogTrace("%s timer=%@", __func__, timer);
 	POLTriggeredSurvey *triggeredSurvey = (POLTriggeredSurvey *)timer.userInfo;
 	[timer invalidate];
 	[_timers removeObjectForKey:triggeredSurvey.survey.UUID];
@@ -96,7 +101,7 @@
 	NSArray<POLTriggeredSurvey *> *savedSurveys = POLStorage.storage.triggeredSurveys;
 	if ([savedSurveys containsObject:triggeredSurvey]) {
 		triggeredSurvey.inUse = YES;
-		NSLog(@"mark in use %@", triggeredSurvey);
+		POLLogInfo("Marking survey in use %@", triggeredSurvey);
 		[POLStorage.storage modifiedTriggeredSurvey:triggeredSurvey];
 	}
 
@@ -105,21 +110,20 @@
 
 - (void)triggeredSurvey:(POLTriggeredSurvey *)triggeredSurvey didLoadSurvey:(POLSurvey *)survey
 {
-	//NSLog(@"%s triggeredSurvey=%@, survey=%@", __func__, triggeredSurvey, survey);
-	NSLog(@"%s", __func__);
+	POLLogTrace("%s triggeredSurvey=%@, survey=%@", __func__, triggeredSurvey, survey);
 
 	//if (survey.isAvailable || survey.isStarted) {
 	if (survey.isAvailable) {
 		triggeredSurvey.survey = survey;
 		[POLStorage.storage modifiedTriggeredSurvey:triggeredSurvey];
 
-		NSLog(@"Found survey in available status. Requesting showSurvey");
+		POLLogInfo("Found survey in available status. Requesting showSurvey");
 		[POLPolling.polling presentSurveyInternal:survey];
 
 		NSArray<POLTriggeredSurvey *> *savedSurveys = POLStorage.storage.triggeredSurveys;
 		if ([savedSurveys containsObject:triggeredSurvey]) {
 			triggeredSurvey.inUse = NO;
-			NSLog(@"unmark in use %@", triggeredSurvey);
+			POLLogInfo("Unmarking survey in use %@", triggeredSurvey);
 			[POLStorage.storage modifiedTriggeredSurvey:triggeredSurvey];
 		}
 	} else {
@@ -130,22 +134,26 @@
 
 - (void)triggeredSurveyFailedToLoadSurvey:(POLTriggeredSurvey *)triggeredSurvey
 {
+	POLLogTrace("%s triggeredSurvey=%@", __func__, triggeredSurvey);
 	[self triggeredSurveyUnavailable:triggeredSurvey];
 }
 
 - (void)triggeredSurveyUnavailable:(POLTriggeredSurvey *)triggeredSurvey
 {
-	NSLog(@"None of the present surveys are in available status.");
+	POLLogTrace("%s triggeredSurvey=%@", __func__, triggeredSurvey);
+
+	POLLogInfo("None of the present surveys are in available status");
 	[self removeTriggeredSurvey:triggeredSurvey];
 	[POLStorage.storage write];
 
-	NSLog(@"Keep checking for available triggered surveys.");
+	POLLogInfo("Keep checking for available triggered surveys");
 	[self checkForAvailableTriggeredSurveys];
 }
 
 - (void)removeSurvey:(POLSurvey *)survey
 {
-	NSLog(@"%s %@", __func__, survey);
+	POLLogTrace("%s survey=%@", __func__, survey);
+
 	NSArray<POLTriggeredSurvey *> *triggeredSurveys = POLStorage.storage.triggeredSurveys;
 	NSString *uuid = survey.UUID;
 
@@ -153,7 +161,7 @@
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"survey.UUID == %@", uuid];
 	triggeredSurveys = [triggeredSurveys filteredArrayUsingPredicate:predicate];
 	if (triggeredSurveys.count == 0) {
-		NSLog(@"Attempt to remove survey not in storage.");
+		POLLogWarn("Attempt to remove survey not in storage");
 		return;
 	}
 	POLTriggeredSurvey *triggeredSurvey = triggeredSurveys.firstObject;
@@ -163,11 +171,14 @@
 
 - (void)removeTriggeredSurvey:(POLTriggeredSurvey *)triggeredSurvey
 {
+	POLLogTrace("%s triggeredSurvey=%@", __func__, triggeredSurvey);
 	[POLStorage.storage removeTriggeredSurvey:triggeredSurvey];
 }
 
 - (void)triggeredSurveysDidUpdate:(NSArray<POLTriggeredSurvey *> *)triggeredSurveys
 {
+	POLLogTrace("%s triggeredSurveys=%@", __func__, triggeredSurveys);
+
 	NSArray<POLTriggeredSurvey *> *savedSurveys = POLStorage.storage.triggeredSurveys;
 	if (savedSurveys.count == 0) {
 		POLStorage.storage.triggeredSurveys = triggeredSurveys;
@@ -180,13 +191,14 @@
 	}
 	[POLStorage.storage write];
 
-	NSLog(@"checkForAvailableTriggeredSurveys after update");
+	POLLogInfo("Keep checking for available triggered surveys");
 	[self checkForAvailableTriggeredSurveys];
 }
 
 - (void)postponeSurvey:(POLSurvey *)survey
 {
-	NSLog(@"%s %@", __func__, survey);
+	POLLogTrace("%s survey=%@", __func__, survey);
+
 	NSArray<POLTriggeredSurvey *> *triggeredSurveys = POLStorage.storage.triggeredSurveys;
 	NSString *uuid = survey.UUID;
 
@@ -194,7 +206,7 @@
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"survey.UUID == %@", uuid];
 	triggeredSurveys = [triggeredSurveys filteredArrayUsingPredicate:predicate];
 	if (triggeredSurveys.count == 0) {
-		NSLog(@"Attempt to remove survey not in storage.");
+		POLLogWarn("Attempt to postpone survey not in storage");
 		return;
 	}
 	POLTriggeredSurvey *triggeredSurvey = triggeredSurveys.firstObject;

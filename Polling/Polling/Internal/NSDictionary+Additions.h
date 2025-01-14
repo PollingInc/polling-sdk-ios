@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSDictionary *)pol_dictionaryValueForKey:(NSString *)key undefinedValue:(NSDictionary *)undefinedValue;
 - (NSDate *)pol_dateValueForKey:(NSString *)key undefinedValue:(NSDate *)undefinedValue;
 
+- (NSDictionary *)copyAddingEntriesFromDictionary:(NSDictionary *)other;
+
 @end
 
 NS_ASSUME_NONNULL_END

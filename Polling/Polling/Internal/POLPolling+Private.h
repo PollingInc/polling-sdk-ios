@@ -7,6 +7,8 @@
 
 
 #import "POLPolling.h"
+#import "POLError.h"
+#import "POLLog.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -1,10 +1,10 @@
-// UIKitApp.xcconfig
+// SwiftUIApp.xcconfig
 
 SUPPORTED_PLATFORMS = iphoneos iphonesimulator
 IPHONEOS_DEPLOYMENT_TARGET = 12.0
 
 UNIQUE_BUNDLE_DISAMBIGUATOR = .${DEVELOPMENT_TEAM}
-PRODUCT_BUNDLE_IDENTIFIER = com.polling.examples.UIKitApp${UNIQUE_BUNDLE_DISAMBIGUATOR}
+PRODUCT_BUNDLE_IDENTIFIER = com.polling.examples.SwiftUIApp${UNIQUE_BUNDLE_DISAMBIGUATOR}
 
 // Conditional include for local overrides
 #include? "Local.xcconfig"

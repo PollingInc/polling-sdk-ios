@@ -63,7 +63,11 @@ NSString * const POLSurveyStatusCompleted = @"completed";
 
 	_name = dict[@"name"];
 	_questionCount = [dict[@"question_count"] unsignedIntegerValue];
-	_UUID = dict[@"uuid"];
+
+	/* depending on context the UUID is either `uuid` or `survery_uuid` */
+	_UUID = [dict pol_stringValueForKey:@"uuid" undefinedValue:
+			 [dict pol_stringValueForKey:@"survey_uuid" undefinedValue:@""]];
+
 	_userSurveyStatus = dict[@"user_survey_status"];
 	_completedAt = dict[@"completed_at"];
 
@@ -103,7 +107,8 @@ NSString * const POLSurveyStatusCompleted = @"completed";
 {
 	NSURL *url = [NSURL URLWithString:POLSurveyDefaultEmbedViewEndpoint];
 	url = [url URLByAppendingPathComponent:POLPolling.polling.apiKey];
-	url = [url URLByAppendingPathComponent:_UUID];
+	if (_UUID)
+		url = [url URLByAppendingPathComponent:_UUID];
 	url = [POLNetworkSession URLForEndpoint:url.absoluteString
 							 withCustomerID:POLPolling.polling.customerID
 									 APIKey:nil];
