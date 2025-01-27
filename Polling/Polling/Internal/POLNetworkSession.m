@@ -13,20 +13,15 @@
 #import "POLTriggeredSurvey.h"
 #import "POLSurvey.h"
 #import "POLSurvey+Private.h"
+#import "POLStorage.h"
 
 #import "NSURLRequest+Additions.h"
 
 #if USE_LOCAL_SERVER
-//NSString * const POLNetworkSessionBaseAppURL = @"https://app.polling.com";
-//NSString * const POLNetworkSessionBaseAPIURL = @"https://api.polling.com";
-//NSString * const POLNetworkSessionSurveyViewEndpoint = @"http://localhost:8080/sdk/available-surveys";
 NSString * const POLNetworkSessionAvailableSurveyAPIEndpoint = @"http://localhost:8080/api/sdk/surveys/available";
 NSString * const POLNetworkSessionSurveyAPIEndpoint = @"http://localhost:8080/api/sdk/surveys/";
 NSString * const POLNetworkSessionEventAPIEndpoint = @"http://localhost:8080/api/events/collect";
 #else
-//NSString * const POLNetworkSessionBaseAppURL = @"https://app.polling.com";
-//NSString * const POLNetworkSessionBaseAPIURL = @"https://api.polling.com";
-//NSString * const POLNetworkSessionSurveyViewEndpoint = @"https://app.polling.com/sdk/available-surveys";
 NSString * const POLNetworkSessionAvailableSurveyAPIEndpoint = @"https://api.polling.com/api/sdk/surveys/available";
 NSString * const POLNetworkSessionSurveyAPIEndpoint = @"https://api.polling.com/api/sdk/surveys/";
 NSString * const POLNetworkSessionEventAPIEndpoint = @"https://api.polling.com/api/events/collect";
@@ -391,6 +386,24 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
  * }
  *```
  *
+ * or
+ *
+ * ```json
+ * {
+ *     "data": [{
+ *         "uuid": "dcaca06d-5ed5-4235-90fb-e2d7efc2a5b6",
+ *         "name": "Survey Test SDK 1",
+ *         "started_at": "2025-01-27T19:52:44+00:00",
+ *         "completed_at": "2025-01-27T19:52:45+00:00",
+ *         "reward": {
+ *             "complete_extra_json": null,
+ *             "reward_amount": null,
+ *             "reward_name": null
+ *         }
+ *     }]
+ * }
+ * ```
+ *
  * @param data response body
  * @return a survey object
  */
@@ -471,17 +484,19 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 				return;
 			}
 			NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
-			POLLogInfo("%@ %@ => %@ %@", req.HTTPMethod, req.URL,
+			POLLogInfo("%@ %@ => %@ %@", req.HTTPMethod, req.URL,
 				@(httpResponse.statusCode), httpResponse.MIMEType);
 			if (httpResponse.statusCode != 200) {
 				pErr = POLErrorWithCode(POLNetworkSessionUnexpectedHTTPStatusCodeError);
-				POLLogError("Failed to start survey statusCode=%@, error=%@",  @(httpResponse.statusCode), pErr);
+				POLLogError("Failed to start survey statusCode=%@, error=%@", @(httpResponse.statusCode), pErr);
 				return;
 			}
-			// TODO:
-			// Content-Type
-			// Expect `application/json`
-			// POLNetworkSessionUnexpectedContentTypeError
+
+			if (![httpResponse.MIMEType isEqualToString:@"application/json"]) {
+				pErr = POLErrorWithCode(POLNetworkSessionUnexpectedContentTypeError);
+				POLLogError("Expected application/json got Content-Type=%@ error=%@", httpResponse.MIMEType, pErr);
+				return;
+			}
 
 			if (survey.embedViewRequested) {
 				NSArray<POLSurvey *> *responseSurveys = [self surveysFromData:data];
@@ -503,29 +518,35 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 				return;
 			}
 			NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
-			POLLogInfo("%@ %@ => %@ %@", req.HTTPMethod, req.URL,
+			POLLogInfo("%@ %@ => %@ %@", req.HTTPMethod, req.URL,
 				@(httpResponse.statusCode), httpResponse.MIMEType);
 			if (httpResponse.statusCode != 200) {
 				pErr = POLErrorWithCode(POLNetworkSessionUnexpectedHTTPStatusCodeError);
-				POLLogError("Failed to complete survey statusCode=%@, error=%@",  @(httpResponse.statusCode), pErr);
+				POLLogError("Failed to complete survey statusCode=%@, error=%@", @(httpResponse.statusCode), pErr);
 				return;
 			}
-			// TODO:
-			// Content-Type
-			// Expect `application/json`
-			// POLNetworkSessionUnexpectedContentTypeError
 
+			if (![httpResponse.MIMEType isEqualToString:@"application/json"]) {
+				pErr = POLErrorWithCode(POLNetworkSessionUnexpectedContentTypeError);
+				POLLogError("Expected application/json got Content-Type=%@ error=%@", httpResponse.MIMEType, pErr);
+				return;
+			}
+
+			[POLStorage.storage read];
 			if (survey.embedViewRequested) {
 				NSArray<POLSurvey *> *responseSurveys = [self surveysFromData:data];
-
-				// completed surveys from storage
-
-				// ...
+				for (POLSurvey *responseSurvey in responseSurveys) {
+					if ([POLStorage.storage alreadyCompleted:responseSurvey])
+						continue;
+					[POLStorage.storage addCompletedSurvey:responseSurvey];
+					[self.delegate networkSessionDidCompleteSurvey:responseSurvey];
+				}
 
 			} else {
 				POLSurvey *responseSurvey = [self surveyForData:data];
 				[self.delegate networkSessionDidCompleteSurvey:responseSurvey];
 			}
+			[POLStorage.storage write];
 		}];
 		break;
 	}
@@ -666,7 +687,7 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 	request = dataTask.currentRequest;
 	httpResponse = (NSHTTPURLResponse *)response;
 
-	POLLogInfo("%@ %@ => %@ %@", request.HTTPMethod, request.URL,
+	POLLogInfo("%@ %@ => %@ %@", request.HTTPMethod, request.URL,
 			   @(httpResponse.statusCode), httpResponse.MIMEType);
 
 	if (httpResponse.statusCode != 200) {
@@ -676,10 +697,11 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 		return;
 	}
 
-	// TODO:
-	// Content-Type
-	// Expect `application/json`
-	// POLNetworkSessionUnexpectedContentTypeError
+	if (![httpResponse.MIMEType isEqualToString:@"application/json"]) {
+		pErr = POLErrorWithCode(POLNetworkSessionUnexpectedContentTypeError);
+		POLLogError("Expected application/json got Content-Type=%@ error=%@",  httpResponse.MIMEType, pErr);
+		return;
+	}
 
 	// TODO: any other HTTP response checks
 

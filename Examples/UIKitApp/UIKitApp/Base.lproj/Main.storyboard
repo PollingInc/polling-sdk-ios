@@ -26,7 +26,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="353" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="FB7EE79C-B355-4046-BAAD-33B919B49824" placeholder="Survey UUID" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dWX-Wu-6eK">
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Survey UUID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dWX-Wu-6eK">
                                                     <rect key="frame" x="20" y="0.0" width="313" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="zmr-dv-maD"/>
@@ -73,7 +73,7 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="3wa-C0-hr2" firstAttribute="centerY" secondItem="bso-c1-6Fo" secondAttribute="centerY" id="FQ3-1y-fFU"/>
+                                                <constraint firstItem="3wa-C0-hr2" firstAttribute="top" secondItem="f5e-Gc-SFA" secondAttribute="top" constant="4" id="INL-Fv-RkM"/>
                                                 <constraint firstItem="bso-c1-6Fo" firstAttribute="leading" secondItem="f5e-Gc-SFA" secondAttribute="leading" constant="20" symbolic="YES" id="JUd-lj-3yt"/>
                                                 <constraint firstItem="3wa-C0-hr2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bso-c1-6Fo" secondAttribute="trailing" constant="8" symbolic="YES" id="Mec-pM-Fy7"/>
                                                 <constraint firstItem="bso-c1-6Fo" firstAttribute="leading" secondItem="f5e-Gc-SFA" secondAttribute="leading" constant="20" symbolic="YES" id="e7a-KA-mOY"/>
@@ -87,30 +87,36 @@
                             <tableViewSection headerTitle="Embed" id="i86-SB-q2r">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="qUJ-vm-bSW">
-                                        <rect key="frame" x="20" y="198.66666603088379" width="353" height="43.333332061767578"/>
+                                        <rect key="frame" x="20" y="198.66666603088379" width="353" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qUJ-vm-bSW" id="B2P-LM-gk0">
-                                            <rect key="frame" x="0.0" y="0.0" width="353" height="43.333332061767578"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVW-cf-ajQ">
-                                                    <rect key="frame" x="20" y="4" width="130" height="35.333333333333336"/>
+                                                    <rect key="frame" x="20" y="4" width="130" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="CDW-KZ-cZL"/>
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="Embed Dialog"/>
+                                                    <connections>
+                                                        <action selector="embedDialog:" destination="peQ-Oe-CTR" eventType="touchUpInside" id="x4m-3F-LKs"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDk-tM-2fr">
                                                     <rect key="frame" x="195.66666666666663" y="4" width="137.33333333333337" height="35"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="Embed Bottom"/>
+                                                    <connections>
+                                                        <action selector="embedBottom:" destination="peQ-Oe-CTR" eventType="touchUpInside" id="VfB-WH-YHt"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="iDk-tM-2fr" secondAttribute="trailing" constant="20" symbolic="YES" id="A1c-JU-uyx"/>
-                                                <constraint firstItem="tVW-cf-ajQ" firstAttribute="centerY" secondItem="B2P-LM-gk0" secondAttribute="centerY" id="UDR-Ox-B8I"/>
                                                 <constraint firstItem="tVW-cf-ajQ" firstAttribute="top" secondItem="B2P-LM-gk0" secondAttribute="top" constant="4" id="VAA-5r-6Ip"/>
+                                                <constraint firstItem="iDk-tM-2fr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tVW-cf-ajQ" secondAttribute="trailing" constant="8" symbolic="YES" id="eWt-0Y-Y7O"/>
                                                 <constraint firstItem="tVW-cf-ajQ" firstAttribute="leading" secondItem="B2P-LM-gk0" secondAttribute="leading" constant="20" symbolic="YES" id="ode-h4-Cta"/>
                                                 <constraint firstItem="iDk-tM-2fr" firstAttribute="top" secondItem="B2P-LM-gk0" secondAttribute="top" constant="4" id="yaW-Ub-Bur"/>
                                             </constraints>
@@ -121,7 +127,7 @@
                             <tableViewSection headerTitle="Event" id="dAW-XD-tJu">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="fcU-Bh-xNE">
-                                        <rect key="frame" x="20" y="297.99999809265137" width="353" height="43.666667938232422"/>
+                                        <rect key="frame" x="20" y="298.33333396911621" width="353" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fcU-Bh-xNE" id="RGQ-nG-zA3">
                                             <rect key="frame" x="0.0" y="0.0" width="353" height="43.666667938232422"/>
@@ -144,7 +150,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="3VD-8e-d9V">
-                                        <rect key="frame" x="20" y="341.66666603088379" width="353" height="43.666667938232422"/>
+                                        <rect key="frame" x="20" y="342.00000190734863" width="353" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3VD-8e-d9V" id="wEm-sx-7kC">
                                             <rect key="frame" x="0.0" y="0.0" width="353" height="43.666667938232422"/>
@@ -167,7 +173,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="H4W-Hb-Ecz">
-                                        <rect key="frame" x="20" y="385.33333396911621" width="353" height="43.666667938232422"/>
+                                        <rect key="frame" x="20" y="385.66666984558105" width="353" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H4W-Hb-Ecz" id="juS-dj-ODU">
                                             <rect key="frame" x="0.0" y="0.0" width="353" height="43.666667938232422"/>
@@ -200,6 +206,8 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="embedBottomButton" destination="iDk-tM-2fr" id="bwD-gj-acS"/>
+                        <outlet property="embedDialogButton" destination="tVW-cf-ajQ" id="jM1-MM-Lha"/>
                         <outlet property="eventName" destination="azf-kP-wjA" id="jrF-St-7FG"/>
                         <outlet property="eventValue" destination="d3A-tm-pxU" id="6vZ-wA-SED"/>
                         <outlet property="logEventButton" destination="omo-jl-rKW" id="0AL-Xd-9TX"/>

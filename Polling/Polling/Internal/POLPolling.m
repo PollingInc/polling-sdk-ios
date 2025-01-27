@@ -212,11 +212,11 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 
 	// success
 	if ([self.delegate respondsToSelector:@selector(pollingOnSuccess:)])
-		[(id<POLPollingDelegate>)self.delegate pollingOnSuccess:survey.JSONRepresentation];
+		[self.delegate pollingOnSuccess:survey.JSONRepresentation];
 
 	// reward
 	if ([self.delegate respondsToSelector:@selector(pollingOnReward:)])
-		[(id<POLPollingDelegate>)self.delegate pollingOnReward:survey.reward];
+		[self.delegate pollingOnReward:survey.reward];
 
 	// completion
 	if (!survey.isAvailable)
@@ -295,7 +295,6 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 		_currentSurvey.embedViewRequested = YES;
 	}
 
-
 	[self presentSurveyInternal:_currentSurvey];
 }
 
@@ -362,10 +361,12 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 
 - (void)surveyViewControllerDidDismiss:(POLSurveyViewController *)surveyViewController
 {
-	if (_currentSurvey)
-		_currentSurvey.embedViewRequested = NO;
 	_surveyVisible = NO;
 	[_networkSession completeSurvey:surveyViewController.survey];
+
+//	if (_currentSurvey)
+//		_currentSurvey.embedViewRequested = NO;
+
 	_surveyViewController = nil;
 }
 

@@ -13,9 +13,11 @@
 
 NSString * const POLStorageFilename = @"com.polling.PollingUserData.plist";
 NSString * const POLStorageTriggeredSurveysKey = @"polling:triggered_surveys";
+NSString * const POLStorageCompletedSurveysKey = @"polling:completed_surveys";
 
 @interface POLStorage ()
 @property (readonly) NSURL *storageURL;
+@property NSArray<POLSurvey *> *completedSurveys;
 @end
 
 @implementation POLStorage {
@@ -71,6 +73,8 @@ NSString * const POLStorageTriggeredSurveysKey = @"polling:triggered_surveys";
 
 }
 
+#pragma mark - Storage I/O
+
 - (void)read
 {
 	POLLogTrace("POLStorage reading: %@", POLStorageFilename);
@@ -92,6 +96,8 @@ NSString * const POLStorageTriggeredSurveysKey = @"polling:triggered_surveys";
 		return;
 	}
 }
+
+#pragma mark - Triggered Surveys
 
 - (NSArray<POLTriggeredSurvey *> *)triggeredSurveys
 {
@@ -132,6 +138,42 @@ NSString * const POLStorageTriggeredSurveysKey = @"polling:triggered_surveys";
 	/* since equality is defined as t1.survey.UUID == t2.survey.UUID */
 	[self removeTriggeredSurvey:triggeredSurvey];
 	self.triggeredSurveys = [self.triggeredSurveys arrayByAddingObject:triggeredSurvey];
+}
+
+#pragma mark - Completed Surveys
+
+- (NSArray<POLSurvey *> *)completedSurveys
+{
+	NSArray *storedCompletedSurveys = _storageDict[POLStorageCompletedSurveysKey];
+	if (!storedCompletedSurveys)
+		return @[];
+
+	NSMutableArray<POLSurvey *> *completedSurveys = NSMutableArray.new;
+	for (NSDictionary *dict in storedCompletedSurveys) {
+		[completedSurveys addObject:[POLSurvey surveyFromDictionary:dict]];
+	}
+
+	return completedSurveys;
+}
+
+- (void)setCompletedSurveys:(NSArray<POLSurvey *> *)completedSurveys
+{
+	NSMutableArray<NSDictionary<NSString *, id> *> *newCompletedSurveys = NSMutableArray.new;
+	for (POLSurvey *completedSurvey in completedSurveys) {
+		NSDictionary *dict = completedSurvey.dictionaryRepresentation;
+		[newCompletedSurveys addObject:dict];
+	}
+	_storageDict[POLStorageCompletedSurveysKey] = newCompletedSurveys;
+}
+
+- (BOOL)alreadyCompleted:(POLSurvey *)survey
+{
+	return [self.completedSurveys containsObject:survey];
+}
+
+- (void)addCompletedSurvey:(POLSurvey *)survey
+{
+	self.completedSurveys = [self.completedSurveys arrayByAddingObject:survey];
 }
 
 @end

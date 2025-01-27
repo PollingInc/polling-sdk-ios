@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class POLTriggeredSurvey;
+@class POLTriggeredSurvey, POLSurvey;
 
 @interface POLStorage : NSObject
 
@@ -24,6 +24,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSArray<POLTriggeredSurvey *> *triggeredSurveys;
 - (void)removeTriggeredSurvey:(POLTriggeredSurvey *)triggeredSurvey;
 - (void)modifiedTriggeredSurvey:(POLTriggeredSurvey *)triggeredSurvey;
+
+- (BOOL)alreadyCompleted:(POLSurvey *)survey;
+- (void)addCompletedSurvey:(POLSurvey *)survey;
 
 @end
 
