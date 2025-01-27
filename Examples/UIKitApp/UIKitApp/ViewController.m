@@ -14,7 +14,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *showDialogButton;
 @property (weak, nonatomic) IBOutlet UIButton *showBottomButton;
 
-@property (weak, nonatomic) IBOutlet UIButton *showEmbedButton;
+@property (weak, nonatomic) IBOutlet UIButton *embedDialogButton;
+@property (weak, nonatomic) IBOutlet UIButton *embedBottomButton;
 
 @property (weak, nonatomic) IBOutlet UITextField *eventName;
 @property (weak, nonatomic) IBOutlet UITextField *eventValue;
@@ -47,20 +48,34 @@
 - (IBAction)showDialog:(id)sender
 {
 	NSLog(@"%s", __func__);
+
+	NSString *uuid = self.surveyUUID.text;
+
 	[_polling setViewType:POLViewTypeDialog];
-	[_polling showSurvey:self.surveyUUID.text];
+	[_polling showSurvey:uuid];
 }
 
 - (IBAction)showBottom:(id)sender
 {
 	NSLog(@"%s", __func__);
+
+	NSString *uuid = self.surveyUUID.text;
+
 	[_polling setViewType:POLViewTypeBottom];
-	[_polling showSurvey:self.surveyUUID.text];
+	[_polling showSurvey:uuid];
 }
 
-- (IBAction)showEmbed:(id)sender {
-
+- (IBAction)embedDialog:(id)sender
+{
 	NSLog(@"%s", __func__);
+	_polling.viewType = POLViewTypeDialog;
+	[_polling showEmbedView];
+}
+
+- (IBAction)embedBottom:(id)sender
+{
+	NSLog(@"%s", __func__);
+	_polling.viewType = POLViewTypeBottom;
 	[_polling showEmbedView];
 }
 

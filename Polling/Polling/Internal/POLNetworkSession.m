@@ -14,6 +14,8 @@
 #import "POLSurvey.h"
 #import "POLSurvey+Private.h"
 
+#import "NSURLRequest+Additions.h"
+
 #if USE_LOCAL_SERVER
 //NSString * const POLNetworkSessionBaseAppURL = @"https://app.polling.com";
 //NSString * const POLNetworkSessionBaseAPIURL = @"https://api.polling.com";
@@ -378,6 +380,51 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 	return [self surveyForData:data];
 }
 
+/**
+ * Parse embed completed response
+ *
+ * Payload is a JSON object with the structure
+ *
+ * ```json
+ * {
+ *     "data":[]
+ * }
+ *```
+ *
+ * @param data response body
+ * @return a survey object
+ */
+- (NSArray<POLSurvey *> *)surveysFromData:(NSData *)data
+{
+	NSDictionary *payload = [self topLevelDictionaryForData:data];
+	NSDictionary *payloadData = nil;
+	NSError *pErr = nil;
+
+#if DEBUG_JSON_PAYLOADS
+	POLLogInfo("Embed surveys: %@", payload);
+#endif
+
+	if (!(payloadData = payload[@"data"])) {
+		pErr = POLErrorWithCode(POLNetworkSessionNoValueForRequiredKeyError);
+		POLLogError("Unexpected JSON payload error=%@", pErr);
+		return @[];
+	}
+
+	if (![payloadData isKindOfClass:NSArray.class]) {
+		pErr = POLErrorWithCode(POLNetworkSessionExpectedArrayError);
+		POLLogError("Unexpected JSON payload error=%@", pErr);
+		return @[];
+	}
+
+	NSMutableArray<POLSurvey *> *surveys = [NSMutableArray<POLSurvey *> new];
+	for (NSDictionary *surveyDict in payloadData) {
+		POLSurvey *survey = [POLSurvey surveyFromJSONDictionary:surveyDict];
+		[surveys addObject:survey];
+	}
+
+	return surveys;
+}
+
 #pragma mark - Surveys
 
 - (void)fetchAvailableSurveys
@@ -387,10 +434,7 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 							 withCustomerID:POLPolling.polling.customerID
 									 APIKey:POLPolling.polling.apiKey];
 
-	// TODO: use requestWithURL:cachePolicy:timeoutInterval:
-	NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
-	req.HTTPMethod = @"GET";
-	req.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
+	NSURLRequest *req = [NSURLRequest GETURLRequest:url];
 
 	NSURLSessionDataTask *dataTask = [self.URLSession dataTaskWithRequest:req];
 	dataTask.taskDescription = POLNetworkSessionAvailableSurveyAPIEndpoint;
@@ -403,25 +447,22 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 	POLLogTrace("%s survey=%@, taskType=%@", __func__, survey, POLSurveyDataTaskTypeDescription(taskType));
 	POLError *pErr = nil;
 
-	NSURL *url = [NSURL URLWithString:POLNetworkSessionSurveyAPIEndpoint];
-	url = [url URLByAppendingPathComponent:survey.UUID];
-	url = [POLNetworkSession URLForEndpoint:url.absoluteString
-							 withCustomerID:POLPolling.polling.customerID
-									 APIKey:POLPolling.polling.apiKey];
-
-	// TODO: use requestWithURL:cachePolicy:timeoutInterval:
-	NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
-	req.HTTPMethod = @"GET";
-	req.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
-
 	NSURLSessionDataTask *dataTask;
 
 	switch (taskType) {
 	case POLSurveyDataTaskTypeGetSurveyDetails: {
+		NSURL *url = [NSURL URLWithString:POLNetworkSessionSurveyAPIEndpoint];
+		url = [url URLByAppendingPathComponent:survey.UUID];
+		url = [POLNetworkSession URLForEndpoint:url.absoluteString
+								 withCustomerID:POLPolling.polling.customerID
+										 APIKey:POLPolling.polling.apiKey];
+
+		NSURLRequest *req = [NSURLRequest GETURLRequest:url];
 		dataTask = [self.URLSession dataTaskWithRequest:req];
 		break;
 	}
 	case POLSurveyDataTaskTypeStartSurvey: {
+		NSURLRequest *req = [NSURLRequest GETURLRequest:survey.completionURL];
 		dataTask = [self.URLSession dataTaskWithRequest:req completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
 			POLError *pErr = nil;
 			if (error) {
@@ -442,12 +483,18 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 			// Expect `application/json`
 			// POLNetworkSessionUnexpectedContentTypeError
 
-			POLSurvey *responseSurvey = [self surveyForData:data];
-			[POLPolling.polling.openedSurveys addObject:responseSurvey];
+			if (survey.embedViewRequested) {
+				NSArray<POLSurvey *> *responseSurveys = [self surveysFromData:data];
+				[POLPolling.polling.openedSurveys addObjectsFromArray:responseSurveys];
+			} else {
+				POLSurvey *responseSurvey = [self surveyForData:data];
+				[POLPolling.polling.openedSurveys addObject:responseSurvey];
+			}
 		}];
 		break;
 	}
 	case POLSurveyDataTaskTypeCompleteSurvey: {
+		NSURLRequest *req = [NSURLRequest GETURLRequest:survey.completionURL];
 		dataTask = [self.URLSession dataTaskWithRequest:req completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
 			POLError *pErr = nil;
 			if (error) {
@@ -468,14 +515,23 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 			// Expect `application/json`
 			// POLNetworkSessionUnexpectedContentTypeError
 
-			POLSurvey *responseSurvey = [self surveyForData:data];
-			[self.delegate networkSessionDidCompleteSurvey:responseSurvey];
+			if (survey.embedViewRequested) {
+				NSArray<POLSurvey *> *responseSurveys = [self surveysFromData:data];
+
+				// completed surveys from storage
+
+				// ...
+
+			} else {
+				POLSurvey *responseSurvey = [self surveyForData:data];
+				[self.delegate networkSessionDidCompleteSurvey:responseSurvey];
+			}
 		}];
 		break;
 	}
 	default:
 		pErr = POLErrorWithCode(POLNetworkSessionTaskTypeUnknownError);
-		POLLogError("Unknown task type URL=%@, taskType=%@, error=%@", req.URL, POLSurveyDataTaskTypeDescription(taskType), pErr);
+		POLLogError("Unknown task type survey=%@ taskType=%@, error=%@", survey, POLSurveyDataTaskTypeDescription(taskType), pErr);
 		return;
 	}
 
@@ -527,9 +583,7 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 	NSString *postLength = [NSString stringWithFormat:@"%@", @(postBody.length)];
 
 	// TODO: use requestWithURL:cachePolicy:timeoutInterval:
-	NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
-	req.HTTPMethod = @"POST";
-	req.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
+	NSMutableURLRequest *req = [NSURLRequest POSTURLRequest:url];
 	req.HTTPBody = postBody;
 	[req addValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
 	[req addValue:postLength forHTTPHeaderField:@"Content-Length"];

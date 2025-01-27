@@ -115,8 +115,8 @@ NSString * const POLSurveyStatusCompleted = @"completed";
 	return url;
 }
 
-/* completionURL = baseApiUrl + /api/sdk/surverys/:uuid */
-- (NSURL *)completionURL
+/* completionURL = https://api.polling.com + /api/sdk/surverys  /:uuid */
+- (NSURL *)surveyCompletionURL
 {
 	NSURL *url = [NSURL URLWithString:POLNetworkSessionSurveyAPIEndpoint];
 	url = [url URLByAppendingPathComponent:_UUID];
@@ -124,6 +124,26 @@ NSString * const POLSurveyStatusCompleted = @"completed";
 							 withCustomerID:POLPolling.polling.customerID
 									 APIKey:POLPolling.polling.apiKey];
 	return url;
+}
+
+/* embedCompletionURL = https://api.polling.com + /api/sdk/surveys + /completed */
+- (NSURL *)embedCompletionURL
+{
+	NSURL *url = [NSURL URLWithString:POLNetworkSessionSurveyAPIEndpoint];
+	url = [url URLByAppendingPathComponent:@"completed"];
+	url = [POLNetworkSession URLForEndpoint:url.absoluteString
+							 withCustomerID:POLPolling.polling.customerID
+									 APIKey:POLPolling.polling.apiKey];
+	return url;
+}
+
+- (NSURL *)completionURL
+{
+	if (self.embedViewRequested)
+		return self.embedCompletionURL;
+	else
+		return self.surveyCompletionURL;
+
 }
 
 - (BOOL)isAvailable
