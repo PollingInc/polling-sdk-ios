@@ -65,33 +65,15 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 	return self;
 }
 
-- initWithCustomerID:(NSString *)customerID APIKey:(NSString *)apiKey
-{
-	if (!(self = [self init]))
-		return nil;
-
-	_customerID = customerID;
-	_apiKey = apiKey;
-
-	return self;
-}
-
 + (instancetype)polling
 {
 	static POLPolling *pol;
 	static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
+		POLLogTrace("Create singleton=%@, method=%s", self, __func__);
 		pol = POLPolling.new;
 	});
 	return pol;
-}
-
-- (void)initializeWithCustomerID:(NSString *)customerID APIKey:(NSString *)apiKey
-{
-	_customerID = customerID;
-	_apiKey = apiKey;
-
-	[self beginSurveyChecks];
 }
 
 - (void)logEvent:(NSString *)eventName value:(NSString *)eventValue

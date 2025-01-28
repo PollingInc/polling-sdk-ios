@@ -21,19 +21,10 @@ typedef NS_ENUM(NSInteger, POLViewType) {
 NS_SWIFT_NAME(Polling)
 @interface POLPolling : NSObject
 
-/* ========================================================================= */
-
-/* NOTE: the SDK initialization is a mess, I have not settled on how I
- * want this to work. The Objective-C way for typical SDK
- * initialization differs a great deal from the other Polling
- * SDKs. */
 - init NS_UNAVAILABLE;
-- initWithCustomerID:(NSString *)customerID APIKey:(NSString *)apiKey;
++ new NS_UNAVAILABLE;
 
 + (instancetype)polling;
-
-- (void)initializeWithCustomerID:(NSString *)customerID APIKey:(NSString *)apiKey;
-//- (void)initializeWithPayload:(id)POLSDKPayload;
 
 @property (nonatomic, weak, nullable) id <POLPollingDelegate> delegate;
 
@@ -42,9 +33,6 @@ NS_SWIFT_NAME(Polling)
 
 @property BOOL disableCheckingForAvailableSurveys;
 
-/* ========================================================================= */
-
-
 /* public API methods */
 - (void)logEvent:(NSString *)eventName value:(NSString *)eventValue;
 - (void)logPurchase:(int)integerCents;
@@ -52,9 +40,6 @@ NS_SWIFT_NAME(Polling)
 - (void)setViewType:(POLViewType)viewType;
 - (void)showEmbedView;
 - (void)showSurvey:(NSString *)surveyUuid;
-/* - (void)setApiKey(string apiKey) */
-/* - (void)setCustomerId(string customerId) */
-
 
 @end
 
