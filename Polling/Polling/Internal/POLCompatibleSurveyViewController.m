@@ -7,6 +7,9 @@
 
 #import "POLCompatibleSurveyViewController.h"
 #import "POLSurveyViewController.h"
+#import "POLPolling+Private.h"
+#import "POLLog.h"
+#import "POLError.h"
 #import "POLSurvey.h"
 #import "POLSurvey+Private.h"
 
@@ -33,25 +36,29 @@
 @end
 
 @implementation POLCompatibleSurveyViewController {
-	POLSurvey *_survey;
-	POLViewType _viewType;
-	WKWebView *_webView;
-	WKWebViewConfiguration *_config;
+
 }
 
 - initWithSurvey:(POLSurvey *)survey viewType:(POLViewType)viewType
 {
+	POLLogTrace("%s survey=%@, viewType=%@", __func__, survey, POLViewTypeDescription(viewType));
+
 	NSBundle *bundle = [NSBundle bundleWithIdentifier:@"com.polling.Polling"];
 	NSString *nibName = @"POLSurveyDialogViewController";
 	if (viewType == POLViewTypeBottom)
 		nibName = @"POLSurveyBottomViewController";
+
 	if (!(self = [super initWithNibName:nibName bundle:bundle]))
 		return nil;
-	_survey = survey;
+
+	_viewType = viewType;
+	self.survey = survey;
+
 	return self;
 }
 
 - (void)viewDidLoad {
+	POLLogTrace("%s", __func__);
     [super viewDidLoad];
 
 	UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
@@ -60,70 +67,65 @@
 
 	_backgroundView.backgroundColor = [UIColor colorWithWhite:0 alpha:.5];
 
-	_config = WKWebViewConfiguration.new;
-	_webView = [[WKWebView alloc] initWithFrame:_containerView.bounds configuration:_config];
-	_webView.UIDelegate = self;
-	_webView.navigationDelegate = self;
+	self.webView = [[WKWebView alloc] initWithFrame:_containerView.bounds
+								  configuration:self.webViewConfiguration];
+	self.webView.UIDelegate = self;
+	self.webView.navigationDelegate = self;
 
-	_webView.translatesAutoresizingMaskIntoConstraints = NO;
-	[_containerView addSubview:_webView];
+	self.webView.translatesAutoresizingMaskIntoConstraints = NO;
+	[_containerView addSubview:self.webView];
 
 	[NSLayoutConstraint
-		constraintWithItem:_webView
+		constraintWithItem:self.webView
 		attribute:NSLayoutAttributeLeading
 		relatedBy:NSLayoutRelationEqual
-		toItem:_webView.superview
+		toItem:self.webView.superview
 		attribute:NSLayoutAttributeLeading
 		multiplier:1.0
 		constant:0
 	].active = YES;
 	[NSLayoutConstraint
-		constraintWithItem:_webView.superview
+		constraintWithItem:self.webView.superview
 		attribute:NSLayoutAttributeTrailing
 		relatedBy:NSLayoutRelationEqual
-		toItem:_webView
+		toItem:self.webView
 		attribute:NSLayoutAttributeTrailing
 		multiplier:1.0
 		constant:0
 	].active = YES;
 	[NSLayoutConstraint
-		constraintWithItem:_webView
+		constraintWithItem:self.webView
 		attribute:NSLayoutAttributeTop
 		relatedBy:NSLayoutRelationEqual
-		toItem:_webView.superview
+		toItem:self.webView.superview
 		attribute:NSLayoutAttributeTop
 		multiplier:1.0
 		constant:0
 	].active = YES;
 	[NSLayoutConstraint
-		constraintWithItem:_webView.superview
+		constraintWithItem:self.webView.superview
 		attribute:NSLayoutAttributeBottom
 		relatedBy:NSLayoutRelationEqual
-		toItem:_webView
+		toItem:self.webView
 		attribute:NSLayoutAttributeBottom
 		multiplier:1.0
 		constant:0
 	].active = YES;
-
-	NSURL *url = _survey.embedViewRequested ? _survey.embedViewURL : _survey.URL;
-	NSLog(@"loading survey in webview %@", url);
-
-	NSURLRequest *req = [NSURLRequest requestWithURL:url];
-	[_webView loadRequest:req];
 
 	[self.delegate surveyViewControllerDidOpen:(POLSurveyViewController *)self];
+	[self loadWebRequest];
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
 	shouldReceiveTouch:(UITouch *)touch
 {
-	CGPoint loc = [touch locationInView:_webView];
-	if ([_webView pointInside:loc withEvent:nil]) {
-		NSLog(@"touch in web view");
+	CGPoint loc = [touch locationInView:self.webView];
+	if ([self.webView pointInside:loc withEvent:nil]) {
+		POLLogInfo("Touch in web view");
 		return NO;
 	}
 
-	NSLog(@"touch outside of web view");
+	POLLogInfo("Touch outside of web view");
 	return YES;
 }
 
@@ -132,13 +134,6 @@
 	[self dismissViewControllerAnimated:YES completion:^{
 		[self.delegate surveyViewControllerDidDismiss:(POLSurveyViewController *)self];
 	}];
-}
-
-- (void)webView:(WKWebView *)webView
-	didFailNavigation:(WKNavigation *)navigation
-	withError:(NSError *)error
-{
-	NSLog(@"Error: %@ %@ %@", webView, navigation, error);
 }
 
 @end

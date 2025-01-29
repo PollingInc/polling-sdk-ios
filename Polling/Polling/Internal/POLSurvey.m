@@ -93,7 +93,7 @@ NSString * const POLSurveyStatusCompleted = @"completed";
 	return [self surveyFromDictionary:@{ @"UUID": uuid }];
 }
 
-- (NSURL *)URL
+- (NSURL *)surveyViewURL
 {
 	NSURL *url = [NSURL URLWithString:POLSurveyViewEndpoint];
 	url = [url URLByAppendingPathComponent:_UUID];
@@ -113,6 +113,14 @@ NSString * const POLSurveyStatusCompleted = @"completed";
 							 withCustomerID:POLPolling.polling.customerID
 									 APIKey:nil];
 	return url;
+}
+
+- (NSURL *)URL
+{
+	if (self.embedViewRequested)
+		return self.embedViewURL;
+	else
+		return self.surveyViewURL;
 }
 
 /* completionURL = https://api.polling.com + /api/sdk/surverys  /:uuid */
@@ -143,7 +151,6 @@ NSString * const POLSurveyStatusCompleted = @"completed";
 		return self.embedCompletionURL;
 	else
 		return self.surveyCompletionURL;
-
 }
 
 - (BOOL)isAvailable

@@ -6,20 +6,23 @@
  */
 
 #import <UIKit/UIKit.h>
+#import "POLPolling.h"
 #import "POLSurveyViewControllerDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class POLSurvey;
+@class WKWebView, WKWebViewConfiguration;
 
 @interface POLSurveyViewController : UIViewController
 
-@property (readonly) POLSurvey *survey;
+@property POLSurvey *survey;
 @property (nonatomic, weak, nullable) id<POLSurveyViewControllerDelegate> delegate;
 
-- init NS_UNAVAILABLE;
+@property WKWebView *webView;
 
-- initWithSurvey:(POLSurvey *)survey;
+- (WKWebViewConfiguration *)webViewConfiguration;
+- (void)loadWebRequest;
 
 @end
 

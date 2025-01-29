@@ -20,7 +20,6 @@ NS_SWIFT_NAME(Polling.Survey)
 @property (readonly) NSUInteger questionCount;
 
 @property (readonly) NSURL *URL;
-@property (readonly) NSURL *embedViewURL;
 @property (readonly) NSURL *completionURL;
 
 @property (readonly) NSString *userSurveyStatus;

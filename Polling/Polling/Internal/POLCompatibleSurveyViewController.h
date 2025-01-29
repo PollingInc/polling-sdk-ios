@@ -6,20 +6,14 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "POLPolling.h"
-#import "POLSurveyViewControllerDelegate.h"
+#import "POLSurveyViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class POLSurvey;
-
-@interface POLCompatibleSurveyViewController : UIViewController
+@interface POLCompatibleSurveyViewController : POLSurveyViewController
 
 @property POLViewType viewType;
-@property (readonly) POLSurvey *survey;
-@property (nonatomic, weak, nullable) id<POLSurveyViewControllerDelegate> delegate;
 
-- init NS_UNAVAILABLE;
 - initWithSurvey:(POLSurvey *)survey viewType:(POLViewType)viewType;
 
 @end

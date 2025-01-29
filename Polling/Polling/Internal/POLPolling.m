@@ -8,7 +8,7 @@
 #import "POLPolling.h"
 #import "POLPolling+Private.h"
 #import "POLNetworkSession.h"
-#import "POLSurveyViewController.h"
+#import "POLModernSurveyViewController.h"
 #import "POLCompatibleSurveyViewController.h"
 #import "POLPresentationController.h"
 #import "POLTriggeredSurveyController.h"
@@ -24,6 +24,23 @@
 //#else
 static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 //#endif
+
+NSString * const POLViewTypeNoneDescription = @"None";
+NSString * const POLViewTypeDialogDescription = @"Dialog";
+NSString * const POLViewTypeBottomDescription = @"Bottom";
+
+NSString * const POLViewTypeDescriptions[] = {
+	[POLViewTypeNone] = POLViewTypeNoneDescription,
+	[POLViewTypeDialog] = POLViewTypeDialogDescription,
+	[POLViewTypeBottom] = POLViewTypeBottomDescription,
+};
+
+NSString * const POLViewTypeDescription(POLViewType viewType)
+{
+	if (viewType > POL_ARRAY_SIZE(POLViewTypeDescriptions) - 1)
+		return @"Unknown";
+	return POLViewTypeDescriptions[viewType];
+}
 
 @interface POLPolling () <POLNetworkSessionDelegate, POLSurveyViewControllerDelegate, UIViewControllerTransitioningDelegate>
 
@@ -42,7 +59,7 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 	NSTimer *_pollTimer;
 	NSTimer *_postponeTimer;
 	POLNetworkSession *_networkSession;
-	UIViewController *_surveyViewController;
+	POLSurveyViewController *_surveyViewController;
 	NSArray<POLSurvey *> *_cachedSurveys;
 	POLViewType _viewType;
 	POLTriggeredSurveyController *_triggeredSurveyController;
@@ -64,6 +81,8 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 
 	return self;
 }
+
+#pragma mark - Public API
 
 + (instancetype)polling
 {
@@ -106,6 +125,8 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 {
 	[self presentSurveyInternal:[POLSurvey surveyWithUUID:surveyUuid]];
 }
+
+#pragma mark - Internal
 
 - (void)dealloc
 {
@@ -287,8 +308,8 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 
 	UIViewController *visVC = self.visibleViewController;
 
-	_surveyViewController = [[POLSurveyViewController alloc] initWithSurvey:survey];
-	((POLSurveyViewController *)_surveyViewController).delegate = self;
+	_surveyViewController = [[POLModernSurveyViewController alloc] initWithSurvey:survey];
+	_surveyViewController.delegate = self;
 
 	if (_viewType == POLViewTypeDialog) {
 		_surveyViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
@@ -316,7 +337,7 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 	UIViewController *visVC = self.visibleViewController;
 
 	_surveyViewController = [[POLCompatibleSurveyViewController alloc] initWithSurvey:survey viewType:_viewType];
-	((POLCompatibleSurveyViewController *)_surveyViewController).delegate = self;
+	_surveyViewController.delegate = self;
 	_surveyViewController.modalPresentationStyle = UIModalPresentationOverFullScreen;
 	_surveyViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
 

@@ -12,6 +12,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NSString * const POLViewTypeDescription(POLViewType viewType);
+
 @class POLTriggeredSurvey;
 
 @interface POLPolling ()
