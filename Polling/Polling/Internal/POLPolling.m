@@ -44,6 +44,18 @@ NSString * const POLViewTypeDescription(POLViewType viewType)
 	return POLViewTypeDescriptions[viewType];
 }
 
+static NSUncaughtExceptionHandler *POLPreviousUncaughtExceptionHandler;
+void POLUncaughtExceptionHandler(NSException *exception)
+{
+	POLLogError("%s exception=\"%@\", reason=\"%@\"", __func__, exception.name, exception.reason);
+	POLLogTrace("%s callStackSymbols=%@", __func__, exception.callStackSymbols);
+	POLLogTrace("%s callStackReturnAddresses=%@", __func__, exception.callStackReturnAddresses);
+	// TODO: write to file and potentially send to a logging server on next launch
+	// TODO: shutdown SDK for this session
+	if (POLPreviousUncaughtExceptionHandler)
+		POLPreviousUncaughtExceptionHandler(exception);
+}
+
 @interface POLPolling () <POLNetworkSessionDelegate, POLSurveyViewControllerDelegate, UIViewControllerTransitioningDelegate>
 
 - (void)beginSurveyChecks;
@@ -91,6 +103,8 @@ NSString * const POLViewTypeDescription(POLViewType viewType)
 	static POLPolling *pol;
 	static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
+		POLPreviousUncaughtExceptionHandler = NSGetUncaughtExceptionHandler();
+		NSSetUncaughtExceptionHandler(POLUncaughtExceptionHandler);
 		POLLogTrace("Create singleton=%@, method=%s", self, __func__);
 		pol = POLPolling.new;
 	});
