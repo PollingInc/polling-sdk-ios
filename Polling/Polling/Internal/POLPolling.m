@@ -11,6 +11,7 @@
 #import "POLModernSurveyViewController.h"
 #import "POLCompatibleSurveyViewController.h"
 #import "POLPresentationController.h"
+#import "POLSurveyDialogAnimateInController.h"
 #import "POLTriggeredSurveyController.h"
 
 
@@ -340,6 +341,7 @@ NSString * const POLViewTypeDescription(POLViewType viewType)
 	_surveyViewController.delegate = self;
 	_surveyViewController.modalPresentationStyle = UIModalPresentationOverFullScreen;
 	_surveyViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+	_surveyViewController.transitioningDelegate = self;
 
 	_surveyVisible = YES;
 	[visVC presentViewController:_surveyViewController animated:YES completion:nil];
@@ -347,12 +349,38 @@ NSString * const POLViewTypeDescription(POLViewType viewType)
 
 #pragma mark - View Controller Trasitioning Delegate
 
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented
+	presentingController:(UIViewController *)presenting
+	sourceController:(UIViewController *)source
+{
+	POLLogTrace("%s presented=%@, presenting=%@, source=%@", __func__, presented, presenting, source);
+
+	if ([presented isKindOfClass:POLCompatibleSurveyViewController.class]) {
+		POLCompatibleSurveyViewController *vc = (POLCompatibleSurveyViewController *)presented;
+		if (vc.viewType == POLViewTypeDialog)
+			return [POLSurveyDialogAnimateInController animateInWithViewController:vc];
+	}
+
+	return nil;
+}
+
 - (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented
 	presentingViewController:(UIViewController *)presenting
 	sourceViewController:(UIViewController *)source
 {
-	return [[POLPresentationController alloc] initWithPresentedViewController:presented
-													 presentingViewController:presenting];
+	POLLogTrace("%s presented=%@, presenting=%@, source=%@", __func__, presented, presenting, source);
+	return nil;
+//	return [[POLPresentationController alloc] initWithPresentedViewController:presented
+//													 presentingViewController:presenting];
+}
+
+#pragma mark - View Controller Transistion Coordinator
+
+- (BOOL)animateAlongsideTransition:(void (^)(id<UIViewControllerTransitionCoordinatorContext> context))animation
+	completion:(void (^)(id<UIViewControllerTransitionCoordinatorContext> context))completion
+{
+	POLLogTrace("%s", __func__);
+	return NO;
 }
 
 #pragma mark - Survey View Controller Delegate

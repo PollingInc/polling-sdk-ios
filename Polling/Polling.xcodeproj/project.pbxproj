@@ -49,6 +49,8 @@
 		2CEADCCC2D474C750087A2E8 /* NSURLRequest+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEADCC92D474C740087A2E8 /* NSURLRequest+Additions.h */; };
 		2CEADD2B2D498DD40087A2E8 /* POLModernSurveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEADD2A2D498DD40087A2E8 /* POLModernSurveyViewController.m */; };
 		2CEADD2C2D498DD40087A2E8 /* POLModernSurveyViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEADD292D498DD40087A2E8 /* POLModernSurveyViewController.h */; };
+		2CEADD312D49EC5E0087A2E8 /* POLSurveyDialogAnimateInController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEADD302D49EC5E0087A2E8 /* POLSurveyDialogAnimateInController.m */; };
+		2CEADD322D49EC5E0087A2E8 /* POLSurveyDialogAnimateInController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEADD2F2D49EC5E0087A2E8 /* POLSurveyDialogAnimateInController.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +107,8 @@
 		2CEADCCA2D474C740087A2E8 /* NSURLRequest+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+Additions.m"; sourceTree = "<group>"; };
 		2CEADD292D498DD40087A2E8 /* POLModernSurveyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLModernSurveyViewController.h; sourceTree = "<group>"; };
 		2CEADD2A2D498DD40087A2E8 /* POLModernSurveyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLModernSurveyViewController.m; sourceTree = "<group>"; };
+		2CEADD2F2D49EC5E0087A2E8 /* POLSurveyDialogAnimateInController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLSurveyDialogAnimateInController.h; sourceTree = "<group>"; };
+		2CEADD302D49EC5E0087A2E8 /* POLSurveyDialogAnimateInController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLSurveyDialogAnimateInController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -191,6 +195,8 @@
 				2C3ACAEC2D24806E00DBFCEB /* POLSurveyDialogViewController.xib */,
 				2C6CF6402D24BC140074CC94 /* POLSurveyBottomViewController.xib */,
 				2C8AEB3B2D23698F00294B6C /* POLSurveyViewControllerDelegate.h */,
+				2CEADD2F2D49EC5E0087A2E8 /* POLSurveyDialogAnimateInController.h */,
+				2CEADD302D49EC5E0087A2E8 /* POLSurveyDialogAnimateInController.m */,
 				2C8AEAF72D21CDBF00294B6C /* POLTriggeredSurveyController.h */,
 				2C8AEAF82D21CDBF00294B6C /* POLTriggeredSurveyController.m */,
 				2C8AEA842D21BD3000294B6C /* POLTriggeredSurvey.h */,
@@ -262,6 +268,7 @@
 				2C8AEA9F2D21BD3000294B6C /* POLTriggeredSurvey.h in Headers */,
 				2CEADCCC2D474C750087A2E8 /* NSURLRequest+Additions.h in Headers */,
 				2CEADCBB2D42A8A10087A2E8 /* NSMutableDictionary+Additions.h in Headers */,
+				2CEADD322D49EC5E0087A2E8 /* POLSurveyDialogAnimateInController.h in Headers */,
 				2C8AEAA02D21BD3000294B6C /* Polling.h in Headers */,
 				2C8AEAA12D21BD3000294B6C /* POLNetworkSession.h in Headers */,
 				2C8AEAA22D21BD3000294B6C /* POLPolling.h in Headers */,
@@ -388,6 +395,7 @@
 				2C9321E52D3D254A00221F53 /* POLError.m in Sources */,
 				2C8AEA922D21BD3000294B6C /* POLReward.m in Sources */,
 				2C8AEA932D21BD3000294B6C /* POLSurvey.m in Sources */,
+				2CEADD312D49EC5E0087A2E8 /* POLSurveyDialogAnimateInController.m in Sources */,
 				2C8AEAF92D21CDBF00294B6C /* POLTriggeredSurveyController.m in Sources */,
 				2C8AEB392D2366DC00294B6C /* POLCompatibleSurveyViewController.m in Sources */,
 				2CEADCBA2D42A8A10087A2E8 /* NSMutableDictionary+Additions.m in Sources */,

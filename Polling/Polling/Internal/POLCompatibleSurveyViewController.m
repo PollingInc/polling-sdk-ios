@@ -17,21 +17,16 @@
 
 #pragma mark - View
 
-@interface POLBackgroundView : UIView
-@end
 @implementation POLBackgroundView
 @end
 
-@interface POLContainerView : UIView
-@end
 @implementation POLContainerView
 @end
 
 #pragma mark - View Controller
 
 @interface POLCompatibleSurveyViewController () <WKUIDelegate, WKNavigationDelegate, UIGestureRecognizerDelegate>
-@property (strong, nonatomic) IBOutlet POLBackgroundView *backgroundView;
-@property (weak, nonatomic) IBOutlet POLContainerView *containerView;
+
 - (void)tap:(id)sender;
 @end
 
