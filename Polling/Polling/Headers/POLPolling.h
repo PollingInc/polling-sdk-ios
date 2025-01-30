@@ -18,6 +18,7 @@ typedef NS_ENUM(NSInteger, POLViewType) {
 	POLViewTypeBottom = 2,
 } NS_SWIFT_NAME(Polling.ViewType);
 
+
 NS_SWIFT_NAME(Polling)
 @interface POLPolling : NSObject
 
@@ -30,16 +31,22 @@ NS_SWIFT_NAME(Polling)
 
 @property NSString *customerID;
 @property NSString *apiKey;
-
+@property POLViewType viewType;
 @property BOOL disableCheckingForAvailableSurveys;
 
 /* public API methods */
 - (void)logEvent:(NSString *)eventName value:(NSString *)eventValue;
 - (void)logPurchase:(int)integerCents;
 - (void)logSession;
-- (void)setViewType:(POLViewType)viewType;
 - (void)showEmbedView;
 - (void)showSurvey:(NSString *)surveyUuid;
+
+/* The accessor methods: setCustomerID, setApiKey, setViewType,
+ *   setDisableCheckingForAvailableSurveys are implicitly available in
+ *   ObjC, but Swift code must use the property form?
+ *
+ * TODO: explicitly declare accessors?
+ */
 
 @end
 

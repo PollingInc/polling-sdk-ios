@@ -44,25 +44,25 @@ struct ContentView: View {
 
 	func showDialog() {
 		print("\(#function)")
-		polling.setViewType(.dialog)
+		polling.viewType = .dialog
 		polling.showSurvey($UUID.wrappedValue)
 	}
 
 	func showBottom() {
 		print("\(#function)")
-		polling.setViewType(.bottom)
+		polling.viewType = .bottom
 		polling.showSurvey($UUID.wrappedValue)
 	}
 
 	func embedDialog() {
 		print("\(#function)")
-		polling.setViewType(.dialog)
+		polling.viewType = .dialog
 		polling.showEmbedView()
 	}
 
 	func embedBottom() {
 		print("\(#function)")
-		polling.setViewType(.bottom)
+		polling.viewType = .bottom
 		polling.showEmbedView()
 	}
 

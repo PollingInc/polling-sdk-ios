@@ -12,6 +12,31 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+void POLSetSDKInitialized(BOOL initialized);
+BOOL POLIsSDKInitialized(void);
+
+void POLShutdownSDK(void);
+BOOL POLIsSDKShutdown(void);
+
+BOOL POLIsSDKDisabled(void);
+
+#define POLGuardPublicAPI() ({											\
+	if (!POLPolling.polling.delegate)									\
+		POLLogWarn("Polling delegate not set");							\
+	if (POLIsSDKDisabled()) {											\
+		if (POLIsSDKShutdown()) {										\
+			POLLogError("Attempt to use shutdown SDK; ignoring request"); \
+			return;														\
+		}																\
+		POLLogError("Attempt to use uninitialized SDK; ignoring request"); \
+		if (POLIsObviouslyInvalidString(POLPolling.polling.customerID))	\
+			POLLogError("You must set 'customerID'");					\
+		if (POLIsObviouslyInvalidString(POLPolling.polling.apiKey))		\
+			POLLogError("You must set 'apiKey'");						\
+		return;															\
+	}																	\
+})
+
 NSString * const POLViewTypeDescription(POLViewType viewType);
 
 @class POLTriggeredSurvey;

@@ -27,6 +27,34 @@
 static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 //#endif
 
+static BOOL POLSDKInitialized = NO;
+static BOOL POLSDKShutdown = NO;
+
+void POLSetSDKInitialized(BOOL initialized)
+{
+	POLSDKInitialized = initialized;
+}
+
+BOOL POLIsSDKInitialized(void)
+{
+	return POLSDKInitialized;
+}
+
+void POLShutdownSDK(void)
+{
+	POLSDKShutdown = YES;
+}
+
+BOOL POLIsSDKShutdown(void)
+{
+	return POLSDKShutdown;
+}
+
+BOOL POLIsSDKDisabled(void)
+{
+	return !POLSDKInitialized || POLSDKShutdown;
+}
+
 NSString * const POLViewTypeNoneDescription = @"None";
 NSString * const POLViewTypeDialogDescription = @"Dialog";
 NSString * const POLViewTypeBottomDescription = @"Bottom";
@@ -50,10 +78,23 @@ void POLUncaughtExceptionHandler(NSException *exception)
 	POLLogError("%s exception=\"%@\", reason=\"%@\"", __func__, exception.name, exception.reason);
 	POLLogTrace("%s callStackSymbols=%@", __func__, exception.callStackSymbols);
 	POLLogTrace("%s callStackReturnAddresses=%@", __func__, exception.callStackReturnAddresses);
+
 	// TODO: write to file and potentially send to a logging server on next launch
-	// TODO: shutdown SDK for this session
+
+	POLShutdownSDK();
+
+	// allow other frameworks or the app to handle uncaught exceptions
 	if (POLPreviousUncaughtExceptionHandler)
 		POLPreviousUncaughtExceptionHandler(exception);
+}
+
+NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
+{
+	if (!str)
+		return YES;
+	if ([str isEqualToString:@""])
+		return YES;
+	return NO;
 }
 
 @interface POLPolling () <POLNetworkSessionDelegate, POLSurveyViewControllerDelegate, UIViewControllerTransitioningDelegate>
@@ -75,7 +116,6 @@ void POLUncaughtExceptionHandler(NSException *exception)
 	POLNetworkSession *_networkSession;
 	POLSurveyViewController *_surveyViewController;
 	NSArray<POLSurvey *> *_cachedSurveys;
-	POLViewType _viewType;
 	POLTriggeredSurveyController *_triggeredSurveyController;
 	POLTriggeredSurvey *_inboundTriggeredSurvey;
 	POLSurvey *_currentSurvey;
@@ -96,6 +136,46 @@ void POLUncaughtExceptionHandler(NSException *exception)
 	return self;
 }
 
+- (NSString *)customerID
+{
+	return _customerID;
+}
+
+- (void)setCustomerID:(NSString *)customerID
+{
+	_customerID = customerID;
+	if (POLIsObviouslyInvalidString(_customerID)) {
+		POLSetSDKInitialized(NO);
+		return;
+	}
+	if (POLIsObviouslyInvalidString(_apiKey)) {
+		POLSetSDKInitialized(NO);
+		return;
+	}
+	POLSetSDKInitialized(YES);
+	[self beginSurveyChecks];
+}
+
+- (NSString *)apiKey
+{
+	return _apiKey;
+}
+
+- (void)setApiKey:(NSString *)apiKey
+{
+	_apiKey = apiKey;
+	if (POLIsObviouslyInvalidString(_customerID)) {
+		POLSetSDKInitialized(NO);
+		return;
+	}
+	if (POLIsObviouslyInvalidString(_apiKey)) {
+		POLSetSDKInitialized(NO);
+		return;
+	}
+	POLSetSDKInitialized(YES);
+	[self beginSurveyChecks];
+}
+
 #pragma mark - Public API
 
 + (instancetype)polling
@@ -113,32 +193,32 @@ void POLUncaughtExceptionHandler(NSException *exception)
 
 - (void)logEvent:(NSString *)eventName value:(NSString *)eventValue
 {
+	POLGuardPublicAPI();
 	POLLogTrace("%s %@:%@", __func__, eventName, eventValue);
 	[_networkSession postEvent:eventName withValue:eventValue];
 }
 
 - (void)logPurchase:(int)integerCents
 {
+	POLGuardPublicAPI();
 	[self logEvent:@"Purchase" value:[NSString stringWithFormat:@"%@", @(integerCents)]];
 }
 
 - (void)logSession
 {
+	POLGuardPublicAPI();
 	[self logEvent:@"Session" value:@""];
-}
-
-- (void)setViewType:(POLViewType)viewType
-{
-	_viewType = viewType;
 }
 
 - (void)showEmbedView
 {
+	POLGuardPublicAPI();
 	[self presentEmbed];
 }
 
 - (void)showSurvey:(NSString *)surveyUuid
 {
+	POLGuardPublicAPI();
 	[self presentSurveyInternal:[POLSurvey surveyWithUUID:surveyUuid]];
 }
 
@@ -169,7 +249,10 @@ void POLUncaughtExceptionHandler(NSException *exception)
 
 - (void)performRemoteSurveyChecks
 {
-	//POLLogTrace("%s", __func__);
+	if (POLIsSDKDisabled()) {
+		[self stopSurveyChecks];
+		return;
+	}
 
 	if (!_disableCheckingForAvailableSurveys)
 		[_networkSession fetchAvailableSurveys];
@@ -194,7 +277,6 @@ void POLUncaughtExceptionHandler(NSException *exception)
 - (void)networkSessionDidFetchAvailableSurveys:(NSArray<POLSurvey *> *)surveys
 {
 	POLLogTrace("%s %@", __func__, surveys);
-	//[self stopCheckingForSurveys];
 
 	_cachedSurveys = surveys;
 	if (_cachedSurveys.count == 0)
@@ -207,7 +289,6 @@ void POLUncaughtExceptionHandler(NSException *exception)
 - (void)networkSessionDidUpdateTriggeredSurveys:(NSArray<POLTriggeredSurvey *> *)triggeredSurvey
 {
 	POLLogTrace("%s %@", __func__, triggeredSurvey);
-	//if (triggeredSurvey.count > 0)
 	[_triggeredSurveyController triggeredSurveysDidUpdate:triggeredSurvey];
 }
 

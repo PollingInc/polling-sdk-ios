@@ -30,17 +30,9 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
-	//_polling = [[POLPolling alloc] initWithCustomerID:@"ios-sdk-test-customer_00000"
-	//			APIKey:@"H3uZsrv6B2qyRXGePLxQ9U8g7vilWFTjIhZO"];
-
-	//_polling = POLPolling.polling;
-	//_polling.customerID = @"ios-sdk-test-customer_00000";
-	//_polling.apiKey = @"H3uZsrv6B2qyRXGePLxQ9U8g7vilWFTjIhZO";
-
 	NSString *customerID = [NSString stringWithFormat:@"ios-customer_%@", @(NSDate.date.timeIntervalSinceReferenceDate)];
 
 	_polling = POLPolling.polling;
-	//[_polling initializeWithCustomerID:customerID APIKey:@"H3uZsrv6B2qyRXGePLxQ9U8g7vilWFTjIhZO"];
 	_polling.customerID = customerID;
 	_polling.apiKey = @"H3uZsrv6B2qyRXGePLxQ9U8g7vilWFTjIhZO";
 	_polling.delegate = self;
@@ -53,7 +45,7 @@
 
 	NSString *uuid = self.surveyUUID.text;
 
-	[_polling setViewType:POLViewTypeDialog];
+	_polling.viewType = POLViewTypeDialog;
 	[_polling showSurvey:uuid];
 }
 
@@ -63,7 +55,7 @@
 
 	NSString *uuid = self.surveyUUID.text;
 
-	[_polling setViewType:POLViewTypeBottom];
+	_polling.viewType = POLViewTypeBottom;
 	[_polling showSurvey:uuid];
 }
 
@@ -112,8 +104,5 @@
 {
 	NSLog(@"%s", __func__);
 }
-
-
-
 
 @end
