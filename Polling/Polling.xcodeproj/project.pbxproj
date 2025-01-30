@@ -42,6 +42,8 @@
 		2C9321E52D3D254A00221F53 /* POLError.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9321E32D3D254A00221F53 /* POLError.m */; };
 		2C9B66102D0B2B090060AF12 /* Polling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9B66052D0B2B090060AF12 /* Polling.framework */; };
 		2CA863D02D2D61FB006622E0 /* POLReward+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CA863CE2D2D61FA006622E0 /* POLReward+Private.h */; };
+		2CD0C1642D4B0C0C0053BD55 /* POLSurveyBottomAnimateInController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD0C1632D4B0C0C0053BD55 /* POLSurveyBottomAnimateInController.m */; };
+		2CD0C1652D4B0C0C0053BD55 /* POLSurveyBottomAnimateInController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CD0C1622D4B0C0C0053BD55 /* POLSurveyBottomAnimateInController.h */; };
 		2CEADCB32D3D911E0087A2E8 /* POLDefines.h in Sources */ = {isa = PBXBuildFile; fileRef = 2CEADCB22D3D911E0087A2E8 /* POLDefines.h */; };
 		2CEADCBA2D42A8A10087A2E8 /* NSMutableDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEADCB92D42A8A10087A2E8 /* NSMutableDictionary+Additions.m */; };
 		2CEADCBB2D42A8A10087A2E8 /* NSMutableDictionary+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEADCB82D42A8A10087A2E8 /* NSMutableDictionary+Additions.h */; };
@@ -100,6 +102,8 @@
 		2C9B66052D0B2B090060AF12 /* Polling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9B660F2D0B2B090060AF12 /* PollingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PollingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA863CE2D2D61FA006622E0 /* POLReward+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "POLReward+Private.h"; sourceTree = "<group>"; };
+		2CD0C1622D4B0C0C0053BD55 /* POLSurveyBottomAnimateInController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLSurveyBottomAnimateInController.h; sourceTree = "<group>"; };
+		2CD0C1632D4B0C0C0053BD55 /* POLSurveyBottomAnimateInController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLSurveyBottomAnimateInController.m; sourceTree = "<group>"; };
 		2CEADCB22D3D911E0087A2E8 /* POLDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLDefines.h; sourceTree = "<group>"; };
 		2CEADCB82D42A8A10087A2E8 /* NSMutableDictionary+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Additions.h"; sourceTree = "<group>"; };
 		2CEADCB92D42A8A10087A2E8 /* NSMutableDictionary+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Additions.m"; sourceTree = "<group>"; };
@@ -197,6 +201,8 @@
 				2C8AEB3B2D23698F00294B6C /* POLSurveyViewControllerDelegate.h */,
 				2CEADD2F2D49EC5E0087A2E8 /* POLSurveyDialogAnimateInController.h */,
 				2CEADD302D49EC5E0087A2E8 /* POLSurveyDialogAnimateInController.m */,
+				2CD0C1622D4B0C0C0053BD55 /* POLSurveyBottomAnimateInController.h */,
+				2CD0C1632D4B0C0C0053BD55 /* POLSurveyBottomAnimateInController.m */,
 				2C8AEAF72D21CDBF00294B6C /* POLTriggeredSurveyController.h */,
 				2C8AEAF82D21CDBF00294B6C /* POLTriggeredSurveyController.m */,
 				2C8AEA842D21BD3000294B6C /* POLTriggeredSurvey.h */,
@@ -270,6 +276,7 @@
 				2CEADCBB2D42A8A10087A2E8 /* NSMutableDictionary+Additions.h in Headers */,
 				2CEADD322D49EC5E0087A2E8 /* POLSurveyDialogAnimateInController.h in Headers */,
 				2C8AEAA02D21BD3000294B6C /* Polling.h in Headers */,
+				2CD0C1652D4B0C0C0053BD55 /* POLSurveyBottomAnimateInController.h in Headers */,
 				2C8AEAA12D21BD3000294B6C /* POLNetworkSession.h in Headers */,
 				2C8AEAA22D21BD3000294B6C /* POLPolling.h in Headers */,
 				2CA863D02D2D61FB006622E0 /* POLReward+Private.h in Headers */,
@@ -399,6 +406,7 @@
 				2C8AEAF92D21CDBF00294B6C /* POLTriggeredSurveyController.m in Sources */,
 				2C8AEB392D2366DC00294B6C /* POLCompatibleSurveyViewController.m in Sources */,
 				2CEADCBA2D42A8A10087A2E8 /* NSMutableDictionary+Additions.m in Sources */,
+				2CD0C1642D4B0C0C0053BD55 /* POLSurveyBottomAnimateInController.m in Sources */,
 				2C8AEB352D229B1B00294B6C /* NSDictionary+Additions.m in Sources */,
 				2C8AEA952D21BD3000294B6C /* POLTriggeredSurvey.m in Sources */,
 				2C8AEA962D21BD3000294B6C /* Polling.docc in Sources */,

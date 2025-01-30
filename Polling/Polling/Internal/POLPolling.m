@@ -12,6 +12,7 @@
 #import "POLCompatibleSurveyViewController.h"
 #import "POLPresentationController.h"
 #import "POLSurveyDialogAnimateInController.h"
+#import "POLSurveyBottomAnimateInController.h"
 #import "POLTriggeredSurveyController.h"
 
 
@@ -359,6 +360,8 @@ NSString * const POLViewTypeDescription(POLViewType viewType)
 		POLCompatibleSurveyViewController *vc = (POLCompatibleSurveyViewController *)presented;
 		if (vc.viewType == POLViewTypeDialog)
 			return [POLSurveyDialogAnimateInController animateInWithViewController:vc];
+		else if (vc.viewType == POLViewTypeBottom)
+			return POLSurveyBottomAnimateInController.new;
 	}
 
 	return nil;
