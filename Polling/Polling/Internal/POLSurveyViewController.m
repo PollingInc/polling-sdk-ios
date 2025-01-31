@@ -12,6 +12,9 @@
 #import "POLSurvey.h"
 #import "POLSurvey+Private.h"
 
+//#import "POLUserScripts.h"
+FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
+
 #import <WebKit/WebKit.h>
 
 @interface POLSurveyViewController () <WKUIDelegate, WKNavigationDelegate>
@@ -27,13 +30,26 @@
 	[super viewDidLoad];
 }
 
+- (WKUserScript *)userScriptPreventTextInputZoom
+{
+	return [[WKUserScript alloc] initWithSource:POLUserScriptPreventTextInputZoomSource
+								  injectionTime:WKUserScriptInjectionTimeAtDocumentEnd
+							   forMainFrameOnly:YES];
+}
+
 - (WKWebViewConfiguration *)webViewConfiguration
 {
 	if (_config)
 		return _config;
 
 	_config = WKWebViewConfiguration.new;
-	// TODO: add SDK specific configuraton
+	_config.applicationNameForUserAgent = @"Polling SDK for iOS";
+
+	[_config.userContentController addUserScript:self.userScriptPreventTextInputZoom];
+
+	WKPreferences *preferences = WKPreferences.new;
+	preferences.minimumFontSize = 16; // does not seem to work
+	_config.preferences = preferences;
 
 	return _config;
 }
@@ -46,7 +62,7 @@
 	[_webView loadRequest:req];
 }
 
-#pragma mark - Momory Warning
+#pragma mark - Memory Warning
 
 - (void)didReceiveMemoryWarning
 {

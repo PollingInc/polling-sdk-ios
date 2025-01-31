@@ -67,6 +67,11 @@
 	self.webView.UIDelegate = self;
 	self.webView.navigationDelegate = self;
 
+#if DEBUG
+	if (@available(macOS 13.3, iOS 16.4, tvOS 16.4, *))
+		self.webView.inspectable = YES;
+#endif
+
 	self.webView.translatesAutoresizingMaskIntoConstraints = NO;
 	[_containerView addSubview:self.webView];
 

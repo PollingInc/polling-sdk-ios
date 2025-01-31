@@ -41,6 +41,8 @@
 		2C9321E42D3D254A00221F53 /* POLError.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9321E22D3D254A00221F53 /* POLError.h */; };
 		2C9321E52D3D254A00221F53 /* POLError.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9321E32D3D254A00221F53 /* POLError.m */; };
 		2C9B66102D0B2B090060AF12 /* Polling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9B66052D0B2B090060AF12 /* Polling.framework */; };
+		2C9B6FDD2D4C994800160B6A /* POLUserScript.template_h in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B6FD82D4C957A00160B6A /* POLUserScript.template_h */; };
+		2C9B6FDE2D4C994800160B6A /* POLUserScript.template_m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B6FDA2D4C958E00160B6A /* POLUserScript.template_m */; };
 		2CA863D02D2D61FB006622E0 /* POLReward+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CA863CE2D2D61FA006622E0 /* POLReward+Private.h */; };
 		2CD0C1642D4B0C0C0053BD55 /* POLSurveyBottomAnimateInController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD0C1632D4B0C0C0053BD55 /* POLSurveyBottomAnimateInController.m */; };
 		2CD0C1652D4B0C0C0053BD55 /* POLSurveyBottomAnimateInController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CD0C1622D4B0C0C0053BD55 /* POLSurveyBottomAnimateInController.h */; };
@@ -54,6 +56,41 @@
 		2CEADD312D49EC5E0087A2E8 /* POLSurveyDialogAnimateInController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEADD302D49EC5E0087A2E8 /* POLSurveyDialogAnimateInController.m */; };
 		2CEADD322D49EC5E0087A2E8 /* POLSurveyDialogAnimateInController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEADD2F2D49EC5E0087A2E8 /* POLSurveyDialogAnimateInController.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		2C9B6FD42D4C925B00160B6A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.template_h";
+			fileType = pattern.proxy;
+			inputFileLists = (
+				"$(SRCROOT)/Polling/Internal/UserScripts/UserScriptsInput.xcfilelist",
+			);
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_BASE).h",
+			);
+			script = "\"$SRCROOT/../Scripts/gen-user-scripts\" \"$SCRIPT_INPUT_FILE\" \"$SCRIPT_OUTPUT_FILE_0\"\n";
+		};
+		2C9B6FDC2D4C986100160B6A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.template_m";
+			fileType = pattern.proxy;
+			inputFileLists = (
+				"$(SRCROOT)/Polling/Internal/UserScripts/UserScriptsInput.xcfilelist",
+			);
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_BASE).m",
+			);
+			script = "\"$SRCROOT/../Scripts/gen-user-scripts\" \"$SCRIPT_INPUT_FILE\" \"$SCRIPT_OUTPUT_FILE_0\"\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		2C9B66112D0B2B090060AF12 /* PBXContainerItemProxy */ = {
@@ -101,6 +138,10 @@
 		2C9321E32D3D254A00221F53 /* POLError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLError.m; sourceTree = "<group>"; };
 		2C9B66052D0B2B090060AF12 /* Polling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9B660F2D0B2B090060AF12 /* PollingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PollingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C9B6FD82D4C957A00160B6A /* POLUserScript.template_h */ = {isa = PBXFileReference; lastKnownFileType = text; path = POLUserScript.template_h; sourceTree = "<group>"; };
+		2C9B6FDA2D4C958E00160B6A /* POLUserScript.template_m */ = {isa = PBXFileReference; lastKnownFileType = text; path = POLUserScript.template_m; sourceTree = "<group>"; };
+		2C9B70482D4CA59000160B6A /* POLUserScript.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = POLUserScript.h; path = "../../Intermediates.noindex/Polling.build/Debug-iphonesimulator/Polling.build/DerivedSources/POLUserScript.h"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C9B704A2D4CA61100160B6A /* POLUserScript.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = POLUserScript.m; path = "../../Intermediates.noindex/Polling.build/Debug-iphonesimulator/Polling.build/DerivedSources/POLUserScript.m"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA863CE2D2D61FA006622E0 /* POLReward+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "POLReward+Private.h"; sourceTree = "<group>"; };
 		2CD0C1622D4B0C0C0053BD55 /* POLSurveyBottomAnimateInController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLSurveyBottomAnimateInController.h; sourceTree = "<group>"; };
 		2CD0C1632D4B0C0C0053BD55 /* POLSurveyBottomAnimateInController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLSurveyBottomAnimateInController.m; sourceTree = "<group>"; };
@@ -116,6 +157,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2C6936D02D4CF4FE00A8A6ED /* Exceptions for "Scripts" folder in "Polling" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"gen-user-scripts",
+				"gen-user-scripts-input-file-list",
+			);
+			target = 2C9B66042D0B2B090060AF12 /* Polling */;
+		};
 		2C9B67942D0CCC310060AF12 /* Exceptions for "Configs" folder in "Polling" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -123,9 +172,21 @@
 				"Framework-Release.xcconfig",
 				Framework.xcconfig,
 				Local.xcconfig,
+				"SwiftUIApp-Debug.xcconfig",
+				"SwiftUIApp-Release.xcconfig",
+				SwiftUIApp.xcconfig,
 				"UIKitApp-Debug.xcconfig",
 				"UIKitApp-Release.xcconfig",
 				UIKitApp.xcconfig,
+			);
+			target = 2C9B66042D0B2B090060AF12 /* Polling */;
+		};
+		2CD0C1812D4C1B840053BD55 /* Exceptions for "UserScripts" folder in "Polling" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CSSInjector.js,
+				PreventTextInputZoom.css,
+				UserScriptsInput.xcfilelist,
 			);
 			target = 2C9B66042D0B2B090060AF12 /* Polling */;
 		};
@@ -144,6 +205,23 @@
 			);
 			name = Configs;
 			path = ../Configs;
+			sourceTree = SOURCE_ROOT;
+		};
+		2CD0C16E2D4C074E0053BD55 /* UserScripts */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2CD0C1812D4C1B840053BD55 /* Exceptions for "UserScripts" folder in "Polling" target */,
+			);
+			path = UserScripts;
+			sourceTree = "<group>";
+		};
+		2CD0C1772D4C07F70053BD55 /* Scripts */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2C6936D02D4CF4FE00A8A6ED /* Exceptions for "Scripts" folder in "Polling" target */,
+			);
+			name = Scripts;
+			path = ../Scripts;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -180,6 +258,7 @@
 		2C8AEAA52D21BD3F00294B6C /* Internal */ = {
 			isa = PBXGroup;
 			children = (
+				2CD0C16E2D4C074E0053BD55 /* UserScripts */,
 				2C8AEB312D21F20200294B6C /* POLPolling+Private.h */,
 				2C8AEA8C2D21BD3000294B6C /* POLPolling.m */,
 				2C8AEA812D21BD3000294B6C /* POLSurvey+Private.h */,
@@ -194,6 +273,8 @@
 				2C8AEA902D21BD3000294B6C /* POLSurveyViewController.m */,
 				2CEADD292D498DD40087A2E8 /* POLModernSurveyViewController.h */,
 				2CEADD2A2D498DD40087A2E8 /* POLModernSurveyViewController.m */,
+				2C9B6FD82D4C957A00160B6A /* POLUserScript.template_h */,
+				2C9B6FDA2D4C958E00160B6A /* POLUserScript.template_m */,
 				2C8AEB372D2366DC00294B6C /* POLCompatibleSurveyViewController.h */,
 				2C8AEB382D2366DC00294B6C /* POLCompatibleSurveyViewController.m */,
 				2C3ACAEC2D24806E00DBFCEB /* POLSurveyDialogViewController.xib */,
@@ -220,6 +301,8 @@
 				2CEADCB92D42A8A10087A2E8 /* NSMutableDictionary+Additions.m */,
 				2CEADCC92D474C740087A2E8 /* NSURLRequest+Additions.h */,
 				2CEADCCA2D474C740087A2E8 /* NSURLRequest+Additions.m */,
+				2C9B70482D4CA59000160B6A /* POLUserScript.h */,
+				2C9B704A2D4CA61100160B6A /* POLUserScript.m */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
@@ -241,6 +324,7 @@
 				2C8AEA912D21BD3000294B6C /* Polling */,
 				2C9B66132D0B2B090060AF12 /* PollingTests */,
 				2C9B66BE2D0C71730060AF12 /* Configs */,
+				2CD0C1772D4C07F70053BD55 /* Scripts */,
 				2C9B66062D0B2B090060AF12 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -300,11 +384,15 @@
 				2C9B66032D0B2B090060AF12 /* Resources */,
 			);
 			buildRules = (
+				2C9B6FD42D4C925B00160B6A /* PBXBuildRule */,
+				2C9B6FDC2D4C986100160B6A /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
 				2C9B66BE2D0C71730060AF12 /* Configs */,
+				2CD0C16E2D4C074E0053BD55 /* UserScripts */,
+				2CD0C1772D4C07F70053BD55 /* Scripts */,
 			);
 			name = Polling;
 			packageProductDependencies = (
@@ -399,6 +487,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9B6FDD2D4C994800160B6A /* POLUserScript.template_h in Sources */,
+				2C9B6FDE2D4C994800160B6A /* POLUserScript.template_m in Sources */,
 				2C9321E52D3D254A00221F53 /* POLError.m in Sources */,
 				2C8AEA922D21BD3000294B6C /* POLReward.m in Sources */,
 				2C8AEA932D21BD3000294B6C /* POLSurvey.m in Sources */,

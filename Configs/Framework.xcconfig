@@ -9,6 +9,8 @@ DEFINES_MODULE = YES
 
 CODE_SIGN_IDENTITY =
 
+HEADER_SEARCH_PATHS =
+USER_HEADER_SEARCH_PATHS =
 
 // Conditional include for local overrides
 #include? "Local.xcconfig"
