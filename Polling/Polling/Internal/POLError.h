@@ -57,7 +57,13 @@ NS_ERROR_ENUM(POLPollingErrorDomain) {
 
 	POLSurveyViewError = 700,
 
+	POLSurveyViewMemoryWarningError = 721,
+
 	POLWebViewError = 800,
+
+	POLWebViewNavigationFailureError = 821,
+
+	POLWebViewProcessTerminatedError = 831,
 };
 
 @interface POLError : NSError

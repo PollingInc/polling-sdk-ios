@@ -9,12 +9,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class POLSurveyViewController;
+@class POLSurveyViewController, POLError;
 
 @protocol POLSurveyViewControllerDelegate
 
 - (void)surveyViewControllerDidOpen:(POLSurveyViewController *)surveyViewController;
 - (void)surveyViewControllerDidDismiss:(POLSurveyViewController *)surveyViewController;
+- (void)surveyViewControllerDidDismiss:(POLSurveyViewController *)surveyViewController withError:(POLError *)error;
 
 @optional
 

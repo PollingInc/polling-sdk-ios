@@ -67,6 +67,14 @@ FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
 - (void)didReceiveMemoryWarning
 {
 	POLLogTrace("%s", __func__);
+	POLShutdownSDK();
+	[self.webView stopLoading];
+	[self.webView removeFromSuperview];
+	_webView = nil;
+	[self dismissViewControllerAnimated:NO completion:^{
+		POLError *error = POLErrorWithCode(POLSurveyViewMemoryWarningError);
+		[self.delegate surveyViewControllerDidDismiss:(POLSurveyViewController *)self withError:error];
+	}];
 }
 
 #pragma mark - Web View UI Delegate
@@ -74,6 +82,7 @@ FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
 - (void)webViewDidClose:(WKWebView *)webView
 {
 	POLLogTrace("%s webView=%@", __func__, webView);
+	// NOTE: this isn't an error, it could be a simple mechanism for self closing surveys
 }
 
 #pragma mark - Web View Navigation Delegate
@@ -83,11 +92,27 @@ FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
 	withError:(NSError *)error
 {
 	POLLogTrace("%s webView=%@, navigation=%@, error=%@", __func__, webView, navigation, error);
+	POLShutdownSDK();
+	[self.webView stopLoading];
+	[self.webView removeFromSuperview];
+	_webView = nil;
+	[self dismissViewControllerAnimated:NO completion:^{
+		POLError *error = POLErrorWithCode(POLWebViewNavigationFailureError);
+		[self.delegate surveyViewControllerDidDismiss:(POLSurveyViewController *)self withError:error];
+	}];
 }
 
 - (void)webViewWebContentProcessDidTerminate:(WKWebView *)webView
 {
 	POLLogTrace("%s webView=%@", __func__, webView);
+	POLShutdownSDK();
+	[self.webView stopLoading];
+	[self.webView removeFromSuperview];
+	_webView = nil;
+	[self dismissViewControllerAnimated:NO completion:^{
+		POLError *error = POLErrorWithCode(POLWebViewProcessTerminatedError);
+		[self.delegate surveyViewControllerDidDismiss:(POLSurveyViewController *)self withError:error];
+	}];
 }
 
 @end

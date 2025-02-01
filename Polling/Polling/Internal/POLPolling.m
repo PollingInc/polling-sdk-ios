@@ -499,4 +499,11 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 	_surveyViewController = nil;
 }
 
+- (void)surveyViewControllerDidDismiss:(POLSurveyViewController *)surveyViewController withError:(POLError *)error
+{
+	_surveyVisible = NO;
+	_surveyViewController = nil;
+	POLLogError("%s error=%@", __func__, error);
+}
+
 @end
