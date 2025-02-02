@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class POLSurvey, POLTriggeredSurvey;
+@class POLSurvey, POLTriggeredSurvey, POLError;
 @protocol POLNetworkSessionDelegate;
 
 FOUNDATION_EXTERN NSString * const POLNetworkSessionAvailableSurveyAPIEndpoint;
@@ -35,7 +35,13 @@ FOUNDATION_EXTERN NSString * const POLNetworkSessionEventAPIEndpoint;
 - (void)startSurvey:(POLSurvey *)survey;
 - (void)completeSurvey:(POLSurvey *)survey;
 
+#pragma mark - Events
+
 - (void)postEvent:(NSString *)eventName withValue:(NSString *)eventValue;
+
+#pragma mark - Control
+
+- (void)invalidateAndCancel;
 
 @end
 
@@ -45,6 +51,8 @@ FOUNDATION_EXTERN NSString * const POLNetworkSessionEventAPIEndpoint;
 - (void)networkSessionDidFetchSurvey:(POLSurvey *)survey;
 - (void)networkSessionDidCompleteSurvey:(POLSurvey *)survey;
 - (void)networkSessionDidUpdateTriggeredSurveys:(NSArray<POLTriggeredSurvey *> *)triggeredSurvey;
+
+- (void)networkSessionDidFailWithError:(POLError *)error;
 
 @end
 

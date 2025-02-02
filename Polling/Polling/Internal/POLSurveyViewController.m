@@ -72,8 +72,8 @@ FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
 	[self.webView removeFromSuperview];
 	_webView = nil;
 	[self dismissViewControllerAnimated:NO completion:^{
-		POLError *error = POLErrorWithCode(POLSurveyViewMemoryWarningError);
-		[self.delegate surveyViewControllerDidDismiss:(POLSurveyViewController *)self withError:error];
+		POLError *error = POLErrorWithCode(POLViewControllerMemoryWarningError);
+		[self.delegate surveyViewControllerDidDismiss:self withError:error];
 	}];
 }
 
@@ -92,13 +92,9 @@ FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
 	withError:(NSError *)error
 {
 	POLLogTrace("%s webView=%@, navigation=%@, error=%@", __func__, webView, navigation, error);
-	POLShutdownSDK();
-	[self.webView stopLoading];
-	[self.webView removeFromSuperview];
-	_webView = nil;
-	[self dismissViewControllerAnimated:NO completion:^{
+	[self dismissViewControllerAnimated:YES completion:^{
 		POLError *error = POLErrorWithCode(POLWebViewNavigationFailureError);
-		[self.delegate surveyViewControllerDidDismiss:(POLSurveyViewController *)self withError:error];
+		[self.delegate surveyViewControllerDidDismiss:self withError:error];
 	}];
 }
 
@@ -111,7 +107,7 @@ FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
 	_webView = nil;
 	[self dismissViewControllerAnimated:NO completion:^{
 		POLError *error = POLErrorWithCode(POLWebViewProcessTerminatedError);
-		[self.delegate surveyViewControllerDidDismiss:(POLSurveyViewController *)self withError:error];
+		[self.delegate surveyViewControllerDidDismiss:self withError:error];
 	}];
 }
 

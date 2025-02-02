@@ -112,7 +112,7 @@
 		constant:0
 	].active = YES;
 
-	[self.delegate surveyViewControllerDidOpen:(POLSurveyViewController *)self];
+	[self.delegate surveyViewControllerDidOpen:self];
 	[self loadWebRequest];
 }
 
@@ -132,7 +132,7 @@
 - (void)tap:(id)sender
 {
 	[self dismissViewControllerAnimated:YES completion:^{
-		[self.delegate surveyViewControllerDidDismiss:(POLSurveyViewController *)self];
+		[self.delegate surveyViewControllerDidDismiss:self];
 	}];
 }
 

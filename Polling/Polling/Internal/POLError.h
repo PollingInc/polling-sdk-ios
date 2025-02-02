@@ -17,35 +17,33 @@ FOUNDATION_EXTERN NSString * const POLErrorMethodKey;
 FOUNDATION_EXTERN NSString * const POLErrorLineNumberKey;
 
 NS_ERROR_ENUM(POLPollingErrorDomain) {
-	POLPollingGenericError = 1,
+	POLGeneralError = 1,
 
-	POLPollingEncodingFailedError = 21,
+	POLEncodingFailedError = 21,
 
-	POLPollingSDKError = 100,
-	POLPollingSDKNotConfiguredError = 101,
+	POLSDKError = 100,
+	POLSDKNotConfiguredError = 101,
 
 	POLNetworkSessionError = 200,
-
 	POLNetworkSessionBadEndpointURLError = 201,
 	POLNetworkSessionCouldNotBindURLParametersError = 202,
 
 	// NOTE: resume is the same as begin/start
 	POLNetworkSessionTaskCanNotResumeError = 211,
 	POLNetworkSessionTaskTypeUnknownError = 212,
+	POLNetworkSessionDataTaskDoesNotExistsError = 213,
+	POLNetworkSessionDataTaskInvalidatedError = 214,
+	POLNetworkSessionDataTaskFailedError = 215,
 
-	POLNetworkSessionUnexpectedHTTPStatusCodeError = 204,
-	POLNetworkSessionUnexpectedContentTypeError = 204,
-	POLNetworkSessionDataTaskDoesNotExistsError = 205,
-	POLNetworkSessionDataTaskInvalidatedError = 206,
-	POLNetworkSessionDataTaskFailedError = 207,
+	POLNetworkSessionUnexpectedHTTPStatusCodeError = 221,
+	POLNetworkSessionUnexpectedContentTypeError = 222,
 
-	POLNetworkSessionResponseError = 250,
-	POLNetworkSessionMalformedResponseError = 251,
-	POLNetworkSessionEmptyTopLevelDictionaryError = 252,
-
-	POLNetworkSessionExpectedDictionaryError = 261,
-	POLNetworkSessionExpectedArrayError = 262,
-	POLNetworkSessionNoValueForRequiredKeyError = 263,
+	POLNetworkSessionResponseBodyError = 230,
+	POLNetworkSessionMalformedResponseError = 231,
+	POLNetworkSessionEmptyTopLevelDictionaryError = 232,
+	POLNetworkSessionExpectedDictionaryError = 233,
+	POLNetworkSessionExpectedArrayError = 234,
+	POLNetworkSessionNoValueForRequiredKeyError = 235,
 
 	POLSurveyError = 300,
 	POLRewardError = 400,
@@ -55,14 +53,11 @@ NS_ERROR_ENUM(POLPollingErrorDomain) {
 	POLStorageApplicationSupportDirectoryUnavailableError = 601,
 	POLStorageWriteFailedError = 602,
 
-	POLSurveyViewError = 700,
-
-	POLSurveyViewMemoryWarningError = 721,
+	POLViewControllerError = 700,
+	POLViewControllerMemoryWarningError = 721,
 
 	POLWebViewError = 800,
-
 	POLWebViewNavigationFailureError = 821,
-
 	POLWebViewProcessTerminatedError = 831,
 };
 
@@ -70,6 +65,8 @@ NS_ERROR_ENUM(POLPollingErrorDomain) {
 + (instancetype)errorWithCode:(NSInteger)code userInfo:(NSDictionary<NSErrorUserInfoKey,id> *)dict;
 + (instancetype)errorWithCode:(NSInteger)code underlyingError:(NSError *)underlyingError
 					 userInfo:(NSDictionary<NSErrorUserInfoKey,id> *)dict;
+- (NSString *)subsystem;
+- (NSString *)category;
 @end
 
 #define POLErrorWithCode(code) (				\

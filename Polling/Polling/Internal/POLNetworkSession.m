@@ -159,10 +159,10 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 
 #pragma mark - JSON Parsing
 
-- (NSDictionary *)topLevelDictionaryForData:(NSData *)data
+- (NSDictionary *)topLevelDictionaryForData:(NSData *)data error:(POLError **)error
 {
 	NSDictionary *payload = nil;
-	NSError *error = nil;
+	NSError *jErr = nil;
 	POLError *pErr = nil;
 
 #if DEBUG_RAW_JSON
@@ -172,38 +172,44 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 	payload = [NSJSONSerialization
 		JSONObjectWithData:data
 		options:0
-		error:&error
+		error:&jErr
 	];
 
-	if (!payload || error) {
-		if (error) {
+	if (!payload || jErr) {
+		if (jErr) {
 			// error should have code NSPropertyListReadCorruptError and describes the problem
-			pErr = POLErrorWithCodeUnderlyingError(POLNetworkSessionMalformedResponseError, error);
+			pErr = POLErrorWithCodeUnderlyingError(POLNetworkSessionMalformedResponseError, jErr);
 		} else
 			pErr = POLErrorWithCode(POLNetworkSessionMalformedResponseError);
 		POLLogError("Malformed response error=%@", pErr);
+		if (error)
+			*error = pErr;
 		return @{};
 	}
 
 	if (![payload isKindOfClass:NSDictionary.class]) {
 		pErr = POLErrorWithCode(POLNetworkSessionExpectedDictionaryError);
 		POLLogError("Unexpected JSON payload error=%@", pErr);
+		if (error)
+			*error = pErr;
 		return @{};
 	}
 
 	if (payload.count == 0) {
 		pErr = POLErrorWithCode(POLNetworkSessionEmptyTopLevelDictionaryError);
 		POLLogError("Unexpected JSON payload error=%@", pErr);
+		if (error)
+			*error = pErr;
 		return @{};
 	}
 
 	return payload;
 }
 
-- (NSDictionary *)topLevelDictionaryForDataTask:(NSURLSessionDataTask *)dataTask
+- (NSDictionary *)topLevelDictionaryForDataTask:(NSURLSessionDataTask *)dataTask error:(POLError **)error
 {
 	NSData *data = [self dataForDataTask:dataTask];
-	return [self topLevelDictionaryForData:data];
+	return [self topLevelDictionaryForData:data error:error];
 }
 
 /**
@@ -229,11 +235,13 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
  * @param data the NSData from the response
  * @return array of abailable surveys
  */
-- (NSArray<POLSurvey *> *)surveysForData:(NSData *)data
+- (NSArray<POLSurvey *> *)surveysForData:(NSData *)data error:(POLError **)error
 {
-	NSDictionary *payload = [self topLevelDictionaryForData:data];
+	NSDictionary *payload = [self topLevelDictionaryForData:data error:error];
+	if (error && *error)
+		return @[];
 	NSArray *payloadData = nil;
-	NSError *pErr = nil;
+	POLError *pErr = nil;
 
 #if DEBUG_JSON_PAYLOADS
 	POLLogInfo("Available surveys: %@", payload);
@@ -242,12 +250,16 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 	if (!(payloadData = payload[@"data"])) {
 		pErr = POLErrorWithCode(POLNetworkSessionNoValueForRequiredKeyError);
 		POLLogError("Unexpected JSON payload error=%@", pErr);
+		if (error)
+			*error = pErr;
 		return @[];
 	}
 
 	if (![payloadData isKindOfClass:NSArray.class]) {
 		pErr = POLErrorWithCode(POLNetworkSessionExpectedArrayError);
 		POLLogError("Unexpected JSON payload error=%@", pErr);
+		if (error)
+			*error = pErr;
 		return @[];
 	}
 
@@ -260,10 +272,10 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 	return surveys;
 }
 
-- (NSArray<POLSurvey *> *)surveysForDataTask:(NSURLSessionDataTask *)dataTask
+- (NSArray<POLSurvey *> *)surveysForDataTask:(NSURLSessionDataTask *)dataTask error:(POLError **)error
 {
 	NSData *data = [self dataForDataTask:dataTask];
-	return [self surveysForData:data];
+	return [self surveysForData:data error:error];
 }
 
 /**
@@ -288,11 +300,13 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
  * @param dataTask the NSURLSessionDataTask
  * @return array of triggered survey objects
  */
-- (NSArray<POLTriggeredSurvey *> *)triggeredSurveysForDataTask:(NSURLSessionDataTask *)dataTask
+- (NSArray<POLTriggeredSurvey *> *)triggeredSurveysForDataTask:(NSURLSessionDataTask *)dataTask error:(POLError **)error
 {
-	NSDictionary *payload = [self topLevelDictionaryForDataTask:dataTask];
+	NSDictionary *payload = [self topLevelDictionaryForDataTask:dataTask error:error];
+	if (error && *error)
+		return @[];
 	NSArray *payloadData = nil;
-	NSError *pErr = nil;
+	POLError *pErr = nil;
 
 #if DEBUG_JSON_PAYLOADS
 	NSLog(@"Triggered surveys: %@", payload);
@@ -301,12 +315,16 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 	if (!(payloadData = payload[@"triggered_surveys"])) {
 		pErr = POLErrorWithCode(POLNetworkSessionNoValueForRequiredKeyError);
 		POLLogError("Unexpected JSON payload error=%@", pErr);
+		if (error)
+			*error = pErr;
 		return @[];
 	}
 
 	if (![payloadData isKindOfClass:NSArray.class]) {
 		pErr = POLErrorWithCode(POLNetworkSessionExpectedArrayError);
 		POLLogError("Unexpected JSON payload error=%@", pErr);
+		if (error)
+			*error = pErr;
 		return @[];
 	}
 
@@ -344,11 +362,13 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
  * @param data response body
  * @return a survey object
  */
-- (POLSurvey *)surveyForData:(NSData *)data
+- (POLSurvey *)surveyForData:(NSData *)data error:(POLError **)error
 {
-	NSDictionary *payload = [self topLevelDictionaryForData:data];
+	NSDictionary *payload = [self topLevelDictionaryForData:data error:error];
+	if (error && *error)
+		return nil;
 	NSDictionary *payloadData = nil;
-	NSError *pErr = nil;
+	POLError *pErr = nil;
 
 #if DEBUG_JSON_PAYLOADS
 	POLLogInfo("Survey: %@", payload);
@@ -357,22 +377,26 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 	if (!(payloadData = payload[@"data"])) {
 		pErr = POLErrorWithCode(POLNetworkSessionNoValueForRequiredKeyError);
 		POLLogError("Unexpected JSON payload error=%@", pErr);
+		if (error)
+			*error = pErr;
 		return nil;
 	}
 
 	if (![payloadData isKindOfClass:NSDictionary.class]) {
 		pErr = POLErrorWithCode(POLNetworkSessionExpectedDictionaryError);
 		POLLogError("Unexpected JSON payload error=%@", pErr);
+		if (error)
+			*error = pErr;
 		return nil;
 	}
 
 	return [POLSurvey surveyFromJSONDictionary:payloadData];
 }
 
-- (POLSurvey *)surveyForDataTask:(NSURLSessionDataTask *)dataTask
+- (POLSurvey *)surveyForDataTask:(NSURLSessionDataTask *)dataTask error:(POLError **)error
 {
 	NSData *data = [self dataForDataTask:dataTask];
-	return [self surveyForData:data];
+	return [self surveyForData:data error:error];
 }
 
 /**
@@ -407,11 +431,13 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
  * @param data response body
  * @return a survey object
  */
-- (NSArray<POLSurvey *> *)surveysFromData:(NSData *)data
+- (NSArray<POLSurvey *> *)surveysFromData:(NSData *)data error:(POLError **)error
 {
-	NSDictionary *payload = [self topLevelDictionaryForData:data];
+	NSDictionary *payload = [self topLevelDictionaryForData:data error:error];
+	if (error && *error)
+		return @[];
 	NSDictionary *payloadData = nil;
-	NSError *pErr = nil;
+	POLError *pErr = nil;
 
 #if DEBUG_JSON_PAYLOADS
 	POLLogInfo("Embed surveys: %@", payload);
@@ -420,12 +446,16 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 	if (!(payloadData = payload[@"data"])) {
 		pErr = POLErrorWithCode(POLNetworkSessionNoValueForRequiredKeyError);
 		POLLogError("Unexpected JSON payload error=%@", pErr);
+		if (error)
+			*error = pErr;
 		return @[];
 	}
 
 	if (![payloadData isKindOfClass:NSArray.class]) {
 		pErr = POLErrorWithCode(POLNetworkSessionExpectedArrayError);
 		POLLogError("Unexpected JSON payload error=%@", pErr);
+		if (error)
+			*error = pErr;
 		return @[];
 	}
 
@@ -481,6 +511,7 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 			if (error) {
 				pErr = POLErrorWithCodeUnderlyingError(POLNetworkSessionDataTaskFailedError, error);
 				POLLogError("Encountered error processing request=%@, response=%@, error=%@", req, response, error);
+				[self.delegate networkSessionDidFailWithError:pErr];
 				return;
 			}
 			NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
@@ -489,20 +520,30 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 			if (httpResponse.statusCode != 200) {
 				pErr = POLErrorWithCode(POLNetworkSessionUnexpectedHTTPStatusCodeError);
 				POLLogError("Failed to start survey statusCode=%@, error=%@", @(httpResponse.statusCode), pErr);
+				[self.delegate networkSessionDidFailWithError:pErr];
 				return;
 			}
 
 			if (![httpResponse.MIMEType isEqualToString:@"application/json"]) {
 				pErr = POLErrorWithCode(POLNetworkSessionUnexpectedContentTypeError);
 				POLLogError("Expected application/json got Content-Type=%@ error=%@", httpResponse.MIMEType, pErr);
+				[self.delegate networkSessionDidFailWithError:pErr];
 				return;
 			}
 
 			if (survey.embedViewRequested) {
-				NSArray<POLSurvey *> *responseSurveys = [self surveysFromData:data];
+				NSArray<POLSurvey *> *responseSurveys = [self surveysFromData:data error:&pErr];
+				if (pErr) {
+					[self.delegate networkSessionDidFailWithError:pErr];
+					return;
+				}
 				[POLPolling.polling.openedSurveys addObjectsFromArray:responseSurveys];
 			} else {
-				POLSurvey *responseSurvey = [self surveyForData:data];
+				POLSurvey *responseSurvey = [self surveyForData:data error:&pErr];
+				if (pErr) {
+					[self.delegate networkSessionDidFailWithError:pErr];
+					return;
+				}
 				[POLPolling.polling.openedSurveys addObject:responseSurvey];
 			}
 		}];
@@ -515,6 +556,7 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 			if (error) {
 				pErr = POLErrorWithCodeUnderlyingError(POLNetworkSessionDataTaskFailedError, error);
 				POLLogError("Encountered error processing request=%@, response=%@, error=%@", req, response, error);
+				[self.delegate networkSessionDidFailWithError:pErr];
 				return;
 			}
 			NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
@@ -523,18 +565,24 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 			if (httpResponse.statusCode != 200) {
 				pErr = POLErrorWithCode(POLNetworkSessionUnexpectedHTTPStatusCodeError);
 				POLLogError("Failed to complete survey statusCode=%@, error=%@", @(httpResponse.statusCode), pErr);
+				[self.delegate networkSessionDidFailWithError:pErr];
 				return;
 			}
 
 			if (![httpResponse.MIMEType isEqualToString:@"application/json"]) {
 				pErr = POLErrorWithCode(POLNetworkSessionUnexpectedContentTypeError);
 				POLLogError("Expected application/json got Content-Type=%@ error=%@", httpResponse.MIMEType, pErr);
+				[self.delegate networkSessionDidFailWithError:pErr];
 				return;
 			}
 
 			[POLStorage.storage read];
 			if (survey.embedViewRequested) {
-				NSArray<POLSurvey *> *responseSurveys = [self surveysFromData:data];
+				NSArray<POLSurvey *> *responseSurveys = [self surveysFromData:data error:&pErr];
+				if (pErr) {
+					[self.delegate networkSessionDidFailWithError:pErr];
+					return;
+				}
 				for (POLSurvey *responseSurvey in responseSurveys) {
 					if ([POLStorage.storage alreadyCompleted:responseSurvey])
 						continue;
@@ -543,7 +591,11 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 				}
 
 			} else {
-				POLSurvey *responseSurvey = [self surveyForData:data];
+				POLSurvey *responseSurvey = [self surveyForData:data error:&pErr];
+				if (pErr) {
+					[self.delegate networkSessionDidFailWithError:pErr];
+					return;
+				}
 				[self.delegate networkSessionDidCompleteSurvey:responseSurvey];
 			}
 			[POLStorage.storage write];
@@ -553,6 +605,7 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 	default:
 		pErr = POLErrorWithCode(POLNetworkSessionTaskTypeUnknownError);
 		POLLogError("Unknown task type survey=%@ taskType=%@, error=%@", survey, POLSurveyDataTaskTypeDescription(taskType), pErr);
+		[self.delegate networkSessionDidFailWithError:pErr];
 		return;
 	}
 
@@ -598,12 +651,13 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 	NSString *post = [NSString stringWithFormat:@"event=%@&value=%@", eventName, eventValue];
 	NSData *postBody = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
 	if (!postBody) {
-		POLError *err = POLErrorWithCode(POLPollingEncodingFailedError);
-		POLLogError("Could not encode POST body URL=%@, body=%@, error=%@", url, post, err);
+		POLError *pErr = POLErrorWithCode(POLEncodingFailedError);
+		POLLogError("Could not encode POST body URL=%@, body=%@, error=%@", url, post, pErr);
+		[self.delegate networkSessionDidFailWithError:pErr];
+		return;
 	}
 	NSString *postLength = [NSString stringWithFormat:@"%@", @(postBody.length)];
 
-	// TODO: use requestWithURL:cachePolicy:timeoutInterval:
 	NSMutableURLRequest *req = [NSURLRequest POSTURLRequest:url];
 	req.HTTPBody = postBody;
 	[req addValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
@@ -615,19 +669,29 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 	[self beginDataTask:dataTask];
 }
 
+#pragma mark - Control
+
+- (void)invalidateAndCancel
+{
+	if (POLIsSDKShutdown())
+		[self.URLSession invalidateAndCancel];
+	else
+		POLLogWarn("Attempt to invalidate URL session without catastrophic failure");
+}
+
 #pragma mark - URL Session Delegate
 
 - (void)URLSession:(NSURLSession *)session didBecomeInvalidWithError:(NSError *)error
 {
 	POLLogTrace("%s session=%@, error=%@", __func__, session, error);
-	// Either the URL session was invalidated because we shutdown the SDK
-	// or
+	if (!error) {
+		// the URL session was invalidated because we explictly requested
+		// probably because the SDK was shutdown, do nothing
+		return;
+	}
 	// the URL session was invalidated because of an error
-
-	// TODO: if we shutdown the SDK we must call either
-	// finishTasksAndInvalidate
-	// or
-	// invalidateAndCancel
+	POLError *pErr = POLErrorWithCodeUnderlyingError(POLNetworkSessionError, error);
+	[self.delegate networkSessionDidFailWithError:pErr];
 }
 
 - (void)URLSession:(NSURLSession *)session
@@ -645,29 +709,39 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 	} else if (error) {
 		pErr = POLErrorWithCodeUnderlyingError(POLNetworkSessionDataTaskFailedError, error);
 		POLLogError("Task complete with error: %s - %@", __func__, pErr);
+		[self.delegate networkSessionDidFailWithError:pErr];
 		return;
 	}
 
 	if (task.taskDescription == POLNetworkSessionAvailableSurveyAPIEndpoint) {
 		NSURLSessionDataTask *dataTask = (NSURLSessionDataTask *)task;
-		NSArray<POLSurvey *> *availableSurveys = [self surveysForDataTask:dataTask];
-		[self.delegate networkSessionDidFetchAvailableSurveys:availableSurveys];
+		NSArray<POLSurvey *> *availableSurveys = [self surveysForDataTask:dataTask error:&pErr];
+		if (pErr)
+			[self.delegate networkSessionDidFailWithError:pErr];
+		else
+			[self.delegate networkSessionDidFetchAvailableSurveys:availableSurveys];
 		[self finishDataTask:dataTask];
 		return;
 	}
 
 	if (task.taskDescription == POLNetworkSessionEventAPIEndpoint) {
 		NSURLSessionDataTask *dataTask = (NSURLSessionDataTask *)task;
-		NSArray<POLTriggeredSurvey *> *triggeredSurveys = [self triggeredSurveysForDataTask:dataTask];
-		[self.delegate networkSessionDidUpdateTriggeredSurveys:triggeredSurveys];
+		NSArray<POLTriggeredSurvey *> *triggeredSurveys = [self triggeredSurveysForDataTask:dataTask error:&pErr];
+		if (pErr)
+			[self.delegate networkSessionDidFailWithError:pErr];
+		else
+			[self.delegate networkSessionDidUpdateTriggeredSurveys:triggeredSurveys];
 		[self finishDataTask:dataTask];
 		return;
 	}
 
 	if (task.taskDescription == POLNetworkSessionSurveyAPIEndpoint) {
 		NSURLSessionDataTask *dataTask = (NSURLSessionDataTask *)task;
-		POLSurvey *survey = [self surveyForDataTask:dataTask];
-		[self.delegate networkSessionDidFetchSurvey:survey];
+		POLSurvey *survey = [self surveyForDataTask:dataTask error:&pErr];
+		if (pErr)
+			[self.delegate networkSessionDidFailWithError:pErr];
+		else
+			[self.delegate networkSessionDidFetchSurvey:survey];
 		[self finishDataTask:dataTask];
 		return;
 	}
@@ -692,7 +766,8 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 
 	if (httpResponse.statusCode != 200) {
 		pErr = POLErrorWithCode(POLNetworkSessionUnexpectedHTTPStatusCodeError);
-		POLLogError("%@", pErr);
+		POLLogError("Bad response status code %@", pErr);
+		[self.delegate networkSessionDidFailWithError:pErr];
 		completionHandler(NSURLSessionResponseCancel);
 		return;
 	}
@@ -700,10 +775,10 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 	if (![httpResponse.MIMEType isEqualToString:@"application/json"]) {
 		pErr = POLErrorWithCode(POLNetworkSessionUnexpectedContentTypeError);
 		POLLogError("Expected application/json got Content-Type=%@ error=%@",  httpResponse.MIMEType, pErr);
+		[self.delegate networkSessionDidFailWithError:pErr];
+		completionHandler(NSURLSessionResponseCancel);
 		return;
 	}
-
-	// TODO: any other HTTP response checks
 
 	// continue
 	completionHandler(NSURLSessionResponseAllow);

@@ -30,31 +30,6 @@ static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
 static BOOL POLSDKInitialized = NO;
 static BOOL POLSDKShutdown = NO;
 
-void POLSetSDKInitialized(BOOL initialized)
-{
-	POLSDKInitialized = initialized;
-}
-
-BOOL POLIsSDKInitialized(void)
-{
-	return POLSDKInitialized;
-}
-
-void POLShutdownSDK(void)
-{
-	POLSDKShutdown = YES;
-}
-
-BOOL POLIsSDKShutdown(void)
-{
-	return POLSDKShutdown;
-}
-
-BOOL POLIsSDKDisabled(void)
-{
-	return !POLSDKInitialized || POLSDKShutdown;
-}
-
 NSString * const POLViewTypeNoneDescription = @"None";
 NSString * const POLViewTypeDialogDescription = @"Dialog";
 NSString * const POLViewTypeBottomDescription = @"Bottom";
@@ -105,6 +80,8 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 - (void)performRemoteSurveyChecks;
 
 - (UIViewController *)visibleViewController;
+
+- (void)shutdownSDK;
 
 @end
 
@@ -272,6 +249,11 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 	[_triggeredSurveyController postponeSurvey:survey];
 }
 
+- (void)shutdownSDK
+{
+	[_networkSession invalidateAndCancel];
+}
+
 #pragma mark - Network Session Delegate
 
 - (void)networkSessionDidFetchAvailableSurveys:(NSArray<POLSurvey *> *)surveys
@@ -321,6 +303,15 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 	// completion
 	if (!survey.isAvailable)
 		[_triggeredSurveyController removeSurvey:survey];
+}
+
+- (void)networkSessionDidFailWithError:(POLError *)error
+{
+	NSString *publicError = [NSString stringWithFormat:@"%@ Error: %@ (%@)",
+		error.subsystem, error.category, @(error.code)];
+	if (POLIsSDKShutdown())
+		publicError = [NSString stringWithFormat:@"%@ [%@]", publicError, @"SDK is shutdown"];
+	[self.delegate pollingOnFailure:publicError];
 }
 
 #pragma mark - Showing Surveys
@@ -504,6 +495,40 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 	_surveyVisible = NO;
 	_surveyViewController = nil;
 	POLLogError("%s error=%@", __func__, error);
+
+	NSString *publicError = [NSString stringWithFormat:@"%@ Error: (%@)",
+		error.subsystem, @(error.code)];
+	if (POLIsSDKShutdown())
+		publicError = [NSString stringWithFormat:@"%@ [%@]", publicError, @"SDK is shutdown"];
+	[self.delegate pollingOnFailure:publicError];
 }
 
 @end
+
+#pragma mark - SDK Control
+
+void POLSetSDKInitialized(BOOL initialized)
+{
+	POLSDKInitialized = initialized;
+}
+
+BOOL POLIsSDKInitialized(void)
+{
+	return POLSDKInitialized;
+}
+
+void POLShutdownSDK(void)
+{
+	POLSDKShutdown = YES;
+	[POLPolling.polling shutdownSDK];
+}
+
+BOOL POLIsSDKShutdown(void)
+{
+	return POLSDKShutdown;
+}
+
+BOOL POLIsSDKDisabled(void)
+{
+	return !POLSDKInitialized || POLSDKShutdown;
+}
