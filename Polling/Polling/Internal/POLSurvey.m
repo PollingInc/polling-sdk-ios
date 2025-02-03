@@ -69,6 +69,7 @@ NSString * const POLSurveyStatusCompleted = @"completed";
 			 [dict pol_stringValueForKey:@"survey_uuid" undefinedValue:@""]];
 
 	_userSurveyStatus = dict[@"user_survey_status"];
+	_startedAt = dict[@"started_at"];
 	_completedAt = dict[@"completed_at"];
 
 	NSDictionary *rewardDict = dict[@"reward"];
@@ -165,6 +166,8 @@ NSString * const POLSurveyStatusCompleted = @"completed";
 
 - (BOOL)isCompleted
 {
+	if (!_userSurveyStatus && self.completedAt)
+		return YES;
 	return [_userSurveyStatus isEqualToString:POLSurveyStatusCompleted];
 }
 
@@ -201,8 +204,9 @@ NSString * const POLSurveyStatusCompleted = @"completed";
 			@"reward_amount": self.reward.amount,
 		},
 		@"question_count": @(self.questionCount),
-		@"user_survey_status": self.userSurveyStatus,
-		@"completed_at": self.completedAt,
+		@"userSurveyStatus": self.userSurveyStatus ? self.userSurveyStatus : @"",
+		@"started_at": self.startedAt ? self.startedAt : @"",
+		@"completed_at": self.completedAt ? self.completedAt : @"",
 
 	};
 	NSData *data = [NSJSONSerialization dataWithJSONObject:dict options:0 error:nil];

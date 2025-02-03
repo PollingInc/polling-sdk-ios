@@ -28,6 +28,9 @@ NS_SWIFT_NAME(Polling.Survey)
 @property (readonly,getter=isStarted) BOOL started;
 @property (readonly,getter=isCompleted) BOOL completed;
 
+@property (readonly) NSString *startedAt;
+@property (readonly) NSDate *startedDate;
+
 @property (readonly) NSString *completedAt;
 @property (readonly) NSDate *completedDate;
 
