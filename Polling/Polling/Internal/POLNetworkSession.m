@@ -584,8 +584,10 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 					return;
 				}
 				for (POLSurvey *responseSurvey in responseSurveys) {
-					if ([POLStorage.storage alreadyCompleted:responseSurvey])
+					if ([POLStorage.storage alreadyCompleted:responseSurvey]) {
+						POLLogInfo("Survey alread completed responseSurvey=%@", responseSurvey);
 						continue;
+					}
 					[POLStorage.storage addCompletedSurvey:responseSurvey];
 					[self.delegate networkSessionDidCompleteSurvey:responseSurvey];
 				}

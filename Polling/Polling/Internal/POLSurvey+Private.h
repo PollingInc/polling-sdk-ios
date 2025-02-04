@@ -18,6 +18,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (readwrite) BOOL embedViewRequested;
 
+@property (readonly) NSURL *URL;
+@property (readonly) NSURL *completionURL;
+
+@property (readonly) NSString *userSurveyStatus;
+
+@property (readonly) NSString *startedAt;
+@property (readonly) NSDate *startedDate;
+
+@property (readonly) NSString *completedAt;
+@property (readonly) NSDate *completedDate;
+
 + (instancetype)surveyFromDictionary:(NSDictionary *)dict;
 + (instancetype)surveyFromJSONDictionary:(NSDictionary *)dict;
 

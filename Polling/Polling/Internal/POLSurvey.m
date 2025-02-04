@@ -64,7 +64,7 @@ NSString * const POLSurveyStatusCompleted = @"completed";
 	_name = dict[@"name"];
 	_questionCount = [dict[@"question_count"] unsignedIntegerValue];
 
-	/* depending on context the UUID is either `uuid` or `survery_uuid` */
+	/* depending on context the UUID is either `uuid` or `survey_uuid` */
 	_UUID = [dict pol_stringValueForKey:@"uuid" undefinedValue:
 			 [dict pol_stringValueForKey:@"survey_uuid" undefinedValue:@""]];
 
@@ -124,7 +124,7 @@ NSString * const POLSurveyStatusCompleted = @"completed";
 		return self.surveyViewURL;
 }
 
-/* completionURL = https://api.polling.com + /api/sdk/surverys  /:uuid */
+/* completionURL = https://api.polling.com + /api/sdk/surveys + /:uuid */
 - (NSURL *)surveyCompletionURL
 {
 	NSURL *url = [NSURL URLWithString:POLNetworkSessionSurveyAPIEndpoint];
