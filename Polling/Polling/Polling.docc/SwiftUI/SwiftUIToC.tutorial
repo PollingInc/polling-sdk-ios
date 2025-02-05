@@ -1,0 +1,25 @@
+@Tutorials(name: "SwiftUIToC") {
+	@Intro(title: "Intergrating with SwiftUI") {
+		Tutorial for integrating the Polling SDK in your SwiftUI app.
+		
+		<!-- @Image(source: <#file#>, alt: "<#accessible description#>") -->
+	}
+	
+	@Chapter(name: "Configuring your project") {
+		Adding the framework to you project
+		
+		@Image(source: "xcframework.png", alt: "xcframework icon")
+		
+		@TutorialReference(tutorial: "doc:tutorials/ConfigureProject")
+	}
+	
+	
+	@Chapter(name: "Coding") {
+		Importing and using the Polling SDK
+		
+		@Image(source: "swift-dot-swift.png", alt: ".swift file icon")
+		
+		@TutorialReference(tutorial: "doc:tutorials/SwiftUICode")
+	}
+	
+}

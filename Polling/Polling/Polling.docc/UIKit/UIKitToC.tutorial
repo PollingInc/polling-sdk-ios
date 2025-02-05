@@ -1,0 +1,23 @@
+@Tutorials(name: "UIKitToC") {
+		@Intro(title: "Intergrating with UIKit") {
+		Tutorial for integrating the Polling SDK in your UIKit app.
+        
+        <!-- @Image(source: <#file#>, alt: "<#accessible description#>") -->
+    }
+    
+	@Chapter(name: "Configuring your project") {
+		Adding the framework to you project
+		
+		@Image(source: "xcframework.png", alt: "xcframework icon")
+		
+		@TutorialReference(tutorial: "doc:tutorials/ConfigureProject")
+	}
+	
+	@Chapter(name: "Coding") {
+		Importing and using the Polling SDK
+		
+		@Image(source: "objective-c-dot-m.png", alt: ".m file icon")
+		
+		@TutorialReference(tutorial: "doc:tutorials/UIKitCode")
+	}
+}

@@ -1,0 +1,85 @@
+@Tutorial(time: <#number#>) {
+    @Intro(title: "Code your view controller") {
+		This tutorial guides you through importing the Polling framework and using the APIs with UIKit.
+
+		<!-- @Image(source: "code-uikit.svg", alt: "coding keyboard") -->
+    }
+
+    @Section(title: "Import the Polling framework") {
+        @ContentAndMedia {
+            Add the framework to your project
+
+            @Image(source: "import-uikit-light.png", alt: "import icon")
+        }
+
+        @Steps {
+            @Step {
+				Locate a View Controller that will manage your Polling related code
+                @Image(source: "locate-view-controller.png", alt: "View controller selected")
+            }
+
+			@Step {
+				Locate the import section of the view controller
+				@Code(name: "Import section", file: "ViewController-import-section.m")
+			}
+
+			@Step {
+				Add an import statement that imports the Polling framework
+				@Code(name: "Add import", file: "ViewController-add-import.m")
+			}
+        }
+    }
+
+	@Section(title: "Configuring Polling") {
+		@ContentAndMedia {
+			Configure the Polling singleton object with your API Key and Customer ID.
+
+			@Image(source: "config.png", alt: "gear icon representing config")
+		}
+
+		@Steps {
+			@Step {
+				Locate `viewDidLoad` method
+				@Code(name: "viewDidLoad Method", file: "ViewController-view-did-load.m")
+			}
+
+			@Step {
+				Add API Key and Customer ID.
+				@Code(name: "Configured with API Key and Customer ID", file: "ViewController-configure-polling.m")
+			}
+		}
+	}
+
+	@Section(title: "Make your view controller Polling's delegate") {
+		@ContentAndMedia {
+
+			Configure your view controller to conform to the `POLPollingDelegate`
+			protocol. Add the delegate methods and assign the delgate property.
+
+			@Image(source: "delegate.png", alt: "delegate message bubbles")
+		}
+
+		@Steps {
+			@Step {
+				Locate the private anonymous class category
+				@Code(name: "Private category", file: "ViewController-private-category.m")
+			}
+
+			@Step {
+				Make your view controller conform to the `POLPollingDelegate` protocol
+				@Code(name: "Conform to the protocol", file: "ViewController-conform-to-proto.m")
+			}
+			
+			@Step {
+				Add the delegate methods implementations to the view controller
+				@Code(name: "Implement delegate methods", file: "ViewController-add-delegate-methods.m")
+			}
+			
+			@Step {
+				Assign your view controller to the Polling's delegate property
+				@Code(name: "Assign delegate", file: "ViewController-assign-delegate.m")
+			}
+		}
+	}
+
+}
