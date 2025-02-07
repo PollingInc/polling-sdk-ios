@@ -20,12 +20,12 @@
 
 			@Step {
 				Locate the import section of the view controller
-				@Code(name: "Import section", file: "ViewController-import-section.m")
+				@Code(name: "ViewController.m", file: "ViewController-import-section.m")
 			}
 
 			@Step {
 				Add an import statement that imports the Polling framework
-				@Code(name: "Add import", file: "ViewController-add-import.m")
+				@Code(name: "ViewController.m", file: "ViewController-add-import.m")
 			}
         }
     }

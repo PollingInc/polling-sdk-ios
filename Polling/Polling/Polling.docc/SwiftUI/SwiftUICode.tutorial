@@ -15,17 +15,17 @@
 		@Steps {
 			@Step {
 				Locate a Content View that will manage your Polling related code
-				@Image(source: "select-project.png", alt: "Project selected")
+				@Image(source: "locate-content-view.png", alt: "Content View selected")
 			}
 						
 			@Step {
 				Locate the import section of the content view
-				@Code(name: "Import section", file: "ContentView-import-section.swift")
+				@Code(name: "ContentView.swift", file: "ContentView-import-section.swift")
 			}
 			
 			@Step {
 				Add an import statement that imports the Polling framework
-				@Code(name: "Add import", file: "ContentView-add-import.swift")
+				@Code(name: "ContentView.swift", file: "ContentView-add-import.swift")
 			}
 		}
 	}
