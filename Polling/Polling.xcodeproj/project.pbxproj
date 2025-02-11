@@ -10,6 +10,7 @@
 		2C3ACAED2D24806E00DBFCEB /* POLSurveyDialogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3ACAEC2D24806E00DBFCEB /* POLSurveyDialogViewController.xib */; };
 		2C6CF6422D24BC140074CC94 /* POLSurveyBottomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6CF6402D24BC140074CC94 /* POLSurveyBottomViewController.xib */; };
 		2C701B142D565386005F92CA /* PollingInternal.docc in Sources */ = {isa = PBXBuildFile; fileRef = 2C701B132D565386005F92CA /* PollingInternal.docc */; };
+		2C701B302D5B91A9005F92CA /* POLVers.template_vers in Sources */ = {isa = PBXBuildFile; fileRef = 2C701B2E2D5B8F84005F92CA /* POLVers.template_vers */; };
 		2C8AEA922D21BD3000294B6C /* POLReward.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AEA7E2D21BD3000294B6C /* POLReward.m */; };
 		2C8AEA932D21BD3000294B6C /* POLSurvey.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AEA802D21BD3000294B6C /* POLSurvey.m */; };
 		2C8AEA952D21BD3000294B6C /* POLTriggeredSurvey.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AEA852D21BD3000294B6C /* POLTriggeredSurvey.m */; };
@@ -59,6 +60,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
+		2C701B2D2D5B8D7C005F92CA /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.template_vers";
+			fileType = pattern.proxy;
+			inputFiles = (
+				"$(SRCROOT)/../Scripts/xcode-gen-vers",
+			);
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_BASE).m",
+			);
+			runOncePerArchitecture = 0;
+			script = "\"$SRCROOT/../Scripts/xcode-gen-vers\" \"$SCRIPT_INPUT_FILE\" \"$SCRIPT_OUTPUT_FILE_0\"\n";
+		};
 		2C9B6FD42D4C925B00160B6A /* PBXBuildRule */ = {
 			isa = PBXBuildRule;
 			compilerSpec = com.apple.compilers.proxy.script;
@@ -109,6 +125,7 @@
 		2C3ACAEC2D24806E00DBFCEB /* POLSurveyDialogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = POLSurveyDialogViewController.xib; sourceTree = "<group>"; };
 		2C6CF6402D24BC140074CC94 /* POLSurveyBottomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = POLSurveyBottomViewController.xib; sourceTree = "<group>"; };
 		2C701B132D565386005F92CA /* PollingInternal.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PollingInternal.docc; sourceTree = "<group>"; };
+		2C701B2E2D5B8F84005F92CA /* POLVers.template_vers */ = {isa = PBXFileReference; lastKnownFileType = text; path = POLVers.template_vers; sourceTree = "<group>"; };
 		2C8AEA7D2D21BD3000294B6C /* POLReward.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLReward.h; sourceTree = "<group>"; };
 		2C8AEA7E2D21BD3000294B6C /* POLReward.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLReward.m; sourceTree = "<group>"; };
 		2C8AEA7F2D21BD3000294B6C /* POLSurvey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLSurvey.h; sourceTree = "<group>"; };
@@ -144,8 +161,6 @@
 		2C9B660F2D0B2B090060AF12 /* PollingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PollingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9B6FD82D4C957A00160B6A /* POLUserScript.template_h */ = {isa = PBXFileReference; lastKnownFileType = text; path = POLUserScript.template_h; sourceTree = "<group>"; };
 		2C9B6FDA2D4C958E00160B6A /* POLUserScript.template_m */ = {isa = PBXFileReference; lastKnownFileType = text; path = POLUserScript.template_m; sourceTree = "<group>"; };
-		2C9B70482D4CA59000160B6A /* POLUserScript.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = POLUserScript.h; path = "../../Intermediates.noindex/Polling.build/Debug-iphonesimulator/Polling.build/DerivedSources/POLUserScript.h"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C9B704A2D4CA61100160B6A /* POLUserScript.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = POLUserScript.m; path = "../../Intermediates.noindex/Polling.build/Debug-iphonesimulator/Polling.build/DerivedSources/POLUserScript.m"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA863CE2D2D61FA006622E0 /* POLReward+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "POLReward+Private.h"; sourceTree = "<group>"; };
 		2CD0C1622D4B0C0C0053BD55 /* POLSurveyBottomAnimateInController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLSurveyBottomAnimateInController.h; sourceTree = "<group>"; };
 		2CD0C1632D4B0C0C0053BD55 /* POLSurveyBottomAnimateInController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLSurveyBottomAnimateInController.m; sourceTree = "<group>"; };
@@ -166,6 +181,7 @@
 			membershipExceptions = (
 				"gen-user-scripts",
 				"gen-user-scripts-input-file-list",
+				"xcode-gen-vers",
 			);
 			target = 2C9B66042D0B2B090060AF12 /* Polling */;
 		};
@@ -280,6 +296,7 @@
 				2CEADD2A2D498DD40087A2E8 /* POLModernSurveyViewController.m */,
 				2C9B6FD82D4C957A00160B6A /* POLUserScript.template_h */,
 				2C9B6FDA2D4C958E00160B6A /* POLUserScript.template_m */,
+				2C701B2E2D5B8F84005F92CA /* POLVers.template_vers */,
 				2C8AEB372D2366DC00294B6C /* POLCompatibleSurveyViewController.h */,
 				2C8AEB382D2366DC00294B6C /* POLCompatibleSurveyViewController.m */,
 				2C3ACAEC2D24806E00DBFCEB /* POLSurveyDialogViewController.xib */,
@@ -306,8 +323,6 @@
 				2CEADCB92D42A8A10087A2E8 /* NSMutableDictionary+Additions.m */,
 				2CEADCC92D474C740087A2E8 /* NSURLRequest+Additions.h */,
 				2CEADCCA2D474C740087A2E8 /* NSURLRequest+Additions.m */,
-				2C9B70482D4CA59000160B6A /* POLUserScript.h */,
-				2C9B704A2D4CA61100160B6A /* POLUserScript.m */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
@@ -389,6 +404,7 @@
 				2C9B66032D0B2B090060AF12 /* Resources */,
 			);
 			buildRules = (
+				2C701B2D2D5B8D7C005F92CA /* PBXBuildRule */,
 				2C9B6FD42D4C925B00160B6A /* PBXBuildRule */,
 				2C9B6FDC2D4C986100160B6A /* PBXBuildRule */,
 			);
@@ -492,6 +508,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C701B302D5B91A9005F92CA /* POLVers.template_vers in Sources */,
 				2C9B6FDD2D4C994800160B6A /* POLUserScript.template_h in Sources */,
 				2C9B6FDE2D4C994800160B6A /* POLUserScript.template_m in Sources */,
 				2C9321E52D3D254A00221F53 /* POLError.m in Sources */,
@@ -542,7 +559,6 @@
 			baseConfigurationReferenceRelativePath = "Framework-Debug.xcconfig";
 			buildSettings = {
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -556,7 +572,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.polling.Polling;
@@ -577,7 +592,6 @@
 			baseConfigurationReferenceRelativePath = "Framework-Release.xcconfig";
 			buildSettings = {
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -591,7 +605,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.polling.Polling;

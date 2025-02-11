@@ -160,6 +160,7 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 	static POLPolling *pol;
 	static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
+		POLLogInfo("%s", POLVersionAllString);
 		POLPreviousUncaughtExceptionHandler = NSGetUncaughtExceptionHandler();
 		NSSetUncaughtExceptionHandler(POLUncaughtExceptionHandler);
 		POLLogTrace("Create singleton=%@, method=%s", self, __func__);

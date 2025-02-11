@@ -12,6 +12,24 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#pragma mark - Version Info
+
+extern const short POLVersionMajorNumber;
+extern const short POLVersionMinorNumber;
+extern const short POLVersionPatchNumber;
+
+extern const unsigned char POLVersionBranchString[];
+extern const unsigned char POLVersionCommitString[];
+extern const unsigned char POLVersionConfigString[];
+
+extern const unsigned char POLVersionRepoStateString[];
+
+extern const unsigned char POLVersionString[];
+extern const unsigned char POLVersionLongString[];
+extern const unsigned char POLVersionAllString[];
+
+#pragma mark - SDK Initialization Checks
+
 void POLSetSDKInitialized(BOOL initialized);
 BOOL POLIsSDKInitialized(void);
 
@@ -36,6 +54,8 @@ BOOL POLIsSDKDisabled(void);
 		return;															\
 	}																	\
 })
+
+#pragma mark - POLPolling Singleton Internals
 
 NSString * const POLViewTypeDescription(POLViewType viewType);
 
