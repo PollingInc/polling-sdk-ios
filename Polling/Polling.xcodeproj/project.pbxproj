@@ -67,6 +67,7 @@
 			fileType = pattern.proxy;
 			inputFiles = (
 				"$(SRCROOT)/../Scripts/xcode-gen-vers",
+				"$(SRCROOT)/../Scripts/version.rb",
 			);
 			isEditable = 1;
 			outputFiles = (
@@ -173,44 +174,8 @@
 		2CEADD2A2D498DD40087A2E8 /* POLModernSurveyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLModernSurveyViewController.m; sourceTree = "<group>"; };
 		2CEADD2F2D49EC5E0087A2E8 /* POLSurveyDialogAnimateInController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POLSurveyDialogAnimateInController.h; sourceTree = "<group>"; };
 		2CEADD302D49EC5E0087A2E8 /* POLSurveyDialogAnimateInController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POLSurveyDialogAnimateInController.m; sourceTree = "<group>"; };
+		2CF6B8252D5CF23500ADEBED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		2C6936D02D4CF4FE00A8A6ED /* Exceptions for "Scripts" folder in "Polling" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"gen-user-scripts",
-				"gen-user-scripts-input-file-list",
-				"xcode-gen-vers",
-			);
-			target = 2C9B66042D0B2B090060AF12 /* Polling */;
-		};
-		2C9B67942D0CCC310060AF12 /* Exceptions for "Configs" folder in "Polling" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"Framework-Debug.xcconfig",
-				"Framework-Release.xcconfig",
-				Framework.xcconfig,
-				Local.xcconfig,
-				"SwiftUIApp-Debug.xcconfig",
-				"SwiftUIApp-Release.xcconfig",
-				SwiftUIApp.xcconfig,
-				"UIKitApp-Debug.xcconfig",
-				"UIKitApp-Release.xcconfig",
-				UIKitApp.xcconfig,
-			);
-			target = 2C9B66042D0B2B090060AF12 /* Polling */;
-		};
-		2CD0C1812D4C1B840053BD55 /* Exceptions for "UserScripts" folder in "Polling" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				CSSInjector.js,
-				PreventTextInputZoom.css,
-				UserScriptsInput.xcfilelist,
-			);
-			target = 2C9B66042D0B2B090060AF12 /* Polling */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2C9B66132D0B2B090060AF12 /* PollingTests */ = {
@@ -220,26 +185,17 @@
 		};
 		2C9B66BE2D0C71730060AF12 /* Configs */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				2C9B67942D0CCC310060AF12 /* Exceptions for "Configs" folder in "Polling" target */,
-			);
 			name = Configs;
 			path = ../Configs;
 			sourceTree = SOURCE_ROOT;
 		};
 		2CD0C16E2D4C074E0053BD55 /* UserScripts */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				2CD0C1812D4C1B840053BD55 /* Exceptions for "UserScripts" folder in "Polling" target */,
-			);
 			path = UserScripts;
 			sourceTree = "<group>";
 		};
 		2CD0C1772D4C07F70053BD55 /* Scripts */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				2C6936D02D4CF4FE00A8A6ED /* Exceptions for "Scripts" folder in "Polling" target */,
-			);
 			name = Scripts;
 			path = ../Scripts;
 			sourceTree = SOURCE_ROOT;
@@ -272,6 +228,7 @@
 				2C8AEAA52D21BD3F00294B6C /* Internal */,
 				2C8AEA882D21BD3000294B6C /* Polling.docc */,
 				2C701B132D565386005F92CA /* PollingInternal.docc */,
+				2CF6B8252D5CF23500ADEBED /* Info.plist */,
 			);
 			path = Polling;
 			sourceTree = "<group>";
@@ -401,6 +358,7 @@
 				2C9B66002D0B2B090060AF12 /* Headers */,
 				2C9B66012D0B2B090060AF12 /* Sources */,
 				2C9B66022D0B2B090060AF12 /* Frameworks */,
+				2CF6B8242D5CEF3300ADEBED /* ShellScript */,
 				2C9B66032D0B2B090060AF12 /* Resources */,
 			);
 			buildRules = (
@@ -409,11 +367,6 @@
 				2C9B6FDC2D4C986100160B6A /* PBXBuildRule */,
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				2C9B66BE2D0C71730060AF12 /* Configs */,
-				2CD0C16E2D4C074E0053BD55 /* UserScripts */,
-				2CD0C1772D4C07F70053BD55 /* Scripts */,
 			);
 			name = Polling;
 			packageProductDependencies = (
@@ -503,6 +456,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2CF6B8242D5CEF3300ADEBED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Polling/Info.plist",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Info.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/../Scripts/xcode-process-info-plist\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C9B66012D0B2B090060AF12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -564,7 +539,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -597,7 +571,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (

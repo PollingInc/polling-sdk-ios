@@ -1,0 +1,20 @@
+#!/usr/bin/ruby
+
+require_relative 'version'
+require 'fileutils'
+
+SCRIPT_INPUT_FILE = ENV['SCRIPT_INPUT_FILE_0']
+SCRIPT_OUTPUT_FILE = ENV['SCRIPT_OUTPUT_FILE_0']
+
+puts 'SCRIPT_INPUT_FILE=' + SCRIPT_INPUT_FILE
+puts 'SCRIPT_OUTPUT_FILE=' + SCRIPT_OUTPUT_FILE
+
+FileUtils.cp SCRIPT_INPUT_FILE, SCRIPT_OUTPUT_FILE, :verbose => true
+
+exec = "/usr/libexec/PlistBuddy -c 'Set :POLSDKVersion \"#{VER_ALL}\"' #{SCRIPT_OUTPUT_FILE}"
+puts "note: #{exec}"
+ok = system exec
+
+if !ok then
+  puts "error: PlistBuddy failed with exit status #{$?.exitstatus}"
+end
