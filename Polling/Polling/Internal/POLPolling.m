@@ -109,6 +109,7 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 	_triggeredSurveyController = POLTriggeredSurveyController.new;
 	_surveyVisible = NO;
 	_inboundTriggeredSurvey = nil;
+	_cachedSurveys = @[];
 
 	return self;
 }
@@ -261,12 +262,12 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 {
 	POLLogTrace("%s %@", __func__, surveys);
 
+	NSArray<POLSurvey *> * previousCachedSurveys = _cachedSurveys;
 	_cachedSurveys = surveys;
-	if (_cachedSurveys.count == 0)
-		return;
 
-	if ([self.delegate respondsToSelector:@selector(pollingOnSurveyAvailable)])
-		[(id<POLPollingDelegate>)self.delegate pollingOnSurveyAvailable];
+	if (previousCachedSurveys.count == 0 && _cachedSurveys.count > 0)
+		if ([self.delegate respondsToSelector:@selector(pollingOnSurveyAvailable)])
+			[self.delegate pollingOnSurveyAvailable];
 }
 
 - (void)networkSessionDidUpdateTriggeredSurveys:(NSArray<POLTriggeredSurvey *> *)triggeredSurvey
