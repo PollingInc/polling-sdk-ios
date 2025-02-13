@@ -67,6 +67,7 @@ FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
 - (void)didReceiveMemoryWarning
 {
 	POLLogTrace("%s", __func__);
+#if 0
 	POLShutdownSDK();
 	[self.webView stopLoading];
 	[self.webView removeFromSuperview];
@@ -75,6 +76,12 @@ FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
 		POLError *error = POLErrorWithCode(POLViewControllerMemoryWarningError);
 		[self.delegate surveyViewControllerDidDismiss:self withError:error];
 	}];
+#else
+	POLError *error = POLErrorWithCode(POLViewControllerMemoryWarningError);
+	/* Should be POLLogWarn, but Unity does not log
+	 * OS_LOG_TYPE_DEFAULT so POLLogLevelWarn should be fixed */
+	POLLogInfo("Received memory warning from iOS (%@)", error);
+#endif
 }
 
 #pragma mark - Web View UI Delegate
@@ -92,15 +99,23 @@ FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
 	withError:(NSError *)error
 {
 	POLLogTrace("%s webView=%@, navigation=%@, error=%@", __func__, webView, navigation, error);
+#if 0
 	[self dismissViewControllerAnimated:YES completion:^{
 		POLError *error = POLErrorWithCode(POLWebViewNavigationFailureError);
 		[self.delegate surveyViewControllerDidDismiss:self withError:error];
 	}];
+#else
+	POLError *pErr = POLErrorWithCode(POLWebViewNavigationFailureError);
+	/* Should be POLLogWarn, but Unity does not log
+	 * OS_LOG_TYPE_DEFAULT so POLLogLevelWarn should be fixed */
+	POLLogInfo("WebView navigation failure (%@)", pErr);
+#endif
 }
 
 - (void)webViewWebContentProcessDidTerminate:(WKWebView *)webView
 {
 	POLLogTrace("%s webView=%@", __func__, webView);
+#if 0
 	POLShutdownSDK();
 	[self.webView stopLoading];
 	[self.webView removeFromSuperview];
@@ -109,6 +124,12 @@ FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
 		POLError *error = POLErrorWithCode(POLWebViewProcessTerminatedError);
 		[self.delegate surveyViewControllerDidDismiss:self withError:error];
 	}];
+#else
+	POLError *error = POLErrorWithCode(POLWebViewProcessTerminatedError);
+	/* Should be POLLogWarn, but Unity does not log
+	 * OS_LOG_TYPE_DEFAULT so POLLogLevelWarn should be fixed */
+	POLLogInfo("WebView process terminated (%@)", error);
+#endif
 }
 
 @end
