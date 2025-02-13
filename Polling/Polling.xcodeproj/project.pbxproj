@@ -91,7 +91,7 @@
 				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_BASE).h",
 			);
 			runOncePerArchitecture = 0;
-			script = "\"$SRCROOT/../Scripts/gen-user-scripts\" \"$SCRIPT_INPUT_FILE\" \"$SCRIPT_OUTPUT_FILE_0\"\n";
+			script = "\"$SRCROOT/../Scripts/xcode-gen-user-scripts\" \"$SCRIPT_INPUT_FILE\" \"$SCRIPT_OUTPUT_FILE_0\"\n";
 		};
 		2C9B6FDC2D4C986100160B6A /* PBXBuildRule */ = {
 			isa = PBXBuildRule;
@@ -108,7 +108,7 @@
 				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_BASE).m",
 			);
 			runOncePerArchitecture = 0;
-			script = "\"$SRCROOT/../Scripts/gen-user-scripts\" \"$SCRIPT_INPUT_FILE\" \"$SCRIPT_OUTPUT_FILE_0\"\n";
+			script = "\"$SRCROOT/../Scripts/xcode-gen-user-scripts\" \"$SCRIPT_INPUT_FILE\" \"$SCRIPT_OUTPUT_FILE_0\"\n";
 		};
 /* End PBXBuildRule section */
 

@@ -17,7 +17,7 @@ cat <<EOF > $INPUT_FILE_LIST
 
 # If any of these files change, POLUserScript.[hm] need to be rebuilt.
 
-\$(SRCROOT)/../Scripts/gen-user-scripts
+\$(SRCROOT)/../Scripts/xcode-gen-user-scripts
 $INPUT_FILES
 
 EOF
