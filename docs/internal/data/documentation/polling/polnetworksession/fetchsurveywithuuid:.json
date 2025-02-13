@@ -1,1 +1,179 @@
-{"kind":"symbol","sections":[],"schemaVersion":{"major":0,"minor":3,"patch":0},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession"]]},"variants":[{"paths":["\/documentation\/polling\/polnetworksession\/fetchsurveywithuuid:"],"traits":[{"interfaceLanguage":"occ"}]}],"metadata":{"externalID":"c:objc(cs)POLNetworkSession(im)fetchSurveyWithUUID:","symbolKind":"method","title":"fetchSurveyWithUUID:","fragments":[{"kind":"text","text":"- "},{"kind":"identifier","text":"fetchSurveyWithUUID:"}],"modules":[{"name":"Polling"}],"role":"symbol","roleHeading":"Instance Method","navigatorTitle":[{"text":"fetchSurveyWithUUID:","kind":"identifier"}]},"primaryContentSections":[{"declarations":[{"tokens":[{"text":"- (","kind":"text"},{"kind":"typeIdentifier","preciseIdentifier":"c:v","text":"void"},{"kind":"text","text":") "},{"kind":"identifier","text":"fetchSurveyWithUUID:"},{"text":"(","kind":"text"},{"kind":"typeIdentifier","text":"NSString","preciseIdentifier":"c:objc(cs)NSString"},{"kind":"text","text":" *) "},{"text":"uuid","kind":"internalParam"},{"kind":"text","text":";"}],"languages":["occ"],"platforms":["iOS"]}],"kind":"declarations"}],"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/fetchSurveyWithUUID:","interfaceLanguage":"occ"},"references":{"doc://com.polling.Polling/documentation/Polling/POLNetworkSession/fetchSurveyWithUUID:":{"title":"fetchSurveyWithUUID:","kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/fetchSurveyWithUUID:","url":"\/documentation\/polling\/polnetworksession\/fetchsurveywithuuid:","navigatorTitle":[{"text":"fetchSurveyWithUUID:","kind":"identifier"}],"type":"topic","fragments":[{"text":"- ","kind":"text"},{"kind":"identifier","text":"fetchSurveyWithUUID:"}],"role":"symbol","abstract":[]},"doc://com.polling.Polling/documentation/Polling/POLNetworkSession":{"type":"topic","fragments":[{"kind":"identifier","text":"POLNetworkSession"}],"title":"POLNetworkSession","abstract":[],"url":"\/documentation\/polling\/polnetworksession","role":"symbol","kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession"},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/fetchSurveyWithUUID:"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLNetworkSession(im)fetchSurveyWithUUID:",
+    "fragments" : [
+      {
+        "kind" : "text",
+        "text" : "- "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "fetchSurveyWithUUID:"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "fetchSurveyWithUUID:"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "fetchSurveyWithUUID:"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "text",
+              "text" : "- ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:v",
+              "text" : "void"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "fetchSurveyWithUUID:"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSString",
+              "text" : "NSString"
+            },
+            {
+              "kind" : "text",
+              "text" : " *) "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "uuid"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polnetworksession\/fetchsurveywithuuid:"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLNetworkSession": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLNetworkSession"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLNetworkSession",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksession"
+},
+"doc://com.polling.Polling/documentation/Polling/POLNetworkSession/fetchSurveyWithUUID:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "fetchSurveyWithUUID:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/fetchSurveyWithUUID:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "fetchSurveyWithUUID:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "fetchSurveyWithUUID:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksession\/fetchsurveywithuuid:"
+}
+}
+}

@@ -1,1 +1,137 @@
-{"schemaVersion":{"major":0,"patch":0,"minor":3},"sections":[],"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)"]]},"kind":"symbol","variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/enum_(unnamed)\/polwebviewnavigationfailureerror"]}],"primaryContentSections":[{"declarations":[{"tokens":[{"text":"POLWebViewNavigationFailureError","kind":"identifier"}],"platforms":["iOS"],"languages":["occ"]}],"kind":"declarations"}],"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLWebViewNavigationFailureError"},"metadata":{"modules":[{"name":"Polling"}],"fragments":[{"text":"POLWebViewNavigationFailureError","kind":"identifier"}],"title":"POLWebViewNavigationFailureError","roleHeading":"Enumeration Case","navigatorTitle":[{"text":"POLWebViewNavigationFailureError","kind":"identifier"}],"symbolKind":"case","externalID":"c:@Ea@POLGeneralError@POLWebViewNavigationFailureError","role":"symbol"},"references":{"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLWebViewNavigationFailureError":{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLWebViewNavigationFailureError","url":"\/documentation\/polling\/enum_(unnamed)\/polwebviewnavigationfailureerror","role":"symbol","title":"POLWebViewNavigationFailureError","type":"topic","kind":"symbol","fragments":[{"kind":"identifier","text":"POLWebViewNavigationFailureError"}],"abstract":[]},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)":{"type":"topic","title":"enum (unnamed)","role":"symbol","fragments":[{"text":"","kind":"identifier"}],"abstract":[],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)","url":"\/documentation\/polling\/enum_(unnamed)","kind":"symbol","navigatorTitle":[{"text":"enum (unnamed)","kind":"identifier"}]}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLWebViewNavigationFailureError"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@Ea@POLGeneralError@POLWebViewNavigationFailureError",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLWebViewNavigationFailureError"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLWebViewNavigationFailureError"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Enumeration Case",
+    "symbolKind" : "case",
+    "title" : "POLWebViewNavigationFailureError"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "identifier",
+              "text" : "POLWebViewNavigationFailureError"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/enum_(unnamed)\/polwebviewnavigationfailureerror"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : ""
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "enum (unnamed)"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "enum (unnamed)",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/enum_(unnamed)"
+},
+"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLWebViewNavigationFailureError": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLWebViewNavigationFailureError"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLWebViewNavigationFailureError",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLWebViewNavigationFailureError",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/enum_(unnamed)\/polwebviewnavigationfailureerror"
+}
+}
+}

@@ -1,1 +1,184 @@
-{"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling"]]},"abstract":[{"type":"text","text":"Disable survey availability checks"}],"primaryContentSections":[{"declarations":[{"tokens":[{"text":"@property","kind":"keyword"},{"kind":"text","text":" "},{"text":"BOOL","preciseIdentifier":"c:@T@BOOL","kind":"typeIdentifier"},{"text":" ","kind":"text"},{"text":"disableCheckingForAvailableSurveys","kind":"identifier"},{"text":";","kind":"text"}],"platforms":["iOS"],"languages":["occ"]}],"kind":"declarations"},{"content":[{"text":"Discussion","type":"heading","anchor":"discussion","level":2},{"inlineContent":[{"text":"Set to YES to disable automatic checks for available surveys.","type":"text"}],"type":"paragraph"}],"kind":"content"}],"metadata":{"title":"disableCheckingForAvailableSurveys","symbolKind":"property","externalID":"c:objc(cs)POLPolling(py)disableCheckingForAvailableSurveys","roleHeading":"Instance Property","fragments":[{"text":"disableCheckingForAvailableSurveys","kind":"identifier"}],"modules":[{"name":"Polling"}],"navigatorTitle":[{"text":"disableCheckingForAvailableSurveys","kind":"identifier"}],"role":"symbol"},"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/disableCheckingForAvailableSurveys"},"schemaVersion":{"major":0,"patch":0,"minor":3},"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polpolling\/disablecheckingforavailablesurveys"]}],"kind":"symbol","sections":[],"references":{"doc://com.polling.Polling/documentation/Polling/POLPolling":{"role":"symbol","kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling","type":"topic","title":"POLPolling","abstract":[{"text":"The primary SDK object","type":"text"}],"fragments":[{"kind":"identifier","text":"POLPolling"}],"url":"\/documentation\/polling\/polpolling"},"doc://com.polling.Polling/documentation/Polling/POLPolling/disableCheckingForAvailableSurveys":{"url":"\/documentation\/polling\/polpolling\/disablecheckingforavailablesurveys","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/disableCheckingForAvailableSurveys","role":"symbol","fragments":[{"text":"disableCheckingForAvailableSurveys","kind":"identifier"}],"type":"topic","abstract":[{"type":"text","text":"Disable survey availability checks"}],"kind":"symbol","title":"disableCheckingForAvailableSurveys"},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"}}}
+{
+  "abstract" : [
+    {
+      "text" : "Disable survey availability checks",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/disableCheckingForAvailableSurveys"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLPolling(py)disableCheckingForAvailableSurveys",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "disableCheckingForAvailableSurveys"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "disableCheckingForAvailableSurveys"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "disableCheckingForAvailableSurveys"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "@property"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:@T@BOOL",
+              "text" : "BOOL"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "disableCheckingForAvailableSurveys"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Set to YES to disable automatic checks for available surveys.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polpolling\/disablecheckingforavailablesurveys"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling": {
+  "abstract" : [
+    {
+      "text" : "The primary SDK object",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLPolling"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLPolling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/disableCheckingForAvailableSurveys": {
+  "abstract" : [
+    {
+      "text" : "Disable survey availability checks",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "disableCheckingForAvailableSurveys"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/disableCheckingForAvailableSurveys",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "disableCheckingForAvailableSurveys",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/disablecheckingforavailablesurveys"
+}
+}
+}

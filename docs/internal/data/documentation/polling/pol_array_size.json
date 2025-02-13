@@ -1,1 +1,133 @@
-{"kind":"symbol","primaryContentSections":[{"declarations":[{"platforms":["iOS"],"tokens":[{"kind":"keyword","text":"#define"},{"text":" ","kind":"text"},{"text":"POL_ARRAY_SIZE","kind":"identifier"},{"text":"(","kind":"text"},{"text":"x","kind":"internalParam"},{"text":")","kind":"text"}],"languages":["occ"]}],"kind":"declarations"}],"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POL_ARRAY_SIZE"},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling"]]},"variants":[{"paths":["\/documentation\/polling\/pol_array_size"],"traits":[{"interfaceLanguage":"occ"}]}],"schemaVersion":{"major":0,"minor":3,"patch":0},"sections":[],"metadata":{"externalID":"c:POLDefines.h@193@macro@POL_ARRAY_SIZE","title":"POL_ARRAY_SIZE","modules":[{"name":"Polling"}],"roleHeading":"Macro","navigatorTitle":[{"kind":"identifier","text":"POL_ARRAY_SIZE"}],"symbolKind":"macro","fragments":[{"kind":"identifier","text":"POL_ARRAY_SIZE"}],"role":"symbol"},"references":{"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POL_ARRAY_SIZE":{"kind":"symbol","url":"\/documentation\/polling\/pol_array_size","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POL_ARRAY_SIZE","title":"POL_ARRAY_SIZE","fragments":[{"kind":"identifier","text":"POL_ARRAY_SIZE"}],"type":"topic","role":"symbol","abstract":[]}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POL_ARRAY_SIZE"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:POLDefines.h@193@macro@POL_ARRAY_SIZE",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POL_ARRAY_SIZE"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POL_ARRAY_SIZE"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Macro",
+    "symbolKind" : "macro",
+    "title" : "POL_ARRAY_SIZE"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "#define"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POL_ARRAY_SIZE"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "x"
+            },
+            {
+              "kind" : "text",
+              "text" : ")"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/pol_array_size"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POL_ARRAY_SIZE": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POL_ARRAY_SIZE"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POL_ARRAY_SIZE",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POL_ARRAY_SIZE",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/pol_array_size"
+}
+}
+}

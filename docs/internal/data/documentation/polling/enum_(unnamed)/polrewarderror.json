@@ -1,1 +1,137 @@
-{"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)"]]},"variants":[{"paths":["\/documentation\/polling\/enum_(unnamed)\/polrewarderror"],"traits":[{"interfaceLanguage":"occ"}]}],"metadata":{"navigatorTitle":[{"kind":"identifier","text":"POLRewardError"}],"symbolKind":"case","modules":[{"name":"Polling"}],"externalID":"c:@Ea@POLGeneralError@POLRewardError","title":"POLRewardError","fragments":[{"text":"POLRewardError","kind":"identifier"}],"role":"symbol","roleHeading":"Enumeration Case"},"sections":[],"schemaVersion":{"minor":3,"patch":0,"major":0},"primaryContentSections":[{"declarations":[{"platforms":["iOS"],"languages":["occ"],"tokens":[{"text":"POLRewardError","kind":"identifier"}]}],"kind":"declarations"}],"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLRewardError"},"kind":"symbol","references":{"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)":{"type":"topic","title":"enum (unnamed)","role":"symbol","fragments":[{"text":"","kind":"identifier"}],"abstract":[],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)","url":"\/documentation\/polling\/enum_(unnamed)","kind":"symbol","navigatorTitle":[{"text":"enum (unnamed)","kind":"identifier"}]},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLRewardError":{"kind":"symbol","title":"POLRewardError","url":"\/documentation\/polling\/enum_(unnamed)\/polrewarderror","role":"symbol","fragments":[{"text":"POLRewardError","kind":"identifier"}],"abstract":[],"type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLRewardError"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLRewardError"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@Ea@POLGeneralError@POLRewardError",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLRewardError"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLRewardError"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Enumeration Case",
+    "symbolKind" : "case",
+    "title" : "POLRewardError"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "identifier",
+              "text" : "POLRewardError"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/enum_(unnamed)\/polrewarderror"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : ""
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "enum (unnamed)"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "enum (unnamed)",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/enum_(unnamed)"
+},
+"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLRewardError": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLRewardError"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLRewardError",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLRewardError",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/enum_(unnamed)\/polrewarderror"
+}
+}
+}

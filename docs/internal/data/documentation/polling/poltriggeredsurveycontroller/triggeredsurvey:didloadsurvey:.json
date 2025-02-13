@@ -1,1 +1,243 @@
-{"kind":"symbol","metadata":{"title":"triggeredSurvey:didLoadSurvey:","symbolKind":"method","roleHeading":"Instance Method","fragments":[{"kind":"text","text":"- "},{"kind":"identifier","text":"triggeredSurvey:didLoadSurvey:"}],"modules":[{"name":"Polling"}],"role":"symbol","navigatorTitle":[{"text":"triggeredSurvey:didLoadSurvey:","kind":"identifier"}],"externalID":"c:objc(cs)POLTriggeredSurveyController(im)triggeredSurvey:didLoadSurvey:"},"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/poltriggeredsurveycontroller\/triggeredsurvey:didloadsurvey:"]}],"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController\/triggeredSurvey:didLoadSurvey:"},"sections":[],"schemaVersion":{"patch":0,"major":0,"minor":3},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController"]]},"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"text":"- (","kind":"text"},{"kind":"typeIdentifier","text":"void","preciseIdentifier":"c:v"},{"kind":"text","text":") "},{"text":"triggeredSurvey:","kind":"identifier"},{"text":"(","kind":"text"},{"text":"POLTriggeredSurvey","kind":"typeIdentifier","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey","preciseIdentifier":"c:objc(cs)POLTriggeredSurvey"},{"kind":"text","text":" *) "},{"kind":"internalParam","text":"triggeredSurvey"},{"kind":"text","text":" "},{"kind":"identifier","text":"didLoadSurvey:"},{"kind":"text","text":"("},{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)POLSurvey","text":"POLSurvey"},{"text":" *) ","kind":"text"},{"kind":"internalParam","text":"survey"},{"text":";","kind":"text"}],"platforms":["iOS"],"languages":["occ"]}]}],"references":{"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurveyController":{"type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController","url":"\/documentation\/polling\/poltriggeredsurveycontroller","abstract":[],"kind":"symbol","role":"symbol","fragments":[{"kind":"identifier","text":"POLTriggeredSurveyController"}],"title":"POLTriggeredSurveyController"},"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurveyController/triggeredSurvey:didLoadSurvey:":{"navigatorTitle":[{"text":"triggeredSurvey:didLoadSurvey:","kind":"identifier"}],"url":"\/documentation\/polling\/poltriggeredsurveycontroller\/triggeredsurvey:didloadsurvey:","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController\/triggeredSurvey:didLoadSurvey:","role":"symbol","fragments":[{"text":"- ","kind":"text"},{"kind":"identifier","text":"triggeredSurvey:didLoadSurvey:"}],"type":"topic","abstract":[],"title":"triggeredSurvey:didLoadSurvey:","kind":"symbol"},"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey":{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey","url":"\/documentation\/polling\/poltriggeredsurvey","type":"topic","role":"symbol","kind":"symbol","abstract":[],"title":"POLTriggeredSurvey","fragments":[{"kind":"identifier","text":"POLTriggeredSurvey"}]},"doc://com.polling.Polling/documentation/Polling/POLSurvey":{"kind":"symbol","abstract":[{"type":"text","text":"An object representing a survey"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey","role":"symbol","title":"POLSurvey","url":"\/documentation\/polling\/polsurvey","type":"topic","fragments":[{"kind":"identifier","text":"POLSurvey"}]},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController\/triggeredSurvey:didLoadSurvey:"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLTriggeredSurveyController(im)triggeredSurvey:didLoadSurvey:",
+    "fragments" : [
+      {
+        "kind" : "text",
+        "text" : "- "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "triggeredSurvey:didLoadSurvey:"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "triggeredSurvey:didLoadSurvey:"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "triggeredSurvey:didLoadSurvey:"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "text",
+              "text" : "- ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:v",
+              "text" : "void"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "triggeredSurvey:"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)POLTriggeredSurvey",
+              "text" : "POLTriggeredSurvey"
+            },
+            {
+              "kind" : "text",
+              "text" : " *) "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "triggeredSurvey"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "didLoadSurvey:"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)POLSurvey",
+              "text" : "POLSurvey"
+            },
+            {
+              "kind" : "text",
+              "text" : " *) "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "survey"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/poltriggeredsurveycontroller\/triggeredsurvey:didloadsurvey:"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey": {
+  "abstract" : [
+    {
+      "text" : "An object representing a survey",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurvey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurvey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey"
+},
+"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLTriggeredSurvey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLTriggeredSurvey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/poltriggeredsurvey"
+},
+"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurveyController": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLTriggeredSurveyController"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLTriggeredSurveyController",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/poltriggeredsurveycontroller"
+},
+"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurveyController/triggeredSurvey:didLoadSurvey:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "triggeredSurvey:didLoadSurvey:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController\/triggeredSurvey:didLoadSurvey:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "triggeredSurvey:didLoadSurvey:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "triggeredSurvey:didLoadSurvey:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/poltriggeredsurveycontroller\/triggeredsurvey:didloadsurvey:"
+}
+}
+}

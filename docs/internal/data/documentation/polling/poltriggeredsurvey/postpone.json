@@ -1,1 +1,162 @@
-{"variants":[{"paths":["\/documentation\/polling\/poltriggeredsurvey\/postpone"],"traits":[{"interfaceLanguage":"occ"}]}],"sections":[],"schemaVersion":{"major":0,"patch":0,"minor":3},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey"]]},"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"text":"- (","kind":"text"},{"kind":"typeIdentifier","text":"void","preciseIdentifier":"c:v"},{"kind":"text","text":") "},{"kind":"identifier","text":"postpone"},{"text":";","kind":"text"}],"languages":["occ"],"platforms":["iOS"]}]}],"metadata":{"modules":[{"name":"Polling"}],"role":"symbol","externalID":"c:objc(cs)POLTriggeredSurvey(im)postpone","symbolKind":"method","fragments":[{"kind":"text","text":"- "},{"text":"postpone","kind":"identifier"}],"roleHeading":"Instance Method","navigatorTitle":[{"text":"postpone","kind":"identifier"}],"title":"postpone"},"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/postpone"},"kind":"symbol","references":{"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey/postpone":{"fragments":[{"text":"- ","kind":"text"},{"text":"postpone","kind":"identifier"}],"role":"symbol","kind":"symbol","type":"topic","url":"\/documentation\/polling\/poltriggeredsurvey\/postpone","title":"postpone","abstract":[],"navigatorTitle":[{"text":"postpone","kind":"identifier"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/postpone"},"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey":{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey","url":"\/documentation\/polling\/poltriggeredsurvey","type":"topic","role":"symbol","kind":"symbol","abstract":[],"title":"POLTriggeredSurvey","fragments":[{"kind":"identifier","text":"POLTriggeredSurvey"}]},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/postpone"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLTriggeredSurvey(im)postpone",
+    "fragments" : [
+      {
+        "kind" : "text",
+        "text" : "- "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "postpone"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "postpone"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "postpone"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "text",
+              "text" : "- ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:v",
+              "text" : "void"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "postpone"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/poltriggeredsurvey\/postpone"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLTriggeredSurvey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLTriggeredSurvey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/poltriggeredsurvey"
+},
+"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey/postpone": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "postpone"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/postpone",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "postpone"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "postpone",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/poltriggeredsurvey\/postpone"
+}
+}
+}

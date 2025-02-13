@@ -1,1 +1,126 @@
-{"schemaVersion":{"patch":0,"major":0,"minor":3},"sections":[],"kind":"symbol","metadata":{"role":"symbol","externalID":"c:@F@POLIsSDKInitialized","symbolKind":"func","title":"POLIsSDKInitialized","fragments":[{"text":"POLIsSDKInitialized","kind":"identifier"}],"modules":[{"name":"Polling"}],"roleHeading":"Function","navigatorTitle":[{"kind":"identifier","text":"POLIsSDKInitialized"}]},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling"]]},"variants":[{"paths":["\/documentation\/polling\/polissdkinitialized"],"traits":[{"interfaceLanguage":"occ"}]}],"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLIsSDKInitialized","interfaceLanguage":"occ"},"primaryContentSections":[{"kind":"declarations","declarations":[{"languages":["occ"],"platforms":["iOS"],"tokens":[{"text":"BOOL","kind":"typeIdentifier","preciseIdentifier":"c:@T@BOOL"},{"text":" ","kind":"text"},{"text":"POLIsSDKInitialized","kind":"identifier"},{"text":"();","kind":"text"}]}]}],"references":{"doc://com.polling.Polling/documentation/Polling/POLIsSDKInitialized":{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLIsSDKInitialized","title":"POLIsSDKInitialized","fragments":[{"kind":"identifier","text":"POLIsSDKInitialized"}],"abstract":[],"role":"symbol","url":"\/documentation\/polling\/polissdkinitialized","type":"topic","kind":"symbol"},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLIsSDKInitialized"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@F@POLIsSDKInitialized",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLIsSDKInitialized"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLIsSDKInitialized"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Function",
+    "symbolKind" : "func",
+    "title" : "POLIsSDKInitialized"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:@T@BOOL",
+              "text" : "BOOL"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLIsSDKInitialized"
+            },
+            {
+              "kind" : "text",
+              "text" : "();"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polissdkinitialized"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLIsSDKInitialized": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLIsSDKInitialized"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLIsSDKInitialized",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLIsSDKInitialized",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polissdkinitialized"
+}
+}
+}

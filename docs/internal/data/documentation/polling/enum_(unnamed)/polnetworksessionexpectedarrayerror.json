@@ -1,1 +1,137 @@
-{"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)"]]},"sections":[],"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"kind":"identifier","text":"POLNetworkSessionExpectedArrayError"}],"languages":["occ"],"platforms":["iOS"]}]}],"metadata":{"title":"POLNetworkSessionExpectedArrayError","role":"symbol","fragments":[{"text":"POLNetworkSessionExpectedArrayError","kind":"identifier"}],"symbolKind":"case","modules":[{"name":"Polling"}],"roleHeading":"Enumeration Case","externalID":"c:@Ea@POLGeneralError@POLNetworkSessionExpectedArrayError","navigatorTitle":[{"text":"POLNetworkSessionExpectedArrayError","kind":"identifier"}]},"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionExpectedArrayError","interfaceLanguage":"occ"},"kind":"symbol","variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/enum_(unnamed)\/polnetworksessionexpectedarrayerror"]}],"schemaVersion":{"minor":3,"patch":0,"major":0},"references":{"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionExpectedArrayError":{"role":"symbol","type":"topic","abstract":[],"url":"\/documentation\/polling\/enum_(unnamed)\/polnetworksessionexpectedarrayerror","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionExpectedArrayError","kind":"symbol","title":"POLNetworkSessionExpectedArrayError","fragments":[{"text":"POLNetworkSessionExpectedArrayError","kind":"identifier"}]},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)":{"type":"topic","title":"enum (unnamed)","role":"symbol","fragments":[{"text":"","kind":"identifier"}],"abstract":[],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)","url":"\/documentation\/polling\/enum_(unnamed)","kind":"symbol","navigatorTitle":[{"text":"enum (unnamed)","kind":"identifier"}]}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionExpectedArrayError"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@Ea@POLGeneralError@POLNetworkSessionExpectedArrayError",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLNetworkSessionExpectedArrayError"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLNetworkSessionExpectedArrayError"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Enumeration Case",
+    "symbolKind" : "case",
+    "title" : "POLNetworkSessionExpectedArrayError"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "identifier",
+              "text" : "POLNetworkSessionExpectedArrayError"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/enum_(unnamed)\/polnetworksessionexpectedarrayerror"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : ""
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "enum (unnamed)"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "enum (unnamed)",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/enum_(unnamed)"
+},
+"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionExpectedArrayError": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLNetworkSessionExpectedArrayError"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionExpectedArrayError",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLNetworkSessionExpectedArrayError",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessionexpectedarrayerror"
+}
+}
+}

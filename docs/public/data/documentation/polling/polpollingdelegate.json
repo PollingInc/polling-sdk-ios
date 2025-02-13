@@ -1,1 +1,368 @@
-{"kind":"symbol","variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polpollingdelegate"]}],"schemaVersion":{"major":0,"minor":3,"patch":0},"sections":[],"abstract":[{"type":"text","text":"A protocol that defines methods the SDK can call to provide"},{"text":" ","type":"text"},{"text":"information to your app","type":"text"}],"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling"]]},"topicSections":[{"identifiers":["doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnFailure:","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnReward:","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSuccess:","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSurveyAvailable"],"anchor":"Instance-Methods","title":"Instance Methods","generated":true}],"relationshipsSections":[{"kind":"relationships","title":"Inherits From","type":"inheritsFrom","identifiers":["doc:\/\/com.polling.Polling\/objc(pl)NSObject"]}],"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate","interfaceLanguage":"occ"},"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"kind":"keyword","text":"@protocol"},{"kind":"text","text":" "},{"text":"POLPollingDelegate","kind":"identifier"},{"kind":"text","text":" <"},{"preciseIdentifier":"c:objc(pl)NSObject","text":"NSObject","kind":"typeIdentifier"},{"text":">","kind":"text"}],"platforms":["iOS"],"languages":["occ"]}]},{"content":[{"type":"heading","anchor":"overview","text":"Overview","level":2},{"type":"paragraph","inlineContent":[{"type":"text","text":"Implement these method to receive information from the Polling SDK."}]},{"inlineContent":[{"type":"text","text":"After implementing these methods in an object, assign that object"},{"type":"text","text":" "},{"text":"to the delegate property of the shared singleton object accessed","type":"text"},{"text":" ","type":"text"},{"text":"through ","type":"text"},{"type":"codeVoice","code":"POLPolling.polling"},{"type":"text","text":". The SDK calls the methods of your"},{"text":" ","type":"text"},{"type":"text","text":"delegate at appropriate times."}],"type":"paragraph"}],"kind":"content"}],"metadata":{"navigatorTitle":[{"kind":"identifier","text":"POLPollingDelegate"}],"modules":[{"name":"Polling"}],"roleHeading":"Protocol","role":"symbol","externalID":"c:objc(pl)POLPollingDelegate","symbolKind":"protocol","title":"POLPollingDelegate","fragments":[{"text":"POLPollingDelegate","kind":"identifier"}]},"references":{"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate/pollingOnSuccess:":{"kind":"symbol","role":"symbol","url":"\/documentation\/polling\/polpollingdelegate\/pollingonsuccess:","type":"topic","fragments":[{"text":"- ","kind":"text"},{"text":"pollingOnSuccess:","kind":"identifier"}],"title":"pollingOnSuccess:","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSuccess:","navigatorTitle":[{"text":"pollingOnSuccess:","kind":"identifier"}],"abstract":[{"type":"text","text":"Notifies your app when a survey is completed"}]},"doc://com.polling.Polling/documentation/Polling":{"title":"Polling","url":"\/documentation\/polling","role":"collection","kind":"symbol","type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","abstract":[{"text":"Poll and survey your users with ease","type":"text"}]},"doc://com.polling.Polling/objc(pl)NSObject":{"type":"unresolvable","identifier":"doc:\/\/com.polling.Polling\/objc(pl)NSObject","title":"NSObject"},"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate/pollingOnFailure:":{"kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnFailure:","title":"pollingOnFailure:","abstract":[{"text":"Notifies your app when an error occurs","type":"text"}],"type":"topic","navigatorTitle":[{"text":"pollingOnFailure:","kind":"identifier"}],"role":"symbol","fragments":[{"text":"- ","kind":"text"},{"text":"pollingOnFailure:","kind":"identifier"}],"url":"\/documentation\/polling\/polpollingdelegate\/pollingonfailure:"},"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate/pollingOnSurveyAvailable":{"abstract":[{"type":"text","text":"Notifies your app when surveys are available"}],"type":"topic","navigatorTitle":[{"text":"pollingOnSurveyAvailable","kind":"identifier"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSurveyAvailable","role":"symbol","title":"pollingOnSurveyAvailable","url":"\/documentation\/polling\/polpollingdelegate\/pollingonsurveyavailable","fragments":[{"kind":"text","text":"- "},{"kind":"identifier","text":"pollingOnSurveyAvailable"}],"kind":"symbol"},"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate/pollingOnReward:":{"kind":"symbol","abstract":[{"text":"Notifies your app when the user receives an award","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnReward:","role":"symbol","title":"pollingOnReward:","fragments":[{"text":"- ","kind":"text"},{"kind":"identifier","text":"pollingOnReward:"}],"navigatorTitle":[{"kind":"identifier","text":"pollingOnReward:"}],"type":"topic","url":"\/documentation\/polling\/polpollingdelegate\/pollingonreward:"},"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate":{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate","type":"topic","fragments":[{"text":"POLPollingDelegate","kind":"identifier"}],"role":"symbol","url":"\/documentation\/polling\/polpollingdelegate","kind":"symbol","title":"POLPollingDelegate","abstract":[{"text":"A protocol that defines methods the SDK can call to provide","type":"text"},{"text":" ","type":"text"},{"text":"information to your app","type":"text"}]}}}
+{
+  "abstract" : [
+    {
+      "text" : "A protocol that defines methods the SDK can call to provide",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "information to your app",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(pl)POLPollingDelegate",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLPollingDelegate"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLPollingDelegate"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Protocol",
+    "symbolKind" : "protocol",
+    "title" : "POLPollingDelegate"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "@protocol"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLPollingDelegate"
+            },
+            {
+              "kind" : "text",
+              "text" : " <"
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(pl)NSObject",
+              "text" : "NSObject"
+            },
+            {
+              "kind" : "text",
+              "text" : ">"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Implement these method to receive information from the Polling SDK.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "After implementing these methods in an object, assign that object",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to the delegate property of the shared singleton object accessed",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "through ",
+              "type" : "text"
+            },
+            {
+              "code" : "POLPolling.polling",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ". The SDK calls the methods of your",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "delegate at appropriate times.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/com.polling.Polling\/objc(pl)NSObject"
+      ],
+      "kind" : "relationships",
+      "title" : "Inherits From",
+      "type" : "inheritsFrom"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnFailure:",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnReward:",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSuccess:",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSurveyAvailable"
+      ],
+      "title" : "Instance Methods"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polpollingdelegate"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Poll and survey your users with ease",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate": {
+  "abstract" : [
+    {
+      "text" : "A protocol that defines methods the SDK can call to provide",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "information to your app",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLPollingDelegate"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLPollingDelegate",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpollingdelegate"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate/pollingOnFailure:": {
+  "abstract" : [
+    {
+      "text" : "Notifies your app when an error occurs",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "pollingOnFailure:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnFailure:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "pollingOnFailure:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "pollingOnFailure:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpollingdelegate\/pollingonfailure:"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate/pollingOnReward:": {
+  "abstract" : [
+    {
+      "text" : "Notifies your app when the user receives an award",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "pollingOnReward:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnReward:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "pollingOnReward:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "pollingOnReward:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpollingdelegate\/pollingonreward:"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate/pollingOnSuccess:": {
+  "abstract" : [
+    {
+      "text" : "Notifies your app when a survey is completed",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "pollingOnSuccess:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSuccess:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "pollingOnSuccess:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "pollingOnSuccess:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpollingdelegate\/pollingonsuccess:"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate/pollingOnSurveyAvailable": {
+  "abstract" : [
+    {
+      "text" : "Notifies your app when surveys are available",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "pollingOnSurveyAvailable"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSurveyAvailable",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "pollingOnSurveyAvailable"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "pollingOnSurveyAvailable",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpollingdelegate\/pollingonsurveyavailable"
+},
+"doc://com.polling.Polling/objc(pl)NSObject": {
+  "identifier" : "doc:\/\/com.polling.Polling\/objc(pl)NSObject",
+  "title" : "NSObject",
+  "type" : "unresolvable"
+}
+}
+}

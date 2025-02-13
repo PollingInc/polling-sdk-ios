@@ -1,1 +1,165 @@
-{"schemaVersion":{"minor":3,"patch":0,"major":0},"kind":"symbol","variants":[{"paths":["\/documentation\/polling\/polreward\/jsonrepresentation"],"traits":[{"interfaceLanguage":"occ"}]}],"metadata":{"roleHeading":"Instance Method","symbolKind":"method","role":"symbol","title":"JSONRepresentation","modules":[{"name":"Polling"}],"fragments":[{"kind":"text","text":"- "},{"kind":"identifier","text":"JSONRepresentation"}],"externalID":"c:objc(cs)POLReward(im)JSONRepresentation","navigatorTitle":[{"text":"JSONRepresentation","kind":"identifier"}]},"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"text":"- (","kind":"text"},{"kind":"typeIdentifier","text":"NSString","preciseIdentifier":"c:objc(cs)NSString"},{"kind":"text","text":" *) "},{"text":"JSONRepresentation","kind":"identifier"},{"kind":"text","text":";"}],"languages":["occ"],"platforms":["iOS"]}]}],"sections":[],"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward"]]},"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/JSONRepresentation","interfaceLanguage":"occ"},"references":{"doc://com.polling.Polling/documentation/Polling/POLReward/JSONRepresentation":{"role":"symbol","navigatorTitle":[{"text":"JSONRepresentation","kind":"identifier"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/JSONRepresentation","type":"topic","kind":"symbol","abstract":[],"fragments":[{"text":"- ","kind":"text"},{"text":"JSONRepresentation","kind":"identifier"}],"title":"JSONRepresentation","url":"\/documentation\/polling\/polreward\/jsonrepresentation"},"doc://com.polling.Polling/documentation/Polling/POLReward":{"type":"topic","title":"POLReward","role":"symbol","fragments":[{"text":"POLReward","kind":"identifier"}],"abstract":[{"text":"An object representing a reward","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward","url":"\/documentation\/polling\/polreward","kind":"symbol"},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/JSONRepresentation"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLReward(im)JSONRepresentation",
+    "fragments" : [
+      {
+        "kind" : "text",
+        "text" : "- "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "JSONRepresentation"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "JSONRepresentation"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "JSONRepresentation"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "text",
+              "text" : "- ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSString",
+              "text" : "NSString"
+            },
+            {
+              "kind" : "text",
+              "text" : " *) "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "JSONRepresentation"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polreward\/jsonrepresentation"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLReward": {
+  "abstract" : [
+    {
+      "text" : "An object representing a reward",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLReward"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLReward",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polreward"
+},
+"doc://com.polling.Polling/documentation/Polling/POLReward/JSONRepresentation": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "JSONRepresentation"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/JSONRepresentation",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "JSONRepresentation"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "JSONRepresentation",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polreward\/jsonrepresentation"
+}
+}
+}

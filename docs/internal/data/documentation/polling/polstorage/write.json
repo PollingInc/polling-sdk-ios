@@ -1,1 +1,162 @@
-{"kind":"symbol","sections":[],"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"languages":["occ"],"tokens":[{"kind":"text","text":"- ("},{"preciseIdentifier":"c:v","kind":"typeIdentifier","text":"void"},{"text":") ","kind":"text"},{"kind":"identifier","text":"write"},{"kind":"text","text":";"}]}]}],"schemaVersion":{"major":0,"minor":3,"patch":0},"metadata":{"fragments":[{"kind":"text","text":"- "},{"text":"write","kind":"identifier"}],"externalID":"c:objc(cs)POLStorage(im)write","role":"symbol","modules":[{"name":"Polling"}],"symbolKind":"method","title":"write","roleHeading":"Instance Method","navigatorTitle":[{"kind":"identifier","text":"write"}]},"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polstorage\/write"]}],"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage"]]},"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage\/write"},"references":{"doc://com.polling.Polling/documentation/Polling/POLStorage":{"role":"symbol","fragments":[{"text":"POLStorage","kind":"identifier"}],"abstract":[],"type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage","url":"\/documentation\/polling\/polstorage","title":"POLStorage","kind":"symbol"},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLStorage/write":{"fragments":[{"text":"- ","kind":"text"},{"kind":"identifier","text":"write"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage\/write","url":"\/documentation\/polling\/polstorage\/write","type":"topic","role":"symbol","kind":"symbol","title":"write","abstract":[],"navigatorTitle":[{"text":"write","kind":"identifier"}]}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage\/write"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLStorage(im)write",
+    "fragments" : [
+      {
+        "kind" : "text",
+        "text" : "- "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "write"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "write"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "write"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "text",
+              "text" : "- ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:v",
+              "text" : "void"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "write"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polstorage\/write"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLStorage": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLStorage"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLStorage",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polstorage"
+},
+"doc://com.polling.Polling/documentation/Polling/POLStorage/write": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "write"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage\/write",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "write"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "write",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polstorage\/write"
+}
+}
+}

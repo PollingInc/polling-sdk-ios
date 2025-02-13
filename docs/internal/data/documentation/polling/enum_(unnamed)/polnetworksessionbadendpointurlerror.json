@@ -1,1 +1,137 @@
-{"sections":[],"schemaVersion":{"minor":3,"major":0,"patch":0},"kind":"symbol","metadata":{"role":"symbol","title":"POLNetworkSessionBadEndpointURLError","navigatorTitle":[{"text":"POLNetworkSessionBadEndpointURLError","kind":"identifier"}],"externalID":"c:@Ea@POLGeneralError@POLNetworkSessionBadEndpointURLError","modules":[{"name":"Polling"}],"roleHeading":"Enumeration Case","fragments":[{"text":"POLNetworkSessionBadEndpointURLError","kind":"identifier"}],"symbolKind":"case"},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)"]]},"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/enum_(unnamed)\/polnetworksessionbadendpointurlerror"]}],"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionBadEndpointURLError","interfaceLanguage":"occ"},"primaryContentSections":[{"declarations":[{"tokens":[{"kind":"identifier","text":"POLNetworkSessionBadEndpointURLError"}],"platforms":["iOS"],"languages":["occ"]}],"kind":"declarations"}],"references":{"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionBadEndpointURLError":{"type":"topic","url":"\/documentation\/polling\/enum_(unnamed)\/polnetworksessionbadendpointurlerror","role":"symbol","kind":"symbol","fragments":[{"text":"POLNetworkSessionBadEndpointURLError","kind":"identifier"}],"title":"POLNetworkSessionBadEndpointURLError","abstract":[],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionBadEndpointURLError"},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)":{"type":"topic","title":"enum (unnamed)","role":"symbol","fragments":[{"text":"","kind":"identifier"}],"abstract":[],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)","url":"\/documentation\/polling\/enum_(unnamed)","kind":"symbol","navigatorTitle":[{"text":"enum (unnamed)","kind":"identifier"}]}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionBadEndpointURLError"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@Ea@POLGeneralError@POLNetworkSessionBadEndpointURLError",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLNetworkSessionBadEndpointURLError"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLNetworkSessionBadEndpointURLError"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Enumeration Case",
+    "symbolKind" : "case",
+    "title" : "POLNetworkSessionBadEndpointURLError"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "identifier",
+              "text" : "POLNetworkSessionBadEndpointURLError"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/enum_(unnamed)\/polnetworksessionbadendpointurlerror"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : ""
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "enum (unnamed)"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "enum (unnamed)",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/enum_(unnamed)"
+},
+"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionBadEndpointURLError": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLNetworkSessionBadEndpointURLError"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionBadEndpointURLError",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLNetworkSessionBadEndpointURLError",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessionbadendpointurlerror"
+}
+}
+}

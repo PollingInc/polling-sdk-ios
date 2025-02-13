@@ -1,1 +1,246 @@
-{"kind":"symbol","identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnFailure:","interfaceLanguage":"occ"},"primaryContentSections":[{"declarations":[{"tokens":[{"text":"- (","kind":"text"},{"preciseIdentifier":"c:v","text":"void","kind":"typeIdentifier"},{"text":") ","kind":"text"},{"text":"pollingOnFailure:","kind":"identifier"},{"text":"(","kind":"text"},{"preciseIdentifier":"c:objc(cs)NSString","text":"NSString","kind":"typeIdentifier"},{"text":" *) ","kind":"text"},{"kind":"internalParam","text":"error"},{"text":";","kind":"text"}],"platforms":["iOS"],"languages":["occ"]}],"kind":"declarations"},{"parameters":[{"content":[{"inlineContent":[{"text":"A string describing the error","type":"text"}],"type":"paragraph"}],"name":"error"}],"kind":"parameters"},{"content":[{"level":2,"type":"heading","anchor":"discussion","text":"Discussion"},{"type":"paragraph","inlineContent":[{"text":"Called when the SDK encounters and error processing your request or","type":"text"},{"type":"text","text":" "},{"type":"text","text":"when displaying a survey."}]}],"kind":"content"}],"metadata":{"externalID":"c:objc(pl)POLPollingDelegate(im)pollingOnFailure:","fragments":[{"text":"- ","kind":"text"},{"text":"pollingOnFailure:","kind":"identifier"}],"modules":[{"name":"Polling"}],"role":"symbol","roleHeading":"Instance Method","navigatorTitle":[{"text":"pollingOnFailure:","kind":"identifier"}],"symbolKind":"method","title":"pollingOnFailure:"},"sections":[],"schemaVersion":{"major":0,"patch":0,"minor":3},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate"]]},"abstract":[{"type":"text","text":"Notifies your app when an error occurs"}],"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polpollingdelegate\/pollingonfailure:"]}],"references":{"doc://com.polling.Polling/documentation/Polling":{"title":"Polling","url":"\/documentation\/polling","role":"collection","kind":"symbol","type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","abstract":[{"text":"Poll and survey your users with ease","type":"text"}]},"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate":{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate","type":"topic","fragments":[{"text":"POLPollingDelegate","kind":"identifier"}],"role":"symbol","url":"\/documentation\/polling\/polpollingdelegate","kind":"symbol","title":"POLPollingDelegate","abstract":[{"text":"A protocol that defines methods the SDK can call to provide","type":"text"},{"text":" ","type":"text"},{"text":"information to your app","type":"text"}]},"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate/pollingOnFailure:":{"kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnFailure:","title":"pollingOnFailure:","abstract":[{"text":"Notifies your app when an error occurs","type":"text"}],"type":"topic","navigatorTitle":[{"text":"pollingOnFailure:","kind":"identifier"}],"role":"symbol","fragments":[{"text":"- ","kind":"text"},{"text":"pollingOnFailure:","kind":"identifier"}],"url":"\/documentation\/polling\/polpollingdelegate\/pollingonfailure:"}}}
+{
+  "abstract" : [
+    {
+      "text" : "Notifies your app when an error occurs",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnFailure:"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(pl)POLPollingDelegate(im)pollingOnFailure:",
+    "fragments" : [
+      {
+        "kind" : "text",
+        "text" : "- "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "pollingOnFailure:"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "pollingOnFailure:"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "pollingOnFailure:"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "text",
+              "text" : "- ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:v",
+              "text" : "void"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "pollingOnFailure:"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSString",
+              "text" : "NSString"
+            },
+            {
+              "kind" : "text",
+              "text" : " *) "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "error"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "A string describing the error",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "error"
+        }
+      ]
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Called when the SDK encounters and error processing your request or",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "when displaying a survey.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polpollingdelegate\/pollingonfailure:"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Poll and survey your users with ease",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate": {
+  "abstract" : [
+    {
+      "text" : "A protocol that defines methods the SDK can call to provide",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "information to your app",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLPollingDelegate"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLPollingDelegate",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpollingdelegate"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate/pollingOnFailure:": {
+  "abstract" : [
+    {
+      "text" : "Notifies your app when an error occurs",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "pollingOnFailure:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnFailure:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "pollingOnFailure:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "pollingOnFailure:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpollingdelegate\/pollingonfailure:"
+}
+}
+}

@@ -1,1 +1,131 @@
-{"schemaVersion":{"minor":3,"patch":0,"major":0},"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystem\/POLLogSubsystemSDK"},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystem"]]},"metadata":{"modules":[{"name":"Polling"}],"externalID":"c:@E@POLLogSubsystem@POLLogSubsystemSDK","navigatorTitle":[{"text":"POLLogSubsystemSDK","kind":"identifier"}],"role":"symbol","title":"POLLogSubsystemSDK","roleHeading":"Enumeration Case","symbolKind":"case","fragments":[{"kind":"identifier","text":"POLLogSubsystemSDK"}]},"kind":"symbol","primaryContentSections":[{"kind":"declarations","declarations":[{"languages":["occ"],"platforms":["iOS"],"tokens":[{"kind":"identifier","text":"POLLogSubsystemSDK"}]}]}],"sections":[],"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/pollogsubsystem\/pollogsubsystemsdk"]}],"references":{"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLLogSubsystem":{"kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystem","type":"topic","role":"symbol","abstract":[],"url":"\/documentation\/polling\/pollogsubsystem","fragments":[{"kind":"identifier","text":"POLLogSubsystem"}],"title":"POLLogSubsystem"},"doc://com.polling.Polling/documentation/Polling/POLLogSubsystem/POLLogSubsystemSDK":{"type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystem\/POLLogSubsystemSDK","url":"\/documentation\/polling\/pollogsubsystem\/pollogsubsystemsdk","kind":"symbol","abstract":[],"role":"symbol","fragments":[{"kind":"identifier","text":"POLLogSubsystemSDK"}],"title":"POLLogSubsystemSDK"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystem"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystem\/POLLogSubsystemSDK"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@E@POLLogSubsystem@POLLogSubsystemSDK",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLLogSubsystemSDK"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLLogSubsystemSDK"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Enumeration Case",
+    "symbolKind" : "case",
+    "title" : "POLLogSubsystemSDK"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "identifier",
+              "text" : "POLLogSubsystemSDK"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/pollogsubsystem\/pollogsubsystemsdk"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLLogSubsystem": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLLogSubsystem"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystem",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLLogSubsystem",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/pollogsubsystem"
+},
+"doc://com.polling.Polling/documentation/Polling/POLLogSubsystem/POLLogSubsystemSDK": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLLogSubsystemSDK"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystem\/POLLogSubsystemSDK",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLLogSubsystemSDK",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/pollogsubsystem\/pollogsubsystemsdk"
+}
+}
+}

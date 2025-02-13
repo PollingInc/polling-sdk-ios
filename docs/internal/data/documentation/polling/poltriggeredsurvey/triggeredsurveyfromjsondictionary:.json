@@ -1,1 +1,179 @@
-{"kind":"symbol","primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"kind":"text","text":"+ ("},{"preciseIdentifier":"c:*Qo","kind":"typeIdentifier","text":"id"},{"kind":"text","text":") "},{"text":"triggeredSurveyFromJSONDictionary:","kind":"identifier"},{"text":"(","kind":"text"},{"preciseIdentifier":"c:objc(cs)NSDictionary","kind":"typeIdentifier","text":"NSDictionary"},{"text":" *) ","kind":"text"},{"kind":"internalParam","text":"dict"},{"kind":"text","text":";"}],"platforms":["iOS"],"languages":["occ"]}]}],"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey"]]},"variants":[{"paths":["\/documentation\/polling\/poltriggeredsurvey\/triggeredsurveyfromjsondictionary:"],"traits":[{"interfaceLanguage":"occ"}]}],"sections":[],"schemaVersion":{"patch":0,"major":0,"minor":3},"metadata":{"role":"symbol","title":"triggeredSurveyFromJSONDictionary:","externalID":"c:objc(cs)POLTriggeredSurvey(cm)triggeredSurveyFromJSONDictionary:","roleHeading":"Type Method","modules":[{"name":"Polling"}],"fragments":[{"text":"+ ","kind":"text"},{"kind":"identifier","text":"triggeredSurveyFromJSONDictionary:"}],"navigatorTitle":[{"text":"triggeredSurveyFromJSONDictionary:","kind":"identifier"}],"symbolKind":"method"},"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/triggeredSurveyFromJSONDictionary:"},"references":{"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey/triggeredSurveyFromJSONDictionary:":{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/triggeredSurveyFromJSONDictionary:","kind":"symbol","type":"topic","role":"symbol","title":"triggeredSurveyFromJSONDictionary:","navigatorTitle":[{"text":"triggeredSurveyFromJSONDictionary:","kind":"identifier"}],"url":"\/documentation\/polling\/poltriggeredsurvey\/triggeredsurveyfromjsondictionary:","abstract":[],"fragments":[{"text":"+ ","kind":"text"},{"kind":"identifier","text":"triggeredSurveyFromJSONDictionary:"}]},"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey":{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey","url":"\/documentation\/polling\/poltriggeredsurvey","type":"topic","role":"symbol","kind":"symbol","abstract":[],"title":"POLTriggeredSurvey","fragments":[{"kind":"identifier","text":"POLTriggeredSurvey"}]}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/triggeredSurveyFromJSONDictionary:"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLTriggeredSurvey(cm)triggeredSurveyFromJSONDictionary:",
+    "fragments" : [
+      {
+        "kind" : "text",
+        "text" : "+ "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "triggeredSurveyFromJSONDictionary:"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "triggeredSurveyFromJSONDictionary:"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Type Method",
+    "symbolKind" : "method",
+    "title" : "triggeredSurveyFromJSONDictionary:"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "text",
+              "text" : "+ ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:*Qo",
+              "text" : "id"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "triggeredSurveyFromJSONDictionary:"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSDictionary",
+              "text" : "NSDictionary"
+            },
+            {
+              "kind" : "text",
+              "text" : " *) "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "dict"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/poltriggeredsurvey\/triggeredsurveyfromjsondictionary:"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLTriggeredSurvey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLTriggeredSurvey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/poltriggeredsurvey"
+},
+"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey/triggeredSurveyFromJSONDictionary:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "+ "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "triggeredSurveyFromJSONDictionary:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/triggeredSurveyFromJSONDictionary:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "triggeredSurveyFromJSONDictionary:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "triggeredSurveyFromJSONDictionary:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/poltriggeredsurvey\/triggeredsurveyfromjsondictionary:"
+}
+}
+}

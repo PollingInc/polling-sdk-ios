@@ -1,1 +1,137 @@
-{"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)"]]},"schemaVersion":{"minor":3,"major":0,"patch":0},"metadata":{"navigatorTitle":[{"text":"POLViewControllerMemoryWarningError","kind":"identifier"}],"fragments":[{"kind":"identifier","text":"POLViewControllerMemoryWarningError"}],"symbolKind":"case","externalID":"c:@Ea@POLGeneralError@POLViewControllerMemoryWarningError","modules":[{"name":"Polling"}],"title":"POLViewControllerMemoryWarningError","role":"symbol","roleHeading":"Enumeration Case"},"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"kind":"identifier","text":"POLViewControllerMemoryWarningError"}],"platforms":["iOS"],"languages":["occ"]}]}],"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLViewControllerMemoryWarningError"},"sections":[],"variants":[{"paths":["\/documentation\/polling\/enum_(unnamed)\/polviewcontrollermemorywarningerror"],"traits":[{"interfaceLanguage":"occ"}]}],"kind":"symbol","references":{"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLViewControllerMemoryWarningError":{"abstract":[],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLViewControllerMemoryWarningError","fragments":[{"text":"POLViewControllerMemoryWarningError","kind":"identifier"}],"title":"POLViewControllerMemoryWarningError","type":"topic","url":"\/documentation\/polling\/enum_(unnamed)\/polviewcontrollermemorywarningerror","kind":"symbol","role":"symbol"},"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)":{"type":"topic","title":"enum (unnamed)","role":"symbol","fragments":[{"text":"","kind":"identifier"}],"abstract":[],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)","url":"\/documentation\/polling\/enum_(unnamed)","kind":"symbol","navigatorTitle":[{"text":"enum (unnamed)","kind":"identifier"}]}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLViewControllerMemoryWarningError"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@Ea@POLGeneralError@POLViewControllerMemoryWarningError",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLViewControllerMemoryWarningError"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLViewControllerMemoryWarningError"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Enumeration Case",
+    "symbolKind" : "case",
+    "title" : "POLViewControllerMemoryWarningError"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "identifier",
+              "text" : "POLViewControllerMemoryWarningError"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/enum_(unnamed)\/polviewcontrollermemorywarningerror"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : ""
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "enum (unnamed)"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "enum (unnamed)",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/enum_(unnamed)"
+},
+"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLViewControllerMemoryWarningError": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLViewControllerMemoryWarningError"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLViewControllerMemoryWarningError",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLViewControllerMemoryWarningError",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/enum_(unnamed)\/polviewcontrollermemorywarningerror"
+}
+}
+}

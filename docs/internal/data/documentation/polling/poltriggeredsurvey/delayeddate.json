@@ -1,1 +1,160 @@
-{"metadata":{"externalID":"c:objc(cs)POLTriggeredSurvey(py)delayedDate","title":"delayedDate","navigatorTitle":[{"text":"delayedDate","kind":"identifier"}],"roleHeading":"Instance Property","role":"symbol","symbolKind":"property","fragments":[{"kind":"identifier","text":"delayedDate"}],"modules":[{"name":"Polling"}]},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey"]]},"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"tokens":[{"text":"@property","kind":"keyword"},{"kind":"text","text":" ("},{"text":"readonly","kind":"keyword"},{"kind":"text","text":") "},{"kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)NSDate","text":"NSDate"},{"text":" * ","kind":"text"},{"kind":"identifier","text":"delayedDate"},{"kind":"text","text":";"}],"languages":["occ"]}]}],"variants":[{"paths":["\/documentation\/polling\/poltriggeredsurvey\/delayeddate"],"traits":[{"interfaceLanguage":"occ"}]}],"kind":"symbol","identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/delayedDate","interfaceLanguage":"occ"},"sections":[],"schemaVersion":{"major":0,"patch":0,"minor":3},"references":{"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey":{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey","url":"\/documentation\/polling\/poltriggeredsurvey","type":"topic","role":"symbol","kind":"symbol","abstract":[],"title":"POLTriggeredSurvey","fragments":[{"kind":"identifier","text":"POLTriggeredSurvey"}]},"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey/delayedDate":{"url":"\/documentation\/polling\/poltriggeredsurvey\/delayeddate","kind":"symbol","title":"delayedDate","role":"symbol","fragments":[{"kind":"identifier","text":"delayedDate"}],"abstract":[],"type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/delayedDate"},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/delayedDate"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLTriggeredSurvey(py)delayedDate",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "delayedDate"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "delayedDate"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "delayedDate"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "@property"
+            },
+            {
+              "kind" : "text",
+              "text" : " ("
+            },
+            {
+              "kind" : "keyword",
+              "text" : "readonly"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSDate",
+              "text" : "NSDate"
+            },
+            {
+              "kind" : "text",
+              "text" : " * "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "delayedDate"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/poltriggeredsurvey\/delayeddate"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLTriggeredSurvey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLTriggeredSurvey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/poltriggeredsurvey"
+},
+"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey/delayedDate": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "delayedDate"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/delayedDate",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "delayedDate",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/poltriggeredsurvey\/delayeddate"
+}
+}
+}

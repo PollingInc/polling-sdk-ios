@@ -1,1 +1,168 @@
-{"schemaVersion":{"minor":3,"patch":0,"major":0},"kind":"symbol","metadata":{"title":"delegate","roleHeading":"Instance Property","symbolKind":"property","navigatorTitle":[{"text":"delegate","kind":"identifier"}],"fragments":[{"text":"delegate","kind":"identifier"}],"externalID":"c:objc(cs)POLNetworkSession(py)delegate","modules":[{"name":"Polling"}],"role":"symbol"},"primaryContentSections":[{"declarations":[{"languages":["occ"],"tokens":[{"text":"@property","kind":"keyword"},{"kind":"text","text":" ("},{"kind":"keyword","text":"nonatomic"},{"text":", ","kind":"text"},{"kind":"keyword","text":"weak"},{"kind":"text","text":") "},{"preciseIdentifier":"c:Qoobjc(pl)POLNetworkSessionDelegate","kind":"typeIdentifier","text":"id<POLNetworkSessionDelegate>"},{"text":" ","kind":"text"},{"kind":"identifier","text":"delegate"},{"kind":"text","text":";"}],"platforms":["iOS"]}],"kind":"declarations"}],"variants":[{"paths":["\/documentation\/polling\/polnetworksession\/delegate"],"traits":[{"interfaceLanguage":"occ"}]}],"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/delegate","interfaceLanguage":"occ"},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession"]]},"sections":[],"references":{"doc://com.polling.Polling/documentation/Polling/POLNetworkSession/delegate":{"kind":"symbol","fragments":[{"kind":"identifier","text":"delegate"}],"type":"topic","title":"delegate","url":"\/documentation\/polling\/polnetworksession\/delegate","abstract":[],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/delegate","role":"symbol"},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLNetworkSession":{"type":"topic","fragments":[{"kind":"identifier","text":"POLNetworkSession"}],"title":"POLNetworkSession","abstract":[],"url":"\/documentation\/polling\/polnetworksession","role":"symbol","kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/delegate"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLNetworkSession(py)delegate",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "delegate"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "delegate"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "delegate"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "@property"
+            },
+            {
+              "kind" : "text",
+              "text" : " ("
+            },
+            {
+              "kind" : "keyword",
+              "text" : "nonatomic"
+            },
+            {
+              "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "weak"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:Qoobjc(pl)POLNetworkSessionDelegate",
+              "text" : "id<POLNetworkSessionDelegate>"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "delegate"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polnetworksession\/delegate"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLNetworkSession": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLNetworkSession"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLNetworkSession",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksession"
+},
+"doc://com.polling.Polling/documentation/Polling/POLNetworkSession/delegate": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "delegate"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/delegate",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "delegate",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksession\/delegate"
+}
+}
+}

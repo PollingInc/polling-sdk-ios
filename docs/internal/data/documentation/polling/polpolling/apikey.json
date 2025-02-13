@@ -1,1 +1,192 @@
-{"kind":"symbol","sections":[],"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling"]]},"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/apiKey","interfaceLanguage":"occ"},"schemaVersion":{"minor":3,"patch":0,"major":0},"abstract":[{"type":"text","text":"An API Key"}],"variants":[{"paths":["\/documentation\/polling\/polpolling\/apikey"],"traits":[{"interfaceLanguage":"occ"}]}],"primaryContentSections":[{"declarations":[{"tokens":[{"kind":"keyword","text":"@property"},{"kind":"text","text":" "},{"text":"NSString","preciseIdentifier":"c:objc(cs)NSString","kind":"typeIdentifier"},{"kind":"text","text":" * "},{"kind":"identifier","text":"apiKey"},{"text":";","kind":"text"}],"platforms":["iOS"],"languages":["occ"]}],"kind":"declarations"},{"kind":"content","content":[{"text":"Discussion","anchor":"discussion","level":2,"type":"heading"},{"inlineContent":[{"type":"text","text":"API key for your embed integration. To get an API key sign up for a"},{"type":"text","text":" "},{"text":"Polling.com account and create an embed using the dashboard.","type":"text"}],"type":"paragraph"}]}],"metadata":{"modules":[{"name":"Polling"}],"navigatorTitle":[{"text":"apiKey","kind":"identifier"}],"role":"symbol","fragments":[{"kind":"identifier","text":"apiKey"}],"title":"apiKey","roleHeading":"Instance Property","symbolKind":"property","externalID":"c:objc(cs)POLPolling(py)apiKey"},"references":{"doc://com.polling.Polling/documentation/Polling/POLPolling":{"role":"symbol","kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling","type":"topic","title":"POLPolling","abstract":[{"text":"The primary SDK object","type":"text"}],"fragments":[{"kind":"identifier","text":"POLPolling"}],"url":"\/documentation\/polling\/polpolling"},"doc://com.polling.Polling/documentation/Polling/POLPolling/apiKey":{"kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/apiKey","type":"topic","role":"symbol","abstract":[{"text":"An API Key","type":"text"}],"url":"\/documentation\/polling\/polpolling\/apikey","fragments":[{"text":"apiKey","kind":"identifier"}],"title":"apiKey"},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"}}}
+{
+  "abstract" : [
+    {
+      "text" : "An API Key",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/apiKey"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLPolling(py)apiKey",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "apiKey"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "apiKey"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "apiKey"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "@property"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSString",
+              "text" : "NSString"
+            },
+            {
+              "kind" : "text",
+              "text" : " * "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "apiKey"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "API key for your embed integration. To get an API key sign up for a",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Polling.com account and create an embed using the dashboard.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polpolling\/apikey"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling": {
+  "abstract" : [
+    {
+      "text" : "The primary SDK object",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLPolling"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLPolling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/apiKey": {
+  "abstract" : [
+    {
+      "text" : "An API Key",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "apiKey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/apiKey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "apiKey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/apikey"
+}
+}
+}

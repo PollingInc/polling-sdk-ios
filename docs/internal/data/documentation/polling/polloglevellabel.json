@@ -1,1 +1,169 @@
-{"schemaVersion":{"major":0,"minor":3,"patch":0},"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"languages":["occ"],"tokens":[{"text":"const","kind":"keyword"},{"text":" ","kind":"text"},{"preciseIdentifier":"c:C","text":"char","kind":"typeIdentifier"},{"kind":"text","text":" * "},{"text":"POLLogLevelLabel","kind":"identifier"},{"kind":"text","text":"("},{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel","kind":"typeIdentifier","text":"POLLogLevel","preciseIdentifier":"c:@E@POLLogLevel"},{"kind":"text","text":" "},{"text":"level","kind":"internalParam"},{"kind":"text","text":");"}]}]}],"sections":[],"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling"]]},"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polloglevellabel"]}],"metadata":{"modules":[{"name":"Polling"}],"title":"POLLogLevelLabel","fragments":[{"kind":"identifier","text":"POLLogLevelLabel"}],"roleHeading":"Function","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"POLLogLevelLabel"}],"symbolKind":"func","externalID":"c:@F@POLLogLevelLabel"},"kind":"symbol","identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevelLabel"},"references":{"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLLogLevelLabel":{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevelLabel","fragments":[{"text":"POLLogLevelLabel","kind":"identifier"}],"url":"\/documentation\/polling\/polloglevellabel","kind":"symbol","role":"symbol","title":"POLLogLevelLabel","abstract":[],"type":"topic"},"doc://com.polling.Polling/documentation/Polling/POLLogLevel":{"abstract":[],"fragments":[{"kind":"identifier","text":"POLLogLevel"}],"kind":"symbol","type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel","title":"POLLogLevel","url":"\/documentation\/polling\/polloglevel","role":"symbol"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevelLabel"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@F@POLLogLevelLabel",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLLogLevelLabel"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLLogLevelLabel"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Function",
+    "symbolKind" : "func",
+    "title" : "POLLogLevelLabel"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "const"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:C",
+              "text" : "char"
+            },
+            {
+              "kind" : "text",
+              "text" : " * "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLLogLevelLabel"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:@E@POLLogLevel",
+              "text" : "POLLogLevel"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "level"
+            },
+            {
+              "kind" : "text",
+              "text" : ");"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polloglevellabel"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLLogLevel": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLLogLevel"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLLogLevel",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polloglevel"
+},
+"doc://com.polling.Polling/documentation/Polling/POLLogLevelLabel": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLLogLevelLabel"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevelLabel",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLLogLevelLabel",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polloglevellabel"
+}
+}
+}

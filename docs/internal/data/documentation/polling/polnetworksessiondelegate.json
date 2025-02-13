@@ -1,1 +1,298 @@
-{"relationshipsSections":[{"type":"inheritsFrom","identifiers":["doc:\/\/com.polling.Polling\/objc(pl)NSObject"],"title":"Inherits From","kind":"relationships"}],"metadata":{"symbolKind":"protocol","fragments":[{"text":"POLNetworkSessionDelegate","kind":"identifier"}],"modules":[{"name":"Polling"}],"title":"POLNetworkSessionDelegate","role":"symbol","navigatorTitle":[{"kind":"identifier","text":"POLNetworkSessionDelegate"}],"externalID":"c:objc(pl)POLNetworkSessionDelegate","roleHeading":"Protocol"},"topicSections":[{"anchor":"Instance-Methods","generated":true,"identifiers":["doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidCompleteSurvey:","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFailWithError:","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFetchAvailableSurveys:","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFetchSurvey:","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidUpdateTriggeredSurveys:"],"title":"Instance Methods"}],"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate"},"primaryContentSections":[{"declarations":[{"tokens":[{"kind":"keyword","text":"@protocol"},{"text":" ","kind":"text"},{"text":"POLNetworkSessionDelegate","kind":"identifier"},{"text":" <","kind":"text"},{"text":"NSObject","kind":"typeIdentifier","preciseIdentifier":"c:objc(pl)NSObject"},{"kind":"text","text":">"}],"platforms":["iOS"],"languages":["occ"]}],"kind":"declarations"}],"kind":"symbol","variants":[{"paths":["\/documentation\/polling\/polnetworksessiondelegate"],"traits":[{"interfaceLanguage":"occ"}]}],"schemaVersion":{"minor":3,"patch":0,"major":0},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling"]]},"sections":[],"references":{"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate":{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate","title":"POLNetworkSessionDelegate","type":"topic","url":"\/documentation\/polling\/polnetworksessiondelegate","role":"symbol","kind":"symbol","abstract":[],"fragments":[{"text":"POLNetworkSessionDelegate","kind":"identifier"}]},"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate/networkSessionDidFailWithError:":{"title":"networkSessionDidFailWithError:","kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFailWithError:","url":"\/documentation\/polling\/polnetworksessiondelegate\/networksessiondidfailwitherror:","navigatorTitle":[{"text":"networkSessionDidFailWithError:","kind":"identifier"}],"type":"topic","fragments":[{"text":"- ","kind":"text"},{"kind":"identifier","text":"networkSessionDidFailWithError:"}],"role":"symbol","abstract":[]},"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate/networkSessionDidCompleteSurvey:":{"kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidCompleteSurvey:","url":"\/documentation\/polling\/polnetworksessiondelegate\/networksessiondidcompletesurvey:","type":"topic","fragments":[{"text":"- ","kind":"text"},{"text":"networkSessionDidCompleteSurvey:","kind":"identifier"}],"role":"symbol","abstract":[],"title":"networkSessionDidCompleteSurvey:","navigatorTitle":[{"text":"networkSessionDidCompleteSurvey:","kind":"identifier"}]},"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate/networkSessionDidUpdateTriggeredSurveys:":{"url":"\/documentation\/polling\/polnetworksessiondelegate\/networksessiondidupdatetriggeredsurveys:","type":"topic","abstract":[],"navigatorTitle":[{"kind":"identifier","text":"networkSessionDidUpdateTriggeredSurveys:"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidUpdateTriggeredSurveys:","kind":"symbol","fragments":[{"kind":"text","text":"- "},{"text":"networkSessionDidUpdateTriggeredSurveys:","kind":"identifier"}],"role":"symbol","title":"networkSessionDidUpdateTriggeredSurveys:"},"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate/networkSessionDidFetchSurvey:":{"abstract":[],"url":"\/documentation\/polling\/polnetworksessiondelegate\/networksessiondidfetchsurvey:","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFetchSurvey:","title":"networkSessionDidFetchSurvey:","navigatorTitle":[{"kind":"identifier","text":"networkSessionDidFetchSurvey:"}],"role":"symbol","fragments":[{"text":"- ","kind":"text"},{"kind":"identifier","text":"networkSessionDidFetchSurvey:"}],"type":"topic","kind":"symbol"},"doc://com.polling.Polling/objc(pl)NSObject":{"title":"NSObject","identifier":"doc:\/\/com.polling.Polling\/objc(pl)NSObject","type":"unresolvable"},"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate/networkSessionDidFetchAvailableSurveys:":{"kind":"symbol","type":"topic","fragments":[{"kind":"text","text":"- "},{"text":"networkSessionDidFetchAvailableSurveys:","kind":"identifier"}],"url":"\/documentation\/polling\/polnetworksessiondelegate\/networksessiondidfetchavailablesurveys:","title":"networkSessionDidFetchAvailableSurveys:","abstract":[],"role":"symbol","navigatorTitle":[{"kind":"identifier","text":"networkSessionDidFetchAvailableSurveys:"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFetchAvailableSurveys:"},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(pl)POLNetworkSessionDelegate",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLNetworkSessionDelegate"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLNetworkSessionDelegate"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Protocol",
+    "symbolKind" : "protocol",
+    "title" : "POLNetworkSessionDelegate"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "@protocol"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLNetworkSessionDelegate"
+            },
+            {
+              "kind" : "text",
+              "text" : " <"
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(pl)NSObject",
+              "text" : "NSObject"
+            },
+            {
+              "kind" : "text",
+              "text" : ">"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/com.polling.Polling\/objc(pl)NSObject"
+      ],
+      "kind" : "relationships",
+      "title" : "Inherits From",
+      "type" : "inheritsFrom"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidCompleteSurvey:",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFailWithError:",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFetchAvailableSurveys:",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFetchSurvey:",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidUpdateTriggeredSurveys:"
+      ],
+      "title" : "Instance Methods"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polnetworksessiondelegate"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLNetworkSessionDelegate"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLNetworkSessionDelegate",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksessiondelegate"
+},
+"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate/networkSessionDidCompleteSurvey:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "networkSessionDidCompleteSurvey:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidCompleteSurvey:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "networkSessionDidCompleteSurvey:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "networkSessionDidCompleteSurvey:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksessiondelegate\/networksessiondidcompletesurvey:"
+},
+"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate/networkSessionDidFailWithError:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "networkSessionDidFailWithError:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFailWithError:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "networkSessionDidFailWithError:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "networkSessionDidFailWithError:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksessiondelegate\/networksessiondidfailwitherror:"
+},
+"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate/networkSessionDidFetchAvailableSurveys:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "networkSessionDidFetchAvailableSurveys:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFetchAvailableSurveys:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "networkSessionDidFetchAvailableSurveys:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "networkSessionDidFetchAvailableSurveys:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksessiondelegate\/networksessiondidfetchavailablesurveys:"
+},
+"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate/networkSessionDidFetchSurvey:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "networkSessionDidFetchSurvey:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFetchSurvey:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "networkSessionDidFetchSurvey:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "networkSessionDidFetchSurvey:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksessiondelegate\/networksessiondidfetchsurvey:"
+},
+"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate/networkSessionDidUpdateTriggeredSurveys:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "networkSessionDidUpdateTriggeredSurveys:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidUpdateTriggeredSurveys:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "networkSessionDidUpdateTriggeredSurveys:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "networkSessionDidUpdateTriggeredSurveys:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksessiondelegate\/networksessiondidupdatetriggeredsurveys:"
+},
+"doc://com.polling.Polling/objc(pl)NSObject": {
+  "identifier" : "doc:\/\/com.polling.Polling\/objc(pl)NSObject",
+  "title" : "NSObject",
+  "type" : "unresolvable"
+}
+}
+}

@@ -1,1 +1,476 @@
-{"sections":[{"title":"Adding the framework","content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"Configure your project to use the Polling framework"}]}],"chapter":"Configuring your project","kind":"hero"},{"kind":"tasks","tasks":[{"anchor":"Add-the-framework","stepsSection":[{"media":"select-project.png","runtimePreview":null,"content":[{"inlineContent":[{"text":"Select the project item from the Project Navigator","type":"text"}],"type":"paragraph"}],"code":null,"caption":[],"type":"step"},{"media":"select-target.png","caption":[],"runtimePreview":null,"content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"Select the app from the Target list"}]}],"code":null,"type":"step"},{"type":"step","content":[{"inlineContent":[{"text":"Scroll down to the Frameworks, Libraries, and Embedded Content section","type":"text"}],"type":"paragraph"}],"media":"frameworks-section.png","runtimePreview":null,"code":null,"caption":[]},{"runtimePreview":null,"caption":[],"media":"finder-xcframework.png","code":null,"content":[{"type":"paragraph","inlineContent":[{"text":"Locate the ","type":"text"},{"type":"codeVoice","code":"Polling.xcframework"},{"text":" in Finder.","type":"text"}]}],"type":"step"},{"caption":[],"runtimePreview":null,"type":"step","content":[{"inlineContent":[{"text":"Drag ","type":"text"},{"code":"Polling.xcframework","type":"codeVoice"},{"text":" on to the Frameworks, Libraries, and Embedded Content section","type":"text"}],"type":"paragraph"}],"code":null,"media":"drag-xcframework.png"}],"title":"Add the framework","contentSection":[{"mediaPosition":"trailing","content":[{"inlineContent":[{"type":"text","text":"Add the framework to your project"}],"type":"paragraph"}],"kind":"contentAndMedia","media":"add-framework.png"}]}]},{"featuredEyebrow":"Tutorial","kind":"callToAction","action":{"type":"reference","isActive":true,"identifier":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode","overridingTitle":"Get started","overridingTitleInlineContent":[{"type":"text","text":"Get started"}]},"abstract":[{"type":"text","text":"This tutorial guides you through importing the Polling framework and using the APIs with UIKit."}],"title":"Code your view controller"}],"kind":"project","schemaVersion":{"patch":0,"minor":3,"major":0},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/tutorials\/UIKitToC","doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/$volume","doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Configuring-your-project"],["doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC","doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/$volume","doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/Configuring-your-project"]],"modules":[{"reference":"doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Configuring-your-project","projects":[{"reference":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject","sections":[{"reference":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework","kind":"task"}]}]},{"projects":[{"reference":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode","sections":[{"reference":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Import-the-Polling-framework","kind":"task"},{"reference":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Configuring-Polling","kind":"task"},{"kind":"task","reference":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Make-your-view-controller-Pollings-delegate"}]}],"reference":"doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Coding"}],"reference":"doc:\/\/com.polling.Polling\/tutorials\/UIKitToC"},"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject"},"metadata":{"categoryPathComponent":"UIKitToC","title":"Adding the framework","role":"project","category":"UIKitToC"},"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/tutorials\/polling\/configureproject"]}],"references":{"doc://com.polling.Polling/tutorials/Polling/UIKitCode#Configuring-Polling":{"url":"\/tutorials\/polling\/uikitcode#Configuring-Polling","type":"section","kind":"section","identifier":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Configuring-Polling","role":"pseudoSymbol","abstract":[{"text":"This tutorial guides you through importing the Polling framework and using the APIs with UIKit.","type":"text"}],"title":"Configuring Polling"},"doc://com.polling.Polling/tutorials/Polling/UIKitCode":{"kind":"project","abstract":[{"text":"This tutorial guides you through importing the Polling framework and using the APIs with UIKit.","type":"text"}],"role":"project","type":"topic","url":"\/tutorials\/polling\/uikitcode","title":"Code your view controller","identifier":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode"},"drag-xcframework.png":{"alt":"Dragging xcframework","type":"image","identifier":"drag-xcframework.png","variants":[{"url":"\/images\/com.polling.Polling\/drag-xcframework.png","traits":["1x","light"]}]},"doc://com.polling.Polling/tutorials/UIKitToC/Coding":{"identifier":"doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Coding","url":"\/tutorials\/uikittoc\/coding","role":"article","kind":"article","abstract":[],"title":"Coding","type":"topic"},"select-project.png":{"variants":[{"traits":["1x","light"],"url":"\/images\/com.polling.Polling\/select-project.png"}],"type":"image","alt":"Project selected","identifier":"select-project.png"},"add-framework.png":{"variants":[{"traits":["1x","light"],"url":"\/images\/com.polling.Polling\/add-framework.png"}],"type":"image","alt":"plus symbol in a box","identifier":"add-framework.png"},"doc://com.polling.Polling/tutorials/Polling/ConfigureProject":{"identifier":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject","url":"\/tutorials\/polling\/configureproject","abstract":[{"text":"Configure your project to use the Polling framework","type":"text"}],"role":"project","kind":"project","type":"topic","title":"Adding the framework"},"frameworks-section.png":{"variants":[{"traits":["1x","light"],"url":"\/images\/com.polling.Polling\/frameworks-section.png"}],"type":"image","alt":"Frameworks, Libraries, and Embedded Content section","identifier":"frameworks-section.png"},"doc://com.polling.Polling/tutorials/UIKitToC/Configuring-your-project":{"identifier":"doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Configuring-your-project","url":"\/tutorials\/uikittoc\/configuring-your-project","role":"article","kind":"article","title":"Configuring your project","abstract":[],"type":"topic"},"finder-xcframework.png":{"identifier":"finder-xcframework.png","alt":"Frameworks folder in Finder","variants":[{"url":"\/images\/com.polling.Polling\/finder-xcframework.png","traits":["1x","light"]}],"type":"image"},"doc://com.polling.Polling/tutorials/Polling/UIKitCode#Make-your-view-controller-Pollings-delegate":{"identifier":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Make-your-view-controller-Pollings-delegate","url":"\/tutorials\/polling\/uikitcode#Make-your-view-controller-Pollings-delegate","role":"pseudoSymbol","kind":"section","title":"Make your view controller Polling's delegate","abstract":[{"type":"text","text":"This tutorial guides you through importing the Polling framework and using the APIs with UIKit."}],"type":"section"},"doc://com.polling.Polling/tutorials/Polling/UIKitCode#Import-the-Polling-framework":{"abstract":[{"type":"text","text":"This tutorial guides you through importing the Polling framework and using the APIs with UIKit."}],"kind":"section","title":"Import the Polling framework","url":"\/tutorials\/polling\/uikitcode#Import-the-Polling-framework","identifier":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Import-the-Polling-framework","type":"section","role":"pseudoSymbol"},"select-target.png":{"identifier":"select-target.png","alt":"Target selected","variants":[{"traits":["1x","light"],"url":"\/images\/com.polling.Polling\/select-target.png"}],"type":"image"},"doc://com.polling.Polling/tutorials/UIKitToC":{"kind":"overview","identifier":"doc:\/\/com.polling.Polling\/tutorials\/UIKitToC","abstract":[{"type":"text","text":"Tutorial for integrating the Polling SDK in your UIKit app."}],"role":"overview","url":"\/tutorials\/uikittoc","type":"topic","title":"Intergrating with UIKit"},"doc://com.polling.Polling/tutorials/Polling/ConfigureProject#Add-the-framework":{"abstract":[{"type":"text","text":"Configure your project to use the Polling framework"}],"kind":"section","title":"Add the framework","url":"\/tutorials\/polling\/configureproject#Add-the-framework","identifier":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework","type":"section","role":"pseudoSymbol"}}}
+{
+  "hierarchy" : {
+    "modules" : [
+      {
+        "projects" : [
+          {
+            "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject",
+            "sections" : [
+              {
+                "kind" : "task",
+                "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework"
+              }
+            ]
+          }
+        ],
+        "reference" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Configuring-your-project"
+      },
+      {
+        "projects" : [
+          {
+            "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode",
+            "sections" : [
+              {
+                "kind" : "task",
+                "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Import-the-Polling-framework"
+              },
+              {
+                "kind" : "task",
+                "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Configuring-Polling"
+              },
+              {
+                "kind" : "task",
+                "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Make-your-view-controller-Pollings-delegate"
+              }
+            ]
+          }
+        ],
+        "reference" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Coding"
+      }
+    ],
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC",
+        "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/$volume",
+        "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Configuring-your-project"
+      ],
+      [
+        "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC",
+        "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/$volume",
+        "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/Configuring-your-project"
+      ]
+    ],
+    "reference" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC"
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject"
+  },
+  "kind" : "project",
+  "metadata" : {
+    "category" : "UIKitToC",
+    "categoryPathComponent" : "UIKitToC",
+    "role" : "project",
+    "title" : "Adding the framework"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+    {
+      "chapter" : "Configuring your project",
+      "content" : [
+        {
+          "inlineContent" : [
+            {
+              "text" : "Configure your project to use the Polling framework",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "hero",
+      "title" : "Adding the framework"
+    },
+    {
+      "kind" : "tasks",
+      "tasks" : [
+        {
+          "anchor" : "Add-the-framework",
+          "contentSection" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Add the framework to your project",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "kind" : "contentAndMedia",
+              "media" : "add-framework.png",
+              "mediaPosition" : "trailing"
+            }
+          ],
+          "stepsSection" : [
+            {
+              "caption" : [
+
+              ],
+              "code" : null,
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Select the project item from the Project Navigator",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : "select-project.png",
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : null,
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Select the app from the Target list",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : "select-target.png",
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : null,
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Scroll down to the Frameworks, Libraries, and Embedded Content section",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : "frameworks-section.png",
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : null,
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Locate the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "Polling.xcframework",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " in Finder.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : "finder-xcframework.png",
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : null,
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Drag ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "Polling.xcframework",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " on to the Frameworks, Libraries, and Embedded Content section",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : "drag-xcframework.png",
+              "runtimePreview" : null,
+              "type" : "step"
+            }
+          ],
+          "title" : "Add the framework"
+        }
+      ]
+    },
+    {
+      "abstract" : [
+        {
+          "text" : "This tutorial guides you through importing the Polling framework and using the APIs with UIKit.",
+          "type" : "text"
+        }
+      ],
+      "action" : {
+        "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode",
+        "isActive" : true,
+        "overridingTitle" : "Get started",
+        "overridingTitleInlineContent" : [
+          {
+            "text" : "Get started",
+            "type" : "text"
+          }
+        ],
+        "type" : "reference"
+      },
+      "featuredEyebrow" : "Tutorial",
+      "kind" : "callToAction",
+      "title" : "Code your view controller"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/tutorials\/polling\/configureproject"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"add-framework.png": {
+  "alt" : "plus symbol in a box",
+  "identifier" : "add-framework.png",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.Polling\/add-framework.png"
+    }
+  ]
+},
+"doc://com.polling.Polling/tutorials/Polling/ConfigureProject": {
+  "abstract" : [
+    {
+      "text" : "Configure your project to use the Polling framework",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject",
+  "kind" : "project",
+  "role" : "project",
+  "title" : "Adding the framework",
+  "type" : "topic",
+  "url" : "\/tutorials\/polling\/configureproject"
+},
+"doc://com.polling.Polling/tutorials/Polling/ConfigureProject#Add-the-framework": {
+  "abstract" : [
+    {
+      "text" : "Configure your project to use the Polling framework",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework",
+  "kind" : "section",
+  "role" : "pseudoSymbol",
+  "title" : "Add the framework",
+  "type" : "section",
+  "url" : "\/tutorials\/polling\/configureproject#Add-the-framework"
+},
+"doc://com.polling.Polling/tutorials/Polling/UIKitCode": {
+  "abstract" : [
+    {
+      "text" : "This tutorial guides you through importing the Polling framework and using the APIs with UIKit.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode",
+  "kind" : "project",
+  "role" : "project",
+  "title" : "Code your view controller",
+  "type" : "topic",
+  "url" : "\/tutorials\/polling\/uikitcode"
+},
+"doc://com.polling.Polling/tutorials/Polling/UIKitCode#Configuring-Polling": {
+  "abstract" : [
+    {
+      "text" : "This tutorial guides you through importing the Polling framework and using the APIs with UIKit.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Configuring-Polling",
+  "kind" : "section",
+  "role" : "pseudoSymbol",
+  "title" : "Configuring Polling",
+  "type" : "section",
+  "url" : "\/tutorials\/polling\/uikitcode#Configuring-Polling"
+},
+"doc://com.polling.Polling/tutorials/Polling/UIKitCode#Import-the-Polling-framework": {
+  "abstract" : [
+    {
+      "text" : "This tutorial guides you through importing the Polling framework and using the APIs with UIKit.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Import-the-Polling-framework",
+  "kind" : "section",
+  "role" : "pseudoSymbol",
+  "title" : "Import the Polling framework",
+  "type" : "section",
+  "url" : "\/tutorials\/polling\/uikitcode#Import-the-Polling-framework"
+},
+"doc://com.polling.Polling/tutorials/Polling/UIKitCode#Make-your-view-controller-Pollings-delegate": {
+  "abstract" : [
+    {
+      "text" : "This tutorial guides you through importing the Polling framework and using the APIs with UIKit.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Make-your-view-controller-Pollings-delegate",
+  "kind" : "section",
+  "role" : "pseudoSymbol",
+  "title" : "Make your view controller Polling's delegate",
+  "type" : "section",
+  "url" : "\/tutorials\/polling\/uikitcode#Make-your-view-controller-Pollings-delegate"
+},
+"doc://com.polling.Polling/tutorials/UIKitToC": {
+  "abstract" : [
+    {
+      "text" : "Tutorial for integrating the Polling SDK in your UIKit app.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC",
+  "kind" : "overview",
+  "role" : "overview",
+  "title" : "Intergrating with UIKit",
+  "type" : "topic",
+  "url" : "\/tutorials\/uikittoc"
+},
+"doc://com.polling.Polling/tutorials/UIKitToC/Coding": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Coding",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Coding",
+  "type" : "topic",
+  "url" : "\/tutorials\/uikittoc\/coding"
+},
+"doc://com.polling.Polling/tutorials/UIKitToC/Configuring-your-project": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Configuring-your-project",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Configuring your project",
+  "type" : "topic",
+  "url" : "\/tutorials\/uikittoc\/configuring-your-project"
+},
+"drag-xcframework.png": {
+  "alt" : "Dragging xcframework",
+  "identifier" : "drag-xcframework.png",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.Polling\/drag-xcframework.png"
+    }
+  ]
+},
+"finder-xcframework.png": {
+  "alt" : "Frameworks folder in Finder",
+  "identifier" : "finder-xcframework.png",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.Polling\/finder-xcframework.png"
+    }
+  ]
+},
+"frameworks-section.png": {
+  "alt" : "Frameworks, Libraries, and Embedded Content section",
+  "identifier" : "frameworks-section.png",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.Polling\/frameworks-section.png"
+    }
+  ]
+},
+"select-project.png": {
+  "alt" : "Project selected",
+  "identifier" : "select-project.png",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.Polling\/select-project.png"
+    }
+  ]
+},
+"select-target.png": {
+  "alt" : "Target selected",
+  "identifier" : "select-target.png",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.Polling\/select-target.png"
+    }
+  ]
+}
+}
+}

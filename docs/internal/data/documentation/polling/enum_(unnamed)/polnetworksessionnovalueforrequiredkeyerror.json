@@ -1,1 +1,137 @@
-{"schemaVersion":{"major":0,"minor":3,"patch":0},"metadata":{"roleHeading":"Enumeration Case","fragments":[{"kind":"identifier","text":"POLNetworkSessionNoValueForRequiredKeyError"}],"symbolKind":"case","externalID":"c:@Ea@POLGeneralError@POLNetworkSessionNoValueForRequiredKeyError","modules":[{"name":"Polling"}],"title":"POLNetworkSessionNoValueForRequiredKeyError","navigatorTitle":[{"kind":"identifier","text":"POLNetworkSessionNoValueForRequiredKeyError"}],"role":"symbol"},"sections":[],"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)"]]},"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"languages":["occ"],"tokens":[{"text":"POLNetworkSessionNoValueForRequiredKeyError","kind":"identifier"}]}]}],"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionNoValueForRequiredKeyError","interfaceLanguage":"occ"},"kind":"symbol","variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/enum_(unnamed)\/polnetworksessionnovalueforrequiredkeyerror"]}],"references":{"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)":{"type":"topic","title":"enum (unnamed)","role":"symbol","fragments":[{"text":"","kind":"identifier"}],"abstract":[],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)","url":"\/documentation\/polling\/enum_(unnamed)","kind":"symbol","navigatorTitle":[{"text":"enum (unnamed)","kind":"identifier"}]},"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionNoValueForRequiredKeyError":{"fragments":[{"text":"POLNetworkSessionNoValueForRequiredKeyError","kind":"identifier"}],"url":"\/documentation\/polling\/enum_(unnamed)\/polnetworksessionnovalueforrequiredkeyerror","kind":"symbol","abstract":[],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionNoValueForRequiredKeyError","type":"topic","role":"symbol","title":"POLNetworkSessionNoValueForRequiredKeyError"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionNoValueForRequiredKeyError"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@Ea@POLGeneralError@POLNetworkSessionNoValueForRequiredKeyError",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLNetworkSessionNoValueForRequiredKeyError"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLNetworkSessionNoValueForRequiredKeyError"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Enumeration Case",
+    "symbolKind" : "case",
+    "title" : "POLNetworkSessionNoValueForRequiredKeyError"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "identifier",
+              "text" : "POLNetworkSessionNoValueForRequiredKeyError"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/enum_(unnamed)\/polnetworksessionnovalueforrequiredkeyerror"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : ""
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "enum (unnamed)"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "enum (unnamed)",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/enum_(unnamed)"
+},
+"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionNoValueForRequiredKeyError": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLNetworkSessionNoValueForRequiredKeyError"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionNoValueForRequiredKeyError",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLNetworkSessionNoValueForRequiredKeyError",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessionnovalueforrequiredkeyerror"
+}
+}
+}

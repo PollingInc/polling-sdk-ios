@@ -1,1 +1,163 @@
-{"sections":[],"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"tokens":[{"text":"@property","kind":"keyword"},{"text":" (","kind":"text"},{"text":"readonly","kind":"keyword"},{"kind":"text","text":") "},{"text":"NSDate","preciseIdentifier":"c:objc(cs)NSDate","kind":"typeIdentifier"},{"kind":"text","text":" * "},{"text":"completedDate","kind":"identifier"},{"kind":"text","text":";"}],"languages":["occ"]}]}],"variants":[{"paths":["\/documentation\/polling\/polsurvey\/completeddate"],"traits":[{"interfaceLanguage":"occ"}]}],"metadata":{"modules":[{"name":"Polling"}],"navigatorTitle":[{"kind":"identifier","text":"completedDate"}],"role":"symbol","fragments":[{"kind":"identifier","text":"completedDate"}],"roleHeading":"Instance Property","symbolKind":"property","title":"completedDate","externalID":"c:objc(cs)POLSurvey(py)completedDate"},"kind":"symbol","hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"]]},"schemaVersion":{"minor":3,"major":0,"patch":0},"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completedDate","interfaceLanguage":"occ"},"references":{"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLSurvey":{"kind":"symbol","abstract":[{"type":"text","text":"An object representing a survey"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey","role":"symbol","title":"POLSurvey","url":"\/documentation\/polling\/polsurvey","type":"topic","fragments":[{"kind":"identifier","text":"POLSurvey"}]},"doc://com.polling.Polling/documentation/Polling/POLSurvey/completedDate":{"abstract":[],"title":"completedDate","url":"\/documentation\/polling\/polsurvey\/completeddate","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completedDate","type":"topic","role":"symbol","fragments":[{"text":"completedDate","kind":"identifier"}],"kind":"symbol"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completedDate"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLSurvey(py)completedDate",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "completedDate"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "completedDate"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "completedDate"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "@property"
+            },
+            {
+              "kind" : "text",
+              "text" : " ("
+            },
+            {
+              "kind" : "keyword",
+              "text" : "readonly"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSDate",
+              "text" : "NSDate"
+            },
+            {
+              "kind" : "text",
+              "text" : " * "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "completedDate"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polsurvey\/completeddate"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey": {
+  "abstract" : [
+    {
+      "text" : "An object representing a survey",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurvey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurvey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey/completedDate": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "completedDate"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completedDate",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "completedDate",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey\/completeddate"
+}
+}
+}

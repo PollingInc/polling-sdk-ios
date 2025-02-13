@@ -1,1 +1,134 @@
-{"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polviewtype\/polviewtypenone"]}],"metadata":{"modules":[{"name":"Polling"}],"roleHeading":"Enumeration Case","fragments":[{"text":"POLViewTypeNone","kind":"identifier"}],"symbolKind":"case","externalID":"c:@E@POLViewType@POLViewTypeNone","navigatorTitle":[{"kind":"identifier","text":"POLViewTypeNone"}],"role":"symbol","title":"POLViewTypeNone"},"kind":"symbol","schemaVersion":{"major":0,"patch":0,"minor":3},"primaryContentSections":[{"declarations":[{"languages":["occ"],"platforms":["iOS"],"tokens":[{"kind":"identifier","text":"POLViewTypeNone"}]}],"kind":"declarations"}],"sections":[],"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType\/POLViewTypeNone","interfaceLanguage":"occ"},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType"]]},"references":{"doc://com.polling.Polling/documentation/Polling/POLViewType":{"kind":"symbol","role":"symbol","abstract":[{"type":"text","text":"Survey view style"}],"url":"\/documentation\/polling\/polviewtype","fragments":[{"kind":"identifier","text":"POLViewType"}],"type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType","title":"POLViewType"},"doc://com.polling.Polling/documentation/Polling":{"title":"Polling","url":"\/documentation\/polling","role":"collection","kind":"symbol","type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","abstract":[{"text":"Poll and survey your users with ease","type":"text"}]},"doc://com.polling.Polling/documentation/Polling/POLViewType/POLViewTypeNone":{"kind":"symbol","role":"symbol","abstract":[],"url":"\/documentation\/polling\/polviewtype\/polviewtypenone","fragments":[{"text":"POLViewTypeNone","kind":"identifier"}],"type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType\/POLViewTypeNone","title":"POLViewTypeNone"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType\/POLViewTypeNone"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@E@POLViewType@POLViewTypeNone",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLViewTypeNone"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLViewTypeNone"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Enumeration Case",
+    "symbolKind" : "case",
+    "title" : "POLViewTypeNone"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "identifier",
+              "text" : "POLViewTypeNone"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polviewtype\/polviewtypenone"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Poll and survey your users with ease",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLViewType": {
+  "abstract" : [
+    {
+      "text" : "Survey view style",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLViewType"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLViewType",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polviewtype"
+},
+"doc://com.polling.Polling/documentation/Polling/POLViewType/POLViewTypeNone": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLViewTypeNone"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType\/POLViewTypeNone",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLViewTypeNone",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polviewtype\/polviewtypenone"
+}
+}
+}

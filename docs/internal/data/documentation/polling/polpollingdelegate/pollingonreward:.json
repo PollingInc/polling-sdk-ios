@@ -1,1 +1,268 @@
-{"sections":[],"schemaVersion":{"major":0,"patch":0,"minor":3},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate"]]},"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnReward:"},"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"tokens":[{"kind":"text","text":"- ("},{"preciseIdentifier":"c:v","kind":"typeIdentifier","text":"void"},{"kind":"text","text":") "},{"text":"pollingOnReward:","kind":"identifier"},{"kind":"text","text":"("},{"text":"POLReward","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)POLReward"},{"text":" *) ","kind":"text"},{"kind":"internalParam","text":"reward"},{"kind":"text","text":";"}],"languages":["occ"]}]},{"parameters":[{"name":"reward","content":[{"inlineContent":[{"text":"An ","type":"text"},{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward","type":"reference","isActive":true},{"text":" encapsulating the reward","type":"text"}],"type":"paragraph"}]}],"kind":"parameters"},{"kind":"content","content":[{"anchor":"discussion","text":"Discussion","level":2,"type":"heading"},{"type":"paragraph","inlineContent":[{"text":"Called after a user completes a survey with an associated award.","type":"text"}]}]}],"metadata":{"navigatorTitle":[{"text":"pollingOnReward:","kind":"identifier"}],"modules":[{"name":"Polling"}],"fragments":[{"text":"- ","kind":"text"},{"text":"pollingOnReward:","kind":"identifier"}],"roleHeading":"Instance Method","title":"pollingOnReward:","symbolKind":"method","role":"symbol","externalID":"c:objc(pl)POLPollingDelegate(im)pollingOnReward:"},"abstract":[{"text":"Notifies your app when the user receives an award","type":"text"}],"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polpollingdelegate\/pollingonreward:"]}],"kind":"symbol","references":{"doc://com.polling.Polling/documentation/Polling/POLReward":{"type":"topic","title":"POLReward","role":"symbol","fragments":[{"text":"POLReward","kind":"identifier"}],"abstract":[{"text":"An object representing a reward","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward","url":"\/documentation\/polling\/polreward","kind":"symbol"},"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate":{"kind":"symbol","url":"\/documentation\/polling\/polpollingdelegate","role":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate","title":"POLPollingDelegate","type":"topic","abstract":[{"type":"text","text":"A protocol that defines methods the SDK can call to provide"},{"text":" ","type":"text"},{"text":"information to your app","type":"text"}],"fragments":[{"text":"POLPollingDelegate","kind":"identifier"}]},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate/pollingOnReward:":{"navigatorTitle":[{"text":"pollingOnReward:","kind":"identifier"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnReward:","title":"pollingOnReward:","role":"symbol","url":"\/documentation\/polling\/polpollingdelegate\/pollingonreward:","abstract":[{"text":"Notifies your app when the user receives an award","type":"text"}],"fragments":[{"text":"- ","kind":"text"},{"text":"pollingOnReward:","kind":"identifier"}],"kind":"symbol","type":"topic"}}}
+{
+  "abstract" : [
+    {
+      "text" : "Notifies your app when the user receives an award",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnReward:"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(pl)POLPollingDelegate(im)pollingOnReward:",
+    "fragments" : [
+      {
+        "kind" : "text",
+        "text" : "- "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "pollingOnReward:"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "pollingOnReward:"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "pollingOnReward:"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "text",
+              "text" : "- ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:v",
+              "text" : "void"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "pollingOnReward:"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)POLReward",
+              "text" : "POLReward"
+            },
+            {
+              "kind" : "text",
+              "text" : " *) "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "reward"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "An ",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward",
+                  "isActive" : true,
+                  "type" : "reference"
+                },
+                {
+                  "text" : " encapsulating the reward",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "reward"
+        }
+      ]
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Called after a user completes a survey with an associated award.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polpollingdelegate\/pollingonreward:"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate": {
+  "abstract" : [
+    {
+      "text" : "A protocol that defines methods the SDK can call to provide",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "information to your app",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLPollingDelegate"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLPollingDelegate",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpollingdelegate"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate/pollingOnReward:": {
+  "abstract" : [
+    {
+      "text" : "Notifies your app when the user receives an award",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "pollingOnReward:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnReward:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "pollingOnReward:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "pollingOnReward:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpollingdelegate\/pollingonreward:"
+},
+"doc://com.polling.Polling/documentation/Polling/POLReward": {
+  "abstract" : [
+    {
+      "text" : "An object representing a reward",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLReward"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLReward",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polreward"
+}
+}
+}

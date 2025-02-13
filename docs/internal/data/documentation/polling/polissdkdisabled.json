@@ -1,1 +1,126 @@
-{"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling"]]},"schemaVersion":{"patch":0,"major":0,"minor":3},"sections":[],"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLIsSDKDisabled","interfaceLanguage":"occ"},"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polissdkdisabled"]}],"metadata":{"role":"symbol","externalID":"c:@F@POLIsSDKDisabled","fragments":[{"text":"POLIsSDKDisabled","kind":"identifier"}],"navigatorTitle":[{"kind":"identifier","text":"POLIsSDKDisabled"}],"modules":[{"name":"Polling"}],"symbolKind":"func","roleHeading":"Function","title":"POLIsSDKDisabled"},"primaryContentSections":[{"declarations":[{"tokens":[{"preciseIdentifier":"c:@T@BOOL","kind":"typeIdentifier","text":"BOOL"},{"text":" ","kind":"text"},{"text":"POLIsSDKDisabled","kind":"identifier"},{"text":"();","kind":"text"}],"platforms":["iOS"],"languages":["occ"]}],"kind":"declarations"}],"kind":"symbol","references":{"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLIsSDKDisabled":{"type":"topic","kind":"symbol","title":"POLIsSDKDisabled","url":"\/documentation\/polling\/polissdkdisabled","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLIsSDKDisabled","role":"symbol","abstract":[],"fragments":[{"text":"POLIsSDKDisabled","kind":"identifier"}]}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLIsSDKDisabled"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@F@POLIsSDKDisabled",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLIsSDKDisabled"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLIsSDKDisabled"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Function",
+    "symbolKind" : "func",
+    "title" : "POLIsSDKDisabled"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:@T@BOOL",
+              "text" : "BOOL"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLIsSDKDisabled"
+            },
+            {
+              "kind" : "text",
+              "text" : "();"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polissdkdisabled"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLIsSDKDisabled": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLIsSDKDisabled"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLIsSDKDisabled",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLIsSDKDisabled",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polissdkdisabled"
+}
+}
+}

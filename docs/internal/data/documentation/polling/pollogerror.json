@@ -1,1 +1,133 @@
-{"schemaVersion":{"patch":0,"major":0,"minor":3},"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogError"},"kind":"symbol","metadata":{"fragments":[{"text":"POLLogError","kind":"identifier"}],"externalID":"c:POLLog.h@997@macro@POLLogError","roleHeading":"Macro","modules":[{"name":"Polling"}],"navigatorTitle":[{"text":"POLLogError","kind":"identifier"}],"symbolKind":"macro","title":"POLLogError","role":"symbol"},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling"]]},"sections":[],"primaryContentSections":[{"kind":"declarations","declarations":[{"languages":["occ"],"platforms":["iOS"],"tokens":[{"text":"#define","kind":"keyword"},{"text":" ","kind":"text"},{"text":"POLLogError","kind":"identifier"},{"kind":"text","text":"("},{"text":"fmt","kind":"internalParam"},{"text":", ...)","kind":"text"}]}]}],"variants":[{"paths":["\/documentation\/polling\/pollogerror"],"traits":[{"interfaceLanguage":"occ"}]}],"references":{"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLLogError":{"abstract":[],"fragments":[{"kind":"identifier","text":"POLLogError"}],"kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogError","url":"\/documentation\/polling\/pollogerror","type":"topic","role":"symbol","title":"POLLogError"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogError"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:POLLog.h@997@macro@POLLogError",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLLogError"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLLogError"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Macro",
+    "symbolKind" : "macro",
+    "title" : "POLLogError"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "#define"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLLogError"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "fmt"
+            },
+            {
+              "kind" : "text",
+              "text" : ", ...)"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/pollogerror"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLLogError": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLLogError"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogError",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLLogError",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/pollogerror"
+}
+}
+}

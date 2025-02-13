@@ -1,1 +1,283 @@
-{"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"]]},"primaryContentSections":[{"declarations":[{"languages":["occ"],"platforms":["iOS"],"tokens":[{"kind":"text","text":"- ("},{"text":"BOOL","kind":"typeIdentifier","preciseIdentifier":"c:@T@BOOL"},{"text":") ","kind":"text"},{"kind":"identifier","text":"isEqualToSurvey:"},{"text":"(","kind":"text"},{"text":"POLSurvey","preciseIdentifier":"c:objc(cs)POLSurvey","kind":"typeIdentifier","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"},{"kind":"text","text":" *) "},{"kind":"internalParam","text":"otherSurvey"},{"text":";","kind":"text"}]}],"kind":"declarations"},{"parameters":[{"name":"otherSurvey","content":[{"inlineContent":[{"type":"text","text":"The survey with which to compare to the receiver"},{"type":"text","text":" "},{"text":"survey.","type":"text"}],"type":"paragraph"}]}],"kind":"parameters"},{"kind":"content","content":[{"type":"heading","anchor":"return-value","level":2,"text":"Return Value"},{"type":"paragraph","inlineContent":[{"code":"YES","type":"codeVoice"},{"text":" if otherSurvey is the same as the receiver, otherwise","type":"text"},{"type":"text","text":" "},{"text":"NO.","type":"text"}]}]},{"content":[{"anchor":"discussion","level":2,"text":"Discussion","type":"heading"},{"type":"paragraph","inlineContent":[{"text":"Surveys are considered the same if they have matching ","type":"text"},{"code":"UUID","type":"codeVoice"},{"type":"text","text":" "},{"type":"text","text":"properties."}]}],"kind":"content"}],"variants":[{"paths":["\/documentation\/polling\/polsurvey\/isequaltosurvey:"],"traits":[{"interfaceLanguage":"occ"}]}],"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/isEqualToSurvey:","interfaceLanguage":"occ"},"kind":"symbol","schemaVersion":{"patch":0,"major":0,"minor":3},"abstract":[{"type":"text","text":"Indicates whether a given survey is equal to the receiver"}],"metadata":{"modules":[{"name":"Polling"}],"fragments":[{"text":"- ","kind":"text"},{"kind":"identifier","text":"isEqualToSurvey:"}],"title":"isEqualToSurvey:","externalID":"c:objc(cs)POLSurvey(im)isEqualToSurvey:","navigatorTitle":[{"text":"isEqualToSurvey:","kind":"identifier"}],"symbolKind":"method","role":"symbol","roleHeading":"Instance Method"},"sections":[],"references":{"doc://com.polling.Polling/documentation/Polling/POLSurvey":{"kind":"symbol","abstract":[{"type":"text","text":"An object representing a survey"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey","role":"symbol","title":"POLSurvey","url":"\/documentation\/polling\/polsurvey","type":"topic","fragments":[{"kind":"identifier","text":"POLSurvey"}]},"doc://com.polling.Polling/documentation/Polling/POLSurvey/isEqualToSurvey:":{"abstract":[{"text":"Indicates whether a given survey is equal to the receiver","type":"text"}],"title":"isEqualToSurvey:","url":"\/documentation\/polling\/polsurvey\/isequaltosurvey:","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/isEqualToSurvey:","type":"topic","role":"symbol","fragments":[{"text":"- ","kind":"text"},{"text":"isEqualToSurvey:","kind":"identifier"}],"kind":"symbol","navigatorTitle":[{"kind":"identifier","text":"isEqualToSurvey:"}]},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"}}}
+{
+  "abstract" : [
+    {
+      "text" : "Indicates whether a given survey is equal to the receiver",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/isEqualToSurvey:"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLSurvey(im)isEqualToSurvey:",
+    "fragments" : [
+      {
+        "kind" : "text",
+        "text" : "- "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "isEqualToSurvey:"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "isEqualToSurvey:"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "isEqualToSurvey:"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "text",
+              "text" : "- ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:@T@BOOL",
+              "text" : "BOOL"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "isEqualToSurvey:"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)POLSurvey",
+              "text" : "POLSurvey"
+            },
+            {
+              "kind" : "text",
+              "text" : " *) "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "otherSurvey"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The survey with which to compare to the receiver",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "survey.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "otherSurvey"
+        }
+      ]
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "return-value",
+          "level" : 2,
+          "text" : "Return Value",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "code" : "YES",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " if otherSurvey is the same as the receiver, otherwise",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "NO.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Surveys are considered the same if they have matching ",
+              "type" : "text"
+            },
+            {
+              "code" : "UUID",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "properties.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polsurvey\/isequaltosurvey:"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey": {
+  "abstract" : [
+    {
+      "text" : "An object representing a survey",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurvey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurvey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey/isEqualToSurvey:": {
+  "abstract" : [
+    {
+      "text" : "Indicates whether a given survey is equal to the receiver",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isEqualToSurvey:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/isEqualToSurvey:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "isEqualToSurvey:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "isEqualToSurvey:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey\/isequaltosurvey:"
+}
+}
+}

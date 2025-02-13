@@ -1,1 +1,159 @@
-{"kind":"symbol","hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType"]]},"metadata":{"symbolKind":"case","navigatorTitle":[{"text":"POLViewTypeDialog","kind":"identifier"}],"role":"symbol","title":"POLViewTypeDialog","fragments":[{"kind":"identifier","text":"POLViewTypeDialog"}],"roleHeading":"Enumeration Case","modules":[{"name":"Polling"}],"externalID":"c:@E@POLViewType@POLViewTypeDialog"},"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polviewtype\/polviewtypedialog"]}],"primaryContentSections":[{"declarations":[{"languages":["occ"],"tokens":[{"kind":"identifier","text":"POLViewTypeDialog"}],"platforms":["iOS"]}],"kind":"declarations"}],"sections":[],"abstract":[{"type":"text","text":"Display survey in view that is centered over existing app"},{"type":"text","text":" "},{"type":"text","text":"content."}],"schemaVersion":{"patch":0,"minor":3,"major":0},"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType\/POLViewTypeDialog","interfaceLanguage":"occ"},"references":{"doc://com.polling.Polling/documentation/Polling/POLViewType/POLViewTypeDialog":{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType\/POLViewTypeDialog","title":"POLViewTypeDialog","abstract":[{"text":"Display survey in view that is centered over existing app","type":"text"},{"type":"text","text":" "},{"type":"text","text":"content."}],"role":"symbol","fragments":[{"kind":"identifier","text":"POLViewTypeDialog"}],"url":"\/documentation\/polling\/polviewtype\/polviewtypedialog","type":"topic","kind":"symbol"},"doc://com.polling.Polling/documentation/Polling/POLViewType":{"kind":"symbol","role":"symbol","abstract":[{"type":"text","text":"Survey view style"}],"url":"\/documentation\/polling\/polviewtype","fragments":[{"kind":"identifier","text":"POLViewType"}],"type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType","title":"POLViewType"},"doc://com.polling.Polling/documentation/Polling":{"title":"Polling","url":"\/documentation\/polling","role":"collection","kind":"symbol","type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","abstract":[{"text":"Poll and survey your users with ease","type":"text"}]}}}
+{
+  "abstract" : [
+    {
+      "text" : "Display survey in view that is centered over existing app",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "content.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType\/POLViewTypeDialog"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@E@POLViewType@POLViewTypeDialog",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLViewTypeDialog"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLViewTypeDialog"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Enumeration Case",
+    "symbolKind" : "case",
+    "title" : "POLViewTypeDialog"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "identifier",
+              "text" : "POLViewTypeDialog"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polviewtype\/polviewtypedialog"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Poll and survey your users with ease",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLViewType": {
+  "abstract" : [
+    {
+      "text" : "Survey view style",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLViewType"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLViewType",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polviewtype"
+},
+"doc://com.polling.Polling/documentation/Polling/POLViewType/POLViewTypeDialog": {
+  "abstract" : [
+    {
+      "text" : "Display survey in view that is centered over existing app",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "content.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLViewTypeDialog"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType\/POLViewTypeDialog",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLViewTypeDialog",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polviewtype\/polviewtypedialog"
+}
+}
+}

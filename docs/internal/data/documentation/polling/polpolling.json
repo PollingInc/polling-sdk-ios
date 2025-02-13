@@ -1,1 +1,622 @@
-{"schemaVersion":{"patch":0,"minor":3,"major":0},"metadata":{"symbolKind":"class","title":"POLPolling","navigatorTitle":[{"text":"POLPolling","kind":"identifier"}],"role":"symbol","fragments":[{"kind":"identifier","text":"POLPolling"}],"modules":[{"name":"Polling"}],"roleHeading":"Class","externalID":"c:objc(cs)POLPolling"},"abstract":[{"text":"The primary SDK object","type":"text"}],"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"text":"@interface","kind":"keyword"},{"text":" ","kind":"text"},{"text":"POLPolling","kind":"identifier"},{"kind":"text","text":" : "},{"preciseIdentifier":"c:objc(cs)NSObject","text":"NSObject","kind":"typeIdentifier"}],"platforms":["iOS"],"languages":["occ"]}]},{"kind":"content","content":[{"type":"heading","anchor":"overview","level":2,"text":"Overview"},{"type":"paragraph","inlineContent":[{"type":"text","text":"Configure the SDK and to access features like sending log events"},{"text":" ","type":"text"},{"text":"and displaying surveys.","type":"text"}]}]}],"topicSections":[{"identifiers":["doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/apiKey","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/customerID","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/delegate","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/disableCheckingForAvailableSurveys","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/openedSurveys","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/surveyVisible","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/viewType"],"generated":true,"title":"Instance Properties","anchor":"Instance-Properties"},{"generated":true,"title":"Instance Methods","anchor":"Instance-Methods","identifiers":["doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/getSurveyDetailsForTriggeredSurvey:","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/logEvent:value:","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/logPurchase:","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/logSession","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/postponeSurvey:","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/presentSurveyInternal:","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/showEmbedView","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/showSurvey:"]},{"title":"Type Methods","anchor":"Type-Methods","identifiers":["doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/polling"],"generated":true}],"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling","interfaceLanguage":"occ"},"relationshipsSections":[{"title":"Inherits From","identifiers":["doc:\/\/com.polling.Polling\/objc(cs)NSObject"],"type":"inheritsFrom","kind":"relationships"}],"kind":"symbol","variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polpolling"]}],"sections":[],"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling"]]},"references":{"doc://com.polling.Polling/objc(cs)NSObject":{"identifier":"doc:\/\/com.polling.Polling\/objc(cs)NSObject","type":"unresolvable","title":"NSObject"},"doc://com.polling.Polling/documentation/Polling/POLPolling/logPurchase:":{"title":"logPurchase:","abstract":[{"type":"text","text":"Log a purchase"}],"navigatorTitle":[{"text":"logPurchase:","kind":"identifier"}],"kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/logPurchase:","type":"topic","fragments":[{"kind":"text","text":"- "},{"kind":"identifier","text":"logPurchase:"}],"role":"symbol","url":"\/documentation\/polling\/polpolling\/logpurchase:"},"doc://com.polling.Polling/documentation/Polling/POLPolling/logSession":{"fragments":[{"kind":"text","text":"- "},{"text":"logSession","kind":"identifier"}],"type":"topic","url":"\/documentation\/polling\/polpolling\/logsession","navigatorTitle":[{"kind":"identifier","text":"logSession"}],"abstract":[{"type":"text","text":"Log user session"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/logSession","role":"symbol","title":"logSession","kind":"symbol"},"doc://com.polling.Polling/documentation/Polling/POLPolling/customerID":{"url":"\/documentation\/polling\/polpolling\/customerid","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/customerID","role":"symbol","fragments":[{"kind":"identifier","text":"customerID"}],"type":"topic","abstract":[{"type":"text","text":"An string that uniquely identifies your customer"}],"kind":"symbol","title":"customerID"},"doc://com.polling.Polling/documentation/Polling/POLPolling/polling":{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/polling","fragments":[{"text":"+ ","kind":"text"},{"text":"polling","kind":"identifier"}],"abstract":[{"type":"text","text":"Returns the "},{"type":"reference","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling","isActive":true},{"text":" singleton object.","type":"text"}],"role":"symbol","type":"topic","url":"\/documentation\/polling\/polpolling\/polling","navigatorTitle":[{"kind":"identifier","text":"polling"}],"kind":"symbol","title":"polling"},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLPolling":{"role":"symbol","kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling","type":"topic","title":"POLPolling","abstract":[{"text":"The primary SDK object","type":"text"}],"fragments":[{"kind":"identifier","text":"POLPolling"}],"url":"\/documentation\/polling\/polpolling"},"doc://com.polling.Polling/documentation/Polling/POLPolling/openedSurveys":{"title":"openedSurveys","abstract":[],"kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/openedSurveys","type":"topic","fragments":[{"kind":"identifier","text":"openedSurveys"}],"role":"symbol","url":"\/documentation\/polling\/polpolling\/openedsurveys"},"doc://com.polling.Polling/documentation/Polling/POLPolling/surveyVisible":{"type":"topic","role":"symbol","title":"surveyVisible","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/surveyVisible","url":"\/documentation\/polling\/polpolling\/surveyvisible","fragments":[{"kind":"identifier","text":"surveyVisible"}],"kind":"symbol","abstract":[]},"doc://com.polling.Polling/documentation/Polling/POLPolling/showEmbedView":{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/showEmbedView","kind":"symbol","url":"\/documentation\/polling\/polpolling\/showembedview","role":"symbol","fragments":[{"text":"- ","kind":"text"},{"text":"showEmbedView","kind":"identifier"}],"navigatorTitle":[{"kind":"identifier","text":"showEmbedView"}],"type":"topic","title":"showEmbedView","abstract":[]},"doc://com.polling.Polling/documentation/Polling/POLPolling/presentSurveyInternal:":{"type":"topic","kind":"symbol","url":"\/documentation\/polling\/polpolling\/presentsurveyinternal:","role":"symbol","abstract":[],"navigatorTitle":[{"text":"presentSurveyInternal:","kind":"identifier"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/presentSurveyInternal:","title":"presentSurveyInternal:","fragments":[{"text":"- ","kind":"text"},{"text":"presentSurveyInternal:","kind":"identifier"}]},"doc://com.polling.Polling/documentation/Polling/POLPolling/viewType":{"url":"\/documentation\/polling\/polpolling\/viewtype","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/viewType","role":"symbol","fragments":[{"kind":"identifier","text":"viewType"}],"type":"topic","abstract":[{"type":"text","text":"Survey view style"}],"kind":"symbol","title":"viewType"},"doc://com.polling.Polling/documentation/Polling/POLPolling/logEvent:value:":{"title":"logEvent:value:","abstract":[{"type":"text","text":"Send and log events"}],"navigatorTitle":[{"text":"logEvent:value:","kind":"identifier"}],"kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/logEvent:value:","type":"topic","fragments":[{"kind":"text","text":"- "},{"text":"logEvent:value:","kind":"identifier"}],"role":"symbol","url":"\/documentation\/polling\/polpolling\/logevent:value:"},"doc://com.polling.Polling/documentation/Polling/POLPolling/postponeSurvey:":{"type":"topic","abstract":[],"kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/postponeSurvey:","fragments":[{"text":"- ","kind":"text"},{"text":"postponeSurvey:","kind":"identifier"}],"role":"symbol","navigatorTitle":[{"text":"postponeSurvey:","kind":"identifier"}],"title":"postponeSurvey:","url":"\/documentation\/polling\/polpolling\/postponesurvey:"},"doc://com.polling.Polling/documentation/Polling/POLPolling/showSurvey:":{"navigatorTitle":[{"kind":"identifier","text":"showSurvey:"}],"url":"\/documentation\/polling\/polpolling\/showsurvey:","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/showSurvey:","role":"symbol","fragments":[{"kind":"text","text":"- "},{"text":"showSurvey:","kind":"identifier"}],"type":"topic","abstract":[{"type":"text","text":"Show a specific survey"}],"kind":"symbol","title":"showSurvey:"},"doc://com.polling.Polling/documentation/Polling/POLPolling/delegate":{"title":"delegate","abstract":[{"type":"text","text":"Delegate that handles callbacks from the SDK"}],"kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/delegate","type":"topic","fragments":[{"text":"delegate","kind":"identifier"}],"role":"symbol","url":"\/documentation\/polling\/polpolling\/delegate"},"doc://com.polling.Polling/documentation/Polling/POLPolling/apiKey":{"kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/apiKey","type":"topic","role":"symbol","abstract":[{"text":"An API Key","type":"text"}],"url":"\/documentation\/polling\/polpolling\/apikey","fragments":[{"text":"apiKey","kind":"identifier"}],"title":"apiKey"},"doc://com.polling.Polling/documentation/Polling/POLPolling/disableCheckingForAvailableSurveys":{"url":"\/documentation\/polling\/polpolling\/disablecheckingforavailablesurveys","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/disableCheckingForAvailableSurveys","role":"symbol","fragments":[{"text":"disableCheckingForAvailableSurveys","kind":"identifier"}],"type":"topic","abstract":[{"type":"text","text":"Disable survey availability checks"}],"kind":"symbol","title":"disableCheckingForAvailableSurveys"},"doc://com.polling.Polling/documentation/Polling/POLPolling/getSurveyDetailsForTriggeredSurvey:":{"url":"\/documentation\/polling\/polpolling\/getsurveydetailsfortriggeredsurvey:","kind":"symbol","title":"getSurveyDetailsForTriggeredSurvey:","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/getSurveyDetailsForTriggeredSurvey:","fragments":[{"kind":"text","text":"- "},{"text":"getSurveyDetailsForTriggeredSurvey:","kind":"identifier"}],"navigatorTitle":[{"text":"getSurveyDetailsForTriggeredSurvey:","kind":"identifier"}],"role":"symbol","type":"topic","abstract":[]}}}
+{
+  "abstract" : [
+    {
+      "text" : "The primary SDK object",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLPolling",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLPolling"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLPolling"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Class",
+    "symbolKind" : "class",
+    "title" : "POLPolling"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "@interface"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLPolling"
+            },
+            {
+              "kind" : "text",
+              "text" : " : "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSObject",
+              "text" : "NSObject"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Configure the SDK and to access features like sending log events",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and displaying surveys.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/com.polling.Polling\/objc(cs)NSObject"
+      ],
+      "kind" : "relationships",
+      "title" : "Inherits From",
+      "type" : "inheritsFrom"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/apiKey",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/customerID",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/delegate",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/disableCheckingForAvailableSurveys",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/openedSurveys",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/surveyVisible",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/viewType"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/getSurveyDetailsForTriggeredSurvey:",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/logEvent:value:",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/logPurchase:",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/logSession",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/postponeSurvey:",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/presentSurveyInternal:",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/showEmbedView",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/showSurvey:"
+      ],
+      "title" : "Instance Methods"
+    },
+    {
+      "anchor" : "Type-Methods",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/polling"
+      ],
+      "title" : "Type Methods"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polpolling"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling": {
+  "abstract" : [
+    {
+      "text" : "The primary SDK object",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLPolling"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLPolling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/apiKey": {
+  "abstract" : [
+    {
+      "text" : "An API Key",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "apiKey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/apiKey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "apiKey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/apikey"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/customerID": {
+  "abstract" : [
+    {
+      "text" : "An string that uniquely identifies your customer",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "customerID"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/customerID",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "customerID",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/customerid"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/delegate": {
+  "abstract" : [
+    {
+      "text" : "Delegate that handles callbacks from the SDK",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "delegate"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/delegate",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "delegate",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/delegate"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/disableCheckingForAvailableSurveys": {
+  "abstract" : [
+    {
+      "text" : "Disable survey availability checks",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "disableCheckingForAvailableSurveys"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/disableCheckingForAvailableSurveys",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "disableCheckingForAvailableSurveys",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/disablecheckingforavailablesurveys"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/getSurveyDetailsForTriggeredSurvey:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "getSurveyDetailsForTriggeredSurvey:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/getSurveyDetailsForTriggeredSurvey:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "getSurveyDetailsForTriggeredSurvey:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "getSurveyDetailsForTriggeredSurvey:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/getsurveydetailsfortriggeredsurvey:"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/logEvent:value:": {
+  "abstract" : [
+    {
+      "text" : "Send and log events",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "logEvent:value:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/logEvent:value:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "logEvent:value:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "logEvent:value:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/logevent:value:"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/logPurchase:": {
+  "abstract" : [
+    {
+      "text" : "Log a purchase",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "logPurchase:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/logPurchase:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "logPurchase:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "logPurchase:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/logpurchase:"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/logSession": {
+  "abstract" : [
+    {
+      "text" : "Log user session",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "logSession"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/logSession",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "logSession"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "logSession",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/logsession"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/openedSurveys": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "openedSurveys"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/openedSurveys",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "openedSurveys",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/openedsurveys"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/polling": {
+  "abstract" : [
+    {
+      "text" : "Returns the ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " singleton object.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "+ "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "polling"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/polling",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "polling"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/postponeSurvey:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "postponeSurvey:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/postponeSurvey:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "postponeSurvey:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "postponeSurvey:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/postponesurvey:"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/presentSurveyInternal:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "presentSurveyInternal:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/presentSurveyInternal:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "presentSurveyInternal:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "presentSurveyInternal:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/presentsurveyinternal:"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/showEmbedView": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "showEmbedView"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/showEmbedView",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "showEmbedView"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "showEmbedView",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/showembedview"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/showSurvey:": {
+  "abstract" : [
+    {
+      "text" : "Show a specific survey",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "showSurvey:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/showSurvey:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "showSurvey:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "showSurvey:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/showsurvey:"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/surveyVisible": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "surveyVisible"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/surveyVisible",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "surveyVisible",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/surveyvisible"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/viewType": {
+  "abstract" : [
+    {
+      "text" : "Survey view style",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "viewType"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/viewType",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "viewType",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/viewtype"
+},
+"doc://com.polling.Polling/objc(cs)NSObject": {
+  "identifier" : "doc:\/\/com.polling.Polling\/objc(cs)NSObject",
+  "title" : "NSObject",
+  "type" : "unresolvable"
+}
+}
+}

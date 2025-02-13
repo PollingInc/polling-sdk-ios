@@ -1,1 +1,256 @@
-{"sections":[],"metadata":{"fragments":[{"kind":"identifier","text":"POLCompatibleSurveyViewController"}],"externalID":"c:objc(cs)POLCompatibleSurveyViewController","role":"symbol","modules":[{"name":"Polling"}],"symbolKind":"class","title":"POLCompatibleSurveyViewController","roleHeading":"Class","navigatorTitle":[{"text":"POLCompatibleSurveyViewController","kind":"identifier"}]},"kind":"symbol","hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling"]]},"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController","interfaceLanguage":"occ"},"topicSections":[{"title":"Instance Properties","identifiers":["doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController\/backgroundView","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController\/containerView","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController\/viewType"],"anchor":"Instance-Properties","generated":true},{"generated":true,"title":"Instance Methods","identifiers":["doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController\/initWithSurvey:viewType:"],"anchor":"Instance-Methods"}],"relationshipsSections":[{"kind":"relationships","identifiers":["doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController"],"title":"Inherits From","type":"inheritsFrom"}],"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polcompatiblesurveyviewcontroller"]}],"schemaVersion":{"minor":3,"patch":0,"major":0},"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"tokens":[{"kind":"keyword","text":"@interface"},{"kind":"text","text":" "},{"text":"POLCompatibleSurveyViewController","kind":"identifier"},{"text":" : ","kind":"text"},{"text":"POLSurveyViewController","preciseIdentifier":"c:objc(cs)POLSurveyViewController","kind":"typeIdentifier","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController"}],"languages":["occ"]}]}],"references":{"doc://com.polling.Polling/documentation/Polling/POLSurveyViewController":{"abstract":[],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController","kind":"symbol","role":"symbol","fragments":[{"kind":"identifier","text":"POLSurveyViewController"}],"url":"\/documentation\/polling\/polsurveyviewcontroller","title":"POLSurveyViewController","type":"topic"},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLCompatibleSurveyViewController/containerView":{"type":"topic","kind":"symbol","role":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController\/containerView","abstract":[],"url":"\/documentation\/polling\/polcompatiblesurveyviewcontroller\/containerview","title":"containerView","fragments":[{"kind":"identifier","text":"containerView"}]},"doc://com.polling.Polling/documentation/Polling/POLCompatibleSurveyViewController/initWithSurvey:viewType:":{"kind":"symbol","abstract":[],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController\/initWithSurvey:viewType:","role":"symbol","title":"initWithSurvey:viewType:","url":"\/documentation\/polling\/polcompatiblesurveyviewcontroller\/initwithsurvey:viewtype:","type":"topic","fragments":[{"kind":"text","text":"- "},{"kind":"identifier","text":"initWithSurvey:viewType:"}],"navigatorTitle":[{"text":"initWithSurvey:viewType:","kind":"identifier"}]},"doc://com.polling.Polling/documentation/Polling/POLCompatibleSurveyViewController":{"title":"POLCompatibleSurveyViewController","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController","url":"\/documentation\/polling\/polcompatiblesurveyviewcontroller","type":"topic","role":"symbol","kind":"symbol","fragments":[{"kind":"identifier","text":"POLCompatibleSurveyViewController"}],"abstract":[]},"doc://com.polling.Polling/documentation/Polling/POLCompatibleSurveyViewController/backgroundView":{"abstract":[],"title":"backgroundView","role":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController\/backgroundView","kind":"symbol","url":"\/documentation\/polling\/polcompatiblesurveyviewcontroller\/backgroundview","fragments":[{"kind":"identifier","text":"backgroundView"}],"type":"topic"},"doc://com.polling.Polling/documentation/Polling/POLCompatibleSurveyViewController/viewType":{"type":"topic","kind":"symbol","role":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController\/viewType","abstract":[],"url":"\/documentation\/polling\/polcompatiblesurveyviewcontroller\/viewtype","title":"viewType","fragments":[{"kind":"identifier","text":"viewType"}]}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLCompatibleSurveyViewController",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLCompatibleSurveyViewController"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLCompatibleSurveyViewController"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Class",
+    "symbolKind" : "class",
+    "title" : "POLCompatibleSurveyViewController"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "@interface"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLCompatibleSurveyViewController"
+            },
+            {
+              "kind" : "text",
+              "text" : " : "
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)POLSurveyViewController",
+              "text" : "POLSurveyViewController"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController"
+      ],
+      "kind" : "relationships",
+      "title" : "Inherits From",
+      "type" : "inheritsFrom"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController\/backgroundView",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController\/containerView",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController\/viewType"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController\/initWithSurvey:viewType:"
+      ],
+      "title" : "Instance Methods"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polcompatiblesurveyviewcontroller"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLCompatibleSurveyViewController": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLCompatibleSurveyViewController"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLCompatibleSurveyViewController",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polcompatiblesurveyviewcontroller"
+},
+"doc://com.polling.Polling/documentation/Polling/POLCompatibleSurveyViewController/backgroundView": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "backgroundView"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController\/backgroundView",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "backgroundView",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polcompatiblesurveyviewcontroller\/backgroundview"
+},
+"doc://com.polling.Polling/documentation/Polling/POLCompatibleSurveyViewController/containerView": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "containerView"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController\/containerView",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "containerView",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polcompatiblesurveyviewcontroller\/containerview"
+},
+"doc://com.polling.Polling/documentation/Polling/POLCompatibleSurveyViewController/initWithSurvey:viewType:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "initWithSurvey:viewType:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController\/initWithSurvey:viewType:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "initWithSurvey:viewType:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "initWithSurvey:viewType:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polcompatiblesurveyviewcontroller\/initwithsurvey:viewtype:"
+},
+"doc://com.polling.Polling/documentation/Polling/POLCompatibleSurveyViewController/viewType": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "viewType"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController\/viewType",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "viewType",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polcompatiblesurveyviewcontroller\/viewtype"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurveyViewController": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyViewController"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyViewController",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller"
+}
+}
+}

@@ -1,1 +1,196 @@
-{"metadata":{"role":"symbol","roleHeading":"Instance Property","symbolKind":"property","title":"completed","externalID":"c:objc(cs)POLSurvey(py)completed","fragments":[{"text":"completed","kind":"identifier"}],"navigatorTitle":[{"text":"completed","kind":"identifier"}],"modules":[{"name":"Polling"}]},"schemaVersion":{"major":0,"patch":0,"minor":3},"kind":"symbol","identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completed"},"sections":[],"primaryContentSections":[{"declarations":[{"languages":["occ"],"tokens":[{"text":"@property","kind":"keyword"},{"text":" (","kind":"text"},{"kind":"keyword","text":"readonly"},{"kind":"text","text":", "},{"text":"getter","kind":"keyword"},{"text":"=","kind":"text"},{"kind":"identifier","text":"isCompleted"},{"text":") ","kind":"text"},{"preciseIdentifier":"c:@T@BOOL","kind":"typeIdentifier","text":"BOOL"},{"kind":"text","text":" "},{"text":"completed","kind":"identifier"},{"text":";","kind":"text"}],"platforms":["iOS"]}],"kind":"declarations"}],"variants":[{"paths":["\/documentation\/polling\/polsurvey\/completed"],"traits":[{"interfaceLanguage":"occ"}]}],"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"]]},"abstract":[{"type":"codeVoice","code":"YES"},{"text":" when the survey is completed","type":"text"}],"references":{"doc://com.polling.Polling/documentation/Polling/POLSurvey":{"url":"\/documentation\/polling\/polsurvey","fragments":[{"kind":"identifier","text":"POLSurvey"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey","type":"topic","kind":"symbol","title":"POLSurvey","abstract":[{"type":"text","text":"An object representing a survey"}],"role":"symbol"},"doc://com.polling.Polling/documentation/Polling/POLSurvey/completed":{"abstract":[{"type":"codeVoice","code":"YES"},{"text":" when the survey is completed","type":"text"}],"title":"completed","type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completed","kind":"symbol","role":"symbol","fragments":[{"kind":"identifier","text":"completed"}],"url":"\/documentation\/polling\/polsurvey\/completed"},"doc://com.polling.Polling/documentation/Polling":{"title":"Polling","url":"\/documentation\/polling","role":"collection","kind":"symbol","type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","abstract":[{"text":"Poll and survey your users with ease","type":"text"}]}}}
+{
+  "abstract" : [
+    {
+      "code" : "YES",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " when the survey is completed",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completed"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLSurvey(py)completed",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "completed"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "completed"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "completed"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "@property"
+            },
+            {
+              "kind" : "text",
+              "text" : " ("
+            },
+            {
+              "kind" : "keyword",
+              "text" : "readonly"
+            },
+            {
+              "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "getter"
+            },
+            {
+              "kind" : "text",
+              "text" : "="
+            },
+            {
+              "kind" : "identifier",
+              "text" : "isCompleted"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:@T@BOOL",
+              "text" : "BOOL"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "completed"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polsurvey\/completed"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Poll and survey your users with ease",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey": {
+  "abstract" : [
+    {
+      "text" : "An object representing a survey",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurvey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurvey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey/completed": {
+  "abstract" : [
+    {
+      "code" : "YES",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " when the survey is completed",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "completed"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completed",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "completed",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey\/completed"
+}
+}
+}

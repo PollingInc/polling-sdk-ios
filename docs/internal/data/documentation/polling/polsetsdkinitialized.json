@@ -1,1 +1,143 @@
-{"schemaVersion":{"patch":0,"major":0,"minor":3},"kind":"symbol","metadata":{"title":"POLSetSDKInitialized","fragments":[{"text":"POLSetSDKInitialized","kind":"identifier"}],"role":"symbol","symbolKind":"func","externalID":"c:@F@POLSetSDKInitialized","modules":[{"name":"Polling"}],"roleHeading":"Function","navigatorTitle":[{"text":"POLSetSDKInitialized","kind":"identifier"}]},"primaryContentSections":[{"kind":"declarations","declarations":[{"languages":["occ"],"tokens":[{"preciseIdentifier":"c:v","text":"void","kind":"typeIdentifier"},{"kind":"text","text":" "},{"text":"POLSetSDKInitialized","kind":"identifier"},{"text":"(","kind":"text"},{"text":"BOOL","kind":"typeIdentifier","preciseIdentifier":"c:@T@BOOL"},{"text":" ","kind":"text"},{"text":"initialized","kind":"internalParam"},{"kind":"text","text":");"}],"platforms":["iOS"]}]}],"variants":[{"paths":["\/documentation\/polling\/polsetsdkinitialized"],"traits":[{"interfaceLanguage":"occ"}]}],"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSetSDKInitialized","interfaceLanguage":"occ"},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling"]]},"sections":[],"references":{"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLSetSDKInitialized":{"role":"symbol","fragments":[{"text":"POLSetSDKInitialized","kind":"identifier"}],"title":"POLSetSDKInitialized","kind":"symbol","url":"\/documentation\/polling\/polsetsdkinitialized","abstract":[],"type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSetSDKInitialized"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSetSDKInitialized"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@F@POLSetSDKInitialized",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLSetSDKInitialized"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLSetSDKInitialized"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Function",
+    "symbolKind" : "func",
+    "title" : "POLSetSDKInitialized"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:v",
+              "text" : "void"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLSetSDKInitialized"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:@T@BOOL",
+              "text" : "BOOL"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "initialized"
+            },
+            {
+              "kind" : "text",
+              "text" : ");"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polsetsdkinitialized"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSetSDKInitialized": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSetSDKInitialized"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSetSDKInitialized",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSetSDKInitialized",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsetsdkinitialized"
+}
+}
+}

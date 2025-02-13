@@ -1,1 +1,141 @@
-{"sections":[],"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polerrorwithcodeunderlyingerror"]}],"kind":"symbol","identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorWithCodeUnderlyingError"},"metadata":{"modules":[{"name":"Polling"}],"symbolKind":"macro","externalID":"c:POLError.h@2598@macro@POLErrorWithCodeUnderlyingError","roleHeading":"Macro","title":"POLErrorWithCodeUnderlyingError","fragments":[{"kind":"identifier","text":"POLErrorWithCodeUnderlyingError"}],"navigatorTitle":[{"text":"POLErrorWithCodeUnderlyingError","kind":"identifier"}],"role":"symbol"},"primaryContentSections":[{"declarations":[{"tokens":[{"text":"#define","kind":"keyword"},{"text":" ","kind":"text"},{"kind":"identifier","text":"POLErrorWithCodeUnderlyingError"},{"kind":"text","text":"("},{"text":"code","kind":"internalParam"},{"kind":"text","text":", "},{"text":"uErr","kind":"internalParam"},{"text":")","kind":"text"}],"platforms":["iOS"],"languages":["occ"]}],"kind":"declarations"}],"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling"]]},"schemaVersion":{"major":0,"patch":0,"minor":3},"references":{"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLErrorWithCodeUnderlyingError":{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorWithCodeUnderlyingError","title":"POLErrorWithCodeUnderlyingError","fragments":[{"kind":"identifier","text":"POLErrorWithCodeUnderlyingError"}],"url":"\/documentation\/polling\/polerrorwithcodeunderlyingerror","abstract":[],"type":"topic","kind":"symbol","role":"symbol"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorWithCodeUnderlyingError"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:POLError.h@2598@macro@POLErrorWithCodeUnderlyingError",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLErrorWithCodeUnderlyingError"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLErrorWithCodeUnderlyingError"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Macro",
+    "symbolKind" : "macro",
+    "title" : "POLErrorWithCodeUnderlyingError"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "#define"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLErrorWithCodeUnderlyingError"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "code"
+            },
+            {
+              "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "uErr"
+            },
+            {
+              "kind" : "text",
+              "text" : ")"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polerrorwithcodeunderlyingerror"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLErrorWithCodeUnderlyingError": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLErrorWithCodeUnderlyingError"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorWithCodeUnderlyingError",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLErrorWithCodeUnderlyingError",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polerrorwithcodeunderlyingerror"
+}
+}
+}

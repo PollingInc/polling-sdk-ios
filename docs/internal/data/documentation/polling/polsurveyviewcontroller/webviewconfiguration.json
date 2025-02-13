@@ -1,1 +1,162 @@
-{"kind":"symbol","hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController"]]},"schemaVersion":{"minor":3,"major":0,"patch":0},"metadata":{"symbolKind":"method","title":"webViewConfiguration","roleHeading":"Instance Method","navigatorTitle":[{"text":"webViewConfiguration","kind":"identifier"}],"role":"symbol","externalID":"c:objc(cs)POLSurveyViewController(im)webViewConfiguration","fragments":[{"kind":"text","text":"- "},{"text":"webViewConfiguration","kind":"identifier"}],"modules":[{"name":"Polling"}]},"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polsurveyviewcontroller\/webviewconfiguration"]}],"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"tokens":[{"kind":"text","text":"- ("},{"kind":"typeIdentifier","text":"WKWebViewConfiguration","preciseIdentifier":"c:objc(cs)WKWebViewConfiguration"},{"text":" *) ","kind":"text"},{"text":"webViewConfiguration","kind":"identifier"},{"text":";","kind":"text"}],"languages":["occ"]}]}],"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController\/webViewConfiguration"},"sections":[],"references":{"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLSurveyViewController/webViewConfiguration":{"kind":"symbol","type":"topic","url":"\/documentation\/polling\/polsurveyviewcontroller\/webviewconfiguration","role":"symbol","abstract":[],"navigatorTitle":[{"kind":"identifier","text":"webViewConfiguration"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController\/webViewConfiguration","title":"webViewConfiguration","fragments":[{"kind":"text","text":"- "},{"text":"webViewConfiguration","kind":"identifier"}]},"doc://com.polling.Polling/documentation/Polling/POLSurveyViewController":{"abstract":[],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController","kind":"symbol","role":"symbol","fragments":[{"kind":"identifier","text":"POLSurveyViewController"}],"url":"\/documentation\/polling\/polsurveyviewcontroller","title":"POLSurveyViewController","type":"topic"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController\/webViewConfiguration"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLSurveyViewController(im)webViewConfiguration",
+    "fragments" : [
+      {
+        "kind" : "text",
+        "text" : "- "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "webViewConfiguration"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "webViewConfiguration"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "webViewConfiguration"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "text",
+              "text" : "- ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)WKWebViewConfiguration",
+              "text" : "WKWebViewConfiguration"
+            },
+            {
+              "kind" : "text",
+              "text" : " *) "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "webViewConfiguration"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polsurveyviewcontroller\/webviewconfiguration"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurveyViewController": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyViewController"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyViewController",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurveyViewController/webViewConfiguration": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "webViewConfiguration"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController\/webViewConfiguration",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "webViewConfiguration"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "webViewConfiguration",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/webviewconfiguration"
+}
+}
+}

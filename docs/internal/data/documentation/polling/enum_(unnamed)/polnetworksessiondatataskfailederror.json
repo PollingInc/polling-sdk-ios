@@ -1,1 +1,137 @@
-{"sections":[],"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionDataTaskFailedError","interfaceLanguage":"occ"},"variants":[{"paths":["\/documentation\/polling\/enum_(unnamed)\/polnetworksessiondatataskfailederror"],"traits":[{"interfaceLanguage":"occ"}]}],"metadata":{"modules":[{"name":"Polling"}],"navigatorTitle":[{"kind":"identifier","text":"POLNetworkSessionDataTaskFailedError"}],"role":"symbol","fragments":[{"text":"POLNetworkSessionDataTaskFailedError","kind":"identifier"}],"roleHeading":"Enumeration Case","symbolKind":"case","title":"POLNetworkSessionDataTaskFailedError","externalID":"c:@Ea@POLGeneralError@POLNetworkSessionDataTaskFailedError"},"schemaVersion":{"minor":3,"patch":0,"major":0},"kind":"symbol","primaryContentSections":[{"declarations":[{"languages":["occ"],"tokens":[{"kind":"identifier","text":"POLNetworkSessionDataTaskFailedError"}],"platforms":["iOS"]}],"kind":"declarations"}],"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)"]]},"references":{"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionDataTaskFailedError":{"type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionDataTaskFailedError","url":"\/documentation\/polling\/enum_(unnamed)\/polnetworksessiondatataskfailederror","kind":"symbol","abstract":[],"role":"symbol","fragments":[{"kind":"identifier","text":"POLNetworkSessionDataTaskFailedError"}],"title":"POLNetworkSessionDataTaskFailedError"},"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)":{"type":"topic","title":"enum (unnamed)","role":"symbol","fragments":[{"text":"","kind":"identifier"}],"abstract":[],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)","url":"\/documentation\/polling\/enum_(unnamed)","kind":"symbol","navigatorTitle":[{"text":"enum (unnamed)","kind":"identifier"}]},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionDataTaskFailedError"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@Ea@POLGeneralError@POLNetworkSessionDataTaskFailedError",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLNetworkSessionDataTaskFailedError"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLNetworkSessionDataTaskFailedError"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Enumeration Case",
+    "symbolKind" : "case",
+    "title" : "POLNetworkSessionDataTaskFailedError"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "identifier",
+              "text" : "POLNetworkSessionDataTaskFailedError"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/enum_(unnamed)\/polnetworksessiondatataskfailederror"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : ""
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "enum (unnamed)"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "enum (unnamed)",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/enum_(unnamed)"
+},
+"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionDataTaskFailedError": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLNetworkSessionDataTaskFailedError"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionDataTaskFailedError",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLNetworkSessionDataTaskFailedError",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessiondatataskfailederror"
+}
+}
+}

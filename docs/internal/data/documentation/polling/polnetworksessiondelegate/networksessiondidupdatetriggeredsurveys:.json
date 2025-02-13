@@ -1,1 +1,179 @@
-{"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"text":"- (","kind":"text"},{"kind":"typeIdentifier","text":"void","preciseIdentifier":"c:v"},{"text":") ","kind":"text"},{"kind":"identifier","text":"networkSessionDidUpdateTriggeredSurveys:"},{"text":"(","kind":"text"},{"kind":"typeIdentifier","text":"NSArray<POLTriggeredSurvey *>","preciseIdentifier":"c:Q$objc(cs)NSArray"},{"kind":"text","text":" *) "},{"kind":"internalParam","text":"triggeredSurvey"},{"kind":"text","text":";"}],"languages":["occ"],"platforms":["iOS"]}]}],"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate"]]},"sections":[],"metadata":{"symbolKind":"method","roleHeading":"Instance Method","navigatorTitle":[{"kind":"identifier","text":"networkSessionDidUpdateTriggeredSurveys:"}],"fragments":[{"kind":"text","text":"- "},{"text":"networkSessionDidUpdateTriggeredSurveys:","kind":"identifier"}],"modules":[{"name":"Polling"}],"externalID":"c:objc(pl)POLNetworkSessionDelegate(im)networkSessionDidUpdateTriggeredSurveys:","role":"symbol","title":"networkSessionDidUpdateTriggeredSurveys:"},"schemaVersion":{"minor":3,"patch":0,"major":0},"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidUpdateTriggeredSurveys:"},"variants":[{"paths":["\/documentation\/polling\/polnetworksessiondelegate\/networksessiondidupdatetriggeredsurveys:"],"traits":[{"interfaceLanguage":"occ"}]}],"kind":"symbol","references":{"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate/networkSessionDidUpdateTriggeredSurveys:":{"url":"\/documentation\/polling\/polnetworksessiondelegate\/networksessiondidupdatetriggeredsurveys:","type":"topic","abstract":[],"navigatorTitle":[{"kind":"identifier","text":"networkSessionDidUpdateTriggeredSurveys:"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidUpdateTriggeredSurveys:","kind":"symbol","fragments":[{"kind":"text","text":"- "},{"text":"networkSessionDidUpdateTriggeredSurveys:","kind":"identifier"}],"role":"symbol","title":"networkSessionDidUpdateTriggeredSurveys:"},"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate":{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate","title":"POLNetworkSessionDelegate","type":"topic","url":"\/documentation\/polling\/polnetworksessiondelegate","role":"symbol","kind":"symbol","abstract":[],"fragments":[{"text":"POLNetworkSessionDelegate","kind":"identifier"}]},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidUpdateTriggeredSurveys:"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(pl)POLNetworkSessionDelegate(im)networkSessionDidUpdateTriggeredSurveys:",
+    "fragments" : [
+      {
+        "kind" : "text",
+        "text" : "- "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "networkSessionDidUpdateTriggeredSurveys:"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "networkSessionDidUpdateTriggeredSurveys:"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "networkSessionDidUpdateTriggeredSurveys:"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "text",
+              "text" : "- ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:v",
+              "text" : "void"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "networkSessionDidUpdateTriggeredSurveys:"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:Q$objc(cs)NSArray",
+              "text" : "NSArray<POLTriggeredSurvey *>"
+            },
+            {
+              "kind" : "text",
+              "text" : " *) "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "triggeredSurvey"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polnetworksessiondelegate\/networksessiondidupdatetriggeredsurveys:"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLNetworkSessionDelegate"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLNetworkSessionDelegate",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksessiondelegate"
+},
+"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate/networkSessionDidUpdateTriggeredSurveys:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "networkSessionDidUpdateTriggeredSurveys:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidUpdateTriggeredSurveys:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "networkSessionDidUpdateTriggeredSurveys:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "networkSessionDidUpdateTriggeredSurveys:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksessiondelegate\/networksessiondidupdatetriggeredsurveys:"
+}
+}
+}

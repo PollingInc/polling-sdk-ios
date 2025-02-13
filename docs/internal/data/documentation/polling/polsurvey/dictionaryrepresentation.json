@@ -1,1 +1,165 @@
-{"primaryContentSections":[{"declarations":[{"platforms":["iOS"],"languages":["occ"],"tokens":[{"text":"- (","kind":"text"},{"text":"NSDictionary<NSString *,id>","kind":"typeIdentifier","preciseIdentifier":"c:Q$objc(cs)NSDictionary"},{"kind":"text","text":" *) "},{"kind":"identifier","text":"dictionaryRepresentation"},{"text":";","kind":"text"}]}],"kind":"declarations"}],"schemaVersion":{"patch":0,"major":0,"minor":3},"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polsurvey\/dictionaryrepresentation"]}],"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"]]},"metadata":{"roleHeading":"Instance Method","fragments":[{"text":"- ","kind":"text"},{"text":"dictionaryRepresentation","kind":"identifier"}],"navigatorTitle":[{"kind":"identifier","text":"dictionaryRepresentation"}],"modules":[{"name":"Polling"}],"externalID":"c:objc(cs)POLSurvey(im)dictionaryRepresentation","title":"dictionaryRepresentation","symbolKind":"method","role":"symbol"},"kind":"symbol","identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/dictionaryRepresentation"},"sections":[],"references":{"doc://com.polling.Polling/documentation/Polling/POLSurvey/dictionaryRepresentation":{"url":"\/documentation\/polling\/polsurvey\/dictionaryrepresentation","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/dictionaryRepresentation","kind":"symbol","role":"symbol","navigatorTitle":[{"text":"dictionaryRepresentation","kind":"identifier"}],"title":"dictionaryRepresentation","fragments":[{"text":"- ","kind":"text"},{"kind":"identifier","text":"dictionaryRepresentation"}],"type":"topic","abstract":[]},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLSurvey":{"kind":"symbol","abstract":[{"type":"text","text":"An object representing a survey"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey","role":"symbol","title":"POLSurvey","url":"\/documentation\/polling\/polsurvey","type":"topic","fragments":[{"kind":"identifier","text":"POLSurvey"}]}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/dictionaryRepresentation"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLSurvey(im)dictionaryRepresentation",
+    "fragments" : [
+      {
+        "kind" : "text",
+        "text" : "- "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "dictionaryRepresentation"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "dictionaryRepresentation"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "dictionaryRepresentation"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "text",
+              "text" : "- ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:Q$objc(cs)NSDictionary",
+              "text" : "NSDictionary<NSString *,id>"
+            },
+            {
+              "kind" : "text",
+              "text" : " *) "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "dictionaryRepresentation"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polsurvey\/dictionaryrepresentation"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey": {
+  "abstract" : [
+    {
+      "text" : "An object representing a survey",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurvey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurvey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey/dictionaryRepresentation": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "dictionaryRepresentation"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/dictionaryRepresentation",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "dictionaryRepresentation"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "dictionaryRepresentation",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey\/dictionaryrepresentation"
+}
+}
+}

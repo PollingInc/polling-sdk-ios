@@ -1,1 +1,196 @@
-{"metadata":{"navigatorTitle":[{"text":"available","kind":"identifier"}],"title":"available","fragments":[{"text":"available","kind":"identifier"}],"role":"symbol","externalID":"c:objc(cs)POLSurvey(py)available","roleHeading":"Instance Property","modules":[{"name":"Polling"}],"symbolKind":"property"},"abstract":[{"type":"codeVoice","code":"YES"},{"type":"text","text":" if the survey is available"}],"primaryContentSections":[{"declarations":[{"tokens":[{"kind":"keyword","text":"@property"},{"kind":"text","text":" ("},{"kind":"keyword","text":"readonly"},{"text":", ","kind":"text"},{"kind":"keyword","text":"getter"},{"text":"=","kind":"text"},{"text":"isAvailable","kind":"identifier"},{"text":") ","kind":"text"},{"text":"BOOL","kind":"typeIdentifier","preciseIdentifier":"c:@T@BOOL"},{"text":" ","kind":"text"},{"text":"available","kind":"identifier"},{"text":";","kind":"text"}],"platforms":["iOS"],"languages":["occ"]}],"kind":"declarations"}],"schemaVersion":{"major":0,"minor":3,"patch":0},"variants":[{"paths":["\/documentation\/polling\/polsurvey\/available"],"traits":[{"interfaceLanguage":"occ"}]}],"sections":[],"kind":"symbol","hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"]]},"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/available","interfaceLanguage":"occ"},"references":{"doc://com.polling.Polling/documentation/Polling/POLSurvey/available":{"url":"\/documentation\/polling\/polsurvey\/available","kind":"symbol","title":"available","role":"symbol","fragments":[{"kind":"identifier","text":"available"}],"type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/available","abstract":[{"code":"YES","type":"codeVoice"},{"type":"text","text":" if the survey is available"}]},"doc://com.polling.Polling/documentation/Polling":{"title":"Polling","url":"\/documentation\/polling","role":"collection","kind":"symbol","type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","abstract":[{"text":"Poll and survey your users with ease","type":"text"}]},"doc://com.polling.Polling/documentation/Polling/POLSurvey":{"url":"\/documentation\/polling\/polsurvey","fragments":[{"kind":"identifier","text":"POLSurvey"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey","type":"topic","kind":"symbol","title":"POLSurvey","abstract":[{"type":"text","text":"An object representing a survey"}],"role":"symbol"}}}
+{
+  "abstract" : [
+    {
+      "code" : "YES",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " if the survey is available",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/available"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLSurvey(py)available",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "available"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "available"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "available"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "@property"
+            },
+            {
+              "kind" : "text",
+              "text" : " ("
+            },
+            {
+              "kind" : "keyword",
+              "text" : "readonly"
+            },
+            {
+              "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "getter"
+            },
+            {
+              "kind" : "text",
+              "text" : "="
+            },
+            {
+              "kind" : "identifier",
+              "text" : "isAvailable"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:@T@BOOL",
+              "text" : "BOOL"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "available"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polsurvey\/available"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Poll and survey your users with ease",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey": {
+  "abstract" : [
+    {
+      "text" : "An object representing a survey",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurvey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurvey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey/available": {
+  "abstract" : [
+    {
+      "code" : "YES",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " if the survey is available",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "available"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/available",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "available",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey\/available"
+}
+}
+}

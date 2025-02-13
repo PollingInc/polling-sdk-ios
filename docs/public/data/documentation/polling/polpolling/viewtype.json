@@ -1,1 +1,284 @@
-{"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/viewType"},"schemaVersion":{"patch":0,"minor":3,"major":0},"sections":[],"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling"]]},"kind":"symbol","abstract":[{"type":"text","text":"Survey view style"}],"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"tokens":[{"kind":"keyword","text":"@property"},{"kind":"text","text":" "},{"text":"POLViewType","preciseIdentifier":"c:@E@POLViewType","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType","kind":"typeIdentifier"},{"text":" ","kind":"text"},{"kind":"identifier","text":"viewType"},{"kind":"text","text":";"}],"languages":["occ"]}]},{"content":[{"type":"heading","text":"Discussion","anchor":"discussion","level":2},{"type":"paragraph","inlineContent":[{"type":"text","text":"Set this property before using "},{"type":"reference","isActive":true,"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/showSurvey:"},{"text":" or ","type":"text"},{"type":"reference","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/showEmbedView","isActive":true},{"text":" ","type":"text"},{"type":"text","text":"to display the survey or embed using a view style."}]}],"kind":"content"}],"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polpolling\/viewtype"]}],"metadata":{"title":"viewType","navigatorTitle":[{"kind":"identifier","text":"viewType"}],"symbolKind":"property","fragments":[{"kind":"identifier","text":"viewType"}],"externalID":"c:objc(cs)POLPolling(py)viewType","roleHeading":"Instance Property","modules":[{"name":"Polling"}],"role":"symbol"},"references":{"doc://com.polling.Polling/documentation/Polling/POLPolling":{"abstract":[{"text":"The primary SDK object","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling","type":"topic","role":"symbol","fragments":[{"kind":"identifier","text":"POLPolling"}],"title":"POLPolling","kind":"symbol","url":"\/documentation\/polling\/polpolling"},"doc://com.polling.Polling/documentation/Polling/POLViewType":{"kind":"symbol","role":"symbol","abstract":[{"type":"text","text":"Survey view style"}],"url":"\/documentation\/polling\/polviewtype","fragments":[{"kind":"identifier","text":"POLViewType"}],"type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType","title":"POLViewType"},"doc://com.polling.Polling/documentation/Polling/POLPolling/showEmbedView":{"navigatorTitle":[{"kind":"identifier","text":"showEmbedView"}],"fragments":[{"kind":"text","text":"- "},{"kind":"identifier","text":"showEmbedView"}],"abstract":[],"kind":"symbol","url":"\/documentation\/polling\/polpolling\/showembedview","role":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/showEmbedView","type":"topic","title":"showEmbedView"},"doc://com.polling.Polling/documentation/Polling":{"title":"Polling","url":"\/documentation\/polling","role":"collection","kind":"symbol","type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","abstract":[{"text":"Poll and survey your users with ease","type":"text"}]},"doc://com.polling.Polling/documentation/Polling/POLPolling/viewType":{"fragments":[{"kind":"identifier","text":"viewType"}],"abstract":[{"type":"text","text":"Survey view style"}],"kind":"symbol","url":"\/documentation\/polling\/polpolling\/viewtype","role":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/viewType","type":"topic","title":"viewType"},"doc://com.polling.Polling/documentation/Polling/POLPolling/showSurvey:":{"role":"symbol","url":"\/documentation\/polling\/polpolling\/showsurvey:","kind":"symbol","type":"topic","fragments":[{"kind":"text","text":"- "},{"kind":"identifier","text":"showSurvey:"}],"navigatorTitle":[{"kind":"identifier","text":"showSurvey:"}],"abstract":[{"type":"text","text":"Show a specific survey"}],"title":"showSurvey:","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/showSurvey:"}}}
+{
+  "abstract" : [
+    {
+      "text" : "Survey view style",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/viewType"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLPolling(py)viewType",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "viewType"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "viewType"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "viewType"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "@property"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:@E@POLViewType",
+              "text" : "POLViewType"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "viewType"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Set this property before using ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/showSurvey:",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " or ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/showEmbedView",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to display the survey or embed using a view style.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polpolling\/viewtype"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Poll and survey your users with ease",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling": {
+  "abstract" : [
+    {
+      "text" : "The primary SDK object",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLPolling"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLPolling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/showEmbedView": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "showEmbedView"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/showEmbedView",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "showEmbedView"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "showEmbedView",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/showembedview"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/showSurvey:": {
+  "abstract" : [
+    {
+      "text" : "Show a specific survey",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "showSurvey:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/showSurvey:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "showSurvey:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "showSurvey:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/showsurvey:"
+},
+"doc://com.polling.Polling/documentation/Polling/POLPolling/viewType": {
+  "abstract" : [
+    {
+      "text" : "Survey view style",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "viewType"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/viewType",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "viewType",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/viewtype"
+},
+"doc://com.polling.Polling/documentation/Polling/POLViewType": {
+  "abstract" : [
+    {
+      "text" : "Survey view style",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLViewType"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLViewType",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polviewtype"
+}
+}
+}

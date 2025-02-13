@@ -1,1 +1,386 @@
-{"metadata":{"category":"SwiftUIToC","role":"project","title":"Code your content view","categoryPathComponent":"SwiftUIToC"},"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/tutorials\/polling\/swiftuicode"]}],"schemaVersion":{"minor":3,"patch":0,"major":0},"sections":[{"content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"This tutorial guides you through importing the Polling framework and using the APIs with SwiftUI."}]}],"chapter":"Coding","kind":"hero","title":"Code your content view"},{"kind":"tasks","tasks":[{"anchor":"Import-the-Polling-framework","title":"Import the Polling framework","contentSection":[{"content":[{"inlineContent":[{"text":"Import the polling framework","type":"text"}],"type":"paragraph"}],"kind":"contentAndMedia","mediaPosition":"trailing","media":"import-swiftui-light.png"}],"stepsSection":[{"media":"locate-content-view.png","runtimePreview":null,"content":[{"inlineContent":[{"type":"text","text":"Locate a Content View that will manage your Polling related code"}],"type":"paragraph"}],"code":null,"type":"step","caption":[]},{"caption":[],"content":[{"inlineContent":[{"text":"Locate the import section of the content view","type":"text"}],"type":"paragraph"}],"runtimePreview":null,"type":"step","code":"ContentView-import-section.swift","media":null},{"content":[{"inlineContent":[{"type":"text","text":"Add an import statement that imports the Polling framework"}],"type":"paragraph"}],"media":null,"code":"ContentView-add-import.swift","runtimePreview":null,"caption":[],"type":"step"}]},{"contentSection":[{"mediaPosition":"trailing","content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"Forthcoming."}]}],"kind":"contentAndMedia","media":"stop.png"}],"title":"Configuring Polling","stepsSection":[],"anchor":"Configuring-Polling"}]}],"hierarchy":{"modules":[{"reference":"doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/Configuring-your-project","projects":[{"sections":[{"kind":"task","reference":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework"}],"reference":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject"}]},{"reference":"doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/Coding","projects":[{"reference":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode","sections":[{"reference":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode#Import-the-Polling-framework","kind":"task"},{"reference":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode#Configuring-Polling","kind":"task"}]}]}],"reference":"doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC","paths":[["doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC","doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/$volume","doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/Coding"]]},"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode"},"kind":"project","references":{"doc://com.polling.Polling/tutorials/Polling/SwiftUICode#Configuring-Polling":{"type":"section","role":"pseudoSymbol","title":"Configuring Polling","url":"\/tutorials\/polling\/swiftuicode#Configuring-Polling","identifier":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode#Configuring-Polling","kind":"section","abstract":[{"type":"text","text":"This tutorial guides you through importing the Polling framework and using the APIs with SwiftUI."}]},"doc://com.polling.Polling/tutorials/Polling/SwiftUICode":{"title":"Code your content view","type":"topic","role":"project","identifier":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode","url":"\/tutorials\/polling\/swiftuicode","abstract":[{"text":"This tutorial guides you through importing the Polling framework and using the APIs with SwiftUI.","type":"text"}],"kind":"project"},"locate-content-view.png":{"type":"image","alt":"Content View selected","identifier":"locate-content-view.png","variants":[{"traits":["1x","light"],"url":"\/images\/com.polling.Polling\/locate-content-view.png"}]},"doc://com.polling.Polling/tutorials/Polling/ConfigureProject#Add-the-framework":{"abstract":[{"type":"text","text":"Configure your project to use the Polling framework"}],"kind":"section","title":"Add the framework","url":"\/tutorials\/polling\/configureproject#Add-the-framework","identifier":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework","type":"section","role":"pseudoSymbol"},"ContentView-add-import.swift":{"content":["import SwiftUI","import Polling"],"identifier":"ContentView-add-import.swift","syntax":"swift","fileType":"swift","fileName":"ContentView.swift","type":"file","highlights":[{"line":2}]},"import-swiftui-light.png":{"type":"image","variants":[{"traits":["1x","light"],"url":"\/images\/com.polling.Polling\/import-swiftui-light.png"}],"identifier":"import-swiftui-light.png","alt":"import icon"},"doc://com.polling.Polling/tutorials/Polling/ConfigureProject":{"identifier":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject","url":"\/tutorials\/polling\/configureproject","abstract":[{"text":"Configure your project to use the Polling framework","type":"text"}],"role":"project","kind":"project","type":"topic","title":"Adding the framework"},"ContentView-import-section.swift":{"content":["import SwiftUI"],"identifier":"ContentView-import-section.swift","syntax":"swift","fileType":"swift","fileName":"ContentView.swift","type":"file","highlights":[]},"doc://com.polling.Polling/tutorials/SwiftUIToC":{"title":"Intergrating with SwiftUI","type":"topic","role":"overview","identifier":"doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC","url":"\/tutorials\/swiftuitoc","abstract":[{"type":"text","text":"Tutorial for integrating the Polling SDK in your SwiftUI app."}],"kind":"overview"},"stop.png":{"type":"image","variants":[{"url":"\/images\/com.polling.Polling\/stop.png","traits":["1x","light"]}],"identifier":"stop.png","alt":""},"doc://com.polling.Polling/tutorials/SwiftUIToC/Configuring-your-project":{"url":"\/tutorials\/swiftuitoc\/configuring-your-project","abstract":[],"identifier":"doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/Configuring-your-project","role":"article","title":"Configuring your project","type":"topic","kind":"article"},"doc://com.polling.Polling/tutorials/SwiftUIToC/Coding":{"kind":"article","role":"article","identifier":"doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/Coding","abstract":[],"type":"topic","url":"\/tutorials\/swiftuitoc\/coding","title":"Coding"},"doc://com.polling.Polling/tutorials/Polling/SwiftUICode#Import-the-Polling-framework":{"kind":"section","abstract":[{"text":"This tutorial guides you through importing the Polling framework and using the APIs with SwiftUI.","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode#Import-the-Polling-framework","role":"pseudoSymbol","title":"Import the Polling framework","type":"section","url":"\/tutorials\/polling\/swiftuicode#Import-the-Polling-framework"}}}
+{
+  "hierarchy" : {
+    "modules" : [
+      {
+        "projects" : [
+          {
+            "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject",
+            "sections" : [
+              {
+                "kind" : "task",
+                "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework"
+              }
+            ]
+          }
+        ],
+        "reference" : "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/Configuring-your-project"
+      },
+      {
+        "projects" : [
+          {
+            "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode",
+            "sections" : [
+              {
+                "kind" : "task",
+                "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode#Import-the-Polling-framework"
+              },
+              {
+                "kind" : "task",
+                "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode#Configuring-Polling"
+              }
+            ]
+          }
+        ],
+        "reference" : "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/Coding"
+      }
+    ],
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC",
+        "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/$volume",
+        "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/Coding"
+      ]
+    ],
+    "reference" : "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC"
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode"
+  },
+  "kind" : "project",
+  "metadata" : {
+    "category" : "SwiftUIToC",
+    "categoryPathComponent" : "SwiftUIToC",
+    "role" : "project",
+    "title" : "Code your content view"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+    {
+      "chapter" : "Coding",
+      "content" : [
+        {
+          "inlineContent" : [
+            {
+              "text" : "This tutorial guides you through importing the Polling framework and using the APIs with SwiftUI.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "hero",
+      "title" : "Code your content view"
+    },
+    {
+      "kind" : "tasks",
+      "tasks" : [
+        {
+          "anchor" : "Import-the-Polling-framework",
+          "contentSection" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Import the polling framework",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "kind" : "contentAndMedia",
+              "media" : "import-swiftui-light.png",
+              "mediaPosition" : "trailing"
+            }
+          ],
+          "stepsSection" : [
+            {
+              "caption" : [
+
+              ],
+              "code" : null,
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Locate a Content View that will manage your Polling related code",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : "locate-content-view.png",
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "ContentView-import-section.swift",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Locate the import section of the content view",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "ContentView-add-import.swift",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Add an import statement that imports the Polling framework",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            }
+          ],
+          "title" : "Import the Polling framework"
+        },
+        {
+          "anchor" : "Configuring-Polling",
+          "contentSection" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Forthcoming.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "kind" : "contentAndMedia",
+              "media" : "stop.png",
+              "mediaPosition" : "trailing"
+            }
+          ],
+          "stepsSection" : [
+
+          ],
+          "title" : "Configuring Polling"
+        }
+      ]
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/tutorials\/polling\/swiftuicode"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"ContentView-add-import.swift": {
+  "content" : [
+    "import SwiftUI",
+    "import Polling"
+  ],
+  "fileName" : "ContentView.swift",
+  "fileType" : "swift",
+  "highlights" : [
+    {
+      "line" : 2
+    }
+  ],
+  "identifier" : "ContentView-add-import.swift",
+  "syntax" : "swift",
+  "type" : "file"
+},
+"ContentView-import-section.swift": {
+  "content" : [
+    "import SwiftUI"
+  ],
+  "fileName" : "ContentView.swift",
+  "fileType" : "swift",
+  "highlights" : [
+
+  ],
+  "identifier" : "ContentView-import-section.swift",
+  "syntax" : "swift",
+  "type" : "file"
+},
+"doc://com.polling.Polling/tutorials/Polling/ConfigureProject": {
+  "abstract" : [
+    {
+      "text" : "Configure your project to use the Polling framework",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject",
+  "kind" : "project",
+  "role" : "project",
+  "title" : "Adding the framework",
+  "type" : "topic",
+  "url" : "\/tutorials\/polling\/configureproject"
+},
+"doc://com.polling.Polling/tutorials/Polling/ConfigureProject#Add-the-framework": {
+  "abstract" : [
+    {
+      "text" : "Configure your project to use the Polling framework",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework",
+  "kind" : "section",
+  "role" : "pseudoSymbol",
+  "title" : "Add the framework",
+  "type" : "section",
+  "url" : "\/tutorials\/polling\/configureproject#Add-the-framework"
+},
+"doc://com.polling.Polling/tutorials/Polling/SwiftUICode": {
+  "abstract" : [
+    {
+      "text" : "This tutorial guides you through importing the Polling framework and using the APIs with SwiftUI.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode",
+  "kind" : "project",
+  "role" : "project",
+  "title" : "Code your content view",
+  "type" : "topic",
+  "url" : "\/tutorials\/polling\/swiftuicode"
+},
+"doc://com.polling.Polling/tutorials/Polling/SwiftUICode#Configuring-Polling": {
+  "abstract" : [
+    {
+      "text" : "This tutorial guides you through importing the Polling framework and using the APIs with SwiftUI.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode#Configuring-Polling",
+  "kind" : "section",
+  "role" : "pseudoSymbol",
+  "title" : "Configuring Polling",
+  "type" : "section",
+  "url" : "\/tutorials\/polling\/swiftuicode#Configuring-Polling"
+},
+"doc://com.polling.Polling/tutorials/Polling/SwiftUICode#Import-the-Polling-framework": {
+  "abstract" : [
+    {
+      "text" : "This tutorial guides you through importing the Polling framework and using the APIs with SwiftUI.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode#Import-the-Polling-framework",
+  "kind" : "section",
+  "role" : "pseudoSymbol",
+  "title" : "Import the Polling framework",
+  "type" : "section",
+  "url" : "\/tutorials\/polling\/swiftuicode#Import-the-Polling-framework"
+},
+"doc://com.polling.Polling/tutorials/SwiftUIToC": {
+  "abstract" : [
+    {
+      "text" : "Tutorial for integrating the Polling SDK in your SwiftUI app.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC",
+  "kind" : "overview",
+  "role" : "overview",
+  "title" : "Intergrating with SwiftUI",
+  "type" : "topic",
+  "url" : "\/tutorials\/swiftuitoc"
+},
+"doc://com.polling.Polling/tutorials/SwiftUIToC/Coding": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/Coding",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Coding",
+  "type" : "topic",
+  "url" : "\/tutorials\/swiftuitoc\/coding"
+},
+"doc://com.polling.Polling/tutorials/SwiftUIToC/Configuring-your-project": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/Configuring-your-project",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Configuring your project",
+  "type" : "topic",
+  "url" : "\/tutorials\/swiftuitoc\/configuring-your-project"
+},
+"import-swiftui-light.png": {
+  "alt" : "import icon",
+  "identifier" : "import-swiftui-light.png",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.Polling\/import-swiftui-light.png"
+    }
+  ]
+},
+"locate-content-view.png": {
+  "alt" : "Content View selected",
+  "identifier" : "locate-content-view.png",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.Polling\/locate-content-view.png"
+    }
+  ]
+},
+"stop.png": {
+  "alt" : "",
+  "identifier" : "stop.png",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.Polling\/stop.png"
+    }
+  ]
+}
+}
+}

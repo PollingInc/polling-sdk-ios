@@ -1,1 +1,182 @@
-{"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/surveyFromJSONDictionary:","interfaceLanguage":"occ"},"schemaVersion":{"minor":3,"patch":0,"major":0},"sections":[],"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"]]},"primaryContentSections":[{"kind":"declarations","declarations":[{"languages":["occ"],"platforms":["iOS"],"tokens":[{"kind":"text","text":"+ ("},{"text":"id","kind":"typeIdentifier","preciseIdentifier":"c:*Qo"},{"text":") ","kind":"text"},{"text":"surveyFromJSONDictionary:","kind":"identifier"},{"kind":"text","text":"("},{"text":"NSDictionary","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)NSDictionary"},{"text":" *) ","kind":"text"},{"text":"dict","kind":"internalParam"},{"text":";","kind":"text"}]}]}],"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polsurvey\/surveyfromjsondictionary:"]}],"kind":"symbol","metadata":{"modules":[{"name":"Polling"}],"externalID":"c:objc(cs)POLSurvey(cm)surveyFromJSONDictionary:","title":"surveyFromJSONDictionary:","navigatorTitle":[{"text":"surveyFromJSONDictionary:","kind":"identifier"}],"role":"symbol","symbolKind":"method","fragments":[{"text":"+ ","kind":"text"},{"kind":"identifier","text":"surveyFromJSONDictionary:"}],"roleHeading":"Type Method"},"references":{"doc://com.polling.Polling/documentation/Polling/POLSurvey/surveyFromJSONDictionary:":{"navigatorTitle":[{"text":"surveyFromJSONDictionary:","kind":"identifier"}],"type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/surveyFromJSONDictionary:","title":"surveyFromJSONDictionary:","fragments":[{"text":"+ ","kind":"text"},{"kind":"identifier","text":"surveyFromJSONDictionary:"}],"abstract":[],"kind":"symbol","role":"symbol","url":"\/documentation\/polling\/polsurvey\/surveyfromjsondictionary:"},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLSurvey":{"kind":"symbol","abstract":[{"type":"text","text":"An object representing a survey"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey","role":"symbol","title":"POLSurvey","url":"\/documentation\/polling\/polsurvey","type":"topic","fragments":[{"kind":"identifier","text":"POLSurvey"}]}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/surveyFromJSONDictionary:"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLSurvey(cm)surveyFromJSONDictionary:",
+    "fragments" : [
+      {
+        "kind" : "text",
+        "text" : "+ "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "surveyFromJSONDictionary:"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "surveyFromJSONDictionary:"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Type Method",
+    "symbolKind" : "method",
+    "title" : "surveyFromJSONDictionary:"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "text",
+              "text" : "+ ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:*Qo",
+              "text" : "id"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "surveyFromJSONDictionary:"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSDictionary",
+              "text" : "NSDictionary"
+            },
+            {
+              "kind" : "text",
+              "text" : " *) "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "dict"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polsurvey\/surveyfromjsondictionary:"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey": {
+  "abstract" : [
+    {
+      "text" : "An object representing a survey",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurvey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurvey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey/surveyFromJSONDictionary:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "+ "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "surveyFromJSONDictionary:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/surveyFromJSONDictionary:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "surveyFromJSONDictionary:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "surveyFromJSONDictionary:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey\/surveyfromjsondictionary:"
+}
+}
+}

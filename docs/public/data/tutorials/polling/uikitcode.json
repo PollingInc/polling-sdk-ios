@@ -1,1 +1,703 @@
-{"metadata":{"category":"UIKitToC","title":"Code your view controller","categoryPathComponent":"UIKitToC","role":"project"},"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode"},"schemaVersion":{"major":0,"patch":0,"minor":3},"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/tutorials\/polling\/uikitcode"]}],"sections":[{"content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"This tutorial guides you through importing the Polling framework and using the APIs with UIKit."}]}],"title":"Code your view controller","kind":"hero","chapter":"Coding"},{"tasks":[{"anchor":"Import-the-Polling-framework","stepsSection":[{"media":"locate-view-controller.png","code":null,"runtimePreview":null,"caption":[],"type":"step","content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"Locate a View Controller that will manage your Polling related code"}]}]},{"type":"step","caption":[],"content":[{"type":"paragraph","inlineContent":[{"text":"Locate the import section of the view controller","type":"text"}]}],"media":null,"code":"ViewController-import-section.m","runtimePreview":null},{"content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"Add an import statement that imports the Polling framework"}]}],"code":"ViewController-add-import.m","runtimePreview":null,"caption":[],"type":"step","media":null}],"title":"Import the Polling framework","contentSection":[{"media":"import-uikit-light.png","content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"Add the framework to your project"}]}],"mediaPosition":"trailing","kind":"contentAndMedia"}]},{"title":"Configuring Polling","stepsSection":[{"type":"step","content":[{"inlineContent":[{"text":"Locate ","type":"text"},{"type":"codeVoice","code":"viewDidLoad"},{"text":" method","type":"text"}],"type":"paragraph"}],"caption":[],"media":null,"runtimePreview":null,"code":"ViewController-view-did-load.m"},{"type":"step","caption":[],"media":null,"content":[{"inlineContent":[{"text":"Add API Key and Customer ID.","type":"text"}],"type":"paragraph"}],"runtimePreview":null,"code":"ViewController-configure-polling.m"}],"contentSection":[{"media":"config.png","content":[{"type":"paragraph","inlineContent":[{"text":"Configure the Polling singleton object with your API Key and Customer ID.","type":"text"}]}],"kind":"contentAndMedia","mediaPosition":"trailing"}],"anchor":"Configuring-Polling"},{"title":"Make your view controller Polling's delegate","contentSection":[{"kind":"contentAndMedia","content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"Configure your view controller to conform to the "},{"type":"codeVoice","code":"POLPollingDelegate"},{"type":"text","text":" "},{"type":"text","text":"protocol. Add the delegate methods and assign the delgate property."}]}],"mediaPosition":"trailing","media":"delegate.png"}],"stepsSection":[{"runtimePreview":null,"caption":[],"type":"step","content":[{"inlineContent":[{"type":"text","text":"Locate the private anonymous class category"}],"type":"paragraph"}],"media":null,"code":"ViewController-private-category.m"},{"caption":[],"type":"step","runtimePreview":null,"code":"ViewController-conform-to-proto.m","media":null,"content":[{"type":"paragraph","inlineContent":[{"text":"Make your view controller conform to the ","type":"text"},{"code":"POLPollingDelegate","type":"codeVoice"},{"type":"text","text":" protocol"}]}]},{"type":"step","media":null,"code":"ViewController-add-delegate-methods.m","runtimePreview":null,"content":[{"type":"paragraph","inlineContent":[{"text":"Add the delegate methods implementations to the view controller","type":"text"}]}],"caption":[]},{"content":[{"type":"paragraph","inlineContent":[{"type":"text","text":"Assign your view controller to the Polling’s delegate property"}]}],"caption":[],"type":"step","media":null,"code":"ViewController-assign-delegate.m","runtimePreview":null}],"anchor":"Make-your-view-controller-Pollings-delegate"}],"kind":"tasks"}],"kind":"project","hierarchy":{"modules":[{"reference":"doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Configuring-your-project","projects":[{"reference":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject","sections":[{"reference":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework","kind":"task"}]}]},{"reference":"doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Coding","projects":[{"reference":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode","sections":[{"reference":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Import-the-Polling-framework","kind":"task"},{"reference":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Configuring-Polling","kind":"task"},{"kind":"task","reference":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Make-your-view-controller-Pollings-delegate"}]}]}],"reference":"doc:\/\/com.polling.Polling\/tutorials\/UIKitToC","paths":[["doc:\/\/com.polling.Polling\/tutorials\/UIKitToC","doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/$volume","doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Coding"]]},"references":{"doc://com.polling.Polling/tutorials/Polling/UIKitCode":{"kind":"project","abstract":[{"text":"This tutorial guides you through importing the Polling framework and using the APIs with UIKit.","type":"text"}],"role":"project","type":"topic","url":"\/tutorials\/polling\/uikitcode","title":"Code your view controller","identifier":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode"},"import-uikit-light.png":{"type":"image","variants":[{"traits":["1x","light"],"url":"\/images\/com.polling.Polling\/import-uikit-light.png"}],"identifier":"import-uikit-light.png","alt":"import icon"},"ViewController-import-section.m":{"fileType":"m","type":"file","fileName":"ViewController.m","content":["#import \"ViewController.h\""],"highlights":[],"syntax":"m","identifier":"ViewController-import-section.m"},"ViewController-private-category.m":{"type":"file","identifier":"ViewController-private-category.m","highlights":[],"fileName":"Private category","fileType":"","content":["@interface ViewController ()","","@end"],"syntax":""},"config.png":{"type":"image","variants":[{"url":"\/images\/com.polling.Polling\/config.png","traits":["1x","light"]}],"identifier":"config.png","alt":"gear icon representing config"},"ViewController-conform-to-proto.m":{"type":"file","identifier":"ViewController-conform-to-proto.m","highlights":[],"fileName":"Conform to the protocol","fileType":"","content":["@interface ViewController () <POLPollingDelegate>","","@end"],"syntax":""},"doc://com.polling.Polling/tutorials/Polling/UIKitCode#Make-your-view-controller-Pollings-delegate":{"identifier":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Make-your-view-controller-Pollings-delegate","url":"\/tutorials\/polling\/uikitcode#Make-your-view-controller-Pollings-delegate","role":"pseudoSymbol","kind":"section","title":"Make your view controller Polling's delegate","abstract":[{"type":"text","text":"This tutorial guides you through importing the Polling framework and using the APIs with UIKit."}],"type":"section"},"doc://com.polling.Polling/tutorials/Polling/UIKitCode#Configuring-Polling":{"url":"\/tutorials\/polling\/uikitcode#Configuring-Polling","type":"section","kind":"section","identifier":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Configuring-Polling","role":"pseudoSymbol","abstract":[{"text":"This tutorial guides you through importing the Polling framework and using the APIs with UIKit.","type":"text"}],"title":"Configuring Polling"},"doc://com.polling.Polling/tutorials/UIKitToC/Coding":{"identifier":"doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Coding","url":"\/tutorials\/uikittoc\/coding","role":"article","kind":"article","abstract":[],"title":"Coding","type":"topic"},"doc://com.polling.Polling/tutorials/UIKitToC/Configuring-your-project":{"identifier":"doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Configuring-your-project","url":"\/tutorials\/uikittoc\/configuring-your-project","role":"article","kind":"article","title":"Configuring your project","abstract":[],"type":"topic"},"ViewController-view-did-load.m":{"fileType":"","type":"file","fileName":"viewDidLoad Method","content":["- (void)viewDidLoad {","\t[super viewDidLoad];","\t\/\/ Do any additional setup after loading the view.","}"],"highlights":[],"syntax":"","identifier":"ViewController-view-did-load.m"},"doc://com.polling.Polling/tutorials/Polling/ConfigureProject":{"identifier":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject","url":"\/tutorials\/polling\/configureproject","abstract":[{"text":"Configure your project to use the Polling framework","type":"text"}],"role":"project","kind":"project","type":"topic","title":"Adding the framework"},"doc://com.polling.Polling/tutorials/Polling/ConfigureProject#Add-the-framework":{"abstract":[{"type":"text","text":"Configure your project to use the Polling framework"}],"kind":"section","title":"Add the framework","url":"\/tutorials\/polling\/configureproject#Add-the-framework","identifier":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework","type":"section","role":"pseudoSymbol"},"ViewController-add-import.m":{"type":"file","identifier":"ViewController-add-import.m","highlights":[{"line":2}],"fileName":"ViewController.m","fileType":"m","content":["#import \"ViewController.h\"","#import <Polling\/Polling.h>"],"syntax":"m"},"locate-view-controller.png":{"type":"image","variants":[{"url":"\/images\/com.polling.Polling\/locate-view-controller.png","traits":["1x","light"]}],"identifier":"locate-view-controller.png","alt":"View controller selected"},"doc://com.polling.Polling/tutorials/UIKitToC":{"kind":"overview","identifier":"doc:\/\/com.polling.Polling\/tutorials\/UIKitToC","abstract":[{"type":"text","text":"Tutorial for integrating the Polling SDK in your UIKit app."}],"role":"overview","url":"\/tutorials\/uikittoc","type":"topic","title":"Intergrating with UIKit"},"doc://com.polling.Polling/tutorials/Polling/UIKitCode#Import-the-Polling-framework":{"abstract":[{"type":"text","text":"This tutorial guides you through importing the Polling framework and using the APIs with UIKit."}],"kind":"section","title":"Import the Polling framework","url":"\/tutorials\/polling\/uikitcode#Import-the-Polling-framework","identifier":"doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Import-the-Polling-framework","type":"section","role":"pseudoSymbol"},"ViewController-assign-delegate.m":{"identifier":"ViewController-assign-delegate.m","highlights":[],"type":"file","fileName":"Assign delegate","content":["- (void)viewDidLoad {","\t[super viewDidLoad];","\tPOLPolling.polling.customerID = @\"customerID\";","\tPOLPolling.polling.apiKey = @\"H3uZsrv6B2qyRXGePLxQ9U8g7vilWFTjIhZO\";","\tPOLPolling.polling.delegate = self;","}"],"fileType":"","syntax":""},"delegate.png":{"type":"image","variants":[{"url":"\/images\/com.polling.Polling\/delegate.png","traits":["1x","light"]}],"identifier":"delegate.png","alt":"delegate message bubbles"},"ViewController-configure-polling.m":{"identifier":"ViewController-configure-polling.m","highlights":[],"type":"file","fileName":"Configured with API Key and Customer ID","content":["- (void)viewDidLoad {","\t[super viewDidLoad];","\tPOLPolling.polling.customerID = @\"customerID\";","\tPOLPolling.polling.apiKey = @\"H3uZsrv6B2qyRXGePLxQ9U8g7vilWFTjIhZO\";","}"],"fileType":"","syntax":""},"ViewController-add-delegate-methods.m":{"fileType":"","type":"file","fileName":"Implement delegate methods","content":["#pragma mark - Polling Delegate Methods","","- (void)pollingOnSuccess:(NSString *)response","{","\tNSLog(@\"%s response=%@\", __func__, response);","}","","- (void)pollingOnFailure:(NSString *)error","{","\tNSLog(@\"%s error=%@\", __func__, error);","}","","- (void)pollingOnReward:(POLReward *)reward","{","\tNSLog(@\"%s reward=%@\", __func__, reward);","}","","- (void)pollingOnSurveyAvailable","{","\tNSLog(@\"%s\", __func__);","}"],"highlights":[],"syntax":"","identifier":"ViewController-add-delegate-methods.m"}}}
+{
+  "hierarchy" : {
+    "modules" : [
+      {
+        "projects" : [
+          {
+            "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject",
+            "sections" : [
+              {
+                "kind" : "task",
+                "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework"
+              }
+            ]
+          }
+        ],
+        "reference" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Configuring-your-project"
+      },
+      {
+        "projects" : [
+          {
+            "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode",
+            "sections" : [
+              {
+                "kind" : "task",
+                "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Import-the-Polling-framework"
+              },
+              {
+                "kind" : "task",
+                "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Configuring-Polling"
+              },
+              {
+                "kind" : "task",
+                "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Make-your-view-controller-Pollings-delegate"
+              }
+            ]
+          }
+        ],
+        "reference" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Coding"
+      }
+    ],
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC",
+        "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/$volume",
+        "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Coding"
+      ]
+    ],
+    "reference" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC"
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode"
+  },
+  "kind" : "project",
+  "metadata" : {
+    "category" : "UIKitToC",
+    "categoryPathComponent" : "UIKitToC",
+    "role" : "project",
+    "title" : "Code your view controller"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+    {
+      "chapter" : "Coding",
+      "content" : [
+        {
+          "inlineContent" : [
+            {
+              "text" : "This tutorial guides you through importing the Polling framework and using the APIs with UIKit.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "hero",
+      "title" : "Code your view controller"
+    },
+    {
+      "kind" : "tasks",
+      "tasks" : [
+        {
+          "anchor" : "Import-the-Polling-framework",
+          "contentSection" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Add the framework to your project",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "kind" : "contentAndMedia",
+              "media" : "import-uikit-light.png",
+              "mediaPosition" : "trailing"
+            }
+          ],
+          "stepsSection" : [
+            {
+              "caption" : [
+
+              ],
+              "code" : null,
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Locate a View Controller that will manage your Polling related code",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : "locate-view-controller.png",
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "ViewController-import-section.m",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Locate the import section of the view controller",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "ViewController-add-import.m",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Add an import statement that imports the Polling framework",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            }
+          ],
+          "title" : "Import the Polling framework"
+        },
+        {
+          "anchor" : "Configuring-Polling",
+          "contentSection" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Configure the Polling singleton object with your API Key and Customer ID.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "kind" : "contentAndMedia",
+              "media" : "config.png",
+              "mediaPosition" : "trailing"
+            }
+          ],
+          "stepsSection" : [
+            {
+              "caption" : [
+
+              ],
+              "code" : "ViewController-view-did-load.m",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Locate ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "viewDidLoad",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " method",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "ViewController-configure-polling.m",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Add API Key and Customer ID.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            }
+          ],
+          "title" : "Configuring Polling"
+        },
+        {
+          "anchor" : "Make-your-view-controller-Pollings-delegate",
+          "contentSection" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Configure your view controller to conform to the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "POLPollingDelegate",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "protocol. Add the delegate methods and assign the delgate property.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "kind" : "contentAndMedia",
+              "media" : "delegate.png",
+              "mediaPosition" : "trailing"
+            }
+          ],
+          "stepsSection" : [
+            {
+              "caption" : [
+
+              ],
+              "code" : "ViewController-private-category.m",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Locate the private anonymous class category",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "ViewController-conform-to-proto.m",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Make your view controller conform to the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "POLPollingDelegate",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " protocol",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "ViewController-add-delegate-methods.m",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Add the delegate methods implementations to the view controller",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "ViewController-assign-delegate.m",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Assign your view controller to the Polling’s delegate property",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            }
+          ],
+          "title" : "Make your view controller Polling's delegate"
+        }
+      ]
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/tutorials\/polling\/uikitcode"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"ViewController-add-delegate-methods.m": {
+  "content" : [
+    "#pragma mark - Polling Delegate Methods",
+    "",
+    "- (void)pollingOnSuccess:(NSString *)response",
+    "{",
+    "\tNSLog(@\"%s response=%@\", __func__, response);",
+    "}",
+    "",
+    "- (void)pollingOnFailure:(NSString *)error",
+    "{",
+    "\tNSLog(@\"%s error=%@\", __func__, error);",
+    "}",
+    "",
+    "- (void)pollingOnReward:(POLReward *)reward",
+    "{",
+    "\tNSLog(@\"%s reward=%@\", __func__, reward);",
+    "}",
+    "",
+    "- (void)pollingOnSurveyAvailable",
+    "{",
+    "\tNSLog(@\"%s\", __func__);",
+    "}"
+  ],
+  "fileName" : "Implement delegate methods",
+  "fileType" : "",
+  "highlights" : [
+
+  ],
+  "identifier" : "ViewController-add-delegate-methods.m",
+  "syntax" : "",
+  "type" : "file"
+},
+"ViewController-add-import.m": {
+  "content" : [
+    "#import \"ViewController.h\"",
+    "#import <Polling\/Polling.h>"
+  ],
+  "fileName" : "ViewController.m",
+  "fileType" : "m",
+  "highlights" : [
+    {
+      "line" : 2
+    }
+  ],
+  "identifier" : "ViewController-add-import.m",
+  "syntax" : "m",
+  "type" : "file"
+},
+"ViewController-assign-delegate.m": {
+  "content" : [
+    "- (void)viewDidLoad {",
+    "\t[super viewDidLoad];",
+    "\tPOLPolling.polling.customerID = @\"customerID\";",
+    "\tPOLPolling.polling.apiKey = @\"H3uZsrv6B2qyRXGePLxQ9U8g7vilWFTjIhZO\";",
+    "\tPOLPolling.polling.delegate = self;",
+    "}"
+  ],
+  "fileName" : "Assign delegate",
+  "fileType" : "",
+  "highlights" : [
+
+  ],
+  "identifier" : "ViewController-assign-delegate.m",
+  "syntax" : "",
+  "type" : "file"
+},
+"ViewController-configure-polling.m": {
+  "content" : [
+    "- (void)viewDidLoad {",
+    "\t[super viewDidLoad];",
+    "\tPOLPolling.polling.customerID = @\"customerID\";",
+    "\tPOLPolling.polling.apiKey = @\"H3uZsrv6B2qyRXGePLxQ9U8g7vilWFTjIhZO\";",
+    "}"
+  ],
+  "fileName" : "Configured with API Key and Customer ID",
+  "fileType" : "",
+  "highlights" : [
+
+  ],
+  "identifier" : "ViewController-configure-polling.m",
+  "syntax" : "",
+  "type" : "file"
+},
+"ViewController-conform-to-proto.m": {
+  "content" : [
+    "@interface ViewController () <POLPollingDelegate>",
+    "",
+    "@end"
+  ],
+  "fileName" : "Conform to the protocol",
+  "fileType" : "",
+  "highlights" : [
+
+  ],
+  "identifier" : "ViewController-conform-to-proto.m",
+  "syntax" : "",
+  "type" : "file"
+},
+"ViewController-import-section.m": {
+  "content" : [
+    "#import \"ViewController.h\""
+  ],
+  "fileName" : "ViewController.m",
+  "fileType" : "m",
+  "highlights" : [
+
+  ],
+  "identifier" : "ViewController-import-section.m",
+  "syntax" : "m",
+  "type" : "file"
+},
+"ViewController-private-category.m": {
+  "content" : [
+    "@interface ViewController ()",
+    "",
+    "@end"
+  ],
+  "fileName" : "Private category",
+  "fileType" : "",
+  "highlights" : [
+
+  ],
+  "identifier" : "ViewController-private-category.m",
+  "syntax" : "",
+  "type" : "file"
+},
+"ViewController-view-did-load.m": {
+  "content" : [
+    "- (void)viewDidLoad {",
+    "\t[super viewDidLoad];",
+    "\t\/\/ Do any additional setup after loading the view.",
+    "}"
+  ],
+  "fileName" : "viewDidLoad Method",
+  "fileType" : "",
+  "highlights" : [
+
+  ],
+  "identifier" : "ViewController-view-did-load.m",
+  "syntax" : "",
+  "type" : "file"
+},
+"config.png": {
+  "alt" : "gear icon representing config",
+  "identifier" : "config.png",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.Polling\/config.png"
+    }
+  ]
+},
+"delegate.png": {
+  "alt" : "delegate message bubbles",
+  "identifier" : "delegate.png",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.Polling\/delegate.png"
+    }
+  ]
+},
+"doc://com.polling.Polling/tutorials/Polling/ConfigureProject": {
+  "abstract" : [
+    {
+      "text" : "Configure your project to use the Polling framework",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject",
+  "kind" : "project",
+  "role" : "project",
+  "title" : "Adding the framework",
+  "type" : "topic",
+  "url" : "\/tutorials\/polling\/configureproject"
+},
+"doc://com.polling.Polling/tutorials/Polling/ConfigureProject#Add-the-framework": {
+  "abstract" : [
+    {
+      "text" : "Configure your project to use the Polling framework",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework",
+  "kind" : "section",
+  "role" : "pseudoSymbol",
+  "title" : "Add the framework",
+  "type" : "section",
+  "url" : "\/tutorials\/polling\/configureproject#Add-the-framework"
+},
+"doc://com.polling.Polling/tutorials/Polling/UIKitCode": {
+  "abstract" : [
+    {
+      "text" : "This tutorial guides you through importing the Polling framework and using the APIs with UIKit.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode",
+  "kind" : "project",
+  "role" : "project",
+  "title" : "Code your view controller",
+  "type" : "topic",
+  "url" : "\/tutorials\/polling\/uikitcode"
+},
+"doc://com.polling.Polling/tutorials/Polling/UIKitCode#Configuring-Polling": {
+  "abstract" : [
+    {
+      "text" : "This tutorial guides you through importing the Polling framework and using the APIs with UIKit.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Configuring-Polling",
+  "kind" : "section",
+  "role" : "pseudoSymbol",
+  "title" : "Configuring Polling",
+  "type" : "section",
+  "url" : "\/tutorials\/polling\/uikitcode#Configuring-Polling"
+},
+"doc://com.polling.Polling/tutorials/Polling/UIKitCode#Import-the-Polling-framework": {
+  "abstract" : [
+    {
+      "text" : "This tutorial guides you through importing the Polling framework and using the APIs with UIKit.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Import-the-Polling-framework",
+  "kind" : "section",
+  "role" : "pseudoSymbol",
+  "title" : "Import the Polling framework",
+  "type" : "section",
+  "url" : "\/tutorials\/polling\/uikitcode#Import-the-Polling-framework"
+},
+"doc://com.polling.Polling/tutorials/Polling/UIKitCode#Make-your-view-controller-Pollings-delegate": {
+  "abstract" : [
+    {
+      "text" : "This tutorial guides you through importing the Polling framework and using the APIs with UIKit.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Make-your-view-controller-Pollings-delegate",
+  "kind" : "section",
+  "role" : "pseudoSymbol",
+  "title" : "Make your view controller Polling's delegate",
+  "type" : "section",
+  "url" : "\/tutorials\/polling\/uikitcode#Make-your-view-controller-Pollings-delegate"
+},
+"doc://com.polling.Polling/tutorials/UIKitToC": {
+  "abstract" : [
+    {
+      "text" : "Tutorial for integrating the Polling SDK in your UIKit app.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC",
+  "kind" : "overview",
+  "role" : "overview",
+  "title" : "Intergrating with UIKit",
+  "type" : "topic",
+  "url" : "\/tutorials\/uikittoc"
+},
+"doc://com.polling.Polling/tutorials/UIKitToC/Coding": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Coding",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Coding",
+  "type" : "topic",
+  "url" : "\/tutorials\/uikittoc\/coding"
+},
+"doc://com.polling.Polling/tutorials/UIKitToC/Configuring-your-project": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Configuring-your-project",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Configuring your project",
+  "type" : "topic",
+  "url" : "\/tutorials\/uikittoc\/configuring-your-project"
+},
+"import-uikit-light.png": {
+  "alt" : "import icon",
+  "identifier" : "import-uikit-light.png",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.Polling\/import-uikit-light.png"
+    }
+  ]
+},
+"locate-view-controller.png": {
+  "alt" : "View controller selected",
+  "identifier" : "locate-view-controller.png",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.Polling\/locate-view-controller.png"
+    }
+  ]
+}
+}
+}

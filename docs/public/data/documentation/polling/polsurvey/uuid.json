@@ -1,1 +1,172 @@
-{"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/UUID","interfaceLanguage":"occ"},"variants":[{"paths":["\/documentation\/polling\/polsurvey\/uuid"],"traits":[{"interfaceLanguage":"occ"}]}],"kind":"symbol","sections":[],"schemaVersion":{"major":0,"patch":0,"minor":3},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"]]},"metadata":{"navigatorTitle":[{"kind":"identifier","text":"UUID"}],"symbolKind":"property","externalID":"c:objc(cs)POLSurvey(py)UUID","fragments":[{"text":"UUID","kind":"identifier"}],"roleHeading":"Instance Property","role":"symbol","modules":[{"name":"Polling"}],"title":"UUID"},"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"tokens":[{"text":"@property","kind":"keyword"},{"text":" (","kind":"text"},{"text":"readonly","kind":"keyword"},{"text":") ","kind":"text"},{"text":"NSString","preciseIdentifier":"c:objc(cs)NSString","kind":"typeIdentifier"},{"kind":"text","text":" * "},{"kind":"identifier","text":"UUID"},{"text":";","kind":"text"}],"languages":["occ"]}]}],"abstract":[{"type":"text","text":"The survey’s UUID"}],"references":{"doc://com.polling.Polling/documentation/Polling/POLSurvey/UUID":{"fragments":[{"text":"UUID","kind":"identifier"}],"abstract":[{"type":"text","text":"The survey’s UUID"}],"url":"\/documentation\/polling\/polsurvey\/uuid","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/UUID","role":"symbol","title":"UUID","type":"topic","kind":"symbol"},"doc://com.polling.Polling/documentation/Polling/POLSurvey":{"url":"\/documentation\/polling\/polsurvey","fragments":[{"kind":"identifier","text":"POLSurvey"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey","type":"topic","kind":"symbol","title":"POLSurvey","abstract":[{"type":"text","text":"An object representing a survey"}],"role":"symbol"},"doc://com.polling.Polling/documentation/Polling":{"title":"Polling","url":"\/documentation\/polling","role":"collection","kind":"symbol","type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","abstract":[{"text":"Poll and survey your users with ease","type":"text"}]}}}
+{
+  "abstract" : [
+    {
+      "text" : "The survey’s UUID",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/UUID"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLSurvey(py)UUID",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "UUID"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "UUID"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "UUID"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "@property"
+            },
+            {
+              "kind" : "text",
+              "text" : " ("
+            },
+            {
+              "kind" : "keyword",
+              "text" : "readonly"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSString",
+              "text" : "NSString"
+            },
+            {
+              "kind" : "text",
+              "text" : " * "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "UUID"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polsurvey\/uuid"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Poll and survey your users with ease",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey": {
+  "abstract" : [
+    {
+      "text" : "An object representing a survey",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurvey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurvey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey/UUID": {
+  "abstract" : [
+    {
+      "text" : "The survey’s UUID",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "UUID"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/UUID",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "UUID",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey\/uuid"
+}
+}
+}

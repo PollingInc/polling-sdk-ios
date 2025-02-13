@@ -1,1 +1,384 @@
-{"schemaVersion":{"minor":3,"patch":0,"major":0},"abstract":[{"text":"An object representing a survey","type":"text"}],"relationshipsSections":[{"title":"Inherits From","identifiers":["doc:\/\/com.polling.Polling\/objc(cs)NSObject"],"kind":"relationships","type":"inheritsFrom"}],"primaryContentSections":[{"kind":"declarations","declarations":[{"languages":["occ"],"tokens":[{"text":"@interface","kind":"keyword"},{"text":" ","kind":"text"},{"kind":"identifier","text":"POLSurvey"},{"kind":"text","text":" : "},{"text":"NSObject","kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)NSObject"}],"platforms":["iOS"]}]},{"kind":"content","content":[{"level":2,"text":"Overview","type":"heading","anchor":"overview"},{"inlineContent":[{"type":"text","text":"A model object that encapsulates information specific to a survey."}],"type":"paragraph"}]}],"metadata":{"externalID":"c:objc(cs)POLSurvey","fragments":[{"text":"POLSurvey","kind":"identifier"}],"modules":[{"name":"Polling"}],"title":"POLSurvey","navigatorTitle":[{"text":"POLSurvey","kind":"identifier"}],"role":"symbol","symbolKind":"class","roleHeading":"Class"},"topicSections":[{"title":"Instance Properties","generated":true,"anchor":"Instance-Properties","identifiers":["doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/UUID","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/available","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completed","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/name","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/questionCount","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/reward","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/started"]},{"generated":true,"title":"Instance Methods","identifiers":["doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/isEqualToSurvey:"],"anchor":"Instance-Methods"}],"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"},"sections":[],"kind":"symbol","variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polsurvey"]}],"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling"]]},"references":{"doc://com.polling.Polling/documentation/Polling/POLSurvey/UUID":{"fragments":[{"text":"UUID","kind":"identifier"}],"abstract":[{"type":"text","text":"The survey’s UUID"}],"url":"\/documentation\/polling\/polsurvey\/uuid","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/UUID","role":"symbol","title":"UUID","type":"topic","kind":"symbol"},"doc://com.polling.Polling/documentation/Polling/POLSurvey/reward":{"url":"\/documentation\/polling\/polsurvey\/reward","kind":"symbol","title":"reward","role":"symbol","fragments":[{"kind":"identifier","text":"reward"}],"type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/reward","abstract":[{"text":"Reward associated with the survey or ","type":"text"},{"type":"codeVoice","code":"nil"}]},"doc://com.polling.Polling/documentation/Polling/POLSurvey/isEqualToSurvey:":{"url":"\/documentation\/polling\/polsurvey\/isequaltosurvey:","title":"isEqualToSurvey:","abstract":[{"text":"Indicates whether a given survey is equal to the receiver","type":"text"}],"role":"symbol","type":"topic","kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/isEqualToSurvey:","fragments":[{"text":"- ","kind":"text"},{"kind":"identifier","text":"isEqualToSurvey:"}],"navigatorTitle":[{"kind":"identifier","text":"isEqualToSurvey:"}]},"doc://com.polling.Polling/documentation/Polling/POLSurvey/available":{"url":"\/documentation\/polling\/polsurvey\/available","kind":"symbol","title":"available","role":"symbol","fragments":[{"kind":"identifier","text":"available"}],"type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/available","abstract":[{"code":"YES","type":"codeVoice"},{"type":"text","text":" if the survey is available"}]},"doc://com.polling.Polling/documentation/Polling":{"title":"Polling","url":"\/documentation\/polling","role":"collection","kind":"symbol","type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","abstract":[{"text":"Poll and survey your users with ease","type":"text"}]},"doc://com.polling.Polling/documentation/Polling/POLSurvey/name":{"url":"\/documentation\/polling\/polsurvey\/name","title":"name","abstract":[{"text":"Name of the survey","type":"text"}],"role":"symbol","type":"topic","kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/name","fragments":[{"text":"name","kind":"identifier"}]},"doc://com.polling.Polling/documentation/Polling/POLSurvey/started":{"url":"\/documentation\/polling\/polsurvey\/started","kind":"symbol","title":"started","role":"symbol","fragments":[{"kind":"identifier","text":"started"}],"type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/started","abstract":[{"code":"YES","type":"codeVoice"},{"type":"text","text":" if the survey has been opened but not completed"}]},"doc://com.polling.Polling/documentation/Polling/POLSurvey/questionCount":{"url":"\/documentation\/polling\/polsurvey\/questioncount","title":"questionCount","abstract":[{"text":"Number of questions the survey contains","type":"text"}],"role":"symbol","type":"topic","kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/questionCount","fragments":[{"text":"questionCount","kind":"identifier"}]},"doc://com.polling.Polling/objc(cs)NSObject":{"identifier":"doc:\/\/com.polling.Polling\/objc(cs)NSObject","title":"NSObject","type":"unresolvable"},"doc://com.polling.Polling/documentation/Polling/POLSurvey":{"url":"\/documentation\/polling\/polsurvey","fragments":[{"kind":"identifier","text":"POLSurvey"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey","type":"topic","kind":"symbol","title":"POLSurvey","abstract":[{"type":"text","text":"An object representing a survey"}],"role":"symbol"},"doc://com.polling.Polling/documentation/Polling/POLSurvey/completed":{"url":"\/documentation\/polling\/polsurvey\/completed","title":"completed","abstract":[{"code":"YES","type":"codeVoice"},{"type":"text","text":" when the survey is completed"}],"role":"symbol","type":"topic","kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completed","fragments":[{"kind":"identifier","text":"completed"}]}}}
+{
+  "abstract" : [
+    {
+      "text" : "An object representing a survey",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLSurvey",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLSurvey"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLSurvey"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Class",
+    "symbolKind" : "class",
+    "title" : "POLSurvey"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "@interface"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLSurvey"
+            },
+            {
+              "kind" : "text",
+              "text" : " : "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSObject",
+              "text" : "NSObject"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A model object that encapsulates information specific to a survey.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/com.polling.Polling\/objc(cs)NSObject"
+      ],
+      "kind" : "relationships",
+      "title" : "Inherits From",
+      "type" : "inheritsFrom"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/UUID",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/available",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completed",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/name",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/questionCount",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/reward",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/started"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/isEqualToSurvey:"
+      ],
+      "title" : "Instance Methods"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polsurvey"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Poll and survey your users with ease",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey": {
+  "abstract" : [
+    {
+      "text" : "An object representing a survey",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurvey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurvey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey/UUID": {
+  "abstract" : [
+    {
+      "text" : "The survey’s UUID",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "UUID"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/UUID",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "UUID",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey\/uuid"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey/available": {
+  "abstract" : [
+    {
+      "code" : "YES",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " if the survey is available",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "available"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/available",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "available",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey\/available"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey/completed": {
+  "abstract" : [
+    {
+      "code" : "YES",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " when the survey is completed",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "completed"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completed",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "completed",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey\/completed"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey/isEqualToSurvey:": {
+  "abstract" : [
+    {
+      "text" : "Indicates whether a given survey is equal to the receiver",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isEqualToSurvey:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/isEqualToSurvey:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "isEqualToSurvey:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "isEqualToSurvey:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey\/isequaltosurvey:"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey/name": {
+  "abstract" : [
+    {
+      "text" : "Name of the survey",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "name"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/name",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "name",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey\/name"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey/questionCount": {
+  "abstract" : [
+    {
+      "text" : "Number of questions the survey contains",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "questionCount"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/questionCount",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "questionCount",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey\/questioncount"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey/reward": {
+  "abstract" : [
+    {
+      "text" : "Reward associated with the survey or ",
+      "type" : "text"
+    },
+    {
+      "code" : "nil",
+      "type" : "codeVoice"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "reward"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/reward",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "reward",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey\/reward"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurvey/started": {
+  "abstract" : [
+    {
+      "code" : "YES",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " if the survey has been opened but not completed",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "started"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/started",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "started",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurvey\/started"
+},
+"doc://com.polling.Polling/objc(cs)NSObject": {
+  "identifier" : "doc:\/\/com.polling.Polling\/objc(cs)NSObject",
+  "title" : "NSObject",
+  "type" : "unresolvable"
+}
+}
+}

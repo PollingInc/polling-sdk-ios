@@ -1,1 +1,125 @@
-{"schemaVersion":{"major":0,"patch":0,"minor":3},"sections":[],"metadata":{"navigatorTitle":[{"text":"POLGuardPublicAPI","kind":"identifier"}],"title":"POLGuardPublicAPI","fragments":[{"text":"POLGuardPublicAPI","kind":"identifier"}],"modules":[{"name":"Polling"}],"symbolKind":"macro","role":"symbol","externalID":"c:POLPolling+Private.h@366@macro@POLGuardPublicAPI","roleHeading":"Macro"},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling"]]},"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"text":"#define","kind":"keyword"},{"kind":"text","text":" "},{"kind":"identifier","text":"POLGuardPublicAPI"},{"kind":"text","text":"()"}],"platforms":["iOS"],"languages":["occ"]}]}],"kind":"symbol","variants":[{"paths":["\/documentation\/polling\/polguardpublicapi"],"traits":[{"interfaceLanguage":"occ"}]}],"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLGuardPublicAPI","interfaceLanguage":"occ"},"references":{"doc://com.polling.Polling/documentation/Polling/POLGuardPublicAPI":{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLGuardPublicAPI","type":"topic","url":"\/documentation\/polling\/polguardpublicapi","title":"POLGuardPublicAPI","fragments":[{"text":"POLGuardPublicAPI","kind":"identifier"}],"kind":"symbol","role":"symbol","abstract":[]},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLGuardPublicAPI"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:POLPolling+Private.h@366@macro@POLGuardPublicAPI",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLGuardPublicAPI"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLGuardPublicAPI"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Macro",
+    "symbolKind" : "macro",
+    "title" : "POLGuardPublicAPI"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "#define"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLGuardPublicAPI"
+            },
+            {
+              "kind" : "text",
+              "text" : "()"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polguardpublicapi"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLGuardPublicAPI": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLGuardPublicAPI"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLGuardPublicAPI",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLGuardPublicAPI",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polguardpublicapi"
+}
+}
+}

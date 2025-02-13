@@ -1,1 +1,162 @@
-{"schemaVersion":{"minor":3,"patch":0,"major":0},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession"]]},"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"tokens":[{"text":"- (","kind":"text"},{"preciseIdentifier":"c:v","text":"void","kind":"typeIdentifier"},{"text":") ","kind":"text"},{"text":"fetchAvailableSurveys","kind":"identifier"},{"text":";","kind":"text"}],"languages":["occ"]}]}],"variants":[{"paths":["\/documentation\/polling\/polnetworksession\/fetchavailablesurveys"],"traits":[{"interfaceLanguage":"occ"}]}],"kind":"symbol","identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/fetchAvailableSurveys"},"sections":[],"metadata":{"externalID":"c:objc(cs)POLNetworkSession(im)fetchAvailableSurveys","title":"fetchAvailableSurveys","navigatorTitle":[{"text":"fetchAvailableSurveys","kind":"identifier"}],"roleHeading":"Instance Method","role":"symbol","symbolKind":"method","fragments":[{"text":"- ","kind":"text"},{"kind":"identifier","text":"fetchAvailableSurveys"}],"modules":[{"name":"Polling"}]},"references":{"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLNetworkSession":{"type":"topic","fragments":[{"kind":"identifier","text":"POLNetworkSession"}],"title":"POLNetworkSession","abstract":[],"url":"\/documentation\/polling\/polnetworksession","role":"symbol","kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession"},"doc://com.polling.Polling/documentation/Polling/POLNetworkSession/fetchAvailableSurveys":{"abstract":[],"title":"fetchAvailableSurveys","role":"symbol","navigatorTitle":[{"text":"fetchAvailableSurveys","kind":"identifier"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/fetchAvailableSurveys","kind":"symbol","url":"\/documentation\/polling\/polnetworksession\/fetchavailablesurveys","fragments":[{"kind":"text","text":"- "},{"text":"fetchAvailableSurveys","kind":"identifier"}],"type":"topic"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/fetchAvailableSurveys"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLNetworkSession(im)fetchAvailableSurveys",
+    "fragments" : [
+      {
+        "kind" : "text",
+        "text" : "- "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "fetchAvailableSurveys"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "fetchAvailableSurveys"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "fetchAvailableSurveys"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "text",
+              "text" : "- ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:v",
+              "text" : "void"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "fetchAvailableSurveys"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polnetworksession\/fetchavailablesurveys"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLNetworkSession": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLNetworkSession"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLNetworkSession",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksession"
+},
+"doc://com.polling.Polling/documentation/Polling/POLNetworkSession/fetchAvailableSurveys": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "fetchAvailableSurveys"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/fetchAvailableSurveys",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "fetchAvailableSurveys"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "fetchAvailableSurveys",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksession\/fetchavailablesurveys"
+}
+}
+}

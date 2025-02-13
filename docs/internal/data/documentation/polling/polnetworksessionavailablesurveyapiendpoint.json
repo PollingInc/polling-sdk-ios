@@ -1,1 +1,134 @@
-{"metadata":{"roleHeading":"Global Variable","symbolKind":"var","modules":[{"name":"Polling"}],"externalID":"c:@POLNetworkSessionAvailableSurveyAPIEndpoint","navigatorTitle":[{"kind":"identifier","text":"POLNetworkSessionAvailableSurveyAPIEndpoint"}],"role":"symbol","fragments":[{"text":"POLNetworkSessionAvailableSurveyAPIEndpoint","kind":"identifier"}],"title":"POLNetworkSessionAvailableSurveyAPIEndpoint"},"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionAvailableSurveyAPIEndpoint","interfaceLanguage":"occ"},"variants":[{"paths":["\/documentation\/polling\/polnetworksessionavailablesurveyapiendpoint"],"traits":[{"interfaceLanguage":"occ"}]}],"kind":"symbol","schemaVersion":{"major":0,"minor":3,"patch":0},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling"]]},"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"text":"extern","kind":"keyword"},{"text":" ","kind":"text"},{"kind":"typeIdentifier","text":"NSString","preciseIdentifier":"c:objc(cs)NSString"},{"text":" * ","kind":"text"},{"text":"POLNetworkSessionAvailableSurveyAPIEndpoint","kind":"identifier"},{"kind":"text","text":";"}],"platforms":["iOS"],"languages":["occ"]}]}],"sections":[],"references":{"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionAvailableSurveyAPIEndpoint":{"title":"POLNetworkSessionAvailableSurveyAPIEndpoint","role":"symbol","fragments":[{"text":"POLNetworkSessionAvailableSurveyAPIEndpoint","kind":"identifier"}],"url":"\/documentation\/polling\/polnetworksessionavailablesurveyapiendpoint","abstract":[],"type":"topic","kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionAvailableSurveyAPIEndpoint"},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionAvailableSurveyAPIEndpoint"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@POLNetworkSessionAvailableSurveyAPIEndpoint",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLNetworkSessionAvailableSurveyAPIEndpoint"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLNetworkSessionAvailableSurveyAPIEndpoint"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Global Variable",
+    "symbolKind" : "var",
+    "title" : "POLNetworkSessionAvailableSurveyAPIEndpoint"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "extern"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSString",
+              "text" : "NSString"
+            },
+            {
+              "kind" : "text",
+              "text" : " * "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLNetworkSessionAvailableSurveyAPIEndpoint"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polnetworksessionavailablesurveyapiendpoint"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionAvailableSurveyAPIEndpoint": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLNetworkSessionAvailableSurveyAPIEndpoint"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionAvailableSurveyAPIEndpoint",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLNetworkSessionAvailableSurveyAPIEndpoint",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksessionavailablesurveyapiendpoint"
+}
+}
+}

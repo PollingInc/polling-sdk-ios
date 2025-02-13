@@ -1,1 +1,131 @@
-{"metadata":{"fragments":[{"kind":"identifier","text":"POLLogLevelInfo"}],"modules":[{"name":"Polling"}],"symbolKind":"case","externalID":"c:@E@POLLogLevel@POLLogLevelInfo","roleHeading":"Enumeration Case","title":"POLLogLevelInfo","navigatorTitle":[{"kind":"identifier","text":"POLLogLevelInfo"}],"role":"symbol"},"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"tokens":[{"text":"POLLogLevelInfo","kind":"identifier"}],"languages":["occ"]}]}],"sections":[],"schemaVersion":{"patch":0,"major":0,"minor":3},"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelInfo"},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel"]]},"kind":"symbol","variants":[{"paths":["\/documentation\/polling\/polloglevel\/polloglevelinfo"],"traits":[{"interfaceLanguage":"occ"}]}],"references":{"doc://com.polling.Polling/documentation/Polling/POLLogLevel/POLLogLevelInfo":{"fragments":[{"kind":"identifier","text":"POLLogLevelInfo"}],"type":"topic","abstract":[],"kind":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelInfo","title":"POLLogLevelInfo","url":"\/documentation\/polling\/polloglevel\/polloglevelinfo","role":"symbol"},"doc://com.polling.Polling/documentation/Polling/POLLogLevel":{"abstract":[],"fragments":[{"kind":"identifier","text":"POLLogLevel"}],"kind":"symbol","type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel","title":"POLLogLevel","url":"\/documentation\/polling\/polloglevel","role":"symbol"},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelInfo"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@E@POLLogLevel@POLLogLevelInfo",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLLogLevelInfo"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLLogLevelInfo"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Enumeration Case",
+    "symbolKind" : "case",
+    "title" : "POLLogLevelInfo"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "identifier",
+              "text" : "POLLogLevelInfo"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polloglevel\/polloglevelinfo"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLLogLevel": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLLogLevel"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLLogLevel",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polloglevel"
+},
+"doc://com.polling.Polling/documentation/Polling/POLLogLevel/POLLogLevelInfo": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLLogLevelInfo"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelInfo",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLLogLevelInfo",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polloglevel\/polloglevelinfo"
+}
+}
+}

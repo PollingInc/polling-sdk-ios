@@ -1,1 +1,134 @@
-{"metadata":{"navigatorTitle":[{"text":"POLErrorFileKey","kind":"identifier"}],"fragments":[{"text":"POLErrorFileKey","kind":"identifier"}],"title":"POLErrorFileKey","externalID":"c:@POLErrorFileKey","roleHeading":"Global Variable","symbolKind":"var","modules":[{"name":"Polling"}],"role":"symbol"},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling"]]},"kind":"symbol","identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorFileKey","interfaceLanguage":"occ"},"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polerrorfilekey"]}],"schemaVersion":{"major":0,"patch":0,"minor":3},"sections":[],"primaryContentSections":[{"declarations":[{"tokens":[{"kind":"keyword","text":"extern"},{"kind":"text","text":" "},{"text":"NSString","preciseIdentifier":"c:objc(cs)NSString","kind":"typeIdentifier"},{"kind":"text","text":" * "},{"kind":"identifier","text":"POLErrorFileKey"},{"text":";","kind":"text"}],"languages":["occ"],"platforms":["iOS"]}],"kind":"declarations"}],"references":{"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLErrorFileKey":{"abstract":[],"type":"topic","kind":"symbol","url":"\/documentation\/polling\/polerrorfilekey","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorFileKey","title":"POLErrorFileKey","fragments":[{"kind":"identifier","text":"POLErrorFileKey"}],"role":"symbol"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorFileKey"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@POLErrorFileKey",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLErrorFileKey"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLErrorFileKey"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Global Variable",
+    "symbolKind" : "var",
+    "title" : "POLErrorFileKey"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "extern"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSString",
+              "text" : "NSString"
+            },
+            {
+              "kind" : "text",
+              "text" : " * "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLErrorFileKey"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polerrorfilekey"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLErrorFileKey": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLErrorFileKey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorFileKey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLErrorFileKey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polerrorfilekey"
+}
+}
+}

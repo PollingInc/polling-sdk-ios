@@ -1,1 +1,126 @@
-{"schemaVersion":{"patch":0,"major":0,"minor":3},"metadata":{"navigatorTitle":[{"kind":"identifier","text":"POLLogDefault"}],"symbolKind":"func","externalID":"c:@F@POLLogDefault","role":"symbol","roleHeading":"Function","fragments":[{"text":"POLLogDefault","kind":"identifier"}],"title":"POLLogDefault","modules":[{"name":"Polling"}]},"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogDefault","interfaceLanguage":"occ"},"kind":"symbol","primaryContentSections":[{"declarations":[{"languages":["occ"],"platforms":["iOS"],"tokens":[{"kind":"typeIdentifier","text":"os_log_t","preciseIdentifier":"c:@T@os_log_t"},{"text":" ","kind":"text"},{"text":"POLLogDefault","kind":"identifier"},{"text":"();","kind":"text"}]}],"kind":"declarations"}],"sections":[],"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling"]]},"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/pollogdefault"]}],"references":{"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLLogDefault":{"fragments":[{"kind":"identifier","text":"POLLogDefault"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogDefault","url":"\/documentation\/polling\/pollogdefault","type":"topic","abstract":[],"role":"symbol","kind":"symbol","title":"POLLogDefault"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogDefault"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@F@POLLogDefault",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLLogDefault"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLLogDefault"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Function",
+    "symbolKind" : "func",
+    "title" : "POLLogDefault"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:@T@os_log_t",
+              "text" : "os_log_t"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLLogDefault"
+            },
+            {
+              "kind" : "text",
+              "text" : "();"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/pollogdefault"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLLogDefault": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLLogDefault"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogDefault",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLLogDefault",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/pollogdefault"
+}
+}
+}

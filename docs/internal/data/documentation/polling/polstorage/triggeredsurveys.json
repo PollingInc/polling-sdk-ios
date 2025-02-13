@@ -1,1 +1,152 @@
-{"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage"]]},"sections":[],"identifier":{"url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage\/triggeredSurveys","interfaceLanguage":"occ"},"schemaVersion":{"minor":3,"major":0,"patch":0},"metadata":{"modules":[{"name":"Polling"}],"roleHeading":"Instance Property","role":"symbol","symbolKind":"property","title":"triggeredSurveys","externalID":"c:objc(cs)POLStorage(py)triggeredSurveys","navigatorTitle":[{"text":"triggeredSurveys","kind":"identifier"}],"fragments":[{"text":"triggeredSurveys","kind":"identifier"}]},"primaryContentSections":[{"kind":"declarations","declarations":[{"languages":["occ"],"platforms":["iOS"],"tokens":[{"text":"@property","kind":"keyword"},{"text":" ","kind":"text"},{"kind":"typeIdentifier","text":"NSArray<POLTriggeredSurvey *>","preciseIdentifier":"c:Q$objc(cs)NSArray"},{"text":" * ","kind":"text"},{"kind":"identifier","text":"triggeredSurveys"},{"text":";","kind":"text"}]}]}],"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polstorage\/triggeredsurveys"]}],"kind":"symbol","references":{"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLStorage/triggeredSurveys":{"abstract":[],"role":"symbol","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage\/triggeredSurveys","type":"topic","title":"triggeredSurveys","url":"\/documentation\/polling\/polstorage\/triggeredsurveys","kind":"symbol","fragments":[{"text":"triggeredSurveys","kind":"identifier"}]},"doc://com.polling.Polling/documentation/Polling/POLStorage":{"role":"symbol","fragments":[{"text":"POLStorage","kind":"identifier"}],"abstract":[],"type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage","url":"\/documentation\/polling\/polstorage","title":"POLStorage","kind":"symbol"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage\/triggeredSurveys"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLStorage(py)triggeredSurveys",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "triggeredSurveys"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "triggeredSurveys"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "triggeredSurveys"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "@property"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:Q$objc(cs)NSArray",
+              "text" : "NSArray<POLTriggeredSurvey *>"
+            },
+            {
+              "kind" : "text",
+              "text" : " * "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "triggeredSurveys"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polstorage\/triggeredsurveys"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLStorage": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLStorage"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLStorage",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polstorage"
+},
+"doc://com.polling.Polling/documentation/Polling/POLStorage/triggeredSurveys": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "triggeredSurveys"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage\/triggeredSurveys",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "triggeredSurveys",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polstorage\/triggeredsurveys"
+}
+}
+}

@@ -1,1 +1,162 @@
-{"primaryContentSections":[{"kind":"declarations","declarations":[{"tokens":[{"kind":"text","text":"- ("},{"text":"NSString","preciseIdentifier":"c:objc(cs)NSString","kind":"typeIdentifier"},{"text":" *) ","kind":"text"},{"text":"subsystem","kind":"identifier"},{"kind":"text","text":";"}],"languages":["occ"],"platforms":["iOS"]}]}],"kind":"symbol","schemaVersion":{"patch":0,"major":0,"minor":3},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError"]]},"variants":[{"paths":["\/documentation\/polling\/polerror\/subsystem"],"traits":[{"interfaceLanguage":"occ"}]}],"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError\/subsystem"},"sections":[],"metadata":{"symbolKind":"method","fragments":[{"text":"- ","kind":"text"},{"kind":"identifier","text":"subsystem"}],"title":"subsystem","modules":[{"name":"Polling"}],"role":"symbol","navigatorTitle":[{"kind":"identifier","text":"subsystem"}],"externalID":"c:objc(cs)POLError(im)subsystem","roleHeading":"Instance Method"},"references":{"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"},"doc://com.polling.Polling/documentation/Polling/POLError/subsystem":{"role":"symbol","navigatorTitle":[{"text":"subsystem","kind":"identifier"}],"title":"subsystem","type":"topic","kind":"symbol","abstract":[],"fragments":[{"kind":"text","text":"- "},{"text":"subsystem","kind":"identifier"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError\/subsystem","url":"\/documentation\/polling\/polerror\/subsystem"},"doc://com.polling.Polling/documentation/Polling/POLError":{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError","fragments":[{"text":"POLError","kind":"identifier"}],"kind":"symbol","abstract":[],"url":"\/documentation\/polling\/polerror","type":"topic","title":"POLError","role":"symbol"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError\/subsystem"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLError(im)subsystem",
+    "fragments" : [
+      {
+        "kind" : "text",
+        "text" : "- "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "subsystem"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "subsystem"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "subsystem"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "text",
+              "text" : "- ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSString",
+              "text" : "NSString"
+            },
+            {
+              "kind" : "text",
+              "text" : " *) "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "subsystem"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polerror\/subsystem"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLError": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLError"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLError",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polerror"
+},
+"doc://com.polling.Polling/documentation/Polling/POLError/subsystem": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "subsystem"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError\/subsystem",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "subsystem"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "subsystem",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polerror\/subsystem"
+}
+}
+}

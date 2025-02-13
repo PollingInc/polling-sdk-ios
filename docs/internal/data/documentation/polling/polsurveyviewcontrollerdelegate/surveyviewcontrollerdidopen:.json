@@ -1,1 +1,197 @@
-{"variants":[{"traits":[{"interfaceLanguage":"occ"}],"paths":["\/documentation\/polling\/polsurveyviewcontrollerdelegate\/surveyviewcontrollerdidopen:"]}],"metadata":{"fragments":[{"kind":"text","text":"- "},{"text":"surveyViewControllerDidOpen:","kind":"identifier"}],"symbolKind":"method","navigatorTitle":[{"text":"surveyViewControllerDidOpen:","kind":"identifier"}],"externalID":"c:objc(pl)POLSurveyViewControllerDelegate(im)surveyViewControllerDidOpen:","role":"symbol","modules":[{"name":"Polling"}],"roleHeading":"Instance Method","title":"surveyViewControllerDidOpen:"},"hierarchy":{"paths":[["doc:\/\/com.polling.Polling\/documentation\/Polling","doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate"]]},"kind":"symbol","sections":[],"primaryContentSections":[{"kind":"declarations","declarations":[{"platforms":["iOS"],"tokens":[{"text":"- (","kind":"text"},{"text":"void","preciseIdentifier":"c:v","kind":"typeIdentifier"},{"text":") ","kind":"text"},{"text":"surveyViewControllerDidOpen:","kind":"identifier"},{"text":"(","kind":"text"},{"kind":"typeIdentifier","preciseIdentifier":"c:objc(cs)POLSurveyViewController","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController","text":"POLSurveyViewController"},{"kind":"text","text":" *) "},{"text":"surveyViewController","kind":"internalParam"},{"text":";","kind":"text"}],"languages":["occ"]}]}],"identifier":{"interfaceLanguage":"occ","url":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidOpen:"},"schemaVersion":{"major":0,"minor":3,"patch":0},"references":{"doc://com.polling.Polling/documentation/Polling/POLSurveyViewController":{"abstract":[],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController","kind":"symbol","role":"symbol","fragments":[{"kind":"identifier","text":"POLSurveyViewController"}],"url":"\/documentation\/polling\/polsurveyviewcontroller","title":"POLSurveyViewController","type":"topic"},"doc://com.polling.Polling/documentation/Polling/POLSurveyViewControllerDelegate":{"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate","fragments":[{"text":"POLSurveyViewControllerDelegate","kind":"identifier"}],"url":"\/documentation\/polling\/polsurveyviewcontrollerdelegate","abstract":[],"kind":"symbol","type":"topic","title":"POLSurveyViewControllerDelegate","role":"symbol"},"doc://com.polling.Polling/documentation/Polling/POLSurveyViewControllerDelegate/surveyViewControllerDidOpen:":{"role":"symbol","title":"surveyViewControllerDidOpen:","url":"\/documentation\/polling\/polsurveyviewcontrollerdelegate\/surveyviewcontrollerdidopen:","fragments":[{"text":"- ","kind":"text"},{"kind":"identifier","text":"surveyViewControllerDidOpen:"}],"abstract":[],"kind":"symbol","navigatorTitle":[{"text":"surveyViewControllerDidOpen:","kind":"identifier"}],"type":"topic","identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidOpen:"},"doc://com.polling.Polling/documentation/Polling":{"abstract":[{"text":"Internal developer documentation","type":"text"}],"identifier":"doc:\/\/com.polling.Polling\/documentation\/Polling","role":"collection","type":"topic","kind":"symbol","url":"\/documentation\/polling","title":"Polling"}}}
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.Polling\/documentation\/Polling",
+        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidOpen:"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(pl)POLSurveyViewControllerDelegate(im)surveyViewControllerDidOpen:",
+    "fragments" : [
+      {
+        "kind" : "text",
+        "text" : "- "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "surveyViewControllerDidOpen:"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "surveyViewControllerDidOpen:"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "surveyViewControllerDidOpen:"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "text",
+              "text" : "- ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:v",
+              "text" : "void"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "surveyViewControllerDidOpen:"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)POLSurveyViewController",
+              "text" : "POLSurveyViewController"
+            },
+            {
+              "kind" : "text",
+              "text" : " *) "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "surveyViewController"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polsurveyviewcontrollerdelegate\/surveyviewcontrollerdidopen:"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.Polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurveyViewController": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyViewController"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyViewController",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurveyViewControllerDelegate": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyViewControllerDelegate"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyViewControllerDelegate",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontrollerdelegate"
+},
+"doc://com.polling.Polling/documentation/Polling/POLSurveyViewControllerDelegate/surveyViewControllerDidOpen:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "surveyViewControllerDidOpen:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidOpen:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "surveyViewControllerDidOpen:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "surveyViewControllerDidOpen:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontrollerdelegate\/surveyviewcontrollerdidopen:"
+}
+}
+}
