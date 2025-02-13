@@ -466,6 +466,8 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Polling/Info.plist",
+				"$(SRCROOT)/../Scripts/xcode-process-info-plist",
+				"$(SRCROOT)/../Scripts/version.rb",
 			);
 			outputFileListPaths = (
 			);
