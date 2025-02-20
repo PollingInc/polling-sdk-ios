@@ -96,6 +96,7 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 	POLTriggeredSurveyController *_triggeredSurveyController;
 	POLTriggeredSurvey *_inboundTriggeredSurvey;
 	POLSurvey *_currentSurvey;
+	BOOL _disableCheckingForAvailableSurveys;
 }
 
 - init
@@ -201,6 +202,19 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 	[self presentSurveyInternal:[POLSurvey surveyWithUUID:surveyUuid]];
 }
 
+- (BOOL)disableCheckingForAvailableSurveys
+{
+	return _disableCheckingForAvailableSurveys;
+}
+
+- (void)setDisableCheckingForAvailableSurveys:(BOOL)disabled
+{
+	POLGuardPublicAPI();
+	if (_disableCheckingForAvailableSurveys && !disabled)
+		[self beginSurveyChecks];
+	_disableCheckingForAvailableSurveys = disabled;
+}
+
 #pragma mark - Internal
 
 - (void)dealloc
@@ -218,6 +232,11 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 												selector:@selector(performRemoteSurveyChecks)
 												userInfo:nil
 												 repeats:YES];
+
+	/* Run first check on next run loop iteration allowing the for SDK initialization to complete */
+	[self performSelectorOnMainThread:@selector(performRemoteSurveyChecks)
+						   withObject:nil
+						waitUntilDone:NO];
 }
 
 - (void)stopSurveyChecks
