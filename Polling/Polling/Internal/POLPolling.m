@@ -21,11 +21,7 @@
 #import "POLReward.h"
 #import "POLTriggeredSurvey.h"
 
-//#if DEBUG
-//static const NSTimeInterval POLPollingPollRateInterval = 5;       // 5 seconds
-//#else
-static const NSTimeInterval POLPollingPollRateInterval = 60;      // 1 minute
-//#endif
+static const NSTimeInterval POLPollingPollRateInterval = 60 * 60;      // 1 hour
 
 static BOOL POLSDKInitialized = NO;
 static BOOL POLSDKShutdown = NO;
@@ -176,6 +172,10 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 	POLGuardPublicAPI();
 	POLLogTrace("%s %@:%@", __func__, eventName, eventValue);
 	[_networkSession postEvent:eventName withValue:eventValue];
+
+	// force survey checks and reset timer
+	[self stopSurveyChecks];
+	[self beginSurveyChecks];
 }
 
 - (void)logPurchase:(int)integerCents
@@ -324,6 +324,10 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 	// completion
 	if (!survey.isAvailable)
 		[_triggeredSurveyController removeSurvey:survey];
+
+	// force survey checks and reset timer
+	[self stopSurveyChecks];
+	[self beginSurveyChecks];
 }
 
 - (void)networkSessionDidFailWithError:(POLError *)error
