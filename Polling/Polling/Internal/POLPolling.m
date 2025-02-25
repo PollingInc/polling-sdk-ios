@@ -470,7 +470,7 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 	if ([presented isKindOfClass:POLCompatibleSurveyViewController.class]) {
 		POLCompatibleSurveyViewController *vc = (POLCompatibleSurveyViewController *)presented;
 		if (vc.viewType == POLViewTypeDialog)
-			return [POLSurveyDialogAnimateInController animateInWithViewController:vc];
+			return POLSurveyDialogAnimateInController.new;
 		else if (vc.viewType == POLViewTypeBottom)
 			return POLSurveyBottomAnimateInController.new;
 	}

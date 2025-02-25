@@ -32,6 +32,7 @@
 		CGAffineTransform startAF = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, toContainerView.frame.size.height);
 		CGAffineTransform finalAF = CGAffineTransformIdentity;
 
+		toView.frame = containerView.frame;
 		[containerView addSubview:toView];
 
 		POLLogTrace("%@ beginAnimation toContainerView=%@, duration=%G", NSStringFromClass(self.class), toContainerView, duration);

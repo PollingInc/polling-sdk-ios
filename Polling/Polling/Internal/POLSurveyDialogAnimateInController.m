@@ -11,11 +11,6 @@
 
 @implementation POLSurveyDialogAnimateInController
 
-+ (instancetype)animateInWithViewController:(UIViewController *)vc
-{
-	return self.new;
-}
-
 - (void)animateTransition:(nonnull id<UIViewControllerContextTransitioning>)transitionContext
 {
 	UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
@@ -37,6 +32,7 @@
 		CGAffineTransform startAF = CGAffineTransformScale(CGAffineTransformIdentity, 0, 0);
 		CGAffineTransform finalAF = CGAffineTransformIdentity;
 
+		toView.frame = containerView.frame;
 		[containerView addSubview:toView];
 
 		POLLogTrace("%@ beginAnimation toContainerView=%@, duration=%G", NSStringFromClass(self.class), toContainerView, duration);

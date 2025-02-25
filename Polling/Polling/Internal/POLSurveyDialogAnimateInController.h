@@ -11,8 +11,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface POLSurveyDialogAnimateInController : NSObject <UIViewControllerAnimatedTransitioning>
 
-+ (instancetype)animateInWithViewController:(UIViewController *)vc;
-
 @end
 
 NS_ASSUME_NONNULL_END
