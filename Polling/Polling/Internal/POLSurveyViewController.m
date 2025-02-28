@@ -52,7 +52,7 @@
 
 	[_config.userContentController addUserScript:self.userScriptPreventTextInputZoom];
 
-	if (@available(macOS 10.15, iOS 13 *)) {
+	if (@available(macOS 10.15, iOS 13, *)) {
 		[_config.userContentController addUserScript:self.userScriptResizeObserver];
 	}
 

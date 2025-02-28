@@ -29,6 +29,23 @@ typedef NS_ENUM(NSUInteger, POLSurveyViewSizeClass) {
 	POLSurveyViewSizeClassMaximum = 2,
 };
 
+NSString * const POLSurveyViewSizeClassDefaultDescription = @"Default";
+NSString * const POLSurveyViewSizeClassMatchContentDescription = @"MatchContent";
+NSString * const POLSurveyViewSizeClassMaximumDescription = @"Maximum";
+
+NSString * const POLSurveyViewSizeClassDescriptions[] = {
+	[POLSurveyViewSizeClassDefault] = POLSurveyViewSizeClassDefaultDescription,
+	[POLSurveyViewSizeClassMatchContent] = POLSurveyViewSizeClassMatchContentDescription,
+	[POLSurveyViewSizeClassMaximum] = POLSurveyViewSizeClassMaximumDescription,
+};
+
+NSString * const POLSurveyViewSizeClassDescription(POLSurveyViewSizeClass sizeClass)
+{
+	if (sizeClass > POL_ARRAY_SIZE(POLSurveyViewSizeClassDescriptions) - 1)
+		return @"Unknown";
+	return POLSurveyViewSizeClassDescriptions[sizeClass];
+}
+
 static const CGFloat POLSurveyViewCloseableAreaHeight = 44;
 
 #pragma mark - View
@@ -55,7 +72,6 @@ static const CGFloat POLSurveyViewCloseableAreaHeight = 44;
 
 @implementation POLCompatibleSurveyViewController {
 	POLSurveyViewSizeClass _currentSizeClass;
-	CGFloat _initialContainerHeight;
 	BOOL _observingContentSizeChanges;
 	BOOL _pauseObserver;
 }
@@ -157,7 +173,6 @@ static const CGFloat POLSurveyViewCloseableAreaHeight = 44;
 #endif
 
 	_currentSizeClass = POLSurveyViewSizeClassDefault;
-	_initialContainerHeight = self.containerView.frame.size.height;
 	[self beginObservingContentSizeChanges];
 
 	[self.delegate surveyViewControllerDidOpen:self];
@@ -248,7 +263,7 @@ static const CGFloat POLSurveyViewCloseableAreaHeight = 44;
 	if (context == POLWebViewContentSizeChangedContext) {
 		// leaving these for serious debugging
 		//POLLogTrace("%s object=%@, keyPath=%@, change=%@", __func__, object, keyPath, change);
-		POLLogTrace("contentSizeChange[%d] keyPath=%@, change=%@", contentSizeChangeCount++, keyPath, change);
+		//POLLogTrace("contentSizeChange[%d] keyPath=%@, change=%@", contentSizeChangeCount++, keyPath, change);
 
 		// assume change kind == NSKeyValueChangeSetting
 
@@ -259,7 +274,7 @@ static const CGFloat POLSurveyViewCloseableAreaHeight = 44;
 		if (old.height == new.height)
 			return;
 
-		//POLLogTrace("contentSizeChange[%d] keyPath=%@, change=%@", contentSizeChangeCount++, keyPath, change);
+		POLLogTrace("contentSizeChange[%d] keyPath=%@, change=%@", contentSizeChangeCount++, keyPath, change);
 
 		if (CGSizeEqualToSize(new, CGSizeZero))
 			return;
@@ -307,19 +322,27 @@ static const CGFloat POLSurveyViewCloseableAreaHeight = 44;
 	CGFloat minHeight = (fullHeight - safeAreaInsets.top - safeAreaInsets.bottom) / 2;
 	POLLogTrace("Minimum height for containerView is %G", minHeight);
 
+	POLLogTrace("CUR size class = %@", POLSurveyViewSizeClassDescription(_currentSizeClass));
+
 	// best size class for content height
 	if (contentHeight <= minHeight)
 		newSizeClass = POLSurveyViewSizeClassDefault;
-	else if (contentHeight > _initialContainerHeight && contentHeight < maxSafeHeight)
+	else if (contentHeight < maxSafeHeight)
 		newSizeClass = POLSurveyViewSizeClassMatchContent;
 	else
 		newSizeClass = POLSurveyViewSizeClassMaximum;
 
+	POLLogTrace("NEW size class = %@", POLSurveyViewSizeClassDescription(newSizeClass));
+
 	// skip vacuous changes
-	if (_currentSizeClass == newSizeClass && newSizeClass == POLSurveyViewSizeClassDefault)
+	if (_currentSizeClass == newSizeClass && newSizeClass == POLSurveyViewSizeClassDefault) {
+		POLLogTrace("SKIP vacuous changes");
 		return;
-	if (_currentSizeClass == newSizeClass && newSizeClass == POLSurveyViewSizeClassMaximum)
+	}
+	if (_currentSizeClass == newSizeClass && newSizeClass == POLSurveyViewSizeClassMaximum) {
+		POLLogTrace("SKIP vacuous changes");
 		return;
+	}
 
 	/* Don't skip cur == new && new == MatchContent because the size
 	 * may have actually changed. */
@@ -336,14 +359,16 @@ static const CGFloat POLSurveyViewCloseableAreaHeight = 44;
 			self.bottomHalfHeightConstraint.active = NO;
 			self.bottomTopOffsetConstraint.active = YES;
 			if (newSizeClass == POLSurveyViewSizeClassMatchContent)
-				self.bottomTopOffsetConstraint.constant = maxSafeHeight - contentHeight;
+				self.bottomTopOffsetConstraint.constant =
+					maxSafeHeight - contentHeight + safeAreaInsets.bottom;
 			else if (newSizeClass == POLSurveyViewSizeClassMaximum)
 				self.bottomTopOffsetConstraint.constant = POLSurveyViewCloseableAreaHeight;
+			POLLogTrace("CONSTANT=%G", self.bottomTopOffsetConstraint.constant);
 		}
 	}
 
 	// pause observing until animations finish
-	_pauseObserver = YES;
+	//_pauseObserver = YES;
 
 	// perform animate view resize
 	POLLogTrace("BEGIN CONSTRAINT ANIMATION");
@@ -351,7 +376,7 @@ static const CGFloat POLSurveyViewCloseableAreaHeight = 44;
 		[self.backgroundView layoutIfNeeded];
 	} completion:^(BOOL finished) {
 		POLLogTrace("END CONSTRAINT ANIMATION finished=%{BOOL}d", finished);
-		self->_pauseObserver = NO;
+		//self->_pauseObserver = NO;
 	}];
 }
 
