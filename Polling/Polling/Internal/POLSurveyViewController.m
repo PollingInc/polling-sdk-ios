@@ -11,9 +11,7 @@
 #import "POLError.h"
 #import "POLSurvey.h"
 #import "POLSurvey+Private.h"
-
-//#import "POLUserScripts.h"
-FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
+#import "POLUserScript.h"
 
 #import <WebKit/WebKit.h>
 
@@ -37,6 +35,13 @@ FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
 							   forMainFrameOnly:YES];
 }
 
+- (WKUserScript *)userScriptResizeObserver
+{
+	return [[WKUserScript alloc] initWithSource:POLUserScriptResizeObserverSource
+								  injectionTime:WKUserScriptInjectionTimeAtDocumentEnd
+							   forMainFrameOnly:YES];
+}
+
 - (WKWebViewConfiguration *)webViewConfiguration
 {
 	if (_config)
@@ -46,6 +51,10 @@ FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
 	_config.applicationNameForUserAgent = @"Polling SDK for iOS";
 
 	[_config.userContentController addUserScript:self.userScriptPreventTextInputZoom];
+
+	if (@available(macOS 10.15, iOS 13 *)) {
+		[_config.userContentController addUserScript:self.userScriptResizeObserver];
+	}
 
 	WKPreferences *preferences = WKPreferences.new;
 	preferences.minimumFontSize = 16; // does not seem to work
@@ -58,7 +67,12 @@ FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
 {
 	POLLogInfo("Loading URL=%@ for survey=%@ in webView=%@", _survey.URL, _survey, _webView);
 
+#if DEBUG && defined(POL_SURVEY_URL)
+	NSURL *url = [NSURL URLWithString:POL_NSSTR(POL_SURVEY_URL)];
+	NSURLRequest *req = [NSURLRequest requestWithURL:url];
+#else
 	NSURLRequest *req = [NSURLRequest requestWithURL:_survey.URL];
+#endif
 	[_webView loadRequest:req];
 }
 
@@ -86,6 +100,16 @@ FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
 
 #pragma mark - Web View UI Delegate
 
+#if 0
+- (WKWebView *)webView:(WKWebView *)webView
+	createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration
+	forNavigationAction:(WKNavigationAction *)navigationAction
+	windowFeatures:(WKWindowFeatures *)windowFeatures
+{
+
+}
+#endif
+
 - (void)webViewDidClose:(WKWebView *)webView
 {
 	POLLogTrace("%s webView=%@", __func__, webView);
@@ -93,6 +117,40 @@ FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
 }
 
 #pragma mark - Web View Navigation Delegate
+
+#if 0
+- (void)webView:(WKWebView *)webView
+	decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction
+	decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
+{
+	POLLogTrace("%s webView=%@, navigationAction=%@", __func__, webView, navigationAction);
+	decisionHandler(WKNavigationActionPolicyAllow);
+}
+
+- (void)webView:(WKWebView *)webView
+	didStartProvisionalNavigation:(WKNavigation *)navigation
+{
+	POLLogTrace("%s webView=%@, navigation=%@", __func__, webView, navigation);
+	POLLogTrace("    webView.scrollView=%@", webView.scrollView);
+	POLLogTrace("    webView.scrollView.contentSize=%@", NSStringFromCGSize(webView.scrollView.contentSize));
+}
+
+- (void)webView:(WKWebView *)webView
+	didCommitNavigation:(WKNavigation *)navigation
+{
+	POLLogTrace("%s webView=%@, navigation=%@", __func__, webView, navigation);
+	POLLogTrace("    webView.scrollView=%@", webView.scrollView);
+	POLLogTrace("    webView.scrollView.contentSize=%@", NSStringFromCGSize(webView.scrollView.contentSize));
+}
+
+- (void)webView:(WKWebView *)webView
+	didFinishNavigation:(WKNavigation *)navigation
+{
+	POLLogTrace("%s webView=%@, navigation=%@", __func__, webView, navigation);
+	POLLogTrace("    webView.scrollView=%@", webView.scrollView);
+	POLLogTrace("    webView.scrollView.contentSize=%@", NSStringFromCGSize(webView.scrollView.contentSize));
+}
+#endif
 
 - (void)webView:(WKWebView *)webView
 	didFailNavigation:(WKNavigation *)navigation

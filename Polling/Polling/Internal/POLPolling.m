@@ -501,13 +501,17 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 
 - (void)surveyViewControllerDidOpen:(POLSurveyViewController *)surveyViewController
 {
+#if !POL_NO_SURVEY_LIFECYCLE
 	[_networkSession startSurvey:surveyViewController.survey];
+#endif
 }
 
 - (void)surveyViewControllerDidDismiss:(POLSurveyViewController *)surveyViewController
 {
 	_surveyVisible = NO;
+#if !POL_NO_SURVEY_LIFECYCLE
 	[_networkSession completeSurvey:surveyViewController.survey];
+#endif
 
 //	if (_currentSurvey)
 //		_currentSurvey.embedViewRequested = NO;

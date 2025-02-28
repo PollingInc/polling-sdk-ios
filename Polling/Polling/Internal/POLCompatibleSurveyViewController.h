@@ -21,6 +21,28 @@ NS_ASSUME_NONNULL_BEGIN
 
 - initWithSurvey:(POLSurvey *)survey viewType:(POLViewType)viewType;
 
+#pragma mark - Dialog Layout Constraints
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *dialogTopConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *dialogTopConstraint2;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *dialogBottomConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *dialogBottomConstraint2;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *dialogLeadingConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *dialogTrailingConstraint;
+
+#pragma mark - Bottom Layout Constraints
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomHalfHeightConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomTopOffsetConstraint;
+
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomBottomConstraint;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomLeadingConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomTrailingConstraint;
+
+
 @end
 
 @interface POLBackgroundView : UIView

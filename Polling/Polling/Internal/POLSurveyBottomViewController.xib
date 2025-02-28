@@ -12,6 +12,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="POLCompatibleSurveyViewController">
             <connections>
                 <outlet property="backgroundView" destination="i5M-Pr-FkT" id="TRm-H3-zTF"/>
+                <outlet property="bottomBottomConstraint" destination="afr-eH-htP" id="RNq-P6-skx"/>
+                <outlet property="bottomHalfHeightConstraint" destination="Ymo-JG-Aki" id="7o5-Rz-rgG"/>
+                <outlet property="bottomLeadingConstraint" destination="yek-6M-Kt0" id="mAj-fG-6vo"/>
+                <outlet property="bottomTopOffsetConstraint" destination="wOT-q2-hVM" id="quf-p3-yye"/>
+                <outlet property="bottomTrailingConstraint" destination="HcL-FO-WJE" id="ifj-w3-JlL"/>
                 <outlet property="containerView" destination="XRd-9P-aPU" id="3qm-y4-Niy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="QGJ-0N-gwT"/>
             </connections>
@@ -29,11 +34,17 @@
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="XRd-9P-aPU" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="HcL-FO-WJE"/>
-                <constraint firstItem="XRd-9P-aPU" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="bottom" multiplier="0.5" constant="8" symbolic="YES" id="Ymo-JG-Aki"/>
-                <constraint firstAttribute="bottom" secondItem="XRd-9P-aPU" secondAttribute="bottom" id="afr-eH-htP"/>
-                <constraint firstItem="XRd-9P-aPU" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="yek-6M-Kt0"/>
+                <constraint firstItem="XRd-9P-aPU" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" identifier="BottomTrailing" id="HcL-FO-WJE"/>
+                <constraint firstItem="XRd-9P-aPU" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="bottom" multiplier="0.5" constant="8" symbolic="YES" identifier="HalfHeight" id="Ymo-JG-Aki"/>
+                <constraint firstAttribute="bottom" secondItem="XRd-9P-aPU" secondAttribute="bottom" identifier="BottomBottom" id="afr-eH-htP"/>
+                <constraint firstItem="XRd-9P-aPU" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="44" identifier="TopOffset" id="wOT-q2-hVM"/>
+                <constraint firstItem="XRd-9P-aPU" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" identifier="BottomLeading" id="yek-6M-Kt0"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="wOT-q2-hVM"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="139.69465648854961" y="20.422535211267608"/>
         </view>
     </objects>
