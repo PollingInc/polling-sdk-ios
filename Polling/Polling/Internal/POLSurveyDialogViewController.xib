@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
@@ -24,11 +24,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="POLBackgroundView">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbK-hU-D4a" customClass="POLContainerView">
-                    <rect key="frame" x="16" y="140" width="288" height="308"/>
+                    <rect key="frame" x="16" y="179" width="361" height="519"/>
                     <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
             </subviews>
@@ -46,13 +46,13 @@
                     <variation key="heightClass=regular-widthClass=regular" constant="200"/>
                     <variation key="heightClass=regular-userInterfaceIdiom=mac-widthClass=regular" constant="100"/>
                 </constraint>
-                <constraint firstItem="dbK-hU-D4a" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" priority="750" identifier="DialogTop1" id="RrK-8O-V1A"/>
+                <constraint firstItem="dbK-hU-D4a" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" priority="750" constant="16" identifier="DialogTop1" id="RrK-8O-V1A"/>
                 <constraint firstItem="dbK-hU-D4a" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" identifier="DialogLeading" id="TyV-iI-8IF">
                     <variation key="heightClass=compact-widthClass=compact" constant="50"/>
                     <variation key="heightClass=compact-widthClass=regular" constant="50"/>
                     <variation key="heightClass=regular-widthClass=regular" constant="100"/>
                 </constraint>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="dbK-hU-D4a" secondAttribute="bottom" priority="750" identifier="DialogBottom1" id="hV3-0F-PIx"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="dbK-hU-D4a" secondAttribute="bottom" priority="750" constant="16" identifier="DialogBottom1" id="hV3-0F-PIx"/>
                 <constraint firstItem="dbK-hU-D4a" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="120" identifier="DialogTop2" id="k9s-2f-lV5">
                     <variation key="heightClass=compact-widthClass=compact" constant="30"/>
                     <variation key="heightClass=compact-widthClass=regular" constant="60"/>

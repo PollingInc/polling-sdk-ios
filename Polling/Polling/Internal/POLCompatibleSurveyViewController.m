@@ -335,6 +335,8 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 	CGFloat maxSafeHeight = fullHeight - safeAreaInsets.top - POLSurveyViewCloseableAreaHeight;
 	POLLogTrace("Maximum safe height for containerView is %G", maxSafeHeight);
 	CGFloat minHeight = (fullHeight - safeAreaInsets.top - safeAreaInsets.bottom) / 2;
+	if (_viewType == POLViewTypeDialog)
+		minHeight = fullHeight - safeAreaInsets.top - safeAreaInsets.bottom - 240;
 	POLLogTrace("Minimum height for containerView is %G", minHeight);
 
 	POLLogTrace("CUR size class = %@", POLSurveyViewSizeClassDescription(_currentSizeClass));
@@ -369,10 +371,25 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 	 * constraints" message appear in the Console, check activation
 	 * order first. */
 	if (_viewType == POLViewTypeDialog) {
-		// skip
+		if (newSizeClass == POLSurveyViewSizeClassDefault) {
+			self.dialogTopConstraint2.constant = 120;
+			self.dialogBottomConstraint2.constant = 120;
+		} else {
+			if (newSizeClass == POLSurveyViewSizeClassMatchContent) {
+				CGFloat h = (maxSafeHeight - (newContentHeight - POLSurveyViewCloseableAreaHeight)) / 2;
+				self.dialogTopConstraint2.constant = h + POLSurveyViewCloseableAreaHeight;
+				self.dialogBottomConstraint2.constant = h;
+			} else if (newSizeClass == POLSurveyViewSizeClassMaximum) {
+				self.dialogTopConstraint2.constant = POLSurveyViewCloseableAreaHeight;
+				self.dialogBottomConstraint2.constant = 16;
+			}
+			POLLogTrace("TOP CONSTANT=%G", self.dialogTopConstraint2.constant);
+			POLLogTrace("BOTTOM CONSTANT=%G", self.dialogBottomConstraint2.constant);
+		}
+
 		return;
 	} else if (_viewType == POLViewTypeBottom) {
-		if (newSizeClass == POLSurveyViewSizeClassDefault ) {
+		if (newSizeClass == POLSurveyViewSizeClassDefault) {
 			self.bottomTopOffsetConstraint.active = NO;
 			self.bottomHalfHeightConstraint.active = YES;
 		} else {
