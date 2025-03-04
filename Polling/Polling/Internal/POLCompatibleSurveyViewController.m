@@ -308,9 +308,10 @@ static const CGFloat POLSurveyViewCloseableAreaHeight = 44;
 
 #pragma mark - Resize Handling
 
-- (void)resizeToFitContentHeight:(CGFloat)contentHeight
+- (void)resizeToFitContentHeight:(CGFloat)newContentHeight
 {
-	POLLogTrace("%s contentHeight=%G", __func__, contentHeight);
+	CGFloat containerHeight = self.containerView.frame.size.height;
+	POLLogTrace("%s containerHeight=%G, newContentHeight=%G", __func__, containerHeight, newContentHeight);
 	POLSurveyViewSizeClass newSizeClass = POLSurveyViewSizeClassDefault;
 
 	UIEdgeInsets safeAreaInsets = self.backgroundView.safeAreaInsets;
@@ -325,9 +326,9 @@ static const CGFloat POLSurveyViewCloseableAreaHeight = 44;
 	POLLogTrace("CUR size class = %@", POLSurveyViewSizeClassDescription(_currentSizeClass));
 
 	// best size class for content height
-	if (contentHeight <= minHeight)
+	if (newContentHeight <= minHeight)
 		newSizeClass = POLSurveyViewSizeClassDefault;
-	else if (contentHeight < maxSafeHeight)
+	else if (newContentHeight < maxSafeHeight)
 		newSizeClass = POLSurveyViewSizeClassMatchContent;
 	else
 		newSizeClass = POLSurveyViewSizeClassMaximum;
@@ -348,36 +349,48 @@ static const CGFloat POLSurveyViewCloseableAreaHeight = 44;
 	 * may have actually changed. */
 
 	// update constraints
+
+	/* Order matters when setting constraints' `active` property. NO
+	 * must come first. If "unable to simultaneously satisfy
+	 * constraints" message appear in the Console, check activation
+	 * order first. */
 	if (_viewType == POLViewTypeDialog) {
 		// skip
 		return;
 	} else if (_viewType == POLViewTypeBottom) {
 		if (newSizeClass == POLSurveyViewSizeClassDefault ) {
-			self.bottomHalfHeightConstraint.active = YES;
 			self.bottomTopOffsetConstraint.active = NO;
+			self.bottomHalfHeightConstraint.active = YES;
 		} else {
 			self.bottomHalfHeightConstraint.active = NO;
 			self.bottomTopOffsetConstraint.active = YES;
 			if (newSizeClass == POLSurveyViewSizeClassMatchContent)
 				self.bottomTopOffsetConstraint.constant =
-					maxSafeHeight - contentHeight + safeAreaInsets.bottom;
+					maxSafeHeight - newContentHeight + safeAreaInsets.bottom;
 			else if (newSizeClass == POLSurveyViewSizeClassMaximum)
 				self.bottomTopOffsetConstraint.constant = POLSurveyViewCloseableAreaHeight;
 			POLLogTrace("CONSTANT=%G", self.bottomTopOffsetConstraint.constant);
 		}
 	}
 
-	// pause observing until animations finish
-	//_pauseObserver = YES;
+	static int resizeID = -1;
+	resizeID++;
 
 	// perform animate view resize
-	POLLogTrace("BEGIN CONSTRAINT ANIMATION");
 	[UIView animateWithDuration:.5 animations:^{
-		[self.backgroundView layoutIfNeeded];
-	} completion:^(BOOL finished) {
-		POLLogTrace("END CONSTRAINT ANIMATION finished=%{BOOL}d", finished);
-		//self->_pauseObserver = NO;
-	}];
+		int rID = resizeID;
+		return ^{
+			POLLogTrace("BEGIN[%D] CONSTRAINT ANIMATION", rID);
+			[self.backgroundView layoutIfNeeded];
+		};
+	}() completion:^{
+		int rID = resizeID;
+		return ^(BOOL finished) {
+			POLLogTrace("END[%d] CONSTRAINT ANIMATION finished=%{BOOL}d", rID, finished);
+			if (finished)
+				self->_currentSizeClass = newSizeClass;
+		};
+	}()];
 }
 
 #pragma mark - Web View Script Message Handler
