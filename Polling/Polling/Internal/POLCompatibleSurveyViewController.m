@@ -29,17 +29,17 @@ typedef NS_ENUM(NSUInteger, POLSurveyViewSizeClass) {
 	POLSurveyViewSizeClassMaximum = 2,
 };
 
-NSString * const POLSurveyViewSizeClassDefaultDescription = @"Default";
-NSString * const POLSurveyViewSizeClassMatchContentDescription = @"MatchContent";
-NSString * const POLSurveyViewSizeClassMaximumDescription = @"Maximum";
+static NSString * const POLSurveyViewSizeClassDefaultDescription = @"Default";
+static NSString * const POLSurveyViewSizeClassMatchContentDescription = @"MatchContent";
+static NSString * const POLSurveyViewSizeClassMaximumDescription = @"Maximum";
 
-NSString * const POLSurveyViewSizeClassDescriptions[] = {
+static NSString * const POLSurveyViewSizeClassDescriptions[] = {
 	[POLSurveyViewSizeClassDefault] = POLSurveyViewSizeClassDefaultDescription,
 	[POLSurveyViewSizeClassMatchContent] = POLSurveyViewSizeClassMatchContentDescription,
 	[POLSurveyViewSizeClassMaximum] = POLSurveyViewSizeClassMaximumDescription,
 };
 
-NSString * const POLSurveyViewSizeClassDescription(POLSurveyViewSizeClass sizeClass)
+static NSString * const POLSurveyViewSizeClassDescription(POLSurveyViewSizeClass sizeClass)
 {
 	if (sizeClass > POL_ARRAY_SIZE(POLSurveyViewSizeClassDescriptions) - 1)
 		return @"Unknown";
@@ -47,6 +47,7 @@ NSString * const POLSurveyViewSizeClassDescription(POLSurveyViewSizeClass sizeCl
 }
 
 static const CGFloat POLSurveyViewCloseableAreaHeight = 44;
+static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 
 #pragma mark - View
 
@@ -74,6 +75,8 @@ static const CGFloat POLSurveyViewCloseableAreaHeight = 44;
 	POLSurveyViewSizeClass _currentSizeClass;
 	BOOL _observingContentSizeChanges;
 	BOOL _pauseObserver;
+	NSTimeInterval _timeSinceLastContentSizeChange;
+	NSDate *_lastContentSizeChange;
 }
 
 - initWithSurvey:(POLSurvey *)survey viewType:(POLViewType)viewType
@@ -172,6 +175,8 @@ static const CGFloat POLSurveyViewCloseableAreaHeight = 44;
 	}
 #endif
 
+	_timeSinceLastContentSizeChange = DBL_MAX;
+	_lastContentSizeChange = NSDate.date;
 	_currentSizeClass = POLSurveyViewSizeClassDefault;
 	[self beginObservingContentSizeChanges];
 
@@ -295,6 +300,15 @@ static const CGFloat POLSurveyViewCloseableAreaHeight = 44;
 		if (CGSizeEqualToSize(old, CGSizeZero))
 			return;
 
+		NSDate *now = NSDate.date;
+		_timeSinceLastContentSizeChange = [now timeIntervalSinceDate:_lastContentSizeChange];
+		_lastContentSizeChange = now;
+
+		// skip minor changes within short time frame
+		if (_timeSinceLastContentSizeChange < POLSurveyViewLayoutChangeAnimationDuration)
+			if (fabs(old.height - new.height) < 8)
+				return;
+
 		[self resizeToFitContentHeight:new.height];
 		return;
 	}
@@ -377,7 +391,7 @@ static const CGFloat POLSurveyViewCloseableAreaHeight = 44;
 	resizeID++;
 
 	// perform animate view resize
-	[UIView animateWithDuration:.5 animations:^{
+	[UIView animateWithDuration:POLSurveyViewLayoutChangeAnimationDuration animations:^{
 		int rID = resizeID;
 		return ^{
 			POLLogTrace("BEGIN[%D] CONSTRAINT ANIMATION", rID);
