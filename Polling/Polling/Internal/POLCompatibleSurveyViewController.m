@@ -77,6 +77,7 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 	BOOL _pauseObserver;
 	NSTimeInterval _timeSinceLastContentSizeChange;
 	NSDate *_lastContentSizeChange;
+	id _traitChangeToken;
 }
 
 - initWithSurvey:(POLSurvey *)survey viewType:(POLViewType)viewType
@@ -175,6 +176,19 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 	}
 #endif
 
+	if (@available(iOS 17, tvOS 17, *)) {
+		NSArray<UITrait> *traits = @[
+			UITraitVerticalSizeClass.class,
+			UITraitHorizontalSizeClass.class,
+			UITraitUserInterfaceIdiom.class,
+		];
+		_traitChangeToken = [self registerForTraitChanges:traits
+			withTarget:self
+			action:@selector(traitsChangedForObject:previousTraits:)
+		];
+		POLLogTrace("RegisterTraitChanges traits=%@, token=%@", traits, _traitChangeToken);
+	}
+
 	_timeSinceLastContentSizeChange = DBL_MAX;
 	_lastContentSizeChange = NSDate.date;
 	_currentSizeClass = POLSurveyViewSizeClassDefault;
@@ -201,11 +215,11 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 {
 	CGPoint loc = [touch locationInView:self.webView];
 	if ([self.webView pointInside:loc withEvent:nil]) {
-		POLLogInfo("Touch in web view");
+		POLLogTrace("Touch in web view");
 		return NO;
 	}
 
-	POLLogInfo("Touch outside of web view");
+	POLLogTrace("Touch outside of web view");
 	return YES;
 }
 
@@ -276,13 +290,17 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 		CGSize new = [change pol_sizeValueForKey:NSKeyValueChangeNewKey undefinedValue:CGSizeZero];
 
 		// ignore vacuous changes
-		if (old.height == new.height)
+		if (old.height == new.height) {
+			//POLLogTrace("Skip old.height == new.height == %G", old.height);
 			return;
+		}
 
 		POLLogTrace("contentSizeChange[%d] keyPath=%@, change=%@", contentSizeChangeCount++, keyPath, change);
 
-		if (CGSizeEqualToSize(new, CGSizeZero))
+		if (CGSizeEqualToSize(new, CGSizeZero)) {
+			POLLogTrace("Skip new size set to zero");
 			return;
+		}
 
 		/* Before the webview loads any content the content size is
 		 * initialized to some default size XXX × YYYY. This is
@@ -297,17 +315,24 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 		 *			old = "NSSize: {0, 0}";
 		 *		}
 		 */
-		if (CGSizeEqualToSize(old, CGSizeZero))
+		if (CGSizeEqualToSize(old, CGSizeZero)) {
+			POLLogTrace("Skip size change before webiview has content");
 			return;
+		}
 
 		NSDate *now = NSDate.date;
 		_timeSinceLastContentSizeChange = [now timeIntervalSinceDate:_lastContentSizeChange];
 		_lastContentSizeChange = now;
 
 		// skip minor changes within short time frame
-		if (_timeSinceLastContentSizeChange < POLSurveyViewLayoutChangeAnimationDuration)
-			if (fabs(old.height - new.height) < 8)
+		if (_timeSinceLastContentSizeChange < POLSurveyViewLayoutChangeAnimationDuration) {
+			CGFloat dh = fabs(old.height - new.height);
+			POLLogTrace("Change within short time frame and delta=%G", dh);
+			if (dh < 8) {
+				POLLogTrace("Skip delta: %G < 8", dh);
 				return;
+			}
+		}
 
 		[self resizeToFitContentHeight:new.height];
 		return;
@@ -326,17 +351,25 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 {
 	CGFloat containerHeight = self.containerView.frame.size.height;
 	POLLogTrace("%s containerHeight=%G, newContentHeight=%G", __func__, containerHeight, newContentHeight);
+
 	POLSurveyViewSizeClass newSizeClass = POLSurveyViewSizeClassDefault;
 
 	UIEdgeInsets safeAreaInsets = self.backgroundView.safeAreaInsets;
-	POLLogTrace("safeAreaInsets=%@", NSStringFromUIEdgeInsets(safeAreaInsets));
-
 	CGFloat fullHeight = self.backgroundView.frame.size.height;
-	CGFloat maxSafeHeight = fullHeight - safeAreaInsets.top - POLSurveyViewCloseableAreaHeight;
-	POLLogTrace("Maximum safe height for containerView is %G", maxSafeHeight);
-	CGFloat minHeight = (fullHeight - safeAreaInsets.top - safeAreaInsets.bottom) / 2;
-	if (_viewType == POLViewTypeDialog)
+
+	CGFloat maxSafeHeight = fullHeight - safeAreaInsets.top - safeAreaInsets.bottom;
+	CGFloat minHeight = fullHeight - safeAreaInsets.top - safeAreaInsets.bottom;
+
+	if (_viewType == POLViewTypeDialog) {
+		maxSafeHeight = fullHeight - safeAreaInsets.top - safeAreaInsets.bottom;
 		minHeight = fullHeight - safeAreaInsets.top - safeAreaInsets.bottom - 240;
+	} else if (_viewType == POLViewTypeBottom) {
+		maxSafeHeight = fullHeight - safeAreaInsets.top - POLSurveyViewCloseableAreaHeight;
+		minHeight = (fullHeight - safeAreaInsets.top - safeAreaInsets.bottom) / 2;
+	}
+
+	POLLogTrace("safeAreaInsets=%@", NSStringFromUIEdgeInsets(safeAreaInsets));
+	POLLogTrace("Maximum safe height for containerView is %G", maxSafeHeight);
 	POLLogTrace("Minimum height for containerView is %G", minHeight);
 
 	POLLogTrace("CUR size class = %@", POLSurveyViewSizeClassDescription(_currentSizeClass));
@@ -376,18 +409,19 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 			self.dialogBottomConstraint2.constant = 120;
 		} else {
 			if (newSizeClass == POLSurveyViewSizeClassMatchContent) {
-				CGFloat h = (maxSafeHeight - (newContentHeight - POLSurveyViewCloseableAreaHeight)) / 2;
-				self.dialogTopConstraint2.constant = h + POLSurveyViewCloseableAreaHeight;
+				/* CGFloat h = (maxSafeHeight - (newContentHeight - POLSurveyViewCloseableAreaHeight)) / 2; */
+				/* self.dialogTopConstraint2.constant = h + POLSurveyViewCloseableAreaHeight; */
+				/* self.dialogBottomConstraint2.constant = h; */
+				CGFloat h = (maxSafeHeight - newContentHeight) / 2;
+				self.dialogTopConstraint2.constant = h;
 				self.dialogBottomConstraint2.constant = h;
 			} else if (newSizeClass == POLSurveyViewSizeClassMaximum) {
-				self.dialogTopConstraint2.constant = POLSurveyViewCloseableAreaHeight;
+				self.dialogTopConstraint2.constant = 16;
 				self.dialogBottomConstraint2.constant = 16;
 			}
 			POLLogTrace("TOP CONSTANT=%G", self.dialogTopConstraint2.constant);
 			POLLogTrace("BOTTOM CONSTANT=%G", self.dialogBottomConstraint2.constant);
 		}
-
-		return;
 	} else if (_viewType == POLViewTypeBottom) {
 		if (newSizeClass == POLSurveyViewSizeClassDefault) {
 			self.bottomTopOffsetConstraint.active = NO;
@@ -422,6 +456,40 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 				self->_currentSizeClass = newSizeClass;
 		};
 	}()];
+}
+
+#if 0
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+	POLLogTrace("%s size=%@, coordinator=%@", __func__, NSStringFromCGSize(size), coordinator);
+}
+
+- (void)willTransitionToTraitCollection:(UITraitCollection *)newCollection
+			  withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+	POLLogTrace("%s newCollection=%@, coordinator=%@", __func__, newCollection, coordinator);
+}
+#endif
+
+// before ios 17
+#if 0
+- (void)traitCollectionDidChange:(UITraitCollection *)previousTraits
+{
+	POLLogTrace("%s previousTraits=%@", __func__, previousTraits);
+	POLLogTrace("%s traitCollection=%@", __func__, self.traitCollection);
+}
+#endif
+
+- (void)forceResize
+{
+	[self resizeToFitContentHeight:self.webView.scrollView.contentSize.height];
+}
+
+- (void)traitsChangedForObject:(id)object previousTraits:(UITraitCollection *)previousTraits
+{
+	POLLogTrace("%s object=%@, previousTraits=%@", __func__, object, previousTraits);
+	POLLogTrace("%s traitCollection=%@", __func__, self.traitCollection);
+	[self performSelectorOnMainThread:@selector(forceResize) withObject:nil waitUntilDone:NO];
 }
 
 #pragma mark - Web View Script Message Handler
