@@ -68,6 +68,7 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 - (void)beginObservingContentSizeChanges;
 - (void)stopObservingContentSizeChanges;
 - (void)resizeToFitContentHeight:(CGFloat)contentHeight;
+- (void)resizeToFitContentHeight:(CGFloat)newContentHeight force:(BOOL)force;
 
 @end
 
@@ -349,8 +350,13 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 
 - (void)resizeToFitContentHeight:(CGFloat)newContentHeight
 {
+	[self resizeToFitContentHeight:newContentHeight force:NO];
+}
+
+- (void)resizeToFitContentHeight:(CGFloat)newContentHeight force:(BOOL)force
+{
 	CGFloat containerHeight = self.containerView.frame.size.height;
-	POLLogTrace("%s containerHeight=%G, newContentHeight=%G", __func__, containerHeight, newContentHeight);
+	POLLogTrace("%s containerHeight=%G, newContentHeight=%G, force=%{BOOL}d", __func__, containerHeight, newContentHeight, force);
 
 	POLSurveyViewSizeClass newSizeClass = POLSurveyViewSizeClassDefault;
 
@@ -360,9 +366,40 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 	CGFloat maxSafeHeight = fullHeight - safeAreaInsets.top - safeAreaInsets.bottom;
 	CGFloat minHeight = fullHeight - safeAreaInsets.top - safeAreaInsets.bottom;
 
+	const CGFloat topConstantDefault = 120;
+	const CGFloat topConstantHeightCompactWidthCompact = 30;
+	const CGFloat topConstantHeightCompactWidthRegular = 60;
+	const CGFloat topConstantHeightRegularWidthRegular = 200;
+	const CGFloat topConstantIdiomMacHeightRegularWidthRegular = 100;
+
+	const CGFloat bottomConstantDefault = 120;
+	const CGFloat bottomConstantHeightCompactWidthCompact = 30;
+	const CGFloat bottomConstantHeightCompactWidthRegular = 60;
+	const CGFloat bottomConstantHeightRegularWidthRegular = 200;
+	const CGFloat bottomConstantIdiomMacHeightRegularWidthRegular = 100;
+
+	UIUserInterfaceSizeClass heightClass = self.traitCollection.verticalSizeClass;
+	UIUserInterfaceSizeClass widthClass = self.traitCollection.horizontalSizeClass;
+	UIUserInterfaceIdiom idiom = self.traitCollection.userInterfaceIdiom;
+
+	UIUserInterfaceIdiom Mac = 5;
+	if (@available(iOS 14, tvOS 14, *)) {
+		Mac = UIUserInterfaceIdiomMac;
+	}
+
 	if (_viewType == POLViewTypeDialog) {
+		/* maxSafeHeight = fullHeight - safeAreaInsets.top - safeAreaInsets.bottom - POLSurveyViewCloseableAreaHeight; */
 		maxSafeHeight = fullHeight - safeAreaInsets.top - safeAreaInsets.bottom;
-		minHeight = fullHeight - safeAreaInsets.top - safeAreaInsets.bottom - 240;
+		CGFloat margins = topConstantDefault + bottomConstantDefault;
+		if (heightClass == UIUserInterfaceSizeClassCompact && widthClass == UIUserInterfaceSizeClassCompact)
+			margins = topConstantHeightCompactWidthCompact + bottomConstantHeightCompactWidthCompact;
+		else if (heightClass == UIUserInterfaceSizeClassCompact && widthClass == UIUserInterfaceSizeClassRegular)
+			margins = topConstantHeightCompactWidthRegular + bottomConstantHeightCompactWidthRegular;
+		else if (idiom == Mac && heightClass == UIUserInterfaceSizeClassRegular && widthClass == UIUserInterfaceSizeClassRegular)
+			margins = topConstantIdiomMacHeightRegularWidthRegular + bottomConstantIdiomMacHeightRegularWidthRegular;
+		else if (heightClass == UIUserInterfaceSizeClassRegular && widthClass == UIUserInterfaceSizeClassRegular)
+			margins = topConstantHeightRegularWidthRegular + bottomConstantHeightRegularWidthRegular;
+		minHeight = fullHeight - safeAreaInsets.top - safeAreaInsets.bottom - margins;
 	} else if (_viewType == POLViewTypeBottom) {
 		maxSafeHeight = fullHeight - safeAreaInsets.top - POLSurveyViewCloseableAreaHeight;
 		minHeight = (fullHeight - safeAreaInsets.top - safeAreaInsets.bottom) / 2;
@@ -385,17 +422,19 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 	POLLogTrace("NEW size class = %@", POLSurveyViewSizeClassDescription(newSizeClass));
 
 	// skip vacuous changes
-	if (_currentSizeClass == newSizeClass && newSizeClass == POLSurveyViewSizeClassDefault) {
-		POLLogTrace("SKIP vacuous changes");
-		return;
-	}
-	if (_currentSizeClass == newSizeClass && newSizeClass == POLSurveyViewSizeClassMaximum) {
-		POLLogTrace("SKIP vacuous changes");
-		return;
-	}
+	if (!force) {
+		if (_currentSizeClass == newSizeClass && newSizeClass == POLSurveyViewSizeClassDefault) {
+			POLLogTrace("SKIP vacuous changes");
+			return;
+		}
+		if (_currentSizeClass == newSizeClass && newSizeClass == POLSurveyViewSizeClassMaximum) {
+			POLLogTrace("SKIP vacuous changes");
+			return;
+		}
 
-	/* Don't skip cur == new && new == MatchContent because the size
-	 * may have actually changed. */
+		/* Don't skip cur == new && new == MatchContent because the
+		 * size may have actually changed. */
+	}
 
 	// update constraints
 
@@ -405,8 +444,19 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 	 * order first. */
 	if (_viewType == POLViewTypeDialog) {
 		if (newSizeClass == POLSurveyViewSizeClassDefault) {
-			self.dialogTopConstraint2.constant = 120;
-			self.dialogBottomConstraint2.constant = 120;
+			if (heightClass == UIUserInterfaceSizeClassCompact && widthClass == UIUserInterfaceSizeClassCompact) {
+				self.dialogTopConstraint2.constant = topConstantHeightCompactWidthCompact;
+				self.dialogBottomConstraint2.constant = bottomConstantHeightCompactWidthCompact;
+			} else if (heightClass == UIUserInterfaceSizeClassCompact && widthClass == UIUserInterfaceSizeClassRegular) {
+				self.dialogTopConstraint2.constant = topConstantHeightCompactWidthRegular;
+				self.dialogBottomConstraint2.constant = bottomConstantHeightCompactWidthRegular;
+			} else if (idiom == Mac && heightClass == UIUserInterfaceSizeClassRegular && widthClass == UIUserInterfaceSizeClassRegular) {
+				self.dialogTopConstraint2.constant = topConstantIdiomMacHeightRegularWidthRegular;
+				self.dialogBottomConstraint2.constant = bottomConstantIdiomMacHeightRegularWidthRegular;
+			} else if (heightClass == UIUserInterfaceSizeClassRegular && widthClass == UIUserInterfaceSizeClassRegular) {
+				self.dialogTopConstraint2.constant = topConstantHeightRegularWidthRegular;
+				self.dialogBottomConstraint2.constant = bottomConstantHeightRegularWidthRegular;
+			}
 		} else {
 			if (newSizeClass == POLSurveyViewSizeClassMatchContent) {
 				/* CGFloat h = (maxSafeHeight - (newContentHeight - POLSurveyViewCloseableAreaHeight)) / 2; */
@@ -416,6 +466,7 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 				self.dialogTopConstraint2.constant = h;
 				self.dialogBottomConstraint2.constant = h;
 			} else if (newSizeClass == POLSurveyViewSizeClassMaximum) {
+				/* self.dialogTopConstraint2.constant = POLSurveyViewCloseableAreaHeight; */
 				self.dialogTopConstraint2.constant = 16;
 				self.dialogBottomConstraint2.constant = 16;
 			}
@@ -482,13 +533,13 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 
 - (void)forceResize
 {
-	[self resizeToFitContentHeight:self.webView.scrollView.contentSize.height];
+	[self resizeToFitContentHeight:self.webView.scrollView.contentSize.height force:YES];
 }
 
 - (void)traitsChangedForObject:(id)object previousTraits:(UITraitCollection *)previousTraits
 {
 	POLLogTrace("%s object=%@, previousTraits=%@", __func__, object, previousTraits);
-	POLLogTrace("%s traitCollection=%@", __func__, self.traitCollection);
+	POLLogTrace("currentTraitCollection=%@", self.traitCollection);
 	[self performSelectorOnMainThread:@selector(forceResize) withObject:nil waitUntilDone:NO];
 }
 
