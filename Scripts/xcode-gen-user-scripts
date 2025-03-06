@@ -15,16 +15,29 @@ puts 'SRCROOT=' + SRCROOT
 puts 'DERIVED_FILE_DIR=' + DERIVED_FILE_DIR
 
 USER_SCRIPTS_DIR = SRCROOT + '/Polling/Internal/UserScripts'
+
+def escape_s(f)
+  fstr = File.read(f)
+  fstr.gsub! /'/, '\\"'
+  fstr.gsub! "\n", ""
+end
+
+def fn_pairs(f, ext)
+  { :file => f, :name => File.basename(f).gsub(ext, '') }
+end
+
+
+#
+# CSS
+#
+
 CSS_INJECTOR_JS = SRCROOT + '/Polling/Internal/UserScripts/CSSInjector.js'
 
 CSS_INPUT_FILES = Dir[USER_SCRIPTS_DIR + '/*.css']
 
 $css_name_file_pairs = []
 CSS_INPUT_FILES.each do |f|
-  $css_name_file_pairs << {
-    :name => File.basename(f).gsub('.css', ''),
-    :file => f
-  }
+  $css_name_file_pairs << fn_pairs(f, '.css')
 end
 
 puts $css_name_file_pairs
@@ -33,31 +46,78 @@ $css_injector = File.read(CSS_INJECTOR_JS)
 $css_injector.gsub! "\n", "\\n"
 #$css_injector.gsub! "\"", "\\\""
 
-def const_str(f)
-  fstr = File.read(f)
-  fstr.gsub! /'/, '\\"'
-  fstr.gsub! "\n", ""
-  $css_injector.sub("/*__CSS__*/", fstr)
+def css_const_s(f)
+  s = escape_s(f)
+  $css_injector.sub("/*__CSS__*/", s)
 end
+
+def css_decls
+  ret = ""
+  $css_name_file_pairs.each do |p|
+    ret << "FOUNDATION_EXTERN NSString * const POLUserScript#{p[:name]}Source;\n"
+  end
+  ret
+end
+
+def css_defs
+  ret = ""
+  $css_name_file_pairs.each do |p|
+    ret << "NSString * const POLUserScript#{p[:name]}Source = @\"#{css_const_s(p[:file])}\";\n"
+  end
+  ret
+end
+
+
+#
+# JS
+#
+
+JS_INPUT_FILES = []
+JS_INPUT_FILES << SRCROOT + '/Polling/Internal/UserScripts/ContentSize.js'
+JS_INPUT_FILES << SRCROOT + '/Polling/Internal/UserScripts/ResizeObserver.js'
+
+$js_name_file_pairs = []
+JS_INPUT_FILES.each do |f|
+  $js_name_file_pairs << fn_pairs(f, '.js')
+end
+
+def js_decls
+  ret = ""
+  $js_name_file_pairs.each do |p|
+    ret << "FOUNDATION_EXTERN NSString * const POLUserScript#{p[:name]}Source;\n"
+  end
+  ret
+end
+
+def js_defs
+  ret = ""
+  $js_name_file_pairs.each do |p|
+    ret << "NSString * const POLUserScript#{p[:name]}Source = @\"#{escape_s(p[:file])}\";\n"
+  end
+  ret
+end
+
+
+#
+# All declarations and definitions
+#
 
 def decls
   ret = ""
-  $css_name_file_pairs.each do |p|
-    ret << "FOUNDATION_EXTERN NSString * const POLUserScript" +
-           p[:name] + "Source;\n"
-  end
-  ret
+  ret << css_decls
+  ret << js_decls
 end
 
 def defs
   ret = ""
-  $css_name_file_pairs.each do |p|
-    ret << "NSString * const POLUserScript" +
-           p[:name] + "Source = @\"" + const_str(p[:file]) + "\";\n"
-  end
-  ret
+  ret << css_defs
+  ret << js_defs
 end
 
+
+#
+# Write the files
+#
 if File.extname(SCRIPT_OUTPUT_FILE_0) == '.h' then
 File.write(SCRIPT_OUTPUT_FILE_0,<<-EOF
 /*

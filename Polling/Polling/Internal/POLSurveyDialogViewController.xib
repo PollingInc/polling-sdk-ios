@@ -13,11 +13,17 @@
             <connections>
                 <outlet property="backgroundView" destination="i5M-Pr-FkT" id="7Ab-2a-HpI"/>
                 <outlet property="containerView" destination="dbK-hU-D4a" id="0bN-ti-yKn"/>
+                <outlet property="dialogBottomConstraint" destination="hV3-0F-PIx" id="gAJ-lL-oNU"/>
+                <outlet property="dialogBottomConstraint2" destination="NSH-Lf-A49" id="OAI-0f-85E"/>
+                <outlet property="dialogLeadingConstraint" destination="TyV-iI-8IF" id="9f8-Nq-tzQ"/>
+                <outlet property="dialogTopConstraint" destination="RrK-8O-V1A" id="iVW-5j-tnA"/>
+                <outlet property="dialogTopConstraint2" destination="k9s-2f-lV5" id="F1I-q1-Ugh"/>
+                <outlet property="dialogTrailingConstraint" destination="FXu-1o-uhS" id="5f2-od-wvQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="cif-5u-HLc"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="i5M-Pr-FkT" customClass="POLBackgroundView">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="POLBackgroundView">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -29,25 +35,25 @@
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="dbK-hU-D4a" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="FXu-1o-uhS">
+                <constraint firstItem="dbK-hU-D4a" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" constant="-16" identifier="DialogTrailing" id="FXu-1o-uhS">
                     <variation key="heightClass=compact-widthClass=compact" constant="-50"/>
                     <variation key="heightClass=compact-widthClass=regular" constant="-50"/>
                     <variation key="heightClass=regular-widthClass=regular" constant="-100"/>
                 </constraint>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dbK-hU-D4a" secondAttribute="bottom" constant="120" id="NSH-Lf-A49">
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dbK-hU-D4a" secondAttribute="bottom" constant="120" identifier="DialogBottom2" id="NSH-Lf-A49">
                     <variation key="heightClass=compact-widthClass=compact" constant="30"/>
                     <variation key="heightClass=compact-widthClass=regular" constant="60"/>
                     <variation key="heightClass=regular-widthClass=regular" constant="200"/>
                     <variation key="heightClass=regular-userInterfaceIdiom=mac-widthClass=regular" constant="100"/>
                 </constraint>
-                <constraint firstItem="dbK-hU-D4a" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" priority="750" id="RrK-8O-V1A"/>
-                <constraint firstItem="dbK-hU-D4a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="TyV-iI-8IF">
+                <constraint firstItem="dbK-hU-D4a" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" priority="750" constant="16" identifier="DialogTop1" id="RrK-8O-V1A"/>
+                <constraint firstItem="dbK-hU-D4a" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" identifier="DialogLeading" id="TyV-iI-8IF">
                     <variation key="heightClass=compact-widthClass=compact" constant="50"/>
                     <variation key="heightClass=compact-widthClass=regular" constant="50"/>
                     <variation key="heightClass=regular-widthClass=regular" constant="100"/>
                 </constraint>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="dbK-hU-D4a" secondAttribute="bottom" priority="750" id="hV3-0F-PIx"/>
-                <constraint firstItem="dbK-hU-D4a" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="120" id="k9s-2f-lV5">
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="dbK-hU-D4a" secondAttribute="bottom" priority="750" constant="16" identifier="DialogBottom1" id="hV3-0F-PIx"/>
+                <constraint firstItem="dbK-hU-D4a" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="120" identifier="DialogTop2" id="k9s-2f-lV5">
                     <variation key="heightClass=compact-widthClass=compact" constant="30"/>
                     <variation key="heightClass=compact-widthClass=regular" constant="60"/>
                     <variation key="heightClass=regular-widthClass=regular" constant="200"/>

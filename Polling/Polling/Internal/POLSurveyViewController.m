@@ -11,9 +11,7 @@
 #import "POLError.h"
 #import "POLSurvey.h"
 #import "POLSurvey+Private.h"
-
-//#import "POLUserScripts.h"
-FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
+#import "POLUserScript.h"
 
 #import <WebKit/WebKit.h>
 
@@ -37,6 +35,13 @@ FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
 							   forMainFrameOnly:YES];
 }
 
+- (WKUserScript *)userScriptResizeObserver
+{
+	return [[WKUserScript alloc] initWithSource:POLUserScriptResizeObserverSource
+								  injectionTime:WKUserScriptInjectionTimeAtDocumentEnd
+							   forMainFrameOnly:YES];
+}
+
 - (WKWebViewConfiguration *)webViewConfiguration
 {
 	if (_config)
@@ -46,6 +51,12 @@ FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
 	_config.applicationNameForUserAgent = @"Polling SDK for iOS";
 
 	[_config.userContentController addUserScript:self.userScriptPreventTextInputZoom];
+
+#if 0
+	if (@available(macOS 10.15, iOS 13, *)) {
+		[_config.userContentController addUserScript:self.userScriptResizeObserver];
+	}
+#endif
 
 	WKPreferences *preferences = WKPreferences.new;
 	preferences.minimumFontSize = 16; // does not seem to work
@@ -58,7 +69,12 @@ FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
 {
 	POLLogInfo("Loading URL=%@ for survey=%@ in webView=%@", _survey.URL, _survey, _webView);
 
+#if DEBUG && defined(POL_SURVEY_URL)
+	NSURL *url = [NSURL URLWithString:POL_NSSTR(POL_SURVEY_URL)];
+	NSURLRequest *req = [NSURLRequest requestWithURL:url];
+#else
 	NSURLRequest *req = [NSURLRequest requestWithURL:_survey.URL];
+#endif
 	[_webView loadRequest:req];
 }
 
@@ -85,6 +101,16 @@ FOUNDATION_EXTERN NSString * const POLUserScriptPreventTextInputZoomSource;
 }
 
 #pragma mark - Web View UI Delegate
+
+#if 0
+- (WKWebView *)webView:(WKWebView *)webView
+	createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration
+	forNavigationAction:(WKNavigationAction *)navigationAction
+	windowFeatures:(WKWindowFeatures *)windowFeatures
+{
+
+}
+#endif
 
 - (void)webViewDidClose:(WKWebView *)webView
 {

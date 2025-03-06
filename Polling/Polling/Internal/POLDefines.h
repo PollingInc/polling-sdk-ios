@@ -11,6 +11,8 @@
 
 #define POL_ARRAY_SIZE(x) (sizeof(x)/sizeof(x[0]))
 
+#define POL_NSSTR(cStr) ([NSString stringWithUTF8String:("" #cStr "")])
+
 #if 0
 #define POL_LOG_PREFIX_FMT ""			/* none */
 #define POL_LOG_PREFIX_FMT "%s "        /* Class Prefix only */

@@ -37,6 +37,15 @@
 	return ret;
 }
 
+- (CGSize)pol_sizeValueForKey:(NSString *)key
+			   undefinedValue:(CGSize)size
+{
+	NSValue *ret = self[key];
+	if (!ret)
+		return size;
+	return [ret CGSizeValue];
+}
+
 - (NSDictionary *)copyAddingEntriesFromDictionary:(NSDictionary *)other
 {
 	NSMutableDictionary *mutDict = self.mutableCopy;
