@@ -75,10 +75,8 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 @implementation POLCompatibleSurveyViewController {
 	POLSurveyViewSizeClass _currentSizeClass;
 	BOOL _observingContentSizeChanges;
-	BOOL _pauseObserver;
 	NSTimeInterval _timeSinceLastContentSizeChange;
 	NSDate *_lastContentSizeChange;
-	id _traitChangeToken;
 }
 
 - initWithSurvey:(POLSurvey *)survey viewType:(POLViewType)viewType
@@ -158,37 +156,6 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 		multiplier:1.0
 		constant:0
 	].active = YES;
-
-#if 0
-	POLLogInfo("self.backgroundView.constraints=%@", self.backgroundView.constraints);
-
-	if (_viewType == POLViewTypeDialog) {
-		POLLogInfo("dialogTopConstraint=%@", self.dialogTopConstraint);
-		POLLogInfo("dialogTopConstraint2=%@", self.dialogTopConstraint2);
-		POLLogInfo("dialogBottomConstraint=%@", self.dialogBottomConstraint);
-		POLLogInfo("dialogBottomConstraint2=%@", self.dialogBottomConstraint2);
-		POLLogInfo("dialogLeadingConstraint=%@", self.dialogLeadingConstraint);
-		POLLogInfo("dialogTrailingConstraint=%@", self.dialogTrailingConstraint);
-	} else if (_viewType == POLViewTypeBottom) {
-		POLLogInfo("bottomHalfHeightConstraint=%@", self.bottomHalfHeightConstraint);
-		POLLogInfo("bottomBottomConstraint=%@", self.bottomBottomConstraint);
-		POLLogInfo("bottomLeadingConstraint=%@", self.bottomLeadingConstraint);
-		POLLogInfo("bottomTrailingConstraint=%@", self.bottomTrailingConstraint);
-	}
-#endif
-
-	if (@available(iOS 17, tvOS 17, *)) {
-		NSArray<UITrait> *traits = @[
-			UITraitVerticalSizeClass.class,
-			UITraitHorizontalSizeClass.class,
-			UITraitUserInterfaceIdiom.class,
-		];
-		_traitChangeToken = [self registerForTraitChanges:traits
-			withTarget:self
-			action:@selector(traitsChangedForObject:previousTraits:)
-		];
-		POLLogTrace("RegisterTraitChanges traits=%@, token=%@", traits, _traitChangeToken);
-	}
 
 	_timeSinceLastContentSizeChange = DBL_MAX;
 	_lastContentSizeChange = NSDate.date;
@@ -276,9 +243,6 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 	ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
 	static int contentSizeChangeCount = 0;
-
-	if (_pauseObserver)
-		return;
 
 	if (context == POLWebViewContentSizeChangedContext) {
 		// leaving these for serious debugging
@@ -509,37 +473,15 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 	}()];
 }
 
-#if 0
-- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+- (void)forceResize
 {
-	POLLogTrace("%s size=%@, coordinator=%@", __func__, NSStringFromCGSize(size), coordinator);
+	[self resizeToFitContentHeight:self.webView.scrollView.contentSize.height force:YES];
 }
 
 - (void)willTransitionToTraitCollection:(UITraitCollection *)newCollection
 			  withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
 	POLLogTrace("%s newCollection=%@, coordinator=%@", __func__, newCollection, coordinator);
-}
-#endif
-
-// before ios 17
-#if 0
-- (void)traitCollectionDidChange:(UITraitCollection *)previousTraits
-{
-	POLLogTrace("%s previousTraits=%@", __func__, previousTraits);
-	POLLogTrace("%s traitCollection=%@", __func__, self.traitCollection);
-}
-#endif
-
-- (void)forceResize
-{
-	[self resizeToFitContentHeight:self.webView.scrollView.contentSize.height force:YES];
-}
-
-- (void)traitsChangedForObject:(id)object previousTraits:(UITraitCollection *)previousTraits
-{
-	POLLogTrace("%s object=%@, previousTraits=%@", __func__, object, previousTraits);
-	POLLogTrace("currentTraitCollection=%@", self.traitCollection);
 	[self performSelectorOnMainThread:@selector(forceResize) withObject:nil waitUntilDone:NO];
 }
 

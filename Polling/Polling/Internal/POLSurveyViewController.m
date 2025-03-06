@@ -52,9 +52,11 @@
 
 	[_config.userContentController addUserScript:self.userScriptPreventTextInputZoom];
 
+#if 0
 	if (@available(macOS 10.15, iOS 13, *)) {
 		[_config.userContentController addUserScript:self.userScriptResizeObserver];
 	}
+#endif
 
 	WKPreferences *preferences = WKPreferences.new;
 	preferences.minimumFontSize = 16; // does not seem to work
@@ -117,40 +119,6 @@
 }
 
 #pragma mark - Web View Navigation Delegate
-
-#if 0
-- (void)webView:(WKWebView *)webView
-	decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction
-	decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
-{
-	POLLogTrace("%s webView=%@, navigationAction=%@", __func__, webView, navigationAction);
-	decisionHandler(WKNavigationActionPolicyAllow);
-}
-
-- (void)webView:(WKWebView *)webView
-	didStartProvisionalNavigation:(WKNavigation *)navigation
-{
-	POLLogTrace("%s webView=%@, navigation=%@", __func__, webView, navigation);
-	POLLogTrace("    webView.scrollView=%@", webView.scrollView);
-	POLLogTrace("    webView.scrollView.contentSize=%@", NSStringFromCGSize(webView.scrollView.contentSize));
-}
-
-- (void)webView:(WKWebView *)webView
-	didCommitNavigation:(WKNavigation *)navigation
-{
-	POLLogTrace("%s webView=%@, navigation=%@", __func__, webView, navigation);
-	POLLogTrace("    webView.scrollView=%@", webView.scrollView);
-	POLLogTrace("    webView.scrollView.contentSize=%@", NSStringFromCGSize(webView.scrollView.contentSize));
-}
-
-- (void)webView:(WKWebView *)webView
-	didFinishNavigation:(WKNavigation *)navigation
-{
-	POLLogTrace("%s webView=%@, navigation=%@", __func__, webView, navigation);
-	POLLogTrace("    webView.scrollView=%@", webView.scrollView);
-	POLLogTrace("    webView.scrollView.contentSize=%@", NSStringFromCGSize(webView.scrollView.contentSize));
-}
-#endif
 
 - (void)webView:(WKWebView *)webView
 	didFailNavigation:(WKNavigation *)navigation
