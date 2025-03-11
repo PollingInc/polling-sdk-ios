@@ -62,4 +62,7 @@ DerivedData/
 *.dSYM.zip
 *.dSYM
 
+Scripts/make/local.mk
 Configs/Local.xcconfig
+
+/Build
