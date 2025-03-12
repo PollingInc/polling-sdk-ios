@@ -17,6 +17,8 @@ MAJOR = ver_components[0]
 MINOR = ver_components[1] || '0'
 PATCH = ver_components[2] || '0'
 
+PATCH.gsub!(/-\w*$/, '')
+
 VER_LONG = "v#{VER}"
 
 # NOTE: git commands will fail if sandboxing is enabled

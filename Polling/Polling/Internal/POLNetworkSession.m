@@ -58,7 +58,115 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 }
 
 @interface POLNetworkSession () <NSURLSessionDataDelegate>
+/**
+ * Parse available surveys payload
+ *
+ * Payload is a JSON object with the structure
+ *
+ * ```json
+ * {
+ *     "data": [{
+ *         "name": "survey name",
+ *         "question_count": 1,
+ *         "reward": {
+ *             "reward_amount": null,
+ *             "reward_name": null,
+ *         }
+ *     }],
+ *     "plan": "",
+ *     "theme": null
+ * }
+ * ```
+ *
+ * @param data the NSData from the response
+ * @return array of abailable surveys
+ */
+- (NSArray<POLSurvey *> *)surveysForData:(NSData *)data error:(POLError **)error;
 
+/**
+ * Parse triggered surveys payload
+ *
+ * Payload is a JSON object with the structure
+ *
+ * ```json
+ * {
+ *     "message" : "Event data saved successfully!",
+ *     "triggered_surveys" : [{
+ *         "delay_seconds" : 4,
+ *         "delayed_timestamp" : "2025-01-22T20:21:07+00:00",
+ *         "survey" : {
+ *             "name" : "survey name",
+ *             "survey_uuid" : "365ae2ef-0ca6-4ba9-a07c-1a3d707e680d"
+ *         }
+ *     }]
+ * }
+ * ```
+ *
+ * @param dataTask the NSURLSessionDataTask
+ * @return array of triggered survey objects
+ */
+- (NSArray<POLTriggeredSurvey *> *)triggeredSurveysForDataTask:(NSURLSessionDataTask *)dataTask error:(POLError **)error;
+
+/**
+ * Parse survey details payload
+ *
+ * Payload is a JSON object with the structure
+ *
+ * ```json
+ * {
+ *     "data": {
+ *        "uuid": "365ae2ef-0ca6-4ba9-a07c-1a3d707e680d",
+ *        "name": "Survey Test SDK 2",
+ *        "reward": {
+ *            "reward_amount": "10",
+ *            "reward_name": "Rubies",
+ *            "complete_extra_json": "{\n    \"test\": 123\n}"
+ *        },
+ *        "question_count": 1,
+ *        "user_survey_status": "available",
+ *        "completed_at": null
+ *    }
+ * }
+ * ```
+ *
+ * @param data response body
+ * @return a survey object
+ */
+- (POLSurvey *)surveyForData:(NSData *)data error:(POLError **)error;
+
+/**
+ * Parse embed completed response
+ *
+ * Payload is a JSON object with the structure
+ *
+ * ```json
+ * {
+ *     "data":[]
+ * }
+ *```
+ *
+ * or
+ *
+ * ```json
+ * {
+ *     "data": [{
+ *         "uuid": "dcaca06d-5ed5-4235-90fb-e2d7efc2a5b6",
+ *         "name": "Survey Test SDK 1",
+ *         "started_at": "2025-01-27T19:52:44+00:00",
+ *         "completed_at": "2025-01-27T19:52:45+00:00",
+ *         "reward": {
+ *             "complete_extra_json": null,
+ *             "reward_amount": null,
+ *             "reward_name": null
+ *         }
+ *     }]
+ * }
+ * ```
+ *
+ * @param data response body
+ * @return a survey object
+ */
+- (NSArray<POLSurvey *> *)surveysFromData:(NSData *)data error:(POLError **)error;
 @end
 
 @implementation POLNetworkSession {
@@ -212,29 +320,6 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 	return [self topLevelDictionaryForData:data error:error];
 }
 
-/**
- * Parse available surveys payload
- *
- * Payload is a JSON object with the structure
- *
- * ```json
- * {
- *     "data": [{
- *         "name": "survey name",
- *         "question_count": 1,
- *         "reward": {
- *             "reward_amount": null,
- *             "reward_name": null,
- *         }
- *     }],
- *     "plan": "",
- *     "theme": null
- * }
- * ```
- *
- * @param data the NSData from the response
- * @return array of abailable surveys
- */
 - (NSArray<POLSurvey *> *)surveysForData:(NSData *)data error:(POLError **)error
 {
 	NSDictionary *payload = [self topLevelDictionaryForData:data error:error];
@@ -278,28 +363,6 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 	return [self surveysForData:data error:error];
 }
 
-/**
- * Parse triggered surveys payload
- *
- * Payload is a JSON object with the structure
- *
- * ```json
- * {
- *     "message" : "Event data saved successfully!",
- *     "triggered_surveys" : [{
- *         "delay_seconds" : 4,
- *         "delayed_timestamp" : "2025-01-22T20:21:07+00:00",
- *         "survey" : {
- *             "name" : "survey name",
- *             "survey_uuid" : "365ae2ef-0ca6-4ba9-a07c-1a3d707e680d"
- *         }
- *     }]
- * }
- * ```
- *
- * @param dataTask the NSURLSessionDataTask
- * @return array of triggered survey objects
- */
 - (NSArray<POLTriggeredSurvey *> *)triggeredSurveysForDataTask:(NSURLSessionDataTask *)dataTask error:(POLError **)error
 {
 	NSDictionary *payload = [self topLevelDictionaryForDataTask:dataTask error:error];
@@ -337,31 +400,6 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 	return triggeredSurveys;
 }
 
-/**
- * Parse survey details payload
- *
- * Payload is a JSON object with the structure
- *
- * ```json
- * {
- *     "data": {
- *        "uuid": "365ae2ef-0ca6-4ba9-a07c-1a3d707e680d",
- *        "name": "Survey Test SDK 2",
- *        "reward": {
- *            "reward_amount": "10",
- *            "reward_name": "Rubies",
- *            "complete_extra_json": "{\n    \"test\": 123\n}"
- *        },
- *        "question_count": 1,
- *        "user_survey_status": "available",
- *        "completed_at": null
- *    }
- * }
- * ```
- *
- * @param data response body
- * @return a survey object
- */
 - (POLSurvey *)surveyForData:(NSData *)data error:(POLError **)error
 {
 	NSDictionary *payload = [self topLevelDictionaryForData:data error:error];
@@ -399,38 +437,6 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 	return [self surveyForData:data error:error];
 }
 
-/**
- * Parse embed completed response
- *
- * Payload is a JSON object with the structure
- *
- * ```json
- * {
- *     "data":[]
- * }
- *```
- *
- * or
- *
- * ```json
- * {
- *     "data": [{
- *         "uuid": "dcaca06d-5ed5-4235-90fb-e2d7efc2a5b6",
- *         "name": "Survey Test SDK 1",
- *         "started_at": "2025-01-27T19:52:44+00:00",
- *         "completed_at": "2025-01-27T19:52:45+00:00",
- *         "reward": {
- *             "complete_extra_json": null,
- *             "reward_amount": null,
- *             "reward_name": null
- *         }
- *     }]
- * }
- * ```
- *
- * @param data response body
- * @return a survey object
- */
 - (NSArray<POLSurvey *> *)surveysFromData:(NSData *)data error:(POLError **)error
 {
 	NSDictionary *payload = [self topLevelDictionaryForData:data error:error];

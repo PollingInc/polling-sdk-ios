@@ -74,7 +74,7 @@ NS_SWIFT_NAME(Polling)
  *
  * @discussion
  * API key for your embed integration. To get an API key sign up for a
- * Polling.com account and create an embed using the dashboard.
+ * [](Polling.com) account and create an embed using the dashboard.
  */
 @property NSString *apiKey;
 
@@ -113,10 +113,9 @@ NS_SWIFT_NAME(Polling)
 /**
  * Log a purchase
  *
- * @discussion
- * Sends and logs a purchase. The purchase amount ``intergerCents``
- * should be normalized to a non-fractional value using the smallest
- * recongnized demonination for the currency.
+ * @discussion Sends and logs a purchase. The purchase amount
+ * `integerCents` should be normalized to a non-fractional value
+ * using the smallest recongnized demonination for the currency.
  *
  * e.g. a purchase totalling $10.57 USD should be normalized to 1057.
  *
@@ -138,7 +137,7 @@ NS_SWIFT_NAME(Polling)
  *
  * @discussion
  * Show a specific survey identified by its UUID. Survey UUIDs are
- * available on the Polling.com dashboard.
+ * available on the [](Polling.com) dashboard.
  *
  * @param surveyUuid the UUID of the survey to show
  */
@@ -162,8 +161,8 @@ NS_SWIFT_NAME(Polling)
  *
  * After implementing these methods in an object, assign that object
  * to the delegate property of the shared singleton object accessed
- * through ``POLPolling.polling``. The SDK calls the methods of your
- * delegate at appropriate times.
+ * through ``POLPolling``'s ``/POLPolling/polling`` property. The SDK
+ * calls the methods of your delegate at appropriate times.
  *
  */
 NS_SWIFT_NAME(PollingDelegate)
