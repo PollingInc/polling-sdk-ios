@@ -1,3 +1,8 @@
 // Framework-Release.xcconfig
 
 #include? "Framework.xcconfig"
+
+// https://developer.apple.com/documentation/xcode/creating-a-multi-platform-binary-framework-bundle#Set-up-the-project
+BUILD_LIBRARY_FOR_DISTRIBUTION = YES
+SKIP_INSTALL = NO
+ARCHS = $(ARCHS_STANDARD)
