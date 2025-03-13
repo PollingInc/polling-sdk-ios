@@ -6,11 +6,13 @@ Steps necessary for producing SDK releases.
 
 Follow these steps
 
-## Configuring for Code Signing
+## Setup the Project
 
-Create a Makefile at `Scripts/make/local.mk`. This file is ignored by
-git and will need to be recreated or copied for every repo clone used
-for generating releases.
+Onetime project setup.
+
+### Configure Code Signing
+
+Create a Makefile at `Scripts/make/local.mk`.
 
 ```makefile
 APPLE_DEVELOPMENT_TEAM ?= <team-id>
@@ -25,10 +27,34 @@ values must be quoted.
 > Note: `APPLE_DISTRIBUTION_IDENTITY` is the only required variable
 > for code signing.
 
+This file is ignored by git and will need to be recreated or copied
+for every repo clone used for generating releases.
+
 These values may also be set as environment variable making the build
 CI friendly.
 
-## Update Version Number
+### Configure Script Sandboxing
+
+You must disable user script sandboxing to build releases. Scripts
+that are sandboxed can not operate on their own git repo and
+`Scripts/xcode-gen-vers` will print an error and stop the release
+build if sandboxing is enabled.
+
+Create or open a build configuration file at `Configs/Local.xcconfig`
+and insert the following configuration variable.
+
+```
+ENABLE_USER_SCRIPT_SANDBOXING = NO
+```
+
+This file is ignored by git and will need to be recreated or copied
+for every repo clone used for generating releases.
+
+## Making a Release
+
+Create a release of the SDK.
+
+### Update the Version Number
 
 Open `Configs/Framework.xcconfig` locate the `PROJECT_VERSION`
 variable and bump the version. The version is in _MAJOR.MINOR.PATCH_
@@ -52,10 +78,15 @@ Or for a release candidate one might set the version string as follows:
 PROJECT_VERSION = 1.0.0-RC1
 ```
 
-The version info is embedded in the SDK's binary and printed on the
-first use of the SDK. The version info is additionally inserted into
-the framework's `Info.plist` so that the SDK may be identified without
-running in an app. The format of the version info
+The build automatically embeds the version info in the SDK's binary
+and outputs it to the console on the first use of the SDK.
+
+Additionally the build automatically inserts the version info into
+each of the frameworks' `Info.plist` and into the XCFrameworks'
+`Info.plist`, so that the SDK may be identified without running in an
+app.
+
+The format of the version info follows
 
 ```
 Polling vMAJOR.MINOR.PATCH[-EXTRA]:BRANCH@SHORT_HASH:CONFIG[:dirty]
@@ -70,3 +101,13 @@ Polling vMAJOR.MINOR.PATCH[-EXTRA]:BRANCH@SHORT_HASH:CONFIG[:dirty]
 - term CONFIG: the build configuration, one of `Debug` or `Release`
 - term dirty: the value `:dirty` is appended if there are uncommitted
   changes or untracked files in the repo
+
+Here is an examples of the full version string:
+
+```
+Polling v1.0.0-RC1:master@c0532f3:Debug:dirty
+```
+
+The build automatically inserts the version string in the `Info.plist`
+of every `.framework` and `.xcframework` under the key
+`POLSDKVersion`.

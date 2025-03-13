@@ -7,8 +7,10 @@ PROJROOT := $(patsubst %/,%,$(dir $(abspath $(lastword $(MAKEFILE_LIST)))))
 LOCAL_CONFIG ?= Scripts/make/local.mk
 -include ${LOCAL_CONFIG}
 
+XCRUN ?= xcrun
 XCODEBUILD ?= xcodebuild
 CODESIGN ?= codesign
+DOCC ?= docc
 
 PRODUCT_NAME = Polling
 
@@ -24,11 +26,14 @@ OBJROOT = $(BUILDROOT)/objs
 SYMROOT = $(BUILDROOT)/frameworks
 ARCHROOT = $(BUILDROOT)/archives
 XCFRWKROOT = $(BUILDROOT)/xcframeworks
+SYMGRAPHROOT = $(BUILDROOT)/symgraphs
+DOCROOT = $(BUILDROOT)/docs
 
 
 all: xcframework
 
 include Scripts/make/xcframework.mk
+include Scripts/make/doc.mk
 
 
 gen-user-scripts-input-file-list: FORCE

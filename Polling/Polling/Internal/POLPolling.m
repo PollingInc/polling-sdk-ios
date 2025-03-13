@@ -345,8 +345,11 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 {
 	UIViewController *rootVC, *visVC;
 
-	if (@available(iOS 13.0, *)) {
+	if (@available(iOS 13, *)) {
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 		NSArray<__kindof UIWindow *> *windows = UIApplication.sharedApplication.windows;
+#pragma GCC diagnostic pop
 		if (windows.count == 1) {
 			rootVC = windows.firstObject.rootViewController;
 		} else {
