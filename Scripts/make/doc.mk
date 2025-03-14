@@ -107,8 +107,8 @@ doc-preview-internal: $(SYMGRAPH_INTERNAL) $(DOCROOT)
 # Convert for hosting on GitHub
 
 $(DOCS_WORKTREE):
-	git fetch
-	git worktree add --checkout $(DOCS_WORKTREE) origin/docs
+	$(GIT) fetch
+	$(GIT) worktree add --checkout $(DOCS_WORKTREE) origin/docs
 
 doc-convert: doc-convert-public doc-convert-internal
 

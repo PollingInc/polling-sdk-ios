@@ -11,15 +11,18 @@ XCRUN ?= xcrun
 XCODEBUILD ?= xcodebuild
 CODESIGN ?= codesign
 DOCC ?= docc
+GIT ?= git
+GH ?= gh
 
 PRODUCT_NAME = Polling
+VER := $(shell grep "^PROJECT_VERSION" Configs/Framework.xcconfig | cut -d = -f 2 | tr -d ' ')
 
 SRCROOT = $(PROJROOT)/$(PRODUCT_NAME)
 WORKSPACE = $(PRODUCT_NAME).xcworkspace
 SCHEME = $(PRODUCT_NAME)
 
 BUILD_DIR = Build
-DIST_DIR = Dist
+RELEASE_DIR = Release
 
 BUILDROOT = $(PROJROOT)/$(BUILD_DIR)
 OBJROOT = $(BUILDROOT)/objs
@@ -34,6 +37,7 @@ all: xcframework
 
 include Scripts/make/xcframework.mk
 include Scripts/make/doc.mk
+include Scripts/make/release.mk
 
 
 gen-user-scripts-input-file-list: FORCE

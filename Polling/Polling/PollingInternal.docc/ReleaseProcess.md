@@ -111,3 +111,29 @@ Polling v1.0.0-RC1:master@c0532f3:Debug:dirty
 The build automatically inserts the version string in the `Info.plist`
 of every `.framework` and `.xcframework` under the key
 `POLSDKVersion`.
+
+### Commit the Version Bump
+
+Commit the version bump and all other changes. Remove or stash
+anything in worktree until `git status` shows "nothing to commit,
+working tree clean".
+
+### Prepare the Release
+
+Run `make prepare-release` to build the XCFrameworks, build the docs,
+package the binaries, generate release notes, makes a draft GitHub
+release.
+
+### Edit the Release Notes and Sanity Checks
+
+Open the generated release notes at `Release/notes.md` and make edits
+such as removing entries like "fix typo" or "forgot to add file",
+etc. Fix spelling, grammar, and edit for conciseness and clarity.
+
+- Check that the signed and unsigned XCFramework were created and
+packaged.
+- Check the public and internal documentation
+
+### Publish the Release
+
+Run `make publish-release` when everything looks good.
