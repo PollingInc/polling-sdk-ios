@@ -66,3 +66,4 @@ Scripts/make/local.mk
 Configs/Local.xcconfig
 
 /Build
+/Docs
