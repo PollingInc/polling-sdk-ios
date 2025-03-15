@@ -13,6 +13,7 @@ CODESIGN ?= codesign
 DOCC ?= docc
 GIT ?= git
 GH ?= gh
+TAR ?= tar
 
 PRODUCT_NAME = Polling
 VER := $(shell grep "^PROJECT_VERSION" Configs/Framework.xcconfig | cut -d = -f 2 | tr -d ' ')
