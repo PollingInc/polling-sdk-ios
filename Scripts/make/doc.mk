@@ -2,9 +2,22 @@
 
 POLLING_BUILD_SUBDIR=$(OBJROOT)/$(PRODUCT_NAME).build/Release-iphoneos/$(PRODUCT_NAME).build
 
+ARCH = arm64
+SYMGRAPH_TRIPLE = $(ARCH)-apple-ios
+
 SYMGRAPH_DIR_PUBLIC = $(SYMGRAPHROOT)/Public
+SYMGRAPH_DIR_CLANG = $(SYMGRAPH_DIR_PUBLIC)/clang/$(SYMGRAPH_TRIPLE)
+SYMGRAPH_DIR_SWIFT = $(SYMGRAPH_DIR_PUBLIC)/swift/$(SYMGRAPH_TRIPLE)
+
 SYMGRAPH_DIR_INTERNAL = $(SYMGRAPHROOT)/Internal
-SYMGRAPH_PUBLIC = $(SYMGRAPH_DIR_PUBLIC)/$(PRODUCT_NAME).symbols.json
+
+SYMGRAPH_DIRS += $(SYMGRAPH_DIR_PUBLIC)
+SYMGRAPH_DIRS += $(SYMGRAPH_DIR_CLANG)
+SYMGRAPH_DIRS += $(SYMGRAPH_DIR_SWIFT)
+SYMGRAPH_DIRS += $(SYMGRAPH_DIR_INTERNAL)
+
+SYMGRAPH_CLANG = $(SYMGRAPH_DIR_CLANG)/$(PRODUCT_NAME).symbols.json
+SYMGRAPH_SWIFT = $(SYMGRAPH_DIR_SWIFT)/$(PRODUCT_NAME).symbols.json
 SYMGRAPH_INTERNAL = $(SYMGRAPH_DIR_INTERNAL)/$(PRODUCT_NAME).symbols.json
 
 SDK_PATH := $(shell $(XCRUN) --sdk iphoneos --show-sdk-path)
@@ -41,38 +54,51 @@ export DOCC_JSON_PRETTYPRINT = YES
 
 # Symgraph
 
-symgraph-public: $(SYMGRAPH_PUBLIC)
+symgraph-public: symgraph-clang symgraph-swift
+symgraph-clang: $(SYMGRAPH_CLANG)
+symgraph-swift: $(SYMGRAPH_SWIFT)
 symgraph-internal: $(SYMGRAPH_INTERNAL)
 
+$(SYMGRAPH_DIRS):
+	mkdir -p $@
 
-$(SYMGRAPH_PUBLIC): HEADERS = $(shell find $(HEADER_ROOT) -name "*.h")
-$(SYMGRAPH_PUBLIC): $(FRAMEWORK_RELEASE_PATHS) FORCE
+$(SYMGRAPH_CLANG): HEADERS = $(shell find $(HEADER_ROOT) -name "*.h")
+$(SYMGRAPH_CLANG): $(FRAMEWORK_RELEASE_PATHS) FORCE
 	$(XCRUN) clang -extract-api --product-name=$(PRODUCT_NAME) \
-		-o $@ -isysroot $(SDK_PATH) \
+		--pretty-sgf -o $@ -isysroot $(SDK_PATH) \
 		-F $(SDK_PATH)/System/Library/Frameworks \
 		$(HEADER_SEARCH_ARGS) $(EXTRA_ARGS) \
 		-x objective-c-header $(HEADERS)
+
+$(SYMGRAPH_SWIFT): $(SYMGRAPH_DIR_SWIFT) FORCE
+	xcrun swift-symbolgraph-extract -sdk $(SDK_PATH) \
+		-target $(SYMGRAPH_TRIPLE) -pretty-print \
+		-F Build/frameworks/Release-iphoneos \
+		-module-name $(PRODUCT_NAME) \
+		-output-dir $(SYMGRAPH_DIR_SWIFT)
 
 $(SYMGRAPH_INTERNAL): HEADERS = $(shell find $(HEADER_ROOT) -name "*.h")
 $(SYMGRAPH_INTERNAL): HEADERS += $(shell find $(INTERNAL_HEADER_ROOT) -name "*.h")
 $(SYMGRAPH_INTERNAL): HEADERS += $(shell find $(INTERNAL_HEADER_ROOT) -name "*.m")
 $(SYMGRAPH_INTERNAL): $(FRAMEWORK_RELEASE_PATHS) FORCE
 	$(XCRUN) clang -extract-api --product-name=$(PRODUCT_NAME) \
-		-o $@ -isysroot $(SDK_PATH) \
+		--pretty-sgf -o $@ -isysroot $(SDK_PATH) \
 		-F $(SDK_PATH)/System/Library/Frameworks \
 		$(HEADER_SEARCH_ARGS) $(EXTRA_ARGS) \
 		-x objective-c-header $(HEADERS)
 
+clean-symgraph: clean-symgraph-public clean-symgraph-internal
 clean-symgraph-public: FORCE
-	rm -rf $(SYMGRAPH_PUBLIC)
+	rm -rf $(SYMGRAPH_DIR_PUBLIC)
 clean-symgraph-internal: FORCE
-	rm -rf $(SYMGRAPH_INTERNAL)
+	rm -rf $(SYMGRAPH_DIR_INTERNAL)
+
 
 # Preview
 
 # NOTE: if you see "An error was encountered while compiling
-# documentation" while preview the docs, check to make sure there
-# another preview server running.
+# documentation" while previewing the docs, check to make sure another
+# preview server isn't running.
 
 $(DOCROOT):
 	mkdir -p $@
@@ -80,7 +106,7 @@ $(DOCROOT):
 doc-preview-public: DOCC_SOURCE_BUNDLE = $(PUBLIC_DOCC_SOURCE_BUNDLE)
 doc-preview-public: SYMGRAPH_ROOT = $(SYMGRAPH_DIR_PUBLIC)
 doc-preview-public: DOCS_ROOT = $(DOCS_DIR_PUBLIC)
-doc-preview-public: $(SYMGRAPH_PUBLIC) $(DOCROOT)
+doc-preview-public: $(SYMGRAPH_CLANG) $(SYMGRAPH_SWIFT) $(DOCROOT)
 	$(XCRUN) $(DOCC) preview $(DOCC_SOURCE_BUNDLE) \
 		--port $(DOCC_PORT) \
 		--fallback-display-name $(PRODUCT_NAME) \
@@ -103,7 +129,6 @@ doc-preview-internal: $(SYMGRAPH_INTERNAL) $(DOCROOT)
 		--experimental-enable-custom-templates \
 		--output-dir $(DOCS_ROOT)
 
-
 # Convert for hosting on GitHub
 
 $(DOCS_WORKTREE):
@@ -118,7 +143,7 @@ doc-convert-public: CONVERT_EXTRA_ARGS = $(CONVERT_EXTRA_ARGS_PUBLIC)
 doc-convert-public: DOCC_SOURCE_BUNDLE = $(PUBLIC_DOCC_SOURCE_BUNDLE)
 doc-convert-public: SYMGRAPH_ROOT = $(SYMGRAPH_DIR_PUBLIC)
 doc-convert-public: DOCS_ROOT = $(DOCS_WORKTREE)/docs/public
-doc-convert-public: $(SYMGRAPH_PUBLIC) $(DOCS_WORKTREE)
+doc-convert-public: $(SYMGRAPH_CLANG) $(SYMGRAPH_SWIFT) $(DOCS_WORKTREE)
 	$(XCRUN) $(DOCC) convert $(DOCC_SOURCE_BUNDLE) \
 		--fallback-display-name $(PRODUCT_NAME) \
 		--fallback-bundle-identifier com.polling.Polling \
@@ -143,3 +168,6 @@ doc-convert-internal: $(SYMGRAPH_INTERNAL) $(DOCS_WORKTREE)
 		--experimental-enable-custom-templates \
 		$(CONVERT_EXTRA_ARGS) \
 		--output-dir $(DOCS_ROOT)
+
+doc-clean:
+	-$(GIT) worktree remove $(DOCS_WORKTREE)

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2C3ACAED2D24806E00DBFCEB /* POLSurveyDialogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3ACAEC2D24806E00DBFCEB /* POLSurveyDialogViewController.xib */; };
 		2C6CF6422D24BC140074CC94 /* POLSurveyBottomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6CF6402D24BC140074CC94 /* POLSurveyBottomViewController.xib */; };
-		2C701B142D565386005F92CA /* PollingInternal.docc in Sources */ = {isa = PBXBuildFile; fileRef = 2C701B132D565386005F92CA /* PollingInternal.docc */; };
 		2C701B302D5B91A9005F92CA /* POLVers.template_vers in Sources */ = {isa = PBXBuildFile; fileRef = 2C701B2E2D5B8F84005F92CA /* POLVers.template_vers */; };
 		2C8AEA922D21BD3000294B6C /* POLReward.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AEA7E2D21BD3000294B6C /* POLReward.m */; };
 		2C8AEA932D21BD3000294B6C /* POLSurvey.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AEA802D21BD3000294B6C /* POLSurvey.m */; };
@@ -503,7 +502,6 @@
 				2C8AEA982D21BD3000294B6C /* POLPolling.m in Sources */,
 				2C8AEAFD2D21CFA400294B6C /* POLStorage.m in Sources */,
 				2C8AEA992D21BD3000294B6C /* POLPresentationController.m in Sources */,
-				2C701B142D565386005F92CA /* PollingInternal.docc in Sources */,
 				2CEADD2B2D498DD40087A2E8 /* POLModernSurveyViewController.m in Sources */,
 				2CEADCB32D3D911E0087A2E8 /* POLDefines.h in Sources */,
 				2C8AEA9A2D21BD3000294B6C /* POLSurveyViewController.m in Sources */,
@@ -537,6 +535,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				DOCC_EXTRACT_SWIFT_INFO_FOR_OBJC_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -568,6 +567,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				DOCC_EXTRACT_SWIFT_INFO_FOR_OBJC_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
