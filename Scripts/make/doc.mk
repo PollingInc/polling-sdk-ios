@@ -1,6 +1,6 @@
 # doc.mk
 
-POLLING_BUILD_SUBDIR=$(OBJROOT)/$(PRODUCT_NAME).build/Release-iphoneos/$(PRODUCT_NAME).build
+POLLING_BUILD_SUBDIR=$(DOC_OBJROOT)/$(PRODUCT_NAME).build/Release-iphoneos/$(PRODUCT_NAME).build
 
 ARCH = arm64
 SYMGRAPH_TRIPLE = $(ARCH)-apple-ios
@@ -22,18 +22,18 @@ SYMGRAPH_INTERNAL = $(SYMGRAPH_DIR_INTERNAL)/$(PRODUCT_NAME).symbols.json
 
 SDK_PATH := $(shell $(XCRUN) --sdk iphoneos --show-sdk-path)
 
-HEADER_ROOT = $(SYMROOT)/Release-iphoneos/$(PRODUCT_NAME).framework/Headers
+HEADER_ROOT = $(DOC_SYMROOT)/Release-iphoneos/$(PRODUCT_NAME).framework/Headers
 INTERNAL_HEADER_ROOT = $(SRCROOT)/$(PRODUCT_NAME)/Internal
 
 HEADER_SEARCH_ARGS += -iquote $(POLLING_BUILD_SUBDIR)/$(PRODUCT_NAME)-generated-files.hmap
 HEADER_SEARCH_ARGS += -I $(POLLING_BUILD_SUBDIR)/$(PRODUCT_NAME)-own-target-headers.hmap
 HEADER_SEARCH_ARGS += -I $(POLLING_BUILD_SUBDIR)/$(PRODUCT_NAME)-all-target-headers.hmap
 HEADER_SEARCH_ARGS += -iquote $(POLLING_BUILD_SUBDIR)/$(PRODUCT_NAME)-project-headers.hmap
-HEADER_SEARCH_ARGS += -I $(SYMROOT)/Release-iphoneos/include
+HEADER_SEARCH_ARGS += -I $(DOC_SYMROOT)/Release-iphoneos/include
 HEADER_SEARCH_ARGS += -I $(POLLING_BUILD_SUBDIR)/DerivedSources-normal/$(ARCH)
 HEADER_SEARCH_ARGS += -I $(POLLING_BUILD_SUBDIR)/DerivedSources/$(ARCH)
 HEADER_SEARCH_ARGS += -I $(POLLING_BUILD_SUBDIR)/DerivedSources
-HEADER_SEARCH_ARGS += -F $(SYMROOT)/Release-iphoneos
+HEADER_SEARCH_ARGS += -F $(DOC_SYMROOT)/Release-iphoneos
 
 EXTRA_ARGS += -fmodules
 EXTRA_ARGS += -fobjc-arc
@@ -44,9 +44,11 @@ PUBLIC_DOCC_SOURCE_BUNDLE = $(SRCROOT)/Polling/Polling.docc
 INTERNAL_DOCC_SOURCE_BUNDLE = $(SRCROOT)/Polling/PollingInternal.docc
 DOCC_PORT = 9090
 
+# docs build dirs used for preview
 DOCS_DIR_PUBLIC = $(DOCROOT)/Public
 DOCS_DIR_INTERNAL = $(DOCROOT)/Internal
 
+# docs worktree used for convert
 DOCS_WORKTREE = $(PROJROOT)/Docs
 
 export DOCC_JSON_PRETTYPRINT = YES
@@ -63,14 +65,14 @@ $(SYMGRAPH_DIRS):
 	mkdir -p $@
 
 $(SYMGRAPH_CLANG): HEADERS = $(shell find $(HEADER_ROOT) -name "*.h")
-$(SYMGRAPH_CLANG): $(FRAMEWORK_RELEASE_PATHS) FORCE
+$(SYMGRAPH_CLANG): $(DOC_FRAMEWORK) FORCE
 	$(XCRUN) clang -extract-api --product-name=$(PRODUCT_NAME) \
 		--pretty-sgf -o $@ -isysroot $(SDK_PATH) \
 		-F $(SDK_PATH)/System/Library/Frameworks \
 		$(HEADER_SEARCH_ARGS) $(EXTRA_ARGS) \
 		-x objective-c-header $(HEADERS)
 
-$(SYMGRAPH_SWIFT): $(SYMGRAPH_DIR_SWIFT) FORCE
+$(SYMGRAPH_SWIFT): $(DOC_FRAMEWORK) $(SYMGRAPH_DIR_SWIFT) FORCE
 	xcrun swift-symbolgraph-extract -sdk $(SDK_PATH) \
 		-target $(SYMGRAPH_TRIPLE) -pretty-print \
 		-F Build/frameworks/Release-iphoneos \
@@ -80,7 +82,7 @@ $(SYMGRAPH_SWIFT): $(SYMGRAPH_DIR_SWIFT) FORCE
 $(SYMGRAPH_INTERNAL): HEADERS = $(shell find $(HEADER_ROOT) -name "*.h")
 $(SYMGRAPH_INTERNAL): HEADERS += $(shell find $(INTERNAL_HEADER_ROOT) -name "*.h")
 $(SYMGRAPH_INTERNAL): HEADERS += $(shell find $(INTERNAL_HEADER_ROOT) -name "*.m")
-$(SYMGRAPH_INTERNAL): $(FRAMEWORK_RELEASE_PATHS) FORCE
+$(SYMGRAPH_INTERNAL): $(DOC_FRAMEWORK) FORCE
 	$(XCRUN) clang -extract-api --product-name=$(PRODUCT_NAME) \
 		--pretty-sgf -o $@ -isysroot $(SDK_PATH) \
 		-F $(SDK_PATH)/System/Library/Frameworks \

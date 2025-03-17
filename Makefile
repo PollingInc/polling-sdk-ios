@@ -37,6 +37,7 @@ DOCROOT = $(BUILDROOT)/docs
 all: xcframework
 
 include Scripts/make/xcframework.mk
+include Scripts/make/framework.mk
 include Scripts/make/doc.mk
 include Scripts/make/release.mk
 
