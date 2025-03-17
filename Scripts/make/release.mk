@@ -3,10 +3,10 @@
 VERFILE = $(RELEASE_DIR)/v$(VER)
 RELNOTES = $(RELEASE_DIR)/notes.md
 
-UNSIGNED_TARBALL = $(RELEASE_DIR)/$(PRODUCT_NAME)-v$(VER)-unsigned.tar.gz
-UNSIGNED_ZIP = $(RELEASE_DIR)/$(PRODUCT_NAME)-v$(VER)-unsigned.zip
-SIGNED_TARBALL = $(RELEASE_DIR)/$(PRODUCT_NAME)-v$(VER)-signed.tar.gz
-SIGNED_ZIP = $(RELEASE_DIR)/$(PRODUCT_NAME)-v$(VER)-signed.zip
+UNSIGNED_TARBALL = $(RELEASE_DIR)/$(PRODUCT_NAME).xcframework-v$(VER)-unsigned.tar.gz
+UNSIGNED_ZIP = $(RELEASE_DIR)/$(PRODUCT_NAME).xcframework-v$(VER)-unsigned.zip
+SIGNED_TARBALL = $(RELEASE_DIR)/$(PRODUCT_NAME).xcframework-v$(VER)-signed.tar.gz
+SIGNED_ZIP = $(RELEASE_DIR)/$(PRODUCT_NAME).xcframework-v$(VER)-signed.zip
 
 BINARIES += $(UNSIGNED_TARBALL)
 BINARIES += $(UNSIGNED_ZIP)
