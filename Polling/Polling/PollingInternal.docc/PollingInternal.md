@@ -4,10 +4,18 @@ Internal developer documentation
 
 ## Overview
 
-<!--@START_MENU_TOKEN@-->Text<!--@END_MENU_TOKEN@-->
+The documentation herein is meant for SDK developers, contributors, or
+maintainers. If you're an app/game publisher looking integrating the
+Polling SDK you'll want the [publisher
+documentation](https://pollinginc.github.io/polling-sdk-ios).
 
 ## Topics
 
-### <!--@START_MENU_TOKEN@-->Group<!--@END_MENU_TOKEN@-->
+### Setup Project for Releasing
 
-- <!--@START_MENU_TOKEN@-->``Symbol``<!--@END_MENU_TOKEN@-->
+- <doc:CodeSigning>
+
+### Making Releases
+
+- <doc:ReleaseProcess>
+- <doc:VersionScheme>

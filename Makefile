@@ -33,6 +33,7 @@ XCFRWKROOT = $(BUILDROOT)/xcframeworks
 SYMGRAPHROOT = $(BUILDROOT)/symgraphs
 DOCROOT = $(BUILDROOT)/docs
 
+export ENABLE_USER_SCRIPT_SANDBOXING = NO
 
 all: xcframework
 

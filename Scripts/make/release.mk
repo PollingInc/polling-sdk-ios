@@ -1,5 +1,6 @@
 # release.mk
 
+TITLE = $(RELEASE_DIR)/title.txt
 VERFILE = $(RELEASE_DIR)/v$(VER)
 RELNOTES = $(RELEASE_DIR)/notes.md
 
@@ -41,7 +42,10 @@ $(SIGNED_ZIP): $(SIGNED_XCFRWK)
 
 prepare-release: $(RELEASE_DIR) $(BINARIES)
 	touch $(VERFILE)
+	echo v$(VER) >> $(TITLE)
 	Scripts/release.rb v$(VER) $(RELNOTES)
+
+edit-release:
 
 publish-release:
 
