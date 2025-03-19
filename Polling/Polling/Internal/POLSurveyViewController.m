@@ -39,6 +39,7 @@ static NSString * const POLSurveyViewSizeClassDescriptions[] = {
 	[POLSurveyViewSizeClassMaximum] = POLSurveyViewSizeClassMaximumDescription,
 };
 
+__attribute__ ((used))
 static NSString * const POLSurveyViewSizeClassDescription(POLSurveyViewSizeClass sizeClass)
 {
 	if (sizeClass > POL_ARRAY_SIZE(POLSurveyViewSizeClassDescriptions) - 1)
@@ -292,7 +293,9 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 - (void)observeValueForKeyPath:(NSString *)keyPath
 	ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
+#if DEBUG
 	static int contentSizeChangeCount = 0;
+#endif
 
 	if (context == POLWebViewContentSizeChangedContext) {
 		// leaving these for serious debugging
@@ -310,7 +313,9 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 			return;
 		}
 
+#if DEBUG
 		POLLogTrace("contentSizeChange[%d] keyPath=%@, change=%@", contentSizeChangeCount++, keyPath, change);
+#endif
 
 		if (CGSizeEqualToSize(new, CGSizeZero)) {
 			POLLogTrace("Skip new size set to zero");
@@ -370,8 +375,10 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 
 - (void)resizeToFitContentHeight:(CGFloat)newContentHeight force:(BOOL)force
 {
+#if DEBUG
 	CGFloat containerHeight = self.containerView.frame.size.height;
 	POLLogTrace("%s containerHeight=%G, newContentHeight=%G, force=%{BOOL}d", __func__, containerHeight, newContentHeight, force);
+#endif
 
 	POLSurveyViewSizeClass newSizeClass = POLSurveyViewSizeClassDefault;
 
@@ -504,24 +511,13 @@ static const NSTimeInterval POLSurveyViewLayoutChangeAnimationDuration = .5;
 		}
 	}
 
-	static int resizeID = -1;
-	resizeID++;
-
 	// perform animate view resize
 	[UIView animateWithDuration:POLSurveyViewLayoutChangeAnimationDuration animations:^{
-		int rID = resizeID;
-		return ^{
-			POLLogTrace("BEGIN[%D] CONSTRAINT ANIMATION", rID);
-			[self.backgroundView layoutIfNeeded];
-		};
-	}() completion:^{
-		int rID = resizeID;
-		return ^(BOOL finished) {
-			POLLogTrace("END[%d] CONSTRAINT ANIMATION finished=%{BOOL}d", rID, finished);
-			if (finished)
-				self->_currentSizeClass = newSizeClass;
-		};
-	}()];
+		[self.backgroundView layoutIfNeeded];
+	} completion:^(BOOL finished) {
+		if (finished)
+			self->_currentSizeClass = newSizeClass;
+	}];
 }
 
 - (void)forceResize

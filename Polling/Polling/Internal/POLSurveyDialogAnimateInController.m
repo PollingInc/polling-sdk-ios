@@ -14,16 +14,19 @@
 - (void)animateTransition:(nonnull id<UIViewControllerContextTransitioning>)transitionContext
 {
 	UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-	UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
 	UIView *toView = [transitionContext viewForKey:UITransitionContextToViewKey];
-	UIView *fromView = [transitionContext viewForKey:UITransitionContextFromViewKey];
 	UIView *containerView = transitionContext.containerView;
 
 	POLLogTrace("toVC=%@", toVC);
-	POLLogTrace("fromVC=%@", fromVC);
 	POLLogTrace("toView=%@", toView);
-	POLLogTrace("fromView=%@", fromView);
 	POLLogTrace("containerView=%@", containerView);
+
+#if DEBUG
+	UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+	UIView *fromView = [transitionContext viewForKey:UITransitionContextFromViewKey];
+	POLLogTrace("fromVC=%@", fromVC);
+	POLLogTrace("fromView=%@", fromView);
+#endif
 
 	if ([toVC isKindOfClass:POLSurveyViewController.class]) {
 		POLSurveyViewController *vc = (POLSurveyViewController *)toVC;
