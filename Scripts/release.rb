@@ -1,10 +1,11 @@
 #!/usr/bin/ruby
 
 require 'json'
+require 'Open3'
 require_relative 'version'
 
 def usage
-  puts "usage: release.rb CMD NEWVER RELTITLE RELNOTES"
+  puts "usage: release.rb CMD NEWVER RELTITLE RELNOTES FILES..."
 end
 
 puts "ARGV=#{ARGV}"
@@ -25,8 +26,11 @@ DRAFT = CMD != 'publish'
 PRERELEASE = !!EXTRA_INFO # true if the version has extra info -Beta1,
                           # -RC1, etc.
 
+VERFILE = "Release/#{NEW_VERSION}"
+FILES = ARGV.join ' '
+
 puts "#{CMD.capitalize}ing #{VER_ALL}"
-puts "DRAFT=#{DRAFT}, PRERELEASE=#{PRERELEASE}"
+puts "DRAFT=#{DRAFT}, PRERELEASE=#{PRERELEASE}, FILES=#{FILES}"
 
 # get last release from github
 RELEASES = JSON.parse(%x(gh release list -O desc -L 1 --json tagName))
@@ -39,17 +43,16 @@ else
   puts "LAST_VERSION=#{LAST_VERSION}"
 end
 
-# check if the version was properly bumped
-if LAST_VERSION && LAST_VERSION == NEW_VERSION then
-  puts "LAST_VERSION = NEW_VERSION = #{NEW_VERSION}"
-  puts "abort"
-  exit 1
-end
-
 title = (File.exist?(RELTITLE) && File.read(RELTITLE)) || NEW_VERSION
 notes = (File.exist?(RELNOTES) && File.read(RELNOTES)) || nil
 
 if CMD == 'prepare' then
+  # check if the version was properly bumped
+  if LAST_VERSION && (LAST_VERSION == NEW_VERSION) then
+    puts "LAST_VERSION = NEW_VERSION = #{NEW_VERSION}"
+    puts "Release #{NEW_VERSION} already exists; abort"
+    exit 1
+  end
   # get draft release notes
   if LAST_VERSION && !notes then
     notes = ""
@@ -70,6 +73,13 @@ if CMD == 'prepare' then
   end
   File.write RELTITLE, title
   File.write RELNOTES, notes
+  pre = (PRERELEASE && '--prerelease') || ''
+  ex = "gh release create #{NEW_VERSION} --draft -t \"#{title.strip}\" -F #{RELNOTES} #{pre} #{FILES}"
+  puts ex; out, err, status = Open3.capture3 ex
+  unless status.success?
+    warn "failure: out=#{out}, err=#{err}, status=#{status}"
+    exit 1
+  end
 end
 
 puts "title=#{title}"
@@ -79,4 +89,40 @@ else
   puts "notes=#{notes}"
 end
 
-puts "Inspect/edit #{RELTITLE} and #{RELNOTES} before publishing!"
+if CMD == 'edit' then
+  unless File.exist? VERFILE then
+    warn "Missing #{VERFILE}; Must run `make prepare-release` before editing/publishing"
+    exit 1
+  end
+  pre = (PRERELEASE && '--prerelease') || ''
+  ex = "gh release edit #{NEW_VERSION} --draft -t \"#{title.strip}\" -F #{RELNOTES} #{pre}"
+  puts ex; out, err, status = Open3.capture3 ex
+  unless status.success?
+    warn "failure: out=#{out}, err=#{err}, status=#{status}"
+    exit 1
+  end
+end
+
+unless CMD == 'publish' then
+  puts "Inspect and edit #{RELTITLE} and #{RELNOTES} before publishing!"
+end
+
+if CMD == 'publish' then
+  unless File.exist? VERFILE then
+    warn "Missing #{VERFILE}; Must run `make prepare-release` before editing/publishing"
+    exit 1
+  end
+  pre = (PRERELEASE && '--prerelease') || ''
+  ex = "gh release edit #{NEW_VERSION} --draft=false -t \"#{title.strip}\" -F #{RELNOTES} #{pre}"
+  puts ex; out, err, status = Open3.capture3 ex
+  unless status.success?
+    warn "failure: out=#{out}, err=#{err}, status=#{status}"
+    exit 1
+  end
+end
+
+ex = "gh release view #{NEW_VERSION} -w"
+puts ex; out, err, status = Open3.capture3 ex
+unless status.success?
+  warn "failure: out=#{out}, err=#{err}, status=#{status}"
+end

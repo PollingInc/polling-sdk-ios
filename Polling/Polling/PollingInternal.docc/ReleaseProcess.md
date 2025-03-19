@@ -26,7 +26,7 @@ PROJECT_VERSION = 1.0.0
 ### Commit the Version Bump
 
 Commit the version bump and all other changes. Remove or stash
-anything in worktree until `git status` shows "nothing to commit,
+anything in the worktree until `git status` shows "nothing to commit,
 working tree clean".
 
 ### Prepare the Release
@@ -41,9 +41,13 @@ Open the generated release notes at `Release/notes.md` and make edits
 such as removing entries like "fix typo" or "forgot to add file",
 etc. Fix spelling, grammar, and edit for conciseness and clarity.
 
+- Edit `Release/notes.md`
 - Check that the signed and unsigned XCFramework were created and
 packaged.
 - Check the public and internal documentation
+- Modify `Release/title.txt` if necessary
+
+Use `make edit-release` to update the title or release notes.
 
 ### Publish the Release
 

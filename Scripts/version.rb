@@ -13,8 +13,9 @@ end
 
 VER_LONG = "v#{VER}"
 version = VER.dup
-EXTRA_INFO = nil
-version.gsub!(/(-\w*$)/){ EXTRA_INFO = $1 }
+extra = nil
+version.gsub!(/(-\w*$)/){ extra = $1 }
+EXTRA_INFO = extra
 
 ver_components = version.split('.')
 

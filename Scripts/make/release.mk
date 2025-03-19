@@ -46,19 +46,19 @@ prepare-release: export PROJECT_VERSION := $(VER)
 prepare-release: export CONFIGURATION := Release
 prepare-release: $(RELEASE_DIR) $(BINARIES)
 	touch $(VERFILE)
-	Scripts/release.rb prepare v$(VER) $(RELTITLE) $(RELNOTES)
+	Scripts/release.rb prepare v$(VER) $(RELTITLE) $(RELNOTES) $(BINARIES)
 
 edit-release: export PRODUCT_NAME := $(PRODUCT_NAME)
 edit-release: export PROJECT_VERSION := $(VER)
 edit-release: export CONFIGURATION := Release
 edit-release:
-	Scripts/release.rb edit v$(VER) $(RELTITLE) $(RELNOTES)
+	Scripts/release.rb edit v$(VER) $(RELTITLE) $(RELNOTES) $(BINARIES)
 
 publish-release: export PRODUCT_NAME := $(PRODUCT_NAME)
 publish-release: export PROJECT_VERSION := $(VER)
 publish-release: export CONFIGURATION := Release
 publish-release:
-	Scripts/release.rb publish v$(VER) $(RELTITLE) $(RELNOTES)
+	Scripts/release.rb publish v$(VER) $(RELTITLE) $(RELNOTES) $(BINARIES)
 
 
 clean-release:
