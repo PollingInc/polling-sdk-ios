@@ -8,9 +8,7 @@
 #import "POLPolling.h"
 #import "POLPolling+Private.h"
 #import "POLNetworkSession.h"
-#import "POLModernSurveyViewController.h"
-#import "POLCompatibleSurveyViewController.h"
-#import "POLPresentationController.h"
+#import "POLSurveyViewController.h"
 #import "POLSurveyDialogAnimateInController.h"
 #import "POLSurveyBottomAnimateInController.h"
 #import "POLTriggeredSurveyController.h"
@@ -397,12 +395,13 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 	 * iOS 15+ can use the UISheetPresentationController and detents
 	 * to display a half-sheet, but anything below requires trickery
 	 * to and so we use a custom view controller too.
+	 *
+	 * Initially there were going to be multiple view controllers, but
+	 * survey view controller has grown to the point that supporting a
+	 * view controller for iOS 12 to 14 and another for iOS 15+ would
+	 * be too much.
 	 */
-
-	/* TODO: logic for picking the best view controller and
-	 * presentation style */
-
-	[self presentCompatibleSurvey:survey];
+	[self presentSurvey:survey];
 }
 
 - (void)presentEmbed
@@ -424,35 +423,7 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 
 	UIViewController *visVC = self.visibleViewController;
 
-	_surveyViewController = [[POLModernSurveyViewController alloc] initWithSurvey:survey];
-	_surveyViewController.delegate = self;
-
-	if (_viewType == POLViewTypeDialog) {
-		_surveyViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-		if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone) {
-			_surveyViewController.modalPresentationStyle = UIModalPresentationCustom;
-			_surveyViewController.transitioningDelegate = self;
-		} else {
-			_surveyViewController.modalPresentationStyle = UIModalPresentationFormSheet;
-
-		}
-	} else if (_viewType == POLViewTypeBottom) {
-		_surveyViewController.modalPresentationStyle = UIModalPresentationPageSheet;
-		_surveyViewController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-	}
-
-	_surveyVisible = YES;
-	[visVC presentViewController:_surveyViewController animated:YES completion:nil];
-}
-
-- (void)presentCompatibleSurvey:(POLSurvey *)survey
-{
-	if (_surveyViewController)
-		return;
-
-	UIViewController *visVC = self.visibleViewController;
-
-	_surveyViewController = [[POLCompatibleSurveyViewController alloc] initWithSurvey:survey viewType:_viewType];
+	_surveyViewController = [[POLSurveyViewController alloc] initWithSurvey:survey viewType:_viewType];
 	_surveyViewController.delegate = self;
 	_surveyViewController.modalPresentationStyle = UIModalPresentationOverFullScreen;
 	_surveyViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
@@ -470,8 +441,8 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 {
 	POLLogTrace("%s presented=%@, presenting=%@, source=%@", __func__, presented, presenting, source);
 
-	if ([presented isKindOfClass:POLCompatibleSurveyViewController.class]) {
-		POLCompatibleSurveyViewController *vc = (POLCompatibleSurveyViewController *)presented;
+	if ([presented isKindOfClass:POLSurveyViewController.class]) {
+		POLSurveyViewController *vc = (POLSurveyViewController *)presented;
 		if (vc.viewType == POLViewTypeDialog)
 			return POLSurveyDialogAnimateInController.new;
 		else if (vc.viewType == POLViewTypeBottom)
@@ -479,16 +450,6 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 	}
 
 	return nil;
-}
-
-- (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented
-	presentingViewController:(UIViewController *)presenting
-	sourceViewController:(UIViewController *)source
-{
-	POLLogTrace("%s presented=%@, presenting=%@, source=%@", __func__, presented, presenting, source);
-	return nil;
-//	return [[POLPresentationController alloc] initWithPresentedViewController:presented
-//													 presentingViewController:presenting];
 }
 
 #pragma mark - View Controller Transistion Coordinator

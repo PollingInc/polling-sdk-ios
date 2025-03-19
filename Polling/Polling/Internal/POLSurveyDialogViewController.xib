@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="POLCompatibleSurveyViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="POLSurveyViewController">
             <connections>
                 <outlet property="backgroundView" destination="i5M-Pr-FkT" id="7Ab-2a-HpI"/>
                 <outlet property="containerView" destination="dbK-hU-D4a" id="0bN-ti-yKn"/>

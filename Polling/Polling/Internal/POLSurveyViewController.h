@@ -12,6 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class POLSurvey;
+@class POLBackgroundView, POLContainerView;
 @class WKWebView, WKWebViewConfiguration;
 
 @interface POLSurveyViewController : UIViewController
@@ -24,8 +25,42 @@ NS_ASSUME_NONNULL_BEGIN
 - (WKWebViewConfiguration *)webViewConfiguration;
 - (void)loadWebRequest;
 
+@property POLViewType viewType;
+
+@property (strong, nonatomic) IBOutlet POLBackgroundView *backgroundView;
+@property (weak, nonatomic) IBOutlet POLContainerView *containerView;
+
+- init NS_UNAVAILABLE;
+- initWithSurvey:(POLSurvey *)survey viewType:(POLViewType)viewType;
+
+#pragma mark - Dialog Layout Constraints
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *dialogTopConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *dialogTopConstraint2;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *dialogBottomConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *dialogBottomConstraint2;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *dialogLeadingConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *dialogTrailingConstraint;
+
+#pragma mark - Bottom Layout Constraints
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomHalfHeightConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomTopOffsetConstraint;
+
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomBottomConstraint;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomLeadingConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomTrailingConstraint;
+
 @end
 
+@interface POLBackgroundView : UIView
+@end
+
+@interface POLContainerView : UIView
+@end
 
 
 NS_ASSUME_NONNULL_END

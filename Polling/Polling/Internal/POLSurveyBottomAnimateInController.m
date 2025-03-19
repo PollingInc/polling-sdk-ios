@@ -6,7 +6,7 @@
  */
 
 #import "POLSurveyBottomAnimateInController.h"
-#import "POLCompatibleSurveyViewController.h"
+#import "POLSurveyViewController.h"
 #import "POLPolling+Private.h"
 
 @implementation POLSurveyBottomAnimateInController
@@ -25,8 +25,8 @@
 	POLLogTrace("fromView=%@", fromView);
 	POLLogTrace("containerView=%@", containerView);
 
-	if ([toVC isKindOfClass:POLCompatibleSurveyViewController.class]) {
-		POLCompatibleSurveyViewController *vc = (POLCompatibleSurveyViewController *)toVC;
+	if ([toVC isKindOfClass:POLSurveyViewController.class]) {
+		POLSurveyViewController *vc = (POLSurveyViewController *)toVC;
 		UIView *toContainerView = vc.containerView;
 		NSTimeInterval duration = [self transitionDuration:transitionContext];
 		CGAffineTransform startAF = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, toContainerView.frame.size.height);
