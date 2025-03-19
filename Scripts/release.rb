@@ -1,47 +1,59 @@
 #!/usr/bin/ruby
 
 require 'json'
+require_relative 'version'
 
-puts Dir.getwd
-
-puts "ARGV=#{ARGV}"
-if ARGV.count == 0 then
-  puts "new version must be provided as an argument"
-  exit 1
+def usage
+  puts "usage: release.rb CMD NEWVER RELTITLE RELNOTES"
 end
 
-TITLE = nil
-NEWVER = ARGV[0]
-RELNOTES = ARGV[1]
-DRAFT = true
+puts "ARGV=#{ARGV}"
 
-# true if the version has extra info -Beta1, -RC1, etc.
-PRERELEASE = true
+CMD = ARGV.shift
+if !CMD then usage; exit 1 end
+
+NEW_VERSION = ARGV.shift
+if !NEW_VERSION then usage; exit 1 end
+
+RELTITLE = ARGV.shift
+if !RELTITLE then usage; exit 1 end
+
+RELNOTES = ARGV.shift
+if !RELNOTES then usage; exit 1 end
+
+DRAFT = CMD != 'publish'
+PRERELEASE = !!EXTRA_INFO # true if the version has extra info -Beta1,
+                          # -RC1, etc.
+
+puts "#{CMD.capitalize}ing #{VER_ALL}"
+puts "DRAFT=#{DRAFT}, PRERELEASE=#{PRERELEASE}"
 
 # get last release from github
 RELEASES = JSON.parse(%x(gh release list -O desc -L 1 --json tagName))
 if RELEASES.count == 0 then
-  last_version = nil
+  LAST_VERSION = nil
   puts 'no previous releases'
 else
-  last_release = RELEASES[0]
-  last_version = last_release['tagName']
-  puts "last version #{last_version}"
+  LAST_RELEASE = RELEASES[0]
+  LAST_VERSION = LAST_RELEASE['tagName']
+  puts "LAST_VERSION=#{LAST_VERSION}"
 end
 
-# get current version
-new_version = ARGV[0]
+# check if the version was properly bumped
+if LAST_VERSION && LAST_VERSION == NEW_VERSION then
+  puts "LAST_VERSION = NEW_VERSION = #{NEW_VERSION}"
+  puts "abort"
+  exit 1
+end
 
-if last_version != nil then
-  # check if the version was properly bumped
-  if last_version == new_version then
-    puts "last_version = new_version = #{new_version}"
-    puts "abort"
-    exit 1
-  else
-    # get draft release notes
+title = (File.exist?(RELTITLE) && File.read(RELTITLE)) || NEW_VERSION
+notes = (File.exist?(RELNOTES) && File.read(RELNOTES)) || nil
+
+if CMD == 'prepare' then
+  # get draft release notes
+  if LAST_VERSION && !notes then
     notes = ""
-    raw_notes = %x(git log #{last_version}.. --pretty="format:- %sGITLOGOPTNEWLINE%b")
+    raw_notes = %x(git log #{LAST_VERSION}.. --pretty="format:- %sGITLOGOPTNEWLINE%b")
     raw_notes.gsub! /GITLOGOPTNEWLINE$/, ''
     raw_notes.gsub! /GITLOGOPTNEWLINE/, "\n\n"
     raw_notes.split("\n").each do |line|
@@ -53,9 +65,18 @@ if last_version != nil then
         notes << "    #{line}\n"
       end
     end
+  else
+    if !notes then notes = "First release\n" end
   end
-else
-  notes = "First release\n"
+  File.write RELTITLE, title
+  File.write RELNOTES, notes
 end
 
-File.write RELNOTES, notes
+puts "title=#{title}"
+if notes && notes.length > 72 then
+  puts "notes=#{notes[0..72]}..."
+else
+  puts "notes=#{notes}"
+end
+
+puts "Inspect/edit #{RELTITLE} and #{RELNOTES} before publishing!"

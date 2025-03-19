@@ -1,7 +1,8 @@
 # release.mk
 
-TITLE = $(RELEASE_DIR)/title.txt
+
 VERFILE = $(RELEASE_DIR)/v$(VER)
+RELTITLE = $(RELEASE_DIR)/title.txt
 RELNOTES = $(RELEASE_DIR)/notes.md
 
 UNSIGNED_TARBALL = $(RELEASE_DIR)/$(PRODUCT_NAME).xcframework-v$(VER)-unsigned.tar.gz
@@ -40,14 +41,24 @@ $(SIGNED_ZIP): $(SIGNED_XCFRWK)
 	$(TAR) -C $(SIGNED_DIR) --format=zip -a -cf $@ $(XCFRAMEWORK)
 
 
+prepare-release: export PRODUCT_NAME := $(PRODUCT_NAME)
+prepare-release: export PROJECT_VERSION := $(VER)
+prepare-release: export CONFIGURATION := Release
 prepare-release: $(RELEASE_DIR) $(BINARIES)
 	touch $(VERFILE)
-	echo v$(VER) >> $(TITLE)
-	Scripts/release.rb v$(VER) $(RELNOTES)
+	Scripts/release.rb prepare v$(VER) $(RELTITLE) $(RELNOTES)
 
+edit-release: export PRODUCT_NAME := $(PRODUCT_NAME)
+edit-release: export PROJECT_VERSION := $(VER)
+edit-release: export CONFIGURATION := Release
 edit-release:
+	Scripts/release.rb edit v$(VER) $(RELTITLE) $(RELNOTES)
 
+publish-release: export PRODUCT_NAME := $(PRODUCT_NAME)
+publish-release: export PROJECT_VERSION := $(VER)
+publish-release: export CONFIGURATION := Release
 publish-release:
+	Scripts/release.rb publish v$(VER) $(RELTITLE) $(RELNOTES)
 
 
 clean-release:

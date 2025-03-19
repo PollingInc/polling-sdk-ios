@@ -11,15 +11,19 @@ if SANDBOXED == 'YES' then
   end
 end
 
-ver_components = VER.split('.')
+VER_LONG = "v#{VER}"
+version = VER.dup
+EXTRA_INFO = nil
+version.gsub!(/(-\w*$)/){ EXTRA_INFO = $1 }
+
+ver_components = version.split('.')
 
 MAJOR = ver_components[0]
 MINOR = ver_components[1] || '0'
 PATCH = ver_components[2] || '0'
 
+MINOR.gsub!(/-\w*$/, '')
 PATCH.gsub!(/-\w*$/, '')
-
-VER_LONG = "v#{VER}"
 
 # NOTE: git commands will fail if sandboxing is enabled
 if SANDBOXED != 'YES' then
