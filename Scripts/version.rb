@@ -5,7 +5,7 @@ CONFIG = ENV['CONFIGURATION']
 
 if SANDBOXED == 'YES' then
   puts "note: ENABLE_USER_SCRIPT_SANDBOXING=#{SANDBOXED} and CONFIGURATION=#{CONFIG}"
-  if CONFIG == 'RELEASE' then
+  if CONFIG == 'Release' then
     puts 'error: Sandboxing not supported for Release builds'
     exit 1
   end

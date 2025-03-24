@@ -14,6 +14,7 @@ DOCC ?= docc
 GIT ?= git
 GH ?= gh
 TAR ?= tar
+PLUTIL ?= plutil
 
 PRODUCT_NAME = Polling
 VER := $(shell grep "^PROJECT_VERSION" Configs/Framework.xcconfig | cut -d = -f 2 | tr -d ' ')
@@ -34,6 +35,7 @@ SYMGRAPHROOT = $(BUILDROOT)/symgraphs
 DOCROOT = $(BUILDROOT)/docs
 
 export ENABLE_USER_SCRIPT_SANDBOXING = NO
+MODULE_VERIFY ?= YES
 
 all: xcframework
 
