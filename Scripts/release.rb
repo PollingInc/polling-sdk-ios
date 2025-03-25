@@ -43,6 +43,39 @@ else
   puts "LAST_VERSION=#{LAST_VERSION}"
 end
 
+if CMD == 'commit' then
+  SWIFTPM_FILES = FILES.split
+  SWIFTPM_FILES.each do |f|
+    if f.match? /-signed/ then
+      SIGNED_CHECKSUM = %x(swift package compute-checksum #{f}).strip
+    elsif f.match? /-unsigned/ then
+      UNSIGNED_CHECKSUM = %x(swift package compute-checksum #{f}).strip
+    end
+  end
+
+  pkg = File.read 'Scripts/templates/_Package.swift'
+  pkg.gsub! '__VERSION__', VER
+  pkg.gsub! '__TAG__', NEW_VERSION
+  pkg.gsub! '__SIGNED_CHECKSUM__', SIGNED_CHECKSUM
+  pkg.gsub! '__UNSIGNED_CHECKSUM__', UNSIGNED_CHECKSUM
+  File.write 'Package.swift', pkg
+
+  pod = File.read 'Scripts/templates/_PollingSDK.podspec'
+  pod.gsub! '__VERSION__', VER
+  pod.gsub! '__TAG__', NEW_VERSION
+  File.write 'Release/Polling.podspec', pod
+
+  # TODO:
+  # to check for clean repo except for Package.swift
+  # git status
+
+  # git add Package.swift
+  # git commit -m "Release #{NEW_VERSION}"
+  # git push
+
+  exit 0
+end
+
 title = (File.exist?(RELTITLE) && File.read(RELTITLE)) || NEW_VERSION
 notes = (File.exist?(RELNOTES) && File.read(RELNOTES)) || nil
 
@@ -91,7 +124,7 @@ end
 
 if CMD == 'edit' then
   unless File.exist? VERFILE then
-    warn "Missing #{VERFILE}; Must run `make prepare-release` before editing/publishing"
+    warn "Missing #{VERFILE}; Must run `make prepare-release` before editing"
     exit 1
   end
   pre = (PRERELEASE && '--prerelease') || ''
@@ -109,7 +142,7 @@ end
 
 if CMD == 'publish' then
   unless File.exist? VERFILE then
-    warn "Missing #{VERFILE}; Must run `make prepare-release` before editing/publishing"
+    warn "Missing #{VERFILE}; Must run `make prepare-release` before publishing"
     exit 1
   end
   pre = (PRERELEASE && '--prerelease') || ''
@@ -119,6 +152,10 @@ if CMD == 'publish' then
     warn "failure: out=#{out}, err=#{err}, status=#{status}"
     exit 1
   end
+
+  # TODO: pod repo push [repo] NAME.podspec
+
+  # TODO: touch Release/published
 end
 
 ex = "gh release view #{NEW_VERSION} -w"

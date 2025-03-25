@@ -2,6 +2,7 @@ SANDBOXED = ENV['ENABLE_USER_SCRIPT_SANDBOXING']
 PRODUCT_NAME = ENV['PRODUCT_NAME']
 VER = ENV['PROJECT_VERSION']
 CONFIG = ENV['CONFIGURATION']
+BUILD_FOR_SWIFTPM = ENV['BUILD_FOR_SWIFTPM']
 
 if SANDBOXED == 'YES' then
   puts "note: ENABLE_USER_SCRIPT_SANDBOXING=#{SANDBOXED} and CONFIGURATION=#{CONFIG}"
@@ -30,6 +31,9 @@ PATCH.gsub!(/-\w*$/, '')
 if SANDBOXED != 'YES' then
   BRANCH = %x(git branch --show-current).strip
   COMMIT = %x(git rev-parse --short HEAD).strip
+  if BUILD_FOR_SWIFTPM == 'YES' then
+    COMMIT << "+swiftpm"
+  end
 
   VER_LONG << ":#{BRANCH}@#{COMMIT}"
   VER_LONG << ":#{CONFIG}"

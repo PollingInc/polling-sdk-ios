@@ -62,6 +62,9 @@ DerivedData/
 *.dSYM.zip
 *.dSYM
 
+## Swift PM
+.swiftpm
+
 Scripts/make/local.mk
 Configs/Local.xcconfig
 
