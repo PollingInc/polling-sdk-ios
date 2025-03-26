@@ -58,7 +58,8 @@ $(FRAMEWORK_RELEASE_PATHS): framework-release
 
 DOC_OBJROOT = $(DOCROOT)/objs
 DOC_SYMROOT = $(DOCROOT)/frameworks
-DOC_FRAMEWORK = $(DOC_SYMROOT)/Release$(DEST_iOS_suffix)/$(FRAMEWORK)
+DOC_FRAMEWORK_RELEASE_DIR = $(DOC_SYMROOT)/Release$(DEST_iOS_suffix)
+DOC_FRAMEWORK = $(DOC_FRAMEWORK_RELEASE_DIR)/$(FRAMEWORK)
 
 # NOTE: Only build for one destination and disable the module verifer
 # for fast builds when building the docs. We also force the framework

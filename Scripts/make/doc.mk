@@ -29,11 +29,11 @@ HEADER_SEARCH_ARGS += -iquote $(POLLING_BUILD_SUBDIR)/$(PRODUCT_NAME)-generated-
 HEADER_SEARCH_ARGS += -I $(POLLING_BUILD_SUBDIR)/$(PRODUCT_NAME)-own-target-headers.hmap
 HEADER_SEARCH_ARGS += -I $(POLLING_BUILD_SUBDIR)/$(PRODUCT_NAME)-all-target-headers.hmap
 HEADER_SEARCH_ARGS += -iquote $(POLLING_BUILD_SUBDIR)/$(PRODUCT_NAME)-project-headers.hmap
-HEADER_SEARCH_ARGS += -I $(DOC_SYMROOT)/Release-iphoneos/include
+HEADER_SEARCH_ARGS += -I $(DOC_FRAMEWORK_RELEASE_DIR)/include
 HEADER_SEARCH_ARGS += -I $(POLLING_BUILD_SUBDIR)/DerivedSources-normal/$(ARCH)
 HEADER_SEARCH_ARGS += -I $(POLLING_BUILD_SUBDIR)/DerivedSources/$(ARCH)
 HEADER_SEARCH_ARGS += -I $(POLLING_BUILD_SUBDIR)/DerivedSources
-HEADER_SEARCH_ARGS += -F $(DOC_SYMROOT)/Release-iphoneos
+HEADER_SEARCH_ARGS += -F $(DOC_FRAMEWORK_RELEASE_DIR)
 
 EXTRA_ARGS += -fmodules
 EXTRA_ARGS += -fobjc-arc
@@ -42,7 +42,8 @@ EXTRA_ARGS += -Wno-nullability-completeness
 
 PUBLIC_DOCC_SOURCE_BUNDLE = $(SRCROOT)/Polling/Polling.docc
 INTERNAL_DOCC_SOURCE_BUNDLE = $(SRCROOT)/Polling/PollingInternal.docc
-DOCC_PORT = 9090
+DOCC_PUBLIC_PORT ?= 8080
+DOCC_INTERNAL_PORT ?= 9090
 
 # docs build dirs used for preview
 DOCS_DIR_PUBLIC = $(DOCROOT)/Public
@@ -75,7 +76,7 @@ $(SYMGRAPH_CLANG): $(DOC_FRAMEWORK) FORCE
 $(SYMGRAPH_SWIFT): $(DOC_FRAMEWORK) $(SYMGRAPH_DIR_SWIFT) FORCE
 	xcrun swift-symbolgraph-extract -sdk $(SDK_PATH) \
 		-target $(SYMGRAPH_TRIPLE) -pretty-print \
-		-F Build/frameworks/Release-iphoneos \
+		-F $(DOC_FRAMEWORK_RELEASE_DIR) \
 		-module-name $(PRODUCT_NAME) \
 		-output-dir $(SYMGRAPH_DIR_SWIFT)
 
@@ -98,7 +99,7 @@ clean-symgraph-internal: FORCE
 
 # Preview
 
-# NOTE: if you see "An error was encountered while compiling
+# NOTE: If you see "An error was encountered while compiling
 # documentation" while previewing the docs, check to make sure another
 # preview server isn't running.
 
@@ -110,7 +111,7 @@ doc-preview-public: SYMGRAPH_ROOT = $(SYMGRAPH_DIR_PUBLIC)
 doc-preview-public: DOCS_ROOT = $(DOCS_DIR_PUBLIC)
 doc-preview-public: $(SYMGRAPH_CLANG) $(SYMGRAPH_SWIFT) $(DOCROOT)
 	$(XCRUN) $(DOCC) preview $(DOCC_SOURCE_BUNDLE) \
-		--port $(DOCC_PORT) \
+		--port $(DOCC_PUBLIC_PORT) \
 		--fallback-display-name $(PRODUCT_NAME) \
 		--fallback-bundle-identifier com.polling.Polling \
 		--fallback-bundle-version 1.0.0 \
@@ -123,7 +124,7 @@ doc-preview-internal: SYMGRAPH_ROOT = $(SYMGRAPH_DIR_INTERNAL)
 doc-preview-internal: DOCS_ROOT = $(DOCS_DIR_INTERNAL)
 doc-preview-internal: $(SYMGRAPH_INTERNAL) $(DOCROOT)
 	$(XCRUN) $(DOCC) preview $(DOCC_SOURCE_BUNDLE) \
-		--port $(DOCC_PORT) \
+		--port $(DOCC_INTERNAL_PORT) \
 		--fallback-display-name $(PRODUCT_NAME) \
 		--fallback-bundle-identifier com.polling.Polling \
 		--fallback-bundle-version 1.0.0 \
