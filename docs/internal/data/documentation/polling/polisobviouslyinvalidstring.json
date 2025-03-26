@@ -1,0 +1,151 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLIsObviouslyInvalidString"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:POLPolling.m@F@POLIsObviouslyInvalidString",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLIsObviouslyInvalidString"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLIsObviouslyInvalidString"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Function",
+    "symbolKind" : "func",
+    "title" : "POLIsObviouslyInvalidString"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "static"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:@T@BOOL",
+              "text" : "BOOL"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLIsObviouslyInvalidString"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSString",
+              "text" : "NSString"
+            },
+            {
+              "kind" : "text",
+              "text" : " * "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "str"
+            },
+            {
+              "kind" : "text",
+              "text" : ");"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polisobviouslyinvalidstring"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.polling/documentation/Polling/POLIsObviouslyInvalidString": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLIsObviouslyInvalidString"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLIsObviouslyInvalidString",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLIsObviouslyInvalidString",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polisobviouslyinvalidstring"
+}
+}
+}

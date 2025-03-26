@@ -1,0 +1,305 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling\/ViewType-swift.enum"
+      ],
+      [
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling\/ViewType-swift.enum"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling\/ViewType-swift.enum\/init(rawValue:)"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:So11POLViewTypeV8rawValueABSgSi_tcfc",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "init"
+      },
+      {
+        "kind" : "text",
+        "text" : "?("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "rawValue"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Si",
+        "text" : "Int"
+      },
+      {
+        "kind" : "text",
+        "text" : ")"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Initializer",
+    "symbolKind" : "init",
+    "title" : "init(rawValue:)"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "init"
+            },
+            {
+              "kind" : "text",
+              "text" : "?("
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "rawValue"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Si",
+              "text" : "Int"
+            },
+            {
+              "kind" : "text",
+              "text" : ")"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polling\/viewtype-swift.enum\/init(rawvalue:)"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Poll and survey your users with ease",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.polling/documentation/Polling/Polling": {
+  "abstract" : [
+    {
+      "text" : "The primary SDK object",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Polling"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Polling"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polling"
+},
+"doc://com.polling.polling/documentation/Polling/Polling/ViewType-swift.enum": {
+  "abstract" : [
+    {
+      "text" : "Survey view style",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ViewType"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling\/ViewType-swift.enum",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ViewType"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Polling.ViewType",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polling\/viewtype-swift.enum"
+},
+"doc://com.polling.polling/documentation/Polling/Polling/ViewType-swift.enum/init(rawValue:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "?("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "rawValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling\/ViewType-swift.enum\/init(rawValue:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(rawValue:)",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polling\/viewtype-swift.enum\/init(rawvalue:)"
+}
+}, 
+"variantOverrides":[
+  {
+    "patch" : [
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling\/title",
+        "value" : "POLPolling"
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling\/fragments",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLPolling"
+          }
+        ]
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling\/navigatorTitle",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLPolling"
+          }
+        ]
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling~1ViewType-swift.enum\/title",
+        "value" : "POLViewType"
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling~1ViewType-swift.enum\/fragments",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLViewType"
+          }
+        ]
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling~1ViewType-swift.enum\/navigatorTitle",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLViewType"
+          }
+        ]
+      }
+    ],
+    "traits" : [
+      {
+        "interfaceLanguage" : "occ"
+      }
+    ]
+  }
+]
+}

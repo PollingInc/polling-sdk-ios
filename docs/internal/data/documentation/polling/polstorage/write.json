@@ -2,14 +2,14 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage"
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLStorage"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage\/write"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLStorage\/write"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -100,21 +100,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLStorage": {
+"doc://com.polling.polling/documentation/Polling/POLStorage": {
   "abstract" : [
 
   ],
@@ -124,14 +124,14 @@
       "text" : "POLStorage"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLStorage",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLStorage",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polstorage"
 },
-"doc://com.polling.Polling/documentation/Polling/POLStorage/write": {
+"doc://com.polling.polling/documentation/Polling/POLStorage/write": {
   "abstract" : [
 
   ],
@@ -145,7 +145,7 @@
       "text" : "write"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage\/write",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLStorage\/write",
   "kind" : "symbol",
   "navigatorTitle" : [
     {

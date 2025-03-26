@@ -1,0 +1,142 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingPollRateInterval"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:POLPolling.m@POLPollingPollRateInterval",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLPollingPollRateInterval"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLPollingPollRateInterval"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Global Variable",
+    "symbolKind" : "var",
+    "title" : "POLPollingPollRateInterval"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "static"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "const"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:@T@NSTimeInterval",
+              "text" : "NSTimeInterval"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLPollingPollRateInterval"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polpollingpollrateinterval"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.polling/documentation/Polling/POLPollingPollRateInterval": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLPollingPollRateInterval"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingPollRateInterval",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLPollingPollRateInterval",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpollingpollrateinterval"
+}
+}
+}

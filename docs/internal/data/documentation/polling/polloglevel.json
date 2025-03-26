@@ -2,13 +2,13 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevel"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -90,11 +90,11 @@
       "anchor" : "Enumeration-Cases",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelInfo",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelNone",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelTrace",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelWarn"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelInfo",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelNone",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelTrace",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelWarn"
       ],
       "title" : "Enumeration Cases"
     }
@@ -113,21 +113,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogLevel": {
+"doc://com.polling.polling/documentation/Polling/POLLogLevel": {
   "abstract" : [
 
   ],
@@ -137,14 +137,14 @@
       "text" : "POLLogLevel"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevel",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogLevel",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polloglevel"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogLevel/POLLogLevelError": {
+"doc://com.polling.polling/documentation/Polling/POLLogLevel/POLLogLevelError": {
   "abstract" : [
 
   ],
@@ -154,14 +154,14 @@
       "text" : "POLLogLevelError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogLevelError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polloglevel\/polloglevelerror"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogLevel/POLLogLevelInfo": {
+"doc://com.polling.polling/documentation/Polling/POLLogLevel/POLLogLevelInfo": {
   "abstract" : [
 
   ],
@@ -171,14 +171,14 @@
       "text" : "POLLogLevelInfo"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelInfo",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelInfo",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogLevelInfo",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polloglevel\/polloglevelinfo"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogLevel/POLLogLevelNone": {
+"doc://com.polling.polling/documentation/Polling/POLLogLevel/POLLogLevelNone": {
   "abstract" : [
 
   ],
@@ -188,14 +188,14 @@
       "text" : "POLLogLevelNone"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelNone",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelNone",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogLevelNone",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polloglevel\/polloglevelnone"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogLevel/POLLogLevelTrace": {
+"doc://com.polling.polling/documentation/Polling/POLLogLevel/POLLogLevelTrace": {
   "abstract" : [
 
   ],
@@ -205,14 +205,14 @@
       "text" : "POLLogLevelTrace"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelTrace",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelTrace",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogLevelTrace",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polloglevel\/pollogleveltrace"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogLevel/POLLogLevelWarn": {
+"doc://com.polling.polling/documentation/Polling/POLLogLevel/POLLogLevelWarn": {
   "abstract" : [
 
   ],
@@ -222,7 +222,7 @@
       "text" : "POLLogLevelWarn"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelWarn",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevel\/POLLogLevelWarn",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogLevelWarn",

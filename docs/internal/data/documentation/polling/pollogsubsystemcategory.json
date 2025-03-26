@@ -2,13 +2,13 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystemCategory"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogSubsystemCategory"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -90,7 +90,7 @@
       "anchor" : "Enumeration-Cases",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystemCategory\/POLLogSDKCategoryDefault"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogSubsystemCategory\/POLLogSDKCategoryDefault"
       ],
       "title" : "Enumeration Cases"
     }
@@ -109,21 +109,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogSubsystemCategory": {
+"doc://com.polling.polling/documentation/Polling/POLLogSubsystemCategory": {
   "abstract" : [
 
   ],
@@ -133,14 +133,14 @@
       "text" : "POLLogSubsystemCategory"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystemCategory",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogSubsystemCategory",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogSubsystemCategory",
   "type" : "topic",
   "url" : "\/documentation\/polling\/pollogsubsystemcategory"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogSubsystemCategory/POLLogSDKCategoryDefault": {
+"doc://com.polling.polling/documentation/Polling/POLLogSubsystemCategory/POLLogSDKCategoryDefault": {
   "abstract" : [
 
   ],
@@ -150,7 +150,7 @@
       "text" : "POLLogSDKCategoryDefault"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystemCategory\/POLLogSDKCategoryDefault",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogSubsystemCategory\/POLLogSDKCategoryDefault",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogSDKCategoryDefault",

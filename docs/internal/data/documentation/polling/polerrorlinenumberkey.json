@@ -2,13 +2,13 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorLineNumberKey"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLErrorLineNumberKey"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -99,21 +99,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLErrorLineNumberKey": {
+"doc://com.polling.polling/documentation/Polling/POLErrorLineNumberKey": {
   "abstract" : [
 
   ],
@@ -123,7 +123,7 @@
       "text" : "POLErrorLineNumberKey"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorLineNumberKey",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLErrorLineNumberKey",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLErrorLineNumberKey",

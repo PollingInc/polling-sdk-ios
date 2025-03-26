@@ -1,0 +1,186 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/backgroundView"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLSurveyViewController(py)backgroundView",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "backgroundView"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "backgroundView"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "backgroundView"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "@property"
+            },
+            {
+              "kind" : "text",
+              "text" : " ("
+            },
+            {
+              "kind" : "keyword",
+              "text" : "nonatomic"
+            },
+            {
+              "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "strong"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLBackgroundView",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)POLBackgroundView",
+              "text" : "POLBackgroundView"
+            },
+            {
+              "kind" : "text",
+              "text" : " * "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "backgroundView"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polsurveyviewcontroller\/backgroundview"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.polling/documentation/Polling/POLBackgroundView": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLBackgroundView"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLBackgroundView",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLBackgroundView",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polbackgroundview"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyViewController"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyViewController",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/backgroundView": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "backgroundView"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/backgroundView",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "backgroundView",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/backgroundview"
+}
+}
+}

@@ -1,0 +1,165 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling\/visibleViewController"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLPolling(im)visibleViewController",
+    "fragments" : [
+      {
+        "kind" : "text",
+        "text" : "- "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "visibleViewController"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "visibleViewController"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "visibleViewController"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "text",
+              "text" : "- ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)UIViewController",
+              "text" : "UIViewController"
+            },
+            {
+              "kind" : "text",
+              "text" : " *) "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "visibleViewController"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polpolling\/visibleviewcontroller"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.polling/documentation/Polling/POLPolling": {
+  "abstract" : [
+    {
+      "text" : "The primary SDK object",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLPolling"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLPolling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling"
+},
+"doc://com.polling.polling/documentation/Polling/POLPolling/visibleViewController": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "visibleViewController"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling\/visibleViewController",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "visibleViewController"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "visibleViewController",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/visibleviewcontroller"
+}
+}
+}

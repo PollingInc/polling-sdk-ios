@@ -2,13 +2,13 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -76,7 +76,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/objc(cs)NSError"
+        "doc:\/\/com.polling.polling\/objc(cs)NSError"
       ],
       "kind" : "relationships",
       "title" : "Inherits From",
@@ -93,11 +93,19 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError\/underlyingError"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
       "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError\/category",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError\/subsystem"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError\/category",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError\/subsystem"
       ],
       "title" : "Instance Methods"
     },
@@ -105,8 +113,8 @@
       "anchor" : "Type-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError\/errorWithCode:underlyingError:userInfo:",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError\/errorWithCode:userInfo:"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError\/errorWithCode:underlyingError:userInfo:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError\/errorWithCode:userInfo:"
       ],
       "title" : "Type Methods"
     }
@@ -125,21 +133,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLError": {
+"doc://com.polling.polling/documentation/Polling/POLError": {
   "abstract" : [
 
   ],
@@ -149,14 +157,14 @@
       "text" : "POLError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polerror"
 },
-"doc://com.polling.Polling/documentation/Polling/POLError/category": {
+"doc://com.polling.polling/documentation/Polling/POLError/category": {
   "abstract" : [
 
   ],
@@ -170,7 +178,7 @@
       "text" : "category"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError\/category",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError\/category",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -183,7 +191,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polerror\/category"
 },
-"doc://com.polling.Polling/documentation/Polling/POLError/errorWithCode:underlyingError:userInfo:": {
+"doc://com.polling.polling/documentation/Polling/POLError/errorWithCode:underlyingError:userInfo:": {
   "abstract" : [
 
   ],
@@ -197,7 +205,7 @@
       "text" : "errorWithCode:underlyingError:userInfo:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError\/errorWithCode:underlyingError:userInfo:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError\/errorWithCode:underlyingError:userInfo:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -210,7 +218,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polerror\/errorwithcode:underlyingerror:userinfo:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLError/errorWithCode:userInfo:": {
+"doc://com.polling.polling/documentation/Polling/POLError/errorWithCode:userInfo:": {
   "abstract" : [
 
   ],
@@ -224,7 +232,7 @@
       "text" : "errorWithCode:userInfo:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError\/errorWithCode:userInfo:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError\/errorWithCode:userInfo:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -237,7 +245,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polerror\/errorwithcode:userinfo:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLError/subsystem": {
+"doc://com.polling.polling/documentation/Polling/POLError/subsystem": {
   "abstract" : [
 
   ],
@@ -251,7 +259,7 @@
       "text" : "subsystem"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError\/subsystem",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError\/subsystem",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -264,8 +272,25 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polerror\/subsystem"
 },
-"doc://com.polling.Polling/objc(cs)NSError": {
-  "identifier" : "doc:\/\/com.polling.Polling\/objc(cs)NSError",
+"doc://com.polling.polling/documentation/Polling/POLError/underlyingError": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "underlyingError"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError\/underlyingError",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "underlyingError",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polerror\/underlyingerror"
+},
+"doc://com.polling.polling/objc(cs)NSError": {
+  "identifier" : "doc:\/\/com.polling.polling\/objc(cs)NSError",
   "title" : "NSError",
   "type" : "unresolvable"
 }

@@ -4,48 +4,48 @@
       {
         "projects" : [
           {
-            "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject",
+            "reference" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/ConfigureProject",
             "sections" : [
               {
                 "kind" : "task",
-                "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework"
+                "reference" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework"
               }
             ]
           }
         ],
-        "reference" : "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/Configuring-your-project"
+        "reference" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC\/Configuring-your-project"
       },
       {
         "projects" : [
           {
-            "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode",
+            "reference" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICode",
             "sections" : [
               {
                 "kind" : "task",
-                "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode#Import-the-Polling-framework"
+                "reference" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICode#Import-the-Polling-framework"
               },
               {
                 "kind" : "task",
-                "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode#Configuring-Polling"
+                "reference" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICode#Configuring-Polling"
               }
             ]
           }
         ],
-        "reference" : "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/Coding"
+        "reference" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC\/Coding"
       }
     ],
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC",
-        "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/$volume",
-        "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/Coding"
+        "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC",
+        "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC\/$volume",
+        "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC\/Coding"
       ]
     ],
-    "reference" : "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC"
+    "reference" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC"
   },
   "identifier" : {
-    "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode"
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICode"
   },
   "kind" : "project",
   "metadata" : {
@@ -198,6 +198,16 @@
       ],
       "traits" : [
         {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    },
+    {
+      "paths" : [
+        "\/tutorials\/polling\/swiftuicode"
+      ],
+      "traits" : [
+        {
           "interfaceLanguage" : "occ"
         }
       ]
@@ -234,106 +244,106 @@
   "syntax" : "swift",
   "type" : "file"
 },
-"doc://com.polling.Polling/tutorials/Polling/ConfigureProject": {
+"doc://com.polling.polling/tutorials/Polling/ConfigureProject": {
   "abstract" : [
     {
       "text" : "Configure your project to use the Polling framework",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/ConfigureProject",
   "kind" : "project",
   "role" : "project",
   "title" : "Adding the framework",
   "type" : "topic",
   "url" : "\/tutorials\/polling\/configureproject"
 },
-"doc://com.polling.Polling/tutorials/Polling/ConfigureProject#Add-the-framework": {
+"doc://com.polling.polling/tutorials/Polling/ConfigureProject#Add-the-framework": {
   "abstract" : [
     {
       "text" : "Configure your project to use the Polling framework",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework",
   "kind" : "section",
   "role" : "pseudoSymbol",
   "title" : "Add the framework",
   "type" : "section",
   "url" : "\/tutorials\/polling\/configureproject#Add-the-framework"
 },
-"doc://com.polling.Polling/tutorials/Polling/SwiftUICode": {
+"doc://com.polling.polling/tutorials/Polling/SwiftUICode": {
   "abstract" : [
     {
       "text" : "This tutorial guides you through importing the Polling framework and using the APIs with SwiftUI.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICode",
   "kind" : "project",
   "role" : "project",
   "title" : "Code your content view",
   "type" : "topic",
   "url" : "\/tutorials\/polling\/swiftuicode"
 },
-"doc://com.polling.Polling/tutorials/Polling/SwiftUICode#Configuring-Polling": {
+"doc://com.polling.polling/tutorials/Polling/SwiftUICode#Configuring-Polling": {
   "abstract" : [
     {
       "text" : "This tutorial guides you through importing the Polling framework and using the APIs with SwiftUI.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode#Configuring-Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICode#Configuring-Polling",
   "kind" : "section",
   "role" : "pseudoSymbol",
   "title" : "Configuring Polling",
   "type" : "section",
   "url" : "\/tutorials\/polling\/swiftuicode#Configuring-Polling"
 },
-"doc://com.polling.Polling/tutorials/Polling/SwiftUICode#Import-the-Polling-framework": {
+"doc://com.polling.polling/tutorials/Polling/SwiftUICode#Import-the-Polling-framework": {
   "abstract" : [
     {
       "text" : "This tutorial guides you through importing the Polling framework and using the APIs with SwiftUI.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode#Import-the-Polling-framework",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICode#Import-the-Polling-framework",
   "kind" : "section",
   "role" : "pseudoSymbol",
   "title" : "Import the Polling framework",
   "type" : "section",
   "url" : "\/tutorials\/polling\/swiftuicode#Import-the-Polling-framework"
 },
-"doc://com.polling.Polling/tutorials/SwiftUIToC": {
+"doc://com.polling.polling/tutorials/SwiftUIToC": {
   "abstract" : [
     {
       "text" : "Tutorial for integrating the Polling SDK in your SwiftUI app.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC",
   "kind" : "overview",
   "role" : "overview",
   "title" : "Intergrating with SwiftUI",
   "type" : "topic",
   "url" : "\/tutorials\/swiftuitoc"
 },
-"doc://com.polling.Polling/tutorials/SwiftUIToC/Coding": {
+"doc://com.polling.polling/tutorials/SwiftUIToC/Coding": {
   "abstract" : [
 
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/Coding",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC\/Coding",
   "kind" : "article",
   "role" : "article",
   "title" : "Coding",
   "type" : "topic",
   "url" : "\/tutorials\/swiftuitoc\/coding"
 },
-"doc://com.polling.Polling/tutorials/SwiftUIToC/Configuring-your-project": {
+"doc://com.polling.polling/tutorials/SwiftUIToC/Configuring-your-project": {
   "abstract" : [
 
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC\/Configuring-your-project",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC\/Configuring-your-project",
   "kind" : "article",
   "role" : "article",
   "title" : "Configuring your project",
@@ -350,7 +360,7 @@
         "1x",
         "light"
       ],
-      "url" : "\/images\/com.polling.Polling\/import-swiftui-light.png"
+      "url" : "\/images\/com.polling.polling\/import-swiftui-light.png"
     }
   ]
 },
@@ -364,7 +374,7 @@
         "1x",
         "light"
       ],
-      "url" : "\/images\/com.polling.Polling\/locate-content-view.png"
+      "url" : "\/images\/com.polling.polling\/locate-content-view.png"
     }
   ]
 },
@@ -378,9 +388,25 @@
         "1x",
         "light"
       ],
-      "url" : "\/images\/com.polling.Polling\/stop.png"
+      "url" : "\/images\/com.polling.polling\/stop.png"
     }
   ]
 }
-}
+}, 
+"variantOverrides":[
+  {
+    "patch" : [
+      {
+        "op" : "replace",
+        "path" : "\/identifier\/interfaceLanguage",
+        "value" : "occ"
+      }
+    ],
+    "traits" : [
+      {
+        "interfaceLanguage" : "occ"
+      }
+    ]
+  }
+]
 }

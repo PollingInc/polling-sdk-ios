@@ -2,13 +2,13 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -82,37 +82,37 @@
       "anchor" : "Enumeration-Cases",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLEncodingFailedError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLGeneralError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionBadEndpointURLError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionCouldNotBindURLParametersError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionDataTaskDoesNotExistsError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionDataTaskFailedError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionDataTaskInvalidatedError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionEmptyTopLevelDictionaryError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionExpectedArrayError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionExpectedDictionaryError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionMalformedResponseError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionNoValueForRequiredKeyError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionResponseBodyError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionTaskCanNotResumeError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionTaskTypeUnknownError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionUnexpectedContentTypeError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionUnexpectedHTTPStatusCodeError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLRewardError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLSDKError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLSDKNotConfiguredError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLStorageApplicationSupportDirectoryUnavailableError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLStorageError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLStorageWriteFailedError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLSurveyError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLTriggeredSurveyError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLViewControllerError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLViewControllerMemoryWarningError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLWebViewError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLWebViewNavigationFailureError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLWebViewProcessTerminatedError"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLEncodingFailedError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLGeneralError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionBadEndpointURLError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionCouldNotBindURLParametersError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionDataTaskDoesNotExistsError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionDataTaskFailedError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionDataTaskInvalidatedError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionEmptyTopLevelDictionaryError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionExpectedArrayError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionExpectedDictionaryError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionMalformedResponseError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionNoValueForRequiredKeyError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionResponseBodyError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionTaskCanNotResumeError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionTaskTypeUnknownError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionUnexpectedContentTypeError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionUnexpectedHTTPStatusCodeError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLRewardError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLSDKError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLSDKNotConfiguredError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLStorageApplicationSupportDirectoryUnavailableError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLStorageError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLStorageWriteFailedError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLSurveyError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLTriggeredSurveyError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLViewControllerError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLViewControllerMemoryWarningError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLWebViewError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLWebViewNavigationFailureError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLWebViewProcessTerminatedError"
       ],
       "title" : "Enumeration Cases"
     }
@@ -131,21 +131,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)": {
   "abstract" : [
 
   ],
@@ -155,7 +155,7 @@
       "text" : ""
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -168,7 +168,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLEncodingFailedError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLEncodingFailedError": {
   "abstract" : [
 
   ],
@@ -178,14 +178,14 @@
       "text" : "POLEncodingFailedError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLEncodingFailedError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLEncodingFailedError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLEncodingFailedError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polencodingfailederror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLGeneralError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLGeneralError": {
   "abstract" : [
 
   ],
@@ -195,14 +195,14 @@
       "text" : "POLGeneralError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLGeneralError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLGeneralError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLGeneralError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polgeneralerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionBadEndpointURLError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionBadEndpointURLError": {
   "abstract" : [
 
   ],
@@ -212,14 +212,14 @@
       "text" : "POLNetworkSessionBadEndpointURLError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionBadEndpointURLError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionBadEndpointURLError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionBadEndpointURLError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessionbadendpointurlerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionCouldNotBindURLParametersError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionCouldNotBindURLParametersError": {
   "abstract" : [
 
   ],
@@ -229,14 +229,14 @@
       "text" : "POLNetworkSessionCouldNotBindURLParametersError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionCouldNotBindURLParametersError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionCouldNotBindURLParametersError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionCouldNotBindURLParametersError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessioncouldnotbindurlparameterserror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionDataTaskDoesNotExistsError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionDataTaskDoesNotExistsError": {
   "abstract" : [
 
   ],
@@ -246,14 +246,14 @@
       "text" : "POLNetworkSessionDataTaskDoesNotExistsError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionDataTaskDoesNotExistsError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionDataTaskDoesNotExistsError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionDataTaskDoesNotExistsError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessiondatataskdoesnotexistserror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionDataTaskFailedError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionDataTaskFailedError": {
   "abstract" : [
 
   ],
@@ -263,14 +263,14 @@
       "text" : "POLNetworkSessionDataTaskFailedError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionDataTaskFailedError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionDataTaskFailedError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionDataTaskFailedError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessiondatataskfailederror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionDataTaskInvalidatedError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionDataTaskInvalidatedError": {
   "abstract" : [
 
   ],
@@ -280,14 +280,14 @@
       "text" : "POLNetworkSessionDataTaskInvalidatedError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionDataTaskInvalidatedError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionDataTaskInvalidatedError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionDataTaskInvalidatedError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessiondatataskinvalidatederror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionEmptyTopLevelDictionaryError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionEmptyTopLevelDictionaryError": {
   "abstract" : [
 
   ],
@@ -297,14 +297,14 @@
       "text" : "POLNetworkSessionEmptyTopLevelDictionaryError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionEmptyTopLevelDictionaryError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionEmptyTopLevelDictionaryError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionEmptyTopLevelDictionaryError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessionemptytopleveldictionaryerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionError": {
   "abstract" : [
 
   ],
@@ -314,14 +314,14 @@
       "text" : "POLNetworkSessionError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessionerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionExpectedArrayError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionExpectedArrayError": {
   "abstract" : [
 
   ],
@@ -331,14 +331,14 @@
       "text" : "POLNetworkSessionExpectedArrayError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionExpectedArrayError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionExpectedArrayError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionExpectedArrayError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessionexpectedarrayerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionExpectedDictionaryError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionExpectedDictionaryError": {
   "abstract" : [
 
   ],
@@ -348,14 +348,14 @@
       "text" : "POLNetworkSessionExpectedDictionaryError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionExpectedDictionaryError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionExpectedDictionaryError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionExpectedDictionaryError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessionexpecteddictionaryerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionMalformedResponseError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionMalformedResponseError": {
   "abstract" : [
 
   ],
@@ -365,14 +365,14 @@
       "text" : "POLNetworkSessionMalformedResponseError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionMalformedResponseError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionMalformedResponseError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionMalformedResponseError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessionmalformedresponseerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionNoValueForRequiredKeyError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionNoValueForRequiredKeyError": {
   "abstract" : [
 
   ],
@@ -382,14 +382,14 @@
       "text" : "POLNetworkSessionNoValueForRequiredKeyError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionNoValueForRequiredKeyError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionNoValueForRequiredKeyError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionNoValueForRequiredKeyError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessionnovalueforrequiredkeyerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionResponseBodyError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionResponseBodyError": {
   "abstract" : [
 
   ],
@@ -399,14 +399,14 @@
       "text" : "POLNetworkSessionResponseBodyError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionResponseBodyError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionResponseBodyError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionResponseBodyError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessionresponsebodyerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionTaskCanNotResumeError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionTaskCanNotResumeError": {
   "abstract" : [
 
   ],
@@ -416,14 +416,14 @@
       "text" : "POLNetworkSessionTaskCanNotResumeError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionTaskCanNotResumeError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionTaskCanNotResumeError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionTaskCanNotResumeError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessiontaskcannotresumeerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionTaskTypeUnknownError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionTaskTypeUnknownError": {
   "abstract" : [
 
   ],
@@ -433,14 +433,14 @@
       "text" : "POLNetworkSessionTaskTypeUnknownError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionTaskTypeUnknownError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionTaskTypeUnknownError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionTaskTypeUnknownError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessiontasktypeunknownerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionUnexpectedContentTypeError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionUnexpectedContentTypeError": {
   "abstract" : [
 
   ],
@@ -450,14 +450,14 @@
       "text" : "POLNetworkSessionUnexpectedContentTypeError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionUnexpectedContentTypeError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionUnexpectedContentTypeError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionUnexpectedContentTypeError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessionunexpectedcontenttypeerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionUnexpectedHTTPStatusCodeError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLNetworkSessionUnexpectedHTTPStatusCodeError": {
   "abstract" : [
 
   ],
@@ -467,14 +467,14 @@
       "text" : "POLNetworkSessionUnexpectedHTTPStatusCodeError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionUnexpectedHTTPStatusCodeError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLNetworkSessionUnexpectedHTTPStatusCodeError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionUnexpectedHTTPStatusCodeError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polnetworksessionunexpectedhttpstatuscodeerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLRewardError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLRewardError": {
   "abstract" : [
 
   ],
@@ -484,14 +484,14 @@
       "text" : "POLRewardError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLRewardError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLRewardError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLRewardError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polrewarderror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLSDKError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLSDKError": {
   "abstract" : [
 
   ],
@@ -501,14 +501,14 @@
       "text" : "POLSDKError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLSDKError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLSDKError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLSDKError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polsdkerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLSDKNotConfiguredError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLSDKNotConfiguredError": {
   "abstract" : [
 
   ],
@@ -518,14 +518,14 @@
       "text" : "POLSDKNotConfiguredError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLSDKNotConfiguredError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLSDKNotConfiguredError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLSDKNotConfiguredError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polsdknotconfigurederror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLStorageApplicationSupportDirectoryUnavailableError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLStorageApplicationSupportDirectoryUnavailableError": {
   "abstract" : [
 
   ],
@@ -535,14 +535,14 @@
       "text" : "POLStorageApplicationSupportDirectoryUnavailableError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLStorageApplicationSupportDirectoryUnavailableError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLStorageApplicationSupportDirectoryUnavailableError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLStorageApplicationSupportDirectoryUnavailableError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polstorageapplicationsupportdirectoryunavailableerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLStorageError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLStorageError": {
   "abstract" : [
 
   ],
@@ -552,14 +552,14 @@
       "text" : "POLStorageError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLStorageError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLStorageError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLStorageError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polstorageerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLStorageWriteFailedError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLStorageWriteFailedError": {
   "abstract" : [
 
   ],
@@ -569,14 +569,14 @@
       "text" : "POLStorageWriteFailedError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLStorageWriteFailedError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLStorageWriteFailedError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLStorageWriteFailedError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polstoragewritefailederror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLSurveyError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLSurveyError": {
   "abstract" : [
 
   ],
@@ -586,14 +586,14 @@
       "text" : "POLSurveyError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLSurveyError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLSurveyError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLSurveyError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polsurveyerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLTriggeredSurveyError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLTriggeredSurveyError": {
   "abstract" : [
 
   ],
@@ -603,14 +603,14 @@
       "text" : "POLTriggeredSurveyError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLTriggeredSurveyError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLTriggeredSurveyError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLTriggeredSurveyError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/poltriggeredsurveyerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLViewControllerError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLViewControllerError": {
   "abstract" : [
 
   ],
@@ -620,14 +620,14 @@
       "text" : "POLViewControllerError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLViewControllerError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLViewControllerError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLViewControllerError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polviewcontrollererror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLViewControllerMemoryWarningError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLViewControllerMemoryWarningError": {
   "abstract" : [
 
   ],
@@ -637,14 +637,14 @@
       "text" : "POLViewControllerMemoryWarningError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLViewControllerMemoryWarningError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLViewControllerMemoryWarningError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLViewControllerMemoryWarningError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polviewcontrollermemorywarningerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLWebViewError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLWebViewError": {
   "abstract" : [
 
   ],
@@ -654,14 +654,14 @@
       "text" : "POLWebViewError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLWebViewError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLWebViewError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLWebViewError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polwebviewerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLWebViewNavigationFailureError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLWebViewNavigationFailureError": {
   "abstract" : [
 
   ],
@@ -671,14 +671,14 @@
       "text" : "POLWebViewNavigationFailureError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLWebViewNavigationFailureError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLWebViewNavigationFailureError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLWebViewNavigationFailureError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)\/polwebviewnavigationfailureerror"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLWebViewProcessTerminatedError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLWebViewProcessTerminatedError": {
   "abstract" : [
 
   ],
@@ -688,7 +688,7 @@
       "text" : "POLWebViewProcessTerminatedError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLWebViewProcessTerminatedError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLWebViewProcessTerminatedError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLWebViewProcessTerminatedError",

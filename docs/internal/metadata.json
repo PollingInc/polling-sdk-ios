@@ -1,6 +1,6 @@
 {
-  "bundleDisplayName" : "Polling",
-  "bundleIdentifier" : "com.polling.Polling",
+  "bundleDisplayName" : "Polling SDK Developer",
+  "bundleIdentifier" : "com.polling.polling",
   "schemaVersion" : {
     "major" : 0,
     "minor" : 1,

@@ -2,14 +2,14 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController"
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController\/checkForAvailableTriggeredSurveys"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController\/checkForAvailableTriggeredSurveys"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -100,21 +100,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurveyController": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurveyController": {
   "abstract" : [
 
   ],
@@ -124,14 +124,14 @@
       "text" : "POLTriggeredSurveyController"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLTriggeredSurveyController",
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurveycontroller"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurveyController/checkForAvailableTriggeredSurveys": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurveyController/checkForAvailableTriggeredSurveys": {
   "abstract" : [
 
   ],
@@ -145,7 +145,7 @@
       "text" : "checkForAvailableTriggeredSurveys"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController\/checkForAvailableTriggeredSurveys",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController\/checkForAvailableTriggeredSurveys",
   "kind" : "symbol",
   "navigatorTitle" : [
     {

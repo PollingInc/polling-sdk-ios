@@ -1,0 +1,396 @@
+{
+  "abstract" : [
+    {
+      "text" : "Display survey in view that is centered over existing app",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "content.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling\/ViewType-swift.enum"
+      ],
+      [
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling\/ViewType-swift.enum"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling\/ViewType-swift.enum\/dialog"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@E@POLViewType@POLViewTypeDialog",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "case"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "dialog"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLViewTypeDialog"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Case",
+    "symbolKind" : "case",
+    "title" : "Polling.ViewType.dialog"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "case"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "dialog"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polling\/viewtype-swift.enum\/dialog"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    },
+    {
+      "paths" : [
+        "\/documentation\/polling\/polling\/viewtype-swift.enum\/dialog"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Poll and survey your users with ease",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.polling/documentation/Polling/Polling": {
+  "abstract" : [
+    {
+      "text" : "The primary SDK object",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Polling"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Polling"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polling"
+},
+"doc://com.polling.polling/documentation/Polling/Polling/ViewType-swift.enum": {
+  "abstract" : [
+    {
+      "text" : "Survey view style",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ViewType"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling\/ViewType-swift.enum",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ViewType"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Polling.ViewType",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polling\/viewtype-swift.enum"
+},
+"doc://com.polling.polling/documentation/Polling/Polling/ViewType-swift.enum/dialog": {
+  "abstract" : [
+    {
+      "text" : "Display survey in view that is centered over existing app",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "content.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "dialog"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling\/ViewType-swift.enum\/dialog",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLViewTypeDialog"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Polling.ViewType.dialog",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polling\/viewtype-swift.enum\/dialog"
+}
+}, 
+"variantOverrides":[
+  {
+    "patch" : [
+      {
+        "op" : "replace",
+        "path" : "\/identifier\/interfaceLanguage",
+        "value" : "occ"
+      },
+      {
+        "op" : "replace",
+        "path" : "\/metadata\/roleHeading",
+        "value" : "Enumeration Case"
+      },
+      {
+        "op" : "replace",
+        "path" : "\/metadata\/title",
+        "value" : "POLViewTypeDialog"
+      },
+      {
+        "op" : "replace",
+        "path" : "\/metadata\/symbolKind",
+        "value" : "case"
+      },
+      {
+        "op" : "replace",
+        "path" : "\/metadata\/fragments",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLViewTypeDialog"
+          }
+        ]
+      },
+      {
+        "op" : "add",
+        "path" : "\/topicSections",
+        "value" : null
+      },
+      {
+        "op" : "add",
+        "path" : "\/relationshipsSections",
+        "value" : null
+      },
+      {
+        "op" : "add",
+        "path" : "\/seeAlsoSections",
+        "value" : null
+      },
+      {
+        "op" : "replace",
+        "path" : "\/primaryContentSections\/0",
+        "value" : {
+          "declarations" : [
+            {
+              "languages" : [
+                "occ"
+              ],
+              "platforms" : [
+                "iOS"
+              ],
+              "tokens" : [
+                {
+                  "kind" : "identifier",
+                  "text" : "POLViewTypeDialog"
+                }
+              ]
+            }
+          ],
+          "kind" : "declarations"
+        }
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling\/title",
+        "value" : "POLPolling"
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling\/fragments",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLPolling"
+          }
+        ]
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling\/navigatorTitle",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLPolling"
+          }
+        ]
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling~1ViewType-swift.enum\/title",
+        "value" : "POLViewType"
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling~1ViewType-swift.enum\/fragments",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLViewType"
+          }
+        ]
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling~1ViewType-swift.enum\/navigatorTitle",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLViewType"
+          }
+        ]
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling~1ViewType-swift.enum~1dialog\/title",
+        "value" : "POLViewTypeDialog"
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling~1ViewType-swift.enum~1dialog\/fragments",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLViewTypeDialog"
+          }
+        ]
+      }
+    ],
+    "traits" : [
+      {
+        "interfaceLanguage" : "occ"
+      }
+    ]
+  }
+]
+}

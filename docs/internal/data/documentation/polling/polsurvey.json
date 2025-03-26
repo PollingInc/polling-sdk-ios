@@ -8,13 +8,13 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -102,7 +102,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/objc(cs)NSObject"
+        "doc:\/\/com.polling.polling\/objc(cs)NSObject"
       ],
       "kind" : "relationships",
       "title" : "Inherits From",
@@ -122,21 +122,21 @@
       "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/URL",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/UUID",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/available",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completed",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completedAt",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completedDate",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completionURL",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/embedViewRequested",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/name",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/questionCount",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/reward",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/started",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/startedAt",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/startedDate",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/userSurveyStatus"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/URL",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/UUID",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/available",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/completed",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/completedAt",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/completedDate",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/completionURL",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/embedViewRequested",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/name",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/questionCount",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/reward",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/started",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/startedAt",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/startedDate",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/userSurveyStatus"
       ],
       "title" : "Instance Properties"
     },
@@ -144,9 +144,9 @@
       "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/JSONRepresentation",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/dictionaryRepresentation",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/isEqualToSurvey:"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/JSONRepresentation",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/dictionaryRepresentation",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/isEqualToSurvey:"
       ],
       "title" : "Instance Methods"
     },
@@ -154,9 +154,9 @@
       "anchor" : "Type-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/surveyFromDictionary:",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/surveyFromJSONDictionary:",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/surveyWithUUID:"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/surveyFromDictionary:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/surveyFromJSONDictionary:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/surveyWithUUID:"
       ],
       "title" : "Type Methods"
     }
@@ -175,21 +175,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey": {
   "abstract" : [
     {
       "text" : "An object representing a survey",
@@ -202,14 +202,14 @@
       "text" : "POLSurvey"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLSurvey",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/JSONRepresentation": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/JSONRepresentation": {
   "abstract" : [
 
   ],
@@ -223,7 +223,7 @@
       "text" : "JSONRepresentation"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/JSONRepresentation",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/JSONRepresentation",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -236,7 +236,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/jsonrepresentation"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/URL": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/URL": {
   "abstract" : [
 
   ],
@@ -246,14 +246,14 @@
       "text" : "URL"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/URL",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/URL",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "URL",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/url"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/UUID": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/UUID": {
   "abstract" : [
     {
       "text" : "The survey’s UUID",
@@ -266,14 +266,14 @@
       "text" : "UUID"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/UUID",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/UUID",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "UUID",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/uuid"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/available": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/available": {
   "abstract" : [
     {
       "code" : "YES",
@@ -290,14 +290,14 @@
       "text" : "available"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/available",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/available",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "available",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/available"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/completed": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/completed": {
   "abstract" : [
     {
       "code" : "YES",
@@ -314,14 +314,14 @@
       "text" : "completed"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completed",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/completed",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "completed",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/completed"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/completedAt": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/completedAt": {
   "abstract" : [
 
   ],
@@ -331,14 +331,14 @@
       "text" : "completedAt"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completedAt",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/completedAt",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "completedAt",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/completedat"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/completedDate": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/completedDate": {
   "abstract" : [
 
   ],
@@ -348,14 +348,14 @@
       "text" : "completedDate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completedDate",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/completedDate",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "completedDate",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/completeddate"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/completionURL": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/completionURL": {
   "abstract" : [
 
   ],
@@ -365,14 +365,14 @@
       "text" : "completionURL"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/completionURL",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/completionURL",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "completionURL",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/completionurl"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/dictionaryRepresentation": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/dictionaryRepresentation": {
   "abstract" : [
 
   ],
@@ -386,7 +386,7 @@
       "text" : "dictionaryRepresentation"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/dictionaryRepresentation",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/dictionaryRepresentation",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -399,7 +399,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/dictionaryrepresentation"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/embedViewRequested": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/embedViewRequested": {
   "abstract" : [
 
   ],
@@ -409,14 +409,14 @@
       "text" : "embedViewRequested"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/embedViewRequested",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/embedViewRequested",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "embedViewRequested",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/embedviewrequested"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/isEqualToSurvey:": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/isEqualToSurvey:": {
   "abstract" : [
     {
       "text" : "Indicates whether a given survey is equal to the receiver",
@@ -433,7 +433,7 @@
       "text" : "isEqualToSurvey:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/isEqualToSurvey:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/isEqualToSurvey:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -446,7 +446,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/isequaltosurvey:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/name": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/name": {
   "abstract" : [
     {
       "text" : "Name of the survey",
@@ -459,14 +459,14 @@
       "text" : "name"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/name",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/name",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "name",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/name"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/questionCount": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/questionCount": {
   "abstract" : [
     {
       "text" : "Number of questions the survey contains",
@@ -479,14 +479,14 @@
       "text" : "questionCount"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/questionCount",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/questionCount",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "questionCount",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/questioncount"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/reward": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/reward": {
   "abstract" : [
     {
       "text" : "Reward associated with the survey or ",
@@ -503,14 +503,14 @@
       "text" : "reward"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/reward",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/reward",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "reward",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/reward"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/started": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/started": {
   "abstract" : [
     {
       "code" : "YES",
@@ -527,14 +527,14 @@
       "text" : "started"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/started",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/started",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "started",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/started"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/startedAt": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/startedAt": {
   "abstract" : [
 
   ],
@@ -544,14 +544,14 @@
       "text" : "startedAt"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/startedAt",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/startedAt",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "startedAt",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/startedat"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/startedDate": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/startedDate": {
   "abstract" : [
 
   ],
@@ -561,14 +561,14 @@
       "text" : "startedDate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/startedDate",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/startedDate",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "startedDate",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/starteddate"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/surveyFromDictionary:": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/surveyFromDictionary:": {
   "abstract" : [
 
   ],
@@ -582,7 +582,7 @@
       "text" : "surveyFromDictionary:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/surveyFromDictionary:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/surveyFromDictionary:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -595,7 +595,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/surveyfromdictionary:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/surveyFromJSONDictionary:": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/surveyFromJSONDictionary:": {
   "abstract" : [
 
   ],
@@ -609,7 +609,7 @@
       "text" : "surveyFromJSONDictionary:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/surveyFromJSONDictionary:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/surveyFromJSONDictionary:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -622,7 +622,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/surveyfromjsondictionary:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/surveyWithUUID:": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/surveyWithUUID:": {
   "abstract" : [
 
   ],
@@ -636,7 +636,7 @@
       "text" : "surveyWithUUID:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/surveyWithUUID:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/surveyWithUUID:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -649,7 +649,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/surveywithuuid:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/userSurveyStatus": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/userSurveyStatus": {
   "abstract" : [
 
   ],
@@ -659,15 +659,15 @@
       "text" : "userSurveyStatus"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/userSurveyStatus",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/userSurveyStatus",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "userSurveyStatus",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey\/usersurveystatus"
 },
-"doc://com.polling.Polling/objc(cs)NSObject": {
-  "identifier" : "doc:\/\/com.polling.Polling\/objc(cs)NSObject",
+"doc://com.polling.polling/objc(cs)NSObject": {
+  "identifier" : "doc:\/\/com.polling.polling\/objc(cs)NSObject",
   "title" : "NSObject",
   "type" : "unresolvable"
 }

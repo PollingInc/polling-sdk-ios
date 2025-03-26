@@ -1,0 +1,215 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskType"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@E@POLSurveyDataTaskType",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLSurveyDataTaskType"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLSurveyDataTaskType"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Enumeration",
+    "symbolKind" : "enum",
+    "title" : "POLSurveyDataTaskType"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "enum"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLSurveyDataTaskType"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:@T@NSInteger",
+              "text" : "NSInteger"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskType\/POLSurveyDataTaskTypeCompleteSurvey",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskType\/POLSurveyDataTaskTypeGetSurveyDetails",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskType\/POLSurveyDataTaskTypeNone",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskType\/POLSurveyDataTaskTypeStartSurvey"
+      ],
+      "title" : "Enumeration Cases"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polsurveydatatasktype"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyDataTaskType": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyDataTaskType"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskType",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyDataTaskType",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveydatatasktype"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyDataTaskType/POLSurveyDataTaskTypeCompleteSurvey": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyDataTaskTypeCompleteSurvey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskType\/POLSurveyDataTaskTypeCompleteSurvey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyDataTaskTypeCompleteSurvey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveydatatasktype\/polsurveydatatasktypecompletesurvey"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyDataTaskType/POLSurveyDataTaskTypeGetSurveyDetails": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyDataTaskTypeGetSurveyDetails"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskType\/POLSurveyDataTaskTypeGetSurveyDetails",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyDataTaskTypeGetSurveyDetails",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveydatatasktype\/polsurveydatatasktypegetsurveydetails"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyDataTaskType/POLSurveyDataTaskTypeNone": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyDataTaskTypeNone"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskType\/POLSurveyDataTaskTypeNone",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyDataTaskTypeNone",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveydatatasktype\/polsurveydatatasktypenone"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyDataTaskType/POLSurveyDataTaskTypeStartSurvey": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyDataTaskTypeStartSurvey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskType\/POLSurveyDataTaskTypeStartSurvey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyDataTaskTypeStartSurvey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveydatatasktype\/polsurveydatatasktypestartsurvey"
+}
+}
+}

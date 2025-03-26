@@ -1,0 +1,173 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/viewType"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLSurveyViewController(py)viewType",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "viewType"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "viewType"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "viewType"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "@property"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewType",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:@E@POLViewType",
+              "text" : "POLViewType"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "viewType"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polsurveyviewcontroller\/viewtype"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyViewController"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyViewController",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/viewType": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "viewType"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/viewType",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "viewType",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/viewtype"
+},
+"doc://com.polling.polling/documentation/Polling/POLViewType": {
+  "abstract" : [
+    {
+      "text" : "Survey view style",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLViewType"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewType",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLViewType",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polviewtype"
+}
+}
+}

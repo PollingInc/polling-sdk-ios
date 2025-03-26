@@ -2,13 +2,13 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyDialogAnimateInController"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDialogAnimateInController"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -76,7 +76,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/objc(cs)NSObject"
+        "doc:\/\/com.polling.polling\/objc(cs)NSObject"
       ],
       "kind" : "relationships",
       "title" : "Inherits From",
@@ -84,7 +84,7 @@
     },
     {
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/objc(pl)UIViewControllerAnimatedTransitioning"
+        "doc:\/\/com.polling.polling\/objc(pl)UIViewControllerAnimatedTransitioning"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -98,16 +98,6 @@
   },
   "sections" : [
 
-  ],
-  "topicSections" : [
-    {
-      "anchor" : "Type-Methods",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyDialogAnimateInController\/animateInWithViewController:"
-      ],
-      "title" : "Type Methods"
-    }
   ],
   "variants" : [
     {
@@ -123,21 +113,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurveyDialogAnimateInController": {
+"doc://com.polling.polling/documentation/Polling/POLSurveyDialogAnimateInController": {
   "abstract" : [
 
   ],
@@ -147,47 +137,20 @@
       "text" : "POLSurveyDialogAnimateInController"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyDialogAnimateInController",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDialogAnimateInController",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLSurveyDialogAnimateInController",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurveydialoganimateincontroller"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurveyDialogAnimateInController/animateInWithViewController:": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "text",
-      "text" : "+ "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "animateInWithViewController:"
-    }
-  ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyDialogAnimateInController\/animateInWithViewController:",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "animateInWithViewController:"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "animateInWithViewController:",
-  "type" : "topic",
-  "url" : "\/documentation\/polling\/polsurveydialoganimateincontroller\/animateinwithviewcontroller:"
-},
-"doc://com.polling.Polling/objc(cs)NSObject": {
-  "identifier" : "doc:\/\/com.polling.Polling\/objc(cs)NSObject",
+"doc://com.polling.polling/objc(cs)NSObject": {
+  "identifier" : "doc:\/\/com.polling.polling\/objc(cs)NSObject",
   "title" : "NSObject",
   "type" : "unresolvable"
 },
-"doc://com.polling.Polling/objc(pl)UIViewControllerAnimatedTransitioning": {
-  "identifier" : "doc:\/\/com.polling.Polling\/objc(pl)UIViewControllerAnimatedTransitioning",
+"doc://com.polling.polling/objc(pl)UIViewControllerAnimatedTransitioning": {
+  "identifier" : "doc:\/\/com.polling.polling\/objc(pl)UIViewControllerAnimatedTransitioning",
   "title" : "UIViewControllerAnimatedTransitioning",
   "type" : "unresolvable"
 }

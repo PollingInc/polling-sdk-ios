@@ -2,14 +2,14 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystem"
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogSubsystem"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystem\/POLLogSubsystemSDK"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogSubsystem\/POLLogSubsystemSDK"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -79,21 +79,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogSubsystem": {
+"doc://com.polling.polling/documentation/Polling/POLLogSubsystem": {
   "abstract" : [
 
   ],
@@ -103,14 +103,14 @@
       "text" : "POLLogSubsystem"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystem",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogSubsystem",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogSubsystem",
   "type" : "topic",
   "url" : "\/documentation\/polling\/pollogsubsystem"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogSubsystem/POLLogSubsystemSDK": {
+"doc://com.polling.polling/documentation/Polling/POLLogSubsystem/POLLogSubsystemSDK": {
   "abstract" : [
 
   ],
@@ -120,7 +120,7 @@
       "text" : "POLLogSubsystemSDK"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystem\/POLLogSubsystemSDK",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogSubsystem\/POLLogSubsystemSDK",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogSubsystemSDK",

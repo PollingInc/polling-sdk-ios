@@ -2,13 +2,13 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevelToOSLogType"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevelToOSLogType"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -64,7 +64,7 @@
               "text" : "("
             },
             {
-              "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel",
+              "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevel",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "c:@E@POLLogLevel",
               "text" : "POLLogLevel"
@@ -109,21 +109,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogLevel": {
+"doc://com.polling.polling/documentation/Polling/POLLogLevel": {
   "abstract" : [
 
   ],
@@ -133,14 +133,14 @@
       "text" : "POLLogLevel"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevel",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogLevel",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polloglevel"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogLevelToOSLogType": {
+"doc://com.polling.polling/documentation/Polling/POLLogLevelToOSLogType": {
   "abstract" : [
 
   ],
@@ -150,7 +150,7 @@
       "text" : "POLLogLevelToOSLogType"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevelToOSLogType",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevelToOSLogType",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogLevelToOSLogType",

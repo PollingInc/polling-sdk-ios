@@ -2,14 +2,14 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey"
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/postpone"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/postpone"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -100,21 +100,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurvey": {
   "abstract" : [
 
   ],
@@ -124,14 +124,14 @@
       "text" : "POLTriggeredSurvey"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLTriggeredSurvey",
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurvey"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey/postpone": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurvey/postpone": {
   "abstract" : [
 
   ],
@@ -145,7 +145,7 @@
       "text" : "postpone"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/postpone",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/postpone",
   "kind" : "symbol",
   "navigatorTitle" : [
     {

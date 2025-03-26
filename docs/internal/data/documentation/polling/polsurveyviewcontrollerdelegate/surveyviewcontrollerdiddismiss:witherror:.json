@@ -2,14 +2,14 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate"
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewControllerDelegate"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidDismiss:withError:"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidDismiss:withError:"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -73,7 +73,7 @@
               "text" : "("
             },
             {
-              "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController",
+              "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "c:objc(cs)POLSurveyViewController",
               "text" : "POLSurveyViewController"
@@ -99,7 +99,7 @@
               "text" : "("
             },
             {
-              "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError",
+              "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "c:objc(cs)POLError",
               "text" : "POLError"
@@ -144,21 +144,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLError": {
+"doc://com.polling.polling/documentation/Polling/POLError": {
   "abstract" : [
 
   ],
@@ -168,14 +168,14 @@
       "text" : "POLError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polerror"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurveyViewController": {
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController": {
   "abstract" : [
 
   ],
@@ -185,14 +185,14 @@
       "text" : "POLSurveyViewController"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLSurveyViewController",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurveyviewcontroller"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurveyViewControllerDelegate": {
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewControllerDelegate": {
   "abstract" : [
 
   ],
@@ -202,14 +202,14 @@
       "text" : "POLSurveyViewControllerDelegate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewControllerDelegate",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLSurveyViewControllerDelegate",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurveyviewcontrollerdelegate"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurveyViewControllerDelegate/surveyViewControllerDidDismiss:withError:": {
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewControllerDelegate/surveyViewControllerDidDismiss:withError:": {
   "abstract" : [
 
   ],
@@ -223,7 +223,7 @@
       "text" : "surveyViewControllerDidDismiss:withError:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidDismiss:withError:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidDismiss:withError:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {

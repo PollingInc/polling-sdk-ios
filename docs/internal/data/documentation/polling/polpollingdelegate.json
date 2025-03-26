@@ -16,13 +16,13 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -130,11 +130,21 @@
               "type" : "text"
             },
             {
-              "code" : "POLPolling.polling",
-              "type" : "codeVoice"
+              "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling",
+              "isActive" : true,
+              "type" : "reference"
             },
             {
-              "text" : ". The SDK calls the methods of your",
+              "text" : "’s ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling\/polling",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " property. The SDK",
               "type" : "text"
             },
             {
@@ -142,7 +152,7 @@
               "type" : "text"
             },
             {
-              "text" : "delegate at appropriate times.",
+              "text" : "calls the methods of your delegate at appropriate times.",
               "type" : "text"
             }
           ],
@@ -155,7 +165,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/objc(pl)NSObject"
+        "doc:\/\/com.polling.polling\/objc(pl)NSObject"
       ],
       "kind" : "relationships",
       "title" : "Inherits From",
@@ -175,10 +185,10 @@
       "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnFailure:",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnReward:",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSuccess:",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSurveyAvailable"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnFailure:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnReward:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSuccess:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSurveyAvailable"
       ],
       "title" : "Instance Methods"
     }
@@ -197,21 +207,80 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate": {
+"doc://com.polling.polling/documentation/Polling/POLPolling": {
+  "abstract" : [
+    {
+      "text" : "The primary SDK object",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLPolling"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLPolling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling"
+},
+"doc://com.polling.polling/documentation/Polling/POLPolling/polling": {
+  "abstract" : [
+    {
+      "text" : "Returns the ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " singleton object.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "+ "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "polling"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling\/polling",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "polling"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling\/polling"
+},
+"doc://com.polling.polling/documentation/Polling/POLPollingDelegate": {
   "abstract" : [
     {
       "text" : "A protocol that defines methods the SDK can call to provide",
@@ -232,14 +301,14 @@
       "text" : "POLPollingDelegate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLPollingDelegate",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polpollingdelegate"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate/pollingOnFailure:": {
+"doc://com.polling.polling/documentation/Polling/POLPollingDelegate/pollingOnFailure:": {
   "abstract" : [
     {
       "text" : "Notifies your app when an error occurs",
@@ -256,7 +325,7 @@
       "text" : "pollingOnFailure:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnFailure:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnFailure:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -269,7 +338,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polpollingdelegate\/pollingonfailure:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate/pollingOnReward:": {
+"doc://com.polling.polling/documentation/Polling/POLPollingDelegate/pollingOnReward:": {
   "abstract" : [
     {
       "text" : "Notifies your app when the user receives an award",
@@ -286,7 +355,7 @@
       "text" : "pollingOnReward:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnReward:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnReward:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -299,7 +368,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polpollingdelegate\/pollingonreward:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate/pollingOnSuccess:": {
+"doc://com.polling.polling/documentation/Polling/POLPollingDelegate/pollingOnSuccess:": {
   "abstract" : [
     {
       "text" : "Notifies your app when a survey is completed",
@@ -316,7 +385,7 @@
       "text" : "pollingOnSuccess:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSuccess:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSuccess:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -329,7 +398,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polpollingdelegate\/pollingonsuccess:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate/pollingOnSurveyAvailable": {
+"doc://com.polling.polling/documentation/Polling/POLPollingDelegate/pollingOnSurveyAvailable": {
   "abstract" : [
     {
       "text" : "Notifies your app when surveys are available",
@@ -346,7 +415,7 @@
       "text" : "pollingOnSurveyAvailable"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSurveyAvailable",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSurveyAvailable",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -359,8 +428,8 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polpollingdelegate\/pollingonsurveyavailable"
 },
-"doc://com.polling.Polling/objc(pl)NSObject": {
-  "identifier" : "doc:\/\/com.polling.Polling\/objc(pl)NSObject",
+"doc://com.polling.polling/objc(pl)NSObject": {
+  "identifier" : "doc:\/\/com.polling.polling\/objc(pl)NSObject",
   "title" : "NSObject",
   "type" : "unresolvable"
 }

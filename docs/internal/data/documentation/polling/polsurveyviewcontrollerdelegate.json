@@ -2,13 +2,13 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewControllerDelegate"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -64,6 +64,16 @@
       "kind" : "declarations"
     }
   ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforming Types",
+      "type" : "conformingTypes"
+    }
+  ],
   "schemaVersion" : {
     "major" : 0,
     "minor" : 3,
@@ -77,9 +87,9 @@
       "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidDismiss:",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidDismiss:withError:",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidOpen:"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidDismiss:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidDismiss:withError:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidOpen:"
       ],
       "title" : "Instance Methods"
     }
@@ -98,21 +108,41 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurveyViewControllerDelegate": {
+"doc://com.polling.polling/documentation/Polling/POLPolling": {
+  "abstract" : [
+    {
+      "text" : "The primary SDK object",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLPolling"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLPolling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpolling"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewControllerDelegate": {
   "abstract" : [
 
   ],
@@ -122,14 +152,14 @@
       "text" : "POLSurveyViewControllerDelegate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewControllerDelegate",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLSurveyViewControllerDelegate",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurveyviewcontrollerdelegate"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurveyViewControllerDelegate/surveyViewControllerDidDismiss:": {
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewControllerDelegate/surveyViewControllerDidDismiss:": {
   "abstract" : [
 
   ],
@@ -143,7 +173,7 @@
       "text" : "surveyViewControllerDidDismiss:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidDismiss:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidDismiss:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -156,7 +186,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurveyviewcontrollerdelegate\/surveyviewcontrollerdiddismiss:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurveyViewControllerDelegate/surveyViewControllerDidDismiss:withError:": {
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewControllerDelegate/surveyViewControllerDidDismiss:withError:": {
   "abstract" : [
 
   ],
@@ -170,7 +200,7 @@
       "text" : "surveyViewControllerDidDismiss:withError:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidDismiss:withError:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidDismiss:withError:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -183,7 +213,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurveyviewcontrollerdelegate\/surveyviewcontrollerdiddismiss:witherror:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurveyViewControllerDelegate/surveyViewControllerDidOpen:": {
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewControllerDelegate/surveyViewControllerDidOpen:": {
   "abstract" : [
 
   ],
@@ -197,7 +227,7 @@
       "text" : "surveyViewControllerDidOpen:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidOpen:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewControllerDelegate\/surveyViewControllerDidOpen:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {

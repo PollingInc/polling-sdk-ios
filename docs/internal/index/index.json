@@ -1,11 +1,34 @@
 {
   "includedArchiveIdentifiers" : [
-    "com.polling.Polling"
+    "com.polling.polling"
   ],
   "interfaceLanguages" : {
     "occ" : [
       {
         "children" : [
+          {
+            "title" : "Setup Project for Releasing",
+            "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/polling-sdk-developer\/codesigning",
+            "title" : "Configure Code Signing",
+            "type" : "article"
+          },
+          {
+            "title" : "Making Releases",
+            "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/polling-sdk-developer\/releaseprocess",
+            "title" : "Release Process",
+            "type" : "article"
+          },
+          {
+            "path" : "\/documentation\/polling-sdk-developer\/versionscheme",
+            "title" : "Versioning Scheme",
+            "type" : "article"
+          },
           {
             "title" : "Classes",
             "type" : "groupMarker"
@@ -16,47 +39,21 @@
             "type" : "class"
           },
           {
-            "children" : [
-              {
-                "title" : "Instance Properties",
-                "type" : "groupMarker"
-              },
-              {
-                "path" : "\/documentation\/polling\/polcompatiblesurveyviewcontroller\/backgroundview",
-                "title" : "backgroundView",
-                "type" : "property"
-              },
-              {
-                "path" : "\/documentation\/polling\/polcompatiblesurveyviewcontroller\/containerview",
-                "title" : "containerView",
-                "type" : "property"
-              },
-              {
-                "path" : "\/documentation\/polling\/polcompatiblesurveyviewcontroller\/viewtype",
-                "title" : "viewType",
-                "type" : "property"
-              },
-              {
-                "title" : "Instance Methods",
-                "type" : "groupMarker"
-              },
-              {
-                "path" : "\/documentation\/polling\/polcompatiblesurveyviewcontroller\/initwithsurvey:viewtype:",
-                "title" : "initWithSurvey:viewType:",
-                "type" : "method"
-              }
-            ],
-            "path" : "\/documentation\/polling\/polcompatiblesurveyviewcontroller",
-            "title" : "POLCompatibleSurveyViewController",
-            "type" : "class"
-          },
-          {
             "path" : "\/documentation\/polling\/polcontainerview",
             "title" : "POLContainerView",
             "type" : "class"
           },
           {
             "children" : [
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/polling\/polerror\/underlyingerror",
+                "title" : "underlyingError",
+                "type" : "property"
+              },
               {
                 "title" : "Instance Methods",
                 "type" : "groupMarker"
@@ -88,22 +85,6 @@
             ],
             "path" : "\/documentation\/polling\/polerror",
             "title" : "POLError",
-            "type" : "class"
-          },
-          {
-            "children" : [
-              {
-                "title" : "Instance Methods",
-                "type" : "groupMarker"
-              },
-              {
-                "path" : "\/documentation\/polling\/polmodernsurveyviewcontroller\/initwithsurvey:",
-                "title" : "initWithSurvey:",
-                "type" : "method"
-              }
-            ],
-            "path" : "\/documentation\/polling\/polmodernsurveyviewcontroller",
-            "title" : "POLModernSurveyViewController",
             "type" : "class"
           },
           {
@@ -154,6 +135,26 @@
               {
                 "path" : "\/documentation\/polling\/polnetworksession\/startsurvey:",
                 "title" : "startSurvey:",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/polnetworksession\/surveyfordata:error:",
+                "title" : "surveyForData:error:",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/polnetworksession\/surveysfordata:error:",
+                "title" : "surveysForData:error:",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/polnetworksession\/surveysfromdata:error:",
+                "title" : "surveysFromData:error:",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/polnetworksession\/triggeredsurveysfordatatask:error:",
+                "title" : "triggeredSurveysForDataTask:error:",
                 "type" : "method"
               },
               {
@@ -216,6 +217,11 @@
                 "type" : "groupMarker"
               },
               {
+                "path" : "\/documentation\/polling\/polpolling\/beginsurveychecks",
+                "title" : "beginSurveyChecks",
+                "type" : "method"
+              },
+              {
                 "path" : "\/documentation\/polling\/polpolling\/getsurveydetailsfortriggeredsurvey:",
                 "title" : "getSurveyDetailsForTriggeredSurvey:",
                 "type" : "method"
@@ -233,6 +239,11 @@
               {
                 "path" : "\/documentation\/polling\/polpolling\/logsession",
                 "title" : "logSession",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/polpolling\/performremotesurveychecks",
+                "title" : "performRemoteSurveyChecks",
                 "type" : "method"
               },
               {
@@ -256,6 +267,21 @@
                 "type" : "method"
               },
               {
+                "path" : "\/documentation\/polling\/polpolling\/shutdownsdk",
+                "title" : "shutdownSDK",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/polpolling\/stopsurveychecks",
+                "title" : "stopSurveyChecks",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/polpolling\/visibleviewcontroller",
+                "title" : "visibleViewController",
+                "type" : "method"
+              },
+              {
                 "title" : "Type Methods",
                 "type" : "groupMarker"
               },
@@ -267,11 +293,6 @@
             ],
             "path" : "\/documentation\/polling\/polpolling",
             "title" : "POLPolling",
-            "type" : "class"
-          },
-          {
-            "path" : "\/documentation\/polling\/polpresentationcontroller",
-            "title" : "POLPresentationController",
             "type" : "class"
           },
           {
@@ -333,6 +354,16 @@
               {
                 "title" : "Instance Properties",
                 "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/polling\/polstorage\/completedsurveys",
+                "title" : "completedSurveys",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/polling\/polstorage\/storageurl",
+                "title" : "storageURL",
+                "type" : "property"
               },
               {
                 "path" : "\/documentation\/polling\/polstorage\/triggeredsurveys",
@@ -527,17 +558,6 @@
             "type" : "class"
           },
           {
-            "children" : [
-              {
-                "title" : "Type Methods",
-                "type" : "groupMarker"
-              },
-              {
-                "path" : "\/documentation\/polling\/polsurveydialoganimateincontroller\/animateinwithviewcontroller:",
-                "title" : "animateInWithViewController:",
-                "type" : "method"
-              }
-            ],
             "path" : "\/documentation\/polling\/polsurveydialoganimateincontroller",
             "title" : "POLSurveyDialogAnimateInController",
             "type" : "class"
@@ -549,13 +569,83 @@
                 "type" : "groupMarker"
               },
               {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/backgroundview",
+                "title" : "backgroundView",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/bottombottomconstraint",
+                "title" : "bottomBottomConstraint",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/bottomhalfheightconstraint",
+                "title" : "bottomHalfHeightConstraint",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/bottomleadingconstraint",
+                "title" : "bottomLeadingConstraint",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/bottomtopoffsetconstraint",
+                "title" : "bottomTopOffsetConstraint",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/bottomtrailingconstraint",
+                "title" : "bottomTrailingConstraint",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/containerview",
+                "title" : "containerView",
+                "type" : "property"
+              },
+              {
                 "path" : "\/documentation\/polling\/polsurveyviewcontroller\/delegate",
                 "title" : "delegate",
                 "type" : "property"
               },
               {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/dialogbottomconstraint",
+                "title" : "dialogBottomConstraint",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/dialogbottomconstraint2",
+                "title" : "dialogBottomConstraint2",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/dialogleadingconstraint",
+                "title" : "dialogLeadingConstraint",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/dialogtopconstraint",
+                "title" : "dialogTopConstraint",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/dialogtopconstraint2",
+                "title" : "dialogTopConstraint2",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/dialogtrailingconstraint",
+                "title" : "dialogTrailingConstraint",
+                "type" : "property"
+              },
+              {
                 "path" : "\/documentation\/polling\/polsurveyviewcontroller\/survey",
                 "title" : "survey",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/viewtype",
+                "title" : "viewType",
                 "type" : "property"
               },
               {
@@ -568,8 +658,38 @@
                 "type" : "groupMarker"
               },
               {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/beginobservingcontentsizechanges",
+                "title" : "beginObservingContentSizeChanges",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/initwithsurvey:viewtype:",
+                "title" : "initWithSurvey:viewType:",
+                "type" : "method"
+              },
+              {
                 "path" : "\/documentation\/polling\/polsurveyviewcontroller\/loadwebrequest",
                 "title" : "loadWebRequest",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/resizetofitcontentheight:",
+                "title" : "resizeToFitContentHeight:",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/resizetofitcontentheight:force:",
+                "title" : "resizeToFitContentHeight:force:",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/stopobservingcontentsizechanges",
+                "title" : "stopObservingContentSizeChanges",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewcontroller\/tap:",
+                "title" : "tap:",
                 "type" : "method"
               },
               {
@@ -670,6 +790,16 @@
               {
                 "path" : "\/documentation\/polling\/poltriggeredsurveycontroller\/removesurvey:",
                 "title" : "removeSurvey:",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/poltriggeredsurveycontroller\/scheduletriggersurvey:withdelay:",
+                "title" : "scheduleTriggerSurvey:withDelay:",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/poltriggeredsurveycontroller\/triggersurvey:",
+                "title" : "triggerSurvey:",
                 "type" : "method"
               },
               {
@@ -804,8 +934,78 @@
             "type" : "var"
           },
           {
+            "path" : "\/documentation\/polling\/polhttpmethodget",
+            "title" : "POLHTTPMethodGET",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polhttpmethodpost",
+            "title" : "POLHTTPMethodPOST",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/pollogcategorynamedefault",
+            "title" : "POLLogCategoryNameDefault",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polloglevellabelerror",
+            "title" : "POLLogLevelLabelError",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polloglevellabelinfo",
+            "title" : "POLLogLevelLabelInfo",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polloglevellabelnone",
+            "title" : "POLLogLevelLabelNone",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polloglevellabeltrace",
+            "title" : "POLLogLevelLabelTrace",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polloglevellabelwarn",
+            "title" : "POLLogLevelLabelWarn",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polloglevellabels",
+            "title" : "POLLogLevelLabels",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/pollogoslogtypes",
+            "title" : "POLLogOSLogTypes",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/pollogprefix",
+            "title" : "POLLogPrefix",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/pollogsubsystemnamesdk",
+            "title" : "POLLogSubsystemNameSDK",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polnetworksessionapikeyqueryname",
+            "title" : "POLNetworkSessionAPIKeyQueryName",
+            "type" : "var"
+          },
+          {
             "path" : "\/documentation\/polling\/polnetworksessionavailablesurveyapiendpoint",
             "title" : "POLNetworkSessionAvailableSurveyAPIEndpoint",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polnetworksessioncustomeridqueryname",
+            "title" : "POLNetworkSessionCustomerIDQueryName",
             "type" : "var"
           },
           {
@@ -819,13 +1019,218 @@
             "type" : "var"
           },
           {
+            "path" : "\/documentation\/polling\/polnetworksessionuserqueryname",
+            "title" : "POLNetworkSessionUserQueryName",
+            "type" : "var"
+          },
+          {
             "path" : "\/documentation\/polling\/polpollingerrordomain",
             "title" : "POLPollingErrorDomain",
             "type" : "var"
           },
           {
+            "path" : "\/documentation\/polling\/polpollingpollrateinterval",
+            "title" : "POLPollingPollRateInterval",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polpreviousuncaughtexceptionhandler",
+            "title" : "POLPreviousUncaughtExceptionHandler",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsdkinitialized",
+            "title" : "POLSDKInitialized",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsdkshutdown",
+            "title" : "POLSDKShutdown",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polstoragecompletedsurveyskey",
+            "title" : "POLStorageCompletedSurveysKey",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polstoragefilename",
+            "title" : "POLStorageFilename",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polstoragetriggeredsurveyskey",
+            "title" : "POLStorageTriggeredSurveysKey",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsurveydatatasktypecompletesurveydescription",
+            "title" : "POLSurveyDataTaskTypeCompleteSurveyDescription",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsurveydatatasktypedescriptions",
+            "title" : "POLSurveyDataTaskTypeDescriptions",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsurveydatatasktypegetsurveydetailsdescription",
+            "title" : "POLSurveyDataTaskTypeGetSurveyDetailsDescription",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsurveydatatasktypenonedescription",
+            "title" : "POLSurveyDataTaskTypeNoneDescription",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsurveydatatasktypestartsurveydescription",
+            "title" : "POLSurveyDataTaskTypeStartSurveyDescription",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsurveydefaultembedviewendpoint",
+            "title" : "POLSurveyDefaultEmbedViewEndpoint",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsurveystatusavailable",
+            "title" : "POLSurveyStatusAvailable",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsurveystatuscompleted",
+            "title" : "POLSurveyStatusCompleted",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsurveystatusstarted",
+            "title" : "POLSurveyStatusStarted",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsurveyviewcloseableareaheight",
+            "title" : "POLSurveyViewCloseableAreaHeight",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsurveyviewendpoint",
+            "title" : "POLSurveyViewEndpoint",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsurveyviewlayoutchangeanimationduration",
+            "title" : "POLSurveyViewLayoutChangeAnimationDuration",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsurveyviewsizeclassdefaultdescription",
+            "title" : "POLSurveyViewSizeClassDefaultDescription",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsurveyviewsizeclassdescriptions",
+            "title" : "POLSurveyViewSizeClassDescriptions",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsurveyviewsizeclassmatchcontentdescription",
+            "title" : "POLSurveyViewSizeClassMatchContentDescription",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsurveyviewsizeclassmaximumdescription",
+            "title" : "POLSurveyViewSizeClassMaximumDescription",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/poltriggeredsurveypostponeinterval",
+            "title" : "POLTriggeredSurveyPostponeInterval",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polversionallstring",
+            "title" : "POLVersionAllString",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polversionbranchstring",
+            "title" : "POLVersionBranchString",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polversioncommitstring",
+            "title" : "POLVersionCommitString",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polversionconfigstring",
+            "title" : "POLVersionConfigString",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polversionlongstring",
+            "title" : "POLVersionLongString",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polversionmajornumber",
+            "title" : "POLVersionMajorNumber",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polversionminornumber",
+            "title" : "POLVersionMinorNumber",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polversionpatchnumber",
+            "title" : "POLVersionPatchNumber",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polversionrepostatestring",
+            "title" : "POLVersionRepoStateString",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polversionstring",
+            "title" : "POLVersionString",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polviewtypebottomdescription",
+            "title" : "POLViewTypeBottomDescription",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polviewtypedescriptions",
+            "title" : "POLViewTypeDescriptions",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polviewtypedialogdescription",
+            "title" : "POLViewTypeDialogDescription",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polviewtypenonedescription",
+            "title" : "POLViewTypeNoneDescription",
+            "type" : "var"
+          },
+          {
+            "path" : "\/documentation\/polling\/polwebviewcontentsizechangedcontext",
+            "title" : "POLWebViewContentSizeChangedContext",
+            "type" : "var"
+          },
+          {
             "title" : "Functions",
             "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/polling\/polisobviouslyinvalidstring",
+            "title" : "POLIsObviouslyInvalidString",
+            "type" : "func"
           },
           {
             "path" : "\/documentation\/polling\/polissdkdisabled",
@@ -865,6 +1270,21 @@
           {
             "path" : "\/documentation\/polling\/polshutdownsdk",
             "title" : "POLShutdownSDK",
+            "type" : "func"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsurveydatatasktypedescription",
+            "title" : "POLSurveyDataTaskTypeDescription",
+            "type" : "func"
+          },
+          {
+            "path" : "\/documentation\/polling\/polsurveyviewsizeclassdescription",
+            "title" : "POLSurveyViewSizeClassDescription",
+            "type" : "func"
+          },
+          {
+            "path" : "\/documentation\/polling\/poluncaughtexceptionhandler",
+            "title" : "POLUncaughtExceptionHandler",
             "type" : "func"
           },
           {
@@ -929,6 +1349,11 @@
           {
             "path" : "\/documentation\/polling\/pol_array_size",
             "title" : "POL_ARRAY_SIZE",
+            "type" : "macro"
+          },
+          {
+            "path" : "\/documentation\/polling\/pol_nsstr",
+            "title" : "POL_NSSTR",
             "type" : "macro"
           },
           {
@@ -1001,6 +1426,63 @@
             ],
             "path" : "\/documentation\/polling\/pollogsubsystemcategory",
             "title" : "POLLogSubsystemCategory",
+            "type" : "enum"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Enumeration Cases",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveydatatasktype\/polsurveydatatasktypecompletesurvey",
+                "title" : "POLSurveyDataTaskTypeCompleteSurvey",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveydatatasktype\/polsurveydatatasktypegetsurveydetails",
+                "title" : "POLSurveyDataTaskTypeGetSurveyDetails",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveydatatasktype\/polsurveydatatasktypenone",
+                "title" : "POLSurveyDataTaskTypeNone",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveydatatasktype\/polsurveydatatasktypestartsurvey",
+                "title" : "POLSurveyDataTaskTypeStartSurvey",
+                "type" : "case"
+              }
+            ],
+            "path" : "\/documentation\/polling\/polsurveydatatasktype",
+            "title" : "POLSurveyDataTaskType",
+            "type" : "enum"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Enumeration Cases",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewsizeclass\/polsurveyviewsizeclassdefault",
+                "title" : "POLSurveyViewSizeClassDefault",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewsizeclass\/polsurveyviewsizeclassmatchcontent",
+                "title" : "POLSurveyViewSizeClassMatchContent",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/polling\/polsurveyviewsizeclass\/polsurveyviewsizeclassmaximum",
+                "title" : "POLSurveyViewSizeClassMaximum",
+                "type" : "case"
+              }
+            ],
+            "path" : "\/documentation\/polling\/polsurveyviewsizeclass",
+            "title" : "POLSurveyViewSizeClass",
             "type" : "enum"
           },
           {

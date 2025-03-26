@@ -8,14 +8,14 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/disableCheckingForAvailableSurveys"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling\/disableCheckingForAvailableSurveys"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -126,21 +126,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPolling": {
+"doc://com.polling.polling/documentation/Polling/POLPolling": {
   "abstract" : [
     {
       "text" : "The primary SDK object",
@@ -153,14 +153,14 @@
       "text" : "POLPolling"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLPolling",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polpolling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPolling/disableCheckingForAvailableSurveys": {
+"doc://com.polling.polling/documentation/Polling/POLPolling/disableCheckingForAvailableSurveys": {
   "abstract" : [
     {
       "text" : "Disable survey availability checks",
@@ -173,7 +173,7 @@
       "text" : "disableCheckingForAvailableSurveys"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/disableCheckingForAvailableSurveys",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling\/disableCheckingForAvailableSurveys",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "disableCheckingForAvailableSurveys",

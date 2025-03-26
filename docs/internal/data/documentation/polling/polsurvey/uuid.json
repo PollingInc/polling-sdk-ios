@@ -8,14 +8,14 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/UUID"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/UUID"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -114,21 +114,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey": {
   "abstract" : [
     {
       "text" : "An object representing a survey",
@@ -141,14 +141,14 @@
       "text" : "POLSurvey"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLSurvey",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey/UUID": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey/UUID": {
   "abstract" : [
     {
       "text" : "The survey’s UUID",
@@ -161,7 +161,7 @@
       "text" : "UUID"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey\/UUID",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey\/UUID",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "UUID",

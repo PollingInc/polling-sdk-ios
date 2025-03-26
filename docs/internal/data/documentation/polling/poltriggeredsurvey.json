@@ -2,13 +2,13 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -76,7 +76,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/objc(cs)NSObject"
+        "doc:\/\/com.polling.polling\/objc(cs)NSObject"
       ],
       "kind" : "relationships",
       "title" : "Inherits From",
@@ -96,11 +96,11 @@
       "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/delaySeconds",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/delayedDate",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/delayedTimestamp",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/inUse",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/survey"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/delaySeconds",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/delayedDate",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/delayedTimestamp",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/inUse",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/survey"
       ],
       "title" : "Instance Properties"
     },
@@ -108,9 +108,9 @@
       "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/dictionaryRepresentation",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/isEqualToTriggeredSurvey:",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/postpone"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/dictionaryRepresentation",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/isEqualToTriggeredSurvey:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/postpone"
       ],
       "title" : "Instance Methods"
     },
@@ -118,8 +118,8 @@
       "anchor" : "Type-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/triggeredSurveyFromDictionary:",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/triggeredSurveyFromJSONDictionary:"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/triggeredSurveyFromDictionary:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/triggeredSurveyFromJSONDictionary:"
       ],
       "title" : "Type Methods"
     }
@@ -138,21 +138,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurvey": {
   "abstract" : [
 
   ],
@@ -162,14 +162,14 @@
       "text" : "POLTriggeredSurvey"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLTriggeredSurvey",
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurvey"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey/delaySeconds": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurvey/delaySeconds": {
   "abstract" : [
 
   ],
@@ -179,14 +179,14 @@
       "text" : "delaySeconds"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/delaySeconds",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/delaySeconds",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "delaySeconds",
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurvey\/delayseconds"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey/delayedDate": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurvey/delayedDate": {
   "abstract" : [
 
   ],
@@ -196,14 +196,14 @@
       "text" : "delayedDate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/delayedDate",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/delayedDate",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "delayedDate",
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurvey\/delayeddate"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey/delayedTimestamp": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurvey/delayedTimestamp": {
   "abstract" : [
 
   ],
@@ -213,14 +213,14 @@
       "text" : "delayedTimestamp"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/delayedTimestamp",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/delayedTimestamp",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "delayedTimestamp",
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurvey\/delayedtimestamp"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey/dictionaryRepresentation": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurvey/dictionaryRepresentation": {
   "abstract" : [
 
   ],
@@ -234,7 +234,7 @@
       "text" : "dictionaryRepresentation"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/dictionaryRepresentation",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/dictionaryRepresentation",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -247,7 +247,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurvey\/dictionaryrepresentation"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey/inUse": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurvey/inUse": {
   "abstract" : [
 
   ],
@@ -257,14 +257,14 @@
       "text" : "inUse"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/inUse",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/inUse",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "inUse",
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurvey\/inuse"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey/isEqualToTriggeredSurvey:": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurvey/isEqualToTriggeredSurvey:": {
   "abstract" : [
 
   ],
@@ -278,7 +278,7 @@
       "text" : "isEqualToTriggeredSurvey:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/isEqualToTriggeredSurvey:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/isEqualToTriggeredSurvey:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -291,7 +291,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurvey\/isequaltotriggeredsurvey:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey/postpone": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurvey/postpone": {
   "abstract" : [
 
   ],
@@ -305,7 +305,7 @@
       "text" : "postpone"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/postpone",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/postpone",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -318,7 +318,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurvey\/postpone"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey/survey": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurvey/survey": {
   "abstract" : [
 
   ],
@@ -328,14 +328,14 @@
       "text" : "survey"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/survey",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/survey",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "survey",
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurvey\/survey"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey/triggeredSurveyFromDictionary:": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurvey/triggeredSurveyFromDictionary:": {
   "abstract" : [
 
   ],
@@ -349,7 +349,7 @@
       "text" : "triggeredSurveyFromDictionary:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/triggeredSurveyFromDictionary:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/triggeredSurveyFromDictionary:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -362,7 +362,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurvey\/triggeredsurveyfromdictionary:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey/triggeredSurveyFromJSONDictionary:": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurvey/triggeredSurveyFromJSONDictionary:": {
   "abstract" : [
 
   ],
@@ -376,7 +376,7 @@
       "text" : "triggeredSurveyFromJSONDictionary:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey\/triggeredSurveyFromJSONDictionary:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey\/triggeredSurveyFromJSONDictionary:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -389,8 +389,8 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurvey\/triggeredsurveyfromjsondictionary:"
 },
-"doc://com.polling.Polling/objc(cs)NSObject": {
-  "identifier" : "doc:\/\/com.polling.Polling\/objc(cs)NSObject",
+"doc://com.polling.polling/objc(cs)NSObject": {
+  "identifier" : "doc:\/\/com.polling.polling\/objc(cs)NSObject",
   "title" : "NSObject",
   "type" : "unresolvable"
 }

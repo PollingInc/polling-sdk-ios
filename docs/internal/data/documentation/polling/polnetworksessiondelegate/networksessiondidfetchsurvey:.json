@@ -2,14 +2,14 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate"
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionDelegate"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFetchSurvey:"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFetchSurvey:"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -73,7 +73,7 @@
               "text" : "("
             },
             {
-              "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey",
+              "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "c:objc(cs)POLSurvey",
               "text" : "POLSurvey"
@@ -118,21 +118,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSessionDelegate": {
   "abstract" : [
 
   ],
@@ -142,14 +142,14 @@
       "text" : "POLNetworkSessionDelegate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionDelegate",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionDelegate",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polnetworksessiondelegate"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate/networkSessionDidFetchSurvey:": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSessionDelegate/networkSessionDidFetchSurvey:": {
   "abstract" : [
 
   ],
@@ -163,7 +163,7 @@
       "text" : "networkSessionDidFetchSurvey:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFetchSurvey:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFetchSurvey:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -176,7 +176,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polnetworksessiondelegate\/networksessiondidfetchsurvey:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey": {
+"doc://com.polling.polling/documentation/Polling/POLSurvey": {
   "abstract" : [
     {
       "text" : "An object representing a survey",
@@ -189,7 +189,7 @@
       "text" : "POLSurvey"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLSurvey",

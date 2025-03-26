@@ -4,52 +4,52 @@
       {
         "projects" : [
           {
-            "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject",
+            "reference" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/ConfigureProject",
             "sections" : [
               {
                 "kind" : "task",
-                "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework"
+                "reference" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework"
               }
             ]
           }
         ],
-        "reference" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Configuring-your-project"
+        "reference" : "doc:\/\/com.polling.polling\/tutorials\/UIKitToC\/Configuring-your-project"
       },
       {
         "projects" : [
           {
-            "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode",
+            "reference" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/UIKitCode",
             "sections" : [
               {
                 "kind" : "task",
-                "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Import-the-Polling-framework"
+                "reference" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/UIKitCode#Import-the-Polling-framework"
               },
               {
                 "kind" : "task",
-                "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Configuring-Polling"
+                "reference" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/UIKitCode#Configuring-Polling"
               },
               {
                 "kind" : "task",
-                "reference" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Make-your-view-controller-Pollings-delegate"
+                "reference" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/UIKitCode#Make-your-view-controller-Pollings-delegate"
               }
             ]
           }
         ],
-        "reference" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Coding"
+        "reference" : "doc:\/\/com.polling.polling\/tutorials\/UIKitToC\/Coding"
       }
     ],
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC",
-        "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/$volume",
-        "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Coding"
+        "doc:\/\/com.polling.polling\/tutorials\/UIKitToC",
+        "doc:\/\/com.polling.polling\/tutorials\/UIKitToC\/$volume",
+        "doc:\/\/com.polling.polling\/tutorials\/UIKitToC\/Coding"
       ]
     ],
-    "reference" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC"
+    "reference" : "doc:\/\/com.polling.polling\/tutorials\/UIKitToC"
   },
   "identifier" : {
-    "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode"
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/UIKitCode"
   },
   "kind" : "project",
   "metadata" : {
@@ -373,6 +373,16 @@
       ],
       "traits" : [
         {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    },
+    {
+      "paths" : [
+        "\/tutorials\/polling\/uikitcode"
+      ],
+      "traits" : [
+        {
           "interfaceLanguage" : "occ"
         }
       ]
@@ -533,7 +543,7 @@
         "1x",
         "light"
       ],
-      "url" : "\/images\/com.polling.Polling\/config.png"
+      "url" : "\/images\/com.polling.polling\/config.png"
     }
   ]
 },
@@ -547,124 +557,124 @@
         "1x",
         "light"
       ],
-      "url" : "\/images\/com.polling.Polling\/delegate.png"
+      "url" : "\/images\/com.polling.polling\/delegate.png"
     }
   ]
 },
-"doc://com.polling.Polling/tutorials/Polling/ConfigureProject": {
+"doc://com.polling.polling/tutorials/Polling/ConfigureProject": {
   "abstract" : [
     {
       "text" : "Configure your project to use the Polling framework",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/ConfigureProject",
   "kind" : "project",
   "role" : "project",
   "title" : "Adding the framework",
   "type" : "topic",
   "url" : "\/tutorials\/polling\/configureproject"
 },
-"doc://com.polling.Polling/tutorials/Polling/ConfigureProject#Add-the-framework": {
+"doc://com.polling.polling/tutorials/Polling/ConfigureProject#Add-the-framework": {
   "abstract" : [
     {
       "text" : "Configure your project to use the Polling framework",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/ConfigureProject#Add-the-framework",
   "kind" : "section",
   "role" : "pseudoSymbol",
   "title" : "Add the framework",
   "type" : "section",
   "url" : "\/tutorials\/polling\/configureproject#Add-the-framework"
 },
-"doc://com.polling.Polling/tutorials/Polling/UIKitCode": {
+"doc://com.polling.polling/tutorials/Polling/UIKitCode": {
   "abstract" : [
     {
       "text" : "This tutorial guides you through importing the Polling framework and using the APIs with UIKit.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/UIKitCode",
   "kind" : "project",
   "role" : "project",
   "title" : "Code your view controller",
   "type" : "topic",
   "url" : "\/tutorials\/polling\/uikitcode"
 },
-"doc://com.polling.Polling/tutorials/Polling/UIKitCode#Configuring-Polling": {
+"doc://com.polling.polling/tutorials/Polling/UIKitCode#Configuring-Polling": {
   "abstract" : [
     {
       "text" : "This tutorial guides you through importing the Polling framework and using the APIs with UIKit.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Configuring-Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/UIKitCode#Configuring-Polling",
   "kind" : "section",
   "role" : "pseudoSymbol",
   "title" : "Configuring Polling",
   "type" : "section",
   "url" : "\/tutorials\/polling\/uikitcode#Configuring-Polling"
 },
-"doc://com.polling.Polling/tutorials/Polling/UIKitCode#Import-the-Polling-framework": {
+"doc://com.polling.polling/tutorials/Polling/UIKitCode#Import-the-Polling-framework": {
   "abstract" : [
     {
       "text" : "This tutorial guides you through importing the Polling framework and using the APIs with UIKit.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Import-the-Polling-framework",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/UIKitCode#Import-the-Polling-framework",
   "kind" : "section",
   "role" : "pseudoSymbol",
   "title" : "Import the Polling framework",
   "type" : "section",
   "url" : "\/tutorials\/polling\/uikitcode#Import-the-Polling-framework"
 },
-"doc://com.polling.Polling/tutorials/Polling/UIKitCode#Make-your-view-controller-Pollings-delegate": {
+"doc://com.polling.polling/tutorials/Polling/UIKitCode#Make-your-view-controller-Pollings-delegate": {
   "abstract" : [
     {
       "text" : "This tutorial guides you through importing the Polling framework and using the APIs with UIKit.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/UIKitCode#Make-your-view-controller-Pollings-delegate",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/UIKitCode#Make-your-view-controller-Pollings-delegate",
   "kind" : "section",
   "role" : "pseudoSymbol",
   "title" : "Make your view controller Polling's delegate",
   "type" : "section",
   "url" : "\/tutorials\/polling\/uikitcode#Make-your-view-controller-Pollings-delegate"
 },
-"doc://com.polling.Polling/tutorials/UIKitToC": {
+"doc://com.polling.polling/tutorials/UIKitToC": {
   "abstract" : [
     {
       "text" : "Tutorial for integrating the Polling SDK in your UIKit app.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/UIKitToC",
   "kind" : "overview",
   "role" : "overview",
   "title" : "Intergrating with UIKit",
   "type" : "topic",
   "url" : "\/tutorials\/uikittoc"
 },
-"doc://com.polling.Polling/tutorials/UIKitToC/Coding": {
+"doc://com.polling.polling/tutorials/UIKitToC/Coding": {
   "abstract" : [
 
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Coding",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/UIKitToC\/Coding",
   "kind" : "article",
   "role" : "article",
   "title" : "Coding",
   "type" : "topic",
   "url" : "\/tutorials\/uikittoc\/coding"
 },
-"doc://com.polling.Polling/tutorials/UIKitToC/Configuring-your-project": {
+"doc://com.polling.polling/tutorials/UIKitToC/Configuring-your-project": {
   "abstract" : [
 
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC\/Configuring-your-project",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/UIKitToC\/Configuring-your-project",
   "kind" : "article",
   "role" : "article",
   "title" : "Configuring your project",
@@ -681,7 +691,7 @@
         "1x",
         "light"
       ],
-      "url" : "\/images\/com.polling.Polling\/import-uikit-light.png"
+      "url" : "\/images\/com.polling.polling\/import-uikit-light.png"
     }
   ]
 },
@@ -695,9 +705,25 @@
         "1x",
         "light"
       ],
-      "url" : "\/images\/com.polling.Polling\/locate-view-controller.png"
+      "url" : "\/images\/com.polling.polling\/locate-view-controller.png"
     }
   ]
 }
-}
+}, 
+"variantOverrides":[
+  {
+    "patch" : [
+      {
+        "op" : "replace",
+        "path" : "\/identifier\/interfaceLanguage",
+        "value" : "occ"
+      }
+    ],
+    "traits" : [
+      {
+        "interfaceLanguage" : "occ"
+      }
+    ]
+  }
+]
 }

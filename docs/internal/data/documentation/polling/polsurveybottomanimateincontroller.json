@@ -2,13 +2,13 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyBottomAnimateInController"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyBottomAnimateInController"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -76,7 +76,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/objc(cs)NSObject"
+        "doc:\/\/com.polling.polling\/objc(cs)NSObject"
       ],
       "kind" : "relationships",
       "title" : "Inherits From",
@@ -84,7 +84,7 @@
     },
     {
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/objc(pl)UIViewControllerAnimatedTransitioning"
+        "doc:\/\/com.polling.polling\/objc(pl)UIViewControllerAnimatedTransitioning"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -113,21 +113,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurveyBottomAnimateInController": {
+"doc://com.polling.polling/documentation/Polling/POLSurveyBottomAnimateInController": {
   "abstract" : [
 
   ],
@@ -137,20 +137,20 @@
       "text" : "POLSurveyBottomAnimateInController"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyBottomAnimateInController",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyBottomAnimateInController",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLSurveyBottomAnimateInController",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurveybottomanimateincontroller"
 },
-"doc://com.polling.Polling/objc(cs)NSObject": {
-  "identifier" : "doc:\/\/com.polling.Polling\/objc(cs)NSObject",
+"doc://com.polling.polling/objc(cs)NSObject": {
+  "identifier" : "doc:\/\/com.polling.polling\/objc(cs)NSObject",
   "title" : "NSObject",
   "type" : "unresolvable"
 },
-"doc://com.polling.Polling/objc(pl)UIViewControllerAnimatedTransitioning": {
-  "identifier" : "doc:\/\/com.polling.Polling\/objc(pl)UIViewControllerAnimatedTransitioning",
+"doc://com.polling.polling/objc(pl)UIViewControllerAnimatedTransitioning": {
+  "identifier" : "doc:\/\/com.polling.polling\/objc(pl)UIViewControllerAnimatedTransitioning",
   "title" : "UIViewControllerAnimatedTransitioning",
   "type" : "unresolvable"
 }

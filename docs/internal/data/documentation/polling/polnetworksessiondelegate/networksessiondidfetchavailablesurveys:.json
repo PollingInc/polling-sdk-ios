@@ -2,14 +2,14 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate"
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionDelegate"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFetchAvailableSurveys:"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFetchAvailableSurveys:"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -117,21 +117,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSessionDelegate": {
   "abstract" : [
 
   ],
@@ -141,14 +141,14 @@
       "text" : "POLNetworkSessionDelegate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionDelegate",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionDelegate",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polnetworksessiondelegate"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate/networkSessionDidFetchAvailableSurveys:": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSessionDelegate/networkSessionDidFetchAvailableSurveys:": {
   "abstract" : [
 
   ],
@@ -162,7 +162,7 @@
       "text" : "networkSessionDidFetchAvailableSurveys:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFetchAvailableSurveys:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFetchAvailableSurveys:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {

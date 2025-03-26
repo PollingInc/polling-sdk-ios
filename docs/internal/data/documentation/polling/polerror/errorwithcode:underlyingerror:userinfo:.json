@@ -2,14 +2,14 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError"
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError\/errorWithCode:underlyingError:userInfo:"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError\/errorWithCode:underlyingError:userInfo:"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -167,21 +167,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLError": {
+"doc://com.polling.polling/documentation/Polling/POLError": {
   "abstract" : [
 
   ],
@@ -191,14 +191,14 @@
       "text" : "POLError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polerror"
 },
-"doc://com.polling.Polling/documentation/Polling/POLError/errorWithCode:underlyingError:userInfo:": {
+"doc://com.polling.polling/documentation/Polling/POLError/errorWithCode:underlyingError:userInfo:": {
   "abstract" : [
 
   ],
@@ -212,7 +212,7 @@
       "text" : "errorWithCode:underlyingError:userInfo:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError\/errorWithCode:underlyingError:userInfo:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError\/errorWithCode:underlyingError:userInfo:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {

@@ -8,14 +8,14 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/logPurchase:"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling\/logPurchase:"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -130,19 +130,19 @@
         {
           "inlineContent" : [
             {
-              "text" : "Sends and logs a purchase. The purchase amount ",
+              "text" : "Sends and logs a purchase. The purchase amount",
               "type" : "text"
             },
             {
-              "code" : "intergerCents",
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "code" : "integerCents",
               "type" : "codeVoice"
             },
             {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "should be normalized to a non-fractional value using the smallest",
+              "text" : " should be normalized to a non-fractional value",
               "type" : "text"
             },
             {
@@ -150,7 +150,7 @@
               "type" : "text"
             },
             {
-              "text" : "recongnized demonination for the currency.",
+              "text" : "using the smallest recongnized demonination for the currency.",
               "type" : "text"
             }
           ],
@@ -191,21 +191,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPolling": {
+"doc://com.polling.polling/documentation/Polling/POLPolling": {
   "abstract" : [
     {
       "text" : "The primary SDK object",
@@ -218,14 +218,14 @@
       "text" : "POLPolling"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLPolling",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polpolling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPolling/logPurchase:": {
+"doc://com.polling.polling/documentation/Polling/POLPolling/logPurchase:": {
   "abstract" : [
     {
       "text" : "Log a purchase",
@@ -242,7 +242,7 @@
       "text" : "logPurchase:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/logPurchase:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling\/logPurchase:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {

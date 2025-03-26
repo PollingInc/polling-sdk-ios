@@ -8,13 +8,13 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
       ]
     ]
   },
   "identifier" : {
-    "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/GettingStarted"
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/GettingStarted"
   },
   "kind" : "article",
   "metadata" : {
@@ -126,12 +126,22 @@
     {
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC",
-        "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC"
+        "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC",
+        "doc:\/\/com.polling.polling\/tutorials\/UIKitToC"
       ]
     }
   ],
   "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/gettingstarted"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    },
     {
       "paths" : [
         "\/documentation\/polling\/gettingstarted"
@@ -157,47 +167,81 @@
   "type" : "link",
   "url" : "Polling.com"
 },
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Poll and survey your users with ease",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/tutorials/SwiftUIToC": {
+"doc://com.polling.polling/tutorials/SwiftUIToC": {
   "abstract" : [
     {
       "text" : "Tutorial for integrating the Polling SDK in your SwiftUI app.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC",
   "kind" : "overview",
   "role" : "overview",
   "title" : "Intergrating with SwiftUI",
   "type" : "topic",
   "url" : "\/tutorials\/swiftuitoc"
 },
-"doc://com.polling.Polling/tutorials/UIKitToC": {
+"doc://com.polling.polling/tutorials/UIKitToC": {
   "abstract" : [
     {
       "text" : "Tutorial for integrating the Polling SDK in your UIKit app.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/UIKitToC",
   "kind" : "overview",
   "role" : "overview",
   "title" : "Intergrating with UIKit",
   "type" : "topic",
   "url" : "\/tutorials\/uikittoc"
 }
-}
+}, 
+"variantOverrides":[
+  {
+    "patch" : [
+      {
+        "op" : "replace",
+        "path" : "\/identifier\/interfaceLanguage",
+        "value" : "occ"
+      },
+      {
+        "op" : "add",
+        "path" : "\/topicSections",
+        "value" : null
+      },
+      {
+        "op" : "replace",
+        "path" : "\/seeAlsoSections",
+        "value" : [
+          {
+            "generated" : true,
+            "identifiers" : [
+              "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC",
+              "doc:\/\/com.polling.polling\/tutorials\/UIKitToC"
+            ]
+          }
+        ]
+      }
+    ],
+    "traits" : [
+      {
+        "interfaceLanguage" : "occ"
+      }
+    ]
+  }
+]
 }

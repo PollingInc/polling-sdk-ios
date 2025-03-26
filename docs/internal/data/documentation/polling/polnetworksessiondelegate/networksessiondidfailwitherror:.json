@@ -2,14 +2,14 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate"
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionDelegate"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFailWithError:"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFailWithError:"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -73,7 +73,7 @@
               "text" : "("
             },
             {
-              "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError",
+              "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "c:objc(cs)POLError",
               "text" : "POLError"
@@ -118,21 +118,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLError": {
+"doc://com.polling.polling/documentation/Polling/POLError": {
   "abstract" : [
 
   ],
@@ -142,14 +142,14 @@
       "text" : "POLError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polerror"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSessionDelegate": {
   "abstract" : [
 
   ],
@@ -159,14 +159,14 @@
       "text" : "POLNetworkSessionDelegate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionDelegate",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionDelegate",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polnetworksessiondelegate"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate/networkSessionDidFailWithError:": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSessionDelegate/networkSessionDidFailWithError:": {
   "abstract" : [
 
   ],
@@ -180,7 +180,7 @@
       "text" : "networkSessionDidFailWithError:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFailWithError:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionDelegate\/networkSessionDidFailWithError:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {

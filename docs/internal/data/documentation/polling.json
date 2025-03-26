@@ -14,7 +14,7 @@
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -37,6 +37,40 @@
           "level" : 2,
           "text" : "Overview",
           "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The documentation herein is meant for SDK developers, contributors, or",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "maintainers. If you’re an app\/game publisher looking integrating the",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Polling SDK you’ll want the ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "https:\/\/pollinginc.github.io\/polling-sdk-ios",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
         }
       ],
       "kind" : "content"
@@ -52,25 +86,37 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Setup-Project-for-Releasing",
+      "identifiers" : [
+        "doc:\/\/com.polling.polling\/documentation\/Polling-SDK-Developer\/CodeSigning"
+      ],
+      "title" : "Setup Project for Releasing"
+    },
+    {
+      "anchor" : "Making-Releases",
+      "identifiers" : [
+        "doc:\/\/com.polling.polling\/documentation\/Polling-SDK-Developer\/ReleaseProcess",
+        "doc:\/\/com.polling.polling\/documentation\/Polling-SDK-Developer\/VersionScheme"
+      ],
+      "title" : "Making Releases"
+    },
+    {
       "anchor" : "Classes",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLBackgroundView",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLContainerView",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLModernSurveyViewController",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPresentationController",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyBottomAnimateInController",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyDialogAnimateInController",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLBackgroundView",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLContainerView",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLStorage",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyBottomAnimateInController",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDialogAnimateInController",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController"
       ],
       "title" : "Classes"
     },
@@ -78,9 +124,9 @@
       "anchor" : "Protocols",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionDelegate",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewControllerDelegate"
       ],
       "title" : "Protocols"
     },
@@ -88,13 +134,67 @@
       "anchor" : "Variables",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorFileKey",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorLineNumberKey",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorMethodKey",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionAvailableSurveyAPIEndpoint",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionEventAPIEndpoint",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionSurveyAPIEndpoint",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingErrorDomain"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLErrorFileKey",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLErrorLineNumberKey",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLErrorMethodKey",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLHTTPMethodGET",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLHTTPMethodPOST",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogCategoryNameDefault",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevelLabelError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevelLabelInfo",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevelLabelNone",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevelLabelTrace",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevelLabelWarn",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevelLabels",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogOSLogTypes",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogPrefix",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogSubsystemNameSDK",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionAPIKeyQueryName",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionAvailableSurveyAPIEndpoint",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionCustomerIDQueryName",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionEventAPIEndpoint",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionSurveyAPIEndpoint",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionUserQueryName",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingErrorDomain",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingPollRateInterval",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPreviousUncaughtExceptionHandler",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSDKInitialized",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSDKShutdown",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLStorageCompletedSurveysKey",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLStorageFilename",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLStorageTriggeredSurveysKey",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskTypeCompleteSurveyDescription",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskTypeDescriptions",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskTypeGetSurveyDetailsDescription",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskTypeNoneDescription",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskTypeStartSurveyDescription",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDefaultEmbedViewEndpoint",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyStatusAvailable",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyStatusCompleted",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyStatusStarted",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewCloseableAreaHeight",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewEndpoint",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewLayoutChangeAnimationDuration",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClassDefaultDescription",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClassDescriptions",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClassMatchContentDescription",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClassMaximumDescription",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyPostponeInterval",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionAllString",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionBranchString",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionCommitString",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionConfigString",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionLongString",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionMajorNumber",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionMinorNumber",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionPatchNumber",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionRepoStateString",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionString",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewTypeBottomDescription",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewTypeDescriptions",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewTypeDialogDescription",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewTypeNoneDescription",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLWebViewContentSizeChangedContext"
       ],
       "title" : "Variables"
     },
@@ -102,15 +202,19 @@
       "anchor" : "Functions",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLIsSDKDisabled",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLIsSDKInitialized",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLIsSDKShutdown",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogDefault",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevelLabel",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevelToOSLogType",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSetSDKInitialized",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLShutdownSDK",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewTypeDescription"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLIsObviouslyInvalidString",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLIsSDKDisabled",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLIsSDKInitialized",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLIsSDKShutdown",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogDefault",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevelLabel",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevelToOSLogType",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSetSDKInitialized",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLShutdownSDK",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskTypeDescription",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClassDescription",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLUncaughtExceptionHandler",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewTypeDescription"
       ],
       "title" : "Functions"
     },
@@ -118,17 +222,18 @@
       "anchor" : "Macros",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorWithCode",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorWithCodeUnderlyingError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorWithCodeUnderlyingErrorUserInfo",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorWithCodeUserInfo",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLGuardPublicAPI",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogError",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogInfo",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogTrace",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogWarn",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogWithLevel",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POL_ARRAY_SIZE"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLErrorWithCode",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLErrorWithCodeUnderlyingError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLErrorWithCodeUnderlyingErrorUserInfo",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLErrorWithCodeUserInfo",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLGuardPublicAPI",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogError",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogInfo",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogTrace",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogWarn",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogWithLevel",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POL_ARRAY_SIZE",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POL_NSSTR"
       ],
       "title" : "Macros"
     },
@@ -136,11 +241,13 @@
       "anchor" : "Enumerations",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystem",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystemCategory",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevel",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogSubsystem",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogSubsystemCategory",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskType",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClass",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewType",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)"
       ],
       "title" : "Enumerations"
     }
@@ -159,21 +266,63 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLBackgroundView": {
+"doc://com.polling.polling/documentation/Polling-SDK-Developer/CodeSigning": {
+  "abstract" : [
+    {
+      "text" : "Configure Project for Code Signing",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling-SDK-Developer\/CodeSigning",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Configure Code Signing",
+  "type" : "topic",
+  "url" : "\/documentation\/polling-sdk-developer\/codesigning"
+},
+"doc://com.polling.polling/documentation/Polling-SDK-Developer/ReleaseProcess": {
+  "abstract" : [
+    {
+      "text" : "Steps necessary for producing SDK releases.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling-SDK-Developer\/ReleaseProcess",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Release Process",
+  "type" : "topic",
+  "url" : "\/documentation\/polling-sdk-developer\/releaseprocess"
+},
+"doc://com.polling.polling/documentation/Polling-SDK-Developer/VersionScheme": {
+  "abstract" : [
+    {
+      "text" : "Format of the SDK version string",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling-SDK-Developer\/VersionScheme",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Versioning Scheme",
+  "type" : "topic",
+  "url" : "\/documentation\/polling-sdk-developer\/versionscheme"
+},
+"doc://com.polling.polling/documentation/Polling/POLBackgroundView": {
   "abstract" : [
 
   ],
@@ -183,31 +332,14 @@
       "text" : "POLBackgroundView"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLBackgroundView",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLBackgroundView",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLBackgroundView",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polbackgroundview"
 },
-"doc://com.polling.Polling/documentation/Polling/POLCompatibleSurveyViewController": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "identifier",
-      "text" : "POLCompatibleSurveyViewController"
-    }
-  ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "POLCompatibleSurveyViewController",
-  "type" : "topic",
-  "url" : "\/documentation\/polling\/polcompatiblesurveyviewcontroller"
-},
-"doc://com.polling.Polling/documentation/Polling/POLContainerView": {
+"doc://com.polling.polling/documentation/Polling/POLContainerView": {
   "abstract" : [
 
   ],
@@ -217,14 +349,14 @@
       "text" : "POLContainerView"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLContainerView",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLContainerView",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLContainerView",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polcontainerview"
 },
-"doc://com.polling.Polling/documentation/Polling/POLError": {
+"doc://com.polling.polling/documentation/Polling/POLError": {
   "abstract" : [
 
   ],
@@ -234,14 +366,14 @@
       "text" : "POLError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polerror"
 },
-"doc://com.polling.Polling/documentation/Polling/POLErrorFileKey": {
+"doc://com.polling.polling/documentation/Polling/POLErrorFileKey": {
   "abstract" : [
 
   ],
@@ -251,14 +383,14 @@
       "text" : "POLErrorFileKey"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorFileKey",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLErrorFileKey",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLErrorFileKey",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polerrorfilekey"
 },
-"doc://com.polling.Polling/documentation/Polling/POLErrorLineNumberKey": {
+"doc://com.polling.polling/documentation/Polling/POLErrorLineNumberKey": {
   "abstract" : [
 
   ],
@@ -268,14 +400,14 @@
       "text" : "POLErrorLineNumberKey"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorLineNumberKey",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLErrorLineNumberKey",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLErrorLineNumberKey",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polerrorlinenumberkey"
 },
-"doc://com.polling.Polling/documentation/Polling/POLErrorMethodKey": {
+"doc://com.polling.polling/documentation/Polling/POLErrorMethodKey": {
   "abstract" : [
 
   ],
@@ -285,14 +417,14 @@
       "text" : "POLErrorMethodKey"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorMethodKey",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLErrorMethodKey",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLErrorMethodKey",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polerrormethodkey"
 },
-"doc://com.polling.Polling/documentation/Polling/POLErrorWithCode": {
+"doc://com.polling.polling/documentation/Polling/POLErrorWithCode": {
   "abstract" : [
 
   ],
@@ -302,14 +434,14 @@
       "text" : "POLErrorWithCode"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorWithCode",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLErrorWithCode",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLErrorWithCode",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polerrorwithcode"
 },
-"doc://com.polling.Polling/documentation/Polling/POLErrorWithCodeUnderlyingError": {
+"doc://com.polling.polling/documentation/Polling/POLErrorWithCodeUnderlyingError": {
   "abstract" : [
 
   ],
@@ -319,14 +451,14 @@
       "text" : "POLErrorWithCodeUnderlyingError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorWithCodeUnderlyingError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLErrorWithCodeUnderlyingError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLErrorWithCodeUnderlyingError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polerrorwithcodeunderlyingerror"
 },
-"doc://com.polling.Polling/documentation/Polling/POLErrorWithCodeUnderlyingErrorUserInfo": {
+"doc://com.polling.polling/documentation/Polling/POLErrorWithCodeUnderlyingErrorUserInfo": {
   "abstract" : [
 
   ],
@@ -336,14 +468,14 @@
       "text" : "POLErrorWithCodeUnderlyingErrorUserInfo"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorWithCodeUnderlyingErrorUserInfo",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLErrorWithCodeUnderlyingErrorUserInfo",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLErrorWithCodeUnderlyingErrorUserInfo",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polerrorwithcodeunderlyingerroruserinfo"
 },
-"doc://com.polling.Polling/documentation/Polling/POLErrorWithCodeUserInfo": {
+"doc://com.polling.polling/documentation/Polling/POLErrorWithCodeUserInfo": {
   "abstract" : [
 
   ],
@@ -353,14 +485,14 @@
       "text" : "POLErrorWithCodeUserInfo"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLErrorWithCodeUserInfo",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLErrorWithCodeUserInfo",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLErrorWithCodeUserInfo",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polerrorwithcodeuserinfo"
 },
-"doc://com.polling.Polling/documentation/Polling/POLGuardPublicAPI": {
+"doc://com.polling.polling/documentation/Polling/POLGuardPublicAPI": {
   "abstract" : [
 
   ],
@@ -370,14 +502,65 @@
       "text" : "POLGuardPublicAPI"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLGuardPublicAPI",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLGuardPublicAPI",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLGuardPublicAPI",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polguardpublicapi"
 },
-"doc://com.polling.Polling/documentation/Polling/POLIsSDKDisabled": {
+"doc://com.polling.polling/documentation/Polling/POLHTTPMethodGET": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLHTTPMethodGET"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLHTTPMethodGET",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLHTTPMethodGET",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polhttpmethodget"
+},
+"doc://com.polling.polling/documentation/Polling/POLHTTPMethodPOST": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLHTTPMethodPOST"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLHTTPMethodPOST",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLHTTPMethodPOST",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polhttpmethodpost"
+},
+"doc://com.polling.polling/documentation/Polling/POLIsObviouslyInvalidString": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLIsObviouslyInvalidString"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLIsObviouslyInvalidString",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLIsObviouslyInvalidString",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polisobviouslyinvalidstring"
+},
+"doc://com.polling.polling/documentation/Polling/POLIsSDKDisabled": {
   "abstract" : [
 
   ],
@@ -387,14 +570,14 @@
       "text" : "POLIsSDKDisabled"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLIsSDKDisabled",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLIsSDKDisabled",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLIsSDKDisabled",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polissdkdisabled"
 },
-"doc://com.polling.Polling/documentation/Polling/POLIsSDKInitialized": {
+"doc://com.polling.polling/documentation/Polling/POLIsSDKInitialized": {
   "abstract" : [
 
   ],
@@ -404,14 +587,14 @@
       "text" : "POLIsSDKInitialized"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLIsSDKInitialized",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLIsSDKInitialized",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLIsSDKInitialized",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polissdkinitialized"
 },
-"doc://com.polling.Polling/documentation/Polling/POLIsSDKShutdown": {
+"doc://com.polling.polling/documentation/Polling/POLIsSDKShutdown": {
   "abstract" : [
 
   ],
@@ -421,14 +604,31 @@
       "text" : "POLIsSDKShutdown"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLIsSDKShutdown",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLIsSDKShutdown",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLIsSDKShutdown",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polissdkshutdown"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogDefault": {
+"doc://com.polling.polling/documentation/Polling/POLLogCategoryNameDefault": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLLogCategoryNameDefault"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogCategoryNameDefault",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLLogCategoryNameDefault",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/pollogcategorynamedefault"
+},
+"doc://com.polling.polling/documentation/Polling/POLLogDefault": {
   "abstract" : [
 
   ],
@@ -438,14 +638,14 @@
       "text" : "POLLogDefault"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogDefault",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogDefault",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogDefault",
   "type" : "topic",
   "url" : "\/documentation\/polling\/pollogdefault"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogError": {
+"doc://com.polling.polling/documentation/Polling/POLLogError": {
   "abstract" : [
 
   ],
@@ -455,14 +655,14 @@
       "text" : "POLLogError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogError",
   "type" : "topic",
   "url" : "\/documentation\/polling\/pollogerror"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogInfo": {
+"doc://com.polling.polling/documentation/Polling/POLLogInfo": {
   "abstract" : [
 
   ],
@@ -472,14 +672,14 @@
       "text" : "POLLogInfo"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogInfo",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogInfo",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogInfo",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polloginfo"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogLevel": {
+"doc://com.polling.polling/documentation/Polling/POLLogLevel": {
   "abstract" : [
 
   ],
@@ -489,14 +689,14 @@
       "text" : "POLLogLevel"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevel",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevel",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogLevel",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polloglevel"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogLevelLabel": {
+"doc://com.polling.polling/documentation/Polling/POLLogLevelLabel": {
   "abstract" : [
 
   ],
@@ -506,14 +706,116 @@
       "text" : "POLLogLevelLabel"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevelLabel",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevelLabel",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogLevelLabel",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polloglevellabel"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogLevelToOSLogType": {
+"doc://com.polling.polling/documentation/Polling/POLLogLevelLabelError": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLLogLevelLabelError"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevelLabelError",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLLogLevelLabelError",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polloglevellabelerror"
+},
+"doc://com.polling.polling/documentation/Polling/POLLogLevelLabelInfo": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLLogLevelLabelInfo"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevelLabelInfo",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLLogLevelLabelInfo",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polloglevellabelinfo"
+},
+"doc://com.polling.polling/documentation/Polling/POLLogLevelLabelNone": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLLogLevelLabelNone"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevelLabelNone",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLLogLevelLabelNone",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polloglevellabelnone"
+},
+"doc://com.polling.polling/documentation/Polling/POLLogLevelLabelTrace": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLLogLevelLabelTrace"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevelLabelTrace",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLLogLevelLabelTrace",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polloglevellabeltrace"
+},
+"doc://com.polling.polling/documentation/Polling/POLLogLevelLabelWarn": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLLogLevelLabelWarn"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevelLabelWarn",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLLogLevelLabelWarn",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polloglevellabelwarn"
+},
+"doc://com.polling.polling/documentation/Polling/POLLogLevelLabels": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLLogLevelLabels"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevelLabels",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLLogLevelLabels",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polloglevellabels"
+},
+"doc://com.polling.polling/documentation/Polling/POLLogLevelToOSLogType": {
   "abstract" : [
 
   ],
@@ -523,14 +825,48 @@
       "text" : "POLLogLevelToOSLogType"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogLevelToOSLogType",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogLevelToOSLogType",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogLevelToOSLogType",
   "type" : "topic",
   "url" : "\/documentation\/polling\/pollogleveltooslogtype"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogSubsystem": {
+"doc://com.polling.polling/documentation/Polling/POLLogOSLogTypes": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLLogOSLogTypes"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogOSLogTypes",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLLogOSLogTypes",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/pollogoslogtypes"
+},
+"doc://com.polling.polling/documentation/Polling/POLLogPrefix": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLLogPrefix"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogPrefix",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLLogPrefix",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/pollogprefix"
+},
+"doc://com.polling.polling/documentation/Polling/POLLogSubsystem": {
   "abstract" : [
 
   ],
@@ -540,14 +876,14 @@
       "text" : "POLLogSubsystem"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystem",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogSubsystem",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogSubsystem",
   "type" : "topic",
   "url" : "\/documentation\/polling\/pollogsubsystem"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogSubsystemCategory": {
+"doc://com.polling.polling/documentation/Polling/POLLogSubsystemCategory": {
   "abstract" : [
 
   ],
@@ -557,14 +893,31 @@
       "text" : "POLLogSubsystemCategory"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogSubsystemCategory",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogSubsystemCategory",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogSubsystemCategory",
   "type" : "topic",
   "url" : "\/documentation\/polling\/pollogsubsystemcategory"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogTrace": {
+"doc://com.polling.polling/documentation/Polling/POLLogSubsystemNameSDK": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLLogSubsystemNameSDK"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogSubsystemNameSDK",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLLogSubsystemNameSDK",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/pollogsubsystemnamesdk"
+},
+"doc://com.polling.polling/documentation/Polling/POLLogTrace": {
   "abstract" : [
 
   ],
@@ -574,14 +927,14 @@
       "text" : "POLLogTrace"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogTrace",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogTrace",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogTrace",
   "type" : "topic",
   "url" : "\/documentation\/polling\/pollogtrace"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogWarn": {
+"doc://com.polling.polling/documentation/Polling/POLLogWarn": {
   "abstract" : [
 
   ],
@@ -591,14 +944,14 @@
       "text" : "POLLogWarn"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogWarn",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogWarn",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogWarn",
   "type" : "topic",
   "url" : "\/documentation\/polling\/pollogwarn"
 },
-"doc://com.polling.Polling/documentation/Polling/POLLogWithLevel": {
+"doc://com.polling.polling/documentation/Polling/POLLogWithLevel": {
   "abstract" : [
 
   ],
@@ -608,31 +961,14 @@
       "text" : "POLLogWithLevel"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLLogWithLevel",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLLogWithLevel",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLLogWithLevel",
   "type" : "topic",
   "url" : "\/documentation\/polling\/pollogwithlevel"
 },
-"doc://com.polling.Polling/documentation/Polling/POLModernSurveyViewController": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "identifier",
-      "text" : "POLModernSurveyViewController"
-    }
-  ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLModernSurveyViewController",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "POLModernSurveyViewController",
-  "type" : "topic",
-  "url" : "\/documentation\/polling\/polmodernsurveyviewcontroller"
-},
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSession": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSession": {
   "abstract" : [
 
   ],
@@ -642,14 +978,31 @@
       "text" : "POLNetworkSession"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSession",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polnetworksession"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionAvailableSurveyAPIEndpoint": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSessionAPIKeyQueryName": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLNetworkSessionAPIKeyQueryName"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionAPIKeyQueryName",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLNetworkSessionAPIKeyQueryName",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksessionapikeyqueryname"
+},
+"doc://com.polling.polling/documentation/Polling/POLNetworkSessionAvailableSurveyAPIEndpoint": {
   "abstract" : [
 
   ],
@@ -659,14 +1012,31 @@
       "text" : "POLNetworkSessionAvailableSurveyAPIEndpoint"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionAvailableSurveyAPIEndpoint",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionAvailableSurveyAPIEndpoint",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionAvailableSurveyAPIEndpoint",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polnetworksessionavailablesurveyapiendpoint"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionDelegate": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSessionCustomerIDQueryName": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLNetworkSessionCustomerIDQueryName"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionCustomerIDQueryName",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLNetworkSessionCustomerIDQueryName",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksessioncustomeridqueryname"
+},
+"doc://com.polling.polling/documentation/Polling/POLNetworkSessionDelegate": {
   "abstract" : [
 
   ],
@@ -676,14 +1046,14 @@
       "text" : "POLNetworkSessionDelegate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionDelegate",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionDelegate",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionDelegate",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polnetworksessiondelegate"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionEventAPIEndpoint": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSessionEventAPIEndpoint": {
   "abstract" : [
 
   ],
@@ -693,14 +1063,14 @@
       "text" : "POLNetworkSessionEventAPIEndpoint"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionEventAPIEndpoint",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionEventAPIEndpoint",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionEventAPIEndpoint",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polnetworksessioneventapiendpoint"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSessionSurveyAPIEndpoint": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSessionSurveyAPIEndpoint": {
   "abstract" : [
 
   ],
@@ -710,14 +1080,31 @@
       "text" : "POLNetworkSessionSurveyAPIEndpoint"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSessionSurveyAPIEndpoint",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionSurveyAPIEndpoint",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSessionSurveyAPIEndpoint",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polnetworksessionsurveyapiendpoint"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPolling": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSessionUserQueryName": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLNetworkSessionUserQueryName"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSessionUserQueryName",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLNetworkSessionUserQueryName",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksessionuserqueryname"
+},
+"doc://com.polling.polling/documentation/Polling/POLPolling": {
   "abstract" : [
     {
       "text" : "The primary SDK object",
@@ -730,14 +1117,14 @@
       "text" : "POLPolling"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLPolling",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polpolling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate": {
+"doc://com.polling.polling/documentation/Polling/POLPollingDelegate": {
   "abstract" : [
     {
       "text" : "A protocol that defines methods the SDK can call to provide",
@@ -758,14 +1145,14 @@
       "text" : "POLPollingDelegate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLPollingDelegate",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polpollingdelegate"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPollingErrorDomain": {
+"doc://com.polling.polling/documentation/Polling/POLPollingErrorDomain": {
   "abstract" : [
 
   ],
@@ -775,31 +1162,48 @@
       "text" : "POLPollingErrorDomain"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingErrorDomain",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingErrorDomain",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLPollingErrorDomain",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polpollingerrordomain"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPresentationController": {
+"doc://com.polling.polling/documentation/Polling/POLPollingPollRateInterval": {
   "abstract" : [
 
   ],
   "fragments" : [
     {
       "kind" : "identifier",
-      "text" : "POLPresentationController"
+      "text" : "POLPollingPollRateInterval"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPresentationController",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingPollRateInterval",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "POLPresentationController",
+  "title" : "POLPollingPollRateInterval",
   "type" : "topic",
-  "url" : "\/documentation\/polling\/polpresentationcontroller"
+  "url" : "\/documentation\/polling\/polpollingpollrateinterval"
 },
-"doc://com.polling.Polling/documentation/Polling/POLReward": {
+"doc://com.polling.polling/documentation/Polling/POLPreviousUncaughtExceptionHandler": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLPreviousUncaughtExceptionHandler"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPreviousUncaughtExceptionHandler",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLPreviousUncaughtExceptionHandler",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polpreviousuncaughtexceptionhandler"
+},
+"doc://com.polling.polling/documentation/Polling/POLReward": {
   "abstract" : [
     {
       "text" : "An object representing a reward",
@@ -812,14 +1216,48 @@
       "text" : "POLReward"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLReward",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polreward"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSetSDKInitialized": {
+"doc://com.polling.polling/documentation/Polling/POLSDKInitialized": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSDKInitialized"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSDKInitialized",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSDKInitialized",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsdkinitialized"
+},
+"doc://com.polling.polling/documentation/Polling/POLSDKShutdown": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSDKShutdown"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSDKShutdown",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSDKShutdown",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsdkshutdown"
+},
+"doc://com.polling.polling/documentation/Polling/POLSetSDKInitialized": {
   "abstract" : [
 
   ],
@@ -829,14 +1267,14 @@
       "text" : "POLSetSDKInitialized"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSetSDKInitialized",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSetSDKInitialized",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLSetSDKInitialized",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsetsdkinitialized"
 },
-"doc://com.polling.Polling/documentation/Polling/POLShutdownSDK": {
+"doc://com.polling.polling/documentation/Polling/POLShutdownSDK": {
   "abstract" : [
 
   ],
@@ -846,14 +1284,14 @@
       "text" : "POLShutdownSDK"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLShutdownSDK",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLShutdownSDK",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLShutdownSDK",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polshutdownsdk"
 },
-"doc://com.polling.Polling/documentation/Polling/POLStorage": {
+"doc://com.polling.polling/documentation/Polling/POLStorage": {
   "abstract" : [
 
   ],
@@ -863,14 +1301,65 @@
       "text" : "POLStorage"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLStorage",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLStorage",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLStorage",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polstorage"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurvey": {
+"doc://com.polling.polling/documentation/Polling/POLStorageCompletedSurveysKey": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLStorageCompletedSurveysKey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLStorageCompletedSurveysKey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLStorageCompletedSurveysKey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polstoragecompletedsurveyskey"
+},
+"doc://com.polling.polling/documentation/Polling/POLStorageFilename": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLStorageFilename"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLStorageFilename",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLStorageFilename",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polstoragefilename"
+},
+"doc://com.polling.polling/documentation/Polling/POLStorageTriggeredSurveysKey": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLStorageTriggeredSurveysKey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLStorageTriggeredSurveysKey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLStorageTriggeredSurveysKey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polstoragetriggeredsurveyskey"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurvey": {
   "abstract" : [
     {
       "text" : "An object representing a survey",
@@ -883,14 +1372,14 @@
       "text" : "POLSurvey"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurvey",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLSurvey",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurvey"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurveyBottomAnimateInController": {
+"doc://com.polling.polling/documentation/Polling/POLSurveyBottomAnimateInController": {
   "abstract" : [
 
   ],
@@ -900,14 +1389,150 @@
       "text" : "POLSurveyBottomAnimateInController"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyBottomAnimateInController",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyBottomAnimateInController",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLSurveyBottomAnimateInController",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurveybottomanimateincontroller"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurveyDialogAnimateInController": {
+"doc://com.polling.polling/documentation/Polling/POLSurveyDataTaskType": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyDataTaskType"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskType",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyDataTaskType",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveydatatasktype"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyDataTaskTypeCompleteSurveyDescription": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyDataTaskTypeCompleteSurveyDescription"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskTypeCompleteSurveyDescription",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyDataTaskTypeCompleteSurveyDescription",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveydatatasktypecompletesurveydescription"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyDataTaskTypeDescription": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyDataTaskTypeDescription"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskTypeDescription",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyDataTaskTypeDescription",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveydatatasktypedescription"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyDataTaskTypeDescriptions": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyDataTaskTypeDescriptions"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskTypeDescriptions",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyDataTaskTypeDescriptions",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveydatatasktypedescriptions"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyDataTaskTypeGetSurveyDetailsDescription": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyDataTaskTypeGetSurveyDetailsDescription"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskTypeGetSurveyDetailsDescription",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyDataTaskTypeGetSurveyDetailsDescription",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveydatatasktypegetsurveydetailsdescription"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyDataTaskTypeNoneDescription": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyDataTaskTypeNoneDescription"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskTypeNoneDescription",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyDataTaskTypeNoneDescription",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveydatatasktypenonedescription"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyDataTaskTypeStartSurveyDescription": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyDataTaskTypeStartSurveyDescription"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskTypeStartSurveyDescription",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyDataTaskTypeStartSurveyDescription",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveydatatasktypestartsurveydescription"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyDefaultEmbedViewEndpoint": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyDefaultEmbedViewEndpoint"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDefaultEmbedViewEndpoint",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyDefaultEmbedViewEndpoint",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveydefaultembedviewendpoint"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyDialogAnimateInController": {
   "abstract" : [
 
   ],
@@ -917,14 +1542,82 @@
       "text" : "POLSurveyDialogAnimateInController"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyDialogAnimateInController",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDialogAnimateInController",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLSurveyDialogAnimateInController",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurveydialoganimateincontroller"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurveyViewController": {
+"doc://com.polling.polling/documentation/Polling/POLSurveyStatusAvailable": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyStatusAvailable"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyStatusAvailable",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyStatusAvailable",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveystatusavailable"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyStatusCompleted": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyStatusCompleted"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyStatusCompleted",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyStatusCompleted",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveystatuscompleted"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyStatusStarted": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyStatusStarted"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyStatusStarted",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyStatusStarted",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveystatusstarted"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewCloseableAreaHeight": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyViewCloseableAreaHeight"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewCloseableAreaHeight",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyViewCloseableAreaHeight",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcloseableareaheight"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController": {
   "abstract" : [
 
   ],
@@ -934,14 +1627,14 @@
       "text" : "POLSurveyViewController"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLSurveyViewController",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurveyviewcontroller"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurveyViewControllerDelegate": {
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewControllerDelegate": {
   "abstract" : [
 
   ],
@@ -951,14 +1644,153 @@
       "text" : "POLSurveyViewControllerDelegate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewControllerDelegate",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewControllerDelegate",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLSurveyViewControllerDelegate",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurveyviewcontrollerdelegate"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurvey": {
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewEndpoint": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyViewEndpoint"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewEndpoint",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyViewEndpoint",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewendpoint"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewLayoutChangeAnimationDuration": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyViewLayoutChangeAnimationDuration"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewLayoutChangeAnimationDuration",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyViewLayoutChangeAnimationDuration",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewlayoutchangeanimationduration"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewSizeClass": {
+  "abstract" : [
+    {
+      "text" : "Survey view size class",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyViewSizeClass"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClass",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyViewSizeClass",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewsizeclass"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewSizeClassDefaultDescription": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyViewSizeClassDefaultDescription"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClassDefaultDescription",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyViewSizeClassDefaultDescription",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewsizeclassdefaultdescription"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewSizeClassDescription": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyViewSizeClassDescription"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClassDescription",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyViewSizeClassDescription",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewsizeclassdescription"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewSizeClassDescriptions": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyViewSizeClassDescriptions"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClassDescriptions",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyViewSizeClassDescriptions",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewsizeclassdescriptions"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewSizeClassMatchContentDescription": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyViewSizeClassMatchContentDescription"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClassMatchContentDescription",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyViewSizeClassMatchContentDescription",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewsizeclassmatchcontentdescription"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewSizeClassMaximumDescription": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyViewSizeClassMaximumDescription"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClassMaximumDescription",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyViewSizeClassMaximumDescription",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewsizeclassmaximumdescription"
+},
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurvey": {
   "abstract" : [
 
   ],
@@ -968,14 +1800,14 @@
       "text" : "POLTriggeredSurvey"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurvey",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLTriggeredSurvey",
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurvey"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurveyController": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurveyController": {
   "abstract" : [
 
   ],
@@ -985,14 +1817,218 @@
       "text" : "POLTriggeredSurveyController"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLTriggeredSurveyController",
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurveycontroller"
 },
-"doc://com.polling.Polling/documentation/Polling/POLViewType": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurveyPostponeInterval": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLTriggeredSurveyPostponeInterval"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyPostponeInterval",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLTriggeredSurveyPostponeInterval",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/poltriggeredsurveypostponeinterval"
+},
+"doc://com.polling.polling/documentation/Polling/POLUncaughtExceptionHandler": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLUncaughtExceptionHandler"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLUncaughtExceptionHandler",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLUncaughtExceptionHandler",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/poluncaughtexceptionhandler"
+},
+"doc://com.polling.polling/documentation/Polling/POLVersionAllString": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLVersionAllString"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionAllString",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLVersionAllString",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polversionallstring"
+},
+"doc://com.polling.polling/documentation/Polling/POLVersionBranchString": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLVersionBranchString"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionBranchString",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLVersionBranchString",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polversionbranchstring"
+},
+"doc://com.polling.polling/documentation/Polling/POLVersionCommitString": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLVersionCommitString"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionCommitString",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLVersionCommitString",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polversioncommitstring"
+},
+"doc://com.polling.polling/documentation/Polling/POLVersionConfigString": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLVersionConfigString"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionConfigString",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLVersionConfigString",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polversionconfigstring"
+},
+"doc://com.polling.polling/documentation/Polling/POLVersionLongString": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLVersionLongString"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionLongString",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLVersionLongString",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polversionlongstring"
+},
+"doc://com.polling.polling/documentation/Polling/POLVersionMajorNumber": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLVersionMajorNumber"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionMajorNumber",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLVersionMajorNumber",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polversionmajornumber"
+},
+"doc://com.polling.polling/documentation/Polling/POLVersionMinorNumber": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLVersionMinorNumber"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionMinorNumber",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLVersionMinorNumber",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polversionminornumber"
+},
+"doc://com.polling.polling/documentation/Polling/POLVersionPatchNumber": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLVersionPatchNumber"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionPatchNumber",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLVersionPatchNumber",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polversionpatchnumber"
+},
+"doc://com.polling.polling/documentation/Polling/POLVersionRepoStateString": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLVersionRepoStateString"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionRepoStateString",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLVersionRepoStateString",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polversionrepostatestring"
+},
+"doc://com.polling.polling/documentation/Polling/POLVersionString": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLVersionString"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLVersionString",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLVersionString",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polversionstring"
+},
+"doc://com.polling.polling/documentation/Polling/POLViewType": {
   "abstract" : [
     {
       "text" : "Survey view style",
@@ -1005,14 +2041,31 @@
       "text" : "POLViewType"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewType",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLViewType",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polviewtype"
 },
-"doc://com.polling.Polling/documentation/Polling/POLViewTypeDescription": {
+"doc://com.polling.polling/documentation/Polling/POLViewTypeBottomDescription": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLViewTypeBottomDescription"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewTypeBottomDescription",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLViewTypeBottomDescription",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polviewtypebottomdescription"
+},
+"doc://com.polling.polling/documentation/Polling/POLViewTypeDescription": {
   "abstract" : [
 
   ],
@@ -1022,14 +2075,82 @@
       "text" : "POLViewTypeDescription"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewTypeDescription",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewTypeDescription",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLViewTypeDescription",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polviewtypedescription"
 },
-"doc://com.polling.Polling/documentation/Polling/POL_ARRAY_SIZE": {
+"doc://com.polling.polling/documentation/Polling/POLViewTypeDescriptions": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLViewTypeDescriptions"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewTypeDescriptions",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLViewTypeDescriptions",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polviewtypedescriptions"
+},
+"doc://com.polling.polling/documentation/Polling/POLViewTypeDialogDescription": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLViewTypeDialogDescription"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewTypeDialogDescription",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLViewTypeDialogDescription",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polviewtypedialogdescription"
+},
+"doc://com.polling.polling/documentation/Polling/POLViewTypeNoneDescription": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLViewTypeNoneDescription"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewTypeNoneDescription",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLViewTypeNoneDescription",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polviewtypenonedescription"
+},
+"doc://com.polling.polling/documentation/Polling/POLWebViewContentSizeChangedContext": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLWebViewContentSizeChangedContext"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLWebViewContentSizeChangedContext",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLWebViewContentSizeChangedContext",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polwebviewcontentsizechangedcontext"
+},
+"doc://com.polling.polling/documentation/Polling/POL_ARRAY_SIZE": {
   "abstract" : [
 
   ],
@@ -1039,14 +2160,31 @@
       "text" : "POL_ARRAY_SIZE"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POL_ARRAY_SIZE",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POL_ARRAY_SIZE",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POL_ARRAY_SIZE",
   "type" : "topic",
   "url" : "\/documentation\/polling\/pol_array_size"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)": {
+"doc://com.polling.polling/documentation/Polling/POL_NSSTR": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POL_NSSTR"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POL_NSSTR",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POL_NSSTR",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/pol_nsstr"
+},
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)": {
   "abstract" : [
 
   ],
@@ -1056,7 +2194,7 @@
       "text" : ""
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -1068,6 +2206,26 @@
   "title" : "enum (unnamed)",
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)"
+},
+"https://pollinginc.github.io/polling-sdk-ios": {
+  "identifier" : "https:\/\/pollinginc.github.io\/polling-sdk-ios",
+  "title" : "publisher documentation",
+  "titleInlineContent" : [
+    {
+      "text" : "publisher",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "documentation",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/pollinginc.github.io\/polling-sdk-ios"
 }
 }
 }

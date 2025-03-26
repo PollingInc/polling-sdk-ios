@@ -1,6 +1,6 @@
 {
   "includedArchiveIdentifiers" : [
-    "com.polling.Polling"
+    "com.polling.polling"
   ],
   "interfaceLanguages" : {
     "occ" : [
@@ -72,27 +72,27 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/polling\/polpolling\/apikey",
+                "path" : "\/documentation\/polling\/polling\/apikey",
                 "title" : "apiKey",
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/polling\/polpolling\/customerid",
+                "path" : "\/documentation\/polling\/polling\/customerid",
                 "title" : "customerID",
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/polling\/polpolling\/delegate",
+                "path" : "\/documentation\/polling\/polling\/delegate",
                 "title" : "delegate",
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/polling\/polpolling\/disablecheckingforavailablesurveys",
+                "path" : "\/documentation\/polling\/polling\/disablecheckingforavailablesurveys",
                 "title" : "disableCheckingForAvailableSurveys",
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/polling\/polpolling\/viewtype",
+                "path" : "\/documentation\/polling\/polling\/viewtype-swift.property",
                 "title" : "viewType",
                 "type" : "property"
               },
@@ -101,27 +101,27 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/polling\/polpolling\/logevent:value:",
+                "path" : "\/documentation\/polling\/polling\/logevent(_:value:)",
                 "title" : "logEvent:value:",
                 "type" : "method"
               },
               {
-                "path" : "\/documentation\/polling\/polpolling\/logpurchase:",
+                "path" : "\/documentation\/polling\/polling\/logpurchase(_:)",
                 "title" : "logPurchase:",
                 "type" : "method"
               },
               {
-                "path" : "\/documentation\/polling\/polpolling\/logsession",
+                "path" : "\/documentation\/polling\/polling\/logsession()",
                 "title" : "logSession",
                 "type" : "method"
               },
               {
-                "path" : "\/documentation\/polling\/polpolling\/showembedview",
+                "path" : "\/documentation\/polling\/polling\/showembedview()",
                 "title" : "showEmbedView",
                 "type" : "method"
               },
               {
-                "path" : "\/documentation\/polling\/polpolling\/showsurvey:",
+                "path" : "\/documentation\/polling\/polling\/showsurvey(_:)",
                 "title" : "showSurvey:",
                 "type" : "method"
               },
@@ -130,12 +130,12 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/polling\/polpolling\/polling",
+                "path" : "\/documentation\/polling\/polling\/init()",
                 "title" : "polling",
                 "type" : "method"
               }
             ],
-            "path" : "\/documentation\/polling\/polpolling",
+            "path" : "\/documentation\/polling\/polling",
             "title" : "POLPolling",
             "type" : "class"
           },
@@ -146,22 +146,22 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/polling\/polreward\/amount",
+                "path" : "\/documentation\/polling\/polling\/reward\/amount",
                 "title" : "amount",
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/polling\/polreward\/completeextrajson",
+                "path" : "\/documentation\/polling\/polling\/reward\/completeextrajson",
                 "title" : "completeExtraJSON",
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/polling\/polreward\/name",
+                "path" : "\/documentation\/polling\/polling\/reward\/name",
                 "title" : "name",
                 "type" : "property"
               }
             ],
-            "path" : "\/documentation\/polling\/polreward",
+            "path" : "\/documentation\/polling\/polling\/reward",
             "title" : "POLReward",
             "type" : "class"
           },
@@ -172,38 +172,38 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/polling\/polsurvey\/uuid",
-                "title" : "UUID",
-                "type" : "property"
-              },
-              {
-                "path" : "\/documentation\/polling\/polsurvey\/available",
+                "path" : "\/documentation\/polling\/polling\/survey\/isavailable",
                 "title" : "available",
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/polling\/polsurvey\/completed",
+                "path" : "\/documentation\/polling\/polling\/survey\/iscompleted",
                 "title" : "completed",
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/polling\/polsurvey\/name",
+                "path" : "\/documentation\/polling\/polling\/survey\/isstarted",
+                "title" : "started",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/polling\/polling\/survey\/name",
                 "title" : "name",
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/polling\/polsurvey\/questioncount",
+                "path" : "\/documentation\/polling\/polling\/survey\/questioncount",
                 "title" : "questionCount",
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/polling\/polsurvey\/reward",
+                "path" : "\/documentation\/polling\/polling\/survey\/reward",
                 "title" : "reward",
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/polling\/polsurvey\/started",
-                "title" : "started",
+                "path" : "\/documentation\/polling\/polling\/survey\/uuid",
+                "title" : "UUID",
                 "type" : "property"
               },
               {
@@ -211,12 +211,12 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/polling\/polsurvey\/isequaltosurvey:",
+                "path" : "\/documentation\/polling\/polling\/survey\/isequal(to:)",
                 "title" : "isEqualToSurvey:",
                 "type" : "method"
               }
             ],
-            "path" : "\/documentation\/polling\/polsurvey",
+            "path" : "\/documentation\/polling\/polling\/survey",
             "title" : "POLSurvey",
             "type" : "class"
           },
@@ -231,27 +231,27 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/polling\/polpollingdelegate\/pollingonfailure:",
-                "title" : "pollingOnFailure:",
-                "type" : "method"
-              },
-              {
-                "path" : "\/documentation\/polling\/polpollingdelegate\/pollingonreward:",
+                "path" : "\/documentation\/polling\/pollingdelegate\/polling(on:)",
                 "title" : "pollingOnReward:",
                 "type" : "method"
               },
               {
-                "path" : "\/documentation\/polling\/polpollingdelegate\/pollingonsuccess:",
+                "path" : "\/documentation\/polling\/pollingdelegate\/polling(onfailure:)",
+                "title" : "pollingOnFailure:",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/pollingdelegate\/polling(onsuccess:)",
                 "title" : "pollingOnSuccess:",
                 "type" : "method"
               },
               {
-                "path" : "\/documentation\/polling\/polpollingdelegate\/pollingonsurveyavailable",
+                "path" : "\/documentation\/polling\/pollingdelegate\/pollingonsurveyavailable()",
                 "title" : "pollingOnSurveyAvailable",
                 "type" : "method"
               }
             ],
-            "path" : "\/documentation\/polling\/polpollingdelegate",
+            "path" : "\/documentation\/polling\/pollingdelegate",
             "title" : "POLPollingDelegate",
             "type" : "protocol"
           },
@@ -266,24 +266,370 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/polling\/polviewtype\/polviewtypebottom",
+                "path" : "\/documentation\/polling\/polling\/viewtype-swift.enum\/bottom",
                 "title" : "POLViewTypeBottom",
                 "type" : "case"
               },
               {
-                "path" : "\/documentation\/polling\/polviewtype\/polviewtypedialog",
+                "path" : "\/documentation\/polling\/polling\/viewtype-swift.enum\/dialog",
                 "title" : "POLViewTypeDialog",
                 "type" : "case"
               },
               {
-                "path" : "\/documentation\/polling\/polviewtype\/polviewtypenone",
+                "path" : "\/documentation\/polling\/polling\/viewtype-swift.enum\/none",
                 "title" : "POLViewTypeNone",
                 "type" : "case"
               }
             ],
-            "path" : "\/documentation\/polling\/polviewtype",
+            "path" : "\/documentation\/polling\/polling\/viewtype-swift.enum",
             "title" : "POLViewType",
             "type" : "enum"
+          }
+        ],
+        "path" : "\/documentation\/polling",
+        "title" : "Polling",
+        "type" : "module"
+      }
+    ],
+    "swift" : [
+      {
+        "children" : [
+          {
+            "path" : "\/documentation\/polling\/gettingstarted",
+            "title" : "Getting Started",
+            "type" : "article"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Configuring your project",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/tutorials\/polling\/configureproject",
+                "title" : "Adding the framework",
+                "type" : "project"
+              },
+              {
+                "title" : "Coding",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/tutorials\/polling\/swiftuicode",
+                "title" : "Code your content view",
+                "type" : "project"
+              }
+            ],
+            "path" : "\/tutorials\/swiftuitoc",
+            "title" : "Intergrating with SwiftUI",
+            "type" : "overview"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Configuring your project",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/tutorials\/polling\/configureproject",
+                "title" : "Adding the framework",
+                "type" : "project"
+              },
+              {
+                "title" : "Coding",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/tutorials\/polling\/uikitcode",
+                "title" : "Code your view controller",
+                "type" : "project"
+              }
+            ],
+            "path" : "\/tutorials\/uikittoc",
+            "title" : "Intergrating with UIKit",
+            "type" : "overview"
+          },
+          {
+            "title" : "Classes",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Classes",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/polling\/polling\/reward\/amount",
+                    "title" : "var amount: String",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/polling\/polling\/reward\/completeextrajson",
+                    "title" : "var completeExtraJSON: String",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/polling\/polling\/reward\/name",
+                    "title" : "var name: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/polling\/polling\/reward",
+                "title" : "Polling.Reward",
+                "type" : "class"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/polling\/polling\/survey\/isavailable",
+                    "title" : "var isAvailable: Bool",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/polling\/polling\/survey\/iscompleted",
+                    "title" : "var isCompleted: Bool",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/polling\/polling\/survey\/isstarted",
+                    "title" : "var isStarted: Bool",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/polling\/polling\/survey\/name",
+                    "title" : "var name: String",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/polling\/polling\/survey\/questioncount",
+                    "title" : "var questionCount: UInt",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/polling\/polling\/survey\/reward",
+                    "title" : "var reward: Polling.Reward?",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/polling\/polling\/survey\/uuid",
+                    "title" : "var uuid: String",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/polling\/polling\/survey\/isequal(to:)",
+                    "title" : "func isEqual(to: Polling.Survey) -> Bool",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/polling\/polling\/survey",
+                "title" : "Polling.Survey",
+                "type" : "class"
+              },
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/polling\/polling\/init()",
+                "title" : "convenience init()",
+                "type" : "init"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/polling\/polling\/apikey",
+                "title" : "var apiKey: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/polling\/polling\/customerid",
+                "title" : "var customerID: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/polling\/polling\/delegate",
+                "title" : "var delegate: (any PollingDelegate)?",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/polling\/polling\/disablecheckingforavailablesurveys",
+                "title" : "var disableCheckingForAvailableSurveys: Bool",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/polling\/polling\/viewtype-swift.property",
+                "title" : "var viewType: Polling.ViewType",
+                "type" : "property"
+              },
+              {
+                "title" : "Instance Methods",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/polling\/polling\/logevent(_:value:)",
+                "title" : "func logEvent(String, value: String)",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/polling\/logpurchase(_:)",
+                "title" : "func logPurchase(Int32)",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/polling\/logsession()",
+                "title" : "func logSession()",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/polling\/showembedview()",
+                "title" : "func showEmbedView()",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/polling\/showsurvey(_:)",
+                "title" : "func showSurvey(String)",
+                "type" : "method"
+              },
+              {
+                "title" : "Enumerations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Enumeration Cases",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/polling\/polling\/viewtype-swift.enum\/bottom",
+                    "title" : "case bottom",
+                    "type" : "case"
+                  },
+                  {
+                    "path" : "\/documentation\/polling\/polling\/viewtype-swift.enum\/dialog",
+                    "title" : "case dialog",
+                    "type" : "case"
+                  },
+                  {
+                    "path" : "\/documentation\/polling\/polling\/viewtype-swift.enum\/none",
+                    "title" : "case none",
+                    "type" : "case"
+                  },
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/polling\/polling\/viewtype-swift.enum\/init(rawvalue:)",
+                    "title" : "init?(rawValue: Int)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/polling\/polling\/viewtype-swift.enum\/!=(_:_:)",
+                        "title" : "static func != (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/polling\/polling\/viewtype-swift.enum\/equatable-implementations",
+                    "title" : "Equatable Implementations",
+                    "type" : "symbol"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Properties",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/polling\/polling\/viewtype-swift.enum\/hashvalue",
+                        "title" : "var hashValue: Int",
+                        "type" : "property"
+                      },
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/polling\/polling\/viewtype-swift.enum\/hash(into:)",
+                        "title" : "func hash(into: inout Hasher)",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/polling\/polling\/viewtype-swift.enum\/rawrepresentable-implementations",
+                    "title" : "RawRepresentable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/polling\/polling\/viewtype-swift.enum",
+                "title" : "Polling.ViewType",
+                "type" : "enum"
+              }
+            ],
+            "path" : "\/documentation\/polling\/polling",
+            "title" : "Polling",
+            "type" : "class"
+          },
+          {
+            "title" : "Protocols",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Instance Methods",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/polling\/pollingdelegate\/polling(on:)",
+                "title" : "func polling(on: Polling.Reward)",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/pollingdelegate\/polling(onfailure:)",
+                "title" : "func polling(onFailure: String)",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/pollingdelegate\/polling(onsuccess:)",
+                "title" : "func polling(onSuccess: String)",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/polling\/pollingdelegate\/pollingonsurveyavailable()",
+                "title" : "func pollingOnSurveyAvailable()",
+                "type" : "method"
+              }
+            ],
+            "path" : "\/documentation\/polling\/pollingdelegate",
+            "title" : "PollingDelegate",
+            "type" : "protocol"
           }
         ],
         "path" : "\/documentation\/polling",

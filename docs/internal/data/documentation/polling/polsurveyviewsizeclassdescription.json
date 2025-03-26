@@ -1,0 +1,180 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClassDescription"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:POLSurveyViewController.m@F@POLSurveyViewSizeClassDescription",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLSurveyViewSizeClassDescription"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLSurveyViewSizeClassDescription"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Function",
+    "symbolKind" : "func",
+    "title" : "POLSurveyViewSizeClassDescription"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "static"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSString",
+              "text" : "NSString"
+            },
+            {
+              "kind" : "text",
+              "text" : " * "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "const"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLSurveyViewSizeClassDescription"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClass",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:@E@POLSurveyViewSizeClass",
+              "text" : "POLSurveyViewSizeClass"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "sizeClass"
+            },
+            {
+              "kind" : "text",
+              "text" : ");"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polsurveyviewsizeclassdescription"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewSizeClass": {
+  "abstract" : [
+    {
+      "text" : "Survey view size class",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyViewSizeClass"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClass",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyViewSizeClass",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewsizeclass"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewSizeClassDescription": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyViewSizeClassDescription"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClassDescription",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyViewSizeClassDescription",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewsizeclassdescription"
+}
+}
+}

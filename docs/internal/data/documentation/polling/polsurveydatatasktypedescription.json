@@ -1,0 +1,169 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskTypeDescription"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@F@POLSurveyDataTaskTypeDescription",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLSurveyDataTaskTypeDescription"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLSurveyDataTaskTypeDescription"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Function",
+    "symbolKind" : "func",
+    "title" : "POLSurveyDataTaskTypeDescription"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSString",
+              "text" : "NSString"
+            },
+            {
+              "kind" : "text",
+              "text" : " * "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "const"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "POLSurveyDataTaskTypeDescription"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskType",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:@E@POLSurveyDataTaskType",
+              "text" : "POLSurveyDataTaskType"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "taskType"
+            },
+            {
+              "kind" : "text",
+              "text" : ");"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polsurveydatatasktypedescription"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyDataTaskType": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyDataTaskType"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskType",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyDataTaskType",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveydatatasktype"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyDataTaskTypeDescription": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyDataTaskTypeDescription"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyDataTaskTypeDescription",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyDataTaskTypeDescription",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveydatatasktypedescription"
+}
+}
+}

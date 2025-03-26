@@ -2,13 +2,13 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLContainerView"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLContainerView"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -76,7 +76,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/objc(cs)UIView"
+        "doc:\/\/com.polling.polling\/objc(cs)UIView"
       ],
       "kind" : "relationships",
       "title" : "Inherits From",
@@ -105,21 +105,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLContainerView": {
+"doc://com.polling.polling/documentation/Polling/POLContainerView": {
   "abstract" : [
 
   ],
@@ -129,15 +129,15 @@
       "text" : "POLContainerView"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLContainerView",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLContainerView",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLContainerView",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polcontainerview"
 },
-"doc://com.polling.Polling/objc(cs)UIView": {
-  "identifier" : "doc:\/\/com.polling.Polling\/objc(cs)UIView",
+"doc://com.polling.polling/objc(cs)UIView": {
+  "identifier" : "doc:\/\/com.polling.polling\/objc(cs)UIView",
   "title" : "UIView",
   "type" : "unresolvable"
 }

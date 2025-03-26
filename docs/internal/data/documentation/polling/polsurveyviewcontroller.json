@@ -2,13 +2,13 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -76,7 +76,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/objc(cs)UIViewController"
+        "doc:\/\/com.polling.polling\/objc(cs)UIViewController"
       ],
       "kind" : "relationships",
       "title" : "Inherits From",
@@ -84,12 +84,14 @@
     },
     {
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLModernSurveyViewController"
+        "doc:\/\/com.polling.polling\/objc(pl)UIGestureRecognizerDelegate",
+        "doc:\/\/com.polling.polling\/objc(pl)WKNavigationDelegate",
+        "doc:\/\/com.polling.polling\/objc(pl)WKScriptMessageHandler",
+        "doc:\/\/com.polling.polling\/objc(pl)WKUIDelegate"
       ],
       "kind" : "relationships",
-      "title" : "Inherited By",
-      "type" : "inheritedBy"
+      "title" : "Conforms To",
+      "type" : "conformsTo"
     }
   ],
   "schemaVersion" : {
@@ -105,9 +107,23 @@
       "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController\/delegate",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController\/survey",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController\/webView"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/backgroundView",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/bottomBottomConstraint",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/bottomHalfHeightConstraint",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/bottomLeadingConstraint",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/bottomTopOffsetConstraint",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/bottomTrailingConstraint",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/containerView",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/delegate",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/dialogBottomConstraint",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/dialogBottomConstraint2",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/dialogLeadingConstraint",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/dialogTopConstraint",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/dialogTopConstraint2",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/dialogTrailingConstraint",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/survey",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/viewType",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/webView"
       ],
       "title" : "Instance Properties"
     },
@@ -115,8 +131,14 @@
       "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController\/loadWebRequest",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController\/webViewConfiguration"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/beginObservingContentSizeChanges",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/initWithSurvey:viewType:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/loadWebRequest",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/resizeToFitContentHeight:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/resizeToFitContentHeight:force:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/stopObservingContentSizeChanges",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/tap:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/webViewConfiguration"
       ],
       "title" : "Instance Methods"
     }
@@ -135,55 +157,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLCompatibleSurveyViewController": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "identifier",
-      "text" : "POLCompatibleSurveyViewController"
-    }
-  ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLCompatibleSurveyViewController",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "POLCompatibleSurveyViewController",
-  "type" : "topic",
-  "url" : "\/documentation\/polling\/polcompatiblesurveyviewcontroller"
-},
-"doc://com.polling.Polling/documentation/Polling/POLModernSurveyViewController": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "identifier",
-      "text" : "POLModernSurveyViewController"
-    }
-  ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLModernSurveyViewController",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "POLModernSurveyViewController",
-  "type" : "topic",
-  "url" : "\/documentation\/polling\/polmodernsurveyviewcontroller"
-},
-"doc://com.polling.Polling/documentation/Polling/POLSurveyViewController": {
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController": {
   "abstract" : [
 
   ],
@@ -193,14 +181,160 @@
       "text" : "POLSurveyViewController"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLSurveyViewController",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurveyviewcontroller"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurveyViewController/delegate": {
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/backgroundView": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "backgroundView"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/backgroundView",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "backgroundView",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/backgroundview"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/beginObservingContentSizeChanges": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "beginObservingContentSizeChanges"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/beginObservingContentSizeChanges",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "beginObservingContentSizeChanges"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "beginObservingContentSizeChanges",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/beginobservingcontentsizechanges"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/bottomBottomConstraint": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "bottomBottomConstraint"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/bottomBottomConstraint",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "bottomBottomConstraint",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/bottombottomconstraint"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/bottomHalfHeightConstraint": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "bottomHalfHeightConstraint"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/bottomHalfHeightConstraint",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "bottomHalfHeightConstraint",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/bottomhalfheightconstraint"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/bottomLeadingConstraint": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "bottomLeadingConstraint"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/bottomLeadingConstraint",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "bottomLeadingConstraint",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/bottomleadingconstraint"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/bottomTopOffsetConstraint": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "bottomTopOffsetConstraint"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/bottomTopOffsetConstraint",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "bottomTopOffsetConstraint",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/bottomtopoffsetconstraint"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/bottomTrailingConstraint": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "bottomTrailingConstraint"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/bottomTrailingConstraint",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "bottomTrailingConstraint",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/bottomtrailingconstraint"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/containerView": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "containerView"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/containerView",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "containerView",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/containerview"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/delegate": {
   "abstract" : [
 
   ],
@@ -210,14 +344,143 @@
       "text" : "delegate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController\/delegate",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/delegate",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "delegate",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurveyviewcontroller\/delegate"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurveyViewController/loadWebRequest": {
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/dialogBottomConstraint": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "dialogBottomConstraint"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/dialogBottomConstraint",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "dialogBottomConstraint",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/dialogbottomconstraint"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/dialogBottomConstraint2": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "dialogBottomConstraint2"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/dialogBottomConstraint2",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "dialogBottomConstraint2",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/dialogbottomconstraint2"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/dialogLeadingConstraint": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "dialogLeadingConstraint"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/dialogLeadingConstraint",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "dialogLeadingConstraint",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/dialogleadingconstraint"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/dialogTopConstraint": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "dialogTopConstraint"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/dialogTopConstraint",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "dialogTopConstraint",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/dialogtopconstraint"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/dialogTopConstraint2": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "dialogTopConstraint2"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/dialogTopConstraint2",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "dialogTopConstraint2",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/dialogtopconstraint2"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/dialogTrailingConstraint": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "dialogTrailingConstraint"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/dialogTrailingConstraint",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "dialogTrailingConstraint",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/dialogtrailingconstraint"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/initWithSurvey:viewType:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "initWithSurvey:viewType:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/initWithSurvey:viewType:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "initWithSurvey:viewType:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "initWithSurvey:viewType:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/initwithsurvey:viewtype:"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/loadWebRequest": {
   "abstract" : [
 
   ],
@@ -231,7 +494,7 @@
       "text" : "loadWebRequest"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController\/loadWebRequest",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/loadWebRequest",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -244,7 +507,88 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurveyviewcontroller\/loadwebrequest"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurveyViewController/survey": {
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/resizeToFitContentHeight:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "resizeToFitContentHeight:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/resizeToFitContentHeight:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "resizeToFitContentHeight:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "resizeToFitContentHeight:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/resizetofitcontentheight:"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/resizeToFitContentHeight:force:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "resizeToFitContentHeight:force:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/resizeToFitContentHeight:force:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "resizeToFitContentHeight:force:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "resizeToFitContentHeight:force:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/resizetofitcontentheight:force:"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/stopObservingContentSizeChanges": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "stopObservingContentSizeChanges"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/stopObservingContentSizeChanges",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "stopObservingContentSizeChanges"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "stopObservingContentSizeChanges",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/stopobservingcontentsizechanges"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/survey": {
   "abstract" : [
 
   ],
@@ -254,14 +598,58 @@
       "text" : "survey"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController\/survey",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/survey",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "survey",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurveyviewcontroller\/survey"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurveyViewController/webView": {
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/tap:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "tap:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/tap:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "tap:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "tap:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/tap:"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/viewType": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "viewType"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/viewType",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "viewType",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewcontroller\/viewtype"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/webView": {
   "abstract" : [
 
   ],
@@ -271,14 +659,14 @@
       "text" : "webView"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController\/webView",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/webView",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "webView",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurveyviewcontroller\/webview"
 },
-"doc://com.polling.Polling/documentation/Polling/POLSurveyViewController/webViewConfiguration": {
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewController/webViewConfiguration": {
   "abstract" : [
 
   ],
@@ -292,7 +680,7 @@
       "text" : "webViewConfiguration"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurveyViewController\/webViewConfiguration",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewController\/webViewConfiguration",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -305,9 +693,29 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polsurveyviewcontroller\/webviewconfiguration"
 },
-"doc://com.polling.Polling/objc(cs)UIViewController": {
-  "identifier" : "doc:\/\/com.polling.Polling\/objc(cs)UIViewController",
+"doc://com.polling.polling/objc(cs)UIViewController": {
+  "identifier" : "doc:\/\/com.polling.polling\/objc(cs)UIViewController",
   "title" : "UIViewController",
+  "type" : "unresolvable"
+},
+"doc://com.polling.polling/objc(pl)UIGestureRecognizerDelegate": {
+  "identifier" : "doc:\/\/com.polling.polling\/objc(pl)UIGestureRecognizerDelegate",
+  "title" : "UIGestureRecognizerDelegate",
+  "type" : "unresolvable"
+},
+"doc://com.polling.polling/objc(pl)WKNavigationDelegate": {
+  "identifier" : "doc:\/\/com.polling.polling\/objc(pl)WKNavigationDelegate",
+  "title" : "WKNavigationDelegate",
+  "type" : "unresolvable"
+},
+"doc://com.polling.polling/objc(pl)WKScriptMessageHandler": {
+  "identifier" : "doc:\/\/com.polling.polling\/objc(pl)WKScriptMessageHandler",
+  "title" : "WKScriptMessageHandler",
+  "type" : "unresolvable"
+},
+"doc://com.polling.polling/objc(pl)WKUIDelegate": {
+  "identifier" : "doc:\/\/com.polling.polling\/objc(pl)WKUIDelegate",
+  "title" : "WKUIDelegate",
   "type" : "unresolvable"
 }
 }

@@ -2,14 +2,14 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)"
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLSDKNotConfiguredError"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLSDKNotConfiguredError"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -79,21 +79,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)": {
   "abstract" : [
 
   ],
@@ -103,7 +103,7 @@
       "text" : ""
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -116,7 +116,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/enum_(unnamed)"
 },
-"doc://com.polling.Polling/documentation/Polling/enum_(unnamed)/POLSDKNotConfiguredError": {
+"doc://com.polling.polling/documentation/Polling/enum_(unnamed)/POLSDKNotConfiguredError": {
   "abstract" : [
 
   ],
@@ -126,7 +126,7 @@
       "text" : "POLSDKNotConfiguredError"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/enum_(unnamed)\/POLSDKNotConfiguredError",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/enum_(unnamed)\/POLSDKNotConfiguredError",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLSDKNotConfiguredError",

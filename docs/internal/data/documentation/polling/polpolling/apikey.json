@@ -8,14 +8,14 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/apiKey"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling\/apiKey"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -102,7 +102,12 @@
               "type" : "text"
             },
             {
-              "text" : "Polling.com account and create an embed using the dashboard.",
+              "identifier" : "Polling.com",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " account and create an embed using the dashboard.",
               "type" : "text"
             }
           ],
@@ -134,21 +139,33 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"Polling.com": {
+  "identifier" : "Polling.com",
+  "title" : "Polling.com",
+  "titleInlineContent" : [
+    {
+      "text" : "Polling.com",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "Polling.com"
+},
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPolling": {
+"doc://com.polling.polling/documentation/Polling/POLPolling": {
   "abstract" : [
     {
       "text" : "The primary SDK object",
@@ -161,14 +178,14 @@
       "text" : "POLPolling"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLPolling",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polpolling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPolling/apiKey": {
+"doc://com.polling.polling/documentation/Polling/POLPolling/apiKey": {
   "abstract" : [
     {
       "text" : "An API Key",
@@ -181,7 +198,7 @@
       "text" : "apiKey"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/apiKey",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling\/apiKey",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "apiKey",

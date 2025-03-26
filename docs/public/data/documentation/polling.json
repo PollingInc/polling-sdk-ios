@@ -13,8 +13,8 @@
     ]
   },
   "identifier" : {
-    "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling"
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -105,18 +105,16 @@
     {
       "anchor" : "Topics",
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/GettingStarted",
-        "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC",
-        "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/GettingStarted",
+        "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC",
+        "doc:\/\/com.polling.polling\/tutorials\/UIKitToC"
       ]
     },
     {
       "anchor" : "Classes",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling"
       ],
       "title" : "Classes"
     },
@@ -124,20 +122,22 @@
       "anchor" : "Protocols",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/PollingDelegate"
       ],
       "title" : "Protocols"
-    },
-    {
-      "anchor" : "Enumerations",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType"
-      ],
-      "title" : "Enumerations"
     }
   ],
   "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    },
     {
       "paths" : [
         "\/documentation\/polling"
@@ -163,35 +163,35 @@
   "type" : "link",
   "url" : "Polling.com"
 },
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Poll and survey your users with ease",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/GettingStarted": {
+"doc://com.polling.polling/documentation/Polling/GettingStarted": {
   "abstract" : [
     {
       "text" : "Read this first.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/GettingStarted",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/GettingStarted",
   "kind" : "article",
   "role" : "article",
   "title" : "Getting Started",
   "type" : "topic",
   "url" : "\/documentation\/polling\/gettingstarted"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPolling": {
+"doc://com.polling.polling/documentation/Polling/Polling": {
   "abstract" : [
     {
       "text" : "The primary SDK object",
@@ -200,18 +200,134 @@
   ],
   "fragments" : [
     {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
       "kind" : "identifier",
-      "text" : "POLPolling"
+      "text" : "Polling"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling",
   "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Polling"
+    }
+  ],
   "role" : "symbol",
-  "title" : "POLPolling",
+  "title" : "Polling",
   "type" : "topic",
-  "url" : "\/documentation\/polling\/polpolling"
+  "url" : "\/documentation\/polling\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate": {
+"doc://com.polling.polling/documentation/Polling/Polling/Reward": {
+  "abstract" : [
+    {
+      "text" : "An object representing a reward",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Reward"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling\/Reward",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Reward"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Polling.Reward",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polling\/reward"
+},
+"doc://com.polling.polling/documentation/Polling/Polling/Survey": {
+  "abstract" : [
+    {
+      "text" : "An object representing a survey",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Survey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling\/Survey",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Survey"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Polling.Survey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polling\/survey"
+},
+"doc://com.polling.polling/documentation/Polling/Polling/ViewType-swift.enum": {
+  "abstract" : [
+    {
+      "text" : "Survey view style",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ViewType"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling\/ViewType-swift.enum",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ViewType"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Polling.ViewType",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polling\/viewtype-swift.enum"
+},
+"doc://com.polling.polling/documentation/Polling/PollingDelegate": {
   "abstract" : [
     {
       "text" : "A protocol that defines methods the SDK can call to provide",
@@ -228,104 +344,249 @@
   ],
   "fragments" : [
     {
-      "kind" : "identifier",
-      "text" : "POLPollingDelegate"
-    }
-  ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "POLPollingDelegate",
-  "type" : "topic",
-  "url" : "\/documentation\/polling\/polpollingdelegate"
-},
-"doc://com.polling.Polling/documentation/Polling/POLReward": {
-  "abstract" : [
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
     {
-      "text" : "An object representing a reward",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
+      "kind" : "text",
+      "text" : " "
+    },
     {
       "kind" : "identifier",
-      "text" : "POLReward"
+      "text" : "PollingDelegate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/PollingDelegate",
   "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "POLReward",
-  "type" : "topic",
-  "url" : "\/documentation\/polling\/polreward"
-},
-"doc://com.polling.Polling/documentation/Polling/POLSurvey": {
-  "abstract" : [
-    {
-      "text" : "An object representing a survey",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
+  "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "POLSurvey"
+      "text" : "PollingDelegate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLSurvey",
-  "kind" : "symbol",
   "role" : "symbol",
-  "title" : "POLSurvey",
+  "title" : "PollingDelegate",
   "type" : "topic",
-  "url" : "\/documentation\/polling\/polsurvey"
+  "url" : "\/documentation\/polling\/pollingdelegate"
 },
-"doc://com.polling.Polling/documentation/Polling/POLViewType": {
-  "abstract" : [
-    {
-      "text" : "Survey view style",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "identifier",
-      "text" : "POLViewType"
-    }
-  ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "POLViewType",
-  "type" : "topic",
-  "url" : "\/documentation\/polling\/polviewtype"
-},
-"doc://com.polling.Polling/tutorials/SwiftUIToC": {
+"doc://com.polling.polling/tutorials/SwiftUIToC": {
   "abstract" : [
     {
       "text" : "Tutorial for integrating the Polling SDK in your SwiftUI app.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC",
   "kind" : "overview",
   "role" : "overview",
   "title" : "Intergrating with SwiftUI",
   "type" : "topic",
   "url" : "\/tutorials\/swiftuitoc"
 },
-"doc://com.polling.Polling/tutorials/UIKitToC": {
+"doc://com.polling.polling/tutorials/UIKitToC": {
   "abstract" : [
     {
       "text" : "Tutorial for integrating the Polling SDK in your UIKit app.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/UIKitToC",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/UIKitToC",
   "kind" : "overview",
   "role" : "overview",
   "title" : "Intergrating with UIKit",
   "type" : "topic",
   "url" : "\/tutorials\/uikittoc"
 }
-}
+}, 
+"variantOverrides":[
+  {
+    "patch" : [
+      {
+        "op" : "replace",
+        "path" : "\/identifier\/interfaceLanguage",
+        "value" : "occ"
+      },
+      {
+        "op" : "replace",
+        "path" : "\/topicSections",
+        "value" : [
+          {
+            "anchor" : "Topics",
+            "identifiers" : [
+              "doc:\/\/com.polling.polling\/documentation\/Polling\/GettingStarted",
+              "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC",
+              "doc:\/\/com.polling.polling\/tutorials\/UIKitToC"
+            ]
+          },
+          {
+            "anchor" : "Classes",
+            "generated" : true,
+            "identifiers" : [
+              "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling",
+              "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling\/Reward",
+              "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling\/Survey"
+            ],
+            "title" : "Classes"
+          },
+          {
+            "anchor" : "Protocols",
+            "generated" : true,
+            "identifiers" : [
+              "doc:\/\/com.polling.polling\/documentation\/Polling\/PollingDelegate"
+            ],
+            "title" : "Protocols"
+          },
+          {
+            "anchor" : "Enumerations",
+            "generated" : true,
+            "identifiers" : [
+              "doc:\/\/com.polling.polling\/documentation\/Polling\/Polling\/ViewType-swift.enum"
+            ],
+            "title" : "Enumerations"
+          }
+        ]
+      },
+      {
+        "op" : "add",
+        "path" : "\/relationshipsSections",
+        "value" : null
+      },
+      {
+        "op" : "add",
+        "path" : "\/seeAlsoSections",
+        "value" : null
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling\/title",
+        "value" : "POLPolling"
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling\/fragments",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLPolling"
+          }
+        ]
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling\/navigatorTitle",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLPolling"
+          }
+        ]
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling~1Reward\/title",
+        "value" : "POLReward"
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling~1Reward\/fragments",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLReward"
+          }
+        ]
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling~1Reward\/navigatorTitle",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLReward"
+          }
+        ]
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling~1Survey\/title",
+        "value" : "POLSurvey"
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling~1Survey\/fragments",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLSurvey"
+          }
+        ]
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling~1Survey\/navigatorTitle",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLSurvey"
+          }
+        ]
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling~1ViewType-swift.enum\/title",
+        "value" : "POLViewType"
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling~1ViewType-swift.enum\/fragments",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLViewType"
+          }
+        ]
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1Polling~1ViewType-swift.enum\/navigatorTitle",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLViewType"
+          }
+        ]
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1PollingDelegate\/title",
+        "value" : "POLPollingDelegate"
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1PollingDelegate\/fragments",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLPollingDelegate"
+          }
+        ]
+      },
+      {
+        "op" : "replace",
+        "path" : "\/references\/doc:~1~1com.polling.polling~1documentation~1Polling~1PollingDelegate\/navigatorTitle",
+        "value" : [
+          {
+            "kind" : "identifier",
+            "text" : "POLPollingDelegate"
+          }
+        ]
+      }
+    ],
+    "traits" : [
+      {
+        "interfaceLanguage" : "occ"
+      }
+    ]
+  }
+]
 }

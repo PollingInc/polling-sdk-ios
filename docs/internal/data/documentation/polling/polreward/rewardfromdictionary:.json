@@ -2,14 +2,14 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward"
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/rewardFromDictionary:"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward\/rewardFromDictionary:"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -117,21 +117,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLReward": {
+"doc://com.polling.polling/documentation/Polling/POLReward": {
   "abstract" : [
     {
       "text" : "An object representing a reward",
@@ -144,14 +144,14 @@
       "text" : "POLReward"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLReward",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polreward"
 },
-"doc://com.polling.Polling/documentation/Polling/POLReward/rewardFromDictionary:": {
+"doc://com.polling.polling/documentation/Polling/POLReward/rewardFromDictionary:": {
   "abstract" : [
 
   ],
@@ -165,7 +165,7 @@
       "text" : "rewardFromDictionary:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/rewardFromDictionary:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward\/rewardFromDictionary:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {

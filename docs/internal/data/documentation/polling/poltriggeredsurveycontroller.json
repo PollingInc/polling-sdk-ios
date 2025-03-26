@@ -2,13 +2,13 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -76,7 +76,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/objc(cs)NSObject"
+        "doc:\/\/com.polling.polling\/objc(cs)NSObject"
       ],
       "kind" : "relationships",
       "title" : "Inherits From",
@@ -96,11 +96,13 @@
       "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController\/checkForAvailableTriggeredSurveys",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController\/postponeSurvey:",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController\/removeSurvey:",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController\/triggeredSurvey:didLoadSurvey:",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController\/triggeredSurveysDidUpdate:"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController\/checkForAvailableTriggeredSurveys",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController\/postponeSurvey:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController\/removeSurvey:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController\/scheduleTriggerSurvey:withDelay:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController\/triggerSurvey:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController\/triggeredSurvey:didLoadSurvey:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController\/triggeredSurveysDidUpdate:"
       ],
       "title" : "Instance Methods"
     }
@@ -119,21 +121,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurveyController": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurveyController": {
   "abstract" : [
 
   ],
@@ -143,14 +145,14 @@
       "text" : "POLTriggeredSurveyController"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLTriggeredSurveyController",
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurveycontroller"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurveyController/checkForAvailableTriggeredSurveys": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurveyController/checkForAvailableTriggeredSurveys": {
   "abstract" : [
 
   ],
@@ -164,7 +166,7 @@
       "text" : "checkForAvailableTriggeredSurveys"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController\/checkForAvailableTriggeredSurveys",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController\/checkForAvailableTriggeredSurveys",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -177,7 +179,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurveycontroller\/checkforavailabletriggeredsurveys"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurveyController/postponeSurvey:": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurveyController/postponeSurvey:": {
   "abstract" : [
 
   ],
@@ -191,7 +193,7 @@
       "text" : "postponeSurvey:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController\/postponeSurvey:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController\/postponeSurvey:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -204,7 +206,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurveycontroller\/postponesurvey:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurveyController/removeSurvey:": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurveyController/removeSurvey:": {
   "abstract" : [
 
   ],
@@ -218,7 +220,7 @@
       "text" : "removeSurvey:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController\/removeSurvey:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController\/removeSurvey:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -231,7 +233,61 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurveycontroller\/removesurvey:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurveyController/triggeredSurvey:didLoadSurvey:": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurveyController/scheduleTriggerSurvey:withDelay:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "scheduleTriggerSurvey:withDelay:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController\/scheduleTriggerSurvey:withDelay:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "scheduleTriggerSurvey:withDelay:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "scheduleTriggerSurvey:withDelay:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/poltriggeredsurveycontroller\/scheduletriggersurvey:withdelay:"
+},
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurveyController/triggerSurvey:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "triggerSurvey:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController\/triggerSurvey:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "triggerSurvey:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "triggerSurvey:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/poltriggeredsurveycontroller\/triggersurvey:"
+},
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurveyController/triggeredSurvey:didLoadSurvey:": {
   "abstract" : [
 
   ],
@@ -245,7 +301,7 @@
       "text" : "triggeredSurvey:didLoadSurvey:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController\/triggeredSurvey:didLoadSurvey:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController\/triggeredSurvey:didLoadSurvey:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -258,7 +314,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurveycontroller\/triggeredsurvey:didloadsurvey:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLTriggeredSurveyController/triggeredSurveysDidUpdate:": {
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurveyController/triggeredSurveysDidUpdate:": {
   "abstract" : [
 
   ],
@@ -272,7 +328,7 @@
       "text" : "triggeredSurveysDidUpdate:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLTriggeredSurveyController\/triggeredSurveysDidUpdate:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController\/triggeredSurveysDidUpdate:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -285,8 +341,8 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/poltriggeredsurveycontroller\/triggeredsurveysdidupdate:"
 },
-"doc://com.polling.Polling/objc(cs)NSObject": {
-  "identifier" : "doc:\/\/com.polling.Polling\/objc(cs)NSObject",
+"doc://com.polling.polling/objc(cs)NSObject": {
+  "identifier" : "doc:\/\/com.polling.polling\/objc(cs)NSObject",
   "title" : "NSObject",
   "type" : "unresolvable"
 }

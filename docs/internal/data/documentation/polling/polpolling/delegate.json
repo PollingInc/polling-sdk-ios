@@ -8,14 +8,14 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/delegate"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling\/delegate"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -126,7 +126,7 @@
               "type" : "text"
             },
             {
-              "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate",
+              "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate",
               "isActive" : true,
               "type" : "reference"
             },
@@ -163,21 +163,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPolling": {
+"doc://com.polling.polling/documentation/Polling/POLPolling": {
   "abstract" : [
     {
       "text" : "The primary SDK object",
@@ -190,14 +190,14 @@
       "text" : "POLPolling"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLPolling",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polpolling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPolling/delegate": {
+"doc://com.polling.polling/documentation/Polling/POLPolling/delegate": {
   "abstract" : [
     {
       "text" : "Delegate that handles callbacks from the SDK",
@@ -210,14 +210,14 @@
       "text" : "delegate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPolling\/delegate",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPolling\/delegate",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "delegate",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polpolling\/delegate"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate": {
+"doc://com.polling.polling/documentation/Polling/POLPollingDelegate": {
   "abstract" : [
     {
       "text" : "A protocol that defines methods the SDK can call to provide",
@@ -238,7 +238,7 @@
       "text" : "POLPollingDelegate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLPollingDelegate",

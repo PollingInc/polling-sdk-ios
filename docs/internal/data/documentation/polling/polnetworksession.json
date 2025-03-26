@@ -2,13 +2,13 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -76,11 +76,19 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/objc(cs)NSObject"
+        "doc:\/\/com.polling.polling\/objc(cs)NSObject"
       ],
       "kind" : "relationships",
       "title" : "Inherits From",
       "type" : "inheritsFrom"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/com.polling.polling\/objc(pl)NSURLSessionDataDelegate"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
     }
   ],
   "schemaVersion" : {
@@ -96,7 +104,7 @@
       "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/delegate"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/delegate"
       ],
       "title" : "Instance Properties"
     },
@@ -104,13 +112,17 @@
       "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/completeSurvey:",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/fetchAvailableSurveys",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/fetchSurvey:",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/fetchSurveyWithUUID:",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/invalidateAndCancel",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/postEvent:withValue:",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/startSurvey:"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/completeSurvey:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/fetchAvailableSurveys",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/fetchSurvey:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/fetchSurveyWithUUID:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/invalidateAndCancel",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/postEvent:withValue:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/startSurvey:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/surveyForData:error:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/surveysForData:error:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/surveysFromData:error:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/triggeredSurveysForDataTask:error:"
       ],
       "title" : "Instance Methods"
     },
@@ -118,7 +130,7 @@
       "anchor" : "Type-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/URLForEndpoint:withCustomerID:APIKey:"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/URLForEndpoint:withCustomerID:APIKey:"
       ],
       "title" : "Type Methods"
     }
@@ -137,21 +149,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSession": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSession": {
   "abstract" : [
 
   ],
@@ -161,14 +173,14 @@
       "text" : "POLNetworkSession"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLNetworkSession",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polnetworksession"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSession/URLForEndpoint:withCustomerID:APIKey:": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSession/URLForEndpoint:withCustomerID:APIKey:": {
   "abstract" : [
 
   ],
@@ -182,7 +194,7 @@
       "text" : "URLForEndpoint:withCustomerID:APIKey:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/URLForEndpoint:withCustomerID:APIKey:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/URLForEndpoint:withCustomerID:APIKey:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -195,7 +207,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polnetworksession\/urlforendpoint:withcustomerid:apikey:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSession/completeSurvey:": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSession/completeSurvey:": {
   "abstract" : [
 
   ],
@@ -209,7 +221,7 @@
       "text" : "completeSurvey:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/completeSurvey:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/completeSurvey:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -222,7 +234,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polnetworksession\/completesurvey:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSession/delegate": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSession/delegate": {
   "abstract" : [
 
   ],
@@ -232,14 +244,14 @@
       "text" : "delegate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/delegate",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/delegate",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "delegate",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polnetworksession\/delegate"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSession/fetchAvailableSurveys": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSession/fetchAvailableSurveys": {
   "abstract" : [
 
   ],
@@ -253,7 +265,7 @@
       "text" : "fetchAvailableSurveys"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/fetchAvailableSurveys",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/fetchAvailableSurveys",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -266,7 +278,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polnetworksession\/fetchavailablesurveys"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSession/fetchSurvey:": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSession/fetchSurvey:": {
   "abstract" : [
 
   ],
@@ -280,7 +292,7 @@
       "text" : "fetchSurvey:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/fetchSurvey:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/fetchSurvey:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -293,7 +305,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polnetworksession\/fetchsurvey:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSession/fetchSurveyWithUUID:": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSession/fetchSurveyWithUUID:": {
   "abstract" : [
 
   ],
@@ -307,7 +319,7 @@
       "text" : "fetchSurveyWithUUID:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/fetchSurveyWithUUID:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/fetchSurveyWithUUID:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -320,7 +332,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polnetworksession\/fetchsurveywithuuid:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSession/invalidateAndCancel": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSession/invalidateAndCancel": {
   "abstract" : [
 
   ],
@@ -334,7 +346,7 @@
       "text" : "invalidateAndCancel"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/invalidateAndCancel",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/invalidateAndCancel",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -347,7 +359,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polnetworksession\/invalidateandcancel"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSession/postEvent:withValue:": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSession/postEvent:withValue:": {
   "abstract" : [
 
   ],
@@ -361,7 +373,7 @@
       "text" : "postEvent:withValue:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/postEvent:withValue:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/postEvent:withValue:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -374,7 +386,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polnetworksession\/postevent:withvalue:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLNetworkSession/startSurvey:": {
+"doc://com.polling.polling/documentation/Polling/POLNetworkSession/startSurvey:": {
   "abstract" : [
 
   ],
@@ -388,7 +400,7 @@
       "text" : "startSurvey:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLNetworkSession\/startSurvey:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/startSurvey:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -401,9 +413,134 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polnetworksession\/startsurvey:"
 },
-"doc://com.polling.Polling/objc(cs)NSObject": {
-  "identifier" : "doc:\/\/com.polling.Polling\/objc(cs)NSObject",
+"doc://com.polling.polling/documentation/Polling/POLNetworkSession/surveyForData:error:": {
+  "abstract" : [
+    {
+      "text" : "Parse survey details payload",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "surveyForData:error:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/surveyForData:error:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "surveyForData:error:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "surveyForData:error:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksession\/surveyfordata:error:"
+},
+"doc://com.polling.polling/documentation/Polling/POLNetworkSession/surveysForData:error:": {
+  "abstract" : [
+    {
+      "text" : "Parse available surveys payload",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "surveysForData:error:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/surveysForData:error:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "surveysForData:error:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "surveysForData:error:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksession\/surveysfordata:error:"
+},
+"doc://com.polling.polling/documentation/Polling/POLNetworkSession/surveysFromData:error:": {
+  "abstract" : [
+    {
+      "text" : "Parse embed completed response",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "surveysFromData:error:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/surveysFromData:error:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "surveysFromData:error:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "surveysFromData:error:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksession\/surveysfromdata:error:"
+},
+"doc://com.polling.polling/documentation/Polling/POLNetworkSession/triggeredSurveysForDataTask:error:": {
+  "abstract" : [
+    {
+      "text" : "Parse triggered surveys payload",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "triggeredSurveysForDataTask:error:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/triggeredSurveysForDataTask:error:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "triggeredSurveysForDataTask:error:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "triggeredSurveysForDataTask:error:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksession\/triggeredsurveysfordatatask:error:"
+},
+"doc://com.polling.polling/objc(cs)NSObject": {
+  "identifier" : "doc:\/\/com.polling.polling\/objc(cs)NSObject",
   "title" : "NSObject",
+  "type" : "unresolvable"
+},
+"doc://com.polling.polling/objc(pl)NSURLSessionDataDelegate": {
+  "identifier" : "doc:\/\/com.polling.polling\/objc(pl)NSURLSessionDataDelegate",
+  "title" : "NSURLSessionDataDelegate",
   "type" : "unresolvable"
 }
 }

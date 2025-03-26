@@ -1,0 +1,327 @@
+{
+  "abstract" : [
+    {
+      "text" : "Parse embed completed response",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/surveysFromData:error:"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLNetworkSession(im)surveysFromData:error:",
+    "fragments" : [
+      {
+        "kind" : "text",
+        "text" : "- "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "surveysFromData:error:"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "surveysFromData:error:"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "surveysFromData:error:"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "text",
+              "text" : "- ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:Q$objc(cs)NSArray",
+              "text" : "NSArray<POLSurvey *>"
+            },
+            {
+              "kind" : "text",
+              "text" : " *) "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "surveysFromData:"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSData",
+              "text" : "NSData"
+            },
+            {
+              "kind" : "text",
+              "text" : " *) "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "data"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "error:"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)POLError",
+              "text" : "POLError"
+            },
+            {
+              "kind" : "text",
+              "text" : " * *) "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "error"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Response body",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "data"
+        }
+      ]
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "return-value",
+          "level" : 2,
+          "text" : "Return Value",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A survey object",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Payload is a JSON object with the structure",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "{",
+            "    \"data\":[]",
+            "}"
+          ],
+          "syntax" : "json",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "or",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "{",
+            "    \"data\": [{",
+            "        \"uuid\": \"dcaca06d-5ed5-4235-90fb-e2d7efc2a5b6\",",
+            "        \"name\": \"Survey Test SDK 1\",",
+            "        \"started_at\": \"2025-01-27T19:52:44+00:00\",",
+            "        \"completed_at\": \"2025-01-27T19:52:45+00:00\",",
+            "        \"reward\": {",
+            "            \"complete_extra_json\": null,",
+            "            \"reward_amount\": null,",
+            "            \"reward_name\": null",
+            "        }",
+            "    }]",
+            "}"
+          ],
+          "syntax" : "json",
+          "type" : "codeListing"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polnetworksession\/surveysfromdata:error:"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.polling/documentation/Polling/POLError": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLError"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLError",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLError",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polerror"
+},
+"doc://com.polling.polling/documentation/Polling/POLNetworkSession": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLNetworkSession"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLNetworkSession",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksession"
+},
+"doc://com.polling.polling/documentation/Polling/POLNetworkSession/surveysFromData:error:": {
+  "abstract" : [
+    {
+      "text" : "Parse embed completed response",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "surveysFromData:error:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLNetworkSession\/surveysFromData:error:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "surveysFromData:error:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "surveysFromData:error:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polnetworksession\/surveysfromdata:error:"
+}
+}
+}

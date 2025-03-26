@@ -8,14 +8,14 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate"
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSuccess:"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSuccess:"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -162,21 +162,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate": {
+"doc://com.polling.polling/documentation/Polling/POLPollingDelegate": {
   "abstract" : [
     {
       "text" : "A protocol that defines methods the SDK can call to provide",
@@ -197,14 +197,14 @@
       "text" : "POLPollingDelegate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLPollingDelegate",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polpollingdelegate"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate/pollingOnSuccess:": {
+"doc://com.polling.polling/documentation/Polling/POLPollingDelegate/pollingOnSuccess:": {
   "abstract" : [
     {
       "text" : "Notifies your app when a survey is completed",
@@ -221,7 +221,7 @@
       "text" : "pollingOnSuccess:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSuccess:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnSuccess:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {

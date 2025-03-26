@@ -1,0 +1,143 @@
+{
+  "abstract" : [
+    {
+      "text" : "Height is set to the maximum safe area - closeable area",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClass"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClass\/POLSurveyViewSizeClassMaximum"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@E@POLSurveyViewSizeClass@POLSurveyViewSizeClassMaximum",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLSurveyViewSizeClassMaximum"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "POLSurveyViewSizeClassMaximum"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Enumeration Case",
+    "symbolKind" : "case",
+    "title" : "POLSurveyViewSizeClassMaximum"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "identifier",
+              "text" : "POLSurveyViewSizeClassMaximum"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/polsurveyviewsizeclass\/polsurveyviewsizeclassmaximum"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewSizeClass": {
+  "abstract" : [
+    {
+      "text" : "Survey view size class",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyViewSizeClass"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClass",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyViewSizeClass",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewsizeclass"
+},
+"doc://com.polling.polling/documentation/Polling/POLSurveyViewSizeClass/POLSurveyViewSizeClassMaximum": {
+  "abstract" : [
+    {
+      "text" : "Height is set to the maximum safe area - closeable area",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLSurveyViewSizeClassMaximum"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLSurveyViewSizeClass\/POLSurveyViewSizeClassMaximum",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLSurveyViewSizeClassMaximum",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/polsurveyviewsizeclass\/polsurveyviewsizeclassmaximum"
+}
+}
+}

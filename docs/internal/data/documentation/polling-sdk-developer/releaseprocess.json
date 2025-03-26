@@ -1,0 +1,492 @@
+{
+  "abstract" : [
+    {
+      "text" : "Steps necessary for producing SDK releases.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling-SDK-Developer\/ReleaseProcess"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "role" : "article",
+    "roleHeading" : "Article",
+    "title" : "Release Process"
+  },
+  "primaryContentSections" : [
+    {
+      "content" : [
+        {
+          "anchor" : "Overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Before attempting a release setup the project as described in",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling-SDK-Developer\/CodeSigning",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ". Then follow the steps in the section",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling-SDK-Developer\/ReleaseProcess#Making-a-Release",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Making-a-Release",
+          "level" : 2,
+          "text" : "Making a Release",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Create a release of the SDK.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Update-the-Version-Number",
+          "level" : 3,
+          "text" : "Update the Version Number",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Open ",
+              "type" : "text"
+            },
+            {
+              "code" : "Configs\/Framework.xcconfig",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " locate the ",
+              "type" : "text"
+            },
+            {
+              "code" : "PROJECT_VERSION",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "variable and bump the version to reflect the nature of the",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "release. The version is in ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "MAJOR.MINOR.PATCH",
+                  "type" : "text"
+                }
+              ],
+              "type" : "emphasis"
+            },
+            {
+              "text" : " format. The version",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "string is described in ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling-SDK-Developer\/VersionScheme",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "PROJECT_VERSION = 1.0.0"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Commit-the-Version-Bump",
+          "level" : 3,
+          "text" : "Commit the Version Bump",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Commit the version bump and all other changes. Remove or stash",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "anything in the worktree until ",
+              "type" : "text"
+            },
+            {
+              "code" : "git status",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " shows “nothing to commit,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "working tree clean”.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Prepare-the-Release",
+          "level" : 3,
+          "text" : "Prepare the Release",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Run ",
+              "type" : "text"
+            },
+            {
+              "code" : "make prepare-release",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to build the XCFrameworks, build the docs,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "package the binaries, generate release notes, makes a draft GitHub",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "release.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Edit-the-Release-Notes-and-Sanity-Checks",
+          "level" : 3,
+          "text" : "Edit the Release Notes and Sanity Checks",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Open the generated release notes at ",
+              "type" : "text"
+            },
+            {
+              "code" : "Release\/notes.md",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and make edits",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "such as removing entries like “fix typo” or “forgot to add file”,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "etc. Fix spelling, grammar, and edit for conciseness and clarity.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Edit ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "Release\/notes.md",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Check that the signed and unsigned XCFramework were created and",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "packaged.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Check the public and internal documentation",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Modify ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "Release\/title.txt",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " if necessary",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Use ",
+              "type" : "text"
+            },
+            {
+              "code" : "make edit-release",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to update the title or release notes.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Publish-the-Release",
+          "level" : 3,
+          "text" : "Publish the Release",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Run ",
+              "type" : "text"
+            },
+            {
+              "code" : "make publish-release",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " when everything looks good.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "anchor" : "Making-Releases",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.polling.polling\/documentation\/Polling-SDK-Developer\/VersionScheme"
+      ],
+      "title" : "Making Releases"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling-sdk-developer\/releaseprocess"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.polling/documentation/Polling-SDK-Developer/CodeSigning": {
+  "abstract" : [
+    {
+      "text" : "Configure Project for Code Signing",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling-SDK-Developer\/CodeSigning",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Configure Code Signing",
+  "type" : "topic",
+  "url" : "\/documentation\/polling-sdk-developer\/codesigning"
+},
+"doc://com.polling.polling/documentation/Polling-SDK-Developer/ReleaseProcess#Making-a-Release": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling-SDK-Developer\/ReleaseProcess#Making-a-Release",
+  "kind" : "section",
+  "title" : "Making a Release",
+  "type" : "topic",
+  "url" : "\/documentation\/polling-sdk-developer\/releaseprocess#Making-a-Release"
+},
+"doc://com.polling.polling/documentation/Polling-SDK-Developer/VersionScheme": {
+  "abstract" : [
+    {
+      "text" : "Format of the SDK version string",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling-SDK-Developer\/VersionScheme",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Versioning Scheme",
+  "type" : "topic",
+  "url" : "\/documentation\/polling-sdk-developer\/versionscheme"
+}
+}
+}

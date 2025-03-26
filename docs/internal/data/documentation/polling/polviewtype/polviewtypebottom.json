@@ -16,14 +16,14 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType"
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewType"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType\/POLViewTypeBottom"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewType\/POLViewTypeBottom"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -93,21 +93,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLViewType": {
+"doc://com.polling.polling/documentation/Polling/POLViewType": {
   "abstract" : [
     {
       "text" : "Survey view style",
@@ -120,14 +120,14 @@
       "text" : "POLViewType"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewType",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLViewType",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polviewtype"
 },
-"doc://com.polling.Polling/documentation/Polling/POLViewType/POLViewTypeBottom": {
+"doc://com.polling.polling/documentation/Polling/POLViewType/POLViewTypeBottom": {
   "abstract" : [
     {
       "text" : "Display survey in a sheet that slides up from the bottom over",
@@ -148,7 +148,7 @@
       "text" : "POLViewTypeBottom"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType\/POLViewTypeBottom",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewType\/POLViewTypeBottom",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLViewTypeBottom",

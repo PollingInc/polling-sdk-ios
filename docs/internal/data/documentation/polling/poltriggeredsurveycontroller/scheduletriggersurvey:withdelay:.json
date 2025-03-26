@@ -1,0 +1,222 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "occ",
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController\/scheduleTriggerSurvey:withDelay:"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:objc(cs)POLTriggeredSurveyController(im)scheduleTriggerSurvey:withDelay:",
+    "fragments" : [
+      {
+        "kind" : "text",
+        "text" : "- "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "scheduleTriggerSurvey:withDelay:"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "scheduleTriggerSurvey:withDelay:"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "scheduleTriggerSurvey:withDelay:"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "occ"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "text",
+              "text" : "- ("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:v",
+              "text" : "void"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "scheduleTriggerSurvey:"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)POLTriggeredSurvey",
+              "text" : "POLTriggeredSurvey"
+            },
+            {
+              "kind" : "text",
+              "text" : " *) "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "survey"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "withDelay:"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:@T@NSUInteger",
+              "text" : "NSUInteger"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "delay"
+            },
+            {
+              "kind" : "text",
+              "text" : ";"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/poltriggeredsurveycontroller\/scheduletriggersurvey:withdelay:"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Internal developer documentation",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurvey": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLTriggeredSurvey"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurvey",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLTriggeredSurvey",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/poltriggeredsurvey"
+},
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurveyController": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "POLTriggeredSurveyController"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "POLTriggeredSurveyController",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/poltriggeredsurveycontroller"
+},
+"doc://com.polling.polling/documentation/Polling/POLTriggeredSurveyController/scheduleTriggerSurvey:withDelay:": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "text",
+      "text" : "- "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "scheduleTriggerSurvey:withDelay:"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLTriggeredSurveyController\/scheduleTriggerSurvey:withDelay:",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "scheduleTriggerSurvey:withDelay:"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "scheduleTriggerSurvey:withDelay:",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/poltriggeredsurveycontroller\/scheduletriggersurvey:withdelay:"
+}
+}
+}

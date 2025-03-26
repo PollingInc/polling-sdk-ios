@@ -3,11 +3,11 @@
     "paths" : [
 
     ],
-    "reference" : "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC"
+    "reference" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC"
   },
   "identifier" : {
-    "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC"
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC"
   },
   "kind" : "overview",
   "metadata" : {
@@ -24,7 +24,7 @@
   "sections" : [
     {
       "action" : {
-        "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject",
+        "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/ConfigureProject",
         "isActive" : true,
         "overridingTitle" : "Get started",
         "overridingTitleInlineContent" : [
@@ -66,7 +66,7 @@
           "image" : "xcframework.png",
           "name" : "Configuring your project",
           "tutorials" : [
-            "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject"
+            "doc:\/\/com.polling.polling\/tutorials\/Polling\/ConfigureProject"
           ]
         },
         {
@@ -84,7 +84,7 @@
           "image" : "swift-dot-swift.png",
           "name" : "Coding",
           "tutorials" : [
-            "doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode"
+            "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICode"
           ]
         }
       ],
@@ -103,6 +103,16 @@
       ],
       "traits" : [
         {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    },
+    {
+      "paths" : [
+        "\/tutorials\/swiftuitoc"
+      ],
+      "traits" : [
+        {
           "interfaceLanguage" : "occ"
         }
       ]
@@ -110,42 +120,42 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/tutorials/Polling/ConfigureProject": {
+"doc://com.polling.polling/tutorials/Polling/ConfigureProject": {
   "abstract" : [
     {
       "text" : "Configure your project to use the Polling framework",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/ConfigureProject",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/ConfigureProject",
   "kind" : "project",
   "role" : "project",
   "title" : "Adding the framework",
   "type" : "topic",
   "url" : "\/tutorials\/polling\/configureproject"
 },
-"doc://com.polling.Polling/tutorials/Polling/SwiftUICode": {
+"doc://com.polling.polling/tutorials/Polling/SwiftUICode": {
   "abstract" : [
     {
       "text" : "This tutorial guides you through importing the Polling framework and using the APIs with SwiftUI.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/Polling\/SwiftUICode",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICode",
   "kind" : "project",
   "role" : "project",
   "title" : "Code your content view",
   "type" : "topic",
   "url" : "\/tutorials\/polling\/swiftuicode"
 },
-"doc://com.polling.Polling/tutorials/SwiftUIToC": {
+"doc://com.polling.polling/tutorials/SwiftUIToC": {
   "abstract" : [
     {
       "text" : "Tutorial for integrating the Polling SDK in your SwiftUI app.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/tutorials\/SwiftUIToC",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC",
   "kind" : "overview",
   "role" : "overview",
   "title" : "Intergrating with SwiftUI",
@@ -162,7 +172,7 @@
         "1x",
         "light"
       ],
-      "url" : "\/images\/com.polling.Polling\/swift-dot-swift.png"
+      "url" : "\/images\/com.polling.polling\/swift-dot-swift.png"
     }
   ]
 },
@@ -176,9 +186,25 @@
         "1x",
         "light"
       ],
-      "url" : "\/images\/com.polling.Polling\/xcframework.png"
+      "url" : "\/images\/com.polling.polling\/xcframework.png"
     }
   ]
 }
-}
+}, 
+"variantOverrides":[
+  {
+    "patch" : [
+      {
+        "op" : "replace",
+        "path" : "\/identifier\/interfaceLanguage",
+        "value" : "occ"
+      }
+    ],
+    "traits" : [
+      {
+        "interfaceLanguage" : "occ"
+      }
+    ]
+  }
+]
 }

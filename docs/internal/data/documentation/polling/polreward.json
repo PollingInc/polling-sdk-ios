@@ -8,13 +8,13 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -102,7 +102,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/objc(cs)NSObject"
+        "doc:\/\/com.polling.polling\/objc(cs)NSObject"
       ],
       "kind" : "relationships",
       "title" : "Inherits From",
@@ -122,9 +122,9 @@
       "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/amount",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/completeExtraJSON",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/name"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward\/amount",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward\/completeExtraJSON",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward\/name"
       ],
       "title" : "Instance Properties"
     },
@@ -132,8 +132,8 @@
       "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/JSONRepresentation",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/dictionaryRepresentation"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward\/JSONRepresentation",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward\/dictionaryRepresentation"
       ],
       "title" : "Instance Methods"
     },
@@ -141,8 +141,8 @@
       "anchor" : "Type-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/rewardFromDictionary:",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/rewardFromJSONDictionary:"
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward\/rewardFromDictionary:",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward\/rewardFromJSONDictionary:"
       ],
       "title" : "Type Methods"
     }
@@ -161,21 +161,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLReward": {
+"doc://com.polling.polling/documentation/Polling/POLReward": {
   "abstract" : [
     {
       "text" : "An object representing a reward",
@@ -188,14 +188,14 @@
       "text" : "POLReward"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLReward",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polreward"
 },
-"doc://com.polling.Polling/documentation/Polling/POLReward/JSONRepresentation": {
+"doc://com.polling.polling/documentation/Polling/POLReward/JSONRepresentation": {
   "abstract" : [
 
   ],
@@ -209,7 +209,7 @@
       "text" : "JSONRepresentation"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/JSONRepresentation",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward\/JSONRepresentation",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -222,7 +222,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polreward\/jsonrepresentation"
 },
-"doc://com.polling.Polling/documentation/Polling/POLReward/amount": {
+"doc://com.polling.polling/documentation/Polling/POLReward/amount": {
   "abstract" : [
     {
       "text" : "The reward amount",
@@ -235,14 +235,14 @@
       "text" : "amount"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/amount",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward\/amount",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "amount",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polreward\/amount"
 },
-"doc://com.polling.Polling/documentation/Polling/POLReward/completeExtraJSON": {
+"doc://com.polling.polling/documentation/Polling/POLReward/completeExtraJSON": {
   "abstract" : [
     {
       "text" : "Additional information",
@@ -255,14 +255,14 @@
       "text" : "completeExtraJSON"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/completeExtraJSON",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward\/completeExtraJSON",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "completeExtraJSON",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polreward\/completeextrajson"
 },
-"doc://com.polling.Polling/documentation/Polling/POLReward/dictionaryRepresentation": {
+"doc://com.polling.polling/documentation/Polling/POLReward/dictionaryRepresentation": {
   "abstract" : [
 
   ],
@@ -276,7 +276,7 @@
       "text" : "dictionaryRepresentation"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/dictionaryRepresentation",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward\/dictionaryRepresentation",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -289,7 +289,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polreward\/dictionaryrepresentation"
 },
-"doc://com.polling.Polling/documentation/Polling/POLReward/name": {
+"doc://com.polling.polling/documentation/Polling/POLReward/name": {
   "abstract" : [
     {
       "text" : "Name identifying the reward",
@@ -302,14 +302,14 @@
       "text" : "name"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/name",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward\/name",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "name",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polreward\/name"
 },
-"doc://com.polling.Polling/documentation/Polling/POLReward/rewardFromDictionary:": {
+"doc://com.polling.polling/documentation/Polling/POLReward/rewardFromDictionary:": {
   "abstract" : [
 
   ],
@@ -323,7 +323,7 @@
       "text" : "rewardFromDictionary:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/rewardFromDictionary:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward\/rewardFromDictionary:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -336,7 +336,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polreward\/rewardfromdictionary:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLReward/rewardFromJSONDictionary:": {
+"doc://com.polling.polling/documentation/Polling/POLReward/rewardFromJSONDictionary:": {
   "abstract" : [
 
   ],
@@ -350,7 +350,7 @@
       "text" : "rewardFromJSONDictionary:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward\/rewardFromJSONDictionary:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward\/rewardFromJSONDictionary:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -363,8 +363,8 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polreward\/rewardfromjsondictionary:"
 },
-"doc://com.polling.Polling/objc(cs)NSObject": {
-  "identifier" : "doc:\/\/com.polling.Polling\/objc(cs)NSObject",
+"doc://com.polling.polling/objc(cs)NSObject": {
+  "identifier" : "doc:\/\/com.polling.polling\/objc(cs)NSObject",
   "title" : "NSObject",
   "type" : "unresolvable"
 }

@@ -8,14 +8,14 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling",
-        "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate"
+        "doc:\/\/com.polling.polling\/documentation\/Polling",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnReward:"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnReward:"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -79,7 +79,7 @@
               "text" : "("
             },
             {
-              "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward",
+              "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "c:objc(cs)POLReward",
               "text" : "POLReward"
@@ -113,7 +113,7 @@
                   "type" : "text"
                 },
                 {
-                  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward",
+                  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward",
                   "isActive" : true,
                   "type" : "reference"
                 },
@@ -172,21 +172,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate": {
+"doc://com.polling.polling/documentation/Polling/POLPollingDelegate": {
   "abstract" : [
     {
       "text" : "A protocol that defines methods the SDK can call to provide",
@@ -207,14 +207,14 @@
       "text" : "POLPollingDelegate"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLPollingDelegate",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polpollingdelegate"
 },
-"doc://com.polling.Polling/documentation/Polling/POLPollingDelegate/pollingOnReward:": {
+"doc://com.polling.polling/documentation/Polling/POLPollingDelegate/pollingOnReward:": {
   "abstract" : [
     {
       "text" : "Notifies your app when the user receives an award",
@@ -231,7 +231,7 @@
       "text" : "pollingOnReward:"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnReward:",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLPollingDelegate\/pollingOnReward:",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -244,7 +244,7 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/polpollingdelegate\/pollingonreward:"
 },
-"doc://com.polling.Polling/documentation/Polling/POLReward": {
+"doc://com.polling.polling/documentation/Polling/POLReward": {
   "abstract" : [
     {
       "text" : "An object representing a reward",
@@ -257,7 +257,7 @@
       "text" : "POLReward"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLReward",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLReward",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLReward",

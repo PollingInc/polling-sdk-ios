@@ -2,13 +2,13 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/com.polling.Polling\/documentation\/Polling"
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "occ",
-    "url" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewTypeDescription"
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewTypeDescription"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -64,7 +64,7 @@
               "text" : "("
             },
             {
-              "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType",
+              "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewType",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "c:@E@POLViewType",
               "text" : "POLViewType"
@@ -109,21 +109,21 @@
   ]
 , 
 "references": {
-"doc://com.polling.Polling/documentation/Polling": {
+"doc://com.polling.polling/documentation/Polling": {
   "abstract" : [
     {
       "text" : "Internal developer documentation",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
   "kind" : "symbol",
   "role" : "collection",
   "title" : "Polling",
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
-"doc://com.polling.Polling/documentation/Polling/POLViewType": {
+"doc://com.polling.polling/documentation/Polling/POLViewType": {
   "abstract" : [
     {
       "text" : "Survey view style",
@@ -136,14 +136,14 @@
       "text" : "POLViewType"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewType",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewType",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLViewType",
   "type" : "topic",
   "url" : "\/documentation\/polling\/polviewtype"
 },
-"doc://com.polling.Polling/documentation/Polling/POLViewTypeDescription": {
+"doc://com.polling.polling/documentation/Polling/POLViewTypeDescription": {
   "abstract" : [
 
   ],
@@ -153,7 +153,7 @@
       "text" : "POLViewTypeDescription"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.Polling\/documentation\/Polling\/POLViewTypeDescription",
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/POLViewTypeDescription",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "POLViewTypeDescription",
