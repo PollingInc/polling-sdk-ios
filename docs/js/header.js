@@ -11,7 +11,7 @@
   // [1]: https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#internal_vs._external_styles
   const link = document.createElement('link');
   link.setAttribute('rel', 'stylesheet');
-  link.setAttribute('href', '//pollinginc.github.io/polling-sdk-ios/css/header.css');
+  link.setAttribute('href', 'https://pollinginc.github.io/polling-sdk-ios/css/header.css');
   link.onload = () => {
     header.hidden = false;
   };

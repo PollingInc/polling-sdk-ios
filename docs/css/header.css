@@ -1,15 +1,15 @@
 :host {
   --color-header-background-light: #fafafa;
   --color-header-text-light: #333333;
-  --icon-close-url-light: url("//pollinginc.github.io/polling-sdk-ios/img/icon-close.svg");
-  --icon-menu-url-light: url("//pollinginc.github.io/polling-sdk-ios/img/icon-menu.svg");
-  --logo-url-light: url("//pollinginc.github.io/polling-sdk-ios/img/polling-logo.svg");
+  --icon-close-url-light: url("https://pollinginc.github.io/polling-sdk-ios/img/icon-close.svg");
+  --icon-menu-url-light: url("https://pollinginc.github.io/polling-sdk-ios/img/icon-menu.svg");
+  --logo-url-light: url("https://pollinginc.github.io/polling-sdk-ios/img/polling-logo.svg");
 
   --color-header-background-dark: #333333;
   --color-header-text-dark: #fafafa;
-  --icon-close-url-dark: url("//pollinginc.github.io/polling-sdk-ios/img/icon-close~dark.svg");
-  --icon-menu-url-dark: url("//pollinginc.github.io/polling-sdk-ios/img/icon-menu~dark.svg");
-  --logo-url-dark: url("//pollinginc.github.io/polling-sdk-ios/img/polling-logo~dark.svg");
+  --icon-close-url-dark: url("https://pollinginc.github.io/polling-sdk-ios/img/icon-close~dark.svg");
+  --icon-menu-url-dark: url("https://pollinginc.github.io/polling-sdk-ios/img/icon-menu~dark.svg");
+  --logo-url-dark: url("https://pollinginc.github.io/polling-sdk-ios/img/polling-logo~dark.svg");
 
   --color-header-background: var(--color-header-background-light);
   --color-header-border: var(--color-nav-keyline);

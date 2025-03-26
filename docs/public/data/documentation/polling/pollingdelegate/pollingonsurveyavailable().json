@@ -49,7 +49,6 @@
         "text" : "pollingOnSurveyAvailable"
       }
     ],
-    "required" : true,
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -237,7 +236,6 @@
       "text" : "pollingOnSurveyAvailable"
     }
   ],
-  "required" : true,
   "role" : "symbol",
   "title" : "pollingOnSurveyAvailable()",
   "type" : "topic",
