@@ -87,9 +87,92 @@
           "type" : "paragraph"
         },
         {
-          "anchor" : "Update-the-Version-Number",
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Increment the version, then commit the version bump",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "make clean-all",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "make commit-release",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "make prepare-release",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "make edit-release",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "make publish-release",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "anchor" : "Increment-the-Version-Number",
           "level" : 3,
-          "text" : "Update the Version Number",
+          "text" : "Increment the Version Number",
           "type" : "heading"
         },
         {
@@ -167,23 +250,48 @@
           "type" : "codeListing"
         },
         {
-          "anchor" : "Commit-the-Version-Bump",
+          "inlineContent" : [
+            {
+              "text" : "Commit the version bump and all other changes.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Do not push this commit. The final step will automatically",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "push this commit and the release commit.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Warning",
+          "style" : "warning",
+          "type" : "aside"
+        },
+        {
+          "anchor" : "Clean-the-Repo-and-Build-Artifacts",
           "level" : 3,
-          "text" : "Commit the Version Bump",
+          "text" : "Clean the Repo and Build Artifacts",
           "type" : "heading"
         },
         {
           "inlineContent" : [
             {
-              "text" : "Commit the version bump and all other changes. Remove or stash",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "anything in the worktree until ",
+              "text" : "Remove or stash anything in the worktree until ",
               "type" : "text"
             },
             {
@@ -191,7 +299,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " shows “nothing to commit,",
+              "text" : " shows",
               "type" : "text"
             },
             {
@@ -199,7 +307,127 @@
               "type" : "text"
             },
             {
-              "text" : "working tree clean”.",
+              "text" : "“nothing to commit, working tree clean”.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Run ",
+              "type" : "text"
+            },
+            {
+              "code" : "make clean-all",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to delete build artifacts in the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Build",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", ",
+              "type" : "text"
+            },
+            {
+              "code" : "Docs",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ",",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and ",
+              "type" : "text"
+            },
+            {
+              "code" : "Release",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " directories. This ensures stale artifacts do not pollute",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the release.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Further steps in the release process will fail if the worktree",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "is not clean or when build artifact are not deleted.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Warning",
+          "style" : "warning",
+          "type" : "aside"
+        },
+        {
+          "anchor" : "Update-the-Package-Manifests",
+          "level" : 3,
+          "text" : "Update the Package Manifests",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Run ",
+              "type" : "text"
+            },
+            {
+              "code" : "make commit-release",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to update the package manifests, build the",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Swift Package Manager variants, and automatically commits the Swift",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "package manifest with the message “Release vVERSION”.",
               "type" : "text"
             }
           ],
@@ -230,7 +458,7 @@
               "type" : "text"
             },
             {
-              "text" : "package the binaries, generate release notes, makes a draft GitHub",
+              "text" : "package the binaries, generate release notes, and makes a draft GitHub",
               "type" : "text"
             },
             {

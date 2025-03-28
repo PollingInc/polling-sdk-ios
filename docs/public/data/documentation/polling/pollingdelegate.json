@@ -527,7 +527,6 @@
       "text" : "pollingOnSuccess:"
     }
   ],
-  "required" : true,
   "role" : "symbol",
   "title" : "polling(onSuccess:)",
   "type" : "topic",
