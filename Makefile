@@ -52,5 +52,7 @@ gen-user-scripts-input-file-list: FORCE
 clean:
 	-rm -rf Build
 
+clean-all: clean doc-clean clean-release
+
 
 .PHONY: FORCE

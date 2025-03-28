@@ -109,7 +109,7 @@ $(DOCROOT):
 doc-preview-public: DOCC_SOURCE_BUNDLE = $(PUBLIC_DOCC_SOURCE_BUNDLE)
 doc-preview-public: SYMGRAPH_ROOT = $(SYMGRAPH_DIR_PUBLIC)
 doc-preview-public: DOCS_ROOT = $(DOCS_DIR_PUBLIC)
-doc-preview-public: $(SYMGRAPH_CLANG) $(SYMGRAPH_SWIFT) $(DOCROOT)
+doc-preview-public: $(SYMGRAPH_CLANG) $(SYMGRAPH_SWIFT) | $(DOCROOT)
 	$(XCRUN) $(DOCC) preview $(DOCC_SOURCE_BUNDLE) \
 		--port $(DOCC_PUBLIC_PORT) \
 		--fallback-display-name $(PRODUCT_NAME) \
@@ -122,7 +122,7 @@ doc-preview-public: $(SYMGRAPH_CLANG) $(SYMGRAPH_SWIFT) $(DOCROOT)
 doc-preview-internal: DOCC_SOURCE_BUNDLE = $(INTERNAL_DOCC_SOURCE_BUNDLE)
 doc-preview-internal: SYMGRAPH_ROOT = $(SYMGRAPH_DIR_INTERNAL)
 doc-preview-internal: DOCS_ROOT = $(DOCS_DIR_INTERNAL)
-doc-preview-internal: $(SYMGRAPH_INTERNAL) $(DOCROOT)
+doc-preview-internal: $(SYMGRAPH_INTERNAL) | $(DOCROOT)
 	$(XCRUN) $(DOCC) preview $(DOCC_SOURCE_BUNDLE) \
 		--port $(DOCC_INTERNAL_PORT) \
 		--fallback-display-name $(PRODUCT_NAME) \
@@ -163,7 +163,7 @@ doc-convert-internal: CONVERT_EXTRA_ARGS = $(CONVERT_EXTRA_ARGS_INTERNAL)
 doc-convert-internal: DOCC_SOURCE_BUNDLE = $(INTERNAL_DOCC_SOURCE_BUNDLE)
 doc-convert-internal: SYMGRAPH_ROOT = $(SYMGRAPH_DIR_INTERNAL)
 doc-convert-internal: DOCS_ROOT = $(DOCS_WORKTREE)/docs/internal
-doc-convert-internal: $(SYMGRAPH_INTERNAL) $(DOCS_WORKTREE)
+doc-convert-internal: $(SYMGRAPH_INTERNAL) | $(DOCS_WORKTREE)
 	$(XCRUN) $(DOCC) convert $(DOCC_SOURCE_BUNDLE) \
 		--fallback-display-name $(PRODUCT_NAME) \
 		--fallback-bundle-identifier com.polling.Polling \
@@ -174,4 +174,6 @@ doc-convert-internal: $(SYMGRAPH_INTERNAL) $(DOCS_WORKTREE)
 		--output-dir $(DOCS_ROOT)
 
 doc-clean:
-	-$(GIT) worktree remove $(DOCS_WORKTREE)
+	if [ -d $(DOCS_WORKTREE) ]; then \
+		$(GIT) worktree remove --force $(DOCS_WORKTREE); \
+	fi

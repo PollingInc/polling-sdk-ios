@@ -63,6 +63,7 @@ DerivedData/
 *.dSYM
 
 ## Swift PM
+.build
 .swiftpm
 
 Scripts/make/local.mk

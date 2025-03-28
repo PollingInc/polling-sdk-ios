@@ -16,23 +16,20 @@ DESC
   s.ios.deployment_target = "12.0"
 
   s.source = {
-    :http => "https://github.com/pollinginc/polling-sdk-ios/releases/download/__TAG__/Polling.xcframework-__TAG__-unsigned.zip"
+    :http => "https://github.com/pollinginc/polling-sdk-ios/releases/download/__TAG__/Polling.xcframework-cocoapods-__TAG__.zip"
   }
-  s.vendored_frameworks = "Polling.xcframework"
+  s.default_subspec = 'Unsigned'
+
+  # NOTE: The users Xcode build will fail without this.
+  s.pod_target_xcconfig = { 'ENABLE_USER_SCRIPT_SANDBOXING' => 'NO' }
 
   # Unsigned Subspec
   s.subspec 'Unsigned' do |sp|
-    sp.source = {
-      :http => "https://github.com/pollinginc/polling-sdk-ios/releases/download/__TAG__/Polling.xcframework-__TAG__-unsigned.zip"
-    }
-    sp.vendored_frameworks = "Polling.xcframework"
+    sp.vendored_frameworks = "unsigned/Polling.xcframework"
   end
 
   # Signed Subspec
   s.subspec 'Signed' do |sp|
-    sp.source = {
-      :http => "https://github.com/pollinginc/polling-sdk-ios/releases/download/__TAG__/Polling.xcframework-__TAG__-signed.zip",
-    }
-    sp.vendored_frameworks = "Polling.xcframework"
+    sp.vendored_frameworks = "signed/Polling.xcframework"
   end
 end

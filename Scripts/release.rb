@@ -2,10 +2,20 @@
 
 require 'json'
 require 'Open3'
+require 'fileutils'
 require_relative 'version'
 
 def usage
   puts "usage: release.rb CMD NEWVER RELTITLE RELNOTES FILES..."
+end
+
+def ex(e)
+  puts e; out, err, status = Open3.capture3 e
+  unless status.success?
+    warn "failure: out=#{out}, err=#{err}, status=#{status}"
+    exit 1
+  end
+  out
 end
 
 puts "ARGV=#{ARGV}"
@@ -26,17 +36,25 @@ DRAFT = CMD != 'publish'
 PRERELEASE = !!EXTRA_INFO # true if the version has extra info -Beta1,
                           # -RC1, etc.
 
+COMMITTED = 'Release/committed'
 VERFILE = "Release/#{NEW_VERSION}"
+PUBLISHED = 'Release/published'
+
 FILES = ARGV.join ' '
 
 puts "#{CMD.capitalize}ing #{VER_ALL}"
 puts "DRAFT=#{DRAFT}, PRERELEASE=#{PRERELEASE}, FILES=#{FILES}"
 
+unless REPO_STATE.empty? then
+  warn "Abort: Attempt to release from #{REPO_STATE} repo"
+  exit 1
+end
+
 # get last release from github
 RELEASES = JSON.parse(%x(gh release list -O desc -L 1 --json tagName))
 if RELEASES.count == 0 then
   LAST_VERSION = nil
-  puts 'no previous releases'
+  puts 'No previous releases'
 else
   LAST_RELEASE = RELEASES[0]
   LAST_VERSION = LAST_RELEASE['tagName']
@@ -48,8 +66,10 @@ if CMD == 'commit' then
   SWIFTPM_FILES.each do |f|
     if f.match? /-signed/ then
       SIGNED_CHECKSUM = %x(swift package compute-checksum #{f}).strip
+      puts "#{f}: #{SIGNED_CHECKSUM}"
     elsif f.match? /-unsigned/ then
       UNSIGNED_CHECKSUM = %x(swift package compute-checksum #{f}).strip
+      puts "#{f}: #{UNSIGNED_CHECKSUM}"
     end
   end
 
@@ -59,19 +79,25 @@ if CMD == 'commit' then
   pkg.gsub! '__SIGNED_CHECKSUM__', SIGNED_CHECKSUM
   pkg.gsub! '__UNSIGNED_CHECKSUM__', UNSIGNED_CHECKSUM
   File.write 'Package.swift', pkg
+  puts "Swift PM manifest updated: Package.swift"
 
   pod = File.read 'Scripts/templates/_PollingSDK.podspec'
   pod.gsub! '__VERSION__', VER
   pod.gsub! '__TAG__', NEW_VERSION
-  File.write 'Release/Polling.podspec', pod
+  File.write 'Release/PollingSDK.podspec', pod
+  puts "CocoaPods manifest updated: Release/PollingSDK.podspec"
 
-  # TODO:
-  # to check for clean repo except for Package.swift
-  # git status
+  status = %x(git status -s).strip
+  unless status == 'M Package.swift' then
+    puts "Repo status:\n #{status}"
+    puts "Abort: Package.swift did not change or repo is not clean"
+    exit 1
+  end
 
-  # git add Package.swift
-  # git commit -m "Release #{NEW_VERSION}"
-  # git push
+  ex "git add Package.swift"
+  ex "git commit -m 'Release #{NEW_VERSION}'"
+
+  FileUtils.touch COMMITTED
 
   exit 0
 end
@@ -80,10 +106,14 @@ title = (File.exist?(RELTITLE) && File.read(RELTITLE)) || NEW_VERSION
 notes = (File.exist?(RELNOTES) && File.read(RELNOTES)) || nil
 
 if CMD == 'prepare' then
+  unless File.exist? COMMITTED then
+    puts "Abort: Missing #{COMMITTED}; Run `make commit-release` before preparing"
+    exit 1
+  end
   # check if the version was properly bumped
   if LAST_VERSION && (LAST_VERSION == NEW_VERSION) then
     puts "LAST_VERSION = NEW_VERSION = #{NEW_VERSION}"
-    puts "Release #{NEW_VERSION} already exists; abort"
+    puts "Abort: Release #{NEW_VERSION} already exists"
     exit 1
   end
   # get draft release notes
@@ -107,12 +137,8 @@ if CMD == 'prepare' then
   File.write RELTITLE, title
   File.write RELNOTES, notes
   pre = (PRERELEASE && '--prerelease') || ''
-  ex = "gh release create #{NEW_VERSION} --draft -t \"#{title.strip}\" -F #{RELNOTES} #{pre} #{FILES}"
-  puts ex; out, err, status = Open3.capture3 ex
-  unless status.success?
-    warn "failure: out=#{out}, err=#{err}, status=#{status}"
-    exit 1
-  end
+  ex "gh release create #{NEW_VERSION} --draft -t \"#{title.strip}\" -F #{RELNOTES} #{pre} #{FILES}"
+  FileUtils.touch VERFILE
 end
 
 puts "title=#{title}"
@@ -124,42 +150,33 @@ end
 
 if CMD == 'edit' then
   unless File.exist? VERFILE then
-    warn "Missing #{VERFILE}; Must run `make prepare-release` before editing"
+    warn "About: Missing #{VERFILE}; Run `make prepare-release` before editing"
     exit 1
   end
   pre = (PRERELEASE && '--prerelease') || ''
-  ex = "gh release edit #{NEW_VERSION} --draft -t \"#{title.strip}\" -F #{RELNOTES} #{pre}"
-  puts ex; out, err, status = Open3.capture3 ex
-  unless status.success?
-    warn "failure: out=#{out}, err=#{err}, status=#{status}"
-    exit 1
-  end
-end
-
-unless CMD == 'publish' then
-  puts "Inspect and edit #{RELTITLE} and #{RELNOTES} before publishing!"
+  ex "gh release edit #{NEW_VERSION} --draft -t \"#{title.strip}\" -F #{RELNOTES} #{pre}"
 end
 
 if CMD == 'publish' then
   unless File.exist? VERFILE then
-    warn "Missing #{VERFILE}; Must run `make prepare-release` before publishing"
+    warn "Abort: Missing #{VERFILE}; Run `make prepare-release` before publishing"
     exit 1
   end
+  ex "git push"
   pre = (PRERELEASE && '--prerelease') || ''
-  ex = "gh release edit #{NEW_VERSION} --draft=false -t \"#{title.strip}\" -F #{RELNOTES} #{pre}"
-  puts ex; out, err, status = Open3.capture3 ex
-  unless status.success?
-    warn "failure: out=#{out}, err=#{err}, status=#{status}"
-    exit 1
+  ex "gh release edit #{NEW_VERSION} --draft=false -t \"#{title.strip}\" -F #{RELNOTES} #{pre}"
+  ex "pod repo push https://github.com/PollingInc/polling-sdk-ios Release/PollingSDK.podspec"
+  docs_modified = %x(git -C Docs status --porcelain).length > 0
+  if $?.exitstatus == 0 && docs_modified then
+    ex "git -C Docs add ."
+    ex "git -C Docs commit -m 'Update docs to #{NEW_VERSION}'"
+    ex "git -C Docs push origin HEAD:docs"
   end
-
-  # TODO: pod repo push [repo] NAME.podspec
-
-  # TODO: touch Release/published
+  FileUtils.touch PUBLISHING
 end
 
-ex = "gh release view #{NEW_VERSION} -w"
-puts ex; out, err, status = Open3.capture3 ex
-unless status.success?
-  warn "failure: out=#{out}, err=#{err}, status=#{status}"
+ex "gh release view #{NEW_VERSION} -w"
+
+unless CMD == 'publish' then
+  puts "Inspect and edit #{RELTITLE} and #{RELNOTES} before publishing!"
 end
