@@ -417,6 +417,7 @@
       "text" : "pollingOnReward:"
     }
   ],
+  "required" : true,
   "role" : "symbol",
   "title" : "polling(on:)",
   "type" : "topic",
@@ -527,6 +528,7 @@
       "text" : "pollingOnSuccess:"
     }
   ],
+  "required" : true,
   "role" : "symbol",
   "title" : "polling(onSuccess:)",
   "type" : "topic",
