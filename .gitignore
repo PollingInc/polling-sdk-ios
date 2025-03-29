@@ -66,6 +66,9 @@ DerivedData/
 .build
 .swiftpm
 
+## For Publishing CocoaPods
+.ruby-version
+
 Scripts/make/local.mk
 Configs/Local.xcconfig
 

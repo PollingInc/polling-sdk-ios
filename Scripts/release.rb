@@ -18,6 +18,25 @@ def ex(e)
   out
 end
 
+%w(git gh pod swift).each do |cmd|
+  print "checking for #{cmd}... "
+  cmd_path = %x(command -v #{cmd})
+  unless $?.success? then
+    puts 'no'
+    warn "Abort: #{cmd} not found"
+    exit 1
+  end
+  puts 'yes'
+end
+
+pod_sessions = %x(pod trunk me --silent)
+unless $?.success? then
+  warn "Abort: Missing CocoaPods session"
+  puts pod_sessions
+  puts "\nSee https://guides.cocoapods.org/making/getting-setup-with-trunk.html"
+  exit 1
+end
+
 puts "ARGV=#{ARGV}"
 
 CMD = ARGV.shift
@@ -165,14 +184,14 @@ if CMD == 'publish' then
   ex "git push"
   pre = (PRERELEASE && '--prerelease') || ''
   ex "gh release edit #{NEW_VERSION} --draft=false -t \"#{title.strip}\" -F #{RELNOTES} #{pre}"
-  ex "pod repo push https://github.com/PollingInc/polling-sdk-ios Release/PollingSDK.podspec"
+  ex "pod trunk push Release/PollingSDK.podspec"
   docs_modified = %x(git -C Docs status --porcelain).length > 0
   if $?.exitstatus == 0 && docs_modified then
     ex "git -C Docs add ."
     ex "git -C Docs commit -m 'Update docs to #{NEW_VERSION}'"
     ex "git -C Docs push origin HEAD:docs"
   end
-  FileUtils.touch PUBLISHING
+  FileUtils.touch PUBLISHED
 end
 
 ex "gh release view #{NEW_VERSION} -w"
