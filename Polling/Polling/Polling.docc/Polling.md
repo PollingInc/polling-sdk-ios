@@ -13,10 +13,16 @@ with [](Polling.com) APIs.
 
 - <doc:GettingStarted>
 
-## Tutorials
+### Tutorials
 
 - <doc:tutorials/SwiftUIToC>
 - <doc:tutorials/UIKitToC>
+
+### Adding the SDK to a Project
+
+- <doc:UsingSwiftPM>
+- <doc:UsingCocoaPods>
+- <doc:ManuallyAddSDK>
 
 ### <!--@START_MENU_TOKEN@-->Group<!--@END_MENU_TOKEN@-->
 

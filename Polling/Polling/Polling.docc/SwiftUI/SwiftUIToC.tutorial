@@ -1,4 +1,4 @@
-@Tutorials(name: "SwiftUIToC") {
+@Tutorials(name: "SwiftUI") {
 	@Intro(title: "Intergrating with SwiftUI") {
 		Tutorial for integrating the Polling SDK in your SwiftUI app.
 		

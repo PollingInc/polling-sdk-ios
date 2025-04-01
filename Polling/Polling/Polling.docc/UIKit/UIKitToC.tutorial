@@ -1,4 +1,4 @@
-@Tutorials(name: "UIKitToC") {
+@Tutorials(name: "UIKit") {
 		@Intro(title: "Intergrating with UIKit") {
 		Tutorial for integrating the Polling SDK in your UIKit app.
         
