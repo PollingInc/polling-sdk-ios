@@ -1,0 +1,9 @@
+// SwiftUIApp-TestFlight.xcconfig
+
+CODE_SIGN_IDENTITY = Apple Distribution
+CODE_SIGN_STYLE = Manual
+PROVISIONING_PROFILE_SPECIFIER = Distribution Polling Provisioning Profile
+
+PRODUCT_BUNDLE_IDENTIFIER = com.polling.internal.ios.examples.SwiftUIApp
+PRODUCT_NAME = SwiftUI Example for PollingSDK
+INFOPLIST_KEY_CFBundleDisplayName = SwiftUIApp

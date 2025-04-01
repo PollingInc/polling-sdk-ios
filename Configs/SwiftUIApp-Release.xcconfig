@@ -1,1 +1,3 @@
 // SwiftUIApp-Release.xcconfig
+
+#include "SwiftUIApp.xcconfig"

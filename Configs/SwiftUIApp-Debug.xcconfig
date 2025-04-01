@@ -1,1 +1,3 @@
 // SwiftUIApp-Debug.xcconfig
+
+#include "SwiftUIApp.xcconfig"

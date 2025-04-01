@@ -43,6 +43,7 @@ include Scripts/make/xcframework.mk
 include Scripts/make/framework.mk
 include Scripts/make/doc.mk
 include Scripts/make/release.mk
+include Scripts/make/apps.mk
 
 
 gen-user-scripts-input-file-list: FORCE
