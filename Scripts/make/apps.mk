@@ -11,8 +11,8 @@ UIKIT_XCODEPROJ = Examples/$(UIKIT_PRODUCT_NAME)/$(UIKIT_PRODUCT_NAME)$(APP_VARI
 SWIFTUI_XCCONFIG = Configs/SwiftUIApp-TestFlight.xcconfig
 UIKIT_XCCONFIG = Configs/UIKitApp-TestFlight.xcconfig
 
-SWIFTUI_INFOPLIST = Scripts/templates/SwiftUIApp-TestFlight-Info.plist
-UIKIT_INFOPLIST = Scripts/templates/UIKitApp-TestFlight-Info.plist
+SWIFTUI_INFOPLIST = ../../Scripts/templates/SwiftUIApp-TestFlight-Info.plist
+UIKIT_INFOPLIST = ../../Scripts/templates/UIKitApp-TestFlight-Info.plist
 
 SWIFTUI_ARCHIVE = $(ARCHROOT)/$(SWIFTUI_PRODUCT_NAME)$(DEST_iOS_suffix)
 UIKIT_ARCHIVE = $(ARCHROOT)/$(UIKIT_PRODUCT_NAME)$(DEST_iOS_suffix)
