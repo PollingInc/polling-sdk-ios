@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C9321982D32B55400221F53 /* Polling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9321972D32B55400221F53 /* Polling.framework */; };
-		2C9321992D32B55400221F53 /* Polling.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9321972D32B55400221F53 /* Polling.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2CC055D42D9D97D5000A2445 /* Polling.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC055D32D9D97D5000A2445 /* Polling.xcframework */; };
+		2CC055D52D9D97D5000A2445 /* Polling.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC055D32D9D97D5000A2445 /* Polling.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2C93219A2D32B55400221F53 /* Embed Frameworks */ = {
+		2CC055D62D9D97D5000A2445 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2C9321992D32B55400221F53 /* Polling.framework in Embed Frameworks */,
+				2CC055D52D9D97D5000A2445 /* Polling.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +47,7 @@
 		2C9B673F2D0CB55C0060AF12 /* SwiftUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9B674F2D0CB55E0060AF12 /* SwiftUIAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9B67592D0CB55E0060AF12 /* SwiftUIAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CC055D32D9D97D5000A2445 /* Polling.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Polling.xcframework; path = ../../Build/xcframeworks/unsigned/Polling.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -78,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C9321982D32B55400221F53 /* Polling.framework in Frameworks */,
+				2CC055D42D9D97D5000A2445 /* Polling.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +103,7 @@
 		2C9321962D32B55400221F53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2CC055D32D9D97D5000A2445 /* Polling.xcframework */,
 				2C9321972D32B55400221F53 /* Polling.framework */,
 			);
 			name = Frameworks;
@@ -139,7 +141,7 @@
 				2C9B673B2D0CB55C0060AF12 /* Sources */,
 				2C9B673C2D0CB55C0060AF12 /* Frameworks */,
 				2C9B673D2D0CB55C0060AF12 /* Resources */,
-				2C93219A2D32B55400221F53 /* Embed Frameworks */,
+				2CC055D62D9D97D5000A2445 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
