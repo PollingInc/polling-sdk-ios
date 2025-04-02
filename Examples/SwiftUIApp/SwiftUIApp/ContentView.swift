@@ -21,16 +21,16 @@ struct ContentView: View {
 			self.view = view
 		}
 		func polling(onSuccess response: String) {
-			print("\(#function) response=\(response)")
+			NSLog("SUCCESS (SwiftUIApp): response=\(response)")
 		}
 		func polling(onFailure error: String) {
-			print("\(#function) error=\(error)")
+			NSLog("ERROR (SwiftUIApp): error=\(error)")
 		}
 		func polling(on reward: Polling.Reward) {
-			print("\(#function) rewar=\(reward)")
+			NSLog("REWARD (SwiftUIApp): reward=\(reward)")
 		}
 		func pollingOnSurveyAvailable() {
-			print("\(#function)")
+			NSLog("(SwiftUIApp) There is a survey available.")
 		}
 	}
 	var listener: Listener?
@@ -43,31 +43,31 @@ struct ContentView: View {
 	}
 
 	func showDialog() {
-		print("\(#function)")
+		NSLog("(SwiftUIApp) \(#function) UUID=\($UUID.wrappedValue)")
 		polling.viewType = .dialog
 		polling.showSurvey($UUID.wrappedValue)
 	}
 
 	func showBottom() {
-		print("\(#function)")
+		NSLog("(SwiftUIApp) \(#function) UUID=\($UUID.wrappedValue)")
 		polling.viewType = .bottom
 		polling.showSurvey($UUID.wrappedValue)
 	}
 
 	func embedDialog() {
-		print("\(#function)")
+		NSLog("(SwiftUIApp) \(#function)")
 		polling.viewType = .dialog
 		polling.showEmbedView()
 	}
 
 	func embedBottom() {
-		print("\(#function)")
+		NSLog("(SwiftUIApp) \(#function)")
 		polling.viewType = .bottom
 		polling.showEmbedView()
 	}
 
 	func logEvent() {
-		print("\(#function)")
+		NSLog("(SwiftUIApp) \(#function) eventName=\($eventName.wrappedValue), eventValue=\($eventValue.wrappedValue)")
 		polling.logEvent($eventName.wrappedValue, value: $eventValue.wrappedValue)
 	}
 

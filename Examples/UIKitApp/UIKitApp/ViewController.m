@@ -41,7 +41,7 @@
 
 - (IBAction)showDialog:(id)sender
 {
-	NSLog(@"%s", __func__);
+	NSLog(@"(UIKitApp) %s UUID=%@", __func__, self.surveyUUID.text);
 
 	NSString *uuid = self.surveyUUID.text;
 
@@ -51,7 +51,7 @@
 
 - (IBAction)showBottom:(id)sender
 {
-	NSLog(@"%s", __func__);
+	NSLog(@"(UIKitApp) %s UUID=%@", __func__, self.surveyUUID.text);
 
 	NSString *uuid = self.surveyUUID.text;
 
@@ -61,21 +61,21 @@
 
 - (IBAction)embedDialog:(id)sender
 {
-	NSLog(@"%s", __func__);
+	NSLog(@"(UIKitApp) %s", __func__);
 	_polling.viewType = POLViewTypeDialog;
 	[_polling showEmbedView];
 }
 
 - (IBAction)embedBottom:(id)sender
 {
-	NSLog(@"%s", __func__);
+	NSLog(@"(UIKitApp) %s", __func__);
 	_polling.viewType = POLViewTypeBottom;
 	[_polling showEmbedView];
 }
 
 - (IBAction)logEvent:(id)sender
 {
-	NSLog(@"%s", __func__);
+	NSLog(@"(UIKitApp) %s eventName=%@, eventValue=%@", __func__, self.eventName.text, self.eventValue.text);
 
 	NSString *event = self.eventName.text;
 	NSString *value = self.eventValue.text;
@@ -87,22 +87,22 @@
 
 - (void)pollingOnSuccess:(NSString *)response
 {
-	NSLog(@"%s response=%@", __func__, response);
+	NSLog(@"SUCCESS (UIKitApp): response=%@", response);
 }
 
 - (void)pollingOnFailure:(NSString *)error
 {
-	NSLog(@"%s error=%@", __func__, error);
+	NSLog(@"ERROR (UIKitApp): error=%@", error);
 }
 
 - (void)pollingOnReward:(POLReward *)reward
 {
-	NSLog(@"%s reward=%@", __func__, reward);
+	NSLog(@"REWARD (UIKitApp): reward=%@", reward);
 }
 
 - (void)pollingOnSurveyAvailable
 {
-	NSLog(@"%s", __func__);
+	NSLog(@"(UIKitApp) There is a survey available.");
 }
 
 @end
