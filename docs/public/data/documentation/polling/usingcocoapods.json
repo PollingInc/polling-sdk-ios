@@ -1,0 +1,192 @@
+{
+  "abstract" : [
+    {
+      "text" : "Adding the SDK to a project with CocoaPods",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingCocoaPods"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "role" : "article",
+    "roleHeading" : "Article",
+    "title" : "Using CocoaPods"
+  },
+  "primaryContentSections" : [
+    {
+      "content" : [
+        {
+          "anchor" : "Overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Add a ",
+              "type" : "text"
+            },
+            {
+              "code" : "pod",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " entry to the projects ",
+              "type" : "text"
+            },
+            {
+              "code" : "Podfile",
+              "type" : "codeVoice"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Step-One",
+          "level" : 3,
+          "text" : "Step One",
+          "type" : "heading"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "anchor" : "Adding-the-SDK-to-a-Project",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingSwiftPM",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/ManuallyAddSDK"
+      ],
+      "title" : "Adding the SDK to a Project"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/usingcocoapods"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    },
+    {
+      "paths" : [
+        "\/documentation\/polling\/usingcocoapods"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Poll and survey your users with ease",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.polling/documentation/Polling/ManuallyAddSDK": {
+  "abstract" : [
+    {
+      "text" : "Adding the SDK without a package manager",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/ManuallyAddSDK",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Manually Adding the SDK",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/manuallyaddsdk"
+},
+"doc://com.polling.polling/documentation/Polling/UsingSwiftPM": {
+  "abstract" : [
+    {
+      "text" : "Adding the SDK to a project with the Swift Package Manager",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingSwiftPM",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Using the Swift Package Manager",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/usingswiftpm"
+}
+}, 
+"variantOverrides":[
+  {
+    "patch" : [
+      {
+        "op" : "replace",
+        "path" : "\/identifier\/interfaceLanguage",
+        "value" : "occ"
+      },
+      {
+        "op" : "add",
+        "path" : "\/topicSections",
+        "value" : null
+      },
+      {
+        "op" : "replace",
+        "path" : "\/seeAlsoSections",
+        "value" : [
+          {
+            "anchor" : "Adding-the-SDK-to-a-Project",
+            "generated" : true,
+            "identifiers" : [
+              "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingSwiftPM",
+              "doc:\/\/com.polling.polling\/documentation\/Polling\/ManuallyAddSDK"
+            ],
+            "title" : "Adding the SDK to a Project"
+          }
+        ]
+      }
+    ],
+    "traits" : [
+      {
+        "interfaceLanguage" : "occ"
+      }
+    ]
+  }
+]
+}

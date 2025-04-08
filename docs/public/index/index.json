@@ -12,6 +12,10 @@
             "type" : "article"
           },
           {
+            "title" : "Tutorials",
+            "type" : "groupMarker"
+          },
+          {
             "children" : [
               {
                 "title" : "Configuring your project",
@@ -60,6 +64,25 @@
             "path" : "\/tutorials\/uikittoc",
             "title" : "Intergrating with UIKit",
             "type" : "overview"
+          },
+          {
+            "title" : "Adding the SDK to a Project",
+            "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/polling\/usingswiftpm",
+            "title" : "Using the Swift Package Manager",
+            "type" : "article"
+          },
+          {
+            "path" : "\/documentation\/polling\/usingcocoapods",
+            "title" : "Using CocoaPods",
+            "type" : "article"
+          },
+          {
+            "path" : "\/documentation\/polling\/manuallyaddsdk",
+            "title" : "Manually Adding the SDK",
+            "type" : "article"
           },
           {
             "title" : "Classes",
@@ -300,6 +323,10 @@
             "type" : "article"
           },
           {
+            "title" : "Tutorials",
+            "type" : "groupMarker"
+          },
+          {
             "children" : [
               {
                 "title" : "Configuring your project",
@@ -348,6 +375,25 @@
             "path" : "\/tutorials\/uikittoc",
             "title" : "Intergrating with UIKit",
             "type" : "overview"
+          },
+          {
+            "title" : "Adding the SDK to a Project",
+            "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/polling\/usingswiftpm",
+            "title" : "Using the Swift Package Manager",
+            "type" : "article"
+          },
+          {
+            "path" : "\/documentation\/polling\/usingcocoapods",
+            "title" : "Using CocoaPods",
+            "type" : "article"
+          },
+          {
+            "path" : "\/documentation\/polling\/manuallyaddsdk",
+            "title" : "Manually Adding the SDK",
+            "type" : "article"
           },
           {
             "title" : "Classes",

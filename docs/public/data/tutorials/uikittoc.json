@@ -11,7 +11,7 @@
   },
   "kind" : "overview",
   "metadata" : {
-    "category" : "UIKitToC",
+    "category" : "UIKit",
     "categoryPathComponent" : "UIKitToC",
     "role" : "overview",
     "title" : "Intergrating with UIKit"

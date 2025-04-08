@@ -11,7 +11,7 @@
   },
   "kind" : "overview",
   "metadata" : {
-    "category" : "SwiftUIToC",
+    "category" : "SwiftUI",
     "categoryPathComponent" : "SwiftUIToC",
     "role" : "overview",
     "title" : "Intergrating with SwiftUI"

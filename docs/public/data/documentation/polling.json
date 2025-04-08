@@ -105,10 +105,25 @@
     {
       "anchor" : "Topics",
       "identifiers" : [
-        "doc:\/\/com.polling.polling\/documentation\/Polling\/GettingStarted",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/GettingStarted"
+      ]
+    },
+    {
+      "anchor" : "Tutorials",
+      "identifiers" : [
         "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC",
         "doc:\/\/com.polling.polling\/tutorials\/UIKitToC"
-      ]
+      ],
+      "title" : "Tutorials"
+    },
+    {
+      "anchor" : "Adding-the-SDK-to-a-Project",
+      "identifiers" : [
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingSwiftPM",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingCocoaPods",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/ManuallyAddSDK"
+      ],
+      "title" : "Adding the SDK to a Project"
     },
     {
       "anchor" : "Classes",
@@ -190,6 +205,20 @@
   "title" : "Getting Started",
   "type" : "topic",
   "url" : "\/documentation\/polling\/gettingstarted"
+},
+"doc://com.polling.polling/documentation/Polling/ManuallyAddSDK": {
+  "abstract" : [
+    {
+      "text" : "Adding the SDK without a package manager",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/ManuallyAddSDK",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Manually Adding the SDK",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/manuallyaddsdk"
 },
 "doc://com.polling.polling/documentation/Polling/Polling": {
   "abstract" : [
@@ -369,6 +398,34 @@
   "type" : "topic",
   "url" : "\/documentation\/polling\/pollingdelegate"
 },
+"doc://com.polling.polling/documentation/Polling/UsingCocoaPods": {
+  "abstract" : [
+    {
+      "text" : "Adding the SDK to a project with CocoaPods",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingCocoaPods",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Using CocoaPods",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/usingcocoapods"
+},
+"doc://com.polling.polling/documentation/Polling/UsingSwiftPM": {
+  "abstract" : [
+    {
+      "text" : "Adding the SDK to a project with the Swift Package Manager",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingSwiftPM",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Using the Swift Package Manager",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/usingswiftpm"
+},
 "doc://com.polling.polling/tutorials/SwiftUIToC": {
   "abstract" : [
     {
@@ -413,10 +470,25 @@
           {
             "anchor" : "Topics",
             "identifiers" : [
-              "doc:\/\/com.polling.polling\/documentation\/Polling\/GettingStarted",
+              "doc:\/\/com.polling.polling\/documentation\/Polling\/GettingStarted"
+            ]
+          },
+          {
+            "anchor" : "Tutorials",
+            "identifiers" : [
               "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC",
               "doc:\/\/com.polling.polling\/tutorials\/UIKitToC"
-            ]
+            ],
+            "title" : "Tutorials"
+          },
+          {
+            "anchor" : "Adding-the-SDK-to-a-Project",
+            "identifiers" : [
+              "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingSwiftPM",
+              "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingCocoaPods",
+              "doc:\/\/com.polling.polling\/documentation\/Polling\/ManuallyAddSDK"
+            ],
+            "title" : "Adding the SDK to a Project"
           },
           {
             "anchor" : "Classes",

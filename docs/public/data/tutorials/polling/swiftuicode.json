@@ -49,7 +49,7 @@
   },
   "kind" : "project",
   "metadata" : {
-    "category" : "SwiftUIToC",
+    "category" : "SwiftUI",
     "categoryPathComponent" : "SwiftUIToC",
     "role" : "project",
     "title" : "Code your content view"

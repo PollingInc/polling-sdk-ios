@@ -58,7 +58,7 @@
   },
   "kind" : "project",
   "metadata" : {
-    "category" : "UIKitToC",
+    "category" : "UIKit",
     "categoryPathComponent" : "UIKitToC",
     "role" : "project",
     "title" : "Adding the framework"

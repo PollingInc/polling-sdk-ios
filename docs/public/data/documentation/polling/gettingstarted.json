@@ -39,7 +39,16 @@
         {
           "inlineContent" : [
             {
-              "text" : "Before starting, you will need to obtain an API key from Polling.com,",
+              "text" : "Before you begin you should sign up on ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "Polling.com",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ". Once you have",
               "type" : "text"
             },
             {
@@ -47,7 +56,46 @@
               "type" : "text"
             },
             {
-              "text" : "the API key links your integration to an embed.",
+              "text" : "an account you can create and embed and obtain an API key. You then",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "add the SDK to a project and finaly use the SDK’s API to load and",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "display surveys.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "API-Key-and-Customer-ID",
+          "level" : 3,
+          "text" : "API Key and Customer ID",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "You may obtain an API key from Polling.com dashboard (you will need an",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "account). An API key links your integration to an embed.",
               "type" : "text"
             }
           ],
@@ -89,7 +137,11 @@
               "type" : "text"
             },
             {
-              "text" : "this to link them to their surveys and events inside ",
+              "text" : "this to link your customers to surveys and events within the",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
               "type" : "text"
             },
             {
@@ -98,17 +150,211 @@
               "type" : "reference"
             },
             {
-              "text" : ".",
+              "text" : " ecosystem.",
               "type" : "text"
             }
           ],
           "type" : "paragraph"
         },
         {
-          "anchor" : "Section-header",
+          "anchor" : "Add-the-SDK-to-a-Project",
           "level" : 3,
-          "text" : "Section header",
+          "text" : "Add the SDK to a Project",
           "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "We support the Swift Package Manager, CocoaPods, and manual SDK",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "integration. If your existing projects is using the Swift Package",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Manger or CocoaPods we recommend using that package manager for adding",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the Polling SDK to your project. If you just want to try the SDK in a",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "throw away project manual integration is a great option. Refer to one",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "of the following articles for detailed instructions",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingSwiftPM",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingCocoaPods",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/ManuallyAddSDK",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
+        },
+        {
+          "anchor" : "Use-the-SDKs-API-in-a-Project",
+          "level" : 3,
+          "text" : "Use the SDK’s API in a Project",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Using the SDK’s API is simple and requires adding just a few lines of",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "code to a project.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "You must import the Polling SDK before using the API, then you",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "configure the SDK singleton, followed by logging events or using a",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "method to show a survey or an embed. That’s it in a nutshell.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "See the Swift UI or UIKit tutorials for detailed step-by-step",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "instructions",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "items" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            },
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/com.polling.polling\/tutorials\/UIKitToC",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            }
+          ],
+          "type" : "unorderedList"
         }
       ],
       "kind" : "content"
@@ -121,15 +367,6 @@
   },
   "sections" : [
 
-  ],
-  "seeAlsoSections" : [
-    {
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC",
-        "doc:\/\/com.polling.polling\/tutorials\/UIKitToC"
-      ]
-    }
   ],
   "variants" : [
     {
@@ -181,6 +418,48 @@
   "type" : "topic",
   "url" : "\/documentation\/polling"
 },
+"doc://com.polling.polling/documentation/Polling/ManuallyAddSDK": {
+  "abstract" : [
+    {
+      "text" : "Adding the SDK without a package manager",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/ManuallyAddSDK",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Manually Adding the SDK",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/manuallyaddsdk"
+},
+"doc://com.polling.polling/documentation/Polling/UsingCocoaPods": {
+  "abstract" : [
+    {
+      "text" : "Adding the SDK to a project with CocoaPods",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingCocoaPods",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Using CocoaPods",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/usingcocoapods"
+},
+"doc://com.polling.polling/documentation/Polling/UsingSwiftPM": {
+  "abstract" : [
+    {
+      "text" : "Adding the SDK to a project with the Swift Package Manager",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingSwiftPM",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Using the Swift Package Manager",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/usingswiftpm"
+},
 "doc://com.polling.polling/tutorials/SwiftUIToC": {
   "abstract" : [
     {
@@ -224,17 +503,9 @@
         "value" : null
       },
       {
-        "op" : "replace",
+        "op" : "add",
         "path" : "\/seeAlsoSections",
-        "value" : [
-          {
-            "generated" : true,
-            "identifiers" : [
-              "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC",
-              "doc:\/\/com.polling.polling\/tutorials\/UIKitToC"
-            ]
-          }
-        ]
+        "value" : null
       }
     ],
     "traits" : [

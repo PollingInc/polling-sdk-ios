@@ -1,0 +1,384 @@
+{
+  "abstract" : [
+    {
+      "text" : "Adding the SDK to a project with the Swift Package Manager",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.polling.polling\/documentation\/Polling"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingSwiftPM"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "modules" : [
+      {
+        "name" : "Polling"
+      }
+    ],
+    "role" : "article",
+    "roleHeading" : "Article",
+    "title" : "Using the Swift Package Manager"
+  },
+  "primaryContentSections" : [
+    {
+      "content" : [
+        {
+          "anchor" : "Overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "You can add the Polling SDK to a project using the Xcode UI.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Adding-the-Polling-SDK-to-a-Projecgt-Using-the-Xcode-UI",
+          "level" : 3,
+          "text" : "Adding the Polling SDK to a Projecgt Using the Xcode UI",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Choose ",
+              "type" : "text"
+            },
+            {
+              "code" : "File",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " → ",
+              "type" : "text"
+            },
+            {
+              "code" : "Add Package Dependencies…",
+              "type" : "codeVoice"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "identifier" : "xcode-add-package-dep-menu",
+              "type" : "image"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In the field labeled ",
+              "type" : "text"
+            },
+            {
+              "code" : "Search or Enter Package URL",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " paste the URL",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "https:\/\/github.com\/PollingInc\/polling-sdk-ios"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "identifier" : "xcode-package-url",
+              "type" : "image"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Click ",
+              "type" : "text"
+            },
+            {
+              "code" : "Add Package",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ". When the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Choose Package Products",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " dialog appears",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "choose either ",
+              "type" : "text"
+            },
+            {
+              "code" : "PollingSDK",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " or ",
+              "type" : "text"
+            },
+            {
+              "code" : "PollingSDK-Signed",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " by adding one to a",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "target. For the SDK you don’t want to use choose ",
+              "type" : "text"
+            },
+            {
+              "code" : "None",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " for its ",
+              "type" : "text"
+            },
+            {
+              "code" : "Add to Target",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " option.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "identifier" : "xcode-choose-package",
+              "type" : "image"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "When you’re satisfied with your package selection choose ",
+              "type" : "text"
+            },
+            {
+              "code" : "Add Package",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "anchor" : "Adding-the-SDK-to-a-Project",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingCocoaPods",
+        "doc:\/\/com.polling.polling\/documentation\/Polling\/ManuallyAddSDK"
+      ],
+      "title" : "Adding the SDK to a Project"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/polling\/usingswiftpm"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    },
+    {
+      "paths" : [
+        "\/documentation\/polling\/usingswiftpm"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.polling.polling/documentation/Polling": {
+  "abstract" : [
+    {
+      "text" : "Poll and survey your users with ease",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Polling",
+  "type" : "topic",
+  "url" : "\/documentation\/polling"
+},
+"doc://com.polling.polling/documentation/Polling/ManuallyAddSDK": {
+  "abstract" : [
+    {
+      "text" : "Adding the SDK without a package manager",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/ManuallyAddSDK",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Manually Adding the SDK",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/manuallyaddsdk"
+},
+"doc://com.polling.polling/documentation/Polling/UsingCocoaPods": {
+  "abstract" : [
+    {
+      "text" : "Adding the SDK to a project with CocoaPods",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingCocoaPods",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Using CocoaPods",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/usingcocoapods"
+},
+"xcode-add-package-dep-menu": {
+  "alt" : "Add Package Dependencies Menu Item",
+  "identifier" : "xcode-add-package-dep-menu",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.polling\/xcode-add-package-dep-menu.png"
+    }
+  ]
+},
+"xcode-choose-package": {
+  "alt" : "Choose Package Products",
+  "identifier" : "xcode-choose-package",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.polling\/xcode-choose-package.png"
+    }
+  ]
+},
+"xcode-package-url": {
+  "alt" : "Package URL field",
+  "identifier" : "xcode-package-url",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.polling\/xcode-package-url.png"
+    }
+  ]
+}
+}, 
+"variantOverrides":[
+  {
+    "patch" : [
+      {
+        "op" : "replace",
+        "path" : "\/identifier\/interfaceLanguage",
+        "value" : "occ"
+      },
+      {
+        "op" : "add",
+        "path" : "\/topicSections",
+        "value" : null
+      },
+      {
+        "op" : "replace",
+        "path" : "\/seeAlsoSections",
+        "value" : [
+          {
+            "anchor" : "Adding-the-SDK-to-a-Project",
+            "generated" : true,
+            "identifiers" : [
+              "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingCocoaPods",
+              "doc:\/\/com.polling.polling\/documentation\/Polling\/ManuallyAddSDK"
+            ],
+            "title" : "Adding the SDK to a Project"
+          }
+        ]
+      }
+    ],
+    "traits" : [
+      {
+        "interfaceLanguage" : "occ"
+      }
+    ]
+  }
+]
+}
