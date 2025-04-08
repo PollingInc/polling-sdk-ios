@@ -139,7 +139,7 @@ if CMD == 'prepare' then
   # get draft release notes
   if LAST_VERSION && !notes then
     notes = ""
-    raw_notes = %x(git log #{TAG}.. --pretty="format:- %sGITLOGOPTNEWLINE%b")
+    raw_notes = ex "git log --pretty='format:- %sGITLOGOPTNEWLINE%b' #{LAST_VERSION}..HEAD --"
     raw_notes.gsub! /GITLOGOPTNEWLINE$/, ''
     raw_notes.gsub! /GITLOGOPTNEWLINE/, "\n\n"
     raw_notes.split("\n").each do |line|
