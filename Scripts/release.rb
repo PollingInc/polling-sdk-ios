@@ -58,11 +58,12 @@ PRERELEASE = !!EXTRA_INFO # true if the version has extra info -Beta1,
 COMMITTED = 'Release/committed'
 VERFILE = "Release/#{NEW_VERSION}"
 PUBLISHED = 'Release/published'
+TAG = VER
 
 FILES = ARGV.join ' '
 
 puts "#{CMD.capitalize}ing #{VER_ALL}"
-puts "DRAFT=#{DRAFT}, PRERELEASE=#{PRERELEASE}, FILES=#{FILES}"
+puts "DRAFT=#{DRAFT}, PRERELEASE=#{PRERELEASE}, TAG=#{TAG}, FILES=#{FILES}"
 
 unless REPO_STATE.empty? then
   warn "Abort: Attempt to release from #{REPO_STATE} repo"
@@ -94,7 +95,7 @@ if CMD == 'commit' then
 
   pkg = File.read 'Scripts/templates/_Package.swift'
   pkg.gsub! '__VERSION__', VER
-  pkg.gsub! '__TAG__', NEW_VERSION
+  pkg.gsub! '__TAG__', TAG
   pkg.gsub! '__SIGNED_CHECKSUM__', SIGNED_CHECKSUM
   pkg.gsub! '__UNSIGNED_CHECKSUM__', UNSIGNED_CHECKSUM
   File.write 'Package.swift', pkg
@@ -102,7 +103,7 @@ if CMD == 'commit' then
 
   pod = File.read 'Scripts/templates/_PollingSDK.podspec'
   pod.gsub! '__VERSION__', VER
-  pod.gsub! '__TAG__', NEW_VERSION
+  pod.gsub! '__TAG__', TAG
   File.write 'Release/PollingSDK.podspec', pod
   puts "CocoaPods manifest updated: Release/PollingSDK.podspec"
 
@@ -130,15 +131,15 @@ if CMD == 'prepare' then
     exit 1
   end
   # check if the version was properly bumped
-  if LAST_VERSION && (LAST_VERSION == NEW_VERSION) then
-    puts "LAST_VERSION = NEW_VERSION = #{NEW_VERSION}"
+  if LAST_VERSION && (LAST_VERSION == TAG) then
+    puts "LAST_VERSION = TAG = #{TAG}"
     puts "Abort: Release #{NEW_VERSION} already exists"
     exit 1
   end
   # get draft release notes
   if LAST_VERSION && !notes then
     notes = ""
-    raw_notes = %x(git log #{LAST_VERSION}.. --pretty="format:- %sGITLOGOPTNEWLINE%b")
+    raw_notes = %x(git log #{TAG}.. --pretty="format:- %sGITLOGOPTNEWLINE%b")
     raw_notes.gsub! /GITLOGOPTNEWLINE$/, ''
     raw_notes.gsub! /GITLOGOPTNEWLINE/, "\n\n"
     raw_notes.split("\n").each do |line|
@@ -156,7 +157,7 @@ if CMD == 'prepare' then
   File.write RELTITLE, title
   File.write RELNOTES, notes
   pre = (PRERELEASE && '--prerelease') || ''
-  ex "gh release create #{NEW_VERSION} --draft -t \"#{title.strip}\" -F #{RELNOTES} #{pre} #{FILES}"
+  ex "gh release create #{TAG} --draft -t \"#{title.strip}\" -F #{RELNOTES} #{pre} #{FILES}"
   FileUtils.touch VERFILE
 end
 
@@ -173,7 +174,7 @@ if CMD == 'edit' then
     exit 1
   end
   pre = (PRERELEASE && '--prerelease') || ''
-  ex "gh release edit #{NEW_VERSION} --draft -t \"#{title.strip}\" -F #{RELNOTES} #{pre}"
+  ex "gh release edit #{TAG} --draft -t \"#{title.strip}\" -F #{RELNOTES} #{pre}"
 end
 
 if CMD == 'publish' then
@@ -183,7 +184,7 @@ if CMD == 'publish' then
   end
   ex "git push"
   pre = (PRERELEASE && '--prerelease') || ''
-  ex "gh release edit #{NEW_VERSION} --draft=false -t \"#{title.strip}\" -F #{RELNOTES} #{pre}"
+  ex "gh release edit #{TAG} --draft=false -t \"#{title.strip}\" -F #{RELNOTES} #{pre}"
   ex "pod trunk push Release/PollingSDK.podspec"
   docs_modified = %x(git -C Docs status --porcelain).length > 0
   if $?.exitstatus == 0 && docs_modified then
@@ -194,7 +195,7 @@ if CMD == 'publish' then
   FileUtils.touch PUBLISHED
 end
 
-ex "gh release view #{NEW_VERSION} -w"
+ex "gh release view #{TAG} -w"
 
 unless CMD == 'publish' then
   puts "Inspect and edit #{RELTITLE} and #{RELNOTES} before publishing!"
