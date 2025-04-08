@@ -543,6 +543,8 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 					[self.delegate networkSessionDidFailWithError:pErr];
 					return;
 				}
+				if (responseSurveys.count == 0)
+					return;
 				[POLPolling.polling.openedSurveys addObjectsFromArray:responseSurveys];
 			} else {
 				POLSurvey *responseSurvey = [self surveyForData:data error:&pErr];
@@ -550,6 +552,8 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 					[self.delegate networkSessionDidFailWithError:pErr];
 					return;
 				}
+				if (!responseSurvey)
+					return;
 				[POLPolling.polling.openedSurveys addObject:responseSurvey];
 			}
 		}];
@@ -589,6 +593,8 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 					[self.delegate networkSessionDidFailWithError:pErr];
 					return;
 				}
+				if (responseSurveys.count == 0)
+					return;
 				for (POLSurvey *responseSurvey in responseSurveys) {
 					if ([POLStorage.storage alreadyCompleted:responseSurvey]) {
 						POLLogInfo("Survey alread completed responseSurvey=%@", responseSurvey);
@@ -597,13 +603,14 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 					[POLStorage.storage addCompletedSurvey:responseSurvey];
 					[self.delegate networkSessionDidCompleteSurvey:responseSurvey];
 				}
-
 			} else {
 				POLSurvey *responseSurvey = [self surveyForData:data error:&pErr];
 				if (pErr) {
 					[self.delegate networkSessionDidFailWithError:pErr];
 					return;
 				}
+				if (!responseSurvey)
+					return;
 				[self.delegate networkSessionDidCompleteSurvey:responseSurvey];
 			}
 			[POLStorage.storage write];
