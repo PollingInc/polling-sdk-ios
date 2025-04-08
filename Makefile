@@ -18,6 +18,7 @@ PLUTIL ?= plutil
 
 PRODUCT_NAME = Polling
 VER := $(shell grep "^PROJECT_VERSION" Configs/Framework.xcconfig | cut -d = -f 2 | tr -d ' ')
+TAG := $(VER)
 
 SRCROOT = $(PROJROOT)/$(PRODUCT_NAME)
 WORKSPACE = $(PRODUCT_NAME).xcworkspace

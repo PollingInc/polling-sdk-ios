@@ -7,15 +7,15 @@ PUBLISHED = $(RELEASE_DIR)/published
 RELTITLE = $(RELEASE_DIR)/title.txt
 RELNOTES = $(RELEASE_DIR)/notes.md
 
-UNSIGNED_TARBALL = $(RELEASE_DIR)/$(PRODUCT_NAME).xcframework-v$(VER)-unsigned.tar.gz
-UNSIGNED_ZIP = $(RELEASE_DIR)/$(PRODUCT_NAME).xcframework-v$(VER)-unsigned.zip
-SIGNED_TARBALL = $(RELEASE_DIR)/$(PRODUCT_NAME).xcframework-v$(VER)-signed.tar.gz
-SIGNED_ZIP = $(RELEASE_DIR)/$(PRODUCT_NAME).xcframework-v$(VER)-signed.zip
+UNSIGNED_TARBALL = $(RELEASE_DIR)/$(PRODUCT_NAME).xcframework-$(TAG)-unsigned.tar.gz
+UNSIGNED_ZIP = $(RELEASE_DIR)/$(PRODUCT_NAME).xcframework-$(TAG)-unsigned.zip
+SIGNED_TARBALL = $(RELEASE_DIR)/$(PRODUCT_NAME).xcframework-$(TAG)-signed.tar.gz
+SIGNED_ZIP = $(RELEASE_DIR)/$(PRODUCT_NAME).xcframework-$(TAG)-signed.zip
 
-SWIFTPM_UNSIGNED_ZIP = $(RELEASE_DIR)/$(PRODUCT_NAME).xcframework-swiftpm-v$(VER)-unsigned.zip
-SWIFTPM_SIGNED_ZIP = $(RELEASE_DIR)/$(PRODUCT_NAME).xcframework-swiftpm-v$(VER)-signed.zip
+SWIFTPM_UNSIGNED_ZIP = $(RELEASE_DIR)/$(PRODUCT_NAME).xcframework-swiftpm-$(TAG)-unsigned.zip
+SWIFTPM_SIGNED_ZIP = $(RELEASE_DIR)/$(PRODUCT_NAME).xcframework-swiftpm-$(TAG)-signed.zip
 
-COCOAPODS_ZIP = $(RELEASE_DIR)/$(PRODUCT_NAME).xcframework-cocoapods-v$(VER).zip
+COCOAPODS_ZIP = $(RELEASE_DIR)/$(PRODUCT_NAME).xcframework-cocoapods-$(TAG).zip
 
 BINARIES += $(UNSIGNED_TARBALL)
 BINARIES += $(UNSIGNED_ZIP)
