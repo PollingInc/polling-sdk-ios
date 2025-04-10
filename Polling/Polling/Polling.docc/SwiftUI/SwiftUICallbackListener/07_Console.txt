@@ -1,0 +1,2 @@
+SUCCESS: response={"reward":{"reward_amount":null,"reward_name":null},"question_count":1,"started_at":"","userSurveyStatus":"completed","uuid":"caa4fc7a-a7b9-489c-a7c8-e5e7f8aeeefa","completed_at":"2025-04-10T22:34:15+00:00","name":"SwiftUI Tutorial Survey"}
+REWARD: reward=<POLReward:0x600000296040 name='<null>', amount=<null>>

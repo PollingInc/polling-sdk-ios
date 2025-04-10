@@ -47,7 +47,7 @@
 			}
 
 			@Step {
-				Run the project and tap the "Show Survey" button
+				Run the app and tap the "Show Survey" button
 				@Image(source: "08_swiftui-app-with-button.png", alt: "App with button")
 			}
 		}
