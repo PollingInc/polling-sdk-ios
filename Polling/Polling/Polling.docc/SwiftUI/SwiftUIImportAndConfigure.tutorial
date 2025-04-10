@@ -1,0 +1,55 @@
+@Tutorial(time: <#number#>) {
+    @Intro(title: "Import and configure") {
+		Guides you through importing the Polling SDK and configuring the SDK.
+		<!-- @Image(source: <#file#>, alt: "<#accessible description#>")-->
+    }
+
+    @Section(title: "Import and configure the Polling framework") {
+        @ContentAndMedia {
+			Import the polling framework
+			@Image(source: import-swiftui-light.png, alt: "import icon")
+        }
+
+        @Steps {
+			@Step {
+				Open the `ContentView.swift` file
+				@Code(name: "ContentView.swift", file: 01_ContentView-initial.swift)
+			}
+
+            @Step {
+                Add import statement
+                @Code(name: "ContentView.swift", file: 02_ContentView-import.swift)
+            }
+
+			@Step {
+				Create a reference to the Polling singleton object
+				@Code(name: "ContentView.swift", file: 03_ContentView-polling-singleton.swift)
+			}
+
+			@Step {
+				Add init method
+				@Code(name: "ContentView.swift", file: 04_ContentView-init.swift)
+			}
+
+			@Step {
+				Configure Customer ID and API Key
+				@Code(name: "ContentView.swift", file: 05_ContentView-config.swift)
+			}
+
+			@Step {
+				Use real values
+				@Code(name: "ContentView.swift", file: 06_ContentView-config-real-values.swift)
+			}
+
+			@Step {
+				Add show survey button
+				@Code(name: "ContentView.swift", file: 07_ContentView-show-survey.swift)
+			}
+
+			@Step {
+				Run the project and tap the "Show Survey" button
+				@Image(source: "08_swiftui-app-with-button.png", alt: "App with button")
+			}
+		}
+	}
+}
