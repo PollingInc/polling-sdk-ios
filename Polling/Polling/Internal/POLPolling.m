@@ -13,11 +13,11 @@
 #import "POLSurveyBottomAnimateInController.h"
 #import "POLTriggeredSurveyController.h"
 
-
 #import "POLSurvey.h"
 #import "POLSurvey+Private.h"
 #import "POLReward.h"
 #import "POLTriggeredSurvey.h"
+#import "POLStorage.h"
 
 static const NSTimeInterval POLPollingPollRateInterval = 60 * 60;      // 1 hour
 
@@ -311,13 +311,20 @@ NS_INLINE BOOL POLIsObviouslyInvalidString(NSString *str)
 		return;
 	}
 
-	// success
-	if ([self.delegate respondsToSelector:@selector(pollingOnSuccess:)])
-		[self.delegate pollingOnSuccess:survey.JSONRepresentation];
+	if ([POLStorage.storage alreadyCompleted:survey]) {
+		POLLogInfo("Survey already completed responseSurvey=%@", survey);
+		return;
+	} else {
+		[POLStorage.storage addCompletedSurvey:survey];
 
-	// reward
-	if ([self.delegate respondsToSelector:@selector(pollingOnReward:)])
-		[self.delegate pollingOnReward:survey.reward];
+		// success
+		if ([self.delegate respondsToSelector:@selector(pollingOnSuccess:)])
+			[self.delegate pollingOnSuccess:survey.JSONRepresentation];
+
+		// reward
+		if ([self.delegate respondsToSelector:@selector(pollingOnReward:)])
+			[self.delegate pollingOnReward:survey.reward];
+	}
 
 	// completion
 	if (!survey.isAvailable)

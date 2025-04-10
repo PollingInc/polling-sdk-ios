@@ -537,25 +537,24 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 				return;
 			}
 
-			if (survey.embedViewRequested) {
-				NSArray<POLSurvey *> *responseSurveys = [self surveysFromData:data error:&pErr];
-				if (pErr) {
-					[self.delegate networkSessionDidFailWithError:pErr];
-					return;
-				}
-				if (responseSurveys.count == 0)
-					return;
-				[POLPolling.polling.openedSurveys addObjectsFromArray:responseSurveys];
-			} else {
+			NSArray<POLSurvey *> *responseSurveys = @[];
+			if (survey.embedViewRequested)
+				responseSurveys = [self surveysFromData:data error:&pErr];
+			else {
 				POLSurvey *responseSurvey = [self surveyForData:data error:&pErr];
-				if (pErr) {
-					[self.delegate networkSessionDidFailWithError:pErr];
-					return;
-				}
-				if (!responseSurvey)
-					return;
-				[POLPolling.polling.openedSurveys addObject:responseSurvey];
+				if (responseSurvey)
+					responseSurveys = @[responseSurvey];
 			}
+
+			if (pErr) {
+				[self.delegate networkSessionDidFailWithError:pErr];
+				return;
+			}
+
+			if (responseSurveys.count == 0)
+				return;
+
+			[POLPolling.polling.openedSurveys addObjectsFromArray:responseSurveys];
 		}];
 		break;
 	}
@@ -586,33 +585,26 @@ NSString * const POLSurveyDataTaskTypeDescription(POLSurveyDataTaskType taskType
 				return;
 			}
 
-			[POLStorage.storage read];
-			if (survey.embedViewRequested) {
-				NSArray<POLSurvey *> *responseSurveys = [self surveysFromData:data error:&pErr];
-				if (pErr) {
-					[self.delegate networkSessionDidFailWithError:pErr];
-					return;
-				}
-				if (responseSurveys.count == 0)
-					return;
-				for (POLSurvey *responseSurvey in responseSurveys) {
-					if ([POLStorage.storage alreadyCompleted:responseSurvey]) {
-						POLLogInfo("Survey alread completed responseSurvey=%@", responseSurvey);
-						continue;
-					}
-					[POLStorage.storage addCompletedSurvey:responseSurvey];
-					[self.delegate networkSessionDidCompleteSurvey:responseSurvey];
-				}
-			} else {
+			NSArray<POLSurvey *> *responseSurveys = @[];
+			if (survey.embedViewRequested)
+				responseSurveys = [self surveysFromData:data error:&pErr];
+			else {
 				POLSurvey *responseSurvey = [self surveyForData:data error:&pErr];
-				if (pErr) {
-					[self.delegate networkSessionDidFailWithError:pErr];
-					return;
-				}
-				if (!responseSurvey)
-					return;
-				[self.delegate networkSessionDidCompleteSurvey:responseSurvey];
+				if (responseSurvey)
+					responseSurveys = @[responseSurvey];
 			}
+
+			if (pErr) {
+				[self.delegate networkSessionDidFailWithError:pErr];
+				return;
+			}
+
+			if (responseSurveys.count == 0)
+				return;
+
+			[POLStorage.storage read];
+			for (POLSurvey *responseSurvey in responseSurveys)
+				[self.delegate networkSessionDidCompleteSurvey:responseSurvey];
 			[POLStorage.storage write];
 		}];
 		break;
