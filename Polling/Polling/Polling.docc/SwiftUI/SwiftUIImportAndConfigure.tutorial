@@ -7,6 +7,17 @@
     @Section(title: "Import and configure the Polling framework") {
         @ContentAndMedia {
 			Import the polling framework
+
+			Please read <doc:GettingStarted> and add the
+			SDK to you app using one of these supported
+			methods: <doc:UsingSwiftPM>,
+			<doc:UsingCocoaPods>, or by
+			<doc:ManuallyAddSDK>.
+
+			> Important: Before starting this tutorial,
+                          the Polling SDK must be added to you app
+                          using on of the supported methods:
+
 			@Image(source: import-swiftui-light.png, alt: "import icon")
         }
 

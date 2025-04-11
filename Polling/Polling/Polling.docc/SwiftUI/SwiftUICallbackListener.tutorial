@@ -6,15 +6,22 @@
 
     @Section(title: "Add callback listener to the app") {
         @ContentAndMedia {
-		Add a listener for the callback the SDK uses `polling(on: Polling.Reward)`,
-		`polling(onFailure: String)`, `polling(onSuccess: String)`, and `pollingOnSurveyAvailable()`.
-		@Image(source: "swiftui-callback.png", alt: "callback listener")
+		Add a listener object that implements the SDK callbacks.
 
 		In SwiftUI a `View` can not be used as
 		delegate. Delegates must inherit from `NSObject`. In
-		SwiftUI `View`s are protocols that exist separately and
-		outside of Objective-C, Foundation, and UIKit.
+		SwiftUI `View`s are protocols that exist separately
+		and outside of Objective-C, Foundation, and
+		UIKit. Because of this limitation you need to create a
+		small object that acts as a proxy between the SDK and
+		your app's `View`s.
 
+		> Warning: SwiftUI's objects, such as a `View`, can
+                  not be assigned as a delegate. You **must** use a
+                  proxy technique similar to the technique in this
+                  tutorial.
+
+		@Image(source: "swiftui-callback.png", alt: "callback listener")
 	}
 
         @Steps {
