@@ -1,0 +1,2 @@
+SUCCESS: response={"reward":{"reward_amount":null,"reward_name":null},"question_count":1,"started_at":"","userSurveyStatus":"completed","uuid":"da7c0197-6495-45d7-8354-672dbe1eff75","completed_at":"2025-04-11T17:57:53+00:00","name":"UIKit Tutorial Survey"}
+REWARD: reward=<POLReward:0x60000027e3e0 name='<null>', amount=<null>>
