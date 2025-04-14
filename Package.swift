@@ -19,13 +19,13 @@ let package = Package(
 	targets: [
 		.binaryTarget(
 			name: "PollingSDK",
-			url: "https://github.com/pollinginc/polling-sdk-ios/releases/download/1.0.0-RC1/Polling.xcframework-swiftpm-1.0.0-RC1-unsigned.zip",
-			checksum: "7e08ee61ac5fe1ebf9da3fd34cadb1d13f242d1c8be92ff682cb2dff60e7a128"
+			url: "https://github.com/pollinginc/polling-sdk-ios/releases/download/1.0.0-RC2/Polling.xcframework-swiftpm-1.0.0-RC2-unsigned.zip",
+			checksum: "e9abf2393268422e86c46a87d643028d33b1e58629d2a968b5001918ff4bd0e7"
 		),
 		.binaryTarget(
 			name: "PollingSDK-Signed",
-			url: "https://github.com/pollinginc/polling-sdk-ios/releases/download/1.0.0-RC1/Polling.xcframework-swiftpm-1.0.0-RC1-signed.zip",
-			checksum: "f545308c6d8adc667e97c0a373e03883d74681d98691051e230886c07eeb7d5d"
+			url: "https://github.com/pollinginc/polling-sdk-ios/releases/download/1.0.0-RC2/Polling.xcframework-swiftpm-1.0.0-RC2-signed.zip",
+			checksum: "cf7b67e600e9c46239da16a31c1d62cc9ed32c629360bbc93ca9d13f3a46f403"
 		),
 	]
 )
