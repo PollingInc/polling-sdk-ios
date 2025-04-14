@@ -1,25 +1,18 @@
 @Tutorials(name: "SwiftUI") {
-	@Intro(title: "Intergrating with SwiftUI") {
+    @Intro(title: "Integrating with SwiftUI") {
 		Tutorial for integrating the Polling SDK in your SwiftUI app.
-		
-		<!-- @Image(source: <#file#>, alt: "<#accessible description#>") -->
+        @Image(source: swiftui-icon.png, alt: "dot swift icon")
+    }
+
+    @Chapter(name: "Import & Configure") {
+		Importing and configuring the Polling SDK
+        @Image(source: "import-dark", alt: "Importing a framework")
+        @TutorialReference(tutorial: "doc:SwiftUIImportAndConfigure")
+    }
+
+	@Chapter(name: "Add Callback Listener") {
+		Adding a callback listener to an app
+		@Image(source: "swiftui-callback.png", alt: "callback listener")
+		@TutorialReference(tutorial: "doc:SwiftUICallbackListener")
 	}
-	
-	@Chapter(name: "Configuring your project") {
-		Adding the framework to you project
-		
-		@Image(source: "xcframework.png", alt: "xcframework icon")
-		
-		@TutorialReference(tutorial: "doc:tutorials/ConfigureProject")
-	}
-	
-	
-	@Chapter(name: "Coding") {
-		Importing and using the Polling SDK
-		
-		@Image(source: "swift-dot-swift.png", alt: ".swift file icon")
-		
-		@TutorialReference(tutorial: "doc:tutorials/SwiftUICode")
-	}
-	
 }

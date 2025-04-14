@@ -5,79 +5,108 @@
 		<!-- @Image(source: "code-uikit.svg", alt: "coding keyboard") -->
     }
 
-    @Section(title: "Import the Polling framework") {
+    @Section(title: "Setup the UI") {
         @ContentAndMedia {
-            Add the framework to your project
+            Setup the UI by adding a button and action method to your view controller
 
             @Image(source: "import-uikit-light.png", alt: "import icon")
         }
 
         @Steps {
             @Step {
-				Locate a View Controller that will manage your Polling related code
-                @Image(source: "locate-view-controller.png", alt: "View controller selected")
+				Open the Storyboard that corresponds to the View Controller that will interact with the Polling SDK
+                @Image(source: "01_storyboard-open.png", alt: "Open view controller's storyboard")
             }
 
 			@Step {
-				Locate the import section of the view controller
-				@Code(name: "ViewController.m", file: "ViewController-import-section.m")
+				Add a button to the View Controller
+				@Image(source: "02_storyboard-add-button.png", alt: "a new button on the storyboard")
 			}
 
 			@Step {
-				Add an import statement that imports the Polling framework
-				@Code(name: "ViewController.m", file: "ViewController-add-import.m")
+				Set the button's title to "Show Survey"
+				@Image(source: "03_storyboard-button-title.png", alt: "set button's title to 'Show Survey'")
+			}
+
+			@Step {
+				Add a new Action for the button
+				@Image(source: "04_storyboard-add-ibaction.png", alt: "add new IBAction")
+			}
+
+			@Step {
+				Click connect
+				@Image(source: "05_storyboard-ibaction-method.png", alt: "generated IBAction")
 			}
         }
     }
 
-	@Section(title: "Configuring Polling") {
+	@Section(title: "Coding you app to use the Polling SDK") {
 		@ContentAndMedia {
-			Configure the Polling singleton object with your API Key and Customer ID.
+			In this section you will: Import the Polling
+			SDK.  Configure the Polling singleton object
+			with your API Key and Customer ID. Configure
+			your view controller to conform to the
+			`POLPollingDelegate` protocol. Add the
+			delegate methods and assign the delgate
+			property.
 
-			@Image(source: "config.png", alt: "gear icon representing config")
-		}
+			Please read <doc:GettingStarted> and add the
+			SDK to you app using one of these supported
+			methods: <doc:UsingSwiftPM>,
+			<doc:UsingCocoaPods>, or by
+			<doc:ManuallyAddSDK>.
 
-		@Steps {
-			@Step {
-				Locate `viewDidLoad` method
-				@Code(name: "viewDidLoad Method", file: "ViewController-view-did-load.m")
-			}
-
-			@Step {
-				Add API Key and Customer ID.
-				@Code(name: "Configured with API Key and Customer ID", file: "ViewController-configure-polling.m")
-			}
-		}
-	}
-
-	@Section(title: "Make your view controller Polling's delegate") {
-		@ContentAndMedia {
-
-			Configure your view controller to conform to the `POLPollingDelegate`
-			protocol. Add the delegate methods and assign the delgate property.
+			> Important: Before starting this section,
+                          the Polling SDK must be added to you app
+                          using on of the supported methods:
 
 			@Image(source: "delegate.png", alt: "delegate message bubbles")
 		}
 
 		@Steps {
 			@Step {
-				Locate the private anonymous class category
-				@Code(name: "Private category", file: "ViewController-private-category.m")
+				Open the `ViewController.m` file
+				@Code(name: "ViewController.m", file: 01_ViewController-initial.m)
 			}
 
 			@Step {
-				Make your view controller conform to the `POLPollingDelegate` protocol
-				@Code(name: "Conform to the protocol", file: "ViewController-conform-to-proto.m")
+				Import the Polling SDK
+				@Code(name: "ViewController.m", file: 02_ViewController-import.m)
 			}
-			
+
 			@Step {
-				Add the delegate methods implementations to the view controller
-				@Code(name: "Implement delegate methods", file: "ViewController-add-delegate-methods.m")
+				Configure Customer ID and API Key
+				@Code(name: "ViewController.m", file: 03_ViewController-config.m)
 			}
-			
+
 			@Step {
-				Assign your view controller to the Polling's delegate property
-				@Code(name: "Assign delegate", file: "ViewController-assign-delegate.m")
+				Use real values
+				@Code(name: "ViewController.m", file: 04_ViewController-config-real-values.m)
+			}
+
+			@Step {
+				Make your view controller conform to the `POLPollingDelegate` protocol and set your View Controller as the Polling SDK's delegate
+				@Code(name: "ViewController.m", file: 05_ViewController-set-delegate.m)
+			}
+
+			@Step {
+				Add implemtations for delegate methods from the `POLPollingDelegate` protocol to the view controller
+				@Code(name:  "ViewController.m", file: 06_ViewController-add-delegate-methods.m)
+			}
+
+			@Step {
+				Implement the view controller's `-showSurvey:` action method
+				@Code(name:  "ViewController.m", file: 07_ViewController-call-show-survey.m)
+			}
+
+			@Step {
+				Run the app and tap the "Show Survey" button
+				@Image(source: "08_uikit-app-with-button.png", alt: "app with button")
+			}
+
+			@Step {
+				Run the app, tap the "Show Survey" button, complete the survey, close the survey, and observe the callbacks in the Console
+				@Code(name: "", file: 09_uikit-Console.txt)
 			}
 		}
 	}
