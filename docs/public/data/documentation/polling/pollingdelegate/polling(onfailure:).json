@@ -66,6 +66,7 @@
         "text" : "pollingOnFailure:"
       }
     ],
+    "required" : true,
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -322,6 +323,7 @@
       "text" : "pollingOnFailure:"
     }
   ],
+  "required" : true,
   "role" : "symbol",
   "title" : "polling(onFailure:)",
   "type" : "topic",

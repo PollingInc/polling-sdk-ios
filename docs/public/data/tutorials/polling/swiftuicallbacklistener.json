@@ -1,0 +1,965 @@
+{
+  "hierarchy" : {
+    "modules" : [
+      {
+        "projects" : [
+          {
+            "reference" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUIImportAndConfigure",
+            "sections" : [
+              {
+                "kind" : "task",
+                "reference" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUIImportAndConfigure#Import-and-configure-the-Polling-framework"
+              }
+            ]
+          }
+        ],
+        "reference" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC\/Import-&-Configure"
+      },
+      {
+        "projects" : [
+          {
+            "reference" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICallbackListener",
+            "sections" : [
+              {
+                "kind" : "task",
+                "reference" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICallbackListener#Add-callback-listener-to-the-app"
+              }
+            ]
+          }
+        ],
+        "reference" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC\/Add-Callback-Listener"
+      }
+    ],
+    "paths" : [
+      [
+        "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC",
+        "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC\/$volume",
+        "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC\/Add-Callback-Listener"
+      ]
+    ],
+    "reference" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC"
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICallbackListener"
+  },
+  "kind" : "project",
+  "metadata" : {
+    "category" : "SwiftUI",
+    "categoryPathComponent" : "SwiftUIToC",
+    "role" : "project",
+    "title" : "Add Callback Listener"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+    {
+      "chapter" : "Add Callback Listener",
+      "content" : [
+        {
+          "inlineContent" : [
+            {
+              "text" : "Guides you through adding a callback listener",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "hero",
+      "title" : "Add Callback Listener"
+    },
+    {
+      "kind" : "tasks",
+      "tasks" : [
+        {
+          "anchor" : "Add-callback-listener-to-the-app",
+          "contentSection" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Add a listener object that implements the SDK callbacks.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "In SwiftUI a ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "View",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " can not be used as",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "delegate. Delegates must inherit from ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "NSObject",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : ". In",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "SwiftUI ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "View",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : "s are protocols that exist separately",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "and outside of Objective-C, Foundation, and",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "UIKit. Because of this limitation you need to create a",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "small object that acts as a proxy between the SDK and",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "your app’s ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "View",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : "s.",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                },
+                {
+                  "content" : [
+                    {
+                      "inlineContent" : [
+                        {
+                          "text" : "SwiftUI’s objects, such as a ",
+                          "type" : "text"
+                        },
+                        {
+                          "code" : "View",
+                          "type" : "codeVoice"
+                        },
+                        {
+                          "text" : ", can",
+                          "type" : "text"
+                        },
+                        {
+                          "text" : " ",
+                          "type" : "text"
+                        },
+                        {
+                          "text" : "not be assigned as a delegate. You ",
+                          "type" : "text"
+                        },
+                        {
+                          "inlineContent" : [
+                            {
+                              "text" : "must",
+                              "type" : "text"
+                            }
+                          ],
+                          "type" : "strong"
+                        },
+                        {
+                          "text" : " use a",
+                          "type" : "text"
+                        },
+                        {
+                          "text" : " ",
+                          "type" : "text"
+                        },
+                        {
+                          "text" : "proxy technique similar to the technique in this",
+                          "type" : "text"
+                        },
+                        {
+                          "text" : " ",
+                          "type" : "text"
+                        },
+                        {
+                          "text" : "tutorial.",
+                          "type" : "text"
+                        }
+                      ],
+                      "type" : "paragraph"
+                    }
+                  ],
+                  "name" : "Warning",
+                  "style" : "warning",
+                  "type" : "aside"
+                }
+              ],
+              "kind" : "contentAndMedia",
+              "media" : "swiftui-callback.png",
+              "mediaPosition" : "trailing"
+            }
+          ],
+          "stepsSection" : [
+            {
+              "caption" : [
+
+              ],
+              "code" : "01_ContentView_cb-initial.swift",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Open the app’s ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "ContentView.swift",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "02_ContentView_cb-listener-class.swift",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Add a new inner class called ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "Listener",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " that inherits from ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "NSObject",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " and adopts the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "PollingDelegate",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " protocol",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "03_ContentView_cb-init.swift",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Add a variable to hold a ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "View",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " and an ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "init",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " method that takes the a ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "View",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " as an argument",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "04_ContentView_cb-listener-var.swift",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Add a variable to the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "ContentView",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " that will hold an instance of the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "Listener",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "05_ContentView_cb-set-delegate.swift",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Create an instance of the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "Listener",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " and add it as the the delegate of ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "polling",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " singleton",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "06_ContentView_cb-callbacks.swift",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Add implementations for the delegate method callbacks defined by ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "PollingDelegate",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "07_Console.txt",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Run the app, tap the “Show Survey” button, complete the survey, close the survey, and observe the callbacks in the Console",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            }
+          ],
+          "title" : "Add callback listener to the app"
+        }
+      ]
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/tutorials\/polling\/swiftuicallbacklistener"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    },
+    {
+      "paths" : [
+        "\/tutorials\/polling\/swiftuicallbacklistener"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"01_ContentView_cb-initial.swift": {
+  "content" : [
+    "import SwiftUI",
+    "import Polling",
+    "",
+    "struct ContentView: View {",
+    "    private var polling: Polling = Polling()",
+    "",
+    "    init() {",
+    "        polling.customerID = \"id_\\(Date().timeIntervalSinceReferenceDate)\"",
+    "        polling.apiKey = \"l4chQVGY1rYlFS7WPmbl5vIqCsZunsuDXUOx\"",
+    "    }",
+    "",
+    "    var body: some View {",
+    "        VStack {",
+    "            Image(systemName: \"globe\")",
+    "                .imageScale(.large)",
+    "                .foregroundStyle(.tint)",
+    "            Button(\"Show Survey\") {",
+    "                polling.showSurvey(\"caa4fc7a-a7b9-489c-a7c8-e5e7f8aeeefa\")",
+    "            }.padding(.top)",
+    "        }.buttonStyle(.bordered)",
+    "        .padding()",
+    "    }",
+    "}"
+  ],
+  "fileName" : "ContentView.swift",
+  "fileType" : "swift",
+  "highlights" : [
+
+  ],
+  "identifier" : "01_ContentView_cb-initial.swift",
+  "syntax" : "swift",
+  "type" : "file"
+},
+"02_ContentView_cb-listener-class.swift": {
+  "content" : [
+    "import SwiftUI",
+    "import Polling",
+    "",
+    "struct ContentView: View {",
+    "    private var polling: Polling = Polling()",
+    "",
+    "    class Listener: NSObject, PollingDelegate {",
+    "",
+    "    }",
+    "",
+    "    init() {",
+    "        polling.customerID = \"id_\\(Date().timeIntervalSinceReferenceDate)\"",
+    "        polling.apiKey = \"l4chQVGY1rYlFS7WPmbl5vIqCsZunsuDXUOx\"",
+    "    }",
+    "",
+    "    var body: some View {",
+    "        VStack {",
+    "            Image(systemName: \"globe\")",
+    "                .imageScale(.large)",
+    "                .foregroundStyle(.tint)",
+    "            Button(\"Show Survey\") {",
+    "                polling.showSurvey(\"caa4fc7a-a7b9-489c-a7c8-e5e7f8aeeefa\")",
+    "            }.padding(.top)",
+    "        }.buttonStyle(.bordered)",
+    "        .padding()",
+    "    }",
+    "}"
+  ],
+  "fileName" : "ContentView.swift",
+  "fileType" : "swift",
+  "highlights" : [
+    {
+      "line" : 7
+    },
+    {
+      "line" : 8
+    },
+    {
+      "line" : 9
+    },
+    {
+      "line" : 10
+    }
+  ],
+  "identifier" : "02_ContentView_cb-listener-class.swift",
+  "syntax" : "swift",
+  "type" : "file"
+},
+"03_ContentView_cb-init.swift": {
+  "content" : [
+    "import SwiftUI",
+    "import Polling",
+    "",
+    "struct ContentView: View {",
+    "    private var polling: Polling = Polling()",
+    "",
+    "    class Listener: NSObject, PollingDelegate {",
+    "        var view: any View",
+    "        init(view: any View) {",
+    "            self.view = view",
+    "        }",
+    "    }",
+    "",
+    "    init() {",
+    "        polling.customerID = \"id_\\(Date().timeIntervalSinceReferenceDate)\"",
+    "        polling.apiKey = \"l4chQVGY1rYlFS7WPmbl5vIqCsZunsuDXUOx\"",
+    "    }",
+    "",
+    "    var body: some View {",
+    "        VStack {",
+    "            Image(systemName: \"globe\")",
+    "                .imageScale(.large)",
+    "                .foregroundStyle(.tint)",
+    "            Button(\"Show Survey\") {",
+    "                polling.showSurvey(\"caa4fc7a-a7b9-489c-a7c8-e5e7f8aeeefa\")",
+    "            }.padding(.top)",
+    "        }.buttonStyle(.bordered)",
+    "        .padding()",
+    "    }",
+    "}"
+  ],
+  "fileName" : "ContentView.swift",
+  "fileType" : "swift",
+  "highlights" : [
+    {
+      "line" : 8
+    },
+    {
+      "line" : 9
+    },
+    {
+      "line" : 10
+    },
+    {
+      "line" : 11
+    }
+  ],
+  "identifier" : "03_ContentView_cb-init.swift",
+  "syntax" : "swift",
+  "type" : "file"
+},
+"04_ContentView_cb-listener-var.swift": {
+  "content" : [
+    "import SwiftUI",
+    "import Polling",
+    "",
+    "struct ContentView: View {",
+    "    private var polling: Polling = Polling()",
+    "",
+    "    class Listener: NSObject, PollingDelegate {",
+    "        var view: any View",
+    "        init(view: any View) {",
+    "            self.view = view",
+    "        }",
+    "    }",
+    "    var listener: Listener?",
+    "",
+    "    init() {",
+    "        polling.customerID = \"id_\\(Date().timeIntervalSinceReferenceDate)\"",
+    "        polling.apiKey = \"l4chQVGY1rYlFS7WPmbl5vIqCsZunsuDXUOx\"",
+    "    }",
+    "",
+    "    var body: some View {",
+    "        VStack {",
+    "            Image(systemName: \"globe\")",
+    "                .imageScale(.large)",
+    "                .foregroundStyle(.tint)",
+    "            Button(\"Show Survey\") {",
+    "                polling.showSurvey(\"caa4fc7a-a7b9-489c-a7c8-e5e7f8aeeefa\")",
+    "            }.padding(.top)",
+    "        }.buttonStyle(.bordered)",
+    "        .padding()",
+    "    }",
+    "}"
+  ],
+  "fileName" : "ContentView.swift",
+  "fileType" : "swift",
+  "highlights" : [
+    {
+      "line" : 13
+    }
+  ],
+  "identifier" : "04_ContentView_cb-listener-var.swift",
+  "syntax" : "swift",
+  "type" : "file"
+},
+"05_ContentView_cb-set-delegate.swift": {
+  "content" : [
+    "import SwiftUI",
+    "import Polling",
+    "",
+    "struct ContentView: View {",
+    "    private var polling: Polling = Polling()",
+    "",
+    "    class Listener: NSObject, PollingDelegate {",
+    "        var view: any View",
+    "        init(view: any View) {",
+    "            self.view = view",
+    "        }",
+    "    }",
+    "    var listener: Listener?",
+    "",
+    "    init() {",
+    "        listener = Listener(view: self)",
+    "        polling.customerID = \"id_\\(Date().timeIntervalSinceReferenceDate)\"",
+    "        polling.apiKey = \"l4chQVGY1rYlFS7WPmbl5vIqCsZunsuDXUOx\"",
+    "        polling.delegate = listener",
+    "    }",
+    "",
+    "    var body: some View {",
+    "        VStack {",
+    "            Image(systemName: \"globe\")",
+    "                .imageScale(.large)",
+    "                .foregroundStyle(.tint)",
+    "            Button(\"Show Survey\") {",
+    "                polling.showSurvey(\"caa4fc7a-a7b9-489c-a7c8-e5e7f8aeeefa\")",
+    "            }.padding(.top)",
+    "        }.buttonStyle(.bordered)",
+    "        .padding()",
+    "    }",
+    "}"
+  ],
+  "fileName" : "ContentView.swift",
+  "fileType" : "swift",
+  "highlights" : [
+    {
+      "line" : 16
+    },
+    {
+      "line" : 19
+    }
+  ],
+  "identifier" : "05_ContentView_cb-set-delegate.swift",
+  "syntax" : "swift",
+  "type" : "file"
+},
+"06_ContentView_cb-callbacks.swift": {
+  "content" : [
+    "import SwiftUI",
+    "import Polling",
+    "",
+    "struct ContentView: View {",
+    "    private var polling: Polling = Polling()",
+    "",
+    "    class Listener: NSObject, PollingDelegate {",
+    "        var view: any View",
+    "        init(view: any View) {",
+    "            self.view = view",
+    "        }",
+    "        func polling(onSuccess response: String) {",
+    "            NSLog(\"SUCCESS: response=\\(response)\")",
+    "        }",
+    "        func polling(onFailure error: String) {",
+    "            NSLog(\"ERROR: error=\\(error)\")",
+    "        }",
+    "        func polling(on reward: Polling.Reward) {",
+    "            NSLog(\"REWARD: reward=\\(reward)\")",
+    "        }",
+    "        func pollingOnSurveyAvailable() {",
+    "            NSLog(\"AVAILABLE: Survey available\")",
+    "        }",
+    "    }",
+    "    var listener: Listener?",
+    "",
+    "    init() {",
+    "        listener = Listener(view: self)",
+    "        polling.customerID = \"id_\\(Date().timeIntervalSinceReferenceDate)\"",
+    "        polling.apiKey = \"l4chQVGY1rYlFS7WPmbl5vIqCsZunsuDXUOx\"",
+    "        polling.delegate = listener",
+    "    }",
+    "",
+    "    var body: some View {",
+    "        VStack {",
+    "            Image(systemName: \"globe\")",
+    "                .imageScale(.large)",
+    "                .foregroundStyle(.tint)",
+    "            Button(\"Show Survey\") {",
+    "                polling.showSurvey(\"caa4fc7a-a7b9-489c-a7c8-e5e7f8aeeefa\")",
+    "            }.padding(.top)",
+    "        }.buttonStyle(.bordered)",
+    "        .padding()",
+    "    }",
+    "}"
+  ],
+  "fileName" : "ContentView.swift",
+  "fileType" : "swift",
+  "highlights" : [
+    {
+      "line" : 12
+    },
+    {
+      "line" : 13
+    },
+    {
+      "line" : 14
+    },
+    {
+      "line" : 15
+    },
+    {
+      "line" : 16
+    },
+    {
+      "line" : 17
+    },
+    {
+      "line" : 18
+    },
+    {
+      "line" : 19
+    },
+    {
+      "line" : 20
+    },
+    {
+      "line" : 21
+    },
+    {
+      "line" : 22
+    },
+    {
+      "line" : 23
+    }
+  ],
+  "identifier" : "06_ContentView_cb-callbacks.swift",
+  "syntax" : "swift",
+  "type" : "file"
+},
+"07_Console.txt": {
+  "content" : [
+    "SUCCESS: response={\"reward\":{\"reward_amount\":null,\"reward_name\":null},\"question_count\":1,\"started_at\":\"\",\"userSurveyStatus\":\"completed\",\"uuid\":\"caa4fc7a-a7b9-489c-a7c8-e5e7f8aeeefa\",\"completed_at\":\"2025-04-10T22:34:15+00:00\",\"name\":\"SwiftUI Tutorial Survey\"}",
+    "REWARD: reward=<POLReward:0x600000296040 name='<null>', amount=<null>>"
+  ],
+  "fileName" : "",
+  "fileType" : "",
+  "highlights" : [
+
+  ],
+  "identifier" : "07_Console.txt",
+  "syntax" : "",
+  "type" : "file"
+},
+"doc://com.polling.polling/tutorials/Polling/SwiftUICallbackListener": {
+  "abstract" : [
+    {
+      "text" : "Guides you through adding a callback listener",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICallbackListener",
+  "kind" : "project",
+  "role" : "project",
+  "title" : "Add Callback Listener",
+  "type" : "topic",
+  "url" : "\/tutorials\/polling\/swiftuicallbacklistener"
+},
+"doc://com.polling.polling/tutorials/Polling/SwiftUICallbackListener#Add-callback-listener-to-the-app": {
+  "abstract" : [
+    {
+      "text" : "Guides you through adding a callback listener",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICallbackListener#Add-callback-listener-to-the-app",
+  "kind" : "section",
+  "role" : "pseudoSymbol",
+  "title" : "Add callback listener to the app",
+  "type" : "section",
+  "url" : "\/tutorials\/polling\/swiftuicallbacklistener#Add-callback-listener-to-the-app"
+},
+"doc://com.polling.polling/tutorials/Polling/SwiftUIImportAndConfigure": {
+  "abstract" : [
+    {
+      "text" : "Guides you through importing the Polling SDK and configuring the SDK.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUIImportAndConfigure",
+  "kind" : "project",
+  "role" : "project",
+  "title" : "Import and configure",
+  "type" : "topic",
+  "url" : "\/tutorials\/polling\/swiftuiimportandconfigure"
+},
+"doc://com.polling.polling/tutorials/Polling/SwiftUIImportAndConfigure#Import-and-configure-the-Polling-framework": {
+  "abstract" : [
+    {
+      "text" : "Guides you through importing the Polling SDK and configuring the SDK.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUIImportAndConfigure#Import-and-configure-the-Polling-framework",
+  "kind" : "section",
+  "role" : "pseudoSymbol",
+  "title" : "Import and configure the Polling framework",
+  "type" : "section",
+  "url" : "\/tutorials\/polling\/swiftuiimportandconfigure#Import-and-configure-the-Polling-framework"
+},
+"doc://com.polling.polling/tutorials/SwiftUIToC": {
+  "abstract" : [
+    {
+      "text" : "Tutorial for integrating the Polling SDK in your SwiftUI app.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC",
+  "kind" : "overview",
+  "role" : "overview",
+  "title" : "Integrating with SwiftUI",
+  "type" : "topic",
+  "url" : "\/tutorials\/swiftuitoc"
+},
+"doc://com.polling.polling/tutorials/SwiftUIToC/Add-Callback-Listener": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC\/Add-Callback-Listener",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Add Callback Listener",
+  "type" : "topic",
+  "url" : "\/tutorials\/swiftuitoc\/add-callback-listener"
+},
+"doc://com.polling.polling/tutorials/SwiftUIToC/Import-&-Configure": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC\/Import-&-Configure",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Import & Configure",
+  "type" : "topic",
+  "url" : "\/tutorials\/swiftuitoc\/import-&-configure"
+},
+"swiftui-callback.png": {
+  "alt" : "callback listener",
+  "identifier" : "swiftui-callback.png",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.polling\/swiftui-callback.png"
+    }
+  ]
+}
+}, 
+"variantOverrides":[
+  {
+    "patch" : [
+      {
+        "op" : "replace",
+        "path" : "\/identifier\/interfaceLanguage",
+        "value" : "occ"
+      }
+    ],
+    "traits" : [
+      {
+        "interfaceLanguage" : "occ"
+      }
+    ]
+  }
+]
+}

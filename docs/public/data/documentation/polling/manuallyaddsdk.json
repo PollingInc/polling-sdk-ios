@@ -39,17 +39,175 @@
         {
           "inlineContent" : [
             {
-              "text" : "Download a release from GitHub",
+              "text" : "Download a release from GitHub and add the XCFramework to the project",
               "type" : "text"
             }
           ],
           "type" : "paragraph"
         },
         {
-          "anchor" : "Step-One",
+          "anchor" : "Download-a-release",
           "level" : 3,
-          "text" : "Step One",
+          "text" : "Download a release",
           "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Pick the most recent release from",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "https:\/\/github.com\/PollingInc\/polling-sdk-ios\/releases",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " and",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "download one of the XCFramework archives",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Add-the-XCFramework-to-the-project",
+          "level" : 3,
+          "text" : "Add the XCFramework to the project",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Select the project item from the Project Navigator.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "identifier" : "select-project",
+              "type" : "image"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Select the app from the Target list.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "identifier" : "select-target",
+              "type" : "image"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Scroll down to the “Frameworks, Libraries, and Embedded Content”",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "section.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "identifier" : "frameworks-section",
+              "type" : "image"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Locate the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Polling.xcframework",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " in Finder.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "identifier" : "finder-xcframework",
+              "type" : "image"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Drag ",
+              "type" : "text"
+            },
+            {
+              "code" : "Polling.xcframework",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " from Finder to the “Frameworks, Libraries,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "and Embedded Content” section in Xcode.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "identifier" : "drag-xcframework",
+              "type" : "image"
+            }
+          ],
+          "type" : "paragraph"
         }
       ],
       "kind" : "content"
@@ -139,6 +297,88 @@
   "title" : "Using the Swift Package Manager",
   "type" : "topic",
   "url" : "\/documentation\/polling\/usingswiftpm"
+},
+"drag-xcframework": {
+  "alt" : "Dragging xcframework",
+  "identifier" : "drag-xcframework",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.polling\/drag-xcframework.png"
+    }
+  ]
+},
+"finder-xcframework": {
+  "alt" : "Frameworks folder in Finder",
+  "identifier" : "finder-xcframework",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.polling\/finder-xcframework.png"
+    }
+  ]
+},
+"frameworks-section": {
+  "alt" : "Frameworks, Libraries, and Embedded Content section",
+  "identifier" : "frameworks-section",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.polling\/frameworks-section.png"
+    }
+  ]
+},
+"https://github.com/PollingInc/polling-sdk-ios/releases": {
+  "identifier" : "https:\/\/github.com\/PollingInc\/polling-sdk-ios\/releases",
+  "title" : "https:\/\/github.com\/PollingInc\/polling-sdk-ios\/releases",
+  "titleInlineContent" : [
+    {
+      "text" : "https:\/\/github.com\/PollingInc\/polling-sdk-ios\/releases",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/github.com\/PollingInc\/polling-sdk-ios\/releases"
+},
+"select-project": {
+  "alt" : "Project selected",
+  "identifier" : "select-project",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.polling\/select-project.png"
+    }
+  ]
+},
+"select-target": {
+  "alt" : "Target selected",
+  "identifier" : "select-target",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.polling\/select-target.png"
+    }
+  ]
 }
 }, 
 "variantOverrides":[

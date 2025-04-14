@@ -47,7 +47,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " entry to the projects ",
+              "text" : " entry to the project’s ",
               "type" : "text"
             },
             {
@@ -58,10 +58,52 @@
           "type" : "paragraph"
         },
         {
-          "anchor" : "Step-One",
+          "anchor" : "Add-entry-to-the-Podfile",
           "level" : 3,
-          "text" : "Step One",
+          "text" : "Add entry to the Podfile",
           "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Open the project’s ",
+              "type" : "text"
+            },
+            {
+              "code" : "Podfile",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and add a ",
+              "type" : "text"
+            },
+            {
+              "code" : "pod",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " entry for the ",
+              "type" : "text"
+            },
+            {
+              "code" : "PollingSDK",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "target 'MyApp' do",
+            "  pod 'PollingSDK', '~> 1.0'",
+            "end"
+          ],
+          "syntax" : "ruby",
+          "type" : "codeListing"
         }
       ],
       "kind" : "content"

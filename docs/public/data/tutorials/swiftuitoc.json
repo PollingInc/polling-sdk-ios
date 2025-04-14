@@ -14,7 +14,7 @@
     "category" : "SwiftUI",
     "categoryPathComponent" : "SwiftUIToC",
     "role" : "overview",
-    "title" : "Intergrating with SwiftUI"
+    "title" : "Integrating with SwiftUI"
   },
   "schemaVersion" : {
     "major" : 0,
@@ -24,7 +24,7 @@
   "sections" : [
     {
       "action" : {
-        "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/ConfigureProject",
+        "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUIImportAndConfigure",
         "isActive" : true,
         "overridingTitle" : "Get started",
         "overridingTitleInlineContent" : [
@@ -35,6 +35,7 @@
         ],
         "type" : "reference"
       },
+      "backgroundImage" : "swiftui-icon.png",
       "content" : [
         {
           "inlineContent" : [
@@ -46,8 +47,9 @@
           "type" : "paragraph"
         }
       ],
+      "image" : "swiftui-icon.png",
       "kind" : "hero",
-      "title" : "Intergrating with SwiftUI"
+      "title" : "Integrating with SwiftUI"
     },
     {
       "chapters" : [
@@ -56,17 +58,17 @@
             {
               "inlineContent" : [
                 {
-                  "text" : "Adding the framework to you project",
+                  "text" : "Importing and configuring the Polling SDK",
                   "type" : "text"
                 }
               ],
               "type" : "paragraph"
             }
           ],
-          "image" : "xcframework.png",
-          "name" : "Configuring your project",
+          "image" : "import-dark.png",
+          "name" : "Import & Configure",
           "tutorials" : [
-            "doc:\/\/com.polling.polling\/tutorials\/Polling\/ConfigureProject"
+            "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUIImportAndConfigure"
           ]
         },
         {
@@ -74,17 +76,17 @@
             {
               "inlineContent" : [
                 {
-                  "text" : "Importing and using the Polling SDK",
+                  "text" : "Adding a callback listener to an app",
                   "type" : "text"
                 }
               ],
               "type" : "paragraph"
             }
           ],
-          "image" : "swift-dot-swift.png",
-          "name" : "Coding",
+          "image" : "swiftui-callback.png",
+          "name" : "Add Callback Listener",
           "tutorials" : [
-            "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICode"
+            "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICallbackListener"
           ]
         }
       ],
@@ -120,33 +122,33 @@
   ]
 , 
 "references": {
-"doc://com.polling.polling/tutorials/Polling/ConfigureProject": {
+"doc://com.polling.polling/tutorials/Polling/SwiftUICallbackListener": {
   "abstract" : [
     {
-      "text" : "Configure your project to use the Polling framework",
+      "text" : "Guides you through adding a callback listener",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/ConfigureProject",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICallbackListener",
   "kind" : "project",
   "role" : "project",
-  "title" : "Adding the framework",
+  "title" : "Add Callback Listener",
   "type" : "topic",
-  "url" : "\/tutorials\/polling\/configureproject"
+  "url" : "\/tutorials\/polling\/swiftuicallbacklistener"
 },
-"doc://com.polling.polling/tutorials/Polling/SwiftUICode": {
+"doc://com.polling.polling/tutorials/Polling/SwiftUIImportAndConfigure": {
   "abstract" : [
     {
-      "text" : "This tutorial guides you through importing the Polling framework and using the APIs with SwiftUI.",
+      "text" : "Guides you through importing the Polling SDK and configuring the SDK.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICode",
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUIImportAndConfigure",
   "kind" : "project",
   "role" : "project",
-  "title" : "Code your content view",
+  "title" : "Import and configure",
   "type" : "topic",
-  "url" : "\/tutorials\/polling\/swiftuicode"
+  "url" : "\/tutorials\/polling\/swiftuiimportandconfigure"
 },
 "doc://com.polling.polling/tutorials/SwiftUIToC": {
   "abstract" : [
@@ -158,13 +160,13 @@
   "identifier" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC",
   "kind" : "overview",
   "role" : "overview",
-  "title" : "Intergrating with SwiftUI",
+  "title" : "Integrating with SwiftUI",
   "type" : "topic",
   "url" : "\/tutorials\/swiftuitoc"
 },
-"swift-dot-swift.png": {
-  "alt" : ".swift file icon",
-  "identifier" : "swift-dot-swift.png",
+"import-dark.png": {
+  "alt" : "Importing a framework",
+  "identifier" : "import-dark.png",
   "type" : "image",
   "variants" : [
     {
@@ -172,13 +174,13 @@
         "1x",
         "light"
       ],
-      "url" : "\/images\/com.polling.polling\/swift-dot-swift.png"
+      "url" : "\/images\/com.polling.polling\/import-dark.png"
     }
   ]
 },
-"xcframework.png": {
-  "alt" : "xcframework icon",
-  "identifier" : "xcframework.png",
+"swiftui-callback.png": {
+  "alt" : "callback listener",
+  "identifier" : "swiftui-callback.png",
   "type" : "image",
   "variants" : [
     {
@@ -186,7 +188,21 @@
         "1x",
         "light"
       ],
-      "url" : "\/images\/com.polling.polling\/xcframework.png"
+      "url" : "\/images\/com.polling.polling\/swiftui-callback.png"
+    }
+  ]
+},
+"swiftui-icon.png": {
+  "alt" : "dot swift icon",
+  "identifier" : "swiftui-icon.png",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.polling\/swiftui-icon.png"
     }
   ]
 }

@@ -1,0 +1,865 @@
+{
+  "hierarchy" : {
+    "modules" : [
+      {
+        "projects" : [
+          {
+            "reference" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUIImportAndConfigure",
+            "sections" : [
+              {
+                "kind" : "task",
+                "reference" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUIImportAndConfigure#Import-and-configure-the-Polling-framework"
+              }
+            ]
+          }
+        ],
+        "reference" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC\/Import-&-Configure"
+      },
+      {
+        "projects" : [
+          {
+            "reference" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICallbackListener",
+            "sections" : [
+              {
+                "kind" : "task",
+                "reference" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICallbackListener#Add-callback-listener-to-the-app"
+              }
+            ]
+          }
+        ],
+        "reference" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC\/Add-Callback-Listener"
+      }
+    ],
+    "paths" : [
+      [
+        "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC",
+        "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC\/$volume",
+        "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC\/Import-&-Configure"
+      ]
+    ],
+    "reference" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC"
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUIImportAndConfigure"
+  },
+  "kind" : "project",
+  "metadata" : {
+    "category" : "SwiftUI",
+    "categoryPathComponent" : "SwiftUIToC",
+    "role" : "project",
+    "title" : "Import and configure"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+    {
+      "chapter" : "Import & Configure",
+      "content" : [
+        {
+          "inlineContent" : [
+            {
+              "text" : "Guides you through importing the Polling SDK and configuring the SDK.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "hero",
+      "title" : "Import and configure"
+    },
+    {
+      "kind" : "tasks",
+      "tasks" : [
+        {
+          "anchor" : "Import-and-configure-the-Polling-framework",
+          "contentSection" : [
+            {
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Import the polling framework",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                },
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Please read ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/GettingStarted",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : " and add the",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "SDK to you app using one of these supported",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : "methods: ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingSwiftPM",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : ",",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingCocoaPods",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : ", or by",
+                      "type" : "text"
+                    },
+                    {
+                      "text" : " ",
+                      "type" : "text"
+                    },
+                    {
+                      "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/ManuallyAddSDK",
+                      "isActive" : true,
+                      "type" : "reference"
+                    },
+                    {
+                      "text" : ".",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                },
+                {
+                  "content" : [
+                    {
+                      "inlineContent" : [
+                        {
+                          "text" : "Before starting this tutorial,",
+                          "type" : "text"
+                        },
+                        {
+                          "text" : " ",
+                          "type" : "text"
+                        },
+                        {
+                          "text" : "the Polling SDK must be added to you app",
+                          "type" : "text"
+                        },
+                        {
+                          "text" : " ",
+                          "type" : "text"
+                        },
+                        {
+                          "text" : "using on of the supported methods:",
+                          "type" : "text"
+                        }
+                      ],
+                      "type" : "paragraph"
+                    }
+                  ],
+                  "name" : "Important",
+                  "style" : "important",
+                  "type" : "aside"
+                }
+              ],
+              "kind" : "contentAndMedia",
+              "media" : "import-swiftui-light.png",
+              "mediaPosition" : "trailing"
+            }
+          ],
+          "stepsSection" : [
+            {
+              "caption" : [
+
+              ],
+              "code" : "01_ContentView-initial.swift",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Open the ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "ContentView.swift",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " file",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "02_ContentView-import.swift",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Add import statement",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "03_ContentView-polling-singleton.swift",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Create a reference to the Polling singleton object",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "04_ContentView-init.swift",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Add init method",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "05_ContentView-config.swift",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Configure Customer ID and API Key",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "06_ContentView-config-real-values.swift",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Use real values",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : "07_ContentView-show-survey.swift",
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Add show survey button",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : null,
+              "runtimePreview" : null,
+              "type" : "step"
+            },
+            {
+              "caption" : [
+
+              ],
+              "code" : null,
+              "content" : [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Run the app and tap the “Show Survey” button",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              "media" : "08_swiftui-app-with-button.png",
+              "runtimePreview" : null,
+              "type" : "step"
+            }
+          ],
+          "title" : "Import and configure the Polling framework"
+        }
+      ]
+    },
+    {
+      "abstract" : [
+        {
+          "text" : "Guides you through adding a callback listener",
+          "type" : "text"
+        }
+      ],
+      "action" : {
+        "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICallbackListener",
+        "isActive" : true,
+        "overridingTitle" : "Get started",
+        "overridingTitleInlineContent" : [
+          {
+            "text" : "Get started",
+            "type" : "text"
+          }
+        ],
+        "type" : "reference"
+      },
+      "featuredEyebrow" : "Tutorial",
+      "kind" : "callToAction",
+      "title" : "Add Callback Listener"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/tutorials\/polling\/swiftuiimportandconfigure"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    },
+    {
+      "paths" : [
+        "\/tutorials\/polling\/swiftuiimportandconfigure"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "occ"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"01_ContentView-initial.swift": {
+  "content" : [
+    "import SwiftUI",
+    "",
+    "struct ContentView: View {",
+    "    var body: some View {",
+    "        VStack {",
+    "            Image(systemName: \"globe\")",
+    "                .imageScale(.large)",
+    "                .foregroundStyle(.tint)",
+    "            Text(\"Hello, world!\")",
+    "        }",
+    "        .padding()",
+    "    }",
+    "}"
+  ],
+  "fileName" : "ContentView.swift",
+  "fileType" : "swift",
+  "highlights" : [
+
+  ],
+  "identifier" : "01_ContentView-initial.swift",
+  "syntax" : "swift",
+  "type" : "file"
+},
+"02_ContentView-import.swift": {
+  "content" : [
+    "import SwiftUI",
+    "import Polling",
+    "",
+    "struct ContentView: View {",
+    "    var body: some View {",
+    "        VStack {",
+    "            Image(systemName: \"globe\")",
+    "                .imageScale(.large)",
+    "                .foregroundStyle(.tint)",
+    "            Text(\"Hello, world!\")",
+    "        }",
+    "        .padding()",
+    "    }",
+    "}"
+  ],
+  "fileName" : "ContentView.swift",
+  "fileType" : "swift",
+  "highlights" : [
+    {
+      "line" : 2
+    }
+  ],
+  "identifier" : "02_ContentView-import.swift",
+  "syntax" : "swift",
+  "type" : "file"
+},
+"03_ContentView-polling-singleton.swift": {
+  "content" : [
+    "import SwiftUI",
+    "import Polling",
+    "",
+    "struct ContentView: View {",
+    "    private var polling: Polling = Polling()",
+    "",
+    "    var body: some View {",
+    "        VStack {",
+    "            Image(systemName: \"globe\")",
+    "                .imageScale(.large)",
+    "                .foregroundStyle(.tint)",
+    "            Text(\"Hello, world!\")",
+    "        }",
+    "        .padding()",
+    "    }",
+    "}"
+  ],
+  "fileName" : "ContentView.swift",
+  "fileType" : "swift",
+  "highlights" : [
+    {
+      "line" : 5
+    },
+    {
+      "line" : 6
+    }
+  ],
+  "identifier" : "03_ContentView-polling-singleton.swift",
+  "syntax" : "swift",
+  "type" : "file"
+},
+"04_ContentView-init.swift": {
+  "content" : [
+    "import SwiftUI",
+    "import Polling",
+    "",
+    "struct ContentView: View {",
+    "    private var polling: Polling = Polling()",
+    "",
+    "    init() {",
+    "",
+    "    }",
+    "",
+    "    var body: some View {",
+    "        VStack {",
+    "            Image(systemName: \"globe\")",
+    "                .imageScale(.large)",
+    "                .foregroundStyle(.tint)",
+    "            Text(\"Hello, world!\")",
+    "        }",
+    "        .padding()",
+    "    }",
+    "}"
+  ],
+  "fileName" : "ContentView.swift",
+  "fileType" : "swift",
+  "highlights" : [
+    {
+      "line" : 7
+    },
+    {
+      "line" : 8
+    },
+    {
+      "line" : 9
+    },
+    {
+      "line" : 10
+    }
+  ],
+  "identifier" : "04_ContentView-init.swift",
+  "syntax" : "swift",
+  "type" : "file"
+},
+"05_ContentView-config.swift": {
+  "content" : [
+    "import SwiftUI",
+    "import Polling",
+    "",
+    "struct ContentView: View {",
+    "    private var polling: Polling = Polling()",
+    "",
+    "    init() {",
+    "        polling.customerID = \"UniqueCustomerIDProvidedByYou\"",
+    "        polling.apiKey = \"EmbedAPIKeyFromPolling.com\"",
+    "    }",
+    "",
+    "    var body: some View {",
+    "        VStack {",
+    "            Image(systemName: \"globe\")",
+    "                .imageScale(.large)",
+    "                .foregroundStyle(.tint)",
+    "            Text(\"Hello, world!\")",
+    "        }",
+    "        .padding()",
+    "    }",
+    "}"
+  ],
+  "fileName" : "ContentView.swift",
+  "fileType" : "swift",
+  "highlights" : [
+    {
+      "line" : 8
+    },
+    {
+      "line" : 9
+    }
+  ],
+  "identifier" : "05_ContentView-config.swift",
+  "syntax" : "swift",
+  "type" : "file"
+},
+"06_ContentView-config-real-values.swift": {
+  "content" : [
+    "import SwiftUI",
+    "import Polling",
+    "",
+    "struct ContentView: View {",
+    "    private var polling: Polling = Polling()",
+    "",
+    "    init() {",
+    "        polling.customerID = \"id_\\(Date().timeIntervalSinceReferenceDate)\"",
+    "        polling.apiKey = \"l4chQVGY1rYlFS7WPmbl5vIqCsZunsuDXUOx\"",
+    "    }",
+    "",
+    "    var body: some View {",
+    "        VStack {",
+    "            Image(systemName: \"globe\")",
+    "                .imageScale(.large)",
+    "                .foregroundStyle(.tint)",
+    "            Text(\"Hello, world!\")",
+    "        }",
+    "        .padding()",
+    "    }",
+    "}"
+  ],
+  "fileName" : "ContentView.swift",
+  "fileType" : "swift",
+  "highlights" : [
+    {
+      "line" : 8
+    },
+    {
+      "line" : 9
+    }
+  ],
+  "identifier" : "06_ContentView-config-real-values.swift",
+  "syntax" : "swift",
+  "type" : "file"
+},
+"07_ContentView-show-survey.swift": {
+  "content" : [
+    "import SwiftUI",
+    "import Polling",
+    "",
+    "struct ContentView: View {",
+    "    private var polling: Polling = Polling()",
+    "",
+    "    init() {",
+    "        polling.customerID = \"id_\\(Date().timeIntervalSinceReferenceDate)\"",
+    "        polling.apiKey = \"l4chQVGY1rYlFS7WPmbl5vIqCsZunsuDXUOx\"",
+    "    }",
+    "",
+    "    var body: some View {",
+    "        VStack {",
+    "            Image(systemName: \"globe\")",
+    "                .imageScale(.large)",
+    "                .foregroundStyle(.tint)",
+    "            Button(\"Show Survey\") {",
+    "                polling.showSurvey(\"caa4fc7a-a7b9-489c-a7c8-e5e7f8aeeefa\")",
+    "            }.padding(.top)",
+    "        }.buttonStyle(.bordered)",
+    "        .padding()",
+    "    }",
+    "}"
+  ],
+  "fileName" : "ContentView.swift",
+  "fileType" : "swift",
+  "highlights" : [
+    {
+      "line" : 17
+    },
+    {
+      "line" : 18
+    },
+    {
+      "line" : 19
+    },
+    {
+      "line" : 20
+    }
+  ],
+  "identifier" : "07_ContentView-show-survey.swift",
+  "syntax" : "swift",
+  "type" : "file"
+},
+"08_swiftui-app-with-button.png": {
+  "alt" : "App with button",
+  "identifier" : "08_swiftui-app-with-button.png",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.polling\/08_swiftui-app-with-button.png"
+    }
+  ]
+},
+"doc://com.polling.polling/documentation/Polling/GettingStarted": {
+  "abstract" : [
+    {
+      "text" : "Read this first.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/GettingStarted",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Getting Started",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/gettingstarted"
+},
+"doc://com.polling.polling/documentation/Polling/ManuallyAddSDK": {
+  "abstract" : [
+    {
+      "text" : "Adding the SDK without a package manager",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/ManuallyAddSDK",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Manually Adding the SDK",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/manuallyaddsdk"
+},
+"doc://com.polling.polling/documentation/Polling/UsingCocoaPods": {
+  "abstract" : [
+    {
+      "text" : "Adding the SDK to a project with CocoaPods",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingCocoaPods",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Using CocoaPods",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/usingcocoapods"
+},
+"doc://com.polling.polling/documentation/Polling/UsingSwiftPM": {
+  "abstract" : [
+    {
+      "text" : "Adding the SDK to a project with the Swift Package Manager",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/documentation\/Polling\/UsingSwiftPM",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Using the Swift Package Manager",
+  "type" : "topic",
+  "url" : "\/documentation\/polling\/usingswiftpm"
+},
+"doc://com.polling.polling/tutorials/Polling/SwiftUICallbackListener": {
+  "abstract" : [
+    {
+      "text" : "Guides you through adding a callback listener",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICallbackListener",
+  "kind" : "project",
+  "role" : "project",
+  "title" : "Add Callback Listener",
+  "type" : "topic",
+  "url" : "\/tutorials\/polling\/swiftuicallbacklistener"
+},
+"doc://com.polling.polling/tutorials/Polling/SwiftUICallbackListener#Add-callback-listener-to-the-app": {
+  "abstract" : [
+    {
+      "text" : "Guides you through adding a callback listener",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUICallbackListener#Add-callback-listener-to-the-app",
+  "kind" : "section",
+  "role" : "pseudoSymbol",
+  "title" : "Add callback listener to the app",
+  "type" : "section",
+  "url" : "\/tutorials\/polling\/swiftuicallbacklistener#Add-callback-listener-to-the-app"
+},
+"doc://com.polling.polling/tutorials/Polling/SwiftUIImportAndConfigure": {
+  "abstract" : [
+    {
+      "text" : "Guides you through importing the Polling SDK and configuring the SDK.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUIImportAndConfigure",
+  "kind" : "project",
+  "role" : "project",
+  "title" : "Import and configure",
+  "type" : "topic",
+  "url" : "\/tutorials\/polling\/swiftuiimportandconfigure"
+},
+"doc://com.polling.polling/tutorials/Polling/SwiftUIImportAndConfigure#Import-and-configure-the-Polling-framework": {
+  "abstract" : [
+    {
+      "text" : "Guides you through importing the Polling SDK and configuring the SDK.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/Polling\/SwiftUIImportAndConfigure#Import-and-configure-the-Polling-framework",
+  "kind" : "section",
+  "role" : "pseudoSymbol",
+  "title" : "Import and configure the Polling framework",
+  "type" : "section",
+  "url" : "\/tutorials\/polling\/swiftuiimportandconfigure#Import-and-configure-the-Polling-framework"
+},
+"doc://com.polling.polling/tutorials/SwiftUIToC": {
+  "abstract" : [
+    {
+      "text" : "Tutorial for integrating the Polling SDK in your SwiftUI app.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC",
+  "kind" : "overview",
+  "role" : "overview",
+  "title" : "Integrating with SwiftUI",
+  "type" : "topic",
+  "url" : "\/tutorials\/swiftuitoc"
+},
+"doc://com.polling.polling/tutorials/SwiftUIToC/Add-Callback-Listener": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC\/Add-Callback-Listener",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Add Callback Listener",
+  "type" : "topic",
+  "url" : "\/tutorials\/swiftuitoc\/add-callback-listener"
+},
+"doc://com.polling.polling/tutorials/SwiftUIToC/Import-&-Configure": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.polling.polling\/tutorials\/SwiftUIToC\/Import-&-Configure",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Import & Configure",
+  "type" : "topic",
+  "url" : "\/tutorials\/swiftuitoc\/import-&-configure"
+},
+"import-swiftui-light.png": {
+  "alt" : "import icon",
+  "identifier" : "import-swiftui-light.png",
+  "type" : "image",
+  "variants" : [
+    {
+      "traits" : [
+        "1x",
+        "light"
+      ],
+      "url" : "\/images\/com.polling.polling\/import-swiftui-light.png"
+    }
+  ]
+}
+}, 
+"variantOverrides":[
+  {
+    "patch" : [
+      {
+        "op" : "replace",
+        "path" : "\/identifier\/interfaceLanguage",
+        "value" : "occ"
+      }
+    ],
+    "traits" : [
+      {
+        "interfaceLanguage" : "occ"
+      }
+    ]
+  }
+]
+}

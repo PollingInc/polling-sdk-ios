@@ -417,7 +417,6 @@
       "text" : "pollingOnReward:"
     }
   ],
-  "required" : true,
   "role" : "symbol",
   "title" : "polling(on:)",
   "type" : "topic",
@@ -473,6 +472,7 @@
       "text" : "pollingOnFailure:"
     }
   ],
+  "required" : true,
   "role" : "symbol",
   "title" : "polling(onFailure:)",
   "type" : "topic",
@@ -528,7 +528,6 @@
       "text" : "pollingOnSuccess:"
     }
   ],
-  "required" : true,
   "role" : "symbol",
   "title" : "polling(onSuccess:)",
   "type" : "topic",
@@ -567,6 +566,7 @@
       "text" : "pollingOnSurveyAvailable"
     }
   ],
+  "required" : true,
   "role" : "symbol",
   "title" : "pollingOnSurveyAvailable()",
   "type" : "topic",

@@ -18,41 +18,32 @@
           {
             "children" : [
               {
-                "title" : "Configuring your project",
+                "title" : "Import & Configure",
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/tutorials\/polling\/configureproject",
-                "title" : "Adding the framework",
+                "path" : "\/tutorials\/polling\/swiftuiimportandconfigure",
+                "title" : "Import and configure",
                 "type" : "project"
               },
               {
-                "title" : "Coding",
+                "title" : "Add Callback Listener",
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/tutorials\/polling\/swiftuicode",
-                "title" : "Code your content view",
+                "path" : "\/tutorials\/polling\/swiftuicallbacklistener",
+                "title" : "Add Callback Listener",
                 "type" : "project"
               }
             ],
             "path" : "\/tutorials\/swiftuitoc",
-            "title" : "Intergrating with SwiftUI",
+            "title" : "Integrating with SwiftUI",
             "type" : "overview"
           },
           {
             "children" : [
               {
-                "title" : "Configuring your project",
-                "type" : "groupMarker"
-              },
-              {
-                "path" : "\/tutorials\/polling\/configureproject",
-                "title" : "Adding the framework",
-                "type" : "project"
-              },
-              {
-                "title" : "Coding",
+                "title" : "UI & Coding",
                 "type" : "groupMarker"
               },
               {
@@ -329,41 +320,32 @@
           {
             "children" : [
               {
-                "title" : "Configuring your project",
+                "title" : "Import & Configure",
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/tutorials\/polling\/configureproject",
-                "title" : "Adding the framework",
+                "path" : "\/tutorials\/polling\/swiftuiimportandconfigure",
+                "title" : "Import and configure",
                 "type" : "project"
               },
               {
-                "title" : "Coding",
+                "title" : "Add Callback Listener",
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/tutorials\/polling\/swiftuicode",
-                "title" : "Code your content view",
+                "path" : "\/tutorials\/polling\/swiftuicallbacklistener",
+                "title" : "Add Callback Listener",
                 "type" : "project"
               }
             ],
             "path" : "\/tutorials\/swiftuitoc",
-            "title" : "Intergrating with SwiftUI",
+            "title" : "Integrating with SwiftUI",
             "type" : "overview"
           },
           {
             "children" : [
               {
-                "title" : "Configuring your project",
-                "type" : "groupMarker"
-              },
-              {
-                "path" : "\/tutorials\/polling\/configureproject",
-                "title" : "Adding the framework",
-                "type" : "project"
-              },
-              {
-                "title" : "Coding",
+                "title" : "UI & Coding",
                 "type" : "groupMarker"
               },
               {

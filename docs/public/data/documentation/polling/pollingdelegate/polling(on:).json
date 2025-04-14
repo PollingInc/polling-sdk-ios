@@ -75,7 +75,6 @@
         "text" : "pollingOnReward:"
       }
     ],
-    "required" : true,
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -421,7 +420,6 @@
       "text" : "pollingOnReward:"
     }
   ],
-  "required" : true,
   "role" : "symbol",
   "title" : "polling(on:)",
   "type" : "topic",
